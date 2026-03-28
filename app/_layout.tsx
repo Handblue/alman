@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Stack, router } from 'expo-router';
+import { ThemeProvider } from '@/context/ThemeContext';
 import { useUserStore } from '@/store/useUserStore';
 import {
   useFonts,
@@ -28,7 +29,11 @@ export default function RootLayout() {
       SplashScreen.hideAsync();
       router.replace(hasOnboarded ? '/(app)/dashboard' : '/(onboarding)/welcome');
     }
-  }, [fontsLoaded]);
+  }, [fontsLoaded, hasOnboarded]);
 
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <ThemeProvider>
+      <Stack screenOptions={{ headerShown: false }} />
+    </ThemeProvider>
+  );
 }
