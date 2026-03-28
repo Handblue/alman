@@ -6,6 +6,7 @@ import { Spacing } from '@/constants/spacing';
 import { Radius } from '@/constants/radius';
 import { Word } from '@/data/words';
 import { useProgressStore } from '@/store/useProgressStore';
+import { useFolderStore } from '@/store/useFolderStore';
 
 interface Props {
   word: Word | null;
@@ -14,8 +15,18 @@ interface Props {
 
 export function WordDetailSheet({ word, onClose }: Props) {
   const { bookmarkedWords, toggleBookmark } = useProgressStore();
+  const { folders, addWordToFolder, removeWordFromFolder, isWordInFolder } = useFolderStore();
   if (!word) return null;
   const isBookmarked = bookmarkedWords.includes(word.id);
+
+  function handleFolderToggle(folderId: string) {
+    if (isWordInFolder(folderId, word!.id)) {
+      removeWordFromFolder(folderId, word!.id);
+    } else {
+      addWordToFolder(folderId, word!.id);
+    }
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+  }
 
   function handleBookmark() {
     toggleBookmark(word!.id);
@@ -81,6 +92,41 @@ export function WordDetailSheet({ word, onClose }: Props) {
               </View>
             </View>
           )}
+
+          {/* Folder section */}
+          {folders.length > 0 && (
+            <View style={folderStyles.section}>
+              <WKText variant="bodySm" color={Colors.text.secondary} style={{ marginBottom: Spacing.s8 }}>
+                Klasöre Ekle:
+              </WKText>
+              <View style={folderStyles.chipRow}>
+                {folders.map(folder => {
+                  const inFolder = isWordInFolder(folder.id, word.id);
+                  return (
+                    <TouchableOpacity
+                      key={folder.id}
+                      onPress={() => handleFolderToggle(folder.id)}
+                      accessibilityRole="button"
+                      accessibilityLabel={inFolder ? `${folder.name} klasöründen çıkar` : `${folder.name} klasörüne ekle`}
+                      accessibilityState={{ selected: inFolder }}
+                      style={[
+                        folderStyles.chip,
+                        inFolder ? folderStyles.chipActive : folderStyles.chipInactive,
+                      ]}
+                    >
+                      <WKText
+                        variant="caption"
+                        color={inFolder ? Colors.status.success : Colors.text.secondary}
+                        style={folderStyles.chipLabel}
+                      >
+                        {inFolder ? '✓ ' : ''}{folder.name}
+                      </WKText>
+                    </TouchableOpacity>
+                  );
+                })}
+              </View>
+            </View>
+          )}
         </ScrollView>
       </View>
     </Modal>
@@ -99,4 +145,37 @@ const styles = StyleSheet.create({
   handle: { width: 40, height: 4, backgroundColor: '#4A5568', borderRadius: 2, alignSelf: 'center', marginBottom: Spacing.s16 },
   header: { flexDirection: 'row', alignItems: 'center', marginBottom: Spacing.s8 },
   bookmarkBtn: { padding: Spacing.s4, minWidth: 44, minHeight: 44, justifyContent: 'center', alignItems: 'center' },
+});
+
+const folderStyles = StyleSheet.create({
+  section: {
+    marginTop: Spacing.s20,
+    paddingTop: Spacing.s16,
+    borderTopWidth: 1,
+    borderTopColor: Colors.bg.primaryDark,
+  },
+  chipRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: Spacing.s8,
+  },
+  chip: {
+    borderRadius: Radius.chip,
+    paddingVertical: Spacing.s8,
+    paddingHorizontal: Spacing.s16,
+    borderWidth: 1,
+    minHeight: 36,
+    justifyContent: 'center',
+  },
+  chipActive: {
+    backgroundColor: Colors.status.success + '20',
+    borderColor: Colors.status.success,
+  },
+  chipInactive: {
+    backgroundColor: Colors.bg.primaryDark,
+    borderColor: Colors.text.secondary,
+  },
+  chipLabel: {
+    fontWeight: '500',
+  },
 });
