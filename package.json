@@ -16,6 +16,8 @@
     "expo": "55.0.10-canary-20260328-2049187",
     "expo-av": "^16.0.8",
     "expo-constants": "55.0.10-canary-20260328-2049187",
+    "expo-crypto": "^55.0.10-canary-20260328-2049187",
+    "expo-file-system": "^55.0.10-canary-20260328-2049187",
     "expo-font": "^55.0.5-canary-20260328-2049187",
     "expo-haptics": "^55.0.10-canary-20260328-2049187",
     "expo-linear-gradient": "^55.0.10-canary-20260328-2049187",
