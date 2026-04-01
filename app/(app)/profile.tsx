@@ -5,6 +5,7 @@ import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
 import { useUserStore } from '@/store/useUserStore';
 import { useProgressStore } from '@/store/useProgressStore';
+import { CacheManagementCard } from '@/components/profile/CacheManagementCard';
 
 const BADGE_DEFS = [
   { id: 'first_step',           emoji: '👟', name: 'İlk Adım',           desc: 'İlk üniteyi tamamla',              xp: 50 },
@@ -65,6 +66,9 @@ export default function ProfileScreen() {
             <WKText variant="caption" color={Colors.text.secondary}>Tamamlanan Ünite</WKText>
           </WKCard>
         </View>
+
+        {/* Cache Management */}
+        <CacheManagementCard />
 
         {/* Achievements section */}
         <View style={styles.badgesSection}>
