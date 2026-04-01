@@ -1,12 +1,13 @@
 import { View, Modal, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import * as Haptics from 'expo-haptics';
-import { WKText, WKChip } from '@/components/ui';
+import { WKText, WKChip, PlayButton } from '@/components/ui';
 import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
 import { Radius } from '@/constants/radius';
 import { Word } from '@/data/words';
 import { useProgressStore } from '@/store/useProgressStore';
 import { useFolderStore } from '@/store/useFolderStore';
+import { useAudio } from '@/hooks/useAudio';
 
 interface Props {
   word: Word | null;
@@ -16,8 +17,18 @@ interface Props {
 export function WordDetailSheet({ word, onClose }: Props) {
   const { bookmarkedWords, toggleBookmark } = useProgressStore();
   const { folders, addWordToFolder, removeWordFromFolder, isWordInFolder } = useFolderStore();
+  const { play, stop, isPlaying, status } = useAudio();
+  
   if (!word) return null;
   const isBookmarked = bookmarkedWords.includes(word.id);
+
+  function handleAudioPlay() {
+    if (isPlaying) {
+      stop();
+    } else if (word.audioUrl) {
+      play(word.audioUrl);
+    }
+  }
 
   function handleFolderToggle(folderId: string) {
     if (isWordInFolder(folderId, word!.id)) {
@@ -51,7 +62,18 @@ export function WordDetailSheet({ word, onClose }: Props) {
         <View style={styles.handle} />
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={styles.header}>
-            <WKText variant="word" style={{ flex: 1 }}>{word.german}</WKText>
+            <View style={{ flex: 1 }}>
+              <WKText variant="word">{word.german}</WKText>
+              {word.audioUrl && (
+                <PlayButton
+                  onPress={handleAudioPlay}
+                  isPlaying={isPlaying}
+                  isLoading={status === 'loading'}
+                  size={40}
+                  disabled={!word.audioUrl}
+                />
+              )}
+            </View>
             <TouchableOpacity
               onPress={handleBookmark}
               accessibilityRole="button"

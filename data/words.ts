@@ -8,30 +8,31 @@ export type Word = {
   exampleTranslation: string;
   synonyms?: string[];
   level: 'A1' | 'A2' | 'B1' | 'B2' | 'C1';
+  audioUrl?: string;
 };
 
 export const WORDS: Word[] = [
   // Kategori 1, Ünite 1 — A1 Temel Kelimeler
-  { id: 1, categoryId: 1, unitId: 1, german: 'der Hund', turkish: 'köpek', example: 'Der Hund ist groß.', exampleTranslation: 'Köpek büyük.', synonyms: ['der Vierbeiner'], level: 'A1' },
-  { id: 2, categoryId: 1, unitId: 1, german: 'die Katze', turkish: 'kedi', example: 'Die Katze schläft.', exampleTranslation: 'Kedi uyuyor.', synonyms: [], level: 'A1' },
-  { id: 3, categoryId: 1, unitId: 1, german: 'das Haus', turkish: 'ev', example: 'Das Haus ist alt.', exampleTranslation: 'Ev eski.', synonyms: ['das Gebäude'], level: 'A1' },
-  { id: 4, categoryId: 1, unitId: 1, german: 'die Schule', turkish: 'okul', example: 'Ich gehe zur Schule.', exampleTranslation: 'Okula gidiyorum.', synonyms: [], level: 'A1' },
-  { id: 5, categoryId: 1, unitId: 1, german: 'das Buch', turkish: 'kitap', example: 'Das Buch ist interessant.', exampleTranslation: 'Kitap ilginç.', synonyms: ['der Band'], level: 'A1' },
-  { id: 6, categoryId: 1, unitId: 1, german: 'die Arbeit', turkish: 'iş / çalışma', example: 'Die Arbeit macht Spaß.', exampleTranslation: 'İş eğlenceli.', synonyms: ['der Job', 'die Stelle'], level: 'A1' },
-  { id: 7, categoryId: 1, unitId: 1, german: 'das Wasser', turkish: 'su', example: 'Ich trinke Wasser.', exampleTranslation: 'Su içiyorum.', synonyms: [], level: 'A1' },
-  { id: 8, categoryId: 1, unitId: 1, german: 'die Zeit', turkish: 'zaman / saat', example: 'Ich habe keine Zeit.', exampleTranslation: 'Zamanım yok.', synonyms: [], level: 'A1' },
-  { id: 9, categoryId: 1, unitId: 1, german: 'der Freund', turkish: 'erkek arkadaş / dost', example: 'Mein Freund heißt Mehmet.', exampleTranslation: 'Arkadaşımın adı Mehmet.', synonyms: ['der Kumpel'], level: 'A1' },
-  { id: 10, categoryId: 1, unitId: 1, german: 'die Straße', turkish: 'sokak / cadde', example: 'Die Straße ist lang.', exampleTranslation: 'Sokak uzun.', synonyms: ['die Gasse'], level: 'A1' },
-  { id: 11, categoryId: 1, unitId: 1, german: 'groß', turkish: 'büyük', example: 'Das ist ein großes Haus.', exampleTranslation: 'Bu büyük bir ev.', synonyms: ['riesig'], level: 'A1' },
-  { id: 12, categoryId: 1, unitId: 1, german: 'klein', turkish: 'küçük', example: 'Das Kind ist klein.', exampleTranslation: 'Çocuk küçük.', synonyms: ['winzig'], level: 'A1' },
-  { id: 13, categoryId: 1, unitId: 1, german: 'gut', turkish: 'iyi', example: 'Das Essen ist gut.', exampleTranslation: 'Yemek iyi.', synonyms: ['prima', 'toll'], level: 'A1' },
-  { id: 14, categoryId: 1, unitId: 1, german: 'schnell', turkish: 'hızlı', example: 'Das Auto ist schnell.', exampleTranslation: 'Araba hızlı.', synonyms: ['rasch', 'flott'], level: 'A1' },
-  { id: 15, categoryId: 1, unitId: 1, german: 'gehen', turkish: 'gitmek', example: 'Ich gehe nach Hause.', exampleTranslation: 'Eve gidiyorum.', synonyms: ['laufen', 'wandern'], level: 'A1' },
+  { id: 1, categoryId: 1, unitId: 1, german: 'der Hund', turkish: 'köpek', example: 'Der Hund ist groß.', exampleTranslation: 'Köpek büyük.', synonyms: ['der Vierbeiner'], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/der%20hund_de_1/' },
+  { id: 2, categoryId: 1, unitId: 1, german: 'die Katze', turkish: 'kedi', example: 'Die Katze schläft.', exampleTranslation: 'Kedi uyuyor.', synonyms: [], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/die%20katze_de_1/' },
+  { id: 3, categoryId: 1, unitId: 1, german: 'das Haus', turkish: 'ev', example: 'Das Haus ist alt.', exampleTranslation: 'Ev eski.', synonyms: ['das Gebäude'], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/das%20haus_de_1/' },
+  { id: 4, categoryId: 1, unitId: 1, german: 'die Schule', turkish: 'okul', example: 'Ich gehe zur Schule.', exampleTranslation: 'Okula gidiyorum.', synonyms: [], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/die%20schule_de_1/' },
+  { id: 5, categoryId: 1, unitId: 1, german: 'das Buch', turkish: 'kitap', example: 'Das Buch ist interessant.', exampleTranslation: 'Kitap ilginç.', synonyms: ['der Band'], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/das%20buch_de_1/' },
+  { id: 6, categoryId: 1, unitId: 1, german: 'die Arbeit', turkish: 'iş / çalışma', example: 'Die Arbeit macht Spaß.', exampleTranslation: 'İş eğlenceli.', synonyms: ['der Job', 'die Stelle'], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/die%20arbeit_de_1/' },
+  { id: 7, categoryId: 1, unitId: 1, german: 'das Wasser', turkish: 'su', example: 'Ich trinke Wasser.', exampleTranslation: 'Su içiyorum.', synonyms: [], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/das%20wasser_de_1/' },
+  { id: 8, categoryId: 1, unitId: 1, german: 'die Zeit', turkish: 'zaman / saat', example: 'Ich habe keine Zeit.', exampleTranslation: 'Zamanım yok.', synonyms: [], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/die%20zeit_de_1/' },
+  { id: 9, categoryId: 1, unitId: 1, german: 'der Freund', turkish: 'erkek arkadaş / dost', example: 'Mein Freund heißt Mehmet.', exampleTranslation: 'Arkadaşımın adı Mehmet.', synonyms: ['der Kumpel'], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/der%20freund_de_1/' },
+  { id: 10, categoryId: 1, unitId: 1, german: 'die Straße', turkish: 'sokak / cadde', example: 'Die Straße ist lang.', exampleTranslation: 'Sokak uzun.', synonyms: ['die Gasse'], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/die%20stra%C3%9Fe_de_1/' },
+  { id: 11, categoryId: 1, unitId: 1, german: 'groß', turkish: 'büyük', example: 'Das ist ein großes Haus.', exampleTranslation: 'Bu büyük bir ev.', synonyms: ['riesig'], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/gro%C3%9F_de_1/' },
+  { id: 12, categoryId: 1, unitId: 1, german: 'klein', turkish: 'küçük', example: 'Das Kind ist klein.', exampleTranslation: 'Çocuk küçük.', synonyms: ['winzig'], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/klein_de_1/' },
+  { id: 13, categoryId: 1, unitId: 1, german: 'gut', turkish: 'iyi', example: 'Das Essen ist gut.', exampleTranslation: 'Yemek iyi.', synonyms: ['prima', 'toll'], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/gut_de_1/' },
+  { id: 14, categoryId: 1, unitId: 1, german: 'schnell', turkish: 'hızlı', example: 'Das Auto ist schnell.', exampleTranslation: 'Araba hızlı.', synonyms: ['rasch', 'flott'], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/schnell_de_1/' },
+  { id: 15, categoryId: 1, unitId: 1, german: 'gehen', turkish: 'gitmek', example: 'Ich gehe nach Hause.', exampleTranslation: 'Eve gidiyorum.', synonyms: ['laufen', 'wandern'], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/gehen_de_1/' },
 
   // Kategori 2, Ünite 1 — A1–C1 Gramer & Kelime
-  { id: 16, categoryId: 2, unitId: 2, german: 'weil', turkish: 'çünkü', example: 'Ich bleibe zu Hause, weil ich krank bin.', exampleTranslation: 'Hasta olduğum için evde kalıyorum.', synonyms: ['da'], level: 'A1' },
-  { id: 17, categoryId: 2, unitId: 2, german: 'obwohl', turkish: 'her ne kadar / rağmen', example: 'Er geht spazieren, obwohl es regnet.', exampleTranslation: 'Yağmur yağmasına rağmen yürüyüşe çıkıyor.', synonyms: ['trotzdem'], level: 'B1' },
-  { id: 18, categoryId: 2, unitId: 2, german: 'deshalb', turkish: 'bu yüzden / bu nedenle', example: 'Es regnet, deshalb nehme ich einen Schirm.', exampleTranslation: 'Yağmur yağıyor, bu yüzden şemsiye alıyorum.', synonyms: ['daher', 'deswegen'], level: 'A2' },
+  { id: 16, categoryId: 2, unitId: 2, german: 'weil', turkish: 'çünkü', example: 'Ich bleibe zu Hause, weil ich krank bin.', exampleTranslation: 'Hasta olduğum için evde kalıyorum.', synonyms: ['da'], level: 'A1', audioUrl: 'https://www.forvo.com/download/audio/weil_de_1/' },
+  { id: 17, categoryId: 2, unitId: 2, german: 'obwohl', turkish: 'her ne kadar / rağmen', example: 'Er geht spazieren, obwohl es regnet.', exampleTranslation: 'Yağmur yağmasına rağmen yürüyüşe çıkıyor.', synonyms: ['trotzdem'], level: 'B1', audioUrl: 'https://www.forvo.com/download/audio/obwohl_de_1/' },
+  { id: 18, categoryId: 2, unitId: 2, german: 'deshalb', turkish: 'bu yüzden / bu nedenle', example: 'Es regnet, deshalb nehme ich einen Schirm.', exampleTranslation: 'Yağmur yağıyor, bu yüzden şemsiye alıyorum.', synonyms: ['daher', 'deswegen'], level: 'A2', audioUrl: 'https://www.forvo.com/download/audio/deshalb_de_1/' },
   { id: 19, categoryId: 2, unitId: 2, german: 'trotzdem', turkish: 'yine de / buna rağmen', example: 'Er ist müde, trotzdem arbeitet er weiter.', exampleTranslation: 'Yorgun olmasına rağmen çalışmaya devam ediyor.', synonyms: ['dennoch', 'gleichwohl'], level: 'B1' },
   { id: 20, categoryId: 2, unitId: 2, german: 'außerdem', turkish: 'ayrıca / bunun yanı sıra', example: 'Ich lerne Deutsch und außerdem spiele ich Gitarre.', exampleTranslation: 'Almanca öğreniyorum ve ayrıca gitar çalıyorum.', synonyms: ['zusätzlich', 'überdies'], level: 'A2' },
   { id: 21, categoryId: 2, unitId: 2, german: 'jedoch', turkish: 'ancak / fakat', example: 'Das Essen war gut, jedoch zu teuer.', exampleTranslation: 'Yemek iyiydi, ancak çok pahalıydı.', synonyms: ['aber', 'allerdings'], level: 'B1' },
