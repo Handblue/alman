@@ -8,6 +8,7 @@ import { Word } from '@/data/words';
 import { useProgressStore } from '@/store/useProgressStore';
 import { useFolderStore } from '@/store/useFolderStore';
 import { useAudio } from '@/hooks/useAudio';
+import { useSpeech } from '@/hooks/useSpeech';
 
 interface Props {
   word: Word | null;
@@ -18,15 +19,22 @@ export function WordDetailSheet({ word, onClose }: Props) {
   const { bookmarkedWords, toggleBookmark } = useProgressStore();
   const { folders, addWordToFolder, removeWordFromFolder, isWordInFolder } = useFolderStore();
   const { play, stop, isPlaying, status } = useAudio();
+  const { speak, stop: stopSpeech, isSpeaking, status: speechStatus } = useSpeech();
   
   if (!word) return null;
   const isBookmarked = bookmarkedWords.includes(word.id);
 
+  // Use TTS if no audioUrl, otherwise use pre-recorded audio
+  const isAudioActive = isPlaying || isSpeaking;
+  const audioStatus = isPlaying ? status : speechStatus;
+
   function handleAudioPlay() {
-    if (isPlaying) {
-      stop();
+    if (isAudioActive) {
+      isPlaying ? stop() : stopSpeech();
     } else if (word.audioUrl) {
       play(word.audioUrl);
+    } else {
+      speak(word.german);
     }
   }
 
@@ -64,15 +72,12 @@ export function WordDetailSheet({ word, onClose }: Props) {
           <View style={styles.header}>
             <View style={{ flex: 1 }}>
               <WKText variant="word">{word.german}</WKText>
-              {word.audioUrl && (
-                <PlayButton
-                  onPress={handleAudioPlay}
-                  isPlaying={isPlaying}
-                  isLoading={status === 'loading'}
-                  size={40}
-                  disabled={!word.audioUrl}
-                />
-              )}
+              <PlayButton
+                onPress={handleAudioPlay}
+                isPlaying={isAudioActive}
+                isLoading={audioStatus === 'loading'}
+                size={40}
+              />
             </View>
             <TouchableOpacity
               onPress={handleBookmark}
