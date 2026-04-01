@@ -38,6 +38,14 @@ export function WordDetailSheet({ word, onClose }: Props) {
     }
   }
 
+  function handleExamplePlay() {
+    if (isSpeaking) {
+      stopSpeech();
+    } else {
+      speak(word.example);
+    }
+  }
+
   function handleFolderToggle(folderId: string) {
     if (isWordInFolder(folderId, word!.id)) {
       removeWordFromFolder(folderId, word!.id);
@@ -102,12 +110,22 @@ export function WordDetailSheet({ word, onClose }: Props) {
           <WKText variant="bodySm" color={Colors.text.secondary} style={{ marginBottom: Spacing.s4 }}>
             Örnek cümle:
           </WKText>
-          <WKText variant="body" style={{ fontStyle: 'italic', marginBottom: Spacing.s4 }}>
-            {word.example}
-          </WKText>
-          <WKText variant="bodySm" color={Colors.text.secondary}>
-            {word.exampleTranslation}
-          </WKText>
+          <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.s8, marginBottom: Spacing.s4 }}>
+            <View style={{ flex: 1 }}>
+              <WKText variant="body" style={{ fontStyle: 'italic', marginBottom: Spacing.s4 }}>
+                {word.example}
+              </WKText>
+              <WKText variant="bodySm" color={Colors.text.secondary}>
+                {word.exampleTranslation}
+              </WKText>
+            </View>
+            <PlayButton
+              onPress={handleExamplePlay}
+              isPlaying={isSpeaking}
+              isLoading={speechStatus === 'loading'}
+              size={36}
+            />
+          </View>
 
           {word.synonyms && word.synonyms.length > 0 && (
             <View style={{ marginTop: Spacing.s16 }}>
