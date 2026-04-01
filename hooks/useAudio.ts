@@ -1,6 +1,7 @@
 import { useCallback, useRef, useState } from 'react';
 import * as Audio from 'expo-av';
 import { AVPlaybackStatus } from 'expo-av';
+import { useAudioCache } from './useAudioCache';
 
 export type AudioStatus = 'idle' | 'loading' | 'playing' | 'error';
 
@@ -8,9 +9,25 @@ export function useAudio() {
   const soundRef = useRef<Audio.Sound | null>(null);
   const [status, setStatus] = useState<AudioStatus>('idle');
   const [isPlaying, setIsPlaying] = useState(false);
+  const { readCache, saveCache, isCached, initializeCache } = useAudioCache();
 
-  const play = useCallback(async (url: string) => {
+  // Initialize cache on mount
+  useCallback(() => {
+    initializeCache();
+  }, [initializeCache])();
+
+  const play = useCallback(async (url: string, cacheKey?: string) => {
     try {
+      // Check if audio is cached
+      let audioUrl = url;
+      if (cacheKey) {
+        const cachedPath = await readCache(cacheKey, 'audio');
+        if (cachedPath) {
+          console.log(`[Audio Cache] Using cached audio: ${cacheKey}`);
+          audioUrl = cachedPath;
+        }
+      }
+
       // Stop previous audio if playing
       if (soundRef.current) {
         await soundRef.current.unloadAsync();
@@ -18,7 +35,7 @@ export function useAudio() {
 
       setStatus('loading');
       const { sound } = await Audio.Sound.createAsync(
-        { uri: url },
+        { uri: audioUrl },
         { shouldPlay: true }
       );
 
@@ -43,7 +60,7 @@ export function useAudio() {
       setStatus('error');
       setIsPlaying(false);
     }
-  }, []);
+  }, [readCache]);
 
   const stop = useCallback(async () => {
     try {
@@ -71,5 +88,5 @@ export function useAudio() {
     }
   }, []);
 
-  return { play, stop, pause, status, isPlaying };
+  return { play, stop, pause, status, isPlaying, readCache, saveCache, isCached };
 }
