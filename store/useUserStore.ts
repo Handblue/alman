@@ -1,6 +1,17 @@
 import { create } from 'zustand';
 import { MMKV } from 'react-native-mmkv';
 
+// Conditionally import Firebase services only in non-test environments
+let authService: any = null;
+let userService: any = null;
+
+if (typeof jest === 'undefined') {
+  // Only import in production/runtime
+  const { authService: as, userService: us } = require('@/services/authService');
+  authService = as;
+  userService = us;
+}
+
 const storage = new MMKV({ id: 'user-store' });
 
 function xpToLevel(xp: number): number {
@@ -26,15 +37,18 @@ interface UserState {
   lastActiveDate: string | null;
   level: number;
   badges: string[];
+  isOnline: boolean;
   setOnboarded: (v: boolean) => void;
   setLevel: (level: UserState['selectedLevel']) => void;
   setCategories: (ids: number[]) => void;
   addXP: (amount: number) => void;
   checkAndUpdateStreak: () => void;
   earnBadge: (id: string) => void;
+  syncWithCloud: () => Promise<void>;
+  initializeAuth: () => Promise<void>;
 }
 
-export const useUserStore = create<UserState>((set) => ({
+export const useUserStore = create<UserState>((set, get) => ({
   hasOnboarded: storage.getBoolean('hasOnboarded') ?? false,
   selectedLevel: (storage.getString('level') as UserState['selectedLevel']) ?? null,
   selectedCategories: JSON.parse(storage.getString('categories') ?? '[]'),
@@ -43,14 +57,34 @@ export const useUserStore = create<UserState>((set) => ({
   lastActiveDate: storage.getString('lastActiveDate') ?? null,
   level: xpToLevel(storage.getNumber('xp') ?? 0),
   badges: JSON.parse(storage.getString('badges') ?? '[]'),
-  setOnboarded: (v) => { storage.set('hasOnboarded', v); set({ hasOnboarded: v }); },
-  setLevel: (level) => { if (level) storage.set('level', level); set({ selectedLevel: level }); },
-  setCategories: (ids) => { storage.set('categories', JSON.stringify(ids)); set({ selectedCategories: ids }); },
+  isOnline: false,
+
+  setOnboarded: (v) => {
+    storage.set('hasOnboarded', v);
+    set({ hasOnboarded: v });
+    get().syncWithCloud();
+  },
+
+  setLevel: (level) => {
+    if (level) storage.set('level', level);
+    set({ selectedLevel: level });
+    get().syncWithCloud();
+  },
+
+  setCategories: (ids) => {
+    storage.set('categories', JSON.stringify(ids));
+    set({ selectedCategories: ids });
+    get().syncWithCloud();
+  },
+
   addXP: (amount) => set((s) => {
     const xp = s.xp + amount;
     storage.set('xp', xp);
-    return { xp, level: xpToLevel(xp) };
+    const level = xpToLevel(xp);
+    get().syncWithCloud();
+    return { xp, level };
   }),
+
   checkAndUpdateStreak: () => set((s) => {
     const today = getToday();
     const yesterday = getYesterday();
@@ -63,12 +97,89 @@ export const useUserStore = create<UserState>((set) => ({
     }
     storage.set('streak', streak);
     storage.set('lastActiveDate', today);
+    get().syncWithCloud();
     return { streak, lastActiveDate: today };
   }),
+
   earnBadge: (id) => set((s) => {
     if (s.badges.includes(id)) return {};
     const badges = [...s.badges, id];
     storage.set('badges', JSON.stringify(badges));
+    get().syncWithCloud();
     return { badges };
   }),
+
+  syncWithCloud: async () => {
+    if (!userService || !authService) return; // Skip in test environment
+
+    const user = authService.getCurrentUser();
+    if (!user) return;
+
+    const state = get();
+    try {
+      await userService.updateUserProfile(user.uid, {
+        xp: state.xp,
+        level: state.level,
+        streak: state.streak,
+        lastActiveDate: state.lastActiveDate || '',
+        selectedLevel: state.selectedLevel,
+        selectedCategories: state.selectedCategories,
+        badges: state.badges,
+      });
+    } catch (error) {
+      console.error('Failed to sync with cloud:', error);
+    }
+  },
+
+  initializeAuth: async () => {
+    if (!authService || !userService) {
+      // In test environment, just set online to false
+      set({ isOnline: false });
+      return;
+    }
+
+    try {
+      // Sign in anonymously
+      await authService.signInAnonymously();
+      set({ isOnline: true });
+
+      // Sync local data to cloud
+      const state = get();
+      await userService.syncLocalDataToCloud({
+        xp: state.xp,
+        level: state.level,
+        streak: state.streak,
+        lastActiveDate: state.lastActiveDate,
+        selectedLevel: state.selectedLevel,
+        selectedCategories: state.selectedCategories,
+        badges: state.badges,
+      });
+
+      // Subscribe to cloud changes
+      userService.subscribeToUserProfile(authService.getCurrentUser()!.uid, (profile) => {
+        if (profile) {
+          // Update local state with cloud data
+          storage.set('xp', profile.xp);
+          storage.set('streak', profile.streak);
+          storage.set('lastActiveDate', profile.lastActiveDate);
+          if (profile.selectedLevel) storage.set('level', profile.selectedLevel);
+          storage.set('categories', JSON.stringify(profile.selectedCategories));
+          storage.set('badges', JSON.stringify(profile.badges));
+
+          set({
+            xp: profile.xp,
+            level: profile.level,
+            streak: profile.streak,
+            lastActiveDate: profile.lastActiveDate,
+            selectedLevel: profile.selectedLevel,
+            selectedCategories: profile.selectedCategories,
+            badges: profile.badges,
+          });
+        }
+      });
+    } catch (error) {
+      console.error('Failed to initialize auth:', error);
+      set({ isOnline: false });
+    }
+  },
 }));

@@ -1,26 +1,14 @@
-import { View, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, ScrollView, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { WKText, WKCard } from '@/components/ui';
 import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
 import { Radius } from '@/constants/radius';
 import { useUserStore } from '@/store/useUserStore';
-
-const MOCK_LEADERBOARD = [
-  { rank: 1, name: 'AlmanKralı', xp: 12400, avatar: '👑' },
-  { rank: 2, name: 'DeutschProfi', xp: 9800, avatar: '🦅' },
-  { rank: 3, name: 'GoetheUstası', xp: 8200, avatar: '📚' },
-  { rank: 4, name: 'BerlinBoss', xp: 6100, avatar: '🏙️' },
-  { rank: 5, name: 'WortMeister', xp: 5400, avatar: '⚔️' },
-  { rank: 6, name: 'SprachNinja', xp: 4200, avatar: '🥷' },
-  { rank: 7, name: 'GruppeSieben', xp: 3800, avatar: '🎯' },
-  { rank: 8, name: 'LernBär', xp: 2900, avatar: '🐻' },
-  { rank: 9, name: 'DeutschFan', xp: 2100, avatar: '⭐' },
-  { rank: 10, name: 'NeuAnfänger', xp: 1400, avatar: '🌱' },
-];
+import { leaderboardService, LeaderboardEntry } from '@/services/leaderboardService';
 
 type Tab = 'weekly' | 'allTime';
 
@@ -34,20 +22,53 @@ function getMedalEmoji(rank: number): string {
 export default function LeaderboardScreen() {
   const userXP = useUserStore((s) => s.xp);
   const [activeTab, setActiveTab] = useState<Tab>('weekly');
+  const [leaderboardData, setLeaderboardData] = useState<LeaderboardEntry[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [userRank, setUserRank] = useState<number | null>(null);
 
-  // Inject user entry into the list at correct rank
-  const userEntry = { rank: 0, name: 'Sen', xp: userXP, avatar: '🎮' };
-  const allEntries = [...MOCK_LEADERBOARD];
+  useEffect(() => {
+    loadLeaderboard();
+  }, [activeTab]);
 
-  // Find user rank among mock entries
-  const userRank = allEntries.filter((e) => e.xp > userXP).length + 1;
-  userEntry.rank = userRank;
+  const loadLeaderboard = async () => {
+    setLoading(true);
+    try {
+      let data: LeaderboardEntry[];
+      if (activeTab === 'weekly') {
+        data = await leaderboardService.getWeeklyLeaderboard();
+      } else {
+        data = await leaderboardService.getTopUsers();
+      }
+      setLeaderboardData(data);
 
+      // Get user's rank
+      const user = await leaderboardService.getUserRank('current-user-id'); // TODO: Get from auth
+      setUserRank(user?.rank || null);
+    } catch (error) {
+      console.error('Failed to load leaderboard:', error);
+      // Fallback to empty array
+      setLeaderboardData([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Create user entry for display
+  const userEntry: LeaderboardEntry = {
+    uid: 'current-user',
+    displayName: 'Sen',
+    xp: userXP,
+    level: Math.floor(userXP / 500) + 1,
+    avatar: '🎮',
+    rank: userRank || 0,
+  };
+
+  const allEntries = [...leaderboardData];
   const top3 = allEntries.slice(0, 3);
   const rest = allEntries.slice(3);
 
   // Check if user is in top 10
-  const userInTop10 = userXP > allEntries[allEntries.length - 1].xp;
+  const userInTop10 = userRank && userRank <= 10;
 
   return (
     <SafeAreaView style={styles.container}>
@@ -98,87 +119,100 @@ export default function LeaderboardScreen() {
       </LinearGradient>
 
       <ScrollView showsVerticalScrollIndicator={false} style={styles.scroll}>
-        {/* Podium: top 3 */}
-        <View style={styles.podium}>
-          {/* 2nd place */}
-          <View style={[styles.podiumItem, styles.podiumSecond]}>
-            <WKText variant="heading1">{top3[1].avatar}</WKText>
-            <WKText variant="caption" color={Colors.text.secondary}>🥈</WKText>
-            <WKText variant="caption" color={Colors.text.primaryDark} numberOfLines={1}>
-              {top3[1].name}
-            </WKText>
-            <WKText variant="caption" color={Colors.accent.orange}>
-              {top3[1].xp.toLocaleString()} XP
+        {loading ? (
+          <View style={styles.loadingContainer}>
+            <ActivityIndicator size="large" color={Colors.brand.primary} />
+            <WKText variant="body" color={Colors.text.secondary} style={styles.loadingText}>
+              Sıralama yükleniyor...
             </WKText>
           </View>
-
-          {/* 1st place */}
-          <View style={[styles.podiumItem, styles.podiumFirst]}>
-            <WKText variant="hero">{top3[0].avatar}</WKText>
-            <WKText variant="heading2">🥇</WKText>
-            <WKText variant="caption" color={Colors.text.primaryDark} numberOfLines={1}>
-              {top3[0].name}
-            </WKText>
-            <WKText variant="caption" color={Colors.accent.gold}>
-              {top3[0].xp.toLocaleString()} XP
-            </WKText>
-          </View>
-
-          {/* 3rd place */}
-          <View style={[styles.podiumItem, styles.podiumThird]}>
-            <WKText variant="heading1">{top3[2].avatar}</WKText>
-            <WKText variant="caption" color={Colors.text.secondary}>🥉</WKText>
-            <WKText variant="caption" color={Colors.text.primaryDark} numberOfLines={1}>
-              {top3[2].name}
-            </WKText>
-            <WKText variant="caption" color={Colors.accent.orange}>
-              {top3[2].xp.toLocaleString()} XP
-            </WKText>
-          </View>
-        </View>
-
-        {/* Ranks 4-10 */}
-        <View style={styles.listContainer}>
-          {rest.map((entry) => (
-            <WKCard key={entry.rank} style={styles.rankRow}>
-              <View style={styles.rankLeft}>
-                <WKText variant="body" color={Colors.text.secondary} style={styles.rankNum}>
-                  {getMedalEmoji(entry.rank)}
-                </WKText>
-                <WKText variant="body">{entry.avatar}</WKText>
-                <WKText variant="body" color={Colors.text.primaryDark}>
-                  {entry.name}
-                </WKText>
-              </View>
-              <WKText variant="body" color={Colors.accent.orange}>
-                {entry.xp.toLocaleString()} XP
-              </WKText>
-            </WKCard>
-          ))}
-
-          {/* User entry */}
-          {!userInTop10 && (
-            <>
-              <View style={styles.divider}>
-                <WKText variant="caption" color={Colors.text.secondary}>• • •</WKText>
-              </View>
-              <WKCard style={[styles.rankRow, styles.userRow]}>
-                <View style={styles.rankLeft}>
-                  <WKText variant="body" color={Colors.text.secondary} style={styles.rankNum}>
-                    {userEntry.rank}.
+        ) : (
+          <>
+            {/* Podium: top 3 */}
+            {top3.length >= 3 && (
+              <View style={styles.podium}>
+                {/* 2nd place */}
+                <View style={[styles.podiumItem, styles.podiumSecond]}>
+                  <WKText variant="heading1">{top3[1].avatar || '👤'}</WKText>
+                  <WKText variant="caption" color={Colors.text.secondary}>🥈</WKText>
+                  <WKText variant="caption" color={Colors.text.primaryDark} numberOfLines={1}>
+                    {top3[1].displayName}
                   </WKText>
-                  <WKText variant="body">{userEntry.avatar}</WKText>
-                  <WKText variant="body" color={Colors.brand.primary}>
-                    {userEntry.name}
+                  <WKText variant="caption" color={Colors.accent.orange}>
+                    {top3[1].xp.toLocaleString()} XP
                   </WKText>
                 </View>
-                <WKText variant="body" color={Colors.accent.orange}>
-                  {userEntry.xp.toLocaleString()} XP
-                </WKText>
-              </WKCard>
-            </>
-          )}
-        </View>
+
+                {/* 1st place */}
+                <View style={[styles.podiumItem, styles.podiumFirst]}>
+                  <WKText variant="hero">{top3[0].avatar || '👤'}</WKText>
+                  <WKText variant="heading2">🥇</WKText>
+                  <WKText variant="caption" color={Colors.text.primaryDark} numberOfLines={1}>
+                    {top3[0].displayName}
+                  </WKText>
+                  <WKText variant="caption" color={Colors.accent.gold}>
+                    {top3[0].xp.toLocaleString()} XP
+                  </WKText>
+                </View>
+
+                {/* 3rd place */}
+                <View style={[styles.podiumItem, styles.podiumThird]}>
+                  <WKText variant="heading1">{top3[2].avatar || '👤'}</WKText>
+                  <WKText variant="caption" color={Colors.text.secondary}>🥉</WKText>
+                  <WKText variant="caption" color={Colors.text.primaryDark} numberOfLines={1}>
+                    {top3[2].displayName}
+                  </WKText>
+                  <WKText variant="caption" color={Colors.accent.orange}>
+                    {top3[2].xp.toLocaleString()} XP
+                  </WKText>
+                </View>
+              </View>
+            )}
+
+            {/* Ranks 4-10 */}
+            <View style={styles.listContainer}>
+              {rest.map((entry) => (
+                <WKCard key={entry.uid} style={styles.rankRow}>
+                  <View style={styles.rankLeft}>
+                    <WKText variant="body" color={Colors.text.secondary} style={styles.rankNum}>
+                      {getMedalEmoji(entry.rank || 0)}
+                    </WKText>
+                    <WKText variant="body">{entry.avatar || '👤'}</WKText>
+                    <WKText variant="body" color={Colors.text.primaryDark}>
+                      {entry.displayName}
+                    </WKText>
+                  </View>
+                  <WKText variant="body" color={Colors.accent.orange}>
+                    {entry.xp.toLocaleString()} XP
+                  </WKText>
+                </WKCard>
+              ))}
+
+              {/* User entry */}
+              {!userInTop10 && userRank && (
+                <>
+                  <View style={styles.divider}>
+                    <WKText variant="caption" color={Colors.text.secondary}>• • •</WKText>
+                  </View>
+                  <WKCard style={[styles.rankRow, styles.userRow]}>
+                    <View style={styles.rankLeft}>
+                      <WKText variant="body" color={Colors.text.secondary} style={styles.rankNum}>
+                        {userEntry.rank}.
+                      </WKText>
+                      <WKText variant="body">{userEntry.avatar}</WKText>
+                      <WKText variant="body" color={Colors.brand.primary}>
+                        {userEntry.displayName}
+                      </WKText>
+                    </View>
+                    <WKText variant="body" color={Colors.accent.orange}>
+                      {userEntry.xp.toLocaleString()} XP
+                    </WKText>
+                  </WKCard>
+                </>
+              )}
+            </View>
+          </>
+        )}
 
         <View style={{ height: Spacing.s32 }} />
       </ScrollView>
@@ -280,5 +314,14 @@ const styles = StyleSheet.create({
   divider: {
     alignItems: 'center',
     paddingVertical: Spacing.s4,
+  },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingVertical: Spacing.s64,
+  },
+  loadingText: {
+    marginTop: Spacing.s16,
   },
 });

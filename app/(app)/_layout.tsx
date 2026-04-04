@@ -50,6 +50,14 @@ export default function AppLayout() {
         }}
       />
       <Tabs.Screen
+        name="analytics"
+        options={{
+          title: 'Analitik',
+          tabBarIcon: ({ focused }) => <TabIcon emoji="📊" focused={focused} />,
+          tabBarAccessibilityLabel: 'Öğrenme Analitiği',
+        }}
+      />
+      <Tabs.Screen
         name="profile"
         options={{
           title: 'Profil',

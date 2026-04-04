@@ -12,15 +12,28 @@ import { RecentUnitCard } from '@/components/dashboard/RecentUnitCard';
 import { UNITS } from '@/data/units';
 import { useUserStore } from '@/store/useUserStore';
 import { useDailyChallengeStore } from '@/store/useDailyChallengeStore';
+import { useSocialStore } from '@/store/useSocialStore';
+import { useAnalyticsStore, useTodayMetrics, useTopRecommendations } from '@/store/useAnalyticsStore';
 
 export default function DashboardScreen() {
   const { xp, streak, level } = useUserStore();
   const initToday = useDailyChallengeStore((s) => s.initToday);
   const checkAndUpdateStreak = useUserStore((s) => s.checkAndUpdateStreak);
+  const { friends, challenges, friendRequests } = useSocialStore();
+  const { loadAnalyticsData, loadAIData } = useAnalyticsStore();
+  const todayMetrics = useTodayMetrics();
+  const topRecommendations = useTopRecommendations();
 
   useEffect(() => {
     initToday();
     checkAndUpdateStreak();
+
+    // Load analytics data
+    const userId = useUserStore.getState().user?.id;
+    if (userId) {
+      loadAnalyticsData(userId);
+      loadAIData(userId);
+    }
   }, []);
 
   return (
@@ -64,6 +77,81 @@ export default function DashboardScreen() {
             </WKText>
           </WKCard>
         </TouchableOpacity>
+
+        {/* Social Features */}
+        <View style={styles.socialRow}>
+          <TouchableOpacity
+            onPress={() => router.push('/(app)/friends')}
+            accessibilityRole="button"
+            accessibilityLabel="Arkadaşlar ekranına git"
+            style={[styles.socialButton, { flex: 1 }]}
+            activeOpacity={0.8}
+          >
+            <WKCard style={styles.socialCard}>
+              <WKText variant="heading2">👥</WKText>
+              <WKText variant="body" color={Colors.text.primaryDark}>
+                Arkadaşlar
+              </WKText>
+              <WKText variant="caption" color={Colors.text.secondary}>
+                {friends.length} arkadaş
+                {friendRequests.length > 0 && ` • ${friendRequests.length} istek`}
+              </WKText>
+            </WKCard>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => router.push('/(app)/challenges')}
+            accessibilityRole="button"
+            accessibilityLabel="Challenges ekranına git"
+            style={[styles.socialButton, { flex: 1 }]}
+            activeOpacity={0.8}
+          >
+            <WKCard style={styles.socialCard}>
+              <WKText variant="heading2">🏆</WKText>
+              <WKText variant="body" color={Colors.text.primaryDark}>
+                Challenges
+              </WKText>
+              <WKText variant="caption" color={Colors.text.secondary}>
+                {challenges.length} aktif
+              </WKText>
+            </WKCard>
+          </TouchableOpacity>
+        </View>
+
+        {/* Analytics & AI Features */}
+        <View style={styles.analyticsRow}>
+          <TouchableOpacity
+            onPress={() => router.push('/(app)/analytics')}
+            accessibilityRole="button"
+            accessibilityLabel="Analytics ekranına git"
+            style={[styles.analyticsButton, { flex: 1 }]}
+            activeOpacity={0.8}
+          >
+            <WKCard style={styles.analyticsCard}>
+              <WKText variant="heading2">📊</WKText>
+              <WKText variant="body" color={Colors.text.primaryDark}>
+                Analytics
+              </WKText>
+              <WKText variant="caption" color={Colors.text.secondary}>
+                {todayMetrics?.wordsLearnedToday || 0} kelime bugün
+              </WKText>
+            </WKCard>
+          </TouchableOpacity>
+
+          {topRecommendations.length > 0 && (
+            <View style={[styles.analyticsButton, { flex: 1 }]}>
+              <WKCard style={styles.analyticsCard}>
+                <WKText variant="heading2">🤖</WKText>
+                <WKText variant="body" color={Colors.text.primaryDark}>
+                  AI Öneri
+                </WKText>
+                <WKText variant="caption" color={Colors.text.secondary}>
+                  {topRecommendations[0].title}
+                </WKText>
+              </WKCard>
+            </View>
+          )}
+        </View>
 
         <WKText variant="heading2" style={{ marginBottom: Spacing.s12 }}>
           Son Çalışılan
@@ -118,5 +206,31 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+  },
+  socialRow: {
+    flexDirection: 'row',
+    gap: Spacing.s12,
+    marginBottom: Spacing.s24,
+  },
+  socialButton: {
+    flex: 1,
+  },
+  socialCard: {
+    alignItems: 'center',
+    paddingVertical: Spacing.s16,
+    gap: Spacing.s4,
+  },
+  analyticsRow: {
+    flexDirection: 'row',
+    gap: Spacing.s12,
+    marginBottom: Spacing.s24,
+  },
+  analyticsButton: {
+    flex: 1,
+  },
+  analyticsCard: {
+    alignItems: 'center',
+    paddingVertical: Spacing.s16,
+    gap: Spacing.s4,
   },
 });
