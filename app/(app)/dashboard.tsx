@@ -11,6 +11,7 @@ import { DailyChallengeCard } from '@/components/dashboard/DailyChallengeCard';
 import { RecentUnitCard } from '@/components/dashboard/RecentUnitCard';
 import { UNITS } from '@/data/units';
 import { useUserStore } from '@/store/useUserStore';
+import { auth } from '@/firebase';
 import { useDailyChallengeStore } from '@/store/useDailyChallengeStore';
 import { useSocialStore } from '@/store/useSocialStore';
 import { useAnalyticsStore, useTodayMetrics, useTopRecommendations } from '@/store/useAnalyticsStore';
@@ -29,7 +30,7 @@ export default function DashboardScreen() {
     checkAndUpdateStreak();
 
     // Load analytics data
-    const userId = useUserStore.getState().user?.id;
+    const userId = auth.currentUser?.uid;
     if (userId) {
       loadAnalyticsData(userId);
       loadAIData(userId);

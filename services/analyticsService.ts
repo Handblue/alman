@@ -1,6 +1,5 @@
 import { collection, doc, setDoc, updateDoc, getDoc, query, where, orderBy, limit, getDocs, Timestamp } from 'firebase/firestore';
-import { db } from '../config/firebase';
-import { auth } from '../config/firebase';
+import { db, auth } from '../firebase';
 
 export interface LearningSession {
   id: string;
@@ -64,7 +63,7 @@ export class AnalyticsService {
     const userId = auth.currentUser?.uid;
     if (!userId) throw new Error('User not authenticated');
 
-    const sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    const sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
     const session: Omit<LearningSession, 'endTime' | 'duration' | 'wordsStudied' | 'correctAnswers' | 'totalAnswers' | 'engagement' | 'interruptions'> = {
       id: sessionId,
       userId,
@@ -327,6 +326,7 @@ export class AnalyticsService {
     const sessions = await this.getLearningSessions(userId, 100);
 
     return {
+      userId,
       averageAccuracy: metrics.reduce((sum, m) => sum + m.accuracyRate, 0) / metrics.length || 0,
       averageSessionLength: metrics.reduce((sum, m) => sum + m.averageSessionLength, 0) / metrics.length || 0,
       studyStreak: metrics[0]?.studyStreak || 0,

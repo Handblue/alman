@@ -11,6 +11,7 @@ import { FlashCard } from '@/components/study/FlashCard';
 import { useProgressStore } from '@/store/useProgressStore';
 import { useUserStore } from '@/store/useUserStore';
 import { useAnalyticsStore } from '@/store/useAnalyticsStore';
+import { auth } from '@/firebase';
 
 export default function FlashcardScreen() {
   const { unitId } = useLocalSearchParams<{ unitId: string }>();
@@ -77,34 +78,13 @@ export default function FlashcardScreen() {
   // Start analytics session when component mounts
   useEffect(() => {
     startLearningSession('flashcard', unitId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // End analytics session when component unmounts or done
+  // End analytics session when unmounting mid-session (user navigates away)
   useEffect(() => {
     return () => {
       if (!done) {
-        // Component unmounting without completing - still track partial session
-        endLearningSession(
-          sessionStats.wordsStudied,
-          sessionStats.correctAnswers,
-          sessionStats.totalAnswers,
-          sessionStats.engagement,
-          sessionStats.interruptions
-        ).catch(console.error);
-      }
-    };
-  }, [done, sessionStats]);
-
-  // Start analytics session when component mounts
-  useEffect(() => {
-    startLearningSession('flashcard', unitId);
-  }, []);
-
-  // End analytics session when component unmounts or done
-  useEffect(() => {
-    return () => {
-      if (!done) {
-        // Component unmounting without completing - still track partial session
         endLearningSession(
           sessionStats.wordsStudied,
           sessionStats.correctAnswers,
@@ -185,7 +165,7 @@ export default function FlashcardScreen() {
         ).catch(console.error);
 
         // Generate new recommendations based on session performance
-        const userId = useUserStore.getState().user?.id;
+        const userId = auth.currentUser?.uid;
         if (userId) {
           generateRecommendations(userId).catch(console.error);
         }

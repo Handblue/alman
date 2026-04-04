@@ -1,7 +1,18 @@
-import { collection, doc, setDoc, updateDoc, getDoc, query, orderBy, limit, getDocs, Timestamp } from 'firebase/firestore';
-import { db } from '../config/firebase';
-import { auth } from '../config/firebase';
+import {
+  collection,
+  doc,
+  setDoc,
+  updateDoc,
+  query,
+  orderBy,
+  limit as firestoreLimit,
+  getDocs,
+  Timestamp,
+} from 'firebase/firestore';
+import { db, auth } from '../firebase';
 import { AnalyticsService, LearningSession, PerformanceMetrics } from './analyticsService';
+import { UNITS } from '../data/units';
+import { WORDS } from '../data/words';
 
 export interface Recommendation {
   id: string;
@@ -9,7 +20,7 @@ export interface Recommendation {
   type: 'word' | 'unit' | 'category' | 'study_mode' | 'schedule';
   title: string;
   description: string;
-  content: any; // word IDs, unit IDs, etc.
+  content: Record<string, unknown>;
   confidence: number; // 0-100
   reason: string;
   createdAt: Date;
@@ -24,12 +35,12 @@ export interface Prediction {
   type: 'progress' | 'retention' | 'completion' | 'difficulty';
   title: string;
   description: string;
-  predictedValue: any;
+  predictedValue: Record<string, unknown>;
   confidence: number;
   timeFrame: 'day' | 'week' | 'month' | 'quarter';
-  basedOn: string[]; // factors used for prediction
+  basedOn: string[];
   createdAt: Date;
-  actualValue?: any;
+  actualValue?: Record<string, unknown>;
   accuracy?: number;
 }
 
@@ -41,10 +52,40 @@ export interface LearningPath {
   units: string[];
   estimatedDuration: number; // in days
   difficulty: 'beginner' | 'intermediate' | 'advanced';
-  focus: string[]; // categories or skills
+  focus: string[];
   progress: number; // 0-100
   createdAt: Date;
   completedAt?: Date;
+}
+
+interface LearningProfile {
+  userId: string;
+  averageAccuracy: number;
+  averageSessionLength: number;
+  studyStreak: number;
+  consistencyScore: number;
+  preferredStudyMode: string;
+  learningVelocity: number;
+  totalWordsLearned: number;
+  totalStudyTime: number;
+}
+
+interface WordProgressEntry {
+  status: 'unknown' | 'learning' | 'known';
+  correctCount?: number;
+  incorrectCount?: number;
+  lastReviewed?: number;
+  easeFactor?: number;
+  repetitions?: number;
+}
+
+interface LearningPatterns {
+  consistencyBonus: number;
+  masteryBonus: number;
+  modePerformance: Record<string, { score: number; recency: number; count: number }>;
+  recentAccuracy: number;
+  learningVelocity: number;
+  weakHours: number[];
 }
 
 export class AIService {
@@ -62,7 +103,8 @@ export class AIService {
     this.analyticsService = AnalyticsService.getInstance();
   }
 
-  // Recommendation Engine
+  // ─── Recommendation Engine ───────────────────────────────────────────────
+
   async generateRecommendations(userId: string): Promise<Recommendation[]> {
     const profile = await this.analyticsService.getUserLearningProfile(userId);
     const recentSessions = await this.analyticsService.getLearningSessions(userId, 20);
@@ -70,31 +112,22 @@ export class AIService {
 
     const recommendations: Omit<Recommendation, 'id' | 'createdAt'>[] = [];
 
-    // Study mode recommendations
     const studyModeRec = this.recommendStudyMode(profile, recentSessions);
     if (studyModeRec) recommendations.push(studyModeRec);
 
-    // Content recommendations
-    const contentRecs = await this.recommendContent(userId, profile, recentSessions);
+    const contentRecs = await this.recommendContent(userId, recentSessions);
     recommendations.push(...contentRecs);
 
-    // Schedule recommendations
     const scheduleRec = this.recommendSchedule(profile, recentMetrics);
     if (scheduleRec) recommendations.push(scheduleRec);
 
-    // Difficulty adjustment
-    const difficultyRec = this.recommendDifficulty(profile, recentMetrics);
+    const difficultyRec = this.recommendDifficulty(userId, profile, recentMetrics);
     if (difficultyRec) recommendations.push(difficultyRec);
 
-    // Save recommendations to Firebase
     const savedRecommendations: Recommendation[] = [];
     for (const rec of recommendations) {
-      const recId = `rec_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-      const fullRec: Recommendation = {
-        ...rec,
-        id: recId,
-        createdAt: new Date(),
-      };
+      const recId = `rec_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+      const fullRec: Recommendation = { ...rec, id: recId, createdAt: new Date() };
 
       try {
         await setDoc(doc(db, 'analytics', userId, 'recommendations', recId), {
@@ -112,19 +145,23 @@ export class AIService {
     return savedRecommendations;
   }
 
-  private recommendStudyMode(profile: any, sessions: LearningSession[]): Omit<Recommendation, 'id' | 'createdAt'> | null {
-    const modePerformance: Record<string, { accuracy: number, count: number }> = {};
+  private recommendStudyMode(
+    profile: LearningProfile,
+    sessions: LearningSession[]
+  ): Omit<Recommendation, 'id' | 'createdAt'> | null {
+    const modePerformance: Record<string, { accuracy: number; count: number }> = {};
 
     sessions.forEach(session => {
       if (!modePerformance[session.studyMode]) {
         modePerformance[session.studyMode] = { accuracy: 0, count: 0 };
       }
-      const accuracy = session.totalAnswers > 0 ? (session.correctAnswers / session.totalAnswers) * 100 : 0;
+      const accuracy = session.totalAnswers > 0
+        ? (session.correctAnswers / session.totalAnswers) * 100
+        : 0;
       modePerformance[session.studyMode].accuracy += accuracy;
       modePerformance[session.studyMode].count += 1;
     });
 
-    // Find best performing mode
     let bestMode = profile.preferredStudyMode;
     let bestScore = 0;
 
@@ -145,30 +182,25 @@ export class AIService {
         content: { studyMode: bestMode },
         confidence: Math.min(bestScore, 95),
         reason: `Higher accuracy rate in ${bestMode} mode`,
-        expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
+        expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
       };
     }
 
     return null;
   }
 
-  private recommendContent(
+  private async recommendContent(
     userId: string,
-    profile: any,
     sessions: LearningSession[]
   ): Promise<Omit<Recommendation, 'id' | 'createdAt'>[]> {
-    // Enhanced content recommendation with machine learning-like algorithms
     const recommendations: Omit<Recommendation, 'id' | 'createdAt'>[] = [];
 
-    // Get user's progress data
-    const progressStore = (await import('../store/useProgressStore')).useProgressStore.getState();
-    const userProgress = progressStore.getUserProgress(userId);
+    const { useProgressStore } = await import('../store/useProgressStore');
+    const userProgress = useProgressStore.getState().wordProgress as Record<string, WordProgressEntry>;
 
-    // Analyze learning patterns
     const learningPatterns = this.analyzeLearningPatterns(sessions, userProgress);
 
-    // Weak categories analysis
-    const weakCategories = this.identifyWeakCategoriesAdvanced(userProgress, sessions, learningPatterns);
+    const weakCategories = this.identifyWeakCategoriesAdvanced(userProgress, sessions);
     if (weakCategories.length > 0) {
       recommendations.push({
         userId,
@@ -178,39 +210,40 @@ export class AIService {
         content: { categories: weakCategories },
         confidence: Math.min(95, 75 + learningPatterns.consistencyBonus),
         reason: 'Advanced pattern analysis shows these areas need attention',
-        expiresAt: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000), // 3 days
+        expiresAt: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
       });
     }
 
-    // Spaced repetition recommendations
-    const spacedRepRecs = this.generateSpacedRepetitionRecommendations(userProgress, sessions);
+    const spacedRepRecs = this.generateSpacedRepetitionRecommendations(userId, userProgress);
     recommendations.push(...spacedRepRecs);
 
-    // Next units based on mastery levels
-    const nextUnits = this.recommendNextUnitsAdvanced(userProgress, learningPatterns);
+    const nextUnits = this.recommendNextUnits(userProgress, learningPatterns);
     if (nextUnits.length > 0) {
       recommendations.push({
         userId,
         type: 'unit',
         title: 'Continue your progress',
-        description: `Ready for ${nextUnits[0].name}? (${nextUnits[0].estimatedDifficulty})`,
+        description: `Ready for ${nextUnits[0].title}?`,
         content: { units: nextUnits.map(u => u.id) },
         confidence: Math.min(95, 80 + learningPatterns.masteryBonus),
         reason: 'Based on your current mastery levels and learning velocity',
-        expiresAt: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000), // 5 days
+        expiresAt: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000),
       });
     }
 
-    // Word-specific recommendations
-    const wordRecs = this.recommendSpecificWords(userProgress, sessions, learningPatterns);
+    const wordRecs = this.recommendSpecificWords(userId, userProgress, sessions, learningPatterns);
     recommendations.push(...wordRecs);
 
     return recommendations;
   }
 
-  private recommendSchedule(profile: any, metrics: PerformanceMetrics[]): Omit<Recommendation, 'id' | 'createdAt'> | null {
+  private recommendSchedule(
+    profile: LearningProfile,
+    metrics: PerformanceMetrics[]
+  ): Omit<Recommendation, 'id' | 'createdAt'> | null {
     const recentMetrics = metrics.slice(0, 7);
-    const avgSessionLength = recentMetrics.reduce((sum, m) => sum + m.averageSessionLength, 0) / recentMetrics.length;
+    const avgSessionLength =
+      recentMetrics.reduce((sum, m) => sum + m.averageSessionLength, 0) / recentMetrics.length;
 
     if (profile.consistencyScore < 60) {
       return {
@@ -218,21 +251,23 @@ export class AIService {
         type: 'schedule',
         title: 'Build a study habit',
         description: `Try studying ${Math.round(avgSessionLength)} minutes daily to build consistency`,
-        content: {
-          suggestedDuration: Math.round(avgSessionLength),
-          frequency: 'daily'
-        },
+        content: { suggestedDuration: Math.round(avgSessionLength), frequency: 'daily' },
         confidence: 80,
         reason: 'Consistency leads to better retention',
-        expiresAt: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000), // 14 days
+        expiresAt: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000),
       };
     }
 
     return null;
   }
 
-  private recommendDifficulty(profile: any, metrics: PerformanceMetrics[]): Omit<Recommendation, 'id' | 'createdAt'> | null {
-    const recentAccuracy = metrics.slice(0, 3).reduce((sum, m) => sum + m.accuracyRate, 0) / 3;
+  private recommendDifficulty(
+    userId: string,
+    profile: LearningProfile,
+    metrics: PerformanceMetrics[]
+  ): Omit<Recommendation, 'id' | 'createdAt'> | null {
+    const recentAccuracy =
+      metrics.slice(0, 3).reduce((sum, m) => sum + m.accuracyRate, 0) / 3;
 
     if (recentAccuracy > 85 && profile.averageAccuracy > 80) {
       return {
@@ -243,7 +278,7 @@ export class AIService {
         content: { difficulty: 'hard' },
         confidence: Math.min(recentAccuracy, 95),
         reason: 'High accuracy indicates readiness for increased difficulty',
-        expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
+        expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
       };
     } else if (recentAccuracy < 60) {
       return {
@@ -254,14 +289,15 @@ export class AIService {
         content: { difficulty: 'easy' },
         confidence: 85,
         reason: 'Lower accuracy suggests need for easier content',
-        expiresAt: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000), // 3 days
+        expiresAt: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
       };
     }
 
     return null;
   }
 
-  // Prediction Engine
+  // ─── Prediction Engine ───────────────────────────────────────────────────
+
   async generatePredictions(userId: string): Promise<Prediction[]> {
     const profile = await this.analyticsService.getUserLearningProfile(userId);
     const metrics = await this.analyticsService.getPerformanceMetrics(userId, 30);
@@ -269,27 +305,19 @@ export class AIService {
 
     const predictions: Omit<Prediction, 'id' | 'createdAt'>[] = [];
 
-    // Progress prediction
     const progressPred = this.predictProgress(profile, metrics);
     if (progressPred) predictions.push(progressPred);
 
-    // Retention prediction
     const retentionPred = this.predictRetention(profile, sessions);
     if (retentionPred) predictions.push(retentionPred);
 
-    // Completion prediction
     const completionPred = this.predictCompletion(profile, metrics);
     if (completionPred) predictions.push(completionPred);
 
-    // Save predictions to Firebase
     const savedPredictions: Prediction[] = [];
     for (const pred of predictions) {
-      const predId = `pred_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-      const fullPred: Prediction = {
-        ...pred,
-        id: predId,
-        createdAt: new Date(),
-      };
+      const predId = `pred_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+      const fullPred: Prediction = { ...pred, id: predId, createdAt: new Date() };
 
       try {
         await setDoc(doc(db, 'analytics', userId, 'predictions', predId), {
@@ -305,14 +333,21 @@ export class AIService {
     return savedPredictions;
   }
 
-  private predictProgress(profile: any, metrics: PerformanceMetrics[]): Omit<Prediction, 'id' | 'createdAt'> | null {
+  private predictProgress(
+    profile: LearningProfile,
+    metrics: PerformanceMetrics[]
+  ): Omit<Prediction, 'id' | 'createdAt'> | null {
     if (metrics.length < 7) return null;
 
     const recentMetrics = metrics.slice(0, 7);
-    const avgWordsPerDay = recentMetrics.reduce((sum, m) => sum + m.wordsLearnedToday, 0) / 7;
+    const avgWordsPerDay =
+      recentMetrics.reduce((sum, m) => sum + m.wordsLearnedToday, 0) / 7;
     const trend = this.calculateTrend(recentMetrics.map(m => m.wordsLearnedToday));
 
-    const predictedWordsThisWeek = Math.max(0, Math.round(avgWordsPerDay * 7 * (1 + trend * 0.1)));
+    const predictedWordsThisWeek = Math.max(
+      0,
+      Math.round(avgWordsPerDay * 7 * (1 + trend * 0.1))
+    );
     const confidence = Math.min(85, 60 + Math.abs(trend) * 20);
 
     return {
@@ -327,14 +362,20 @@ export class AIService {
     };
   }
 
-  private predictRetention(profile: any, sessions: LearningSession[]): Omit<Prediction, 'id' | 'createdAt'> | null {
+  private predictRetention(
+    profile: LearningProfile,
+    sessions: LearningSession[]
+  ): Omit<Prediction, 'id' | 'createdAt'> | null {
     const recentSessions = sessions.slice(0, 10);
-    const avgAccuracy = recentSessions.reduce((sum, s) => {
-      const accuracy = s.totalAnswers > 0 ? (s.correctAnswers / s.totalAnswers) * 100 : 0;
-      return sum + accuracy;
-    }, 0) / recentSessions.length;
+    if (recentSessions.length === 0) return null;
 
-    // Simple retention model: accuracy correlates with retention
+    const avgAccuracy =
+      recentSessions.reduce((sum, s) => {
+        const accuracy =
+          s.totalAnswers > 0 ? (s.correctAnswers / s.totalAnswers) * 100 : 0;
+        return sum + accuracy;
+      }, 0) / recentSessions.length;
+
     const predictedRetention = Math.min(95, Math.max(60, avgAccuracy * 0.9 + 10));
 
     return {
@@ -349,12 +390,16 @@ export class AIService {
     };
   }
 
-  private predictCompletion(profile: any, metrics: PerformanceMetrics[]): Omit<Prediction, 'id' | 'createdAt'> | null {
+  private predictCompletion(
+    profile: LearningProfile,
+    metrics: PerformanceMetrics[]
+  ): Omit<Prediction, 'id' | 'createdAt'> | null {
     const totalWordsLearned = metrics.reduce((sum, m) => sum + m.wordsLearnedToday, 0);
-    const avgWordsPerDay = metrics.slice(0, 30).reduce((sum, m) => sum + m.wordsLearnedToday, 0) / 30;
+    const avgWordsPerDay =
+      metrics.slice(0, 30).reduce((sum, m) => sum + m.wordsLearnedToday, 0) / 30;
 
-    // Assume target is 2000 words for completion
-    const remainingWords = Math.max(0, 2000 - totalWordsLearned);
+    const totalWords = WORDS.length;
+    const remainingWords = Math.max(0, totalWords - totalWordsLearned);
     const estimatedDays = avgWordsPerDay > 0 ? remainingWords / avgWordsPerDay : 365;
 
     const completionDate = new Date();
@@ -372,41 +417,52 @@ export class AIService {
     };
   }
 
-  // Advanced AI Methods
-  private analyzeLearningPatterns(sessions: LearningSession[], userProgress: any): any {
-    // Analyze learning patterns for better recommendations
-    const recentSessions = sessions.slice(0, 20); // Last 20 sessions
+  // ─── Advanced AI Methods ─────────────────────────────────────────────────
 
-    // Calculate consistency bonus
+  private analyzeLearningPatterns(
+    sessions: LearningSession[],
+    userProgress: Record<string, WordProgressEntry>
+  ): LearningPatterns {
+    const recentSessions = sessions.slice(0, 20);
+
     const sessionDates = recentSessions.map(s => s.startTime.toDateString());
     const uniqueDays = new Set(sessionDates).size;
-    const totalDays = Math.ceil((Date.now() - recentSessions[recentSessions.length - 1]?.startTime.toMillis()) / (1000 * 60 * 60 * 24));
+    const oldestSession = recentSessions[recentSessions.length - 1];
+    const totalDays = oldestSession
+      ? Math.ceil(
+          (Date.now() - oldestSession.startTime.getTime()) / (1000 * 60 * 60 * 24)
+        )
+      : 1;
     const consistencyRatio = uniqueDays / Math.max(totalDays, 1);
     const consistencyBonus = Math.min(20, consistencyRatio * 20);
 
-    // Calculate mastery bonus based on overall progress
     const totalWords = Object.keys(userProgress).length;
-    const masteredWords = Object.values(userProgress).filter((p: any) => p.status === 'known').length;
+    const masteredWords = Object.values(userProgress).filter(
+      p => p.status === 'known'
+    ).length;
     const masteryRatio = masteredWords / Math.max(totalWords, 1);
     const masteryBonus = Math.min(15, masteryRatio * 15);
 
-    // Analyze study mode preferences with time-based weighting
-    const modePerformance: Record<string, { score: number, recency: number, count: number }> = {};
+    const modePerformance: Record<
+      string,
+      { score: number; recency: number; count: number }
+    > = {};
     recentSessions.forEach((session, index) => {
-      const recencyWeight = 1 - (index / recentSessions.length); // More recent sessions have higher weight
-      const accuracy = session.totalAnswers > 0 ? (session.correctAnswers / session.totalAnswers) * 100 : 0;
-      const engagement = session.engagement;
+      const recencyWeight = 1 - index / recentSessions.length;
+      const accuracy =
+        session.totalAnswers > 0
+          ? (session.correctAnswers / session.totalAnswers) * 100
+          : 0;
 
       if (!modePerformance[session.studyMode]) {
         modePerformance[session.studyMode] = { score: 0, recency: 0, count: 0 };
       }
-
-      modePerformance[session.studyMode].score += (accuracy * 0.7 + engagement * 0.3) * recencyWeight;
+      modePerformance[session.studyMode].score +=
+        (accuracy * 0.7 + session.engagement * 0.3) * recencyWeight;
       modePerformance[session.studyMode].recency += recencyWeight;
       modePerformance[session.studyMode].count += 1;
     });
 
-    // Calculate average scores
     Object.keys(modePerformance).forEach(mode => {
       modePerformance[mode].score /= modePerformance[mode].recency;
     });
@@ -415,8 +471,16 @@ export class AIService {
       consistencyBonus,
       masteryBonus,
       modePerformance,
-      recentAccuracy: recentSessions.length > 0 ?
-        recentSessions.slice(0, 5).reduce((sum, s) => sum + (s.correctAnswers / Math.max(s.totalAnswers, 1)), 0) / 5 : 0,
+      recentAccuracy:
+        recentSessions.length > 0
+          ? recentSessions
+              .slice(0, 5)
+              .reduce(
+                (sum, s) =>
+                  sum + s.correctAnswers / Math.max(s.totalAnswers, 1),
+                0
+              ) / 5
+          : 0,
       learningVelocity: this.calculateLearningVelocity(sessions),
       weakHours: this.identifyWeakStudyHours(sessions),
     };
@@ -424,220 +488,213 @@ export class AIService {
 
   private calculateLearningVelocity(sessions: LearningSession[]): number {
     if (sessions.length < 2) return 1;
-
     const recentSessions = sessions.slice(0, 10);
-    const totalWords = recentSessions.reduce((sum, s) => sum + s.wordsStudied.length, 0);
+    const totalWords = recentSessions.reduce(
+      (sum, s) => sum + s.wordsStudied.length,
+      0
+    );
     const totalTime = recentSessions.reduce((sum, s) => sum + s.duration, 0);
-
-    return totalTime > 0 ? totalWords / (totalTime / 60) : 1; // words per hour
+    return totalTime > 0 ? totalWords / (totalTime / 60) : 1;
   }
 
   private identifyWeakStudyHours(sessions: LearningSession[]): number[] {
-    const hourPerformance: Record<number, { accuracy: number, count: number }> = {};
+    const hourPerformance: Record<number, { accuracy: number; count: number }> = {};
 
     sessions.forEach(session => {
-      const hour = session.startTime.toDate().getHours();
-      const accuracy = session.totalAnswers > 0 ? (session.correctAnswers / session.totalAnswers) * 100 : 0;
+      const hour = session.startTime.getHours();
+      const accuracy =
+        session.totalAnswers > 0
+          ? (session.correctAnswers / session.totalAnswers) * 100
+          : 0;
 
       if (!hourPerformance[hour]) {
         hourPerformance[hour] = { accuracy: 0, count: 0 };
       }
-
       hourPerformance[hour].accuracy += accuracy;
       hourPerformance[hour].count += 1;
     });
 
-    // Find hours with below-average performance
-    const avgAccuracy = Object.values(hourPerformance).reduce((sum, h) => sum + (h.accuracy / h.count), 0) /
-                       Object.keys(hourPerformance).length;
+    const entries = Object.entries(hourPerformance);
+    if (entries.length === 0) return [];
 
-    return Object.entries(hourPerformance)
-      .filter(([, data]) => (data.accuracy / data.count) < avgAccuracy * 0.8)
-      .map(([hour]) => parseInt(hour));
+    const avgAccuracy =
+      entries.reduce((sum, [, data]) => sum + data.accuracy / data.count, 0) /
+      entries.length;
+
+    return entries
+      .filter(([, data]) => data.accuracy / data.count < avgAccuracy * 0.8)
+      .map(([hour]) => parseInt(hour, 10));
   }
 
-  private identifyWeakCategoriesAdvanced(userProgress: any, sessions: LearningSession[], patterns: any): string[] {
-    const categoryPerformance: Record<string, { correct: number, total: number, recency: number }> = {};
+  private identifyWeakCategoriesAdvanced(
+    userProgress: Record<string, WordProgressEntry>,
+    sessions: LearningSession[]
+  ): string[] {
+    const categoryPerformance: Record<
+      string,
+      { correct: number; total: number }
+    > = {};
 
-    // Analyze performance by category from recent sessions
     sessions.slice(0, 15).forEach((session, index) => {
-      const recencyWeight = 1 - (index / 15);
+      const recencyWeight = 1 - index / 15;
       session.wordsStudied.forEach(wordId => {
-        // Get word category (simplified - would need actual word data)
         const category = this.getWordCategory(wordId);
-
         if (!categoryPerformance[category]) {
-          categoryPerformance[category] = { correct: 0, total: 0, recency: 0 };
+          categoryPerformance[category] = { correct: 0, total: 0 };
         }
-
         categoryPerformance[category].total += recencyWeight;
-        categoryPerformance[category].recency += recencyWeight;
-
-        // Check if word was answered correctly (simplified logic)
         const progress = userProgress[wordId];
-        if (progress && progress.status === 'known') {
+        if (progress?.status === 'known') {
           categoryPerformance[category].correct += recencyWeight;
         }
       });
     });
 
-    // Calculate accuracy rates and find weak categories
-    const weakCategories: string[] = [];
-    Object.entries(categoryPerformance).forEach(([category, data]) => {
-      const accuracy = data.correct / data.total;
-      if (accuracy < 0.7 && data.total > 2) { // Less than 70% accuracy and enough data
-        weakCategories.push(category);
-      }
-    });
-
-    return weakCategories.slice(0, 3); // Return top 3 weak categories
+    return Object.entries(categoryPerformance)
+      .filter(([, data]) => data.total > 2 && data.correct / data.total < 0.7)
+      .map(([category]) => category)
+      .slice(0, 3);
   }
 
-  private generateSpacedRepetitionRecommendations(userProgress: any, sessions: LearningSession[]): Omit<Recommendation, 'id' | 'createdAt'>[] {
-    const recommendations: Omit<Recommendation, 'id' | 'createdAt'>[] = [];
-
-    // Find words that need review based on spaced repetition algorithm
+  private generateSpacedRepetitionRecommendations(
+    userId: string,
+    userProgress: Record<string, WordProgressEntry>
+  ): Omit<Recommendation, 'id' | 'createdAt'>[] {
     const now = Date.now();
-    const reviewCandidates: any[] = [];
+    const reviewCandidates: { wordId: string; daysOverdue: number }[] = [];
 
-    Object.entries(userProgress).forEach(([wordId, progress]: [string, any]) => {
+    Object.entries(userProgress).forEach(([wordId, progress]) => {
       if (progress.lastReviewed) {
-        const daysSinceReview = (now - progress.lastReviewed) / (1000 * 60 * 60 * 24);
-        const idealReviewInterval = this.calculateIdealReviewInterval(progress.easeFactor || 2.5, progress.repetitions || 0);
+        const daysSinceReview =
+          (now - progress.lastReviewed) / (1000 * 60 * 60 * 24);
+        const idealInterval = this.calculateIdealReviewInterval(
+          progress.easeFactor ?? 2.5,
+          progress.repetitions ?? 0
+        );
 
-        if (daysSinceReview > idealReviewInterval * 0.9) { // Due for review
+        if (daysSinceReview > idealInterval * 0.9) {
           reviewCandidates.push({
             wordId,
-            daysOverdue: daysSinceReview - idealReviewInterval,
-            easeFactor: progress.easeFactor || 2.5,
-            repetitions: progress.repetitions || 0
+            daysOverdue: daysSinceReview - idealInterval,
           });
         }
       }
     });
 
-    // Sort by urgency and take top recommendations
     reviewCandidates.sort((a, b) => b.daysOverdue - a.daysOverdue);
 
-    if (reviewCandidates.length > 0) {
-      const urgentReviews = reviewCandidates.slice(0, 5);
-      recommendations.push({
-        userId: 'current-user', // Will be set by caller
+    if (reviewCandidates.length === 0) return [];
+
+    const urgentReviews = reviewCandidates.slice(0, 5);
+    return [
+      {
+        userId,
         type: 'word',
         title: 'Review time!',
         description: `${urgentReviews.length} words are ready for spaced repetition review`,
-        content: { words: urgentReviews.map(r => r.wordId), reviewType: 'spaced' },
+        content: {
+          words: urgentReviews.map(r => r.wordId),
+          reviewType: 'spaced',
+        },
         confidence: Math.min(95, 70 + urgentReviews.length * 2),
         reason: 'Spaced repetition algorithm indicates optimal review timing',
-        expiresAt: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000), // 1 day
-      });
-    }
-
-    return recommendations;
+        expiresAt: new Date(Date.now() + 24 * 60 * 60 * 1000),
+      },
+    ];
   }
 
-  private calculateIdealReviewInterval(easeFactor: number, repetitions: number): number {
-    // Simplified SM-2 algorithm
+  private calculateIdealReviewInterval(
+    easeFactor: number,
+    repetitions: number
+  ): number {
     if (repetitions === 0) return 1;
     if (repetitions === 1) return 6;
     return Math.round(6 * Math.pow(easeFactor, repetitions - 1));
   }
 
-  private recommendNextUnitsAdvanced(userProgress: any, patterns: any): any[] {
-    // Advanced unit recommendation based on mastery levels and learning patterns
-    const units = (global as any).UNITS || []; // Would need to import properly
-
-    const unitMastery: any[] = units.map(unit => {
-      const unitWords = unit.words || [];
-      const masteredCount = unitWords.filter((wordId: string) =>
-        userProgress[wordId]?.status === 'known'
+  private recommendNextUnits(
+    userProgress: Record<string, WordProgressEntry>,
+    patterns: LearningPatterns
+  ): typeof UNITS {
+    const unitsWithMastery = UNITS.map(unit => {
+      const unitWords = WORDS.filter(w => w.unitId === unit.id);
+      const masteredCount = unitWords.filter(
+        w => userProgress[w.id.toString()]?.status === 'known'
       ).length;
-
-      const masteryLevel = unitWords.length > 0 ? masteredCount / unitWords.length : 0;
-
-      return {
-        ...unit,
-        masteryLevel,
-        estimatedDifficulty: this.estimateUnitDifficulty(unit, patterns),
-        prerequisiteReady: this.checkPrerequisites(unit, userProgress)
-      };
+      const masteryLevel =
+        unitWords.length > 0 ? masteredCount / unitWords.length : 0;
+      return { unit, masteryLevel };
     });
 
-    // Find units that are ready to learn
-    const readyUnits = unitMastery
-      .filter(unit => unit.prerequisiteReady && unit.masteryLevel < 0.8)
+    return unitsWithMastery
+      .filter(({ masteryLevel }) => masteryLevel < 0.8)
       .sort((a, b) => {
-        // Prioritize based on difficulty match and progress
-        const aScore = a.masteryLevel * 0.3 + (1 - Math.abs(a.estimatedDifficulty - patterns.recentAccuracy / 100)) * 0.4 + a.prerequisiteReady * 0.3;
-        const bScore = b.masteryLevel * 0.3 + (1 - Math.abs(b.estimatedDifficulty - patterns.recentAccuracy / 100)) * 0.4 + b.prerequisiteReady * 0.3;
+        const aScore =
+          a.masteryLevel * 0.5 +
+          (1 - Math.abs(0.5 - patterns.recentAccuracy)) * 0.5;
+        const bScore =
+          b.masteryLevel * 0.5 +
+          (1 - Math.abs(0.5 - patterns.recentAccuracy)) * 0.5;
         return bScore - aScore;
-      });
-
-    return readyUnits.slice(0, 3);
+      })
+      .slice(0, 3)
+      .map(({ unit }) => unit);
   }
 
-  private estimateUnitDifficulty(unit: any, patterns: any): number {
-    // Estimate difficulty based on unit characteristics and user patterns
-    const baseDifficulty = unit.difficulty || 0.5;
-    const velocityAdjustment = patterns.learningVelocity > 2 ? 0.1 : patterns.learningVelocity < 1 ? -0.1 : 0;
-    const consistencyAdjustment = patterns.consistencyBonus > 10 ? 0.05 : 0;
+  private recommendSpecificWords(
+    userId: string,
+    userProgress: Record<string, WordProgressEntry>,
+    sessions: LearningSession[],
+    patterns: LearningPatterns
+  ): Omit<Recommendation, 'id' | 'createdAt'>[] {
+    const strugglingWords: {
+      wordId: string;
+      difficulty: number;
+      urgency: number;
+      category: string;
+    }[] = [];
 
-    return Math.max(0.1, Math.min(0.9, baseDifficulty + velocityAdjustment + consistencyAdjustment));
-  }
-
-  private checkPrerequisites(unit: any, userProgress: any): boolean {
-    // Check if user has mastered prerequisite units
-    if (!unit.prerequisites) return true;
-
-    return unit.prerequisites.every((prereqId: string) => {
-      const prereqUnit = (global as any).UNITS?.find((u: any) => u.id === prereqId);
-      if (!prereqUnit) return true;
-
-      const prereqWords = prereqUnit.words || [];
-      const masteredCount = prereqWords.filter((wordId: string) =>
-        userProgress[wordId]?.status === 'known'
-      ).length;
-
-      return prereqWords.length > 0 && (masteredCount / prereqWords.length) > 0.7;
-    });
-  }
-
-  private recommendSpecificWords(userProgress: any, sessions: LearningSession[], patterns: any): Omit<Recommendation, 'id' | 'createdAt'>[] {
-    const recommendations: Omit<Recommendation, 'id' | 'createdAt'>[] = [];
-
-    // Find words that user struggles with but could benefit from focused practice
-    const strugglingWords: any[] = [];
-
-    Object.entries(userProgress).forEach(([wordId, progress]: [string, any]) => {
-      if (progress.status === 'learning' || progress.incorrectCount > progress.correctCount) {
+    Object.entries(userProgress).forEach(([wordId, progress]) => {
+      const incorrectCount = progress.incorrectCount ?? 0;
+      const correctCount = progress.correctCount ?? 0;
+      if (
+        progress.status === 'learning' ||
+        incorrectCount > correctCount
+      ) {
         const difficulty = this.assessWordDifficulty(wordId, sessions);
-        const reviewUrgency = this.calculateReviewUrgency(progress, patterns);
+        const urgency = this.calculateReviewUrgency(progress);
 
-        if (reviewUrgency > 0.7) {
+        if (urgency > 0.7) {
           strugglingWords.push({
             wordId,
             difficulty,
-            urgency: reviewUrgency,
-            category: this.getWordCategory(wordId)
+            urgency,
+            category: this.getWordCategory(wordId),
           });
         }
       }
     });
 
-    // Group by category and recommend focused practice
-    const categoryGroups = strugglingWords.reduce((groups, word) => {
-      if (!groups[word.category]) groups[word.category] = [];
-      groups[word.category].push(word);
-      return groups;
-    }, {} as Record<string, any[]>);
+    const categoryGroups = strugglingWords.reduce(
+      (groups: Record<string, typeof strugglingWords>, word) => {
+        if (!groups[word.category]) groups[word.category] = [];
+        groups[word.category].push(word);
+        return groups;
+      },
+      {}
+    );
+
+    const recommendations: Omit<Recommendation, 'id' | 'createdAt'>[] = [];
 
     Object.entries(categoryGroups).forEach(([category, words]) => {
       if (words.length >= 3) {
-        const avgDifficulty = words.reduce((sum, w) => sum + w.difficulty, 0) / words.length;
-        const difficulty = avgDifficulty > 0.7 ? 'hard' : avgDifficulty > 0.4 ? 'medium' : 'easy';
+        const avgDifficulty =
+          words.reduce((sum, w) => sum + w.difficulty, 0) / words.length;
+        const difficulty =
+          avgDifficulty > 0.7 ? 'hard' : avgDifficulty > 0.4 ? 'medium' : 'easy';
 
         recommendations.push({
-          userId: 'current-user',
+          userId,
           type: 'word',
           title: `${category} practice needed`,
           description: `${words.length} words in ${category} need focused practice`,
@@ -645,83 +702,92 @@ export class AIService {
             words: words.map(w => w.wordId),
             category,
             difficulty,
-            focus: 'accuracy'
+            focus: 'accuracy',
           },
           confidence: Math.min(90, 60 + words.length * 3),
           reason: `Pattern analysis shows difficulty with ${category} vocabulary`,
-          expiresAt: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000), // 2 days
+          expiresAt: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000),
         });
       }
     });
 
+    // suppress unused variable warning — patterns is reserved for future weighting
+    void patterns;
+
     return recommendations;
   }
 
-  private assessWordDifficulty(wordId: string, sessions: LearningSession[]): number {
-    // Assess word difficulty based on session performance
+  private assessWordDifficulty(
+    wordId: string,
+    sessions: LearningSession[]
+  ): number {
     let totalAttempts = 0;
     let correctAttempts = 0;
 
     sessions.forEach(session => {
       if (session.wordsStudied.includes(wordId)) {
-        totalAttempts += session.totalAnswers / session.wordsStudied.length; // Estimate attempts per word
-        correctAttempts += session.correctAnswers / session.wordsStudied.length;
+        const attemptsPerWord =
+          session.totalAnswers / Math.max(session.wordsStudied.length, 1);
+        totalAttempts += attemptsPerWord;
+        correctAttempts +=
+          session.correctAnswers / Math.max(session.wordsStudied.length, 1);
       }
     });
 
-    return totalAttempts > 0 ? 1 - (correctAttempts / totalAttempts) : 0.5;
+    return totalAttempts > 0 ? 1 - correctAttempts / totalAttempts : 0.5;
   }
 
-  private calculateReviewUrgency(progress: any, patterns: any): number {
-    const daysSinceLastReview = progress.lastReviewed ?
-      (Date.now() - progress.lastReviewed) / (1000 * 60 * 60 * 24) : 30;
+  private calculateReviewUrgency(progress: WordProgressEntry): number {
+    const daysSinceLastReview = progress.lastReviewed
+      ? (Date.now() - progress.lastReviewed) / (1000 * 60 * 60 * 24)
+      : 30;
 
-    const incorrectRatio = progress.incorrectCount / Math.max(progress.correctCount + progress.incorrectCount, 1);
-    const easeFactor = progress.easeFactor || 2.5;
+    const incorrectCount = progress.incorrectCount ?? 0;
+    const correctCount = progress.correctCount ?? 0;
+    const incorrectRatio =
+      incorrectCount / Math.max(correctCount + incorrectCount, 1);
+    const easeFactor = progress.easeFactor ?? 2.5;
 
-    // Urgency increases with time since review, incorrect ratio, and low ease factor
     const timeFactor = Math.min(1, daysSinceLastReview / 30);
-    const accuracyFactor = incorrectRatio;
-    const easeFactorNormalized = Math.max(0, (3 - easeFactor) / 2); // Lower ease = higher urgency
+    const easeFactorNormalized = Math.max(0, (3 - easeFactor) / 2);
 
-    return (timeFactor * 0.4 + accuracyFactor * 0.4 + easeFactorNormalized * 0.2);
+    return timeFactor * 0.4 + incorrectRatio * 0.4 + easeFactorNormalized * 0.2;
   }
 
   private getWordCategory(wordId: string): string {
-    // Simplified category detection - would need actual word data
-    const wordData = (global as any).WORDS?.find((w: any) => w.id === wordId);
-    return wordData?.category || 'general';
+    const word = WORDS.find(w => w.id === parseInt(wordId, 10));
+    return word ? `category_${word.categoryId}` : 'general';
   }
 
   private calculateTrend(values: number[]): number {
     if (values.length < 2) return 0;
-
     const n = values.length;
     const sumX = (n * (n - 1)) / 2;
     const sumY = values.reduce((sum, val) => sum + val, 0);
     const sumXY = values.reduce((sum, val, idx) => sum + val * idx, 0);
     const sumXX = (n * (n - 1) * (2 * n - 1)) / 6;
-
-    const slope = (n * sumXY - sumX * sumY) / (n * sumXX - sumX * sumX);
-    return slope;
+    return (n * sumXY - sumX * sumY) / (n * sumXX - sumX * sumX);
   }
 
-  // Public API Methods
-  async getRecommendations(userId: string, limit: number = 10): Promise<Recommendation[]> {
+  // ─── Public API Methods ──────────────────────────────────────────────────
+
+  async getRecommendations(
+    userId: string,
+    limitCount: number = 10
+  ): Promise<Recommendation[]> {
     try {
       const recsQuery = query(
         collection(db, 'analytics', userId, 'recommendations'),
         orderBy('createdAt', 'desc'),
-        limit(limit)
+        firestoreLimit(limitCount)
       );
-
-      const recsSnapshot = await getDocs(recsQuery);
-      return recsSnapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data(),
-        createdAt: doc.data().createdAt.toDate(),
-        expiresAt: doc.data().expiresAt?.toDate(),
-        acceptedAt: doc.data().acceptedAt?.toDate(),
+      const snapshot = await getDocs(recsQuery);
+      return snapshot.docs.map(d => ({
+        id: d.id,
+        ...d.data(),
+        createdAt: d.data().createdAt.toDate(),
+        expiresAt: d.data().expiresAt?.toDate(),
+        acceptedAt: d.data().acceptedAt?.toDate(),
       })) as Recommendation[];
     } catch (error) {
       console.error('Error getting recommendations:', error);
@@ -729,19 +795,21 @@ export class AIService {
     }
   }
 
-  async getPredictions(userId: string, limit: number = 10): Promise<Prediction[]> {
+  async getPredictions(
+    userId: string,
+    limitCount: number = 10
+  ): Promise<Prediction[]> {
     try {
       const predsQuery = query(
         collection(db, 'analytics', userId, 'predictions'),
         orderBy('createdAt', 'desc'),
-        limit(limit)
+        firestoreLimit(limitCount)
       );
-
-      const predsSnapshot = await getDocs(predsQuery);
-      return predsSnapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data(),
-        createdAt: doc.data().createdAt.toDate(),
+      const snapshot = await getDocs(predsQuery);
+      return snapshot.docs.map(d => ({
+        id: d.id,
+        ...d.data(),
+        createdAt: d.data().createdAt.toDate(),
       })) as Prediction[];
     } catch (error) {
       console.error('Error getting predictions:', error);
@@ -753,32 +821,31 @@ export class AIService {
     const userId = auth.currentUser?.uid;
     if (!userId) throw new Error('User not authenticated');
 
-    try {
-      await updateDoc(doc(db, 'analytics', userId, 'recommendations', recId), {
-        accepted: true,
-        acceptedAt: Timestamp.fromDate(new Date()),
-      });
-    } catch (error) {
-      console.error('Error accepting recommendation:', error);
-      throw error;
-    }
+    await updateDoc(doc(db, 'analytics', userId, 'recommendations', recId), {
+      accepted: true,
+      acceptedAt: Timestamp.fromDate(new Date()),
+    });
   }
 
   async generateLearningPath(userId: string, focus: string[]): Promise<LearningPath> {
     const profile = await this.analyticsService.getUserLearningProfile(userId);
 
-    // Generate personalized learning path based on user profile and focus areas
-    const pathId = `path_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-    const units = this.selectUnitsForPath(profile, focus);
+    const pathId = `path_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+    const units = this.selectUnitsForPath(focus);
 
     const learningPath: LearningPath = {
       id: pathId,
       userId,
       name: `${focus.join(' & ')} Learning Path`,
       description: `Personalized path focusing on ${focus.join(' and ')}`,
-      units: units.map(u => u.id),
-      estimatedDuration: Math.ceil(units.length * 2.5), // ~2.5 days per unit
-      difficulty: profile.averageAccuracy > 80 ? 'advanced' : profile.averageAccuracy > 60 ? 'intermediate' : 'beginner',
+      units: units.map(u => String(u.id)),
+      estimatedDuration: Math.ceil(units.length * 2.5),
+      difficulty:
+        profile.averageAccuracy > 80
+          ? 'advanced'
+          : profile.averageAccuracy > 60
+          ? 'intermediate'
+          : 'beginner',
       focus,
       progress: 0,
       createdAt: new Date(),
@@ -788,7 +855,9 @@ export class AIService {
       await setDoc(doc(db, 'analytics', userId, 'learning_paths', pathId), {
         ...learningPath,
         createdAt: Timestamp.fromDate(learningPath.createdAt),
-        completedAt: learningPath.completedAt ? Timestamp.fromDate(learningPath.completedAt) : null,
+        completedAt: learningPath.completedAt
+          ? Timestamp.fromDate(learningPath.completedAt)
+          : null,
       });
     } catch (error) {
       console.error('Error saving learning path:', error);
@@ -798,12 +867,11 @@ export class AIService {
     return learningPath;
   }
 
-  private selectUnitsForPath(profile: any, focus: string[]): any[] {
-    // This would intelligently select units based on user profile and focus
-    // For now, return example units
-    return [
-      { id: 'unit_1', name: 'Basic Vocabulary' },
-      { id: 'unit_2', name: 'Common Phrases' },
-    ];
+  private selectUnitsForPath(focus: string[]): typeof UNITS {
+    // Filter units loosely matching focus categories; fall back to first two units
+    const matched = UNITS.filter(u =>
+      focus.some(f => u.title.toLowerCase().includes(f.toLowerCase()))
+    );
+    return matched.length > 0 ? matched.slice(0, 3) : UNITS.slice(0, 2);
   }
 }

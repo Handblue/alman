@@ -19,6 +19,8 @@ type WordProgress = {
   status: 'unknown' | 'learning' | 'known';
   nextReview: string;
   reviewCount: number;
+  correctCount: number;
+  incorrectCount: number;
 };
 
 type UnitProgress = {
@@ -35,6 +37,7 @@ interface ProgressState {
   setWordProgress: (wordId: number, status: WordProgress['status']) => void;
   completeMode: (unitId: number, mode: string) => void;
   toggleBookmark: (wordId: number) => void;
+  getWordProgress: (wordId: number) => WordProgress;
   syncWithCloud: () => Promise<void>;
   initializeProgressSync: () => Promise<void>;
 }
@@ -54,14 +57,18 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   setWordProgress: (wordId, status) => {
     const nextReview = new Date();
     nextReview.setDate(nextReview.getDate() + REVIEW_INTERVALS[status]);
+    const isCorrect = status === 'known';
     set(s => {
+      const prev = s.wordProgress[wordId];
       const updated: Record<number, WordProgress> = {
         ...s.wordProgress,
         [wordId]: {
           wordId,
           status,
           nextReview: nextReview.toISOString(),
-          reviewCount: (s.wordProgress[wordId]?.reviewCount ?? 0) + 1,
+          reviewCount: (prev?.reviewCount ?? 0) + 1,
+          correctCount: (prev?.correctCount ?? 0) + (isCorrect ? 1 : 0),
+          incorrectCount: (prev?.incorrectCount ?? 0) + (isCorrect ? 0 : 1),
         },
       };
       storage.set('wordProgress', JSON.stringify(updated));
@@ -83,6 +90,19 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       get().syncWithCloud();
       return { unitProgress: updated };
     });
+  },
+
+  getWordProgress: (wordId) => {
+    const existing = get().wordProgress[wordId];
+    if (existing) return existing;
+    return {
+      wordId,
+      status: 'unknown',
+      nextReview: new Date().toISOString(),
+      reviewCount: 0,
+      correctCount: 0,
+      incorrectCount: 0,
+    };
   },
 
   toggleBookmark: (wordId) => {
