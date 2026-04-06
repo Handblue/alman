@@ -1,11 +1,15 @@
-import { View, StyleSheet, ScrollView } from 'react-native';
+import { useState, useEffect } from 'react';
+import { View, StyleSheet, ScrollView, Switch, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { WKText, WKCard } from '@/components/ui';
 import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
+import { Radius } from '@/constants/radius';
 import { useUserStore } from '@/store/useUserStore';
 import { useProgressStore } from '@/store/useProgressStore';
 import { CacheManagementCard } from '@/components/profile/CacheManagementCard';
+import { NotificationService, NotificationPreferences } from '@/services/notificationService';
+import { OfflineQueueService } from '@/services/offlineQueueService';
 
 const BADGE_DEFS = [
   { id: 'first_step',           emoji: '👟', name: 'İlk Adım',           desc: 'İlk üniteyi tamamla',              xp: 50 },
@@ -20,6 +24,8 @@ const BADGE_DEFS = [
   { id: 'legend',               emoji: '👑', name: 'Efsane',               desc: 'Tüm kategoriler tamamlandı',       xp: 5000 },
 ];
 
+const HOUR_OPTIONS = Array.from({ length: 24 }, (_, i) => i); // 0–23
+
 export default function ProfileScreen() {
   const { xp, streak, selectedLevel, badges } = useUserStore();
   const { wordProgress, unitProgress } = useProgressStore();
@@ -27,6 +33,30 @@ export default function ProfileScreen() {
   const completedUnits = Object.values(unitProgress).filter(u => u.isCompleted).length;
 
   const earnedCount = BADGE_DEFS.filter(b => badges.includes(b.id)).length;
+
+  // Notification prefs state
+  const [notifPrefs, setNotifPrefs] = useState<NotificationPreferences>(
+    () => NotificationService.getInstance().getPreferences()
+  );
+  const [permissionGranted, setPermissionGranted] = useState<boolean | null>(null);
+  const [queueSize, setQueueSize] = useState(0);
+
+  useEffect(() => {
+    NotificationService.getInstance()
+      .requestPermissions()
+      .then(setPermissionGranted)
+      .catch(() => setPermissionGranted(false));
+    setQueueSize(OfflineQueueService.getInstance().getStats().total);
+  }, []);
+
+  const updatePref = async <K extends keyof NotificationPreferences>(
+    key: K,
+    value: NotificationPreferences[K]
+  ) => {
+    const updated = { ...notifPrefs, [key]: value };
+    setNotifPrefs(updated);
+    await NotificationService.getInstance().savePreferences(updated);
+  };
 
   // Build rows of 2 for the badge grid
   const badgeRows: (typeof BADGE_DEFS)[] = [];
@@ -69,6 +99,128 @@ export default function ProfileScreen() {
 
         {/* Cache Management */}
         <CacheManagementCard />
+
+        {/* Notification Settings */}
+        <WKCard style={styles.sectionCard}>
+          <View style={styles.sectionHeader}>
+            <WKText variant="heading2">🔔 Bildirimler</WKText>
+            {permissionGranted === false && (
+              <View style={styles.warnBadge}>
+                <WKText variant="caption" color={Colors.status.warning}>İzin Gerekli</WKText>
+              </View>
+            )}
+          </View>
+
+          {permissionGranted === false && (
+            <WKText variant="caption" color={Colors.status.warning} style={{ marginBottom: Spacing.s12 }}>
+              Bildirimler için cihaz ayarlarından izin ver.
+            </WKText>
+          )}
+
+          <View style={styles.prefRow}>
+            <View style={{ flex: 1 }}>
+              <WKText variant="bodySm">Günlük Hatırlatıcı</WKText>
+              <WKText variant="caption" color={Colors.text.secondary}>
+                Her gün çalışmayı hatırlat
+              </WKText>
+            </View>
+            <Switch
+              value={notifPrefs.dailyReminder}
+              onValueChange={(v) => updatePref('dailyReminder', v)}
+              trackColor={{ false: Colors.bg.cardDark, true: Colors.brand.primary }}
+              thumbColor="#fff"
+            />
+          </View>
+
+          {notifPrefs.dailyReminder && (
+            <View style={styles.timeRow}>
+              <WKText variant="caption" color={Colors.text.secondary}>Saat:</WKText>
+              <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginLeft: Spacing.s8 }}>
+                <View style={styles.hourList}>
+                  {[8, 9, 10, 12, 14, 18, 19, 20, 21, 22].map((h) => (
+                    <TouchableOpacity
+                      key={h}
+                      onPress={() => updatePref('reminderHour', h)}
+                      style={[
+                        styles.hourChip,
+                        notifPrefs.reminderHour === h && styles.hourChipActive,
+                      ]}
+                      accessibilityRole="button"
+                      accessibilityLabel={`Saat ${h}:00`}
+                    >
+                      <WKText
+                        variant="caption"
+                        color={notifPrefs.reminderHour === h ? Colors.brand.primary : Colors.text.secondary}
+                      >
+                        {String(h).padStart(2, '0')}:00
+                      </WKText>
+                    </TouchableOpacity>
+                  ))}
+                </View>
+              </ScrollView>
+            </View>
+          )}
+
+          <View style={[styles.prefRow, { marginTop: Spacing.s8 }]}>
+            <View style={{ flex: 1 }}>
+              <WKText variant="bodySm">Seri Uyarısı</WKText>
+              <WKText variant="caption" color={Colors.text.secondary}>
+                Serin tehlikedeyse bildir
+              </WKText>
+            </View>
+            <Switch
+              value={notifPrefs.streakAlert}
+              onValueChange={(v) => updatePref('streakAlert', v)}
+              trackColor={{ false: Colors.bg.cardDark, true: Colors.brand.primary }}
+              thumbColor="#fff"
+            />
+          </View>
+
+          <View style={[styles.prefRow, { marginTop: Spacing.s8 }]}>
+            <View style={{ flex: 1 }}>
+              <WKText variant="bodySm">Challenge Bildirimleri</WKText>
+              <WKText variant="caption" color={Colors.text.secondary}>
+                Challenge tamamlandığında bildir
+              </WKText>
+            </View>
+            <Switch
+              value={notifPrefs.challengeUpdates}
+              onValueChange={(v) => updatePref('challengeUpdates', v)}
+              trackColor={{ false: Colors.bg.cardDark, true: Colors.brand.primary }}
+              thumbColor="#fff"
+            />
+          </View>
+
+          <View style={[styles.prefRow, { marginTop: Spacing.s8 }]}>
+            <View style={{ flex: 1 }}>
+              <WKText variant="bodySm">Rozet Bildirimleri</WKText>
+              <WKText variant="caption" color={Colors.text.secondary}>
+                Yeni rozet kazanıldığında bildir
+              </WKText>
+            </View>
+            <Switch
+              value={notifPrefs.badgeAlerts}
+              onValueChange={(v) => updatePref('badgeAlerts', v)}
+              trackColor={{ false: Colors.bg.cardDark, true: Colors.brand.primary }}
+              thumbColor="#fff"
+            />
+          </View>
+        </WKCard>
+
+        {/* Offline Queue Status */}
+        {queueSize > 0 && (
+          <WKCard style={styles.sectionCard}>
+            <View style={styles.sectionHeader}>
+              <WKText variant="heading2">📶 Çevrimdışı Kuyruk</WKText>
+              <View style={styles.queueBadge}>
+                <WKText variant="caption" color={Colors.status.warning}>{queueSize}</WKText>
+              </View>
+            </View>
+            <WKText variant="caption" color={Colors.text.secondary}>
+              {queueSize} işlem internet bağlantısı bekleniyor. Bağlandığında otomatik eşitlenecek.
+            </WKText>
+          </WKCard>
+        )}
 
         {/* Achievements section */}
         <View style={styles.badgesSection}>
@@ -168,6 +320,58 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: Spacing.s4,
     padding: Spacing.s20,
+  },
+
+  // Notification / queue cards
+  sectionCard: {
+    marginBottom: Spacing.s12,
+  },
+  sectionHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: Spacing.s12,
+  },
+  warnBadge: {
+    backgroundColor: Colors.status.warning + '22',
+    paddingHorizontal: Spacing.s8,
+    paddingVertical: Spacing.s4,
+    borderRadius: Radius.chip,
+    borderWidth: 1,
+    borderColor: Colors.status.warning,
+  },
+  queueBadge: {
+    backgroundColor: Colors.status.warning + '22',
+    paddingHorizontal: Spacing.s8,
+    paddingVertical: Spacing.s4,
+    borderRadius: Radius.chip,
+  },
+  prefRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  timeRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: Spacing.s8,
+    marginBottom: Spacing.s4,
+  },
+  hourList: {
+    flexDirection: 'row',
+    gap: Spacing.s4,
+  },
+  hourChip: {
+    paddingHorizontal: Spacing.s12,
+    paddingVertical: Spacing.s4,
+    borderRadius: Radius.chip,
+    backgroundColor: Colors.bg.primaryDark,
+    borderWidth: 1,
+    borderColor: Colors.bg.cardDark,
+  },
+  hourChipActive: {
+    borderColor: Colors.brand.primary,
+    backgroundColor: Colors.brand.primary + '22',
   },
 
   // Badges section

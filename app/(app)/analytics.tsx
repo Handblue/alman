@@ -1,413 +1,936 @@
 import React, { useEffect, useState } from 'react';
-import { View, ScrollView, StyleSheet, Dimensions } from 'react-native';
+import {
+  View,
+  ScrollView,
+  StyleSheet,
+  Dimensions,
+  TouchableOpacity,
+  ActivityIndicator,
+} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useAnalyticsStore, useTodayMetrics, useWeeklyProgress, useTopRecommendations } from '../store/useAnalyticsStore';
-import { useUserStore } from '../store/useUserStore';
-import { WKCard } from '../components/ui/WKCard';
-import { WKText } from '../components/ui/WKText';
-import { WKButton } from '../components/ui/WKButton';
-import { PlayButton } from '../components/ui/PlayButton';
-import { spacing, colors } from '../constants';
-import { LineChart, BarChart, ProgressChart } from 'react-native-chart-kit';
+import Svg, { Path, Rect, Circle, Line, Text as SvgText } from 'react-native-svg';
+import { router } from 'expo-router';
+import { auth } from '@/firebase';
+import {
+  useAnalyticsStore,
+  useTodayMetrics,
+  useWeeklyProgress,
+  useTopRecommendations,
+  usePredictions,
+  useLearningPaths,
+  useStreakInsights,
+} from '@/store/useAnalyticsStore';
+import { WKCard, WKText, WKButton } from '@/components/ui';
+import { Colors } from '@/constants/colors';
+import { Spacing } from '@/constants/spacing';
+import { Radius } from '@/constants/radius';
 
-const { width } = Dimensions.get('window');
+const { width: SCREEN_WIDTH } = Dimensions.get('window');
+const CHART_W = SCREEN_WIDTH - Spacing.s32 - Spacing.s32; // screen - screen padding - card padding
+const CHART_H = 120;
+const BAR_H = 100;
+
+// ─── SVG Line Chart ────────────────────────────────────────────────────────────
+
+function LineChart({
+  data,
+  color = Colors.brand.primary,
+  fillColor,
+}: {
+  data: number[];
+  color?: string;
+  fillColor?: string;
+}) {
+  if (data.length < 2) {
+    return (
+      <View style={{ width: CHART_W, height: CHART_H, justifyContent: 'center', alignItems: 'center' }}>
+        <WKText variant="caption" color={Colors.text.secondary}>Henüz veri yok</WKText>
+      </View>
+    );
+  }
+
+  const padL = 32;
+  const padR = 8;
+  const padT = 12;
+  const padB = 20;
+  const w = CHART_W - padL - padR;
+  const h = CHART_H - padT - padB;
+
+  const min = Math.min(...data);
+  const max = Math.max(...data) || 1;
+  const range = max - min || 1;
+
+  const pts = data.map((v, i) => ({
+    x: padL + (i / (data.length - 1)) * w,
+    y: padT + (1 - (v - min) / range) * h,
+  }));
+
+  const linePath = pts
+    .map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`)
+    .join(' ');
+
+  const fillPath = fillColor
+    ? `${linePath} L ${pts[pts.length - 1].x.toFixed(1)} ${(padT + h).toFixed(1)} L ${padL} ${(padT + h).toFixed(1)} Z`
+    : null;
+
+  // y-axis labels
+  const yLabels = [max, Math.round((max + min) / 2), min];
+
+  return (
+    <Svg width={CHART_W} height={CHART_H}>
+      {/* Grid lines */}
+      {yLabels.map((val, i) => {
+        const y = padT + (1 - (val - min) / range) * h;
+        return (
+          <React.Fragment key={i}>
+            <Line
+              x1={padL}
+              y1={y}
+              x2={padL + w}
+              y2={y}
+              stroke={Colors.bg.cardDark}
+              strokeWidth={1}
+            />
+            <SvgText
+              x={padL - 4}
+              y={y + 4}
+              fontSize={9}
+              fill={Colors.text.secondary}
+              textAnchor="end"
+            >
+              {val}
+            </SvgText>
+          </React.Fragment>
+        );
+      })}
+
+      {/* Fill area */}
+      {fillPath && (
+        <Path d={fillPath} fill={fillColor} opacity={0.15} />
+      )}
+
+      {/* Line */}
+      <Path d={linePath} stroke={color} strokeWidth={2.5} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+
+      {/* Dots */}
+      {pts.map((p, i) => (
+        <Circle key={i} cx={p.x} cy={p.y} r={3.5} fill={color} />
+      ))}
+
+      {/* x-axis day labels */}
+      {pts.map((p, i) => (
+        <SvgText
+          key={`xl-${i}`}
+          x={p.x}
+          y={CHART_H - 4}
+          fontSize={9}
+          fill={Colors.text.secondary}
+          textAnchor="middle"
+        >
+          {`G${i + 1}`}
+        </SvgText>
+      ))}
+    </Svg>
+  );
+}
+
+// ─── SVG Bar Chart ─────────────────────────────────────────────────────────────
+
+function BarChart({
+  data,
+  color = Colors.brand.primary,
+}: {
+  data: { label: string; value: number }[];
+  color?: string;
+}) {
+  if (data.length === 0) {
+    return (
+      <View style={{ width: CHART_W, height: BAR_H, justifyContent: 'center', alignItems: 'center' }}>
+        <WKText variant="caption" color={Colors.text.secondary}>Henüz veri yok</WKText>
+      </View>
+    );
+  }
+
+  const padL = 8;
+  const padR = 8;
+  const padT = 8;
+  const padB = 20;
+  const w = CHART_W - padL - padR;
+  const h = BAR_H - padT - padB;
+
+  const max = Math.max(...data.map(d => d.value)) || 1;
+  const barW = w / data.length - 6;
+
+  return (
+    <Svg width={CHART_W} height={BAR_H}>
+      {data.map((d, i) => {
+        const barH = (d.value / max) * h;
+        const x = padL + i * (w / data.length) + 3;
+        const y = padT + h - barH;
+
+        return (
+          <React.Fragment key={i}>
+            <Rect
+              x={x}
+              y={y}
+              width={barW}
+              height={barH}
+              rx={4}
+              fill={color}
+              opacity={0.85}
+            />
+            <SvgText
+              x={x + barW / 2}
+              y={BAR_H - 4}
+              fontSize={9}
+              fill={Colors.text.secondary}
+              textAnchor="middle"
+            >
+              {d.label}
+            </SvgText>
+          </React.Fragment>
+        );
+      })}
+    </Svg>
+  );
+}
+
+// ─── Risk Badge ────────────────────────────────────────────────────────────────
+
+function RiskBadge({ level }: { level: 'none' | 'low' | 'medium' | 'high' }) {
+  const config = {
+    none: { color: Colors.status.success, label: 'Güvende' },
+    low: { color: Colors.status.info, label: 'Düşük Risk' },
+    medium: { color: Colors.status.warning, label: 'Orta Risk' },
+    high: { color: Colors.status.error, label: 'Yüksek Risk' },
+  }[level];
+
+  return (
+    <View style={[styles.riskBadge, { backgroundColor: config.color + '22', borderColor: config.color }]}>
+      <WKText variant="caption" color={config.color}>{config.label}</WKText>
+    </View>
+  );
+}
+
+// ─── Prediction Card ───────────────────────────────────────────────────────────
+
+function PredictionCard({ prediction }: { prediction: ReturnType<typeof usePredictions>[number] }) {
+  const iconMap: Record<string, string> = {
+    progress: '📈',
+    retention: '🧠',
+    completion: '🏁',
+    difficulty: '⚡',
+  };
+
+  const timeFrameLabel: Record<string, string> = {
+    day: 'Bugün',
+    week: 'Bu Hafta',
+    month: 'Bu Ay',
+    quarter: 'Bu Çeyrek',
+  };
+
+  return (
+    <WKCard style={styles.predictionCard}>
+      <View style={styles.predictionHeader}>
+        <WKText variant="heading2">{iconMap[prediction.type] ?? '🤖'}</WKText>
+        <View style={{ flex: 1, marginLeft: Spacing.s12 }}>
+          <WKText variant="bodySm" style={{ fontWeight: '600' }}>{prediction.title}</WKText>
+          <WKText variant="caption" color={Colors.text.secondary}>{timeFrameLabel[prediction.timeFrame]}</WKText>
+        </View>
+        <View style={styles.confidenceBadge}>
+          <WKText variant="caption" color={Colors.brand.primary}>%{prediction.confidence}</WKText>
+        </View>
+      </View>
+      <WKText variant="bodySm" color={Colors.text.secondary} style={{ marginTop: Spacing.s8 }}>
+        {prediction.description}
+      </WKText>
+      <View style={styles.basedOnRow}>
+        {prediction.basedOn.map((b, i) => (
+          <View key={i} style={styles.basedOnChip}>
+            <WKText variant="caption" color={Colors.text.secondary}>{b.replace(/_/g, ' ')}</WKText>
+          </View>
+        ))}
+      </View>
+    </WKCard>
+  );
+}
+
+// ─── Main Screen ───────────────────────────────────────────────────────────────
+
+type Tab = 'overview' | 'predictions' | 'paths';
+
+const FOCUS_OPTIONS = [
+  { id: 'vocabulary', label: 'Kelime', emoji: '📖' },
+  { id: 'grammar', label: 'Dilbilgisi', emoji: '✏️' },
+  { id: 'conversation', label: 'Konuşma', emoji: '💬' },
+  { id: 'reading', label: 'Okuma', emoji: '📰' },
+  { id: 'listening', label: 'Dinleme', emoji: '🎧' },
+];
 
 export default function AnalyticsScreen() {
-  const { user } = useUserStore();
+  const userId = auth.currentUser?.uid;
   const {
     loadAnalyticsData,
     loadAIData,
+    loadStreakInsights,
     generateRecommendations,
     generatePredictions,
     acceptRecommendation,
+    createLearningPath,
   } = useAnalyticsStore();
 
   const todayMetrics = useTodayMetrics();
   const weeklyProgress = useWeeklyProgress();
   const topRecommendations = useTopRecommendations();
+  const predictions = usePredictions();
+  const learningPaths = useLearningPaths();
+  const streakInsights = useStreakInsights();
 
+  const [activeTab, setActiveTab] = useState<Tab>('overview');
   const [refreshing, setRefreshing] = useState(false);
+  const [selectedFocus, setSelectedFocus] = useState<string[]>([]);
+  const [creatingPath, setCreatingPath] = useState(false);
 
   useEffect(() => {
-    if (user?.id) {
-      loadAnalyticsData(user.id);
-      loadAIData(user.id);
-    }
-  }, [user?.id]);
+    if (!userId) return;
+    loadAnalyticsData(userId);
+    loadAIData(userId);
+    loadStreakInsights(userId);
+  }, [userId]);
 
   const handleRefresh = async () => {
-    if (!user?.id) return;
-
+    if (!userId) return;
     setRefreshing(true);
     try {
       await Promise.all([
-        loadAnalyticsData(user.id),
-        generateRecommendations(user.id),
-        generatePredictions(user.id),
+        loadAnalyticsData(userId),
+        generateRecommendations(userId),
+        generatePredictions(userId),
+        loadStreakInsights(userId),
       ]);
-    } catch (error) {
-      console.error('Error refreshing analytics:', error);
     } finally {
       setRefreshing(false);
     }
   };
 
-  const handleAcceptRecommendation = async (recId: string) => {
+  const handleCreatePath = async () => {
+    if (!userId || selectedFocus.length === 0) return;
+    setCreatingPath(true);
     try {
-      await acceptRecommendation(recId);
-    } catch (error) {
-      console.error('Error accepting recommendation:', error);
+      await createLearningPath(userId, selectedFocus);
+      setSelectedFocus([]);
+    } finally {
+      setCreatingPath(false);
     }
   };
 
-  const chartConfig = {
-    backgroundColor: colors.background,
-    backgroundGradientFrom: colors.background,
-    backgroundGradientTo: colors.background,
-    color: (opacity = 1) => `rgba(59, 130, 246, ${opacity})`,
-    labelColor: (opacity = 1) => `rgba(107, 114, 128, ${opacity})`,
-    style: {
-      borderRadius: 16,
-    },
-    propsForDots: {
-      r: '6',
-      strokeWidth: '2',
-      stroke: colors.primary,
-    },
+  const toggleFocus = (id: string) => {
+    setSelectedFocus(prev =>
+      prev.includes(id) ? prev.filter(f => f !== id) : [...prev, id]
+    );
   };
+
+  // Weekly chart data (last 7 days oldest → newest)
+  const weekWords = weeklyProgress.dailyWords;
+  const weekAccuracy = weeklyProgress.dailyAccuracy;
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
-        {/* Header */}
-        <View style={styles.header}>
-          <WKText style={styles.title}>Learning Analytics</WKText>
-          <WKButton
-            title={refreshing ? "Refreshing..." : "Refresh"}
-            onPress={handleRefresh}
-            disabled={refreshing}
-            size="small"
-            variant="outline"
-          />
-        </View>
+      {/* Header */}
+      <View style={styles.header}>
+        <WKText variant="heading1">Analitik</WKText>
+        <TouchableOpacity
+          onPress={handleRefresh}
+          disabled={refreshing}
+          accessibilityRole="button"
+          accessibilityLabel="Yenile"
+          style={[styles.refreshBtn, refreshing && { opacity: 0.5 }]}
+        >
+          {refreshing
+            ? <ActivityIndicator size="small" color={Colors.brand.primary} />
+            : <WKText variant="bodySm" color={Colors.brand.primary}>Yenile</WKText>
+          }
+        </TouchableOpacity>
+      </View>
 
-        {/* Today's Overview */}
-        <WKCard style={styles.overviewCard}>
-          <WKText style={styles.cardTitle}>Today's Progress</WKText>
-          <View style={styles.metricsGrid}>
-            <View style={styles.metric}>
-              <WKText style={styles.metricValue}>{todayMetrics?.wordsLearnedToday || 0}</WKText>
-              <WKText style={styles.metricLabel}>Words Learned</WKText>
-            </View>
-            <View style={styles.metric}>
-              <WKText style={styles.metricValue}>{Math.round(todayMetrics?.accuracyRate || 0)}%</WKText>
-              <WKText style={styles.metricLabel}>Accuracy</WKText>
-            </View>
-            <View style={styles.metric}>
-              <WKText style={styles.metricValue}>{todayMetrics?.studyStreak || 0}</WKText>
-              <WKText style={styles.metricLabel}>Day Streak</WKText>
-            </View>
-          </View>
-        </WKCard>
+      {/* Tabs */}
+      <View style={styles.tabs}>
+        {([
+          { id: 'overview', label: 'Genel', emoji: '📊' },
+          { id: 'predictions', label: 'Tahminler', emoji: '🔮' },
+          { id: 'paths', label: 'Yolum', emoji: '🗺️' },
+        ] as { id: Tab; label: string; emoji: string }[]).map(tab => (
+          <TouchableOpacity
+            key={tab.id}
+            onPress={() => setActiveTab(tab.id)}
+            style={[styles.tab, activeTab === tab.id && styles.tabActive]}
+            accessibilityRole="tab"
+            accessibilityLabel={tab.label}
+          >
+            <WKText
+              variant="caption"
+              color={activeTab === tab.id ? Colors.brand.primary : Colors.text.secondary}
+              style={{ fontWeight: activeTab === tab.id ? '700' : '400' }}
+            >
+              {tab.emoji} {tab.label}
+            </WKText>
+          </TouchableOpacity>
+        ))}
+      </View>
 
-        {/* Weekly Progress Chart */}
-        <WKCard style={styles.chartCard}>
-          <WKText style={styles.cardTitle}>Weekly Progress</WKText>
-          <View style={styles.weeklyStats}>
-            <View style={styles.stat}>
-              <WKText style={styles.statValue}>{weeklyProgress.totalWords}</WKText>
-              <WKText style={styles.statLabel}>Words This Week</WKText>
-            </View>
-            <View style={styles.stat}>
-              <WKText style={styles.statValue}>{Math.round(weeklyProgress.averageAccuracy)}%</WKText>
-              <WKText style={styles.statLabel}>Avg Accuracy</WKText>
-            </View>
-            <View style={styles.stat}>
-              <WKText style={styles.statValue}>{Math.round(weeklyProgress.averageSessionLength)}m</WKText>
-              <WKText style={styles.statLabel}>Avg Session</WKText>
-            </View>
-          </View>
-        </WKCard>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.scroll}
+      >
+        {/* ── TAB: OVERVIEW ── */}
+        {activeTab === 'overview' && (
+          <>
+            {/* Today Stats */}
+            <WKCard style={styles.card}>
+              <WKText variant="bodySm" style={styles.cardTitle}>Bugün</WKText>
+              <View style={styles.statsRow}>
+                <View style={styles.statItem}>
+                  <WKText variant="heading1" color={Colors.brand.primary}>
+                    {todayMetrics?.wordsLearnedToday ?? 0}
+                  </WKText>
+                  <WKText variant="caption" color={Colors.text.secondary}>Kelime</WKText>
+                </View>
+                <View style={styles.statDivider} />
+                <View style={styles.statItem}>
+                  <WKText variant="heading1" color={Colors.status.success}>
+                    %{Math.round(todayMetrics?.accuracyRate ?? 0)}
+                  </WKText>
+                  <WKText variant="caption" color={Colors.text.secondary}>Doğruluk</WKText>
+                </View>
+                <View style={styles.statDivider} />
+                <View style={styles.statItem}>
+                  <WKText variant="heading1" color={Colors.accent.gold}>
+                    {todayMetrics?.studyStreak ?? streakInsights?.currentStreak ?? 0}🔥
+                  </WKText>
+                  <WKText variant="caption" color={Colors.text.secondary}>Seri</WKText>
+                </View>
+              </View>
+            </WKCard>
 
-        {/* AI Recommendations */}
-        {topRecommendations.length > 0 && (
-          <WKCard style={styles.recommendationsCard}>
-            <WKText style={styles.cardTitle}>AI Recommendations</WKText>
-            {topRecommendations.map((rec) => (
-              <View key={rec.id} style={styles.recommendation}>
-                <View style={styles.recommendationContent}>
-                  <WKText style={styles.recommendationTitle}>{rec.title}</WKText>
-                  <WKText style={styles.recommendationDescription}>{rec.description}</WKText>
-                  <View style={styles.recommendationMeta}>
-                    <WKText style={styles.confidenceText}>
-                      {rec.confidence}% confidence
+            {/* Streak AI */}
+            {streakInsights && (
+              <WKCard style={styles.card}>
+                <View style={styles.streakHeader}>
+                  <WKText variant="bodySm" style={styles.cardTitle}>Seri Analizi</WKText>
+                  <RiskBadge level={streakInsights.riskLevel} />
+                </View>
+
+                <View style={styles.streakStats}>
+                  <View style={styles.streakStat}>
+                    <WKText variant="heading2" color={Colors.accent.gold}>
+                      {streakInsights.currentStreak}
                     </WKText>
-                    <WKText style={styles.reasonText}>{rec.reason}</WKText>
+                    <WKText variant="caption" color={Colors.text.secondary}>Mevcut</WKText>
+                  </View>
+                  <View style={styles.streakStat}>
+                    <WKText variant="heading2" color={Colors.brand.primary}>
+                      {streakInsights.longestStreak}
+                    </WKText>
+                    <WKText variant="caption" color={Colors.text.secondary}>En Uzun</WKText>
+                  </View>
+                  <View style={styles.streakStat}>
+                    <WKText variant="heading2" color={Colors.status.info}>
+                      %{streakInsights.weeklyConsistency}
+                    </WKText>
+                    <WKText variant="caption" color={Colors.text.secondary}>7 Günlük</WKText>
+                  </View>
+                  <View style={styles.streakStat}>
+                    <WKText variant="heading2" color={Colors.status.success}>
+                      {streakInsights.nextMilestoneGap}
+                    </WKText>
+                    <WKText variant="caption" color={Colors.text.secondary}>
+                      Hedefe ({streakInsights.nextMilestone}g)
+                    </WKText>
                   </View>
                 </View>
-                <WKButton
-                  title="Try It"
-                  onPress={() => handleAcceptRecommendation(rec.id)}
-                  size="small"
-                  style={styles.tryButton}
-                />
+
+                {streakInsights.recoveryPlan.map((tip, i) => (
+                  <View key={i} style={styles.tipRow}>
+                    <WKText variant="caption" color={Colors.text.secondary} style={{ marginRight: Spacing.s4 }}>
+                      {streakInsights.isAtRisk ? '⚠️' : '✅'}
+                    </WKText>
+                    <WKText variant="caption" color={Colors.text.secondary} style={{ flex: 1 }}>
+                      {tip}
+                    </WKText>
+                  </View>
+                ))}
+              </WKCard>
+            )}
+
+            {/* Weekly Line Chart */}
+            <WKCard style={styles.card}>
+              <WKText variant="bodySm" style={styles.cardTitle}>Haftalık Kelime</WKText>
+              <LineChart
+                data={weekWords.length > 0 ? weekWords : [0, 0, 0, 0, 0, 0, 0]}
+                color={Colors.brand.primary}
+                fillColor={Colors.brand.primary}
+              />
+            </WKCard>
+
+            {/* Weekly Bar Chart - Accuracy */}
+            <WKCard style={styles.card}>
+              <WKText variant="bodySm" style={styles.cardTitle}>Haftalık Doğruluk (%)</WKText>
+              <BarChart
+                color={Colors.status.success}
+                data={(weekAccuracy.length > 0 ? weekAccuracy : Array(7).fill(0)).map((v, i) => ({
+                  label: `G${i + 1}`,
+                  value: Math.round(v),
+                }))}
+              />
+            </WKCard>
+
+            {/* Weekly Summary */}
+            <WKCard style={styles.card}>
+              <WKText variant="bodySm" style={styles.cardTitle}>Bu Hafta Özeti</WKText>
+              <View style={styles.statsRow}>
+                <View style={styles.statItem}>
+                  <WKText variant="heading2" color={Colors.brand.primary}>
+                    {weeklyProgress.totalWords}
+                  </WKText>
+                  <WKText variant="caption" color={Colors.text.secondary}>Toplam Kelime</WKText>
+                </View>
+                <View style={styles.statDivider} />
+                <View style={styles.statItem}>
+                  <WKText variant="heading2" color={Colors.status.success}>
+                    %{Math.round(weeklyProgress.averageAccuracy)}
+                  </WKText>
+                  <WKText variant="caption" color={Colors.text.secondary}>Ort. Doğruluk</WKText>
+                </View>
+                <View style={styles.statDivider} />
+                <View style={styles.statItem}>
+                  <WKText variant="heading2" color={Colors.status.info}>
+                    {Math.round(weeklyProgress.averageSessionLength)}d
+                  </WKText>
+                  <WKText variant="caption" color={Colors.text.secondary}>Ort. Süre</WKText>
+                </View>
               </View>
-            ))}
-          </WKCard>
+            </WKCard>
+
+            {/* AI Recommendations */}
+            {topRecommendations.length > 0 && (
+              <WKCard style={styles.card}>
+                <WKText variant="bodySm" style={styles.cardTitle}>AI Önerileri</WKText>
+                {topRecommendations.map(rec => (
+                  <View key={rec.id} style={styles.recRow}>
+                    <View style={{ flex: 1 }}>
+                      <WKText variant="bodySm" style={{ fontWeight: '600' }}>{rec.title}</WKText>
+                      <WKText variant="caption" color={Colors.text.secondary}>{rec.description}</WKText>
+                      <WKText variant="caption" color={Colors.brand.primary} style={{ marginTop: 2 }}>
+                        %{rec.confidence} güven
+                      </WKText>
+                    </View>
+                    <WKButton
+                      label="Dene"
+                      variant="secondary"
+                      onPress={() => acceptRecommendation(rec.id)}
+                      style={styles.tryBtn}
+                    />
+                  </View>
+                ))}
+              </WKCard>
+            )}
+          </>
         )}
 
-        {/* Learning Insights */}
-        <WKCard style={styles.insightsCard}>
-          <WKText style={styles.cardTitle}>AI Learning Insights</WKText>
-          <View style={styles.insight}>
-            <WKText style={styles.insightTitle}>🧠 Learning Velocity</WKText>
-            <WKText style={styles.insightText}>
-              You're learning at {Math.round(todayMetrics?.studyVelocity || 0)} words per hour.
-              {todayMetrics?.studyVelocity && todayMetrics.studyVelocity > 10
-                ? " Excellent pace! Keep it up!"
-                : todayMetrics?.studyVelocity && todayMetrics.studyVelocity > 5
-                ? " Good progress. Consider increasing study intensity."
-                : " Focus on building momentum with regular sessions."}
-            </WKText>
-          </View>
-          <View style={styles.insight}>
-            <WKText style={styles.insightTitle}>🎯 Adaptive Difficulty</WKText>
-            <WKText style={styles.insightText}>
-              Your current difficulty level is optimized for {todayMetrics?.consistencyScore && todayMetrics.consistencyScore > 70 ? 'challenging' : 'comfortable'} learning.
-              The AI adjusts content based on your performance patterns.
-            </WKText>
-          </View>
-          <View style={styles.insight}>
-            <WKText style={styles.insightTitle}>📊 Retention Analysis</WKText>
-            <WKText style={styles.insightText}>
-              Your long-term retention rate is estimated at {Math.round(todayMetrics?.retentionRate || 85)}%.
-              {todayMetrics?.retentionRate && todayMetrics.retentionRate > 90
-                ? " Outstanding memory retention!"
-                : " Consider more spaced repetition practice."}
-            </WKText>
-          </View>
-        </WKCard>
+        {/* ── TAB: PREDICTIONS ── */}
+        {activeTab === 'predictions' && (
+          <>
+            <WKCard style={styles.card}>
+              <WKText variant="bodySm" style={styles.cardTitle}>Öğrenme Tahmini</WKText>
+              <WKText variant="caption" color={Colors.text.secondary}>
+                Geçmiş verilerine göre AI tarafından üretilen öngörüler.
+              </WKText>
+            </WKCard>
 
-        {/* AI Study Planning */}
-        <WKCard style={styles.planningCard}>
-          <WKText style={styles.cardTitle}>AI Study Planning</WKText>
-          <View style={styles.planningGrid}>
-            <View style={styles.planningItem}>
-              <WKText style={styles.planningValue}>
-                {Math.max(1, Math.round((2000 - (weeklyProgress.totalWords * 4)) / (weeklyProgress.averageAccuracy / 100 * weeklyProgress.averageSessionLength)))}
-              </WKText>
-              <WKText style={styles.planningLabel}>Days to Complete Course</WKText>
-              <WKText style={styles.planningSubtext}>At current pace</WKText>
-            </View>
-            <View style={styles.planningItem}>
-              <WKText style={styles.planningValue}>
-                {Math.round(weeklyProgress.averageSessionLength * 1.2)}m
-              </WKText>
-              <WKText style={styles.planningLabel}>Optimal Session Length</WKText>
-              <WKText style={styles.planningSubtext}>For best retention</WKText>
-            </View>
-            <View style={styles.planningItem}>
-              <WKText style={styles.planningValue}>
-                {Math.round(weeklyProgress.averageAccuracy + 5)}%
-              </WKText>
-              <WKText style={styles.planningLabel}>Predicted Accuracy</WKText>
-              <WKText style={styles.planningSubtext}>Next week</WKText>
-            </View>
-          </View>
-        </WKCard>
+            {predictions.length === 0 ? (
+              <WKCard style={styles.emptyCard}>
+                <WKText variant="heading2">🔮</WKText>
+                <WKText variant="body" style={{ textAlign: 'center', marginTop: Spacing.s8 }}>
+                  Henüz tahmin yok
+                </WKText>
+                <WKText variant="caption" color={Colors.text.secondary} style={{ textAlign: 'center', marginTop: Spacing.s4 }}>
+                  Daha fazla çalışma seansı tamamlandıkça AI tahminler üretmeye başlar.
+                </WKText>
+                <WKButton
+                  label="Tahmin Üret"
+                  variant="primary"
+                  onPress={() => userId && generatePredictions(userId)}
+                  style={{ marginTop: Spacing.s16 }}
+                />
+              </WKCard>
+            ) : (
+              predictions.map(pred => (
+                <PredictionCard key={pred.id} prediction={pred} />
+              ))
+            )}
 
-        {/* Quick Actions */}
-        <WKCard style={styles.actionsCard}>
-          <WKText style={styles.cardTitle}>Quick Actions</WKText>
-          <View style={styles.actionsGrid}>
-            <PlayButton
-              title="Start Session"
-              subtitle="Begin learning"
-              onPress={() => {/* Navigate to study */}}
-              style={styles.actionButton}
-            />
-            <PlayButton
-              title="View Progress"
-              subtitle="Detailed analytics"
-              onPress={() => {/* Navigate to detailed progress */}}
-              style={styles.actionButton}
-            />
-            <PlayButton
-              title="Get Tips"
-              subtitle="AI suggestions"
-              onPress={() => {/* Navigate to tips */}}
-              style={styles.actionButton}
-            />
-          </View>
-        </WKCard>
+            {predictions.length > 0 && (
+              <WKButton
+                label="Tahminleri Güncelle"
+                variant="ghost"
+                onPress={() => userId && generatePredictions(userId)}
+                style={{ marginTop: Spacing.s8 }}
+              />
+            )}
+
+            {/* Trajectory Summary */}
+            <WKCard style={[styles.card, { marginTop: Spacing.s16 }]}>
+              <WKText variant="bodySm" style={styles.cardTitle}>Yörünge Özeti</WKText>
+              <View style={styles.trajectoryRow}>
+                <View style={styles.trajectoryItem}>
+                  <WKText variant="caption" color={Colors.text.secondary}>Tahmini Tamamlanma</WKText>
+                  <WKText variant="bodySm" color={Colors.brand.primary} style={{ fontWeight: '700', marginTop: 4 }}>
+                    {(() => {
+                      const completionPred = predictions.find(p => p.type === 'completion');
+                      if (completionPred?.predictedValue?.completionDate) {
+                        return new Date(completionPred.predictedValue.completionDate as string)
+                          .toLocaleDateString('tr-TR', { month: 'short', year: 'numeric' });
+                      }
+                      return 'Hesaplanıyor...';
+                    })()}
+                  </WKText>
+                </View>
+                <View style={styles.trajectoryItem}>
+                  <WKText variant="caption" color={Colors.text.secondary}>Haftalık Kelime Tahmini</WKText>
+                  <WKText variant="bodySm" color={Colors.status.success} style={{ fontWeight: '700', marginTop: 4 }}>
+                    {(() => {
+                      const progressPred = predictions.find(p => p.type === 'progress');
+                      return progressPred?.predictedValue?.wordsLearned
+                        ? `${progressPred.predictedValue.wordsLearned} kelime`
+                        : 'Hesaplanıyor...';
+                    })()}
+                  </WKText>
+                </View>
+              </View>
+              <View style={styles.trajectoryRow}>
+                <View style={styles.trajectoryItem}>
+                  <WKText variant="caption" color={Colors.text.secondary}>Tahmini Akılda Kalma</WKText>
+                  <WKText variant="bodySm" color={Colors.accent.gold} style={{ fontWeight: '700', marginTop: 4 }}>
+                    {(() => {
+                      const retPred = predictions.find(p => p.type === 'retention');
+                      return retPred?.predictedValue?.retentionRate
+                        ? `%${retPred.predictedValue.retentionRate}`
+                        : 'Hesaplanıyor...';
+                    })()}
+                  </WKText>
+                </View>
+              </View>
+            </WKCard>
+          </>
+        )}
+
+        {/* ── TAB: LEARNING PATH ── */}
+        {activeTab === 'paths' && (
+          <>
+            {/* Active paths */}
+            {learningPaths.length > 0 ? (
+              <>
+                <WKText variant="bodySm" style={[styles.sectionLabel]}>Öğrenme Yollarım</WKText>
+                {learningPaths.map(path => (
+                  <WKCard key={path.id} style={styles.card}>
+                    <View style={styles.pathHeader}>
+                      <View style={{ flex: 1 }}>
+                        <WKText variant="bodySm" style={{ fontWeight: '700' }}>{path.name}</WKText>
+                        <WKText variant="caption" color={Colors.text.secondary}>{path.description}</WKText>
+                      </View>
+                      <View style={[
+                        styles.diffBadge,
+                        { backgroundColor: (
+                          path.difficulty === 'beginner' ? Colors.status.success :
+                          path.difficulty === 'intermediate' ? Colors.status.warning :
+                          Colors.status.error
+                        ) + '22' }
+                      ]}>
+                        <WKText variant="caption" color={
+                          path.difficulty === 'beginner' ? Colors.status.success :
+                          path.difficulty === 'intermediate' ? Colors.status.warning :
+                          Colors.status.error
+                        }>
+                          {path.difficulty === 'beginner' ? 'Başlangıç' :
+                           path.difficulty === 'intermediate' ? 'Orta' : 'İleri'}
+                        </WKText>
+                      </View>
+                    </View>
+
+                    {/* Progress bar */}
+                    <View style={styles.progressBarBg}>
+                      <View
+                        style={[
+                          styles.progressBarFill,
+                          { width: `${path.progress}%` as any },
+                        ]}
+                      />
+                    </View>
+                    <View style={styles.pathMeta}>
+                      <WKText variant="caption" color={Colors.text.secondary}>
+                        {path.units.length} ünite · ~{path.estimatedDuration} gün
+                      </WKText>
+                      <WKText variant="caption" color={Colors.brand.primary}>
+                        %{path.progress} tamamlandı
+                      </WKText>
+                    </View>
+
+                    <WKButton
+                      label="Devam Et"
+                      variant="primary"
+                      onPress={() => router.push('/(app)/categories')}
+                      style={{ marginTop: Spacing.s12 }}
+                    />
+                  </WKCard>
+                ))}
+              </>
+            ) : (
+              <WKCard style={styles.emptyCard}>
+                <WKText variant="heading2">🗺️</WKText>
+                <WKText variant="body" style={{ textAlign: 'center', marginTop: Spacing.s8 }}>
+                  Henüz bir öğrenme yolun yok
+                </WKText>
+                <WKText variant="caption" color={Colors.text.secondary} style={{ textAlign: 'center', marginTop: Spacing.s4 }}>
+                  Aşağıdan odak alanlarını seçerek kişisel öğrenme yolunu oluştur.
+                </WKText>
+              </WKCard>
+            )}
+
+            {/* Create new path */}
+            <WKCard style={[styles.card, { marginTop: Spacing.s16 }]}>
+              <WKText variant="bodySm" style={styles.cardTitle}>Yeni Öğrenme Yolu</WKText>
+              <WKText variant="caption" color={Colors.text.secondary} style={{ marginBottom: Spacing.s12 }}>
+                Odaklanmak istediğin alanları seç:
+              </WKText>
+
+              <View style={styles.focusGrid}>
+                {FOCUS_OPTIONS.map(opt => (
+                  <TouchableOpacity
+                    key={opt.id}
+                    onPress={() => toggleFocus(opt.id)}
+                    accessibilityRole="checkbox"
+                    accessibilityLabel={opt.label}
+                    style={[
+                      styles.focusChip,
+                      selectedFocus.includes(opt.id) && styles.focusChipSelected,
+                    ]}
+                  >
+                    <WKText variant="bodySm">{opt.emoji}</WKText>
+                    <WKText
+                      variant="caption"
+                      color={selectedFocus.includes(opt.id) ? Colors.brand.primary : Colors.text.secondary}
+                      style={{ marginLeft: Spacing.s4 }}
+                    >
+                      {opt.label}
+                    </WKText>
+                  </TouchableOpacity>
+                ))}
+              </View>
+
+              <WKButton
+                label={creatingPath ? 'Oluşturuluyor...' : 'Öğrenme Yolu Oluştur'}
+                variant="primary"
+                disabled={selectedFocus.length === 0 || creatingPath}
+                onPress={handleCreatePath}
+                style={{ marginTop: Spacing.s16 }}
+              />
+            </WKCard>
+          </>
+        )}
       </ScrollView>
     </SafeAreaView>
   );
 }
 
+// ─── Styles ────────────────────────────────────────────────────────────────────
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.background,
-  },
-  scrollView: {
-    flex: 1,
-    padding: spacing.md,
+    backgroundColor: Colors.bg.primaryDark,
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: spacing.lg,
+    paddingHorizontal: Spacing.s20,
+    paddingTop: Spacing.s12,
+    paddingBottom: Spacing.s8,
   },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: colors.text,
+  refreshBtn: {
+    padding: Spacing.s8,
   },
-  overviewCard: {
-    marginBottom: spacing.lg,
+  tabs: {
+    flexDirection: 'row',
+    paddingHorizontal: Spacing.s16,
+    marginBottom: Spacing.s8,
+    gap: Spacing.s8,
+  },
+  tab: {
+    flex: 1,
+    paddingVertical: Spacing.s8,
+    alignItems: 'center',
+    borderRadius: Radius.chip,
+    backgroundColor: Colors.bg.cardDark,
+  },
+  tabActive: {
+    backgroundColor: Colors.brand.primary + '22',
+    borderWidth: 1,
+    borderColor: Colors.brand.primary + '55',
+  },
+  scroll: {
+    paddingHorizontal: Spacing.s16,
+    paddingBottom: Spacing.s32,
+    gap: Spacing.s12,
+  },
+  card: {
+    gap: Spacing.s8,
   },
   cardTitle: {
-    fontSize: 18,
     fontWeight: '600',
-    color: colors.text,
-    marginBottom: spacing.md,
+    marginBottom: Spacing.s4,
   },
-  metricsGrid: {
+  sectionLabel: {
+    fontWeight: '600',
+    marginBottom: Spacing.s4,
+    color: Colors.text.secondary,
+  },
+  statsRow: {
     flexDirection: 'row',
     justifyContent: 'space-around',
+    alignItems: 'center',
+    paddingVertical: Spacing.s8,
   },
-  metric: {
+  statItem: {
+    alignItems: 'center',
+    flex: 1,
+  },
+  statDivider: {
+    width: 1,
+    height: 40,
+    backgroundColor: Colors.bg.cardDark,
+  },
+  streakHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
   },
-  metricValue: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: colors.primary,
+  riskBadge: {
+    paddingHorizontal: Spacing.s8,
+    paddingVertical: Spacing.s4,
+    borderRadius: Radius.chip,
+    borderWidth: 1,
   },
-  metricLabel: {
-    fontSize: 12,
-    color: colors.textSecondary,
-    marginTop: spacing.xs,
-  },
-  chartCard: {
-    marginBottom: spacing.lg,
-  },
-  weeklyStats: {
+  streakStats: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    marginTop: spacing.md,
+    paddingVertical: Spacing.s8,
   },
-  stat: {
+  streakStat: {
     alignItems: 'center',
   },
-  statValue: {
-    fontSize: 20,
-    fontWeight: '600',
-    color: colors.primary,
+  tipRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    paddingVertical: Spacing.s2,
   },
-  statLabel: {
-    fontSize: 12,
-    color: colors.textSecondary,
-    marginTop: spacing.xs,
-  },
-  recommendationsCard: {
-    marginBottom: spacing.lg,
-  },
-  recommendation: {
+  recRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: spacing.md,
+    paddingVertical: Spacing.s8,
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
+    borderBottomColor: Colors.bg.primaryDark,
+    gap: Spacing.s12,
   },
-  recommendationContent: {
-    flex: 1,
+  tryBtn: {
+    minWidth: 70,
+    minHeight: 36,
   },
-  recommendationTitle: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: colors.text,
-    marginBottom: spacing.xs,
-  },
-  recommendationDescription: {
-    fontSize: 14,
-    color: colors.textSecondary,
-    marginBottom: spacing.sm,
-  },
-  recommendationMeta: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  confidenceText: {
-    fontSize: 12,
-    color: colors.primary,
-    fontWeight: '500',
-  },
-  reasonText: {
-    fontSize: 12,
-    color: colors.textSecondary,
-  },
-  tryButton: {
-    marginLeft: spacing.md,
-  },
-  insightsCard: {
-    marginBottom: spacing.lg,
-  },
-  insight: {
-    marginBottom: spacing.lg,
-  },
-  insightTitle: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: colors.text,
-    marginBottom: spacing.xs,
-  },
-  insightText: {
-    fontSize: 14,
-    color: colors.textSecondary,
-    lineHeight: 20,
-  },
-  actionsCard: {
-    marginBottom: spacing.lg,
-  },
-  actionsGrid: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  actionButton: {
-    flex: 1,
-    marginHorizontal: spacing.xs,
-  },
-  planningCard: {
-    marginBottom: spacing.lg,
-  },
-  planningGrid: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    marginTop: spacing.md,
-  },
-  planningItem: {
+  emptyCard: {
     alignItems: 'center',
+    paddingVertical: Spacing.s32,
+    gap: Spacing.s4,
+  },
+  predictionCard: {
+    gap: Spacing.s4,
+  },
+  predictionHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  confidenceBadge: {
+    backgroundColor: Colors.brand.primary + '22',
+    paddingHorizontal: Spacing.s8,
+    paddingVertical: Spacing.s4,
+    borderRadius: Radius.chip,
+  },
+  basedOnRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: Spacing.s4,
+    marginTop: Spacing.s4,
+  },
+  basedOnChip: {
+    backgroundColor: Colors.bg.primaryDark,
+    paddingHorizontal: Spacing.s8,
+    paddingVertical: Spacing.s2,
+    borderRadius: Radius.chip,
+  },
+  trajectoryRow: {
+    flexDirection: 'row',
+    gap: Spacing.s12,
+    marginTop: Spacing.s8,
+  },
+  trajectoryItem: {
     flex: 1,
+    backgroundColor: Colors.bg.primaryDark,
+    borderRadius: Radius.card,
+    padding: Spacing.s12,
   },
-  planningValue: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: colors.primary,
-    marginBottom: spacing.xs,
+  pathHeader: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: Spacing.s12,
   },
-  planningLabel: {
-    fontSize: 12,
-    color: colors.text,
-    fontWeight: '600',
-    textAlign: 'center',
+  diffBadge: {
+    paddingHorizontal: Spacing.s8,
+    paddingVertical: Spacing.s4,
+    borderRadius: Radius.chip,
   },
-  planningSubtext: {
-    fontSize: 10,
-    color: colors.textSecondary,
-    textAlign: 'center',
-    marginTop: spacing.xs,
+  progressBarBg: {
+    height: 6,
+    backgroundColor: Colors.bg.primaryDark,
+    borderRadius: 3,
+    overflow: 'hidden',
+    marginTop: Spacing.s8,
+  },
+  progressBarFill: {
+    height: '100%',
+    backgroundColor: Colors.brand.primary,
+    borderRadius: 3,
+  },
+  pathMeta: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: Spacing.s4,
+  },
+  focusGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: Spacing.s8,
+  },
+  focusChip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: Spacing.s12,
+    paddingVertical: Spacing.s8,
+    borderRadius: Radius.chip,
+    backgroundColor: Colors.bg.primaryDark,
+    borderWidth: 1,
+    borderColor: Colors.bg.cardDark,
+  },
+  focusChipSelected: {
+    borderColor: Colors.brand.primary,
+    backgroundColor: Colors.brand.primary + '22',
   },
 });

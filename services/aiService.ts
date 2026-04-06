@@ -817,6 +817,26 @@ export class AIService {
     }
   }
 
+  async getLearningPaths(userId: string): Promise<LearningPath[]> {
+    try {
+      const pathsQuery = query(
+        collection(db, 'analytics', userId, 'learning_paths'),
+        orderBy('createdAt', 'desc'),
+        firestoreLimit(10)
+      );
+      const snapshot = await getDocs(pathsQuery);
+      return snapshot.docs.map(d => ({
+        id: d.id,
+        ...d.data(),
+        createdAt: d.data().createdAt.toDate(),
+        completedAt: d.data().completedAt?.toDate(),
+      })) as LearningPath[];
+    } catch (error) {
+      console.error('Error getting learning paths:', error);
+      return [];
+    }
+  }
+
   async acceptRecommendation(recId: string): Promise<void> {
     const userId = auth.currentUser?.uid;
     if (!userId) throw new Error('User not authenticated');
