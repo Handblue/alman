@@ -9,6 +9,9 @@ import { Spacing } from '@/constants/spacing';
 import { Radius } from '@/constants/radius';
 import { useSocialStore } from '@/store/useSocialStore';
 import { Friend, FriendRequest } from '@/services/socialService';
+import { useStudyGroupStore } from '@/store/useStudyGroupStore';
+import { studyGroupService } from '@/services/studyGroupService';
+import { useUserStore } from '@/store/useUserStore';
 
 function FriendCard({ friend }: { friend: Friend }) {
   const getStatusColor = (status: Friend['status']) => {
@@ -101,8 +104,29 @@ export default function FriendsScreen() {
     sendFriendRequest,
   } = useSocialStore();
 
+  const { xp, streak } = useUserStore();
+
   const [searchQuery, setSearchQuery] = useState('');
   const [activeTab, setActiveTab] = useState<'friends' | 'requests' | 'add'>('friends');
+  const [sharingProgress, setSharingProgress] = useState(false);
+
+  const handleShareProgress = async () => {
+    setSharingProgress(true);
+    try {
+      await studyGroupService.shareProgress({
+        weeklyXP: xp,
+        wordsLearned: 0, // would come from analytics store in full impl
+        streakDays: streak,
+        topCategory: 'Genel',
+        isPublic: true,
+      });
+      Alert.alert('Başarılı', 'İlerleme arkadaşlarınla paylaşıldı! 🎉');
+    } catch {
+      Alert.alert('Hata', 'İlerleme paylaşılamadı.');
+    } finally {
+      setSharingProgress(false);
+    }
+  };
 
   useEffect(() => {
     loadFriends();
@@ -165,6 +189,17 @@ export default function FriendsScreen() {
           Arkadaşlar 👥
         </WKText>
 
+        <TouchableOpacity
+          onPress={() => router.push('/study-groups')}
+          style={styles.studyGroupsBtn}
+          accessibilityRole="button"
+          accessibilityLabel="Çalışma gruplarına git"
+        >
+          <WKText variant="caption" color={Colors.text.primaryDark}>
+            👥 Çalışma Grupları →
+          </WKText>
+        </TouchableOpacity>
+
         {/* Tabs */}
         <View style={styles.tabs}>
           <TouchableOpacity
@@ -200,6 +235,17 @@ export default function FriendsScreen() {
       <ScrollView showsVerticalScrollIndicator={false} style={styles.scroll}>
         {activeTab === 'friends' && (
           <View style={styles.content}>
+            <TouchableOpacity
+              onPress={handleShareProgress}
+              disabled={sharingProgress}
+              style={styles.shareProgressBtn}
+              accessibilityRole="button"
+              accessibilityLabel="İlerlemeyi arkadaşlarla paylaş"
+            >
+              <WKText style={styles.shareProgressText}>
+                {sharingProgress ? 'Paylaşılıyor...' : '📊 İlerlemeyi Paylaş'}
+              </WKText>
+            </TouchableOpacity>
             {loading.friends ? (
               <WKText variant="body" color={Colors.text.secondary} style={styles.loadingText}>
                 Arkadaşlar yükleniyor...
@@ -302,6 +348,16 @@ const styles = StyleSheet.create({
   headerTitle: {
     marginBottom: Spacing.s16,
   },
+  studyGroupsBtn: {
+    paddingVertical: Spacing.s8,
+    paddingHorizontal: Spacing.s16,
+    borderRadius: Radius.chip,
+    backgroundColor: 'rgba(255,255,255,0.15)',
+    alignSelf: 'flex-start',
+    minHeight: 44,
+    justifyContent: 'center',
+    marginBottom: Spacing.s12,
+  },
   tabs: {
     flexDirection: 'row',
     gap: Spacing.s8,
@@ -373,6 +429,22 @@ const styles = StyleSheet.create({
   requestActions: {
     flexDirection: 'row',
     gap: Spacing.s12,
+  },
+  shareProgressBtn: {
+    padding: Spacing.s16,
+    borderRadius: Radius.card,
+    backgroundColor: Colors.bg.cardDark,
+    borderWidth: 1,
+    borderColor: Colors.brand.primary,
+    alignItems: 'center',
+    marginBottom: Spacing.s12,
+    minHeight: 48,
+    justifyContent: 'center',
+  },
+  shareProgressText: {
+    fontSize: 15,
+    fontWeight: '600',
+    color: Colors.brand.primary,
   },
   addFriendCard: {
     gap: Spacing.s16,

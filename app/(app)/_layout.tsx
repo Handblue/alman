@@ -65,6 +65,14 @@ export default function AppLayout() {
           tabBarAccessibilityLabel: 'Profil',
         }}
       />
+      <Tabs.Screen
+        name="study-groups"
+        options={{ href: null, headerShown: false }}
+      />
+      <Tabs.Screen
+        name="study-group/[id]"
+        options={{ href: null, headerShown: false }}
+      />
     </Tabs>
   );
 }
