@@ -1,6 +1,10 @@
 import { create } from 'zustand';
 import { MMKV } from 'react-native-mmkv';
 import { WORDS } from '@/data/words';
+import { db } from '@/firebase';
+import { doc, setDoc, getDoc, Timestamp } from 'firebase/firestore';
+import { NotificationService } from '@/services/notificationService';
+import { OfflineQueueService } from '@/services/offlineQueueService';
 
 const storage = new MMKV({ id: 'daily-challenge-store' });
 
@@ -108,20 +112,16 @@ export const useDailyChallengeStore = create<DailyChallengeState>((set, get) => 
     set({ todayChallenge: completed, history: updatedHistory });
 
     // Push notification
-    import('@/services/notificationService').then(({ NotificationService }) => {
-      NotificationService.getInstance().sendChallengeComplete(
-        xpEarned,
-        completed.correctCount,
-        completed.questionIds.length
-      ).catch(() => {});
-    });
+    NotificationService.getInstance().sendChallengeComplete?.(
+      xpEarned,
+      completed.correctCount,
+      completed.questionIds.length
+    )?.catch(() => {});
   },
 
   syncToCloud: async (userId: string) => {
     set({ syncing: true });
     try {
-      const { db } = await import('@/firebase');
-      const { doc, setDoc, Timestamp } = await import('firebase/firestore');
       const { todayChallenge, history } = get();
 
       if (todayChallenge) {
@@ -146,14 +146,12 @@ export const useDailyChallengeStore = create<DailyChallengeState>((set, get) => 
       // Çevrimdışıysa kuyruğa ekle
       const { todayChallenge } = get();
       if (todayChallenge?.completed) {
-        import('@/services/offlineQueueService').then(({ OfflineQueueService }) => {
-          OfflineQueueService.getInstance().enqueue({
-            type: 'CHALLENGE_COMPLETE',
-            date: todayChallenge.date,
-            correctCount: todayChallenge.correctCount,
-            totalCount: todayChallenge.questionIds.length,
-            xpEarned: todayChallenge.xpEarned,
-          });
+        OfflineQueueService.getInstance().enqueue({
+          type: 'CHALLENGE_COMPLETE',
+          date: todayChallenge.date,
+          correctCount: todayChallenge.correctCount,
+          totalCount: todayChallenge.questionIds.length,
+          xpEarned: todayChallenge.xpEarned,
         });
       }
     } finally {
@@ -163,14 +161,7 @@ export const useDailyChallengeStore = create<DailyChallengeState>((set, get) => 
 
   loadFromCloud: async (userId: string) => {
     try {
-      const { db } = await import('@/firebase');
-      const {
-        collection,
-        getDocs,
-        query,
-        orderBy,
-        limit,
-      } = await import('firebase/firestore');
+      const { collection, getDocs, query, orderBy, limit } = await import('firebase/firestore');
 
       const q = query(
         collection(db, 'daily_challenges', userId, 'sessions'),

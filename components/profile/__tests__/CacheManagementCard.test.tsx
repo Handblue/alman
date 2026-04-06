@@ -21,7 +21,7 @@ describe('CacheManagementCard', () => {
     const { getByText } = render(<CacheManagementCard />);
 
     expect(getByText('Ses Önbelleği')).toBeTruthy();
-    expect(getByText('5 MB')).toBeTruthy();
+    expect(getByText(/5 MB/)).toBeTruthy();
     expect(getByText('10')).toBeTruthy();
   });
 

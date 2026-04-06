@@ -54,16 +54,9 @@ describe('useAIRecommendations', () => {
         }
       ],
       predictions: [
-        {
-          id: 'pred1',
-          type: 'progress',
-          confidence: 80
-        },
-        {
-          id: 'pred2',
-          type: 'retention',
-          confidence: 75
-        }
+        { id: 'pred1', type: 'progress', confidence: 80 },
+        { id: 'pred2', type: 'retention', confidence: 75 },
+        { id: 'pred3', type: 'completion', confidence: 70 },
       ],
       loading: false,
       loadAIData: jest.fn().mockResolvedValue(undefined),
@@ -104,10 +97,10 @@ describe('useAIRecommendations', () => {
       ],
       predictions: [],
       loading: false,
-      loadAIData: jest.fn(),
-      acceptRecommendation: jest.fn(),
-      generateRecommendations: jest.fn(),
-      generatePredictions: jest.fn()
+      loadAIData: jest.fn().mockResolvedValue(undefined),
+      acceptRecommendation: jest.fn().mockResolvedValue(undefined),
+      generateRecommendations: jest.fn().mockResolvedValue(undefined),
+      generatePredictions: jest.fn().mockResolvedValue(undefined)
     });
 
     const { result } = renderHook(() => useAIRecommendations());

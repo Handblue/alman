@@ -1,3 +1,7 @@
+// Unmock both so we test the REAL ThemeContext implementation
+jest.unmock('@/hooks/useTheme');
+jest.unmock('@/context/ThemeContext');
+
 import { renderHook, act } from '@testing-library/react-native';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { useTheme } from '@/hooks/useTheme';

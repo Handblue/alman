@@ -2,8 +2,23 @@ import { renderHook, act } from '@testing-library/react-native';
 import * as Audio from 'expo-av';
 import { useAudio } from '@/hooks/useAudio';
 
-// Mock expo-av
+// Mock expo-av (uses __mocks__/expo-av.js)
 jest.mock('expo-av');
+
+// Mock useAudioCache to isolate useAudio
+jest.mock('@/hooks/useAudioCache', () => ({
+  useAudioCache: () => ({
+    readCache: jest.fn().mockResolvedValue(null),
+    saveCache: jest.fn().mockResolvedValue(undefined),
+    isCached: jest.fn().mockResolvedValue(false),
+    initializeCache: jest.fn().mockResolvedValue(undefined),
+    cacheStats: { totalSize: 0, fileCount: 0 },
+    getCacheSizeInMB: jest.fn(() => 0),
+    clearCache: jest.fn(),
+    clearCacheByPrefix: jest.fn(),
+    updateCacheStats: jest.fn(),
+  }),
+}));
 
 describe('useAudio', () => {
   beforeEach(() => {

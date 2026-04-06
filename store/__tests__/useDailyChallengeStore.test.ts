@@ -1,3 +1,19 @@
+// Mock dynamic imports used by completeChallenge
+jest.mock('@/services/notificationService', () => ({
+  NotificationService: {
+    getInstance: jest.fn(() => ({
+      scheduleDailyReminder: jest.fn().mockResolvedValue(undefined),
+    })),
+  },
+}));
+jest.mock('@/services/offlineQueueService', () => ({
+  OfflineQueueService: {
+    getInstance: jest.fn(() => ({
+      enqueue: jest.fn().mockResolvedValue(undefined),
+    })),
+  },
+}));
+
 import { useDailyChallengeStore } from '../useDailyChallengeStore';
 
 beforeEach(() => {
