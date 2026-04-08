@@ -34,6 +34,14 @@ export default function AppLayout() {
         }}
       />
       <Tabs.Screen
+        name="explore"
+        options={{
+          title: 'Keşfet',
+          tabBarIcon: ({ focused }) => <TabIcon emoji="🔍" focused={focused} />,
+          tabBarAccessibilityLabel: 'Keşfet',
+        }}
+      />
+      <Tabs.Screen
         name="categories"
         options={{
           title: 'Kategoriler',
@@ -71,6 +79,10 @@ export default function AppLayout() {
       />
       <Tabs.Screen
         name="study-group/[id]"
+        options={{ href: null, headerShown: false }}
+      />
+      <Tabs.Screen
+        name="battle"
         options={{ href: null, headerShown: false }}
       />
     </Tabs>

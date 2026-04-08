@@ -119,6 +119,24 @@ export default function DashboardScreen() {
           </TouchableOpacity>
         </View>
 
+        {/* Battle Button */}
+        <TouchableOpacity
+          onPress={() => router.push('/(app)/battle/lobby')}
+          accessibilityRole="button"
+          accessibilityLabel="Savaş moduna git"
+          activeOpacity={0.85}
+          style={styles.battleButton}
+        >
+          <View style={styles.battleCard}>
+            <WKText style={styles.battleEmoji}>⚔️</WKText>
+            <View style={styles.battleInfo}>
+              <WKText style={styles.battleTitle}>WortKampf</WKText>
+              <WKText style={styles.battleSub}>Canlı savaş — ELO kazan!</WKText>
+            </View>
+            <WKText style={styles.battleArrow}>→</WKText>
+          </View>
+        </TouchableOpacity>
+
         {/* Analytics & AI Features */}
         <View style={styles.analyticsRow}>
           <TouchableOpacity
@@ -233,5 +251,37 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: Spacing.s16,
     gap: Spacing.s4,
+  },
+  battleButton: {
+    marginBottom: Spacing.s16,
+  },
+  battleCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: Colors.battle.purple,
+    borderRadius: 16,
+    padding: 16,
+    gap: 12,
+  },
+  battleEmoji: {
+    fontSize: 32,
+  },
+  battleInfo: {
+    flex: 1,
+  },
+  battleTitle: {
+    color: '#fff',
+    fontWeight: '800',
+    fontSize: 17,
+  },
+  battleSub: {
+    color: 'rgba(255,255,255,0.75)',
+    fontSize: 13,
+    marginTop: 2,
+  },
+  battleArrow: {
+    color: '#fff',
+    fontSize: 20,
+    fontWeight: '700',
   },
 });
