@@ -9,6 +9,9 @@ import { Radius } from '@/constants/radius';
 import { DailyGoalCard } from '@/components/dashboard/DailyGoalCard';
 import { DailyChallengeCard } from '@/components/dashboard/DailyChallengeCard';
 import { RecentUnitCard } from '@/components/dashboard/RecentUnitCard';
+import { WordOfTheDay } from '@/components/dashboard/WordOfTheDay';
+import { AchievementToast } from '@/components/ui';
+import { useAchievementCheck } from '@/hooks/useAchievementCheck';
 import { UNITS } from '@/data/units';
 import { useUserStore } from '@/store/useUserStore';
 import { auth } from '@/firebase';
@@ -24,6 +27,7 @@ export default function DashboardScreen() {
   const { loadAnalyticsData, loadAIData } = useAnalyticsStore();
   const todayMetrics = useTodayMetrics();
   const topRecommendations = useTopRecommendations();
+  const { currentToast, check, dismiss } = useAchievementCheck();
 
   useEffect(() => {
     initToday();
@@ -35,10 +39,14 @@ export default function DashboardScreen() {
       loadAnalyticsData(userId);
       loadAIData(userId);
     }
+
+    // Check achievements on mount (streak, XP, etc.)
+    check();
   }, []);
 
   return (
     <SafeAreaView style={styles.container}>
+      <AchievementToast toast={currentToast} onDismiss={dismiss} />
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.header}>
           <View>
@@ -59,6 +67,8 @@ export default function DashboardScreen() {
             </WKText>
           </View>
         </View>
+
+        <WordOfTheDay />
 
         <DailyChallengeCard />
 

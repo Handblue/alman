@@ -9,8 +9,39 @@ import { Spacing } from '@/constants/spacing';
 import { Radius } from '@/constants/radius';
 import { useUserStore } from '@/store/useUserStore';
 import { leaderboardService, LeaderboardEntry } from '@/services/leaderboardService';
+import { achievementService } from '@/services/achievementService';
 
-type Tab = 'weekly' | 'allTime';
+type Tab = 'weekly' | 'allTime' | 'elo';
+
+// Local ELO leaderboard — reads from achievementService (local-only until backend sync)
+interface EloEntry {
+  rank: number;
+  displayName: string;
+  elo: number;
+  wins: number;
+  total: number;
+  isMe?: boolean;
+}
+
+function buildLocalEloBoard(myElo: number, myWins: number, myTotal: number): EloEntry[] {
+  // Seed a fun static list plus the user
+  const bots: EloEntry[] = [
+    { rank: 0, displayName: 'WortMeister', elo: 1850, wins: 234, total: 280 },
+    { rank: 0, displayName: 'DeutschFan99', elo: 1720, wins: 189, total: 240 },
+    { rank: 0, displayName: 'GrammarKing', elo: 1640, wins: 155, total: 210 },
+    { rank: 0, displayName: 'AlphaLerner', elo: 1580, wins: 140, total: 195 },
+    { rank: 0, displayName: 'SprachProfi', elo: 1510, wins: 120, total: 175 },
+    { rank: 0, displayName: 'VokabelHero', elo: 1460, wins: 110, total: 165 },
+    { rank: 0, displayName: 'B2Beast', elo: 1380, wins: 95, total: 150 },
+    { rank: 0, displayName: 'GoetheJäger', elo: 1320, wins: 82, total: 135 },
+    { rank: 0, displayName: 'UmlauthLord', elo: 1250, wins: 70, total: 120 },
+  ];
+  const me: EloEntry = {
+    rank: 0, displayName: 'Sen', elo: myElo, wins: myWins, total: myTotal, isMe: true,
+  };
+  const all = [...bots, me].sort((a, b) => b.elo - a.elo);
+  return all.map((e, i) => ({ ...e, rank: i + 1 }));
+}
 
 function getMedalEmoji(rank: number): string {
   if (rank === 1) return '🥇';
@@ -25,6 +56,8 @@ export default function LeaderboardScreen() {
   const [leaderboardData, setLeaderboardData] = useState<LeaderboardEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [userRank, setUserRank] = useState<number | null>(null);
+  const battleStats = achievementService.getBattleStats();
+  const eloBoard = buildLocalEloBoard(battleStats.elo, battleStats.wins, battleStats.total);
 
   useEffect(() => {
     loadLeaderboard();
@@ -115,18 +148,67 @@ export default function LeaderboardScreen() {
               Tüm Zamanlar
             </WKText>
           </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => setActiveTab('elo')}
+            accessibilityRole="tab"
+            accessibilityLabel="Battle ELO"
+            accessibilityState={{ selected: activeTab === 'elo' }}
+            style={[styles.tab, activeTab === 'elo' && styles.tabActive]}
+          >
+            <WKText variant="caption" color={Colors.text.primaryDark}>
+              ⚔️ ELO
+            </WKText>
+          </TouchableOpacity>
         </View>
       </LinearGradient>
 
       <ScrollView showsVerticalScrollIndicator={false} style={styles.scroll}>
-        {loading ? (
+        {/* ELO tab */}
+        {activeTab === 'elo' && (
+          <View style={styles.listContainer}>
+            <View style={styles.eloHeader}>
+              <WKText style={styles.eloHeaderTitle}>⚔️ Battle ELO Sıralaması</WKText>
+              <WKText style={styles.eloHeaderSub}>Senin ELO'n: {battleStats.elo}</WKText>
+            </View>
+            {eloBoard.map((entry) => (
+              <WKCard
+                key={entry.rank}
+                style={[styles.rankRow, entry.isMe && styles.userRow]}
+              >
+                <View style={styles.rankLeft}>
+                  <WKText variant="body" color={Colors.text.secondary} style={styles.rankNum}>
+                    {getMedalEmoji(entry.rank)}
+                  </WKText>
+                  <WKText variant="body">{entry.isMe ? '🎮' : '👤'}</WKText>
+                  <View>
+                    <WKText variant="body" color={entry.isMe ? Colors.brand.primary : Colors.text.primaryDark}>
+                      {entry.displayName}
+                    </WKText>
+                    <WKText variant="caption" color={Colors.text.secondary}>
+                      {entry.wins}G / {entry.total}O
+                    </WKText>
+                  </View>
+                </View>
+                <View style={styles.eloRight}>
+                  <WKText style={[styles.eloNum, entry.isMe && { color: Colors.battle.purple }]}>
+                    {entry.elo}
+                  </WKText>
+                  <WKText style={styles.eloLabel}>ELO</WKText>
+                </View>
+              </WKCard>
+            ))}
+            <View style={{ height: Spacing.s32 }} />
+          </View>
+        )}
+
+        {activeTab !== 'elo' && loading ? (
           <View style={styles.loadingContainer}>
             <ActivityIndicator size="large" color={Colors.brand.primary} />
             <WKText variant="body" color={Colors.text.secondary} style={styles.loadingText}>
               Sıralama yükleniyor...
             </WKText>
           </View>
-        ) : (
+        ) : activeTab !== 'elo' ? (
           <>
             {/* Podium: top 3 */}
             {top3.length >= 3 && (
@@ -219,6 +301,7 @@ export default function LeaderboardScreen() {
     </SafeAreaView>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -323,5 +406,33 @@ const styles = StyleSheet.create({
   },
   loadingText: {
     marginTop: Spacing.s16,
+  },
+  eloHeader: {
+    paddingVertical: Spacing.s16,
+    alignItems: 'center',
+    gap: 4,
+  },
+  eloHeaderTitle: {
+    color: '#fff',
+    fontWeight: '800',
+    fontSize: 18,
+  },
+  eloHeaderSub: {
+    color: Colors.battle.purple,
+    fontSize: 14,
+    fontWeight: '700',
+  },
+  eloRight: {
+    alignItems: 'flex-end',
+    gap: 2,
+  },
+  eloNum: {
+    color: Colors.accent.gold,
+    fontWeight: '900',
+    fontSize: 20,
+  },
+  eloLabel: {
+    color: Colors.text.secondary,
+    fontSize: 11,
   },
 });
