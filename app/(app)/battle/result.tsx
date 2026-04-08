@@ -13,13 +13,18 @@ import { WKText } from '@/components/ui';
 import { Colors } from '@/constants/colors';
 import { useBattleStore } from '@/store/useBattleStore';
 import { useUserStore } from '@/store/useUserStore';
+import { useProgressStore } from '@/store/useProgressStore';
+import { useSocialStore } from '@/store/useSocialStore';
 import { QUESTION_COUNT } from '@/services/battleService';
+import { achievementService } from '@/services/achievementService';
 
 export default function BattleResultScreen() {
   const router = useRouter();
   const { battle, myUid, me, opponent, myScore, opponentScore, eloChange, isWinner, reset } =
     useBattleStore();
-  const { addXP } = useUserStore();
+  const { addXP, xp, streak } = useUserStore();
+  const { wordProgress, unitProgress } = useProgressStore();
+  const { friends } = useSocialStore();
 
   const scaleAnim = useRef(new Animated.Value(0.7)).current;
   const opacityAnim = useRef(new Animated.Value(0)).current;
@@ -37,8 +42,28 @@ export default function BattleResultScreen() {
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
     }
 
+    // Save battle stats
+    achievementService.recordBattleResult(isWinner === true, eloChange);
+
     // Award XP
     if (xpEarned > 0) addXP(xpEarned);
+
+    // Check achievements
+    const battleStats = achievementService.getBattleStats();
+    const pronStats = achievementService.getPronunciationStats();
+    const knownWords = Object.values(wordProgress).filter(w => w.status === 'known').length;
+    const completedUnits = Object.values(unitProgress).filter(u => u.isCompleted).length;
+    achievementService.checkAll({
+      xp: xp + xpEarned,
+      streak,
+      knownWords,
+      completedUnits,
+      battleWins: battleStats.wins,
+      battleCount: battleStats.total,
+      pronunciationFourPlus: pronStats.fourPlus,
+      folders: 0,
+      friends: friends.length,
+    });
 
     // Entrance animation
     Animated.parallel([

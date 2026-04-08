@@ -85,6 +85,10 @@ export default function AppLayout() {
         name="battle"
         options={{ href: null, headerShown: false }}
       />
+      <Tabs.Screen
+        name="premium"
+        options={{ href: null, headerShown: false }}
+      />
     </Tabs>
   );
 }
