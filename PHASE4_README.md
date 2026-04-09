@@ -1,39 +1,44 @@
-# Alman - German Learning App
+# WortKrieg
 
-## Phase 4: Backend Integration & Cloud Features
+## Faz 4: Backend Entegrasyonu ve Bulut Özellikleri
 
-### ✅ Completed Features
+### Genel Bakış
 
-#### Firebase Integration
-- **Authentication Service** (`services/authService.ts`): Anonymous authentication for users
-- **User Service** (`services/userService.ts`): Cloud sync for user profiles, XP, progress
-- **Progress Service** (`services/progressService.ts`): Cloud sync for word progress, unit completion, bookmarks
-- **Folder Service** (`services/folderService.ts`): Cloud sync for custom folders
-- **Leaderboard Service** (`services/leaderboardService.ts`): Real-time leaderboards with weekly/all-time views
-- **Firebase Configuration** (`firebase.ts`): Centralized Firebase setup
+Bu fazda WortKrieg'in yerel çalışan öğrenme akışı, Firebase tabanlı bulut senkronizasyonu ile genişletildi. Hedef; kullanıcı profili, ilerleme verileri ve sıralama sistemini cihazlar arasında tutarlı hale getirirken offline-first mimariyi korumaktı.
 
-#### 📱 Enhanced Stores with Cloud Sync
-- **User Store**: Cloud synchronization for user data, real-time updates
-- **Progress Store**: Sync word learning progress, unit completion, bookmarks
-- **Folder Store**: Sync custom folders across devices
-- **Offline-first architecture** maintained with local storage as primary
+## Tamamlanan İşler
 
-#### 🏆 Updated Features
-- **Leaderboard**: Replaced mock data with Firebase integration, real-time updates
-- **Data Sync**: All user progress, folders, and bookmarks sync across devices
-- **Loading States**: Proper loading indicators for cloud operations
+### Firebase Entegrasyonu
+- `services/authService.ts`: Anonim kimlik doğrulama akışı
+- `services/userService.ts`: Profil, XP ve ilerleme senkronizasyonu
+- `services/progressService.ts`: kelime ilerlemesi, ünite tamamlama ve bookmark senkronizasyonu
+- `services/folderService.ts`: özel klasörlerin buluta taşınması
+- `services/leaderboardService.ts`: gerçek zamanlı haftalık ve tüm zamanlar sıralaması
+- `firebase.ts`: merkezi Firebase yapılandırması
 
-### 🔧 Setup Instructions
+### Bulut Destekli Store Güncellemeleri
+- `User Store`: kullanıcı verisi için gerçek zamanlı senkronizasyon
+- `Progress Store`: kelime ilerlemesi, ünite durumu ve bookmark eşitleme
+- `Folder Store`: özel klasörlerin cihazlar arası paylaşımı
+- Yerel depolamanın ana kaynak olarak kaldığı offline-first yaklaşım
 
-#### 1. Firebase Project Setup
-1. Go to [Firebase Console](https://console.firebase.google.com/)
-2. Create a new project called "alman-german-app"
-3. Enable Authentication with Anonymous sign-in
-4. Enable Firestore Database
-5. Get your Firebase config from Project Settings
+### Güncellenen Ürün Özellikleri
+- Mock veriler kaldırılarak leaderboard gerçek Firebase akışına taşındı
+- Kullanıcı ilerlemesi, klasörler ve bookmark verileri cihazlar arasında eşitlendi
+- Bulut işlemleri için yüklenme ve durum yönetimi iyileştirildi
 
-#### 2. Environment Configuration
-Update `.env` with your Firebase config:
+## Kurulum Notları
+
+### 1. Firebase Projesi
+1. [Firebase Console](https://console.firebase.google.com/) üzerinden yeni proje oluşturun.
+2. Anonim giriş destekli Authentication özelliğini aktif edin.
+3. Firestore Database'i açın.
+4. Proje ayarlarından uygulama yapılandırma değerlerini alın.
+
+### 2. Ortam Değişkenleri
+
+`.env` dosyasını aşağıdaki örnek yapıya göre güncelleyin:
+
 ```env
 EXPO_PUBLIC_FIREBASE_API_KEY=your_api_key_here
 EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
@@ -43,71 +48,69 @@ EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=123456789
 EXPO_PUBLIC_FIREBASE_APP_ID=1:123456789:web:abcdef123456
 ```
 
-#### 3. Firestore Security Rules
-Add these rules to your Firestore database:
+### 3. Firestore Güvenlik Kuralları
+
 ```javascript
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Users can read/write their own profile
     match /users/{userId} {
       allow read, write: if request.auth != null && request.auth.uid == userId;
     }
 
-    // Leaderboards are publicly readable
     match /leaderboards/{document=**} {
       allow read: if true;
-      allow write: if false; // Only server-side updates
+      allow write: if false;
     }
   }
 }
 ```
 
-### 🚀 Next Steps for Phase 4
+## Sonraki Adımlar
 
-#### High Priority ✅ COMPLETED
-- [x] Set up Firebase project and configure environment variables
-- [x] Test anonymous authentication flow
-- [x] Implement progress store cloud sync (folders, word progress, bookmarks)
-- [x] Add user avatars and display names
-- [x] Implement real-time leaderboard subscriptions
+### Yüksek Öncelik
+- [x] Firebase projesi ve ortam değişkenleri kuruldu
+- [x] Anonim giriş akışı test edildi
+- [x] İlerleme store'ları için bulut senkronizasyonu eklendi
+- [x] Avatar ve görünen ad desteği sağlandı
+- [x] Gerçek zamanlı leaderboard abonelikleri eklendi
 
-#### Medium Priority
-- [ ] Add offline queue for actions when offline
-- [ ] Implement data migration for existing users
-- [ ] Add user feedback for sync status
-- [ ] Implement daily challenge cloud sync
-- [ ] Add push notifications for leaderboard changes
+### Orta Öncelik
+- [ ] Offline işlem kuyruğu ekleme
+- [ ] Mevcut kullanıcılar için veri migrasyonu
+- [ ] Senkronizasyon durumu için kullanıcı geri bildirimi
+- [ ] Günlük meydan okuma verisinin buluta taşınması
+- [ ] Leaderboard değişimleri için push bildirimleri
 
-#### Future Features
-- [ ] Social features (friend requests, challenges)
-- [ ] Advanced analytics and progress insights
-- [ ] Multi-device sync
-- [ ] Backup and restore functionality
+### İleri Aşama
+- [ ] Sosyal özellikler: arkadaş istekleri ve meydan okumalar
+- [ ] Gelişmiş analytics ve ilerleme içgörüleri
+- [ ] Tam çoklu cihaz senkronizasyonu
+- [ ] Yedekleme ve geri yükleme
 
-### 🧪 Testing
+## Test ve Geliştirme
 
-Run tests with:
+Testleri çalıştırmak için:
+
 ```bash
 npx jest
 ```
 
-Note: Some Expo module tests fail due to mocking issues, but core logic tests pass.
+Geliştirme sunucusunu başlatmak için:
 
-### 📱 Development
-
-Start the development server:
 ```bash
-yarn start
+npx expo start
 ```
 
-### 🔄 Phase 4 Architecture
+Not: Expo modüllerine bağlı bazı testlerde ek mock ihtiyacı oluşabilir; çekirdek mantık testleri öncelikli olarak korunmuştur.
 
-```
-Local Storage (MMKV) ↔️ Cloud Sync ↔️ Firebase Firestore
-     ↓                        ↓               ↓
-- User profiles           - Real-time sync   - User collection
-- Progress data           - Conflict resolution - Progress collection
-- Cache data              - Offline queue     - Leaderboards
-- Settings               - Authentication     - Analytics
+## Mimari Özeti
+
+```text
+Yerel Depolama (MMKV) <-> Bulut Senkronizasyonu <-> Firebase Firestore
+        |                         |                         |
+        |                         |                         |
+   Kullanıcı verisi         Gerçek zamanlı eşitleme     Kullanıcı koleksiyonu
+   İlerleme verisi          Çakışma yönetimi            İlerleme koleksiyonu
+   Cache ve ayarlar         Offline stratejileri        Leaderboard / analytics
 ```

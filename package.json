@@ -1,6 +1,7 @@
 {
   "name": "wortkrieg",
   "version": "1.0.0",
+  "description": "WortKrieg, Almanca öğrenimini gamification, sosyal rekabet ve günlük ilerleme motivasyonu ile birleştiren React Native ve Expo tabanlı mobil uygulamadır.",
   "main": "index.ts",
   "scripts": {
     "start": "expo start",

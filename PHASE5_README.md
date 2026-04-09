@@ -1,154 +1,148 @@
-# Alman - German Learning App
+# WortKrieg
 
-## Phase 5: Social Features & Advanced Analytics
+## Faz 5: Sosyal Özellikler ve Gelişmiş Analytics
 
-### 🎯 Phase 5 Vision
-Transform Alman from a personal learning tool into a social learning community where users can connect, compete, and learn together.
+### Faz Hedefi
 
-### ✅ Completed Features
+Bu fazın amacı WortKrieg'i yalnızca bireysel bir öğrenme aracı olmaktan çıkarıp; kullanıcıların birbirini takip ettiği, meydan okuduğu ve birlikte ilerlediği sosyal bir öğrenme ürününe dönüştürmekti.
 
-#### 🤝 Friend System
-- **SocialService**: Complete friend management (add, remove, requests)
-- **Friend Store**: State management for social connections
-- **Friends Screen**: Full UI for managing friend relationships
-- **Real-time Updates**: Live friend status and request notifications
+## Tamamlanan Özellikler
 
-#### 🏆 Challenge System
-- **Social Challenges**: Create and join learning challenges
-- **Progress Tracking**: Challenge completion and streak monitoring
-- **Challenges Screen**: Interactive challenge browsing and creation
-- **Real-time Sync**: Live challenge updates across participants
+### 🤝 Arkadaş Sistemi
+- `SocialService` ile arkadaş ekleme, silme ve istek yönetimi
+- Sosyal ilişkiler için store tabanlı durum yönetimi
+- Arkadaş bağlantılarının yönetildiği tam ekran akışı
+- Gerçek zamanlı durum ve istek güncellemeleri
 
-#### 📱 Enhanced Dashboard
-- **Social Cards**: Quick access to friends and challenges
-- **Activity Feed**: Social activity indicators
-- **Navigation**: Seamless access to social features
+### 🏆 Meydan Okuma Sistemi
+- Öğrenme meydan okumaları oluşturma ve katılma akışları
+- Tamamlanma ve streak takibi
+- Etkileşimli challenge ekranları
+- Katılımcılar arasında gerçek zamanlı senkronizasyon
 
-#### 🔧 Technical Implementation
-- **Firebase Collections**: Extended with social data structures
-- **Real-time Subscriptions**: Live updates for social features
-- **Offline Support**: Social features work offline-first
-- **Type Safety**: Full TypeScript support for social types
+### 📱 Dashboard İyileştirmeleri
+- Arkadaşlar ve challenge'lar için hızlı erişim kartları
+- Sosyal hareketliliği görünür kılan aktivite katmanı
+- Sosyal modüllere hızlı navigation entegrasyonu
 
-### 📋 Phase 5 Roadmap
+### 🔧 Teknik Altyapı
+- Firebase veri modeli sosyal koleksiyonlarla genişletildi
+- Gerçek zamanlı abonelik altyapısı eklendi
+- Offline-first yaklaşım sosyal özelliklerle uyumlu tutuldu
+- TypeScript tip güvenliği sosyal veri yapıları için korundu
 
-#### High Priority Features ✅ COMPLETED
-- [x] **Friend System**: Add/remove friends, view friend progress
-- [x] **Social Challenges**: Create and join learning challenges with friends
-- [x] **Progress Analytics**: Advanced statistics and learning insights
-- [x] **Achievement System**: Unlockable badges and milestones
-- [x] **Daily Streaks**: Enhanced streak tracking with social rewards
+## Yol Haritası
 
-#### Medium Priority Features
-- [ ] **Study Groups**: Collaborative learning sessions
-- [ ] **Progress Sharing**: Share achievements and milestones
-- [ ] **Leaderboards**: Enhanced with friend comparisons
-- [ ] **Push Notifications**: Daily reminders and social updates
-- [ ] **Backup/Restore**: Cloud backup of all user data
+### Yüksek Öncelik
+- [x] Arkadaş ekleme/çıkarma ve arkadaş ilerlemesini görme
+- [x] Arkadaşlarla öğrenme challenge'ları oluşturma ve katılma
+- [x] Gelişmiş istatistik ve ilerleme analytics katmanı
+- [x] Rozet ve milestone odaklı achievement sistemi
+- [x] Sosyal ödüllerle zenginleşen günlük streak takibi
 
-#### Future Enhancements
-- [ ] **Live Sessions**: Real-time group study sessions
-- [ ] **Mentorship**: Connect learners with advanced speakers
-- [ ] **Language Exchange**: Practice with native speakers
-- [ ] **Competitions**: Weekly/monthly learning tournaments
+### Orta Öncelik
+- [ ] Çalışma grupları
+- [ ] Başarı ve kilometre taşı paylaşımı
+- [ ] Arkadaş karşılaştırmalı leaderboard
+- [ ] Günlük hatırlatma ve sosyal bildirimler
+- [ ] Tüm kullanıcı verisi için yedekleme / geri yükleme
 
-### 🏗 Technical Architecture
+### Gelecek Geliştirmeler
+- [ ] Canlı grup çalışma oturumları
+- [ ] Mentorluk akışları
+- [ ] Anadili konuşanlarla dil değişimi
+- [ ] Haftalık ve aylık topluluk turnuvaları
 
-#### New Firebase Collections
-```
+## Teknik Mimari
+
+### Firebase Koleksiyonları
+
+```text
 users/{userId}/
-  ├── friends/           # Friend relationships
-  ├── challenges/        # Personal challenges
-  ├── achievements/      # Unlocked badges
-  └── analytics/         # Learning statistics
+  friends/         -> arkadaş ilişkileri
+  challenges/      -> kişisel meydan okumalar
+  achievements/    -> açılan rozetler
+  analytics/       -> öğrenme istatistikleri
 
 social/
-  ├── challenges/        # Public challenges
-  ├── groups/           # Study groups
-  └── leaderboards/     # Enhanced rankings
+  challenges/      -> herkese açık challenge verileri
+  groups/          -> çalışma grupları
+  leaderboards/    -> geliştirilmiş sıralamalar
 ```
 
-#### New Services
-- **SocialService**: Friend management, challenges
-- **AnalyticsService**: Progress tracking and insights
-- **NotificationService**: Push notification management
-- **AchievementService**: Badge and milestone system
+### Servisler
+- `SocialService`: arkadaş ve challenge yönetimi
+- `AnalyticsService`: ilerleme takibi ve içgörü üretimi
+- `NotificationService`: push bildirim akışları
+- `AchievementService`: rozet ve milestone mantığı
 
-### 🎨 UI/UX Enhancements
+## Arayüz Etkisi
 
-#### New Screens
-- **Friends Screen**: Manage friend connections
-- **Challenges Screen**: Browse and join challenges
-- **Analytics Dashboard**: Detailed progress insights
-- **Achievements Gallery**: Showcase unlocked badges
+### Yeni Ekranlar
+- Arkadaş yönetim ekranı
+- Challenge listeleme ve oluşturma ekranı
+- Analytics dashboard
+- Achievement galerisi
 
-#### Enhanced Existing Screens
-- **Dashboard**: Social activity feed
-- **Profile**: Achievement showcase, friend stats
-- **Leaderboard**: Friend filters, challenge rankings
+### Güçlendirilen Ekranlar
+- `Dashboard`: sosyal aktivite akışı
+- `Profile`: rozet görünümü ve arkadaş istatistikleri
+- `Leaderboard`: arkadaş filtreleri ve challenge sıralamaları
 
-### 📊 Analytics & Insights
+## Analytics ve İçgörüler
 
-#### Learning Metrics
-- **Retention Rate**: Word memorization effectiveness
-- **Study Patterns**: Optimal learning times
-- **Weak Areas**: Topics needing more practice
-- **Progress Velocity**: Learning speed over time
+### Öğrenme Metrikleri
+- kelime kalıcılığı
+- en verimli çalışma saatleri
+- zayıf konu alanları
+- zaman içindeki öğrenme hızı
 
-#### Social Metrics
-- **Friend Activity**: Compare progress with friends
-- **Challenge Success**: Completion rates and rankings
-- **Community Impact**: Help others learn
+### Sosyal Metrikler
+- arkadaş ilerleme karşılaştırması
+- challenge tamamlama oranları
+- topluluk katkı etkisi
 
-### 🔧 Implementation Plan
+## Uygulama Planı
 
-#### Week 1-2: Core Social Features
-- Friend system implementation
-- Basic challenge creation
-- Social profile enhancements
+### Hafta 1-2
+- Arkadaş sistemi
+- Temel challenge oluşturma
+- Sosyal profil geliştirmeleri
 
-#### Week 3-4: Analytics Dashboard
-- Progress tracking service
-- Analytics calculations
-- Insight visualizations
+### Hafta 3-4
+- Analytics dashboard
+- İlerleme hesaplamaları
+- İçgörü görselleştirmeleri
 
-#### Week 5-6: Achievement System
-- Badge definitions and logic
-- Achievement unlocking
-- Social sharing features
+### Hafta 5-6
+- Rozet tanımları ve açılma mantığı
+- Achievement kilit açma akışları
+- Sosyal paylaşım mekanikleri
 
-#### Week 7-8: Advanced Features
-- Push notifications
-- Backup/restore system
-- Performance optimizations
+### Hafta 7-8
+- Push bildirimler
+- Yedekleme / geri yükleme
+- Performans optimizasyonları
 
-### 🎯 Success Metrics
+## Başarı Kriterleri
 
-#### User Engagement
-- Daily active users increase by 40%
-- Session duration increase by 25%
-- Friend connections per user: 5-10
+### Kullanıcı Etkileşimi
+- Günlük aktif kullanıcıda yüzde 40 artış
+- Oturum süresinde yüzde 25 artış
+- Kullanıcı başına 5-10 arkadaş bağlantısı
 
-#### Learning Outcomes
-- Improved retention rates through social accountability
-- Higher completion rates for challenges
-- Better spaced repetition effectiveness
+### Öğrenme Sonuçları
+- Sosyal sorumluluk etkisiyle daha yüksek retention
+- Challenge tamamlama oranlarında artış
+- Daha iyi spaced repetition verimliliği
 
-#### Technical Metrics
-- 99.9% uptime for social features
-- <2s response time for analytics queries
-- <100KB additional app size
+### Teknik Hedefler
+- Sosyal özelliklerde yüzde 99.9 erişilebilirlik
+- Analytics sorgularında 2 saniyenin altında yanıt süresi
+- Uygulama boyutuna 100 KB altında ek yük
 
-### 🚀 Getting Started
+## Durum
 
-1. **Firebase Setup**: Extend existing Firebase project with new collections
-2. **Service Creation**: Implement social and analytics services
-3. **UI Components**: Create social interaction components
-4. **Testing**: Comprehensive testing of social features
-5. **Launch**: Gradual rollout with feature flags
-
----
-
-**Phase 5 Status**: ✅ COMPLETED
-**Completion Date**: April 4, 2026
-**Next Phase**: Phase 6 - Advanced Analytics & AI Features
+- Faz durumu: tamamlandı
+- Tamamlanma tarihi: 4 Nisan 2026
+- Sonraki faz: Faz 6 - Gelişmiş Analytics ve AI Özellikleri

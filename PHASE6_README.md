@@ -1,131 +1,125 @@
-# Alman - German Learning App
+# WortKrieg
 
-## Phase 6: Advanced Analytics & AI Features
+## Faz 6: Gelişmiş Analytics ve AI Özellikleri
 
-### 🎯 Phase 6 Vision
-Transform Alman into an intelligent learning companion that understands each user's learning patterns and provides personalized, data-driven learning experiences powered by AI.
+### Faz Hedefi
 
-### 📋 Phase 6 Roadmap
+Bu faz, WortKrieg'i kullanıcı davranışını anlayan ve kişiye özel öneriler sunan akıllı bir öğrenme yardımcıya dönüştürmeyi hedefler. Veri toplama, ilerleme tahmini ve adaptif zorluk seviyesi bu katmanın temelidir.
 
-#### High Priority Features
-- [x] **Learning Analytics**: Comprehensive progress tracking and insights
-- [x] **AI Recommendations**: Personalized word and unit suggestions
-- [x] **Progress Predictions**: ML-powered learning trajectory forecasting
-- [x] **Adaptive Difficulty**: Dynamic content difficulty adjustment
-- [ ] **Learning Streaks AI**: Smart streak maintenance and recovery
+## Yol Haritası
 
-#### Medium Priority Features
-- [x] **Performance Insights**: Detailed learning pattern analysis
-- [x] **Weak Area Detection**: AI-powered difficulty identification
-- [x] **Study Session Optimization**: Optimal timing and duration recommendations
-- [x] **Memory Retention Models**: Spaced repetition optimization
-- [ ] **Comparative Analytics**: Benchmark against similar learners
+### Yüksek Öncelik
+- [x] Öğrenme analytics altyapısı
+- [x] Kişiselleştirilmiş kelime ve ünite önerileri
+- [x] Makine öğrenmesi destekli ilerleme tahminleri
+- [x] Dinamik zorluk ayarı
+- [ ] Akıllı streak koruma ve geri kazanım mantığı
 
-#### Future Enhancements
-- [ ] **Natural Language Processing**: Advanced text analysis for writing exercises
-- [ ] **Speech Recognition**: AI-powered pronunciation assessment
-- [ ] **Personalized Content Generation**: AI-created learning materials
-- [ ] **Predictive Notifications**: Smart reminder timing
-- [ ] **Learning Path Optimization**: Dynamic curriculum adjustment
+### Orta Öncelik
+- [x] Detaylı performans içgörüleri
+- [x] AI destekli zayıf alan tespiti
+- [x] Çalışma oturumu zamanı ve süre optimizasyonu
+- [x] Spaced repetition odaklı hafıza tutma modelleri
+- [ ] Benzer kullanıcılarla karşılaştırmalı analytics
 
-### 🏗 Technical Architecture
+### Gelecek Geliştirmeler
+- [ ] Yazma egzersizleri için gelişmiş NLP
+- [ ] Telaffuz değerlendirmesi için konuşma tanıma
+- [ ] AI ile kişisel içerik üretimi
+- [ ] Tahmine dayalı bildirim zamanlaması
+- [ ] Dinamik öğrenme yolu optimizasyonu
 
-#### New Firebase Collections
-```
+## Teknik Mimari
+
+### Firebase Koleksiyonları
+
+```text
 analytics/{userId}/
-  ├── learning_sessions/   # Detailed study session data
-  ├── performance_metrics/ # Learning KPIs and trends
-  ├── predictions/         # AI-generated forecasts
-  └── recommendations/     # Personalized suggestions
+  learning_sessions/    -> detaylı çalışma oturumu verisi
+  performance_metrics/  -> KPI ve trend kayıtları
+  predictions/          -> AI tahmin çıktıları
+  recommendations/      -> kişisel öneriler
 
 ai_models/
-  ├── user_profiles/       # ML user behavior models
-  ├── content_embeddings/  # Word/sentence vector representations
-  └── prediction_models/   # Trained forecasting models
+  user_profiles/        -> kullanıcı davranış modelleri
+  content_embeddings/   -> içerik vektörleri
+  prediction_models/    -> tahmin modelleri
 ```
 
-#### New Services
-- **AnalyticsService**: Comprehensive learning data collection and analysis
-- **AIService**: Machine learning recommendations and predictions
-- **PredictionService**: Learning trajectory forecasting
-- **RecommendationEngine**: Personalized content suggestions
+### Servisler
+- `AnalyticsService`: öğrenme verisini toplar ve analiz eder
+- `AIService`: öneri ve tahmin mantığını taşır
+- `PredictionService`: öğrenme eğrisi tahminleri üretir
+- `RecommendationEngine`: kullanıcıya uygun içerik sıralar
 
-### 📊 Analytics & AI Features
+## Analytics ve AI Yetkinlikleri
 
-#### Learning Metrics
-- **Retention Rate Analysis**: Word memorization effectiveness over time
-- **Study Session Quality**: Engagement and effectiveness scoring
-- **Learning Velocity**: Progress speed and acceleration patterns
-- **Consistency Index**: Regular study habit measurement
-- **Difficulty Adaptation**: Optimal challenge level tracking
+### Öğrenme Metrikleri
+- retention rate analizi
+- çalışma oturumu kalite puanı
+- öğrenme hızı ve ivmesi
+- düzenlilik endeksi
+- uygun zorluk seviyesi takibi
 
-#### AI-Powered Features
-- **Smart Recommendations**: Next best words/units to study
-- **Difficulty Scaling**: Automatic content complexity adjustment
-- **Review Optimization**: Intelligent spaced repetition scheduling
-- **Progress Forecasting**: Predicted completion dates and levels
-- **Weakness Detection**: Automated difficulty area identification
+### AI Destekli Özellikler
+- sıradaki en uygun kelime veya ünite önerisi
+- otomatik içerik zorluk ölçekleme
+- akıllı tekrar planlaması
+- tahmini tamamlanma tarihi ve seviye görünümü
+- otomatik zayıflık alanı tespiti
 
-### 🎨 UI/UX Enhancements
+## Arayüz Güncellemeleri
 
-#### New Screens
-- **Analytics Dashboard**: Comprehensive learning insights
-- **AI Recommendations**: Personalized study suggestions
-- **Progress Predictions**: Future learning trajectory visualization
-- **Performance Reports**: Detailed learning analytics
+### Yeni Ekranlar
+- Analytics dashboard
+- AI önerileri ekranı
+- İlerleme tahmin ekranı
+- Performans raporları
 
-#### Enhanced Existing Screens
-- **Dashboard**: AI insights and recommendations
-- **Study Modes**: Adaptive difficulty indicators
-- **Profile**: Advanced analytics and achievements
-- **Settings**: AI preference customization
+### Güçlendirilen Ekranlar
+- `Dashboard`: AI içgörüleri ve öneriler
+- Çalışma modları: adaptif zorluk göstergeleri
+- `Profile`: gelişmiş analytics ve başarı görünümü
+- `Settings`: AI tercih ayarları
 
-### 🤖 AI Implementation Plan
+## Uygulama Planı
 
-#### Phase 6A: Analytics Foundation (Weeks 1-2) ✅ COMPLETED
-- Learning data collection system
-- Basic analytics calculations
-- Performance metrics dashboard
+### Faz 6A: Analytics Temeli
+- öğrenme verisi toplama sistemi
+- temel analytics hesaplamaları
+- performans metrikleri paneli
 
-#### Phase 6B: AI Recommendations (Weeks 3-4) ✅ COMPLETED
-- User behavior modeling
-- Content recommendation engine
-- Adaptive difficulty system
+### Faz 6B: AI Önerileri
+- kullanıcı davranış modelleme
+- içerik öneri motoru
+- adaptif zorluk sistemi
 
-#### Phase 6C: Predictive Analytics (Weeks 5-6)
-- Learning trajectory forecasting
-- Progress prediction models
-- Personalized learning paths
+### Faz 6C: Tahmine Dayalı Analytics
+- öğrenme eğrisi tahminleri
+- ilerleme tahmin modelleri
+- kişiselleştirilmiş öğrenme yolları
 
-#### Phase 6D: Advanced AI (Weeks 7-8)
-- Natural language processing integration
-- Speech recognition capabilities
-- Dynamic content generation
+### Faz 6D: İleri AI
+- doğal dil işleme entegrasyonu
+- konuşma tanıma
+- dinamik içerik üretimi
 
-### 📈 Success Metrics
+## Başarı Kriterleri
 
-#### Learning Outcomes
-- **Retention Improvement**: 25% increase in long-term word retention
-- **Study Efficiency**: 30% reduction in time to master new vocabulary
-- **User Engagement**: 40% increase in daily active learning time
-- **Completion Rates**: 35% improvement in course completion
+### Öğrenme Çıktıları
+- uzun vadeli kelime retention'ında yüzde 25 artış
+- yeni kelime ustalaşma süresinde yüzde 30 azalma
+- günlük aktif öğrenme süresinde yüzde 40 artış
+- kurs tamamlama oranında yüzde 35 iyileşme
 
-#### Technical Metrics
-- **Analytics Accuracy**: 85% prediction accuracy for learning trajectories
-- **Recommendation Quality**: 75% user acceptance rate for AI suggestions
-- **System Performance**: <500ms response time for analytics queries
-- **Data Processing**: Real-time analytics for 10,000+ concurrent users
+### Teknik Hedefler
+- öğrenme tahminlerinde yüzde 85 doğruluk
+- AI önerilerinde yüzde 75 kabul oranı
+- analytics sorgularında 500 ms altı yanıt süresi
+- 10.000+ eşzamanlı kullanıcı için gerçek zamanlı veri işleme
 
-### 🚀 Getting Started
+## Durum
 
-1. **Analytics Infrastructure**: Set up comprehensive data collection
-2. **AI Model Training**: Develop initial recommendation algorithms
-3. **Dashboard Creation**: Build analytics visualization interfaces
-4. **Integration Testing**: Validate AI recommendations and predictions
-5. **User Testing**: A/B test AI features with real users
-
----
-
-**Phase 6 Status**: 🏗 Phase 6B Complete - AI Recommendations Implemented
-**Estimated Completion**: 8 weeks
-**Priority Level**: High
+- Faz durumu: Faz 6B tamamlandı, AI önerileri uygulanmış durumda
+- Tahmini toplam süre: 8 hafta
+- Öncelik seviyesi: yüksek
