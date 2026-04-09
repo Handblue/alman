@@ -10,6 +10,7 @@ import { Radius } from '@/constants/radius';
 import { useUserStore } from '@/store/useUserStore';
 import { leaderboardService, LeaderboardEntry } from '@/services/leaderboardService';
 import { achievementService } from '@/services/achievementService';
+import { auth } from '@/firebase';
 
 type Tab = 'weekly' | 'allTime' | 'elo';
 
@@ -75,7 +76,7 @@ export default function LeaderboardScreen() {
       setLeaderboardData(data);
 
       // Get user's rank
-      const user = await leaderboardService.getUserRank('current-user-id'); // TODO: Get from auth
+      const user = await leaderboardService.getUserRank(auth.currentUser?.uid || '');
       setUserRank(user?.rank || null);
     } catch (error) {
       console.error('Failed to load leaderboard:', error);
