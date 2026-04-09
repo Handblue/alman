@@ -22,7 +22,8 @@ export function WordDetailSheet({ word, onClose }: Props) {
   const { speak, stop: stopSpeech, isSpeaking, status: speechStatus } = useSpeech();
   
   if (!word) return null;
-  const isBookmarked = bookmarkedWords.includes(word.id);
+  const currentWord = word;
+  const isBookmarked = bookmarkedWords.includes(currentWord.id);
 
   // Use TTS if no audioUrl, otherwise use pre-recorded audio
   const isAudioActive = isPlaying || isSpeaking;
@@ -31,10 +32,10 @@ export function WordDetailSheet({ word, onClose }: Props) {
   function handleAudioPlay() {
     if (isAudioActive) {
       isPlaying ? stop() : stopSpeech();
-    } else if (word.audioUrl) {
-      play(word.audioUrl);
+    } else if (currentWord.audioUrl) {
+      play(currentWord.audioUrl);
     } else {
-      speak(word.german);
+      speak(currentWord.german);
     }
   }
 
@@ -42,27 +43,27 @@ export function WordDetailSheet({ word, onClose }: Props) {
     if (isSpeaking) {
       stopSpeech();
     } else {
-      speak(word.example);
+      speak(currentWord.example);
     }
   }
 
   function handleFolderToggle(folderId: string) {
-    if (isWordInFolder(folderId, word!.id)) {
-      removeWordFromFolder(folderId, word!.id);
+    if (isWordInFolder(folderId, currentWord.id)) {
+      removeWordFromFolder(folderId, currentWord.id);
     } else {
-      addWordToFolder(folderId, word!.id);
+      addWordToFolder(folderId, currentWord.id);
     }
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
   }
 
   function handleBookmark() {
-    toggleBookmark(word!.id);
+    toggleBookmark(currentWord.id);
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
   }
 
   return (
     <Modal
-      visible={!!word}
+      visible
       transparent
       animationType="slide"
       onRequestClose={onClose}
@@ -79,7 +80,7 @@ export function WordDetailSheet({ word, onClose }: Props) {
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={styles.header}>
             <View style={{ flex: 1 }}>
-              <WKText variant="word">{word.german}</WKText>
+              <WKText variant="word">{currentWord.german}</WKText>
               <PlayButton
                 onPress={handleAudioPlay}
                 isPlaying={isAudioActive}
@@ -98,10 +99,10 @@ export function WordDetailSheet({ word, onClose }: Props) {
             </TouchableOpacity>
           </View>
 
-          <WKText variant="bodyLg" style={{ marginBottom: Spacing.s16 }}>{word.turkish}</WKText>
+          <WKText variant="bodyLg" style={{ marginBottom: Spacing.s16 }}>{currentWord.turkish}</WKText>
 
           <WKChip
-            label={word.level}
+            label={currentWord.level}
             color={Colors.brand.primary + '20'}
             textColor={Colors.brand.primary}
             style={{ alignSelf: 'flex-start', marginBottom: Spacing.s16 }}
@@ -113,10 +114,10 @@ export function WordDetailSheet({ word, onClose }: Props) {
           <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.s8, marginBottom: Spacing.s4 }}>
             <View style={{ flex: 1 }}>
               <WKText variant="body" style={{ fontStyle: 'italic', marginBottom: Spacing.s4 }}>
-                {word.example}
+                {currentWord.example}
               </WKText>
               <WKText variant="bodySm" color={Colors.text.secondary}>
-                {word.exampleTranslation}
+                {currentWord.exampleTranslation}
               </WKText>
             </View>
             <PlayButton
@@ -127,13 +128,13 @@ export function WordDetailSheet({ word, onClose }: Props) {
             />
           </View>
 
-          {word.synonyms && word.synonyms.length > 0 && (
+          {currentWord.synonyms && currentWord.synonyms.length > 0 && (
             <View style={{ marginTop: Spacing.s16 }}>
               <WKText variant="bodySm" color={Colors.text.secondary} style={{ marginBottom: Spacing.s8 }}>
                 Eş anlamlılar:
               </WKText>
               <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.s8 }}>
-                {word.synonyms.map(s => <WKChip key={s} label={s} />)}
+                {currentWord.synonyms.map(s => <WKChip key={s} label={s} />)}
               </View>
             </View>
           )}
@@ -146,7 +147,7 @@ export function WordDetailSheet({ word, onClose }: Props) {
               </WKText>
               <View style={folderStyles.chipRow}>
                 {folders.map(folder => {
-                  const inFolder = isWordInFolder(folder.id, word.id);
+                  const inFolder = isWordInFolder(folder.id, currentWord.id);
                   return (
                     <TouchableOpacity
                       key={folder.id}

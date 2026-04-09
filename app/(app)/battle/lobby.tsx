@@ -38,7 +38,7 @@ export default function BattlelobbyScreen() {
   useEffect(() => {
     if (!battle) return;
     if ((battle.status === 'countdown' || battle.status === 'question') && battleId) {
-      router.replace('/battle/vs');
+      router.replace('/(app)/battle/vs');
     }
   }, [battle?.status]);
 

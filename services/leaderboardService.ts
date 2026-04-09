@@ -21,7 +21,7 @@ export interface LeaderboardEntry {
 }
 
 class LeaderboardService {
-  private unsubscribeLeaderboard: Unsubscribe | null = null;
+  private leaderboardUnsubscribe: Unsubscribe | null = null;
 
   async getTopUsers(limitCount: number = 10): Promise<LeaderboardEntry[]> {
     const usersRef = collection(db, 'users');
@@ -34,11 +34,11 @@ class LeaderboardService {
     const querySnapshot = await getDocs(q);
     const entries: LeaderboardEntry[] = [];
 
-    querySnapshot.forEach((doc, index) => {
-      const data = doc.data();
+    querySnapshot.docs.forEach((entryDoc, index) => {
+      const data = entryDoc.data();
       entries.push({
-        uid: doc.id,
-        displayName: data.displayName || `User${doc.id.slice(0, 6)}`,
+        uid: entryDoc.id,
+        displayName: data.displayName || `User${entryDoc.id.slice(0, 6)}`,
         xp: data.xp || 0,
         level: data.level || 1,
         avatar: data.avatar,
@@ -65,11 +65,11 @@ class LeaderboardService {
     const querySnapshot = await getDocs(q);
     const entries: LeaderboardEntry[] = [];
 
-    querySnapshot.forEach((doc, index) => {
-      const data = doc.data();
+    querySnapshot.docs.forEach((entryDoc, index) => {
+      const data = entryDoc.data();
       entries.push({
-        uid: doc.id,
-        displayName: data.displayName || `User${doc.id.slice(0, 6)}`,
+        uid: entryDoc.id,
+        displayName: data.displayName || `User${entryDoc.id.slice(0, 6)}`,
         xp: data.xp || 0,
         level: data.level || 1,
         avatar: data.avatar,
@@ -84,13 +84,13 @@ class LeaderboardService {
     const usersRef = collection(db, 'users');
     const q = query(usersRef, orderBy('xp', 'desc'), limit(10));
 
-    this.unsubscribeLeaderboard = onSnapshot(q, (querySnapshot) => {
+    this.leaderboardUnsubscribe = onSnapshot(q, (querySnapshot) => {
       const entries: LeaderboardEntry[] = [];
-      querySnapshot.forEach((doc, index) => {
-        const data = doc.data();
+      querySnapshot.docs.forEach((entryDoc, index) => {
+        const data = entryDoc.data();
         entries.push({
-          uid: doc.id,
-          displayName: data.displayName || `User${doc.id.slice(0, 6)}`,
+          uid: entryDoc.id,
+          displayName: data.displayName || `User${entryDoc.id.slice(0, 6)}`,
           xp: data.xp || 0,
           level: data.level || 1,
           avatar: data.avatar,
@@ -100,13 +100,13 @@ class LeaderboardService {
       callback(entries);
     });
 
-    return this.unsubscribeLeaderboard;
+    return this.leaderboardUnsubscribe;
   }
 
   unsubscribeLeaderboard(): void {
-    if (this.unsubscribeLeaderboard) {
-      this.unsubscribeLeaderboard();
-      this.unsubscribeLeaderboard = null;
+    if (this.leaderboardUnsubscribe) {
+      this.leaderboardUnsubscribe();
+      this.leaderboardUnsubscribe = null;
     }
   }
 
@@ -118,8 +118,8 @@ class LeaderboardService {
     const total = querySnapshot.size;
 
     let rank = -1;
-    querySnapshot.forEach((doc, index) => {
-      if (doc.id === uid) {
+    querySnapshot.docs.forEach((entryDoc, index) => {
+      if (entryDoc.id === uid) {
         rank = index + 1;
       }
     });

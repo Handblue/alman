@@ -39,6 +39,7 @@ export class StreakService {
   }
 
   private async fetchMetrics(userId: string) {
+    if (!db) return [];
     const q = query(
       collection(db, 'analytics', userId, 'performance_metrics'),
       orderBy('date', 'desc'),
@@ -53,6 +54,7 @@ export class StreakService {
   }
 
   private async fetchSessionHours(userId: string): Promise<number[]> {
+    if (!db) return [];
     const q = query(
       collection(db, 'analytics', userId, 'learning_sessions'),
       orderBy('startTime', 'desc'),

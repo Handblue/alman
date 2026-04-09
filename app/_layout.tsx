@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { AppState, AppStateStatus } from 'react-native';
-import { Stack, router } from 'expo-router';
+import { Stack, router, useRootNavigationState } from 'expo-router';
 import * as Notifications from 'expo-notifications';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { useUserStore } from '@/store/useUserStore';
@@ -12,6 +12,7 @@ import { useDailyChallengeStore } from '@/store/useDailyChallengeStore';
 import { NotificationService } from '@/services/notificationService';
 import { OfflineQueueService } from '@/services/offlineQueueService';
 import { auth } from '@/firebase';
+import { resolveInitialRoute, type AppEntryRoute } from '@/utils/appStartup';
 import {
   useFonts,
   Inter_400Regular,
@@ -22,10 +23,11 @@ import {
 } from '@expo-google-fonts/inter';
 import * as SplashScreen from 'expo-splash-screen';
 
-SplashScreen.preventAutoHideAsync();
+SplashScreen.preventAutoHideAsync().catch(() => {});
 
 export default function RootLayout() {
-  const [fontsLoaded] = useFonts({
+  const rootNavigationState = useRootNavigationState();
+  const [fontsLoaded, fontError] = useFonts({
     Inter_400Regular,
     Inter_500Medium,
     Inter_600SemiBold,
@@ -33,16 +35,19 @@ export default function RootLayout() {
     Inter_800ExtraBold,
   });
 
-  const hasOnboarded = useUserStore((s) => s.hasOnboarded);
   const initializeAuth = useUserStore((s) => s.initializeAuth);
   const checkAndUpdateStreak = useUserStore((s) => s.checkAndUpdateStreak);
   const initializeProgressSync = useProgressStore((s) => s.initializeProgressSync);
   const initializeFolderSync = useFolderStore((s) => s.initializeFolderSync);
   const initializeSocialSync = useSocialStore((s) => s.initializeSocialSync);
-  const { loadAnalyticsData, loadAIData, loadStreakInsights } = useAnalyticsStore();
-  const { loadFromCloud, syncToCloud } = useDailyChallengeStore();
+  const loadAnalyticsData = useAnalyticsStore((s) => s.loadAnalyticsData);
+  const loadAIData = useAnalyticsStore((s) => s.loadAIData);
+  const loadStreakInsights = useAnalyticsStore((s) => s.loadStreakInsights);
+  const loadFromCloud = useDailyChallengeStore((s) => s.loadFromCloud);
 
   const appState = useRef<AppStateStatus>(AppState.currentState);
+  const hasRedirected = useRef(false);
+  const [initialRoute, setInitialRoute] = useState<AppEntryRoute | null>(null);
 
   // ─── Notification deep link handler ────────────────────────────────────
   useEffect(() => {
@@ -75,47 +80,57 @@ export default function RootLayout() {
 
   // ─── Main init ──────────────────────────────────────────────────────────
   useEffect(() => {
-    if (!fontsLoaded) return;
+    if (!fontsLoaded && !fontError) return;
+    setInitialRoute(resolveInitialRoute(useUserStore.getState().hasOnboarded));
 
-    SplashScreen.hideAsync();
+    const runInitialization = async () => {
+      try {
+        try {
+          await initializeAuth();
+        } catch (error) {
+          console.error('Failed to initialize auth in root layout:', error);
+        }
 
-    initializeAuth().then(async () => {
-      checkAndUpdateStreak();
-      initializeProgressSync();
-      initializeFolderSync();
-      initializeSocialSync();
+        checkAndUpdateStreak();
+        initializeProgressSync();
+        initializeFolderSync();
+        initializeSocialSync();
 
-      const userId = auth.currentUser?.uid;
-      if (userId) {
-        // Analytics
-        loadAnalyticsData(userId);
-        loadAIData(userId);
-        loadStreakInsights(userId);
+        const userId = auth?.currentUser?.uid;
+        if (userId) {
+          loadAnalyticsData(userId);
+          loadAIData(userId);
+          loadStreakInsights(userId);
+          loadFromCloud(userId);
 
-        // Daily challenge cloud sync
-        loadFromCloud(userId);
-
-        // Streak alert check
-        const { streak } = useUserStore.getState();
-        const hour = new Date().getHours();
-        if (streak > 0 && hour >= 20) {
-          const notifService = NotificationService.getInstance();
-          const prefs = notifService.getPreferences();
-          if (prefs.streakAlert) {
-            notifService.sendStreakAlert(streak).catch(() => {});
+          const { streak } = useUserStore.getState();
+          const hour = new Date().getHours();
+          if (streak > 0 && hour >= 20) {
+            const notifService = NotificationService.getInstance();
+            const prefs = notifService.getPreferences();
+            if (prefs.streakAlert) {
+              notifService.sendStreakAlert(streak).catch(() => {});
+            }
           }
         }
+
+        NotificationService.getInstance().initialize().catch(() => {});
+        await flushOfflineQueue();
+      } catch (error) {
+        console.error('Failed during root layout initialization:', error);
       }
+    };
 
-      // Init push notifications (permission request)
-      NotificationService.getInstance().initialize().catch(() => {});
+    runInitialization();
+  }, [fontsLoaded, fontError]);
 
-      // Flush any queued offline actions
-      await flushOfflineQueue();
-    });
+  useEffect(() => {
+    if (!rootNavigationState?.key || !initialRoute || hasRedirected.current) return;
 
-    router.replace(hasOnboarded ? '/(app)/dashboard' : '/(onboarding)/welcome');
-  }, [fontsLoaded]);
+    hasRedirected.current = true;
+    router.replace(initialRoute);
+    SplashScreen.hideAsync().catch(() => {});
+  }, [initialRoute, rootNavigationState?.key]);
 
   return (
     <ThemeProvider>
@@ -133,12 +148,14 @@ async function flushOfflineQueue() {
 
   queue.deduplicateProgressUpdates();
 
-  const userId = auth.currentUser?.uid;
+  const userId = auth?.currentUser?.uid;
   if (!userId) return;
+
+  const { db } = await import('@/firebase');
+  if (!db) return;
 
   const result = await queue.processQueue({
     onChallengeComplete: async (action) => {
-      const { db } = await import('@/firebase');
       const { doc, setDoc, Timestamp } = await import('firebase/firestore');
       await setDoc(
         doc(db, 'daily_challenges', userId, 'sessions', action.date),
@@ -155,7 +172,6 @@ async function flushOfflineQueue() {
     },
 
     onStreakUpdate: async (action) => {
-      const { db } = await import('@/firebase');
       const { doc, updateDoc } = await import('firebase/firestore');
       await updateDoc(doc(db, 'users', userId), {
         streak: action.streak,
@@ -164,7 +180,6 @@ async function flushOfflineQueue() {
     },
 
     onXPGain: async (action) => {
-      const { db } = await import('@/firebase');
       const { doc, updateDoc, increment } = await import('firebase/firestore');
       await updateDoc(doc(db, 'users', userId), {
         xp: increment(action.amount),
@@ -172,7 +187,6 @@ async function flushOfflineQueue() {
     },
 
     onBadgeEarn: async (action) => {
-      const { db } = await import('@/firebase');
       const { doc, updateDoc, arrayUnion } = await import('firebase/firestore');
       await updateDoc(doc(db, 'users', userId), {
         badges: arrayUnion(action.badgeId),

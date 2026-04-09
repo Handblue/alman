@@ -1,8 +1,6 @@
 import { TouchableOpacity, ActivityIndicator } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { WKText } from './WKText';
 import { Colors } from '@/constants/colors';
-import { Spacing } from '@/constants/spacing';
-import { Radius } from '@/constants/radius';
 import { Shadows } from '@/constants/shadows';
 
 interface Props {
@@ -40,11 +38,9 @@ export function PlayButton({
       {isLoading ? (
         <ActivityIndicator color={Colors.text.primaryDark} size="small" />
       ) : (
-        <Ionicons
-          name={isPlaying ? 'stop' : 'play'}
-          size={size * 0.5}
-          color={Colors.text.primaryDark}
-        />
+        <WKText style={{ fontSize: size * 0.4, color: Colors.text.primaryDark }}>
+          {isPlaying ? '■' : '▶'}
+        </WKText>
       )}
     </TouchableOpacity>
   );

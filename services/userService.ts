@@ -26,6 +26,7 @@ class UserService {
   private unsubscribeUser: Unsubscribe | null = null;
 
   async createUserProfile(uid: string, initialData: Partial<UserProfile>): Promise<void> {
+    if (!db) return;
     const userRef = doc(db, 'users', uid);
     const userProfile: UserProfile = {
       uid,
@@ -45,6 +46,7 @@ class UserService {
   }
 
   async getUserProfile(uid: string): Promise<UserProfile | null> {
+    if (!db) return null;
     const userRef = doc(db, 'users', uid);
     const userSnap = await getDoc(userRef);
 
@@ -55,6 +57,7 @@ class UserService {
   }
 
   async updateUserProfile(uid: string, updates: Partial<UserProfile>): Promise<void> {
+    if (!db) return;
     const userRef = doc(db, 'users', uid);
     await updateDoc(userRef, {
       ...updates,
@@ -63,6 +66,10 @@ class UserService {
   }
 
   subscribeToUserProfile(uid: string, callback: (profile: UserProfile | null) => void): Unsubscribe {
+    if (!db) {
+      callback(null);
+      return () => {};
+    }
     const userRef = doc(db, 'users', uid);
     this.unsubscribeUser = onSnapshot(userRef, (doc) => {
       if (doc.exists()) {
@@ -96,14 +103,17 @@ class UserService {
     const cloudProfile = await this.getUserProfile(user.uid);
     if (!cloudProfile) {
       // Create new profile with local data
-      await this.createUserProfile(user.uid, localData);
+      await this.createUserProfile(user.uid, {
+        ...localData,
+        lastActiveDate: localData.lastActiveDate ?? new Date().toISOString().split('T')[0],
+      });
     } else {
       // Merge local and cloud data (prefer higher values)
       const mergedData = {
         xp: Math.max(localData.xp, cloudProfile.xp),
         level: Math.max(localData.level, cloudProfile.level),
         streak: Math.max(localData.streak, cloudProfile.streak),
-        lastActiveDate: localData.lastActiveDate || cloudProfile.lastActiveDate,
+        lastActiveDate: localData.lastActiveDate ?? cloudProfile.lastActiveDate,
         selectedLevel: localData.selectedLevel || cloudProfile.selectedLevel,
         selectedCategories: localData.selectedCategories.length > 0
           ? localData.selectedCategories

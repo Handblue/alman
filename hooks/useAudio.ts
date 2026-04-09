@@ -6,7 +6,7 @@ import { useAudioCache } from './useAudioCache';
 export type AudioStatus = 'idle' | 'loading' | 'playing' | 'error';
 
 export function useAudio() {
-  const soundRef = useRef<Audio.Sound | null>(null);
+  const soundRef = useRef<any>(null);
   const [status, setStatus] = useState<AudioStatus>('idle');
   const [isPlaying, setIsPlaying] = useState(false);
   const { readCache, saveCache, isCached, initializeCache } = useAudioCache();
@@ -34,7 +34,7 @@ export function useAudio() {
       }
 
       setStatus('loading');
-      const { sound } = await Audio.Sound.createAsync(
+      const { sound } = await (Audio as any).Sound.createAsync(
         { uri: audioUrl },
         { shouldPlay: true }
       );

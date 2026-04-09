@@ -56,13 +56,21 @@ class SocialService {
   private unsubscribeRequests: Unsubscribe | null = null;
   private unsubscribeChallenges: Unsubscribe | null = null;
 
+  private getFirestore() {
+    if (!db) {
+      throw new Error('Firebase not configured');
+    }
+    return db;
+  }
+
   // Friend Management
   async sendFriendRequest(toUid: string): Promise<void> {
+    const firestore = this.getFirestore();
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
 
     const requestId = `${user.uid}_${toUid}_${Date.now()}`;
-    const requestRef = doc(db, 'friendRequests', requestId);
+    const requestRef = doc(firestore, 'friendRequests', requestId);
 
     // Get sender info
     const userProfile = await this.getUserPublicProfile(user.uid);
@@ -82,10 +90,11 @@ class SocialService {
   }
 
   async acceptFriendRequest(requestId: string): Promise<void> {
+    const firestore = this.getFirestore();
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
 
-    const requestRef = doc(db, 'friendRequests', requestId);
+    const requestRef = doc(firestore, 'friendRequests', requestId);
     const requestSnap = await getDoc(requestRef);
 
     if (!requestSnap.exists()) throw new Error('Friend request not found');
@@ -102,10 +111,11 @@ class SocialService {
   }
 
   async declineFriendRequest(requestId: string): Promise<void> {
+    const firestore = this.getFirestore();
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
 
-    const requestRef = doc(db, 'friendRequests', requestId);
+    const requestRef = doc(firestore, 'friendRequests', requestId);
     const requestSnap = await getDoc(requestRef);
 
     if (!requestSnap.exists()) throw new Error('Friend request not found');
@@ -117,19 +127,21 @@ class SocialService {
   }
 
   private async addFriend(uid1: string, uid2: string): Promise<void> {
-    const friendsRef1 = doc(db, 'users', uid1, 'friends', uid2);
-    const friendsRef2 = doc(db, 'users', uid2, 'friends', uid1);
+    const firestore = this.getFirestore();
+    const friendsRef1 = doc(firestore, 'users', uid1, 'friends', uid2);
+    const friendsRef2 = doc(firestore, 'users', uid2, 'friends', uid1);
 
     await setDoc(friendsRef1, { friendUid: uid2, addedAt: Timestamp.now() });
     await setDoc(friendsRef2, { friendUid: uid1, addedAt: Timestamp.now() });
   }
 
   async removeFriend(friendUid: string): Promise<void> {
+    const firestore = this.getFirestore();
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
 
-    const friendRef1 = doc(db, 'users', user.uid, 'friends', friendUid);
-    const friendRef2 = doc(db, 'users', friendUid, 'friends', user.uid);
+    const friendRef1 = doc(firestore, 'users', user.uid, 'friends', friendUid);
+    const friendRef2 = doc(firestore, 'users', friendUid, 'friends', user.uid);
 
     await Promise.all([
       updateDoc(friendRef1, { status: 'removed', removedAt: Timestamp.now() }),
@@ -138,7 +150,8 @@ class SocialService {
   }
 
   async getFriends(uid: string): Promise<Friend[]> {
-    const friendsRef = collection(db, 'users', uid, 'friends');
+    const firestore = this.getFirestore();
+    const friendsRef = collection(firestore, 'users', uid, 'friends');
     const friendsSnap = await getDocs(friendsRef);
 
     const friends: Friend[] = [];
@@ -164,8 +177,10 @@ class SocialService {
   }
 
   async getPendingRequests(uid: string): Promise<FriendRequest[]> {
-    const requestsRef = collection(db, 'friendRequests');
+    const firestore = this.getFirestore();
+    const requestsRef = collection(firestore, 'friendRequests');
     const q = query(
+      requestsRef,
       where('toUid', '==', uid),
       where('status', '==', 'pending')
     );
@@ -175,8 +190,10 @@ class SocialService {
   }
 
   async getSentRequests(uid: string): Promise<FriendRequest[]> {
-    const requestsRef = collection(db, 'friendRequests');
+    const firestore = this.getFirestore();
+    const requestsRef = collection(firestore, 'friendRequests');
     const q = query(
+      requestsRef,
       where('fromUid', '==', uid),
       where('status', '==', 'pending')
     );
@@ -187,7 +204,8 @@ class SocialService {
 
   // User Profile
   async getUserPublicProfile(uid: string): Promise<any> {
-    const userRef = doc(db, 'users', uid);
+    const firestore = this.getFirestore();
+    const userRef = doc(firestore, 'users', uid);
     const userSnap = await getDoc(userRef);
 
     if (userSnap.exists()) {
@@ -205,10 +223,11 @@ class SocialService {
   }
 
   async updateUserProfile(updates: Partial<{ displayName: string; avatar: string }>): Promise<void> {
+    const firestore = this.getFirestore();
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
 
-    const userRef = doc(db, 'users', user.uid);
+    const userRef = doc(firestore, 'users', user.uid);
     await updateDoc(userRef, {
       ...updates,
       updatedAt: new Date().toISOString(),
@@ -227,11 +246,12 @@ class SocialService {
 
   // Challenge System
   async createChallenge(challenge: Omit<SocialChallenge, 'id' | 'participants' | 'progress'>): Promise<string> {
+    const firestore = this.getFirestore();
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
 
     const challengeId = `challenge_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-    const challengeRef = doc(db, 'social', 'challenges', challengeId);
+    const challengeRef = doc(firestore, 'social', 'challenges', challengeId);
 
     const newChallenge: SocialChallenge = {
       ...challenge,
@@ -247,10 +267,11 @@ class SocialService {
   }
 
   async joinChallenge(challengeId: string): Promise<void> {
+    const firestore = this.getFirestore();
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
 
-    const challengeRef = doc(db, 'social', 'challenges', challengeId);
+    const challengeRef = doc(firestore, 'social', 'challenges', challengeId);
     const challengeSnap = await getDoc(challengeRef);
 
     if (!challengeSnap.exists()) throw new Error('Challenge not found');
@@ -267,25 +288,28 @@ class SocialService {
   }
 
   async updateChallengeProgress(challengeId: string, completedWords: number, streak: number): Promise<void> {
+    const firestore = this.getFirestore();
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
 
-    const challengeRef = doc(db, 'social', 'challenges', challengeId);
+    const challengeRef = doc(firestore, 'social', 'challenges', challengeId);
     await updateDoc(challengeRef, {
       [`progress.${user.uid}`]: { completedWords, streak },
     });
   }
 
   async getActiveChallenges(): Promise<SocialChallenge[]> {
-    const challengesRef = collection(db, 'social', 'challenges');
-    const q = query(where('status', '==', 'active'));
+    const firestore = this.getFirestore();
+    const challengesRef = collection(firestore, 'social', 'challenges');
+    const q = query(challengesRef, where('status', '==', 'active'));
     const challengesSnap = await getDocs(q);
 
     return challengesSnap.docs.map(doc => doc.data() as SocialChallenge);
   }
 
   async getUserChallenges(uid: string): Promise<SocialChallenge[]> {
-    const challengesRef = collection(db, 'social', 'challenges');
+    const firestore = this.getFirestore();
+    const challengesRef = collection(firestore, 'social', 'challenges');
     const challengesSnap = await getDocs(challengesRef);
 
     return challengesSnap.docs
@@ -295,6 +319,7 @@ class SocialService {
 
   // Subscriptions
   subscribeToFriends(uid: string, callback: (friends: Friend[]) => void): Unsubscribe {
+    if (!db) return () => {};
     const friendsRef = collection(db, 'users', uid, 'friends');
     this.unsubscribeFriends = onSnapshot(friendsRef, async () => {
       const friends = await this.getFriends(uid);
@@ -304,8 +329,10 @@ class SocialService {
   }
 
   subscribeToFriendRequests(uid: string, callback: (requests: FriendRequest[]) => void): Unsubscribe {
+    if (!db) return () => {};
     const requestsRef = collection(db, 'friendRequests');
     const q = query(
+      requestsRef,
       where('toUid', '==', uid),
       where('status', '==', 'pending')
     );
@@ -317,6 +344,7 @@ class SocialService {
   }
 
   subscribeToChallenges(callback: (challenges: SocialChallenge[]) => void): Unsubscribe {
+    if (!db) return () => {};
     const challengesRef = collection(db, 'social', 'challenges');
     this.unsubscribeChallenges = onSnapshot(challengesRef, (snapshot) => {
       const challenges = snapshot.docs.map(doc => doc.data() as SocialChallenge);

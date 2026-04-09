@@ -33,6 +33,7 @@ class ProgressService {
   private unsubscribeProgress: Unsubscribe | null = null;
 
   async createProgressDocument(uid: string, initialData: Partial<ProgressData>): Promise<void> {
+    if (!db) return;
     const progressRef = doc(db, 'progress', uid);
     const progressData: ProgressData = {
       wordProgress: {},
@@ -46,6 +47,7 @@ class ProgressService {
   }
 
   async getProgressData(uid: string): Promise<ProgressData | null> {
+    if (!db) return null;
     const progressRef = doc(db, 'progress', uid);
     const progressSnap = await getDoc(progressRef);
 
@@ -56,6 +58,7 @@ class ProgressService {
   }
 
   async updateProgressData(uid: string, updates: Partial<ProgressData>): Promise<void> {
+    if (!db) return;
     const progressRef = doc(db, 'progress', uid);
     await updateDoc(progressRef, {
       ...updates,
@@ -64,6 +67,10 @@ class ProgressService {
   }
 
   subscribeToProgressData(uid: string, callback: (progress: ProgressData | null) => void): Unsubscribe {
+    if (!db) {
+      callback(null);
+      return () => {};
+    }
     const progressRef = doc(db, 'progress', uid);
     this.unsubscribeProgress = onSnapshot(progressRef, (doc) => {
       if (doc.exists()) {

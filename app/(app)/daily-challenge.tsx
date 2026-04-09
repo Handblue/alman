@@ -15,6 +15,7 @@ import { Radius } from '@/constants/radius';
 import { useDailyChallengeStore } from '@/store/useDailyChallengeStore';
 import { useUserStore } from '@/store/useUserStore';
 import { WORDS } from '@/data/words';
+import { speakingService } from '@/services/speakingService';
 
 type ScreenState = 'intro' | 'question' | 'result';
 type AnswerState = 'unanswered' | 'correct' | 'wrong';
@@ -159,6 +160,13 @@ export default function DailyChallengeScreen() {
       const earned = latest?.xpEarned ?? 0;
       setXpEarned(earned);
       addXP(earned);
+      if (latest) {
+        speakingService.awardDailyChallengeBonus(
+          latest.date,
+          latest.correctCount,
+          latest.questionIds.length
+        );
+      }
       setScreenState('result');
     }, 50);
   };

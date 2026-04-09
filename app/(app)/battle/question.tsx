@@ -63,7 +63,7 @@ export default function BattleQuestionScreen() {
   // Navigate when battle finishes
   useEffect(() => {
     if (battle?.status === 'finished') {
-      router.replace('/battle/result');
+      router.replace('/(app)/battle/result');
     }
   }, [battle?.status]);
 

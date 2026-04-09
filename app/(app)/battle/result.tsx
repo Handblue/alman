@@ -17,6 +17,8 @@ import { useProgressStore } from '@/store/useProgressStore';
 import { useSocialStore } from '@/store/useSocialStore';
 import { QUESTION_COUNT } from '@/services/battleService';
 import { achievementService } from '@/services/achievementService';
+import { battleHistoryService } from '@/services/battleHistoryService';
+import { speakingService } from '@/services/speakingService';
 
 export default function BattleResultScreen() {
   const router = useRouter();
@@ -28,11 +30,15 @@ export default function BattleResultScreen() {
 
   const scaleAnim = useRef(new Animated.Value(0.7)).current;
   const opacityAnim = useRef(new Animated.Value(0)).current;
+  const processedRef = useRef(false);
 
   // XP reward: score / 10 (max 50 from battle)
   const xpEarned = Math.round(myScore / 10);
 
   useEffect(() => {
+    if (processedRef.current) return;
+    processedRef.current = true;
+
     // Haptic feedback
     if (isWinner === true) {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
@@ -44,6 +50,24 @@ export default function BattleResultScreen() {
 
     // Save battle stats
     achievementService.recordBattleResult(isWinner === true, eloChange);
+    speakingService.awardBattleWinCredits(battle?.id ?? 'unknown', isWinner === true);
+
+    if (battle) {
+      battleHistoryService.addEntry({
+        id: battle.id,
+        battleId: battle.id,
+        opponentName: opponent?.displayName ?? 'Bilinmeyen Rakip',
+        opponentIsBot: opponent?.isBot ?? false,
+        didWin: isWinner === true,
+        isDraw: isWinner === null,
+        myScore,
+        opponentScore,
+        eloChange,
+        xpEarned,
+        playedAt: new Date().toISOString(),
+        questionCount: battle.questions.length,
+      });
+    }
 
     // Award XP
     if (xpEarned > 0) addXP(xpEarned);
@@ -70,16 +94,16 @@ export default function BattleResultScreen() {
       Animated.spring(scaleAnim, { toValue: 1, tension: 60, friction: 7, useNativeDriver: true }),
       Animated.timing(opacityAnim, { toValue: 1, duration: 400, useNativeDriver: true }),
     ]).start();
-  }, []);
+  }, [battle, eloChange, friends.length, isWinner, myScore, opponent?.displayName, opponent?.isBot, opponentScore, streak, wordProgress, unitProgress, xp, xpEarned]);
 
   const handlePlayAgain = () => {
     reset();
-    router.replace('/battle/lobby');
+    router.replace('/(app)/battle/lobby');
   };
 
   const handleHome = () => {
     reset();
-    router.replace('/dashboard');
+    router.replace('/(app)/dashboard');
   };
 
   if (!battle) return null;
@@ -170,6 +194,9 @@ export default function BattleResultScreen() {
         <View style={styles.actions}>
           <Pressable style={styles.playAgainBtn} onPress={handlePlayAgain}>
             <WKText style={styles.playAgainText}>⚔️ Tekrar Oyna</WKText>
+          </Pressable>
+          <Pressable style={styles.homeBtn} onPress={() => router.push('/(app)/battle/history')}>
+            <WKText style={styles.homeText}>Geçmişi Gör</WKText>
           </Pressable>
           <Pressable style={styles.homeBtn} onPress={handleHome}>
             <WKText style={styles.homeText}>Ana Sayfa</WKText>

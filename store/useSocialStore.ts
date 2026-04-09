@@ -1,13 +1,15 @@
 import { create } from 'zustand';
-import { MMKV } from 'react-native-mmkv';
 import { socialService, Friend, FriendRequest, SocialChallenge } from '@/services/socialService';
+import { authService } from '@/services/authService';
+import { createStorage } from '@/utils/storage';
 
-const storage = new MMKV({ id: 'social-store' });
+const storage = createStorage('social-store');
 
 // Conditionally import Firebase services only in non-test environments
 let socialServiceInstance: any = null;
+const isTestEnv = process.env.JEST_WORKER_ID !== undefined;
 
-if (typeof jest === 'undefined') {
+if (!isTestEnv) {
   // Only import in production/runtime
   socialServiceInstance = require('@/services/socialService').socialService;
 }
@@ -58,7 +60,7 @@ export const useSocialStore = create<SocialState>((set, get) => ({
 
     set(state => ({ loading: { ...state.loading, friends: true } }));
     try {
-      const user = socialServiceInstance.authService?.getCurrentUser();
+      const user = authService.getCurrentUser();
       if (!user) return;
 
       const friends = await socialServiceInstance.getFriends(user.uid);
@@ -75,7 +77,7 @@ export const useSocialStore = create<SocialState>((set, get) => ({
 
     set(state => ({ loading: { ...state.loading, requests: true } }));
     try {
-      const user = socialServiceInstance.authService?.getCurrentUser();
+      const user = authService.getCurrentUser();
       if (!user) return;
 
       const [friendRequests, sentRequests] = await Promise.all([
@@ -96,7 +98,7 @@ export const useSocialStore = create<SocialState>((set, get) => ({
     try {
       await socialServiceInstance.sendFriendRequest(toUid);
       // Reload sent requests
-      const user = socialServiceInstance.authService?.getCurrentUser();
+      const user = authService.getCurrentUser();
       if (user) {
         const sentRequests = await socialServiceInstance.getSentRequests(user.uid);
         set({ sentRequests });
@@ -207,7 +209,7 @@ export const useSocialStore = create<SocialState>((set, get) => ({
     }
 
     try {
-      const user = socialServiceInstance.authService?.getCurrentUser();
+      const user = authService.getCurrentUser();
       if (!user) return;
 
       // Load initial data

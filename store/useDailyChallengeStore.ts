@@ -1,12 +1,12 @@
 import { create } from 'zustand';
-import { MMKV } from 'react-native-mmkv';
 import { WORDS } from '@/data/words';
 import { db } from '@/firebase';
 import { doc, setDoc, getDoc, Timestamp } from 'firebase/firestore';
 import { NotificationService } from '@/services/notificationService';
 import { OfflineQueueService } from '@/services/offlineQueueService';
+import { createStorage, readStoredJson } from '@/utils/storage';
 
-const storage = new MMKV({ id: 'daily-challenge-store' });
+const storage = createStorage('daily-challenge-store');
 
 export type DailyChallenge = {
   date: string;
@@ -55,8 +55,8 @@ function pickQuestionIds(seed: number, totalWords: number, count: number): numbe
 }
 
 export const useDailyChallengeStore = create<DailyChallengeState>((set, get) => ({
-  todayChallenge: JSON.parse(storage.getString('dailyChallenge') ?? 'null'),
-  history: JSON.parse(storage.getString('challengeHistory') ?? '[]'),
+  todayChallenge: readStoredJson<DailyChallenge | null>(storage, 'dailyChallenge', null),
+  history: readStoredJson<DailyChallenge[]>(storage, 'challengeHistory', []),
   syncing: false,
 
   initToday: () => {
@@ -122,6 +122,7 @@ export const useDailyChallengeStore = create<DailyChallengeState>((set, get) => 
   syncToCloud: async (userId: string) => {
     set({ syncing: true });
     try {
+      if (!db) return;
       const { todayChallenge, history } = get();
 
       if (todayChallenge) {
@@ -161,6 +162,7 @@ export const useDailyChallengeStore = create<DailyChallengeState>((set, get) => 
 
   loadFromCloud: async (userId: string) => {
     try {
+      if (!db) return;
       const { collection, getDocs, query, orderBy, limit } = await import('firebase/firestore');
 
       const q = query(

@@ -11,13 +11,16 @@ class AuthService {
   private listeners: ((user: User | null) => void)[] = [];
 
   constructor() {
-    onAuthStateChanged(auth, (user) => {
-      this.user = user;
-      this.listeners.forEach(listener => listener(user));
-    });
+    if (auth) {
+      onAuthStateChanged(auth, (user) => {
+        this.user = user;
+        this.listeners.forEach(listener => listener(user));
+      });
+    }
   }
 
   async signInAnonymously(): Promise<User> {
+    if (!auth) return null as any;
     try {
       const result = await signInAnonymously(auth);
       return result.user;
@@ -32,7 +35,6 @@ class AuthService {
 
   onAuthStateChange(listener: (user: User | null) => void): () => void {
     this.listeners.push(listener);
-    // Return unsubscribe function
     return () => {
       const index = this.listeners.indexOf(listener);
       if (index > -1) {
@@ -42,7 +44,7 @@ class AuthService {
   }
 
   async signOut(): Promise<void> {
-    await auth.signOut();
+    if (auth) await auth.signOut();
   }
 }
 

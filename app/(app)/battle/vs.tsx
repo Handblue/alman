@@ -32,7 +32,7 @@ export default function BattleVsScreen() {
       if (battle && myUid === battle.player1.uid && battleId) {
         battleService.startQuestion(battleId, 0);
       }
-      router.replace('/battle/question');
+      router.replace('/(app)/battle/question');
       return;
     }
     const t = setTimeout(() => setCount(c => c - 1), 1000);
@@ -42,7 +42,7 @@ export default function BattleVsScreen() {
   // Also watch for status changes (in case opponent navigates us)
   useEffect(() => {
     if (battle?.status === 'question') {
-      router.replace('/battle/question');
+      router.replace('/(app)/battle/question');
     }
   }, [battle?.status]);
 

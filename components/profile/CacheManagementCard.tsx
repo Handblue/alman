@@ -191,7 +191,7 @@ const styles = StyleSheet.create({
   },
   clearButton: {
     flex: 1,
-    paddingVertical: Spacing.s10,
+    paddingVertical: Spacing.s12,
     paddingHorizontal: Spacing.s12,
     borderRadius: Radius.button,
     alignItems: 'center',

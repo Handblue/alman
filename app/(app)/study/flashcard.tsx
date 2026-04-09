@@ -116,6 +116,7 @@ export default function FlashcardScreen() {
   const handleRate = useCallback(
     (status: 'unknown' | 'learning' | 'known') => {
       const wordId = adaptiveWords[index].id;
+      const studiedWord = String(wordId);
       const isCorrect = status === 'known';
 
       setWordProgress(wordId, status);
@@ -128,7 +129,7 @@ export default function FlashcardScreen() {
       // Update session stats with adaptive logic
       setSessionStats(prev => {
         const newStats = {
-          wordsStudied: [...prev.wordsStudied, wordId],
+          wordsStudied: [...prev.wordsStudied, studiedWord],
           correctAnswers: prev.correctAnswers + (isCorrect ? 1 : 0),
           totalAnswers: prev.totalAnswers + 1,
           engagement: prev.engagement + (isCorrect ? 10 : 5),
@@ -157,7 +158,7 @@ export default function FlashcardScreen() {
 
         // End analytics session and generate recommendations
         endLearningSession(
-          [...sessionStats.wordsStudied, wordId],
+          [...sessionStats.wordsStudied, studiedWord],
           sessionStats.correctAnswers + (isCorrect ? 1 : 0),
           sessionStats.totalAnswers + 1,
           sessionStats.engagement + (isCorrect ? 10 : 5),
@@ -165,7 +166,7 @@ export default function FlashcardScreen() {
         ).catch(console.error);
 
         // Generate new recommendations based on session performance
-        const userId = auth.currentUser?.uid;
+        const userId = auth?.currentUser?.uid;
         if (userId) {
           generateRecommendations(userId).catch(console.error);
         }

@@ -13,9 +13,9 @@ import { CacheManagementCard } from '@/components/profile/CacheManagementCard';
 import { NotificationService, NotificationPreferences } from '@/services/notificationService';
 import { OfflineQueueService } from '@/services/offlineQueueService';
 import { achievementService, ACHIEVEMENT_DEFS } from '@/services/achievementService';
-import { MMKV } from 'react-native-mmkv';
+import { createStorage } from '@/utils/storage';
 
-const premiumStorage = new MMKV({ id: 'premium' });
+const premiumStorage = createStorage('premium');
 
 // Use centralized ACHIEVEMENT_DEFS from achievementService
 const BADGE_DEFS = ACHIEVEMENT_DEFS.map(a => ({
@@ -280,6 +280,32 @@ export default function ProfileScreen() {
           </WKCard>
         )}
 
+        <WKCard style={styles.sectionCard}>
+          <View style={styles.sectionHeader}>
+            <WKText variant="heading2">Hızlı Erişim</WKText>
+          </View>
+          <Pressable style={styles.quickLink} onPress={() => router.push('/(app)/settings')}>
+            <WKText variant="bodySm">⚙️ Ayarlar</WKText>
+            <WKText variant="caption" color={Colors.text.secondary}>Görünüm, widget ve sistem kısayolları</WKText>
+          </Pressable>
+          <Pressable style={styles.quickLink} onPress={() => router.push('/(app)/statistics')}>
+            <WKText variant="bodySm">📊 İstatistikler</WKText>
+            <WKText variant="caption" color={Colors.text.secondary}>Öğrenme, battle ve speaking özetleri</WKText>
+          </Pressable>
+          <Pressable style={styles.quickLink} onPress={() => router.push('/(app)/achievements')}>
+            <WKText variant="bodySm">🏅 Başarımlar</WKText>
+            <WKText variant="caption" color={Colors.text.secondary}>Rozet ilerlemeleri ve eksik hedefler</WKText>
+          </Pressable>
+          <Pressable style={styles.quickLink} onPress={() => router.push('/(app)/battle/history')}>
+            <WKText variant="bodySm">🧾 Battle Geçmişi</WKText>
+            <WKText variant="caption" color={Colors.text.secondary}>Maç kayıtları ve ELO değişimleri</WKText>
+          </Pressable>
+          <Pressable style={[styles.quickLink, styles.quickLinkLast]} onPress={() => router.push('/(app)/speaking/credits')}>
+            <WKText variant="bodySm">🎙️ Konuşma Merkezi</WKText>
+            <WKText variant="caption" color={Colors.text.secondary}>Kredi, partner eşleşme ve değerlendirme</WKText>
+          </Pressable>
+        </WKCard>
+
         {/* Achievements section */}
         <View style={styles.badgesSection}>
           <WKText variant="heading2">Başarımlar 🏅</WKText>
@@ -473,6 +499,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.s8,
     paddingVertical: Spacing.s4,
     borderRadius: Radius.chip,
+  },
+  quickLink: {
+    paddingVertical: Spacing.s12,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.bg.primaryDark,
+    gap: Spacing.s4,
+  },
+  quickLinkLast: {
+    borderBottomWidth: 0,
+    paddingBottom: 0,
   },
   prefRow: {
     flexDirection: 'row',

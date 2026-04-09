@@ -1,8 +1,8 @@
 import * as Notifications from 'expo-notifications';
 import { Platform } from 'react-native';
-import { MMKV } from 'react-native-mmkv';
+import { createStorage } from '@/utils/storage';
 
-const storage = new MMKV({ id: 'notification-prefs' });
+const storage = createStorage('notification-prefs');
 
 export interface NotificationPreferences {
   dailyReminder: boolean;

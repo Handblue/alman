@@ -76,7 +76,7 @@ export default function LeaderboardScreen() {
       setLeaderboardData(data);
 
       // Get user's rank
-      const user = await leaderboardService.getUserRank(auth.currentUser?.uid || '');
+      const user = await leaderboardService.getUserRank(auth?.currentUser?.uid || '');
       setUserRank(user?.rank || null);
     } catch (error) {
       console.error('Failed to load leaderboard:', error);
@@ -295,7 +295,7 @@ export default function LeaderboardScreen() {
               )}
             </View>
           </>
-        )}
+        ) : null}
 
         <View style={{ height: Spacing.s32 }} />
       </ScrollView>

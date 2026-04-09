@@ -1,18 +1,21 @@
 import { create } from 'zustand';
-import { MMKV } from 'react-native-mmkv';
+import { Folder } from '@/services/folderService';
+import { createStorage, readStoredJson } from '@/utils/storage';
 
 // Conditionally import Firebase services only in non-test environments
 let folderService: any = null;
 let authService: any = null;
+const isTestEnv = process.env.JEST_WORKER_ID !== undefined;
 
-if (typeof jest === 'undefined') {
+if (!isTestEnv) {
   // Only import in production/runtime
-  const { folderService: fs, authService: as } = require('@/services/folderService');
+  const { folderService: fs } = require('@/services/folderService');
+  const { authService: as } = require('@/services/authService');
   folderService = fs;
   authService = as;
 }
 
-const storage = new MMKV({ id: 'folder-store' });
+const storage = createStorage('folder-store');
 
 interface FolderState {
   folders: Folder[];
@@ -28,7 +31,7 @@ interface FolderState {
 }
 
 export const useFolderStore = create<FolderState>((set, get) => ({
-  folders: JSON.parse(storage.getString('folders') ?? '[]'),
+  folders: readStoredJson<Folder[]>(storage, 'folders', []),
   isOnline: false,
 
   createFolder: (name) => {
@@ -117,7 +120,7 @@ export const useFolderStore = create<FolderState>((set, get) => ({
       await folderService.syncLocalDataToCloud(state.folders);
 
       // Subscribe to cloud changes
-      folderService.subscribeToFolderData(user.uid, (folderData) => {
+      folderService.subscribeToFolderData(user.uid, (folderData: { folders: Folder[] } | null) => {
         if (folderData) {
           // Update local state with cloud data
           storage.set('folders', JSON.stringify(folderData.folders));
@@ -133,3 +136,5 @@ export const useFolderStore = create<FolderState>((set, get) => ({
     }
   },
 }));
+
+export type { Folder };

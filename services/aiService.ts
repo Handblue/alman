@@ -838,8 +838,8 @@ export class AIService {
   }
 
   async acceptRecommendation(recId: string): Promise<void> {
-    const userId = auth.currentUser?.uid;
-    if (!userId) throw new Error('User not authenticated');
+    const userId = auth?.currentUser?.uid;
+    if (!db || !userId) throw new Error('User not authenticated');
 
     await updateDoc(doc(db, 'analytics', userId, 'recommendations', recId), {
       accepted: true,

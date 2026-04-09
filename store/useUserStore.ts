@@ -1,18 +1,20 @@
 import { create } from 'zustand';
-import { MMKV } from 'react-native-mmkv';
+import { createStorage, readStoredJson } from '@/utils/storage';
 
 // Conditionally import Firebase services only in non-test environments
 let authService: any = null;
 let userService: any = null;
+const isTestEnv = process.env.JEST_WORKER_ID !== undefined;
 
-if (typeof jest === 'undefined') {
+if (!isTestEnv) {
   // Only import in production/runtime
-  const { authService: as, userService: us } = require('@/services/authService');
+  const { authService: as } = require('@/services/authService');
+  const { userService: us } = require('@/services/userService');
   authService = as;
   userService = us;
 }
 
-const storage = new MMKV({ id: 'user-store' });
+const storage = createStorage('user-store');
 
 function xpToLevel(xp: number): number {
   return Math.floor(xp / 500) + 1;
@@ -51,12 +53,12 @@ interface UserState {
 export const useUserStore = create<UserState>((set, get) => ({
   hasOnboarded: storage.getBoolean('hasOnboarded') ?? false,
   selectedLevel: (storage.getString('level') as UserState['selectedLevel']) ?? null,
-  selectedCategories: JSON.parse(storage.getString('categories') ?? '[]'),
+  selectedCategories: readStoredJson<number[]>(storage, 'categories', []),
   xp: storage.getNumber('xp') ?? 0,
   streak: storage.getNumber('streak') ?? 0,
   lastActiveDate: storage.getString('lastActiveDate') ?? null,
   level: xpToLevel(storage.getNumber('xp') ?? 0),
-  badges: JSON.parse(storage.getString('badges') ?? '[]'),
+  badges: readStoredJson<string[]>(storage, 'badges', []),
   isOnline: false,
 
   setOnboarded: (v) => {
@@ -156,7 +158,7 @@ export const useUserStore = create<UserState>((set, get) => ({
       });
 
       // Subscribe to cloud changes
-      userService.subscribeToUserProfile(authService.getCurrentUser()!.uid, (profile) => {
+      userService.subscribeToUserProfile(authService.getCurrentUser()!.uid, (profile: any) => {
         if (profile) {
           // Update local state with cloud data
           storage.set('xp', profile.xp);

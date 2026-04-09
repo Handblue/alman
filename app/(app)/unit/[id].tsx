@@ -66,7 +66,7 @@ export default function UnitDetailScreen() {
               accessibilityLabel={`${mode.label} modu${done ? ', tamamlandı' : ''}`}
               onPress={() =>
                 router.push({
-                  pathname: mode.route as Parameters<typeof router.push>[0],
+                  pathname: mode.route,
                   params: { unitId },
                 })
               }

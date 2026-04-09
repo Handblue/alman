@@ -12,9 +12,9 @@ import * as Haptics from 'expo-haptics';
 import { WKText } from '@/components/ui';
 import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
-import { MMKV } from 'react-native-mmkv';
+import { createStorage } from '@/utils/storage';
 
-const storage = new MMKV({ id: 'premium' });
+const storage = createStorage('premium');
 
 // ─── Feature list ─────────────────────────────────────────────────────────────
 

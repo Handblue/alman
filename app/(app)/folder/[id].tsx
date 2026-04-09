@@ -43,19 +43,21 @@ export default function FolderDetailScreen() {
     );
   }
 
-  const words: Word[] = WORDS.filter(w => folder.wordIds.includes(w.id));
+  const currentFolder = folder;
+
+  const words: Word[] = WORDS.filter(w => currentFolder.wordIds.includes(w.id));
 
   function handleDelete() {
     Alert.alert(
       'Klasörü Sil',
-      `"${folder.name}" klasörünü silmek istediğine emin misin?`,
+      `"${currentFolder.name}" klasörünü silmek istediğine emin misin?`,
       [
         { text: 'İptal', style: 'cancel' },
         {
           text: 'Sil',
           style: 'destructive',
           onPress: () => {
-            deleteFolder(folder.id);
+            deleteFolder(currentFolder.id);
             router.back();
           },
         },
@@ -72,7 +74,7 @@ export default function FolderDetailScreen() {
         {
           text: 'Çıkar',
           style: 'destructive',
-          onPress: () => removeWordFromFolder(folder.id, wordId),
+          onPress: () => removeWordFromFolder(currentFolder.id, wordId),
         },
       ],
     );
@@ -80,10 +82,10 @@ export default function FolderDetailScreen() {
 
   function commitRename() {
     const trimmed = renameValue.trim();
-    if (trimmed && trimmed !== folder.name) {
-      renameFolder(folder.id, trimmed);
+    if (trimmed && trimmed !== currentFolder.name) {
+      renameFolder(currentFolder.id, trimmed);
     } else {
-      setRenameValue(folder.name);
+      setRenameValue(currentFolder.name);
     }
     setIsRenaming(false);
   }
@@ -127,12 +129,12 @@ export default function FolderDetailScreen() {
             accessibilityLabel="Klasör adını düzenle"
           />
         ) : (
-          <WKText variant="heading1" style={{ flex: 1 }}>{folder.name}</WKText>
+          <WKText variant="heading1" style={{ flex: 1 }}>{currentFolder.name}</WKText>
         )}
 
         <TouchableOpacity
           onPress={() => {
-            setRenameValue(folder.name);
+            setRenameValue(currentFolder.name);
             setIsRenaming(true);
           }}
           accessibilityRole="button"
@@ -144,7 +146,7 @@ export default function FolderDetailScreen() {
       </View>
 
       <WKText variant="bodySm" color={Colors.text.secondary} style={{ marginBottom: Spacing.s24 }}>
-        {folder.wordIds.length} kelime
+        {currentFolder.wordIds.length} kelime
       </WKText>
 
       {words.length === 0 ? (

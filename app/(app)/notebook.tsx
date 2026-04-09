@@ -8,7 +8,8 @@ import { Spacing } from '@/constants/spacing';
 import { Radius } from '@/constants/radius';
 import { WORDS, Word } from '@/data/words';
 import { useProgressStore } from '@/store/useProgressStore';
-import { useFolderStore, Folder } from '@/store/useFolderStore';
+import { useFolderStore } from '@/store/useFolderStore';
+import type { Folder } from '@/store/useFolderStore';
 import { WordDetailSheet } from '@/components/study/WordDetailSheet';
 import { CreateFolderModal } from '@/components/folder/CreateFolderModal';
 

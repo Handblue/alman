@@ -37,15 +37,15 @@ export default function DashboardScreen() {
     checkAndUpdateStreak();
 
     // Load analytics data
-    const userId = auth.currentUser?.uid;
+    const userId = auth?.currentUser?.uid;
     if (userId) {
-      loadAnalyticsData(userId);
-      loadAIData(userId);
+      loadAnalyticsData(userId).catch(console.error);
+      loadAIData(userId).catch(console.error);
     }
 
     // Check achievements on mount (streak, XP, etc.)
     check();
-  }, []);
+  }, [check, checkAndUpdateStreak, initToday, loadAIData, loadAnalyticsData]);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -180,16 +180,16 @@ export default function DashboardScreen() {
         {/* Analytics & AI Features */}
         <View style={styles.analyticsRow}>
           <TouchableOpacity
-            onPress={() => router.push('/(app)/analytics')}
+            onPress={() => router.push('/(app)/statistics')}
             accessibilityRole="button"
-            accessibilityLabel="Analytics ekranına git"
+            accessibilityLabel="İstatistik ekranına git"
             style={[styles.analyticsButton, { flex: 1 }]}
             activeOpacity={0.8}
           >
             <WKCard style={styles.analyticsCard}>
               <WKText variant="heading2">📊</WKText>
               <WKText variant="body" color={Colors.text.primaryDark}>
-                Analytics
+                İstatistik
               </WKText>
               <WKText variant="caption" color={Colors.text.secondary}>
                 {todayMetrics?.wordsLearnedToday || 0} kelime bugün
@@ -230,6 +230,13 @@ export default function DashboardScreen() {
           label="Tüm Kategoriler"
           variant="secondary"
           onPress={() => router.push('/(app)/categories')}
+          style={{ marginBottom: Spacing.s24 }}
+        />
+
+        <WKButton
+          label="Ayarlar"
+          variant="ghost"
+          onPress={() => router.push('/(app)/settings')}
           style={{ marginBottom: Spacing.s24 }}
         />
       </ScrollView>

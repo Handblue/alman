@@ -89,6 +89,30 @@ export default function AppLayout() {
         name="premium"
         options={{ href: null, headerShown: false }}
       />
+      <Tabs.Screen
+        name="settings"
+        options={{ href: null, headerShown: false }}
+      />
+      <Tabs.Screen
+        name="notification-preferences"
+        options={{ href: null, headerShown: false }}
+      />
+      <Tabs.Screen
+        name="offline-download"
+        options={{ href: null, headerShown: false }}
+      />
+      <Tabs.Screen
+        name="statistics"
+        options={{ href: null, headerShown: false }}
+      />
+      <Tabs.Screen
+        name="achievements"
+        options={{ href: null, headerShown: false }}
+      />
+      <Tabs.Screen
+        name="speaking"
+        options={{ href: null, headerShown: false }}
+      />
     </Tabs>
   );
 }

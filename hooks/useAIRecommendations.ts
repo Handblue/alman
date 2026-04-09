@@ -32,11 +32,10 @@ export const useAIRecommendations = (
     minConfidence = 0
   } = options;
 
-  const { user } = useUserStore();
   const {
     recommendations: storeRecommendations,
     predictions: storePredictions,
-    loading,
+    loading: loadingState,
     loadAIData,
     acceptRecommendation: storeAcceptRecommendation,
     generateRecommendations,
@@ -45,6 +44,8 @@ export const useAIRecommendations = (
 
   const [error, setError] = useState<string | null>(null);
   const [lastRefresh, setLastRefresh] = useState<Date>(new Date());
+  const userState = useUserStore() as ReturnType<typeof useUserStore> & { user?: { id?: string } };
+  const userId = userState.user?.id ?? null;
 
   // Filter recommendations based on options
   const recommendations = storeRecommendations.filter(rec => {
@@ -61,17 +62,17 @@ export const useAIRecommendations = (
 
   // Auto-load data when user is available
   useEffect(() => {
-    if (autoLoad && user?.id) {
-      loadAIData(user.id).catch(err => {
+    if (autoLoad && userId) {
+      Promise.resolve(loadAIData(userId)).catch(err => {
         console.error('Error loading AI data:', err);
         setError('Failed to load AI recommendations');
       });
     }
-  }, [autoLoad, user?.id, loadAIData]);
+  }, [autoLoad, userId, loadAIData]);
 
   // Auto-refresh data at specified interval
   useEffect(() => {
-    if (!refreshInterval || !user?.id) return;
+    if (!refreshInterval || !userId) return;
 
     const interval = setInterval(async () => {
       try {
@@ -83,17 +84,17 @@ export const useAIRecommendations = (
     }, refreshInterval * 60 * 1000);
 
     return () => clearInterval(interval);
-  }, [refreshInterval, user?.id]);
+  }, [refreshInterval, userId]);
 
   const refresh = useCallback(async () => {
-    if (!user?.id) return;
+    if (!userId) return;
 
     setError(null);
     try {
       await Promise.all([
-        loadAIData(user.id),
-        generateRecommendations(user.id),
-        generatePredictions(user.id)
+        loadAIData(userId),
+        generateRecommendations(userId),
+        generatePredictions(userId)
       ]);
       setLastRefresh(new Date());
     } catch (err) {
@@ -101,7 +102,7 @@ export const useAIRecommendations = (
       setError('Failed to refresh AI recommendations');
       throw err;
     }
-  }, [user?.id, loadAIData, generateRecommendations, generatePredictions]);
+  }, [userId, loadAIData, generateRecommendations, generatePredictions]);
 
   const acceptRecommendation = useCallback(async (recId: string) => {
     try {
@@ -137,7 +138,7 @@ export const useAIRecommendations = (
   return {
     recommendations,
     predictions,
-    loading,
+    loading: loadingState.recommendations || loadingState.predictions || loadingState.paths,
     error,
     refresh,
     acceptRecommendation,

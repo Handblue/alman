@@ -60,8 +60,9 @@ export class AnalyticsService {
     unitId?: string,
     folderId?: string
   ): Promise<string> {
-    const userId = auth.currentUser?.uid;
-    if (!userId) throw new Error('User not authenticated');
+    const firestore = db;
+    const userId = auth?.currentUser?.uid;
+    if (!firestore || !userId) throw new Error('User not authenticated');
 
     const sessionId = `session_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
     const session: Omit<LearningSession, 'endTime' | 'duration' | 'wordsStudied' | 'correctAnswers' | 'totalAnswers' | 'engagement' | 'interruptions'> = {
@@ -75,7 +76,7 @@ export class AnalyticsService {
     };
 
     try {
-      await setDoc(doc(db, 'analytics', userId, 'learning_sessions', sessionId), {
+      await setDoc(doc(firestore, 'analytics', userId, 'learning_sessions', sessionId), {
         ...session,
         startTime: Timestamp.fromDate(session.startTime),
       });
@@ -94,10 +95,11 @@ export class AnalyticsService {
     engagement: number,
     interruptions: number
   ): Promise<void> {
-    const userId = auth.currentUser?.uid;
-    if (!userId) throw new Error('User not authenticated');
+    const firestore = db;
+    const userId = auth?.currentUser?.uid;
+    if (!firestore || !userId) throw new Error('User not authenticated');
 
-    const sessionRef = doc(db, 'analytics', userId, 'learning_sessions', sessionId);
+    const sessionRef = doc(firestore, 'analytics', userId, 'learning_sessions', sessionId);
     const sessionDoc = await getDoc(sessionRef);
 
     if (!sessionDoc.exists()) {
@@ -139,10 +141,13 @@ export class AnalyticsService {
     totalAnswers: number,
     sessionDuration: number
   ): Promise<void> {
+    const firestore = db;
+    if (!firestore) return;
+
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
-    const metricsRef = doc(db, 'analytics', userId, 'performance_metrics', today.toISOString().split('T')[0]);
+    const metricsRef = doc(firestore, 'analytics', userId, 'performance_metrics', today.toISOString().split('T')[0]);
 
     try {
       const metricsDoc = await getDoc(metricsRef);
@@ -190,6 +195,7 @@ export class AnalyticsService {
 
   private async calculateStudyStreak(userId: string): Promise<number> {
     try {
+      if (!db) return 0;
       const metricsQuery = query(
         collection(db, 'analytics', userId, 'performance_metrics'),
         orderBy('date', 'desc'),
@@ -229,6 +235,7 @@ export class AnalyticsService {
 
   private async calculateConsistencyScore(userId: string): Promise<number> {
     try {
+      if (!db) return 0;
       const thirtyDaysAgo = new Date();
       thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
@@ -256,6 +263,7 @@ export class AnalyticsService {
   // Data Retrieval
   async getPerformanceMetrics(userId: string, days: number = 30): Promise<PerformanceMetrics[]> {
     try {
+      if (!db) return [];
       const startDate = new Date();
       startDate.setDate(startDate.getDate() - days);
 
@@ -279,6 +287,7 @@ export class AnalyticsService {
 
   async getLearningSessions(userId: string, limitCount: number = 50): Promise<LearningSession[]> {
     try {
+      if (!db) return [];
       const sessionsQuery = query(
         collection(db, 'analytics', userId, 'learning_sessions'),
         orderBy('startTime', 'desc'),
@@ -302,6 +311,7 @@ export class AnalyticsService {
 
   async getLearningInsights(userId: string): Promise<LearningInsight[]> {
     try {
+      if (!db) return [];
       const insightsQuery = query(
         collection(db, 'analytics', userId, 'insights'),
         orderBy('createdAt', 'desc'),

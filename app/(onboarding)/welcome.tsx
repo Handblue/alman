@@ -4,8 +4,11 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { WKText, WKButton } from '@/components/ui';
 import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
+import { useUserStore } from '@/store/useUserStore';
 
 export default function WelcomeScreen() {
+  const setOnboarded = useUserStore((s) => s.setOnboarded);
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.hero}>
@@ -24,7 +27,10 @@ export default function WelcomeScreen() {
         <WKButton
           label="Zaten hesabım var"
           variant="ghost"
-          onPress={() => router.push('/(onboarding)/welcome')}
+          onPress={() => {
+            setOnboarded(true);
+            router.replace('/(app)/dashboard');
+          }}
           style={styles.btn}
         />
       </View>

@@ -7,14 +7,16 @@ if (typeof globalThis.__ExpoImportMetaRegistry === 'undefined') {
 // Mock react-native-mmkv
 jest.mock('react-native-mmkv', () => {
   const store = new Map();
-  return {
-    MMKV: jest.fn().mockImplementation(() => ({
+  const createStore = () => ({
       set: jest.fn((key, value) => store.set(key, value)),
       getString: jest.fn((key) => store.get(key)),
       getNumber: jest.fn((key) => store.get(key)),
       getBoolean: jest.fn((key) => store.get(key)),
-      delete: jest.fn((key) => store.delete(key)),
-    })),
+      remove: jest.fn((key) => store.delete(key)),
+    });
+  return {
+    MMKV: jest.fn().mockImplementation(createStore),
+    createMMKV: jest.fn().mockImplementation(createStore),
   };
 });
 
@@ -112,7 +114,7 @@ jest.mock('@/context/ThemeContext', () => ({
     },
     toggleTheme: jest.fn(),
   }),
-  ThemeProvider: ({ children }: { children: React.ReactNode }) => children,
+  ThemeProvider: ({ children }) => children,
 }));
 
 // Mock expo-modules-core (prevents EventEmitter crash)

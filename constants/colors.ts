@@ -7,8 +7,12 @@ export const Colors = {
     purple: '#7C4DFF',
   },
   accent: {
+    primary: '#1A73E8',
+    secondary: '#00BCD4',
     orange: '#FF6D00',
     gold: '#FFD700',
+    success: '#2E7D32',
+    warning: '#FFB300',
   },
   status: {
     success: '#2E7D32',
@@ -24,6 +28,10 @@ export const Colors = {
     primaryLight: '#FAFAFA',
     cardDark: '#243447',
     cardLight: '#FFFFFF',
+    secondary: '#162534',
+  },
+  border: {
+    primary: '#243447',
   },
   text: {
     primaryDark: '#FFFFFF',
@@ -33,6 +41,8 @@ export const Colors = {
     tertiary: '#607D8B',
   },
   gradient: {
+    primary: ['#1A73E8', '#00BCD4'],
+    secondary: ['#0D47A1', '#1A73E8'],
     battle: ['#7C4DFF', '#00BCD4'],
     leaderboard: ['#512DA8', '#7C4DFF'],
     quizResult: ['#7C4DFF', '#448AFF'],

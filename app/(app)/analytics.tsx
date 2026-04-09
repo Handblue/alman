@@ -268,7 +268,7 @@ const FOCUS_OPTIONS = [
 ];
 
 export default function AnalyticsScreen() {
-  const userId = auth.currentUser?.uid;
+  const userId = auth?.currentUser?.uid;
   const {
     loadAnalyticsData,
     loadAIData,

@@ -1,6 +1,6 @@
-import { MMKV } from 'react-native-mmkv';
+import { createStorage } from '@/utils/storage';
 
-const storage = new MMKV({ id: 'achievements' });
+const storage = createStorage('achievements');
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 

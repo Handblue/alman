@@ -2,7 +2,8 @@ import { useCallback, useState } from 'react';
 import * as FileSystem from 'expo-file-system';
 import * as Crypto from 'expo-crypto';
 
-const CACHE_DIR = `${FileSystem.documentDirectory}audio-cache`;
+const FS = FileSystem as any;
+const CACHE_DIR = `${FS.documentDirectory ?? 'file:///tmp/'}audio-cache`;
 
 export type CacheStats = {
   totalSize: number;
@@ -79,8 +80,8 @@ export function useAudioCache() {
   ): Promise<string | null> => {
     try {
       const filePath = await getCachePath(text, prefix);
-      await FileSystem.writeAsStringAsync(filePath, audioData, {
-        encoding: FileSystem.EncodingType.Base64,
+      await FS.writeAsStringAsync(filePath, audioData, {
+        encoding: FS.EncodingType?.Base64,
       });
       await updateCacheStats();
       return filePath;
@@ -99,7 +100,7 @@ export function useAudioCache() {
       for (const file of files) {
         try {
           const fileInfo = await FileSystem.getInfoAsync(`${CACHE_DIR}/${file}`);
-          if (fileInfo.size) {
+          if (fileInfo.exists && 'size' in fileInfo && typeof fileInfo.size === 'number') {
             totalSize += fileInfo.size;
           }
         } catch (error) {

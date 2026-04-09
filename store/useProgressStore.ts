@@ -1,19 +1,21 @@
 import { create } from 'zustand';
-import { MMKV } from 'react-native-mmkv';
 import { sm2, isDue, SRS_DEFAULTS } from '@/services/srsService';
+import { createStorage, readStoredJson } from '@/utils/storage';
 
 // Conditionally import Firebase services only in non-test environments
 let progressService: any = null;
 let authService: any = null;
+const isTestEnv = process.env.JEST_WORKER_ID !== undefined;
 
-if (typeof jest === 'undefined') {
+if (!isTestEnv) {
   // Only import in production/runtime
-  const { progressService: ps, authService: as } = require('@/services/progressService');
+  const { progressService: ps } = require('@/services/progressService');
+  const { authService: as } = require('@/services/authService');
   progressService = ps;
   authService = as;
 }
 
-const storage = new MMKV({ id: 'progress-store' });
+const storage = createStorage('progress-store');
 
 type WordProgress = {
   wordId: number;
@@ -52,10 +54,10 @@ interface ProgressState {
 
 
 export const useProgressStore = create<ProgressState>((set, get) => ({
-  wordProgress: JSON.parse(storage.getString('wordProgress') ?? '{}'),
-  unitProgress: JSON.parse(storage.getString('unitProgress') ?? '{}'),
-  bookmarkedWords: JSON.parse(storage.getString('bookmarks') ?? '[]'),
-  pronunciationBestScores: JSON.parse(storage.getString('pronunciationScores') ?? '{}'),
+  wordProgress: readStoredJson<Record<number, WordProgress>>(storage, 'wordProgress', {}),
+  unitProgress: readStoredJson<Record<number, UnitProgress>>(storage, 'unitProgress', {}),
+  bookmarkedWords: readStoredJson<number[]>(storage, 'bookmarks', []),
+  pronunciationBestScores: readStoredJson<Record<number, number>>(storage, 'pronunciationScores', {}),
   isOnline: false,
 
   setWordProgress: (wordId, status) => {
@@ -181,7 +183,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       });
 
       // Subscribe to cloud changes
-      progressService.subscribeToProgressData(user.uid, (progress) => {
+      progressService.subscribeToProgressData(user.uid, (progress: any) => {
         if (progress) {
           // Update local state with cloud data
           storage.set('wordProgress', JSON.stringify(progress.wordProgress));
