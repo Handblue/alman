@@ -1,0 +1,35 @@
+WortKrieg — Almanca Öğren, Savaş Kazan!
+
+Almancayı oyun mantığıyla öğreten en eğlenceli dil uygulaması. 600+ kelime, 40 ünite ve birden fazla çalışma moduyla Almancayı hızla öğren.
+
+ÖĞRETİCİ MODLAR
+🃏 Flashcard — Kelime kartlarıyla hızlı tekrar
+✅ Çoktan Seçmeli — Testlerle pekiştir
+✏️ Yazma Testi — Kelimeleri yazarak ezberle
+📖 Cümle İçinde — Gerçek kullanım öğren
+🔄 Eş Anlamlı — Kelime hazineni genişlet
+🎙️ Sesli Alıştırma — Telaffuzunu geliştir, TTS ile dinle
+
+AKILLI TEKRAR (SRS)
+🧠 SM-2 algoritması — yanlış cevaplanan kelimeler akıllıca tekrar edilir
+📅 Günlük hatırlatıcılar — tekrar zamanı geldiğinde bildirim
+
+YARIŞMA & SOSYAL
+⚔️ WortKampf — Gerçek zamanlı 1v1 kelime savaşı
+🏆 ELO sıralaması — haftalık ve tüm zamanlar
+👥 Arkadaş davet et, ilerlemeni paylaş
+🏆 Grup challenge'ları oluştur
+
+GAMİFİKASYON
+🔥 Günlük seri — her gün çalış
+🏅 20+ başarım rozeti
+⚡ XP ve seviye sistemi
+💡 Günün Kelimesi
+
+TEKNİK ÖZELLİKLER
+• Çevrimdışı çalışır (internet gerektirmez)
+• Firebase ile cihazlar arası sync
+• Koyu tema — göz yormuyor
+• A1'den B2'ye 600+ kelime
+
+Almanya vizesi, iş görüşmesi veya sadece hobiniz için — WortKrieg ile Almanca artık eğlenceli!

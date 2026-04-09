@@ -1,0 +1,10 @@
+v1.0.0 — İlk Sürüm
+
+• 600+ Almanca kelime, 40 ünite (A1–B2)
+• 6 çalışma modu: Flashcard, Çoktan Seçmeli, Yazma, Cümle, Eş Anlamlı, Sesli Alıştırma
+• SM-2 akıllı tekrar sistemi — zayıf kelimeler otomatik tekrar
+• WortKampf: Gerçek zamanlı 1v1 kelime savaşı
+• ELO sıralaması ve haftalık liderboard
+• Başarım sistemi (20+ rozet)
+• Telaffuz değerlendirme + TTS
+• Günlük hedef ve çizgi takibi
