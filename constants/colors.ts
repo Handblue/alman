@@ -30,6 +30,7 @@ export const Colors = {
     primaryLight: '#212121',
     secondary: '#B0BEC5',
     secondaryLight: '#757575',
+    tertiary: '#607D8B',
   },
   gradient: {
     battle: ['#7C4DFF', '#00BCD4'],

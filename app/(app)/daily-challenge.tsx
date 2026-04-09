@@ -341,7 +341,7 @@ export default function DailyChallengeScreen() {
 
       {/* Choices */}
       <View style={styles.choicesContainer}>
-        {choices.map((choice, idx) => {
+        {choices.map((choice) => {
           let bgColor: string = Colors.bg.cardDark;
           if (answerState !== 'unanswered') {
             if (choice === correctAnswer) bgColor = Colors.status.success;
@@ -350,7 +350,7 @@ export default function DailyChallengeScreen() {
 
           return (
             <TouchableOpacity
-              key={idx}
+              key={choice}
               onPress={() => handleChoicePress(choice)}
               disabled={answerState !== 'unanswered'}
               accessibilityRole="button"

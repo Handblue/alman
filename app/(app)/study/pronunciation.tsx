@@ -164,7 +164,7 @@ export default function PronunciationScreen() {
           <WKCard style={styles.resultCard}>
             <View style={styles.resultRow}>
               <WKText variant="body" color={Colors.text.secondary}>Ortalama Skor</WKText>
-              <WKText variant="heading2" color={SCORE_COLORS[Math.round(avg)] ?? Colors.text.primary}>
+              <WKText variant="heading2" color={SCORE_COLORS[Math.round(avg)] ?? Colors.text.primaryDark}>
                 {avg} / 5
               </WKText>
             </View>

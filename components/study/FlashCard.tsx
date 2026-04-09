@@ -76,9 +76,10 @@ export function FlashCard({ word, onRate }: FlashCardProps) {
   const handleMic = useCallback(async () => {
     if (recordState === 'recording') {
       setRecordState('processing');
+      const durationMs = await pronunciationService.getRecordingDurationMs();
       const uri = await pronunciationService.stopRecording();
       attemptRef.current += 1;
-      const result = pronunciationService.scoreRecording(uri, word.german, attemptRef.current);
+      const result = pronunciationService.scoreRecording(uri, word.german, attemptRef.current, durationMs);
       setPronResult(result);
       setRecordState('idle');
       return;

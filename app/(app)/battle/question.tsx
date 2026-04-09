@@ -126,29 +126,27 @@ export default function BattleQuestionScreen() {
       <WKText style={styles.questionPrompt}>Türkçe karşılığı nedir?</WKText>
       <View style={styles.optionsGrid}>
         {options.map((opt, i) => {
-          let btnStyle = styles.optionBtn;
-          let textStyle = styles.optionText;
-          if (hasAnswered) {
-            if (i === correctIndex) {
-              btnStyle = { ...styles.optionBtn, ...styles.optionCorrect } as any;
-              textStyle = { ...styles.optionText, ...styles.optionTextSelected } as any;
-            } else if (i === selectedOptionIndex) {
-              btnStyle = { ...styles.optionBtn, ...styles.optionWrong } as any;
-              textStyle = { ...styles.optionText, ...styles.optionTextSelected } as any;
-            }
-          }
+          const isCorrect = hasAnswered && i === correctIndex;
+          const isWrong = hasAnswered && i === selectedOptionIndex && i !== correctIndex;
 
           return (
             <Pressable
-              key={i}
-              style={({ pressed }) => [btnStyle, pressed && !hasAnswered && styles.optionPressed]}
+              key={opt}
+              style={({ pressed }) => [
+                styles.optionBtn,
+                isCorrect && styles.optionCorrect,
+                isWrong && styles.optionWrong,
+                pressed && !hasAnswered && styles.optionPressed,
+              ]}
               onPress={() => handleOption(i)}
               disabled={hasAnswered}
             >
               <WKText style={styles.optionLetter}>
                 {['A', 'B', 'C', 'D'][i]}
               </WKText>
-              <WKText style={textStyle}>{opt}</WKText>
+              <WKText style={[styles.optionText, (isCorrect || isWrong) && styles.optionTextSelected]}>
+                {opt}
+              </WKText>
             </Pressable>
           );
         })}
