@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { MMKV } from 'react-native-mmkv';
+import { sm2, isDue, SRS_DEFAULTS } from '@/services/srsService';
 
 // Conditionally import Firebase services only in non-test environments
 let progressService: any = null;
@@ -21,6 +22,10 @@ type WordProgress = {
   reviewCount: number;
   correctCount: number;
   incorrectCount: number;
+  // SRS (SM-2) fields
+  srsEaseFactor: number;
+  srsInterval: number;
+  srsRepetitions: number;
 };
 
 type UnitProgress = {
@@ -38,15 +43,11 @@ interface ProgressState {
   completeMode: (unitId: number, mode: string) => void;
   toggleBookmark: (wordId: number) => void;
   getWordProgress: (wordId: number) => WordProgress;
+  getDueWords: () => number[];
   syncWithCloud: () => Promise<void>;
   initializeProgressSync: () => Promise<void>;
 }
 
-const REVIEW_INTERVALS: Record<WordProgress['status'], number> = {
-  unknown: 1,
-  learning: 3,
-  known: 7,
-};
 
 export const useProgressStore = create<ProgressState>((set, get) => ({
   wordProgress: JSON.parse(storage.getString('wordProgress') ?? '{}'),
@@ -55,11 +56,15 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   isOnline: false,
 
   setWordProgress: (wordId, status) => {
-    const nextReview = new Date();
-    nextReview.setDate(nextReview.getDate() + REVIEW_INTERVALS[status]);
     const isCorrect = status === 'known';
     set(s => {
       const prev = s.wordProgress[wordId];
+      const currentSRS = {
+        easeFactor: prev?.srsEaseFactor ?? SRS_DEFAULTS.easeFactor,
+        interval: prev?.srsInterval ?? SRS_DEFAULTS.interval,
+        repetitions: prev?.srsRepetitions ?? SRS_DEFAULTS.repetitions,
+      };
+      const { srs, nextReview } = sm2(currentSRS, status);
       const updated: Record<number, WordProgress> = {
         ...s.wordProgress,
         [wordId]: {
@@ -69,6 +74,9 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
           reviewCount: (prev?.reviewCount ?? 0) + 1,
           correctCount: (prev?.correctCount ?? 0) + (isCorrect ? 1 : 0),
           incorrectCount: (prev?.incorrectCount ?? 0) + (isCorrect ? 0 : 1),
+          srsEaseFactor: srs.easeFactor,
+          srsInterval: srs.interval,
+          srsRepetitions: srs.repetitions,
         },
       };
       storage.set('wordProgress', JSON.stringify(updated));
@@ -102,7 +110,17 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       reviewCount: 0,
       correctCount: 0,
       incorrectCount: 0,
+      srsEaseFactor: SRS_DEFAULTS.easeFactor,
+      srsInterval: SRS_DEFAULTS.interval,
+      srsRepetitions: SRS_DEFAULTS.repetitions,
     };
+  },
+
+  getDueWords: () => {
+    const wordProgress = get().wordProgress;
+    return Object.values(wordProgress)
+      .filter(wp => wp.reviewCount > 0 && isDue(wp.nextReview))
+      .map(wp => wp.wordId);
   },
 
   toggleBookmark: (wordId) => {

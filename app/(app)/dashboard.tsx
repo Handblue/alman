@@ -18,6 +18,7 @@ import { auth } from '@/firebase';
 import { useDailyChallengeStore } from '@/store/useDailyChallengeStore';
 import { useSocialStore } from '@/store/useSocialStore';
 import { useAnalyticsStore, useTodayMetrics, useTopRecommendations } from '@/store/useAnalyticsStore';
+import { useProgressStore } from '@/store/useProgressStore';
 
 export default function DashboardScreen() {
   const { xp, streak, level } = useUserStore();
@@ -28,6 +29,8 @@ export default function DashboardScreen() {
   const todayMetrics = useTodayMetrics();
   const topRecommendations = useTopRecommendations();
   const { currentToast, check, dismiss } = useAchievementCheck();
+  const getDueWords = useProgressStore(s => s.getDueWords);
+  const dueCount = getDueWords().length;
 
   useEffect(() => {
     initToday();
@@ -69,6 +72,33 @@ export default function DashboardScreen() {
         </View>
 
         <WordOfTheDay />
+
+        {dueCount > 0 && (
+          <TouchableOpacity
+            onPress={() => router.push('/(app)/study/review')}
+            accessibilityRole="button"
+            accessibilityLabel="SRS tekrar ekranına git"
+            activeOpacity={0.85}
+            style={styles.srsButton}
+          >
+            <WKCard style={styles.srsCard}>
+              <WKText variant="heading2">🧠</WKText>
+              <View style={{ flex: 1 }}>
+                <WKText variant="body" color={Colors.text.primaryDark}>
+                  Tekrar Zamanı!
+                </WKText>
+                <WKText variant="caption" color={Colors.text.secondary}>
+                  {dueCount} kelime seni bekliyor
+                </WKText>
+              </View>
+              <View style={styles.srsBadge}>
+                <WKText variant="caption" color={Colors.bg.primaryDark}>
+                  {dueCount}
+                </WKText>
+              </View>
+            </WKCard>
+          </TouchableOpacity>
+        )}
 
         <DailyChallengeCard />
 
@@ -227,6 +257,25 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.s4,
     borderWidth: 1,
     borderColor: Colors.accent.gold,
+  },
+  srsButton: {
+    marginBottom: Spacing.s16,
+  },
+  srsCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.s12,
+    borderWidth: 1,
+    borderColor: Colors.accent.gold + '60',
+  },
+  srsBadge: {
+    backgroundColor: Colors.accent.gold,
+    borderRadius: 20,
+    minWidth: 28,
+    height: 28,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 6,
   },
   leaderboardButton: {
     marginBottom: Spacing.s16,
