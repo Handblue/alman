@@ -163,20 +163,49 @@ class PronunciationService {
   }
 
   /**
+   * Get the duration (ms) of the current/last recording via status.
+   * Returns 0 if not available.
+   */
+  async getRecordingDurationMs(): Promise<number> {
+    if (!this.recording) return 0;
+    try {
+      const status = await this.recording.getStatusAsync();
+      return status.isRecording || status.isDoneRecording
+        ? (status as any).durationMillis ?? 0
+        : 0;
+    } catch {
+      return 0;
+    }
+  }
+
+  /**
    * Score the recording against expected word.
    *
-   * NOTE: Real STT (Google Speech-to-Text) would be called here.
-   * Without an API key we use attempt-based encouragement scoring
-   * with a slight random component so repeated tries feel progressive.
+   * Heuristics (no external API needed):
+   * - durationMs < 300  → likely silence or tap accident → score 1
+   * - durationMs < 700  → very short → max score 2
+   * - attempt curve     → improves score with practice
+   * - small random jitter for realism
+   *
+   * When a real STT API is available, call scoreFromTranscription() instead.
    */
   scoreRecording(
     _recordingUri: string | null,
     _expectedWord: string,
     attemptNumber = 1,
+    durationMs = 0,
   ): PronunciationResult {
-    // Encouragement curve: score improves with practice
-    const baseScore = Math.min(5, Math.max(1, Math.round(2 + attemptNumber * 0.7 + (Math.random() * 1.5 - 0.5))));
-    const score = baseScore as PronunciationScore;
+    let maxScore = 5;
+
+    if (durationMs > 0 && durationMs < 300) {
+      maxScore = 1; // too short — silence
+    } else if (durationMs > 0 && durationMs < 700) {
+      maxScore = 2; // barely spoke
+    }
+
+    const attemptBonus = Math.min(2, (attemptNumber - 1) * 0.7);
+    const base = 2 + attemptBonus + (Math.random() * 1.4 - 0.4);
+    const score = Math.min(maxScore, Math.max(1, Math.round(base))) as PronunciationScore;
 
     return {
       score,

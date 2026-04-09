@@ -7,7 +7,7 @@ import { Spacing } from '@/constants/spacing';
 import { UNITS } from '@/data/units';
 import { useProgressStore } from '@/store/useProgressStore';
 
-type StudyModeKey = 'flashcard' | 'multiple-choice' | 'writing' | 'sentence' | 'synonym';
+type StudyModeKey = 'flashcard' | 'multiple-choice' | 'writing' | 'sentence' | 'synonym' | 'pronunciation';
 
 type StudyMode = {
   key: StudyModeKey;
@@ -22,6 +22,7 @@ const STUDY_MODES: StudyMode[] = [
   { key: 'writing', label: 'Yazı Testi', icon: '✏️', route: '/(app)/study/writing' },
   { key: 'sentence', label: 'Cümle İçinde', icon: '📖', route: '/(app)/study/sentence' },
   { key: 'synonym', label: 'Eş Anlamlı', icon: '🔄', route: '/(app)/study/synonym' },
+  { key: 'pronunciation', label: 'Sesli Alıştırma', icon: '🎙️', route: '/(app)/study/pronunciation' },
 ];
 
 export default function UnitDetailScreen() {

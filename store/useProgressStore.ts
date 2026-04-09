@@ -38,12 +38,14 @@ interface ProgressState {
   wordProgress: Record<number, WordProgress>;
   unitProgress: Record<number, UnitProgress>;
   bookmarkedWords: number[];
+  pronunciationBestScores: Record<number, number>; // wordId → best score (1–5)
   isOnline: boolean;
   setWordProgress: (wordId: number, status: WordProgress['status']) => void;
   completeMode: (unitId: number, mode: string) => void;
   toggleBookmark: (wordId: number) => void;
   getWordProgress: (wordId: number) => WordProgress;
   getDueWords: () => number[];
+  setPronunciationScore: (wordId: number, score: number) => void;
   syncWithCloud: () => Promise<void>;
   initializeProgressSync: () => Promise<void>;
 }
@@ -53,6 +55,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   wordProgress: JSON.parse(storage.getString('wordProgress') ?? '{}'),
   unitProgress: JSON.parse(storage.getString('unitProgress') ?? '{}'),
   bookmarkedWords: JSON.parse(storage.getString('bookmarks') ?? '[]'),
+  pronunciationBestScores: JSON.parse(storage.getString('pronunciationScores') ?? '{}'),
   isOnline: false,
 
   setWordProgress: (wordId, status) => {
@@ -114,6 +117,16 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
       srsInterval: SRS_DEFAULTS.interval,
       srsRepetitions: SRS_DEFAULTS.repetitions,
     };
+  },
+
+  setPronunciationScore: (wordId, score) => {
+    set(s => {
+      const prev = s.pronunciationBestScores[wordId] ?? 0;
+      const best = Math.max(prev, score);
+      const updated = { ...s.pronunciationBestScores, [wordId]: best };
+      storage.set('pronunciationScores', JSON.stringify(updated));
+      return { pronunciationBestScores: updated };
+    });
   },
 
   getDueWords: () => {
