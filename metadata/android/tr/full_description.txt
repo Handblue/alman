@@ -28,7 +28,6 @@ GAMİFİKASYON
 
 TEKNİK ÖZELLİKLER
 • Çevrimdışı çalışır (internet gerektirmez)
-• Firebase ile cihazlar arası sync
 • Koyu tema — göz yormuyor
 • A1'den B2'ye 600+ kelime
 
