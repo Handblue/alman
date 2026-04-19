@@ -1,0 +1,19 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "__tests__",
+    "hooks/__tests__",
+    "services/__tests__",
+    "store/__tests__",
+    "components/**/__tests__",
+    "jest.setup.js"
+  ]
+}
