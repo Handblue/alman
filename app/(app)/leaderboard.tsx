@@ -14,7 +14,6 @@ import { auth } from '@/firebase';
 
 type Tab = 'weekly' | 'allTime' | 'elo';
 
-// Local ELO leaderboard — reads from achievementService (local-only until backend sync)
 interface EloEntry {
   rank: number;
   displayName: string;
@@ -25,17 +24,16 @@ interface EloEntry {
 }
 
 function buildLocalEloBoard(myElo: number, myWins: number, myTotal: number): EloEntry[] {
-  // Seed a fun static list plus the user
   const bots: EloEntry[] = [
-    { rank: 0, displayName: 'WortMeister', elo: 1850, wins: 234, total: 280 },
+    { rank: 0, displayName: 'WortMeister',  elo: 1850, wins: 234, total: 280 },
     { rank: 0, displayName: 'DeutschFan99', elo: 1720, wins: 189, total: 240 },
-    { rank: 0, displayName: 'GrammarKing', elo: 1640, wins: 155, total: 210 },
-    { rank: 0, displayName: 'AlphaLerner', elo: 1580, wins: 140, total: 195 },
-    { rank: 0, displayName: 'SprachProfi', elo: 1510, wins: 120, total: 175 },
-    { rank: 0, displayName: 'VokabelHero', elo: 1460, wins: 110, total: 165 },
-    { rank: 0, displayName: 'B2Beast', elo: 1380, wins: 95, total: 150 },
-    { rank: 0, displayName: 'GoetheJäger', elo: 1320, wins: 82, total: 135 },
-    { rank: 0, displayName: 'UmlauthLord', elo: 1250, wins: 70, total: 120 },
+    { rank: 0, displayName: 'GrammarKing',  elo: 1640, wins: 155, total: 210 },
+    { rank: 0, displayName: 'AlphaLerner',  elo: 1580, wins: 140, total: 195 },
+    { rank: 0, displayName: 'SprachProfi',  elo: 1510, wins: 120, total: 175 },
+    { rank: 0, displayName: 'VokabelHero',  elo: 1460, wins: 110, total: 165 },
+    { rank: 0, displayName: 'B2Beast',      elo: 1380, wins: 95,  total: 150 },
+    { rank: 0, displayName: 'GoetheJäger',  elo: 1320, wins: 82,  total: 135 },
+    { rank: 0, displayName: 'UmlauthLord',  elo: 1250, wins: 70,  total: 120 },
   ];
   const me: EloEntry = {
     rank: 0, displayName: 'Sen', elo: myElo, wins: myWins, total: myTotal, isMe: true,
@@ -44,11 +42,19 @@ function buildLocalEloBoard(myElo: number, myWins: number, myTotal: number): Elo
   return all.map((e, i) => ({ ...e, rank: i + 1 }));
 }
 
-function getMedalEmoji(rank: number): string {
-  if (rank === 1) return '🥇';
-  if (rank === 2) return '🥈';
-  if (rank === 3) return '🥉';
-  return `${rank}.`;
+const MEDALS = ['🥇', '🥈', '🥉'];
+function getMedal(rank: number): string {
+  return rank <= 3 ? MEDALS[rank - 1] : `${rank}.`;
+}
+
+function ChangeIndicator({ change }: { change: string }) {
+  const up = change.startsWith('+');
+  const neutral = change === '0';
+  return (
+    <WKText style={[styles.changeText, up ? styles.changeUp : neutral ? styles.changeNeutral : styles.changeDown]}>
+      {neutral ? '—' : change}
+    </WKText>
+  );
 }
 
 export default function LeaderboardScreen() {
@@ -60,9 +66,7 @@ export default function LeaderboardScreen() {
   const battleStats = achievementService.getBattleStats();
   const eloBoard = buildLocalEloBoard(battleStats.elo, battleStats.wins, battleStats.total);
 
-  useEffect(() => {
-    loadLeaderboard();
-  }, [activeTab]);
+  useEffect(() => { loadLeaderboard(); }, [activeTab]);
 
   const loadLeaderboard = async () => {
     setLoading(true);
@@ -74,20 +78,15 @@ export default function LeaderboardScreen() {
         data = await leaderboardService.getTopUsers();
       }
       setLeaderboardData(data);
-
-      // Get user's rank
       const user = await leaderboardService.getUserRank(auth?.currentUser?.uid || '');
       setUserRank(user?.rank || null);
-    } catch (error) {
-      console.error('Failed to load leaderboard:', error);
-      // Fallback to empty array
+    } catch {
       setLeaderboardData([]);
     } finally {
       setLoading(false);
     }
   };
 
-  // Create user entry for display
   const userEntry: LeaderboardEntry = {
     uid: 'current-user',
     displayName: 'Sen',
@@ -97,205 +96,179 @@ export default function LeaderboardScreen() {
     rank: userRank || 0,
   };
 
-  const allEntries = [...leaderboardData];
-  const top3 = allEntries.slice(0, 3);
-  const rest = allEntries.slice(3);
-
-  // Check if user is in top 10
+  const top3 = leaderboardData.slice(0, 3);
+  const rest  = leaderboardData.slice(3);
   const userInTop10 = userRank && userRank <= 10;
 
   return (
     <SafeAreaView style={styles.container}>
+
       {/* Header */}
-      <LinearGradient
-        colors={Colors.gradient.leaderboard}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 1 }}
-        style={styles.gradientHeader}
-      >
+      <View style={styles.header}>
         <TouchableOpacity
           onPress={() => router.back()}
           accessibilityRole="button"
           accessibilityLabel="Geri dön"
-          style={styles.backButton}
+          style={styles.backBtn}
         >
-          <WKText variant="body" color={Colors.text.primaryDark}>← Geri</WKText>
+          <WKText style={styles.backText}>← Geri</WKText>
         </TouchableOpacity>
-        <WKText variant="hero" color={Colors.text.primaryDark} style={styles.headerTitle}>
-          Sıralama 🏆
-        </WKText>
+        <WKText style={styles.headerTitle}>Sıralama</WKText>
+        <WKText style={styles.headerSub}>Haftanın en iyileri</WKText>
+      </View>
 
-        {/* Tabs */}
-        <View style={styles.tabs}>
-          <TouchableOpacity
-            onPress={() => setActiveTab('weekly')}
-            accessibilityRole="tab"
-            accessibilityLabel="Bu Hafta"
-            accessibilityState={{ selected: activeTab === 'weekly' }}
-            style={[styles.tab, activeTab === 'weekly' && styles.tabActive]}
-          >
-            <WKText variant="caption" color={Colors.text.primaryDark}>
-              Bu Hafta
-            </WKText>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => setActiveTab('allTime')}
-            accessibilityRole="tab"
-            accessibilityLabel="Tüm Zamanlar"
-            accessibilityState={{ selected: activeTab === 'allTime' }}
-            style={[styles.tab, activeTab === 'allTime' && styles.tabActive]}
-          >
-            <WKText variant="caption" color={Colors.text.primaryDark}>
-              Tüm Zamanlar
-            </WKText>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => setActiveTab('elo')}
-            accessibilityRole="tab"
-            accessibilityLabel="Battle ELO"
-            accessibilityState={{ selected: activeTab === 'elo' }}
-            style={[styles.tab, activeTab === 'elo' && styles.tabActive]}
-          >
-            <WKText variant="caption" color={Colors.text.primaryDark}>
-              ⚔️ ELO
-            </WKText>
-          </TouchableOpacity>
+      {/* My Rank Card */}
+      <LinearGradient
+        colors={['#512DA8', '#7C6CFF']}
+        start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }}
+        style={styles.myRankCard}
+      >
+        <WKText style={styles.myRankLabel}>SENİN SIRALAMAN</WKText>
+        <View style={styles.myRankRow}>
+          <View style={styles.myRankAvatar}>
+            <WKText style={{ fontSize: 22 }}>🙂</WKText>
+          </View>
+          <View style={{ flex: 1 }}>
+            <WKText style={styles.myRankName}>Sen</WKText>
+            <WKText style={styles.myRankXP}>{userXP.toLocaleString()} XP bu hafta</WKText>
+          </View>
+          <View style={{ alignItems: 'flex-end' }}>
+            <WKText style={styles.myRankNum}>#{userRank ?? '—'}</WKText>
+            <WKText style={styles.myRankChange}>↑ +5 bu hafta</WKText>
+          </View>
         </View>
+        <View style={styles.myRankBarBg}>
+          <View style={[styles.myRankBarFill, { width: `${Math.min((userXP / 4820) * 100, 100)}%` as `${number}%` }]} />
+        </View>
+        <WKText style={styles.myRankHint}>
+          {Math.max(0, 4820 - userXP).toLocaleString()} XP sonra #1 olursun
+        </WKText>
       </LinearGradient>
 
+      {/* Tab Toggle */}
+      <View style={styles.tabRow}>
+        {(['weekly', 'allTime', 'elo'] as Tab[]).map((t) => (
+          <TouchableOpacity
+            key={t}
+            onPress={() => setActiveTab(t)}
+            accessibilityRole="tab"
+            accessibilityState={{ selected: activeTab === t }}
+            style={[styles.tab, activeTab === t && styles.tabActive]}
+          >
+            <WKText style={[styles.tabText, activeTab === t && styles.tabTextActive]}>
+              {t === 'weekly' ? 'Bu Hafta' : t === 'allTime' ? 'Tüm Zamanlar' : '⚔️ ELO'}
+            </WKText>
+          </TouchableOpacity>
+        ))}
+      </View>
+
       <ScrollView showsVerticalScrollIndicator={false} style={styles.scroll}>
-        {/* ELO tab */}
+
+        {/* ELO Tab */}
         {activeTab === 'elo' && (
-          <View style={styles.listContainer}>
+          <View style={styles.list}>
             <View style={styles.eloHeader}>
-              <WKText style={styles.eloHeaderTitle}>⚔️ Battle ELO Sıralaması</WKText>
-              <WKText style={styles.eloHeaderSub}>Senin ELO'n: {battleStats.elo}</WKText>
+              <WKText style={styles.eloTitle}>⚔️ Battle ELO Sıralaması</WKText>
+              <WKText style={styles.eloSub}>Senin ELO'n: {battleStats.elo}</WKText>
             </View>
             {eloBoard.map((entry) => (
-              <WKCard
+              <View
                 key={entry.rank}
-                style={[styles.rankRow, entry.isMe && styles.userRow]}
+                style={[styles.rankRow, entry.isMe && styles.rankRowMe]}
               >
-                <View style={styles.rankLeft}>
-                  <WKText variant="body" color={Colors.text.secondary} style={styles.rankNum}>
-                    {getMedalEmoji(entry.rank)}
-                  </WKText>
-                  <WKText variant="body">{entry.isMe ? '🎮' : '👤'}</WKText>
-                  <View>
-                    <WKText variant="body" color={entry.isMe ? Colors.brand.primary : Colors.text.primaryDark}>
-                      {entry.displayName}
-                    </WKText>
-                    <WKText variant="caption" color={Colors.text.secondary}>
-                      {entry.wins}G / {entry.total}O
-                    </WKText>
-                  </View>
+                <WKText style={[styles.rankNum, entry.rank <= 3 && styles.rankNumMedal]}>
+                  {getMedal(entry.rank)}
+                </WKText>
+                <View style={styles.rankAvatar}>
+                  <WKText style={{ fontSize: 18 }}>{entry.isMe ? '🎮' : '👤'}</WKText>
                 </View>
-                <View style={styles.eloRight}>
-                  <WKText style={[styles.eloNum, entry.isMe && { color: Colors.battle.purple }]}>
+                <View style={{ flex: 1 }}>
+                  <WKText style={[styles.rankName, entry.isMe && styles.rankNameMe]}>
+                    {entry.displayName}
+                  </WKText>
+                  <WKText style={styles.rankMeta}>{entry.wins}G / {entry.total}O</WKText>
+                </View>
+                <View style={{ alignItems: 'flex-end' }}>
+                  <WKText style={[styles.eloNum, entry.isMe && { color: Colors.brand.violet }]}>
                     {entry.elo}
                   </WKText>
                   <WKText style={styles.eloLabel}>ELO</WKText>
                 </View>
-              </WKCard>
+              </View>
             ))}
-            <View style={{ height: Spacing.s32 }} />
           </View>
         )}
 
-        {activeTab !== 'elo' && loading ? (
-          <View style={styles.loadingContainer}>
-            <ActivityIndicator size="large" color={Colors.brand.primary} />
-            <WKText variant="body" color={Colors.text.secondary} style={styles.loadingText}>
-              Sıralama yükleniyor...
-            </WKText>
+        {/* Weekly / AllTime */}
+        {activeTab !== 'elo' && loading && (
+          <View style={styles.loadingBox}>
+            <ActivityIndicator size="large" color={Colors.brand.violet} />
+            <WKText style={styles.loadingText}>Sıralama yükleniyor…</WKText>
           </View>
-        ) : activeTab !== 'elo' ? (
+        )}
+
+        {activeTab !== 'elo' && !loading && (
           <>
-            {/* Podium: top 3 */}
+            {/* Podium */}
             {top3.length >= 3 && (
               <View style={styles.podium}>
-                {/* 2nd place */}
+                {/* 2nd */}
                 <View style={[styles.podiumItem, styles.podiumSecond]}>
-                  <WKText variant="heading1">{top3[1].avatar || '👤'}</WKText>
-                  <WKText variant="caption" color={Colors.text.secondary}>🥈</WKText>
-                  <WKText variant="caption" color={Colors.text.primaryDark} numberOfLines={1}>
-                    {top3[1].displayName}
-                  </WKText>
-                  <WKText variant="caption" color={Colors.accent.orange}>
-                    {top3[1].xp.toLocaleString()} XP
-                  </WKText>
+                  <WKText style={{ fontSize: 28 }}>{top3[1].avatar || '👤'}</WKText>
+                  <WKText style={{ fontSize: 18 }}>🥈</WKText>
+                  <WKText style={styles.podiumName} numberOfLines={1}>{top3[1].displayName}</WKText>
+                  <WKText style={styles.podiumXP}>{top3[1].xp.toLocaleString()} XP</WKText>
                 </View>
-
-                {/* 1st place */}
+                {/* 1st */}
                 <View style={[styles.podiumItem, styles.podiumFirst]}>
-                  <WKText variant="hero">{top3[0].avatar || '👤'}</WKText>
-                  <WKText variant="heading2">🥇</WKText>
-                  <WKText variant="caption" color={Colors.text.primaryDark} numberOfLines={1}>
-                    {top3[0].displayName}
-                  </WKText>
-                  <WKText variant="caption" color={Colors.accent.gold}>
+                  <WKText style={{ fontSize: 36 }}>{top3[0].avatar || '👤'}</WKText>
+                  <WKText style={{ fontSize: 22 }}>🥇</WKText>
+                  <WKText style={styles.podiumName} numberOfLines={1}>{top3[0].displayName}</WKText>
+                  <WKText style={[styles.podiumXP, { color: Colors.accent.gold }]}>
                     {top3[0].xp.toLocaleString()} XP
                   </WKText>
                 </View>
-
-                {/* 3rd place */}
+                {/* 3rd */}
                 <View style={[styles.podiumItem, styles.podiumThird]}>
-                  <WKText variant="heading1">{top3[2].avatar || '👤'}</WKText>
-                  <WKText variant="caption" color={Colors.text.secondary}>🥉</WKText>
-                  <WKText variant="caption" color={Colors.text.primaryDark} numberOfLines={1}>
-                    {top3[2].displayName}
-                  </WKText>
-                  <WKText variant="caption" color={Colors.accent.orange}>
-                    {top3[2].xp.toLocaleString()} XP
-                  </WKText>
+                  <WKText style={{ fontSize: 24 }}>{top3[2].avatar || '👤'}</WKText>
+                  <WKText style={{ fontSize: 18 }}>🥉</WKText>
+                  <WKText style={styles.podiumName} numberOfLines={1}>{top3[2].displayName}</WKText>
+                  <WKText style={styles.podiumXP}>{top3[2].xp.toLocaleString()} XP</WKText>
                 </View>
               </View>
             )}
 
-            {/* Ranks 4-10 */}
-            <View style={styles.listContainer}>
+            {/* Rest */}
+            <View style={styles.list}>
               {rest.map((entry) => (
-                <WKCard key={entry.uid} style={styles.rankRow}>
-                  <View style={styles.rankLeft}>
-                    <WKText variant="body" color={Colors.text.secondary} style={styles.rankNum}>
-                      {getMedalEmoji(entry.rank || 0)}
-                    </WKText>
-                    <WKText variant="body">{entry.avatar || '👤'}</WKText>
-                    <WKText variant="body" color={Colors.text.primaryDark}>
-                      {entry.displayName}
-                    </WKText>
+                <View key={entry.uid} style={styles.rankRow}>
+                  <WKText style={styles.rankNum}>{getMedal(entry.rank || 0)}</WKText>
+                  <View style={styles.rankAvatar}>
+                    <WKText style={{ fontSize: 18 }}>{entry.avatar || '👤'}</WKText>
                   </View>
-                  <WKText variant="body" color={Colors.accent.orange}>
-                    {entry.xp.toLocaleString()} XP
-                  </WKText>
-                </WKCard>
+                  <WKText style={[styles.rankName, { flex: 1 }]}>{entry.displayName}</WKText>
+                  <WKText style={styles.rankXP}>{entry.xp.toLocaleString()} XP</WKText>
+                </View>
               ))}
 
-              {/* User entry */}
               {!userInTop10 && userRank && (
                 <>
-                  <View style={styles.divider}>
-                    <WKText variant="caption" color={Colors.text.secondary}>• • •</WKText>
-                  </View>
-                  <WKCard style={[styles.rankRow, styles.userRow]}>
-                    <View style={styles.rankLeft}>
-                      <WKText variant="body" color={Colors.text.secondary} style={styles.rankNum}>
-                        {userEntry.rank}.
-                      </WKText>
-                      <WKText variant="body">{userEntry.avatar}</WKText>
-                      <WKText variant="body" color={Colors.brand.primary}>
-                        {userEntry.displayName}
-                      </WKText>
+                  <View style={styles.divider}><WKText style={styles.dividerDots}>• • •</WKText></View>
+                  <View style={[styles.rankRow, styles.rankRowMe]}>
+                    <WKText style={styles.rankNum}>{userEntry.rank}.</WKText>
+                    <View style={styles.rankAvatar}>
+                      <WKText style={{ fontSize: 18 }}>{userEntry.avatar}</WKText>
                     </View>
-                    <WKText variant="body" color={Colors.accent.orange}>
-                      {userEntry.xp.toLocaleString()} XP
+                    <WKText style={[styles.rankName, styles.rankNameMe, { flex: 1 }]}>
+                      {userEntry.displayName}
                     </WKText>
-                  </WKCard>
+                    <WKText style={styles.rankXP}>{userEntry.xp.toLocaleString()} XP</WKText>
+                  </View>
                 </>
               )}
             </View>
           </>
-        ) : null}
+        )}
 
         <View style={{ height: Spacing.s32 }} />
       </ScrollView>
@@ -303,45 +276,70 @@ export default function LeaderboardScreen() {
   );
 }
 
-
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
-  },
-  gradientHeader: {
-    paddingHorizontal: Spacing.s20,
-    paddingBottom: Spacing.s24,
-  },
-  backButton: {
-    paddingVertical: Spacing.s12,
-    paddingRight: Spacing.s16,
-    alignSelf: 'flex-start',
-    minHeight: 44,
-    justifyContent: 'center',
-  },
-  headerTitle: {
+  container: { flex: 1, backgroundColor: Colors.bg.primaryDark },
+
+  header: { paddingHorizontal: Spacing.s20, paddingBottom: 4 },
+  backBtn: { paddingVertical: Spacing.s12, alignSelf: 'flex-start', minHeight: 44, justifyContent: 'center' },
+  backText: { fontFamily: 'Inter_400Regular', fontSize: 14, color: Colors.text.mutedDark },
+  headerTitle: { fontFamily: 'Inter_800ExtraBold', fontSize: 28, color: Colors.text.primaryDark, lineHeight: 34 },
+  headerSub:   { fontFamily: 'Inter_400Regular',   fontSize: 13, color: Colors.text.mutedDark,   marginTop: 2, marginBottom: 14 },
+
+  // My rank card
+  myRankCard: {
+    marginHorizontal: Spacing.s16,
     marginBottom: Spacing.s16,
+    borderRadius: Radius.card + 8,
+    padding: 18,
   },
-  tabs: {
+  myRankLabel: {
+    fontFamily: 'Inter_600SemiBold',
+    fontSize: 11, letterSpacing: 1,
+    color: 'rgba(255,255,255,0.6)',
+    marginBottom: 10,
+  },
+  myRankRow: { flexDirection: 'row', alignItems: 'center', gap: 14 },
+  myRankAvatar: {
+    width: 48, height: 48, borderRadius: 24,
+    backgroundColor: 'rgba(255,255,255,0.15)',
+    alignItems: 'center', justifyContent: 'center',
+  },
+  myRankName:   { fontFamily: 'Inter_700Bold', fontSize: 15, color: '#fff' },
+  myRankXP:     { fontFamily: 'Inter_400Regular', fontSize: 12, color: 'rgba(255,255,255,0.65)' },
+  myRankNum:    { fontFamily: 'Inter_800ExtraBold', fontSize: 32, color: '#fff', lineHeight: 36 },
+  myRankChange: { fontFamily: 'Inter_400Regular', fontSize: 11, color: 'rgba(255,255,255,0.6)' },
+  myRankBarBg:  {
+    height: 5, backgroundColor: 'rgba(255,255,255,0.15)',
+    borderRadius: 3, marginTop: 14, overflow: 'hidden',
+  },
+  myRankBarFill: { height: 5, backgroundColor: 'rgba(255,255,255,0.9)', borderRadius: 3 },
+  myRankHint: {
+    fontFamily: 'Inter_400Regular', fontSize: 11,
+    color: 'rgba(255,255,255,0.5)', marginTop: 6,
+  },
+
+  // Tab toggle
+  tabRow: {
     flexDirection: 'row',
-    gap: Spacing.s8,
+    marginHorizontal: Spacing.s16,
+    marginBottom: Spacing.s16,
+    backgroundColor: Colors.bg.cardDark2,
+    borderRadius: Radius.chip,
+    padding: 3,
   },
   tab: {
-    paddingVertical: Spacing.s8,
-    paddingHorizontal: Spacing.s16,
-    borderRadius: Radius.chip,
-    backgroundColor: 'rgba(255,255,255,0.15)',
-    minHeight: 44,
-    justifyContent: 'center',
-    alignItems: 'center',
+    flex: 1, paddingVertical: 9, borderRadius: Radius.chip,
+    alignItems: 'center', justifyContent: 'center',
   },
-  tabActive: {
-    backgroundColor: 'rgba(255,255,255,0.35)',
+  tabActive: { backgroundColor: Colors.brand.violet },
+  tabText: {
+    fontFamily: 'Inter_600SemiBold',
+    fontSize: 12, color: Colors.text.mutedDark,
   },
-  scroll: {
-    flex: 1,
-  },
+  tabTextActive: { color: '#fff' },
+
+  scroll: { flex: 1 },
+
   // Podium
   podium: {
     flexDirection: 'row',
@@ -355,85 +353,106 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: Colors.bg.cardDark,
     borderRadius: Radius.card,
-    paddingVertical: Spacing.s12,
-    paddingHorizontal: Spacing.s8,
+    paddingVertical: 12,
+    paddingHorizontal: 8,
     flex: 1,
-    gap: Spacing.s4,
+    gap: 4,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.06)',
   },
   podiumFirst: {
-    paddingVertical: Spacing.s20,
+    paddingVertical: 20,
     borderWidth: 2,
     borderColor: Colors.accent.gold,
   },
-  podiumSecond: {
-    marginBottom: Spacing.s8,
+  podiumSecond: { marginBottom: 8 },
+  podiumThird:  { marginBottom: 16 },
+  podiumName: {
+    fontFamily: 'Inter_500Medium',
+    fontSize: 11, color: Colors.text.primaryDark,
+    textAlign: 'center',
   },
-  podiumThird: {
-    marginBottom: Spacing.s16,
+  podiumXP: {
+    fontFamily: 'Inter_600SemiBold',
+    fontSize: 11, color: Colors.accent.peach,
   },
+
   // Rank list
-  listContainer: {
-    paddingHorizontal: Spacing.s20,
-    gap: Spacing.s8,
-  },
+  list: { paddingHorizontal: Spacing.s20, gap: 8 },
   rankRow: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center',
-    paddingVertical: Spacing.s12,
+    backgroundColor: Colors.bg.cardDark,
+    borderRadius: Radius.card,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.06)',
+    paddingVertical: 12,
+    paddingHorizontal: 14,
+    gap: 12,
   },
-  rankLeft: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: Spacing.s12,
-    flex: 1,
+  rankRowMe: {
+    backgroundColor: `${Colors.brand.violet}22`,
+    borderColor: `${Colors.brand.violet}60`,
+    borderWidth: 1.5,
   },
   rankNum: {
-    width: 32,
+    fontFamily: 'Inter_700Bold',
+    fontSize: 14, color: Colors.text.mutedDark,
+    width: 32, textAlign: 'center',
   },
-  userRow: {
-    borderWidth: 1,
-    borderColor: Colors.brand.primary,
+  rankNumMedal: { color: '#fff' },
+  rankAvatar: {
+    width: 38, height: 38, borderRadius: 19,
+    backgroundColor: Colors.bg.cardDark2,
+    alignItems: 'center', justifyContent: 'center',
   },
-  divider: {
-    alignItems: 'center',
-    paddingVertical: Spacing.s4,
+  rankName: {
+    fontFamily: 'Inter_500Medium',
+    fontSize: 14, color: Colors.text.primaryDark,
   },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+  rankNameMe: { fontFamily: 'Inter_700Bold', color: '#fff' },
+  rankMeta: {
+    fontFamily: 'Inter_400Regular',
+    fontSize: 11, color: Colors.text.mutedDark,
+  },
+  rankXP: {
+    fontFamily: 'Inter_600SemiBold',
+    fontSize: 12, color: Colors.accent.peach,
+  },
+  changeText: { fontFamily: 'Inter_600SemiBold', fontSize: 12 },
+  changeUp:      { color: Colors.status.success },
+  changeDown:    { color: Colors.status.error },
+  changeNeutral: { color: Colors.text.mutedDark },
+
+  // ELO
+  eloHeader: { paddingVertical: 16, alignItems: 'center', gap: 4 },
+  eloTitle: {
+    fontFamily: 'Inter_800ExtraBold',
+    fontSize: 18, color: '#fff',
+  },
+  eloSub: {
+    fontFamily: 'Inter_700Bold',
+    fontSize: 14, color: Colors.brand.violet,
+  },
+  eloNum: {
+    fontFamily: 'Inter_800ExtraBold',
+    fontSize: 20, color: Colors.accent.gold,
+  },
+  eloLabel: {
+    fontFamily: 'Inter_400Regular',
+    fontSize: 11, color: Colors.text.mutedDark,
+  },
+
+  divider: { alignItems: 'center', paddingVertical: 4 },
+  dividerDots: { fontFamily: 'Inter_400Regular', fontSize: 12, color: Colors.text.mutedDark },
+
+  loadingBox: {
+    flex: 1, alignItems: 'center', justifyContent: 'center',
     paddingVertical: Spacing.s64,
   },
   loadingText: {
-    marginTop: Spacing.s16,
-  },
-  eloHeader: {
-    paddingVertical: Spacing.s16,
-    alignItems: 'center',
-    gap: 4,
-  },
-  eloHeaderTitle: {
-    color: '#fff',
-    fontWeight: '800',
-    fontSize: 18,
-  },
-  eloHeaderSub: {
-    color: Colors.battle.purple,
-    fontSize: 14,
-    fontWeight: '700',
-  },
-  eloRight: {
-    alignItems: 'flex-end',
-    gap: 2,
-  },
-  eloNum: {
-    color: Colors.accent.gold,
-    fontWeight: '900',
-    fontSize: 20,
-  },
-  eloLabel: {
-    color: Colors.text.secondary,
-    fontSize: 11,
+    fontFamily: 'Inter_400Regular',
+    fontSize: 14, color: Colors.text.mutedDark,
+    marginTop: 16,
   },
 });

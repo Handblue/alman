@@ -39,9 +39,9 @@ export default function WelcomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: Colors.bg.primaryDark, paddingHorizontal: Spacing.s20 },
+  container: { flex: 1, backgroundColor: Colors.bg.light, paddingHorizontal: Spacing.s20 },
   hero: { flex: 1, justifyContent: 'center', alignItems: 'center', gap: Spacing.s16 },
-  logo: { color: Colors.text.primaryDark, letterSpacing: -1 },
+  logo: { color: Colors.text.primary, letterSpacing: -1 },
   tagline: { textAlign: 'center' },
   actions: { paddingBottom: Spacing.s32, gap: Spacing.s12 },
   btn: { width: '100%' },

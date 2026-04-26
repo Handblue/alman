@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useState } from 'react';
 import { Colors } from '@/constants/colors';
 
 type Theme = {
@@ -8,6 +8,7 @@ type Theme = {
     card: string;
     textPrimary: string;
     textSecondary: string;
+    border: string;
   };
   toggleTheme: () => void;
 };
@@ -15,13 +16,14 @@ type Theme = {
 const ThemeContext = createContext<Theme | null>(null);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
 
   const colors = {
-    bg: isDark ? Colors.bg.primaryDark : Colors.bg.primaryLight,
-    card: isDark ? Colors.bg.cardDark : Colors.bg.cardLight,
-    textPrimary: isDark ? Colors.text.primaryDark : Colors.text.primaryLight,
-    textSecondary: isDark ? Colors.text.secondary : Colors.text.secondaryLight,
+    bg:            isDark ? Colors.bg.primaryDark  : Colors.bg.light,
+    card:          isDark ? Colors.bg.cardDark     : Colors.bg.card,
+    textPrimary:   isDark ? Colors.text.primaryDark  : Colors.text.primary,
+    textSecondary: isDark ? Colors.text.mutedDark    : Colors.text.muted,
+    border:        isDark ? Colors.border.dark       : Colors.border.primary,
   };
 
   return (

@@ -50,7 +50,7 @@ export default function CategoriesScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
     paddingHorizontal: Spacing.s20,
     paddingTop: Spacing.s32,
   },

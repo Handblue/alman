@@ -79,20 +79,35 @@ export default function ProfileScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scrollContent}>
-        {/* Avatar */}
-        <View style={styles.avatar}>
-          <WKText style={{ fontSize: 48 }} accessibilityLabel="Kullanıcı avatarı">🧑‍💻</WKText>
-          <WKText variant="heading1">Savaşçı</WKText>
-          <View style={styles.levelRow}>
-            <WKText variant="body" color={Colors.brand.primary}>{selectedLevel ?? 'A1'} Seviyesi</WKText>
-            {isPremium && (
-              <View style={styles.premiumBadge}>
-                <WKText style={styles.premiumBadgeText}>👑 Premium</WKText>
-              </View>
-            )}
-          </View>
+      {/* Dark profile header */}
+      <View style={styles.profileHeader}>
+        <View style={styles.avatarCircle}>
+          <WKText style={{ fontSize: 36 }} accessibilityLabel="Kullanıcı avatarı">🧑‍💻</WKText>
         </View>
+        <WKText style={styles.profileName}>Savaşçı</WKText>
+        <View style={styles.levelRow}>
+          <WKText style={styles.profileLevel}>{selectedLevel ?? 'A1'} Seviyesi</WKText>
+          {isPremium && (
+            <View style={styles.premiumBadge}>
+              <WKText style={styles.premiumBadgeText}>👑 Premium</WKText>
+            </View>
+          )}
+        </View>
+        <View style={styles.headerStats}>
+          {[
+            [xp.toLocaleString(), 'XP'],
+            [streak.toString(), 'Streak'],
+            [completedUnits.toString(), 'Ünite'],
+          ].map(([v, l]) => (
+            <View key={l} style={styles.headerStat}>
+              <WKText style={styles.headerStatVal}>{v}</WKText>
+              <WKText style={styles.headerStatLbl}>{l}</WKText>
+            </View>
+          ))}
+        </View>
+      </View>
+
+      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scrollContent}>
 
         {/* Premium CTA */}
         {!isPremium && (
@@ -380,17 +395,51 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
+  },
+  // Dark profile header (prototype-style)
+  profileHeader: {
+    backgroundColor: Colors.text.primary,
+    paddingTop: Spacing.s24,
+    paddingBottom: Spacing.s24,
+    alignItems: 'center',
+    gap: Spacing.s8,
+  },
+  avatarCircle: {
+    width: 72, height: 72, borderRadius: 36,
+    backgroundColor: Colors.brand.violet,
+    alignItems: 'center', justifyContent: 'center',
+  },
+  profileName: {
+    fontFamily: 'Inter_700Bold',
+    fontSize: 22,
+    color: '#fff',
+  },
+  profileLevel: {
+    fontFamily: 'Inter_400Regular',
+    fontSize: 12,
+    color: 'rgba(255,255,255,0.5)',
+  },
+  headerStats: {
+    flexDirection: 'row',
+    gap: Spacing.s24,
+    marginTop: Spacing.s4,
+  },
+  headerStat: { alignItems: 'center' },
+  headerStatVal: {
+    fontFamily: 'Inter_700Bold',
+    fontSize: 20,
+    color: '#fff',
+  },
+  headerStatLbl: {
+    fontFamily: 'Inter_400Regular',
+    fontSize: 11,
+    color: 'rgba(255,255,255,0.45)',
   },
   scrollContent: {
     paddingHorizontal: Spacing.s20,
-    paddingTop: Spacing.s32,
+    paddingTop: Spacing.s20,
     paddingBottom: Spacing.s32,
-  },
-  avatar: {
-    alignItems: 'center',
-    marginBottom: Spacing.s16,
-    gap: Spacing.s8,
   },
   levelRow: {
     flexDirection: 'row',
@@ -447,7 +496,7 @@ const styles = StyleSheet.create({
   battleDivider: {
     width: 1,
     height: 32,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.border.primary,
   },
   battlePlayBtn: {
     marginTop: Spacing.s12,
@@ -503,7 +552,7 @@ const styles = StyleSheet.create({
   quickLink: {
     paddingVertical: Spacing.s12,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.bg.primaryDark,
+    borderBottomColor: Colors.border.primary,
     gap: Spacing.s4,
   },
   quickLinkLast: {
@@ -529,9 +578,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.s12,
     paddingVertical: Spacing.s4,
     borderRadius: Radius.chip,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.tint,
     borderWidth: 1,
-    borderColor: Colors.bg.cardDark,
+    borderColor: Colors.border.primary,
   },
   hourChipActive: {
     borderColor: Colors.brand.primary,
@@ -565,7 +614,7 @@ const styles = StyleSheet.create({
   progressBarBg: {
     width: '100%',
     height: 4,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.border.primary,
     borderRadius: 2,
     overflow: 'hidden',
   },

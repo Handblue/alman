@@ -45,7 +45,7 @@ export default function WordListScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: Colors.bg.primaryDark, paddingHorizontal: Spacing.s20, paddingTop: Spacing.s32 },
+  container: { flex: 1, backgroundColor: Colors.bg.light, paddingHorizontal: Spacing.s20, paddingTop: Spacing.s32 },
   row: { flexDirection: 'row', alignItems: 'center', paddingVertical: Spacing.s12 },
   separator: { height: 1, backgroundColor: Colors.bg.cardDark },
 });

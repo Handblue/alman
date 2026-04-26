@@ -168,7 +168,7 @@ export default function SettingsScreen() {
               value={isDark}
               onValueChange={toggleTheme}
               trackColor={{ false: Colors.text.secondaryLight, true: Colors.brand.primary }}
-              thumbColor={Colors.text.primaryDark}
+              thumbColor={Colors.text.primary}
             />
           </View>
         </WKCard>

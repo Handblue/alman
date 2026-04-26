@@ -201,7 +201,7 @@ export default function DailyChallengeScreen() {
 
           <View style={styles.chipRow}>
             <View style={styles.chip}>
-              <WKText variant="caption" color={Colors.text.primaryDark}>
+              <WKText variant="caption" color={Colors.text.primary}>
                 5 soru · Bugün bir kez
               </WKText>
             </View>
@@ -266,7 +266,7 @@ export default function DailyChallengeScreen() {
       >
         <SafeAreaView style={styles.resultSafe}>
           <View style={styles.resultContent}>
-            <WKText variant="hero" color={Colors.text.primaryDark} style={styles.centerText}>
+            <WKText variant="hero" color={Colors.text.primary} style={styles.centerText}>
               {finalCorrect}/5 Doğru
             </WKText>
             <WKText variant="score" color={Colors.accent.gold} style={styles.centerText}>
@@ -275,7 +275,7 @@ export default function DailyChallengeScreen() {
             <WKText variant="heading1" style={styles.centerText}>
               {'★'.repeat(stars)}{'☆'.repeat(3 - stars)}
             </WKText>
-            <WKText variant="body" color={Colors.text.primaryDark} style={[styles.centerText, styles.starsLabel]}>
+            <WKText variant="body" color={Colors.text.primary} style={[styles.centerText, styles.starsLabel]}>
               {stars === 3 ? 'Mükemmel!' : stars === 2 ? 'İyi iş!' : 'Devam et!'}
             </WKText>
             <WKButton
@@ -343,7 +343,7 @@ export default function DailyChallengeScreen() {
       {/* XP chip on correct */}
       {answerState === 'correct' && (
         <View style={styles.xpChip}>
-          <WKText variant="caption" color={Colors.text.primaryDark}>+10 XP</WKText>
+          <WKText variant="caption" color={Colors.text.primary}>+10 XP</WKText>
         </View>
       )}
 
@@ -366,7 +366,7 @@ export default function DailyChallengeScreen() {
               style={[styles.choiceButton, { backgroundColor: bgColor }]}
               activeOpacity={0.8}
             >
-              <WKText variant="body" color={Colors.text.primaryDark}>
+              <WKText variant="body" color={Colors.text.primary}>
                 {choice}
               </WKText>
             </TouchableOpacity>
@@ -387,7 +387,7 @@ export default function DailyChallengeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
     paddingHorizontal: Spacing.s20,
   },
   introContent: {
@@ -401,7 +401,7 @@ const styles = StyleSheet.create({
     marginVertical: Spacing.s16,
   },
   chip: {
-    backgroundColor: Colors.bg.cardDark,
+    backgroundColor: Colors.bg.card,
     borderRadius: Radius.chip,
     paddingHorizontal: Spacing.s16,
     paddingVertical: Spacing.s8,
@@ -434,7 +434,7 @@ const styles = StyleSheet.create({
   progressBg: {
     flex: 1,
     height: 8,
-    backgroundColor: Colors.bg.cardDark,
+    backgroundColor: Colors.bg.card,
     borderRadius: 4,
   },
   progressFill: {

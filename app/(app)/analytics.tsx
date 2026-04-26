@@ -747,7 +747,7 @@ export default function AnalyticsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
   },
   header: {
     flexDirection: 'row',
@@ -771,7 +771,7 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.s8,
     alignItems: 'center',
     borderRadius: Radius.chip,
-    backgroundColor: Colors.bg.cardDark,
+    backgroundColor: Colors.bg.card,
   },
   tabActive: {
     backgroundColor: Colors.brand.primary + '22',
@@ -808,7 +808,7 @@ const styles = StyleSheet.create({
   statDivider: {
     width: 1,
     height: 40,
-    backgroundColor: Colors.bg.cardDark,
+    backgroundColor: Colors.bg.card,
   },
   streakHeader: {
     flexDirection: 'row',
@@ -839,7 +839,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: Spacing.s8,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.bg.primaryDark,
+    borderBottomColor: Colors.border.primary,
     gap: Spacing.s12,
   },
   tryBtn: {
@@ -871,7 +871,7 @@ const styles = StyleSheet.create({
     marginTop: Spacing.s4,
   },
   basedOnChip: {
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
     paddingHorizontal: Spacing.s8,
     paddingVertical: Spacing.s2,
     borderRadius: Radius.chip,
@@ -883,7 +883,7 @@ const styles = StyleSheet.create({
   },
   trajectoryItem: {
     flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
     borderRadius: Radius.card,
     padding: Spacing.s12,
   },
@@ -899,7 +899,7 @@ const styles = StyleSheet.create({
   },
   progressBarBg: {
     height: 6,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
     borderRadius: 3,
     overflow: 'hidden',
     marginTop: Spacing.s8,
@@ -925,7 +925,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.s12,
     paddingVertical: Spacing.s8,
     borderRadius: Radius.chip,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
     borderWidth: 1,
     borderColor: Colors.bg.cardDark,
   },

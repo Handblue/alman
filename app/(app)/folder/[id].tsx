@@ -197,7 +197,7 @@ export default function FolderDetailScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
     paddingHorizontal: Spacing.s20,
     paddingTop: Spacing.s16,
   },
@@ -224,7 +224,7 @@ const styles = StyleSheet.create({
     borderRadius: Radius.input,
     borderWidth: 1,
     borderColor: Colors.brand.primary,
-    color: Colors.text.primaryDark,
+    color: Colors.text.primary,
     paddingHorizontal: Spacing.s12,
     paddingVertical: Spacing.s8,
     fontSize: 24,

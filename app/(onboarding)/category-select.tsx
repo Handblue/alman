@@ -64,6 +64,6 @@ export default function CategorySelectScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: Colors.bg.primaryDark, paddingHorizontal: Spacing.s20, paddingTop: Spacing.s32 },
+  container: { flex: 1, backgroundColor: Colors.bg.light, paddingHorizontal: Spacing.s20, paddingTop: Spacing.s32 },
   card: { flex: 1, borderRadius: 16, borderWidth: 2, padding: Spacing.s16, minHeight: 100, justifyContent: 'center', alignItems: 'center' },
 });

@@ -57,7 +57,7 @@ function FilterChip({
     >
       <WKText
         variant="caption"
-        color={active ? Colors.text.primaryDark : Colors.text.secondary}
+        color={active ? Colors.text.primary : Colors.text.secondary}
       >
         {label}
       </WKText>
@@ -336,7 +336,7 @@ export default function NotebookScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
     paddingHorizontal: Spacing.s20,
     paddingTop: Spacing.s32,
   },
@@ -375,7 +375,7 @@ const styles = StyleSheet.create({
   },
   separator: {
     height: 1,
-    backgroundColor: Colors.bg.cardDark,
+    backgroundColor: Colors.bg.card,
   },
   empty: {
     flex: 1,
@@ -408,7 +408,7 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.s12,
   },
   folderCard: {
-    backgroundColor: Colors.bg.cardDark,
+    backgroundColor: Colors.bg.card,
     borderRadius: Radius.card,
     padding: Spacing.s16,
     minHeight: 64,

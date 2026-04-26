@@ -87,9 +87,9 @@ export default function LevelTestScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: Colors.bg.primaryDark, paddingHorizontal: Spacing.s20, paddingTop: Spacing.s32 },
+  container: { flex: 1, backgroundColor: Colors.bg.light, paddingHorizontal: Spacing.s20, paddingTop: Spacing.s32 },
   center: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: Spacing.s16 },
-  option: { borderWidth: 1.5, borderColor: Colors.bg.cardDark, borderRadius: 12, padding: Spacing.s16, marginBottom: Spacing.s12, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  option: { borderWidth: 1.5, borderColor: Colors.border.primary, borderRadius: 12, padding: Spacing.s16, marginBottom: Spacing.s12, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   correct: { borderColor: Colors.status.success, backgroundColor: Colors.status.success + '20' },
   wrong: { borderColor: Colors.status.error, backgroundColor: Colors.status.error + '20' },
 });
