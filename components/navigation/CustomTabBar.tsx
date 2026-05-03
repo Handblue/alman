@@ -113,7 +113,6 @@ export function CustomTabBar({ state, navigation }: BottomTabBarProps) {
         visible={open}
         transparent
         animationType="slide"
-        statusBarTranslucent
         onRequestClose={() => setOpen(false)}
       >
         <View style={styles.modalWrap}>
@@ -208,9 +207,8 @@ const styles = StyleSheet.create({
     flex:            1,
     alignItems:      'center',
     justifyContent:  'center',
-    paddingTop:      10,
-    paddingBottom:   4,
-    minHeight:       56,
+    paddingVertical: 8,
+    minHeight:       52,
   },
   emoji: { fontSize: 22 },
   dim:   { opacity: 0.38 },

@@ -350,10 +350,11 @@ export default function DailyChallengeScreen() {
       {/* Choices */}
       <View style={styles.choicesContainer}>
         {choices.map((choice) => {
-          let bgColor: string = Colors.bg.cardDark;
+          let bgColor: string = Colors.bg.card;
+          let textColor: string = Colors.text.primary;
           if (answerState !== 'unanswered') {
-            if (choice === correctAnswer) bgColor = Colors.status.success;
-            else if (choice === selectedChoice) bgColor = Colors.status.error;
+            if (choice === correctAnswer) { bgColor = Colors.status.success; textColor = '#fff'; }
+            else if (choice === selectedChoice) { bgColor = Colors.status.error; textColor = '#fff'; }
           }
 
           return (
@@ -364,9 +365,9 @@ export default function DailyChallengeScreen() {
               accessibilityRole="button"
               accessibilityLabel={`Seçenek: ${choice}`}
               style={[styles.choiceButton, { backgroundColor: bgColor }]}
-              activeOpacity={0.8}
+              activeOpacity={0.85}
             >
-              <WKText variant="body" color={Colors.text.primary}>
+              <WKText variant="body" color={textColor}>
                 {choice}
               </WKText>
             </TouchableOpacity>
@@ -401,10 +402,12 @@ const styles = StyleSheet.create({
     marginVertical: Spacing.s16,
   },
   chip: {
-    backgroundColor: Colors.bg.card,
+    backgroundColor: Colors.bg.tint,
     borderRadius: Radius.chip,
     paddingHorizontal: Spacing.s16,
     paddingVertical: Spacing.s8,
+    borderWidth: 1,
+    borderColor: Colors.border.primary,
   },
   completedCard: {
     width: '100%',
@@ -434,7 +437,7 @@ const styles = StyleSheet.create({
   progressBg: {
     flex: 1,
     height: 8,
-    backgroundColor: Colors.bg.card,
+    backgroundColor: Colors.border.primary,
     borderRadius: 4,
   },
   progressFill: {

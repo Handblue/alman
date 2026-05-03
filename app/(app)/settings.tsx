@@ -1,4 +1,4 @@
-import { Pressable, ScrollView, StyleSheet, Switch, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { WKCard, WKText } from '@/components/ui';
@@ -60,8 +60,6 @@ function createStyles(colors: { bg: string; card: string; textPrimary: string; t
     },
     widgetHero: {
       backgroundColor: isDark ? `${Colors.brand.primary}18` : `${Colors.brand.primary}10`,
-      borderWidth: 1,
-      borderColor: `${Colors.brand.primary}40`,
     },
     widgetStats: {
       flexDirection: 'row',
@@ -79,7 +77,7 @@ function createStyles(colors: { bg: string; card: string; textPrimary: string; t
 }
 
 export default function SettingsScreen() {
-  const { colors, isDark, toggleTheme } = useTheme();
+  const { colors, isDark } = useTheme();
   const styles = createStyles(colors, isDark);
   const { selectedLevel } = useUserStore();
   const widgetSnapshot = widgetService.getSnapshot();
@@ -124,10 +122,10 @@ export default function SettingsScreen() {
           <Pressable style={styles.backButton} onPress={() => router.back()} accessibilityRole="button" accessibilityLabel="Geri dön">
             <WKText>←</WKText>
           </Pressable>
-          <View>
+          <View style={{ flex: 1 }}>
             <WKText variant="heading1">Ayarlar</WKText>
             <WKText variant="bodySm" color={colors.textSecondary}>
-              Seviye: {selectedLevel ?? 'A1'} • Görünüm ve yardımcı özellikler
+              Seviye: {selectedLevel ?? 'A1'}
             </WKText>
           </View>
         </View>
@@ -152,24 +150,6 @@ export default function SettingsScreen() {
                 {widgetSnapshot.dailyChallenge.correctCount}/{widgetSnapshot.dailyChallenge.totalCount}
               </WKText>
             </View>
-          </View>
-        </WKCard>
-
-        <WKCard>
-          <WKText variant="heading2" style={styles.sectionTitle}>Görünüm</WKText>
-          <View style={[styles.row, styles.lastRow]}>
-            <View style={styles.rowMeta}>
-              <WKText variant="bodySm">Koyu tema</WKText>
-              <WKText variant="caption" color={colors.textSecondary}>
-                Tasarım sistemi token’larıyla çalışan açık/koyu görünüm geçişi.
-              </WKText>
-            </View>
-            <Switch
-              value={isDark}
-              onValueChange={toggleTheme}
-              trackColor={{ false: Colors.text.secondaryLight, true: Colors.brand.primary }}
-              thumbColor={Colors.text.primary}
-            />
           </View>
         </WKCard>
 

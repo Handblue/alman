@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WortKrieg · Design System v1</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    /* Surfaces */
+    --bg:        #F6F7FB;
+    --card:      #FFFFFF;
+    --tint:      #EEF2FF;
+    --border:    #D9E1EC;
+    /* Text */
+    --text:      #101828;
+    --muted:     #5B6577;
+    /* Primary */
+    --violet:    #7C6CFF;
+    --violet-deep: #5A4BCC;
+    /* Accents */
+    --lilac:     #E9E2FF;
+    --sky:       #B8D8FF;
+    --mint:      #BFEFD8;
+    --butter:    #E7F28B;
+    --peach:     #FFC7AE;
+    --blush:     #F7CDD9;
+    /* Accent text */
+    --mint-dark: #0E3A26;
+    --mint-mid:  #2F6B4F;
+    --butter-dark: #5A5A00;
+    --peach-dark: #5A2410;
+    /* Radius */
+    --r-sm:      8px;
+    --r-md:      16px;
+    --r-lg:      24px;
+    --r-pill:    9999px;
+    /* Shadow */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+  }
+
+  html { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; }
+  body { min-height: 100vh; }
+
+  /* ── Layout ── */
+  .page { max-width: 1100px; margin: 0 auto; padding: 80px 24px 120px; }
+
+  /* ── Header ── */
+  .ds-header { margin-bottom: 72px; border-bottom: 1px solid var(--border); padding-bottom: 40px; }
+  .ds-eyebrow { font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--violet); margin-bottom: 16px; }
+  .ds-title { font-family: 'DM Serif Display', serif; font-size: 56px; line-height: 1.1; color: var(--text); margin-bottom: 16px; }
+  .ds-subtitle { font-size: 15px; line-height: 1.7; color: var(--muted); max-width: 560px; }
+  .ds-tags { display: flex; gap: 8px; margin-top: 24px; flex-wrap: wrap; }
+  .ds-tag { font-size: 12px; padding: 5px 12px; border-radius: var(--r-pill); border: 1px solid var(--border); color: var(--muted); background: var(--card); }
+
+  /* ── Section ── */
+  .section { margin-bottom: 80px; }
+  .section-label { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+  .section-heading { font-family: 'DM Serif Display', serif; font-size: 28px; line-height: 34px; color: var(--text); margin-bottom: 32px; }
+
+  /* ── Color Swatches ── */
+  .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 12px; }
+  .swatch { border-radius: var(--r-md); overflow: hidden; border: 1px solid var(--border); background: var(--card); box-shadow: var(--shadow-sm); }
+  .swatch-color { height: 88px; display: flex; align-items: flex-end; padding: 12px 14px; }
+  .swatch-hex { font-size: 12px; color: rgba(255,255,255,0.9); font-family: 'Inter', monospace; }
+  .swatch-hex.dark { color: rgba(16,24,40,0.6); }
+  .swatch-body { padding: 14px; }
+  .swatch-name { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 3px; }
+  .swatch-role { font-size: 11px; color: var(--muted); }
+  .group-label { font-size: 13px; color: var(--muted); margin-bottom: 12px; margin-top: 28px; }
+
+  /* ── Typography ── */
+  .type-table { background: var(--card); border-radius: var(--r-md); border: 1px solid var(--border); overflow: hidden; box-shadow: var(--shadow-sm); }
+  .type-row { display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; border-bottom: 1px solid var(--tint); gap: 24px; }
+  .type-row:last-child { border-bottom: none; }
+  .type-row .sample { flex: 1; color: var(--text); }
+  .type-row .spec { font-size: 11px; color: var(--muted); white-space: nowrap; font-family: 'Inter', monospace; }
+  .type-row .badge { font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--violet); background: var(--lilac); padding: 3px 8px; border-radius: var(--r-pill); white-space: nowrap; }
+
+  /* ── Geometry ── */
+  .geo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .geo-card { background: var(--card); border-radius: var(--r-md); border: 1px solid var(--border); padding: 28px; box-shadow: var(--shadow-sm); }
+  .geo-title { font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+  .geo-samples { display: flex; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+  .geo-sample { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .geo-box { background: var(--tint); border: 1.5px solid var(--border); }
+  .geo-label { font-size: 11px; color: var(--muted); text-align: center; }
+  .geo-val { font-size: 10px; color: var(--violet); font-family: monospace; }
+
+  .spacing-row { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+  .spacing-bar { height: 8px; background: var(--violet); border-radius: 4px; opacity: 0.7; }
+  .spacing-info { font-size: 12px; color: var(--muted); }
+  .spacing-val { font-size: 12px; color: var(--violet); font-family: monospace; margin-left: 6px; }
+
+  /* ── Components ── */
+  .comp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .comp-card { background: var(--card); border-radius: var(--r-md); border: 1px solid var(--border); padding: 20px; box-shadow: var(--shadow-sm); }
+  .comp-label { font-size: 11px; color: var(--muted); margin-bottom: 14px; }
+
+  /* Hero Card */
+  .hero-card { background: var(--violet); border-radius: var(--r-lg); padding: 24px; position: relative; overflow: hidden; min-height: 200px; }
+  .hero-card::after { content: ''; position: absolute; right: -24px; top: -40px; width: 160px; height: 160px; border-radius: 50%; background: rgba(255,255,255,0.10); }
+  .hero-eyebrow { font-size: 13px; color: rgba(255,255,255,0.8); margin-bottom: 10px; }
+  .hero-title { font-family: 'DM Serif Display', serif; font-size: 28px; line-height: 34px; color: #fff; margin-bottom: 10px; }
+  .hero-meta { font-size: 13px; color: rgba(255,255,255,0.7); margin-bottom: 20px; }
+  .hero-actions { display: flex; align-items: center; gap: 12px; }
+  .btn-resume { display: inline-flex; align-items: center; gap: 6px; background: #fff; color: var(--text); font-size: 13px; font-weight: 500; padding: 10px 18px; border-radius: var(--r-pill); border: none; cursor: pointer; white-space: nowrap; }
+  .progress-track { flex: 1; height: 6px; background: rgba(255,255,255,0.2); border-radius: var(--r-pill); overflow: hidden; }
+  .progress-fill { height: 100%; width: 67%; background: #fff; border-radius: var(--r-pill); }
+
+  /* Collection Card */
+  .collection-card { background: var(--mint); border-radius: var(--r-md); padding: 20px; }
+  .coll-cat { font-size: 13px; color: var(--mint-mid); margin-bottom: 6px; }
+  .coll-title { font-size: 20px; font-weight: 500; color: var(--mint-dark); margin-bottom: 6px; line-height: 1.3; }
+  .coll-meta { font-size: 13px; color: var(--mint-mid); }
+
+  /* Stat Cards */
+  .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .stat-card { background: var(--card); border-radius: var(--r-md); border: 1px solid var(--border); padding: 20px; box-shadow: var(--shadow-sm); }
+  .stat-icon { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; font-size: 16px; }
+  .stat-val { font-size: 28px; line-height: 34px; color: var(--text); margin-bottom: 4px; }
+  .stat-label { font-size: 12px; color: var(--muted); }
+
+  /* Buttons */
+  .btn-grid { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 14px; padding: 12px 24px; border-radius: var(--r-pill); border: none; cursor: pointer; transition: opacity 0.15s, transform 0.1s; }
+  .btn:hover { opacity: 0.85; transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); }
+  .btn-primary { background: var(--text); color: #fff; }
+  .btn-violet { background: var(--violet); color: #fff; }
+  .btn-ghost { background: transparent; color: var(--text); border: 1.5px solid var(--border); }
+  .btn-tint { background: var(--tint); color: var(--violet); }
+  .btn-sm { padding: 8px 16px; font-size: 13px; }
+
+  /* Badges / Tags */
+  .badge-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .badge { font-size: 12px; padding: 4px 12px; border-radius: var(--r-pill); font-weight: 500; }
+  .badge-violet { background: var(--lilac); color: var(--violet-deep); }
+  .badge-mint   { background: var(--mint);  color: var(--mint-dark); }
+  .badge-butter { background: var(--butter); color: var(--butter-dark); }
+  .badge-peach  { background: var(--peach); color: var(--peach-dark); }
+  .badge-sky    { background: var(--sky); color: #0A2A52; }
+  .badge-blush  { background: var(--blush); color: #5A1E2C; }
+  .badge-outline { background: transparent; border: 1.5px solid var(--border); color: var(--muted); }
+
+  /* Icons section */
+  .icon-grid { display: flex; gap: 16px; flex-wrap: wrap; }
+  .icon-item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .icon-box { width: 48px; height: 48px; border-radius: var(--r-sm); background: var(--card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
+  .icon-box img { width: 18px; height: 18px; object-fit: contain; }
+  .icon-name { font-size: 11px; color: var(--muted); }
+
+  /* Divider */
+  hr.ds-divider { border: none; border-top: 1px solid var(--border); margin: 0 0 64px 0; }
+
+  /* Dark surface preview */
+  .dark-surface { background: #0B0F1A; border-radius: var(--r-lg); padding: 32px; color: #fff; margin-top: 20px; }
+  .dark-surface .hero-title { font-size: 36px; }
+  .dark-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+  .dark-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--r-md); padding: 20px; }
+  .dark-card-label { font-size: 12px; color: rgba(255,255,255,0.45); margin-bottom: 6px; }
+  .dark-card-val { font-size: 22px; font-family: 'DM Serif Display', serif; color: #fff; }
+
+  /* Footer */
+  .ds-footer { margin-top: 80px; padding-top: 32px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; gap: 12px; }
+  .ds-footer-brand { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--violet); }
+  .ds-footer-note { font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ── HEADER ── -->
+  <header class="ds-header">
+    <div class="ds-eyebrow">WortKrieg · Design System v1</div>
+    <h1 class="ds-title">Soft editorial<br>learning OS.</h1>
+    <p class="ds-subtitle">Premium but warm. Gamified but not childish. Light editorial surfaces for browse, dark immersive surfaces for Speak and Battle.</p>
+    <div class="ds-tags">
+      <span class="ds-tag">Premium</span>
+      <span class="ds-tag">Gamified Utility</span>
+      <span class="ds-tag">DM Serif Display + Inter</span>
+      <span class="ds-tag">v1.0</span>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════ 01 — COLOR ═══ -->
+  <section class="section">
+    <div class="section-label">01 — Foundations</div>
+    <h2 class="section-heading">Color</h2>
+
+    <p class="group-label" style="margin-top:0">Surfaces &amp; text</p>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#F6F7FB">
+          <span class="swatch-hex dark">#F6F7FB</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Background</div><div class="swatch-role">Primary background</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#FFFFFF; border-bottom:1px solid #D9E1EC">
+          <span class="swatch-hex dark">#FFFFFF</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Card</div><div class="swatch-role">Card white</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#EEF2FF">
+          <span class="swatch-hex dark">#EEF2FF</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Tint</div><div class="swatch-role">Soft tint surface</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#D9E1EC">
+          <span class="swatch-hex dark">#D9E1EC</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Border</div><div class="swatch-role">Border</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#101828">
+          <span class="swatch-hex">#101828</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Text</div><div class="swatch-role">Primary text</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#5B6577">
+          <span class="swatch-hex">#5B6577</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Muted</div><div class="swatch-role">Secondary text</div></div>
+      </div>
+    </div>
+
+    <p class="group-label">Primary</p>
+    <div class="swatch-grid" style="grid-template-columns: repeat(auto-fill, minmax(140px,1fr))">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#7C6CFF">
+          <span class="swatch-hex">#7C6CFF</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Violet</div><div class="swatch-role">Progress / Rank</div></div>
+      </div>
+    </div>
+
+    <p class="group-label">Accent family</p>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#E9E2FF">
+          <span class="swatch-hex dark">#E9E2FF</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Lilac</div><div class="swatch-role">Premium soft</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#B8D8FF">
+          <span class="swatch-hex dark">#B8D8FF</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Sky</div><div class="swatch-role">Learn</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#BFEFD8">
+          <span class="swatch-hex dark">#BFEFD8</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Mint</div><div class="swatch-role">Speak</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#E7F28B">
+          <span class="swatch-hex dark">#E7F28B</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Butter</div><div class="swatch-role">Accent</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#FFC7AE">
+          <span class="swatch-hex dark">#FFC7AE</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Peach</div><div class="swatch-role">Warm accent</div></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#F7CDD9">
+          <span class="swatch-hex dark">#F7CDD9</span>
+        </div>
+        <div class="swatch-body"><div class="swatch-name">Blush</div><div class="swatch-role">Soft accent</div></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="ds-divider" />
+
+  <!-- ═══════════════════════════════════════ 01 — TYPOGRAPHY ═══ -->
+  <section class="section">
+    <div class="section-label">01 — Foundations</div>
+    <h2 class="section-heading">Typography</h2>
+
+    <div class="type-table">
+      <div class="type-row">
+        <div class="sample" style="font-family:'DM Serif Display',serif; font-size:44px; line-height:1.1">Lern jeden Tag.</div>
+        <span class="badge">DM Serif Display</span>
+        <span class="spec">44 / 48</span>
+      </div>
+      <div class="type-row">
+        <div class="sample" style="font-family:'DM Serif Display',serif; font-size:28px; line-height:34px">Aa — H1 · Heading One</div>
+        <span class="badge">DM Serif Display</span>
+        <span class="spec">28 / 34</span>
+      </div>
+      <div class="type-row">
+        <div class="sample" style="font-family:'DM Serif Display',serif; font-size:22px; line-height:28px">Aa — H2 · Heading Two</div>
+        <span class="badge">DM Serif Display</span>
+        <span class="spec">22 / 28</span>
+      </div>
+      <div class="type-row">
+        <div class="sample" style="font-size:18px; line-height:24px">Aa — Title · Section title</div>
+        <span class="badge">Inter</span>
+        <span class="spec">18 / 24</span>
+      </div>
+      <div class="type-row">
+        <div class="sample" style="font-size:16px; line-height:24px">Aa — Body · Regular paragraph text</div>
+        <span class="badge">Inter</span>
+        <span class="spec">16 / 24</span>
+      </div>
+      <div class="type-row">
+        <div class="sample" style="font-size:14px; line-height:20px; color:var(--muted)">Aa — Small · Secondary label text</div>
+        <span class="badge">Inter</span>
+        <span class="spec">14 / 20</span>
+      </div>
+      <div class="type-row">
+        <div class="sample" style="font-size:12px; line-height:16px; color:var(--muted)">Aa — Meta · Caption and micro copy</div>
+        <span class="badge">Inter</span>
+        <span class="spec">12 / 16</span>
+      </div>
+      <div class="type-row">
+        <div class="sample" style="font-size:11px; line-height:16px; letter-spacing:1.5px; text-transform:uppercase; color:var(--muted)">AA — EYEBROW · SECTION LABEL</div>
+        <span class="badge">Inter</span>
+        <span class="spec">11 / 16 · +1.5px</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="ds-divider" />
+
+  <!-- ═══════════════════════════════════════ 01 — GEOMETRY ═══ -->
+  <section class="section">
+    <div class="section-label">01 — Foundations</div>
+    <h2 class="section-heading">Geometry</h2>
+
+    <div class="geo-grid">
+      <!-- Radius -->
+      <div class="geo-card">
+        <div class="geo-title">Radius</div>
+        <div class="geo-samples">
+          <div class="geo-sample">
+            <div class="geo-box" style="width:48px; height:48px; border-radius:4px;"></div>
+            <div class="geo-label">XS</div>
+            <div class="geo-val">4px</div>
+          </div>
+          <div class="geo-sample">
+            <div class="geo-box" style="width:64px; height:64px; border-radius:8px;"></div>
+            <div class="geo-label">Small</div>
+            <div class="geo-val">8px</div>
+          </div>
+          <div class="geo-sample">
+            <div class="geo-box" style="width:80px; height:80px; border-radius:16px;"></div>
+            <div class="geo-label">Card</div>
+            <div class="geo-val">16px</div>
+          </div>
+          <div class="geo-sample">
+            <div class="geo-box" style="width:96px; height:96px; border-radius:24px;"></div>
+            <div class="geo-label">Hero</div>
+            <div class="geo-val">24px</div>
+          </div>
+          <div class="geo-sample">
+            <div class="geo-box" style="width:80px; height:44px; border-radius:9999px;"></div>
+            <div class="geo-label">Pill</div>
+            <div class="geo-val">∞</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spacing -->
+      <div class="geo-card">
+        <div class="geo-title">Spacing scale</div>
+        <div>
+          <div class="spacing-row"><div class="spacing-bar" style="width:4px"></div><span class="spacing-info">4<span class="spacing-val">4px</span></span></div>
+          <div class="spacing-row"><div class="spacing-bar" style="width:8px"></div><span class="spacing-info">8<span class="spacing-val">8px</span></span></div>
+          <div class="spacing-row"><div class="spacing-bar" style="width:12px"></div><span class="spacing-info">12<span class="spacing-val">12px</span></span></div>
+          <div class="spacing-row"><div class="spacing-bar" style="width:16px"></div><span class="spacing-info">16<span class="spacing-val">16px</span></span></div>
+          <div class="spacing-row"><div class="spacing-bar" style="width:20px"></div><span class="spacing-info">20<span class="spacing-val">20px</span></span></div>
+          <div class="spacing-row"><div class="spacing-bar" style="width:24px"></div><span class="spacing-info">24<span class="spacing-val">24px</span></span></div>
+          <div class="spacing-row"><div class="spacing-bar" style="width:32px"></div><span class="spacing-info">32<span class="spacing-val">32px</span></span></div>
+          <div class="spacing-row"><div class="spacing-bar" style="width:48px"></div><span class="spacing-info">48<span class="spacing-val">48px</span></span></div>
+          <div class="spacing-row"><div class="spacing-bar" style="width:64px"></div><span class="spacing-info">64<span class="spacing-val">64px</span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="ds-divider" />
+
+  <!-- ═══════════════════════════════════════ 02 — COMPONENTS ═══ -->
+  <section class="section">
+    <div class="section-label">02 — Components</div>
+    <h2 class="section-heading">Cards</h2>
+
+    <div class="comp-grid">
+      <!-- Hero Card -->
+      <div class="comp-card">
+        <div class="comp-label">Hero card</div>
+        <div class="hero-card">
+          <div class="hero-eyebrow">Continue learning</div>
+          <div class="hero-title">Travel essentials</div>
+          <div class="hero-meta">Lesson 6 · 12 min left</div>
+          <div class="hero-actions">
+            <button class="btn-resume">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><polygon points="3,2 11,7 3,12" fill="#101828"/></svg>
+              Resume
+            </button>
+            <div class="progress-track"><div class="progress-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection Card -->
+      <div class="comp-card">
+        <div class="comp-label">Collection card</div>
+        <div class="collection-card">
+          <div class="coll-cat">Speak</div>
+          <div class="coll-title">Pronunciation drills</div>
+          <div class="coll-meta">24 prompts</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stat Cards -->
+    <div style="margin-bottom: 8px; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:1.2px;">Stat cards</div>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-icon" style="background:#FFC7AE">🔥</div>
+        <div class="stat-val">14</div>
+        <div class="stat-label">Streak · days</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" style="background:#E7F28B">⚡</div>
+        <div class="stat-val">320</div>
+        <div class="stat-label">XP today · pts</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" style="background:#E9E2FF">🏆</div>
+        <div class="stat-val">#42</div>
+        <div class="stat-label">Rank · weekly</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" style="background:#B8D8FF">🎯</div>
+        <div class="stat-val">86%</div>
+        <div class="stat-label">Accuracy · last session</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="ds-divider" />
+
+  <!-- ═══════════════════════════════════════ 02 — BUTTONS ═══ -->
+  <section class="section">
+    <div class="section-label">02 — Components</div>
+    <h2 class="section-heading">Buttons</h2>
+
+    <div class="comp-card" style="margin-bottom:16px;">
+      <div class="comp-label">Size: Default (45px)</div>
+      <div class="btn-grid">
+        <button class="btn btn-primary">Continue</button>
+        <button class="btn btn-violet">Start lesson</button>
+        <button class="btn btn-tint">Browse</button>
+        <button class="btn btn-ghost">Cancel</button>
+      </div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-label">Size: Small (36px)</div>
+      <div class="btn-grid">
+        <button class="btn btn-primary btn-sm">Resume</button>
+        <button class="btn btn-violet btn-sm">Practice</button>
+        <button class="btn btn-tint btn-sm">View all</button>
+        <button class="btn btn-ghost btn-sm">Skip</button>
+      </div>
+    </div>
+  </section>
+
+  <hr class="ds-divider" />
+
+  <!-- ═══════════════════════════════════════ 02 — BADGES ═══ -->
+  <section class="section">
+    <div class="section-label">02 — Components</div>
+    <h2 class="section-heading">Badges &amp; Tags</h2>
+
+    <div class="comp-card">
+      <div class="comp-label">Color variants</div>
+      <div class="badge-grid">
+        <span class="badge badge-violet">Premium</span>
+        <span class="badge badge-mint">Speak</span>
+        <span class="badge badge-butter">Gamified</span>
+        <span class="badge badge-peach">Warm</span>
+        <span class="badge badge-sky">Learn</span>
+        <span class="badge badge-blush">Soft</span>
+        <span class="badge badge-outline">Neutral</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="ds-divider" />
+
+  <!-- ═══════════════════════════════════════ 03 — SURFACES ═══ -->
+  <section class="section">
+    <div class="section-label">03 — Surfaces</div>
+    <h2 class="section-heading">Dark (Immersive)</h2>
+    <p style="font-size:13px; color:var(--muted); margin-bottom:20px; line-height:1.6">Used for Speak and Battle modes. Full dark canvas with glass-style cards.</p>
+
+    <div class="dark-surface">
+      <div style="font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:12px;">WortKrieg · Battle Mode</div>
+      <div style="font-family:'DM Serif Display',serif; font-size:36px; color:#fff; margin-bottom:6px; line-height:1.15">Wortschatz<br>Challenge</div>
+      <div style="font-size:13px; color:rgba(255,255,255,0.5); margin-bottom:28px;">Round 3 of 5 · 42 players left</div>
+      <div class="dark-grid">
+        <div class="dark-card">
+          <div class="dark-card-label">Your streak</div>
+          <div class="dark-card-val">14 days</div>
+        </div>
+        <div class="dark-card">
+          <div class="dark-card-label">Current rank</div>
+          <div class="dark-card-val">#42</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="ds-footer">
+    <span class="ds-footer-brand">WortKrieg · Design System v1</span>
+    <span class="ds-footer-note">Inter + DM Serif Display · 6 accent colors · 2 surfaces</span>
+  </footer>
+
+</div>
+</body>
+</html>

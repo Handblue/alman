@@ -15,6 +15,7 @@ import { Spacing } from '@/constants/spacing';
 import { Radius } from '@/constants/radius';
 import { WORDS, Word } from '@/data/words';
 import { useFolderStore } from '@/store/useFolderStore';
+import { AddWordToFolderModal } from '@/components/folder/AddWordToFolderModal';
 
 export default function FolderDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -24,6 +25,7 @@ export default function FolderDetailScreen() {
 
   const [isRenaming, setIsRenaming] = useState(false);
   const [renameValue, setRenameValue] = useState(folder?.name ?? '');
+  const [showAddWord, setShowAddWord] = useState(false);
 
   if (!folder) {
     return (
@@ -103,15 +105,24 @@ export default function FolderDetailScreen() {
           <WKText variant="bodyLg" color={Colors.brand.primary}>← Geri</WKText>
         </TouchableOpacity>
 
-        {/* Delete folder */}
-        <TouchableOpacity
-          onPress={handleDelete}
-          accessibilityRole="button"
-          accessibilityLabel="Klasörü sil"
-          style={styles.iconBtn}
-        >
-          <WKText style={styles.iconBtnText}>🗑️</WKText>
-        </TouchableOpacity>
+        <View style={styles.navActions}>
+          <TouchableOpacity
+            onPress={() => setShowAddWord(true)}
+            accessibilityRole="button"
+            accessibilityLabel="Kelime ekle"
+            style={styles.iconBtn}
+          >
+            <WKText style={styles.iconBtnText}>➕</WKText>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={handleDelete}
+            accessibilityRole="button"
+            accessibilityLabel="Klasörü sil"
+            style={styles.iconBtn}
+          >
+            <WKText style={styles.iconBtnText}>🗑️</WKText>
+          </TouchableOpacity>
+        </View>
       </View>
 
       {/* Folder name (editable) */}
@@ -153,8 +164,16 @@ export default function FolderDetailScreen() {
         <View style={styles.empty}>
           <WKText style={styles.emptyEmoji}>📭</WKText>
           <WKText variant="body" color={Colors.text.secondary} style={styles.emptyText}>
-            Klasörünüz boş.{'\n'}Kelime kartlarından + ikonuyla ekleyebilirsiniz.
+            Klasörünüz boş.
           </WKText>
+          <TouchableOpacity
+            onPress={() => setShowAddWord(true)}
+            accessibilityRole="button"
+            accessibilityLabel="Kelime ekle"
+            style={styles.addWordBtn}
+          >
+            <WKText style={styles.addWordBtnText}>➕ Kelime Ekle</WKText>
+          </TouchableOpacity>
         </View>
       ) : (
         <FlatList
@@ -190,6 +209,12 @@ export default function FolderDetailScreen() {
           )}
         />
       )}
+      <AddWordToFolderModal
+        visible={showAddWord}
+        folderId={currentFolder.id}
+        existingWordIds={currentFolder.wordIds}
+        onClose={() => setShowAddWord(false)}
+      />
     </SafeAreaView>
   );
 }
@@ -206,6 +231,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     marginBottom: Spacing.s16,
+  },
+  navActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   backBtn: {
     minHeight: 44,
@@ -259,6 +288,20 @@ const styles = StyleSheet.create({
   removeBtnText: {
     fontSize: 18,
     fontWeight: '700',
+  },
+  addWordBtn: {
+    backgroundColor: Colors.brand.violetSoft,
+    borderRadius: Radius.chip,
+    paddingHorizontal: Spacing.s20,
+    paddingVertical: Spacing.s12,
+    minHeight: 44,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  addWordBtnText: {
+    fontFamily: 'Inter_600SemiBold',
+    fontSize: 14,
+    color: Colors.brand.primary,
   },
   empty: {
     flex: 1,
