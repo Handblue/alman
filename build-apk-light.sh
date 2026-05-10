@@ -26,9 +26,9 @@ nice -n 15 ionice -c 3 bash --login -c "
   cd '$SCRIPT_DIR/android'
   ./gradlew assembleDebug \
     --no-daemon \
-    --max-workers 2 \
+    --max-workers 1 \
     -PbundleInDebug=true \
-    -Porg.gradle.jvmargs='-Xmx1024m -XX:MaxMetaspaceSize=256m'
+    -Porg.gradle.jvmargs='-Xmx768m -XX:MaxMetaspaceSize=192m -XX:+UseSerialGC'
 "
 
 BUILD_EXIT=$?

@@ -59,7 +59,7 @@ function createStyles(colors: { bg: string; card: string; textPrimary: string; t
       color: Colors.text.secondary,
     },
     widgetHero: {
-      backgroundColor: isDark ? `${Colors.brand.primary}18` : `${Colors.brand.primary}10`,
+      backgroundColor: isDark ? '#1C1A40' : '#EDEAFF',
     },
     widgetStats: {
       flexDirection: 'row',
@@ -162,6 +162,7 @@ export default function SettingsScreen() {
               onPress={() => router.push(item.href)}
               accessibilityRole="button"
               accessibilityLabel={item.label}
+              android_ripple={null}
             >
               <View style={styles.rowMeta}>
                 <WKText variant="bodySm">{item.label}</WKText>

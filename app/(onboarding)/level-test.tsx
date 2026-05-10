@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Pressable } from 'react-native';
 import { router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { WKText, WKButton } from '@/components/ui';
@@ -65,18 +65,19 @@ export default function LevelTestScreen() {
         const isCorrect = selected !== null && idx === q.correctIndex;
         const isWrong = isSelected && idx !== q.correctIndex;
         return (
-          <TouchableOpacity
+          <Pressable
             key={idx}
             accessibilityRole="radio"
             accessibilityLabel={opt}
             accessibilityState={{ checked: isSelected }}
+            android_ripple={null}
             onPress={() => handleSelect(idx)}
-            style={[styles.option, isCorrect && styles.correct, isWrong && styles.wrong]}
+            style={({ pressed }) => [styles.option, isCorrect && styles.correct, isWrong && styles.wrong, { opacity: pressed && !isCorrect && !isWrong ? 0.82 : 1 }]}
           >
             <WKText variant="body">{opt}</WKText>
             {isCorrect && <WKText color={Colors.status.success}> ✓</WKText>}
             {isWrong && <WKText color={Colors.status.error}> ✗</WKText>}
-          </TouchableOpacity>
+          </Pressable>
         );
       })}
       {selected !== null && (

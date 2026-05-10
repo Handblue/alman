@@ -2,6 +2,7 @@ import { useState } from 'react';
 import {
   FlatList,
   TouchableOpacity,
+  Pressable,
   View,
   StyleSheet,
   Alert,
@@ -194,14 +195,15 @@ export default function FolderDetailScreen() {
                 style={{ marginRight: Spacing.s8 }}
               />
 
-              <TouchableOpacity
+              <Pressable
                 onPress={() => handleRemoveWord(item.id, item.german)}
                 accessibilityRole="button"
                 accessibilityLabel={`${item.german} kelimesini klasörden çıkar`}
-                style={styles.removeBtn}
+                android_ripple={null}
+                style={({ pressed }) => [styles.removeBtn, { opacity: pressed ? 0.82 : 1 }]}
               >
                 <WKText color={Colors.status.error} style={styles.removeBtnText}>✕</WKText>
-              </TouchableOpacity>
+              </Pressable>
             </View>
           )}
           ItemSeparatorComponent={() => (

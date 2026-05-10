@@ -3,6 +3,7 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
+  Pressable,
   Alert,
   Share,
 } from 'react-native';
@@ -185,14 +186,15 @@ export default function StudyGroupDetailScreen() {
 
           {/* Actions */}
           {isMember && !isCreator && (
-            <TouchableOpacity
+            <Pressable
               onPress={handleLeave}
-              style={styles.leaveBtn}
+              android_ripple={null}
               accessibilityRole="button"
               accessibilityLabel="Gruptan ayrıl"
+              style={({ pressed }) => [styles.leaveBtn, { opacity: pressed ? 0.82 : 1 }]}
             >
               <WKText style={styles.leaveBtnText}>Gruptan Ayrıl</WKText>
-            </TouchableOpacity>
+            </Pressable>
           )}
         </View>
         <View style={{ height: Spacing.s32 }} />

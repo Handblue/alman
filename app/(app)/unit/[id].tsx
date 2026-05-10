@@ -1,4 +1,4 @@
-import { ScrollView, TouchableOpacity, StyleSheet, View } from 'react-native';
+import { ScrollView, Pressable, StyleSheet, View } from 'react-native';
 import { useLocalSearchParams, router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { WKText, WKCard, WKChip, WKButton } from '@/components/ui';
@@ -60,7 +60,7 @@ export default function UnitDetailScreen() {
         {STUDY_MODES.map((mode) => {
           const done = progress?.completedModes.includes(mode.key) ?? false;
           return (
-            <TouchableOpacity
+            <Pressable
               key={mode.key}
               accessibilityRole="button"
               accessibilityLabel={`${mode.label} modu${done ? ', tamamlandı' : ''}`}
@@ -70,7 +70,8 @@ export default function UnitDetailScreen() {
                   params: { unitId },
                 })
               }
-              style={{ marginBottom: Spacing.s12 }}
+              android_ripple={null}
+              style={({ pressed }) => ({ marginBottom: Spacing.s12, opacity: pressed ? 0.82 : 1 })}
             >
               <WKCard style={[styles.modeCard, done && styles.modeDone]}>
                 <WKText style={{ fontSize: 24 }}>{mode.icon}</WKText>
@@ -91,7 +92,7 @@ export default function UnitDetailScreen() {
                   />
                 )}
               </WKCard>
-            </TouchableOpacity>
+            </Pressable>
           );
         })}
 

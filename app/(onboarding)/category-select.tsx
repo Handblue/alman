@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, FlatList, Pressable } from 'react-native';
 import { router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { WKText, WKButton } from '@/components/ui';
@@ -38,19 +38,21 @@ export default function CategorySelectScreen() {
         renderItem={({ item }) => {
           const isSelected = selected.includes(item.id);
           return (
-            <TouchableOpacity
+            <Pressable
               accessibilityRole="checkbox"
               accessibilityLabel={item.name}
               accessibilityState={{ checked: isSelected }}
+              android_ripple={null}
               onPress={() => toggle(item.id)}
-              style={[styles.card, {
+              style={({ pressed }) => [styles.card, {
                 borderColor: isSelected ? item.color : Colors.bg.cardDark,
                 backgroundColor: isSelected ? item.color + '20' : Colors.bg.cardDark,
+                opacity: pressed ? 0.82 : 1,
               }]}
             >
               <WKText style={{ fontSize: 28 }}>{item.icon}</WKText>
               <WKText variant="caption" style={{ marginTop: Spacing.s4, fontWeight: '700', textAlign: 'center' }}>{item.name}</WKText>
-            </TouchableOpacity>
+            </Pressable>
           );
         }}
       />

@@ -1,4 +1,4 @@
-import { FlatList, TouchableOpacity, StyleSheet, View } from 'react-native';
+import { FlatList, Pressable, StyleSheet, View } from 'react-native';
 import { router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { WKText, WKCard } from '@/components/ui';
@@ -17,17 +17,17 @@ export default function CategoriesScreen() {
         keyExtractor={(item) => String(item.id)}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
-          <TouchableOpacity
+          <Pressable
             accessibilityRole="button"
             accessibilityLabel={`${item.name} kategorisi, ${item.description}`}
-            activeOpacity={0.92}
+            android_ripple={null}
             onPress={() =>
               router.push({
                 pathname: '/(app)/category/[id]',
                 params: { id: item.id },
               })
             }
-            style={{ marginBottom: Spacing.s12 }}
+            style={({ pressed }) => ({ marginBottom: Spacing.s12, opacity: pressed ? 0.82 : 1 })}
           >
             <WKCard style={styles.cardRow}>
               <WKText style={{ fontSize: 32 }}>{item.icon}</WKText>
@@ -41,7 +41,7 @@ export default function CategoriesScreen() {
                 </WKText>
               </View>
             </WKCard>
-          </TouchableOpacity>
+          </Pressable>
         )}
       />
     </SafeAreaView>

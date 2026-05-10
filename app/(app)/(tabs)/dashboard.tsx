@@ -48,7 +48,7 @@ export default function DashboardScreen() {
   }, [check, checkAndUpdateStreak, initToday, loadAIData, loadAnalyticsData]);
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={styles.container} edges={['top']}>
       <AchievementToast toast={currentToast} onDismiss={dismiss} />
 
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scroll}>

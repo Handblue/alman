@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FlatList, ScrollView, TouchableOpacity, View, StyleSheet } from 'react-native';
+import { FlatList, ScrollView, TouchableOpacity, Pressable, View, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { WKText, WKButton, WKCard } from '@/components/ui';
@@ -229,15 +229,16 @@ export default function NotebookScreen() {
                   data={filtered}
                   keyExtractor={item => String(item.id)}
                   renderItem={({ item }) => (
-                    <TouchableOpacity
+                    <Pressable
                       accessibilityRole="button"
                       accessibilityLabel={`${item.german}: ${item.turkish}`}
+                      android_ripple={null}
                       onPress={() => setSelectedWord(item)}
-                      style={styles.wordRow}
+                      style={({ pressed }) => [styles.wordRow, { opacity: pressed ? 0.82 : 1 }]}
                     >
                       <WKText variant="word" style={{ flex: 1 }}>{item.german}</WKText>
                       <WKText variant="bodySm" color={Colors.text.secondary}>{item.turkish}</WKText>
-                    </TouchableOpacity>
+                    </Pressable>
                   )}
                   ItemSeparatorComponent={() => (
                     <View style={styles.separator} />
@@ -288,11 +289,12 @@ export default function NotebookScreen() {
               keyExtractor={item => item.id}
               contentContainerStyle={{ paddingBottom: Spacing.s32 }}
               renderItem={({ item }: { item: Folder }) => (
-                <TouchableOpacity
+                <Pressable
                   onPress={() => router.push(`/(app)/folder/${item.id}`)}
                   accessibilityRole="button"
                   accessibilityLabel={`${item.name} klasörü, ${item.wordIds.length} kelime`}
-                  style={styles.folderCard}
+                  android_ripple={null}
+                  style={({ pressed }) => [styles.folderCard, { opacity: pressed ? 0.82 : 1 }]}
                 >
                   <View style={styles.folderCardInner}>
                     <WKText style={styles.folderEmoji}>📁</WKText>
@@ -304,7 +306,7 @@ export default function NotebookScreen() {
                     </View>
                     <WKText variant="heading2" color={Colors.text.secondary}>›</WKText>
                   </View>
-                </TouchableOpacity>
+                </Pressable>
               )}
               ItemSeparatorComponent={() => <View style={{ height: Spacing.s12 }} />}
             />

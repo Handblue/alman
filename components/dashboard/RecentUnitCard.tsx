@@ -1,4 +1,4 @@
-import { TouchableOpacity, View, StyleSheet } from 'react-native';
+import { Pressable, View, StyleSheet } from 'react-native';
 import { router } from 'expo-router';
 import { WKText } from '@/components/ui';
 import { Colors } from '@/constants/colors';
@@ -23,12 +23,12 @@ export function RecentUnitCard({ unit, index = 0 }: { unit: Unit; index?: number
   const accentColor = CARD_COLORS[index % CARD_COLORS.length];
 
   return (
-    <TouchableOpacity
+    <Pressable
       accessibilityRole="button"
       accessibilityLabel={`${unit.title} ünitesi`}
       onPress={() => router.push({ pathname: '/(app)/unit/[id]', params: { id: unit.id } })}
-      style={styles.wrapper}
-      activeOpacity={0.82}
+      android_ripple={null}
+      style={({ pressed }) => [styles.wrapper, { opacity: pressed ? 0.82 : 1 }]}
     >
       <View style={styles.card}>
         <View style={[styles.iconBox, { backgroundColor: accentColor }]} />
@@ -38,7 +38,7 @@ export function RecentUnitCard({ unit, index = 0 }: { unit: Unit; index?: number
           <View style={[styles.barFill, { width: `${pct * 100}%` as `${number}%` }]} />
         </View>
       </View>
-    </TouchableOpacity>
+    </Pressable>
   );
 }
 
