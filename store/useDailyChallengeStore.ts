@@ -1,9 +1,6 @@
 import { create } from 'zustand';
 import { WORDS } from '@/data/words';
-import { db } from '@/firebase';
-import { doc, setDoc, getDoc, Timestamp } from 'firebase/firestore';
 import { NotificationService } from '@/services/notificationService';
-import { OfflineQueueService } from '@/services/offlineQueueService';
 import { createStorage, readStoredJson } from '@/utils/storage';
 
 const storage = createStorage('daily-challenge-store');
@@ -105,13 +102,12 @@ export const useDailyChallengeStore = create<DailyChallengeState>((set, get) => 
     const updatedHistory = [
       completed,
       ...history.filter((h) => h.date !== completed.date),
-    ].slice(0, 90); // son 90 gün
+    ].slice(0, 90);
 
     storage.set('dailyChallenge', JSON.stringify(completed));
     storage.set('challengeHistory', JSON.stringify(updatedHistory));
     set({ todayChallenge: completed, history: updatedHistory });
 
-    // Push notification
     NotificationService.getInstance().sendChallengeComplete?.(
       xpEarned,
       completed.correctCount,
@@ -119,92 +115,7 @@ export const useDailyChallengeStore = create<DailyChallengeState>((set, get) => 
     )?.catch(() => {});
   },
 
-  syncToCloud: async (userId: string) => {
-    set({ syncing: true });
-    try {
-      if (!db) return;
-      const { todayChallenge, history } = get();
-
-      if (todayChallenge) {
-        await setDoc(
-          doc(db, 'daily_challenges', userId, 'sessions', todayChallenge.date),
-          { ...todayChallenge, syncedAt: Timestamp.now() },
-          { merge: true }
-        );
-      }
-
-      // Son 7 günün geçmişini bulut ile eşitle
-      for (const entry of history.slice(0, 7)) {
-        await setDoc(
-          doc(db, 'daily_challenges', userId, 'sessions', entry.date),
-          { ...entry, syncedAt: Timestamp.now() },
-          { merge: true }
-        );
-      }
-    } catch (error) {
-      console.error('[DailyChallenge] Cloud sync failed:', error);
-
-      // Çevrimdışıysa kuyruğa ekle
-      const { todayChallenge } = get();
-      if (todayChallenge?.completed) {
-        OfflineQueueService.getInstance().enqueue({
-          type: 'CHALLENGE_COMPLETE',
-          date: todayChallenge.date,
-          correctCount: todayChallenge.correctCount,
-          totalCount: todayChallenge.questionIds.length,
-          xpEarned: todayChallenge.xpEarned,
-        });
-      }
-    } finally {
-      set({ syncing: false });
-    }
-  },
-
-  loadFromCloud: async (userId: string) => {
-    try {
-      if (!db) return;
-      const { collection, getDocs, query, orderBy, limit } = await import('firebase/firestore');
-
-      const q = query(
-        collection(db, 'daily_challenges', userId, 'sessions'),
-        orderBy('date', 'desc'),
-        limit(30)
-      );
-      const snap = await getDocs(q);
-      if (snap.empty) return;
-
-      const cloudHistory: DailyChallenge[] = snap.docs.map((d) => {
-        const data = d.data();
-        return {
-          date: data.date,
-          questionIds: data.questionIds,
-          answeredCount: data.answeredCount,
-          correctCount: data.correctCount,
-          completed: data.completed,
-          xpEarned: data.xpEarned,
-        };
-      });
-
-      const today = getToday();
-      const cloudToday = cloudHistory.find((c) => c.date === today) ?? null;
-      const cloudHistoryWithoutToday = cloudHistory.filter((c) => c.date !== today);
-
-      // Yerel ile birleştir — daha yeni olanı al
-      const localToday = get().todayChallenge;
-      const mergedToday =
-        cloudToday && localToday
-          ? cloudToday.answeredCount >= localToday.answeredCount
-            ? cloudToday
-            : localToday
-          : cloudToday ?? localToday;
-
-      if (mergedToday) {
-        storage.set('dailyChallenge', JSON.stringify(mergedToday));
-      }
-      storage.set('challengeHistory', JSON.stringify(cloudHistoryWithoutToday));
-      set({ todayChallenge: mergedToday, history: cloudHistoryWithoutToday });
-    } catch (error) {
-      console.error('[DailyChallenge] Cloud load failed:', error);
-    }
-  },
+  // Stub — Firebase kaldırıldı, yerel veri yeterli
+  syncToCloud: async (_userId: string) => {},
+  loadFromCloud: async (_userId: string) => {},
 }));
