@@ -6,6 +6,7 @@ import { WKText, WKButton, WKCard } from '@/components/ui';
 import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
 import { Radius } from '@/constants/radius';
+import { Flame, Zap, Swords, Trophy, Users, BarChart2, ChevronRight, BookMarked } from '@/constants/icons';
 import { DailyGoalCard } from '@/components/dashboard/DailyGoalCard';
 import { DailyChallengeCard } from '@/components/dashboard/DailyChallengeCard';
 import { RecentUnitCard } from '@/components/dashboard/RecentUnitCard';
@@ -14,7 +15,7 @@ import { AchievementToast } from '@/components/ui';
 import { useAchievementCheck } from '@/hooks/useAchievementCheck';
 import { UNITS } from '@/data/units';
 import { useUserStore } from '@/store/useUserStore';
-import { auth } from '@/firebase';
+import { authService } from '@/services/authService';
 import { useDailyChallengeStore } from '@/store/useDailyChallengeStore';
 import { useSocialStore } from '@/store/useSocialStore';
 import { useAnalyticsStore, useTodayMetrics, useTopRecommendations } from '@/store/useAnalyticsStore';
@@ -37,7 +38,7 @@ export default function DashboardScreen() {
     checkAndUpdateStreak();
 
     // Load analytics data
-    const userId = auth?.currentUser?.uid;
+    const userId = authService.getCurrentUser()?.id;
     if (userId) {
       loadAnalyticsData(userId).catch(console.error);
       loadAIData(userId).catch(console.error);
@@ -52,22 +53,26 @@ export default function DashboardScreen() {
       <AchievementToast toast={currentToast} onDismiss={dismiss} />
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.header}>
-          <View>
-            <WKText variant="hero">WortKrieg</WKText>
-            <WKText variant="bodySm" color={Colors.text.secondary}>
-              Bugün ne öğreniyoruz?
+          <View style={styles.headerLeft}>
+            <WKText variant="hero" numberOfLines={1}>WortKrieg</WKText>
+            <WKText variant="bodySm" color={Colors.text.secondary} numberOfLines={1}>
+              Merhaba, {authService.getCurrentUser()?.displayName ?? 'Savaşçı'}! 👋
             </WKText>
           </View>
           <View style={styles.stats}>
             <View style={styles.levelBadge}>
               <WKText variant="caption" color={Colors.accent.gold}>
-                Seviye {level}
+                {level}
               </WKText>
             </View>
-            <WKText variant="body">🔥 {streak}</WKText>
-            <WKText variant="body" color={Colors.accent.orange}>
-              {xp} XP
-            </WKText>
+            <View style={styles.statChip}>
+              <Flame size={14} color={Colors.accent.orange} />
+              <WKText variant="body">{streak}</WKText>
+            </View>
+            <View style={styles.statChip}>
+              <Zap size={14} color={Colors.accent.gold} />
+              <WKText variant="body" color={Colors.accent.orange}>{xp}</WKText>
+            </View>
           </View>
         </View>
 
@@ -82,7 +87,7 @@ export default function DashboardScreen() {
             style={styles.srsButton}
           >
             <WKCard style={styles.srsCard}>
-              <WKText variant="heading2">🧠</WKText>
+              <BookMarked size={24} color={Colors.accent.gold} />
               <View style={{ flex: 1 }}>
                 <WKText variant="body" color={Colors.text.primaryDark}>
                   Tekrar Zamanı!
@@ -112,10 +117,14 @@ export default function DashboardScreen() {
           activeOpacity={0.8}
         >
           <WKCard style={styles.leaderboardCard}>
-            <WKText variant="heading2">🏆 Sıralama</WKText>
-            <WKText variant="bodySm" color={Colors.text.secondary}>
-              Haftanın en iyileri →
-            </WKText>
+            <View style={styles.cardIconRow}>
+              <Trophy size={20} color={Colors.accent.gold} />
+              <WKText variant="heading2" numberOfLines={1}> Sıralama</WKText>
+            </View>
+            <View style={styles.cardIconRow}>
+              <WKText variant="bodySm" color={Colors.text.secondary}>Haftanın en iyileri</WKText>
+              <ChevronRight size={16} color={Colors.text.secondary} />
+            </View>
           </WKCard>
         </TouchableOpacity>
 
@@ -129,8 +138,8 @@ export default function DashboardScreen() {
             activeOpacity={0.8}
           >
             <WKCard style={styles.socialCard}>
-              <WKText variant="heading2">👥</WKText>
-              <WKText variant="body" color={Colors.text.primaryDark}>
+              <Users size={24} color={Colors.brand.primary} />
+              <WKText variant="body" color={Colors.text.primaryDark} numberOfLines={1}>
                 Arkadaşlar
               </WKText>
               <WKText variant="caption" color={Colors.text.secondary}>
@@ -148,8 +157,8 @@ export default function DashboardScreen() {
             activeOpacity={0.8}
           >
             <WKCard style={styles.socialCard}>
-              <WKText variant="heading2">🏆</WKText>
-              <WKText variant="body" color={Colors.text.primaryDark}>
+              <Trophy size={24} color={Colors.accent.gold} />
+              <WKText variant="body" color={Colors.text.primaryDark} numberOfLines={1}>
                 Challenges
               </WKText>
               <WKText variant="caption" color={Colors.text.secondary}>
@@ -168,7 +177,7 @@ export default function DashboardScreen() {
           style={styles.battleButton}
         >
           <View style={styles.battleCard}>
-            <WKText style={styles.battleEmoji}>⚔️</WKText>
+            <Swords size={32} color="#FFFFFF" />
             <View style={styles.battleInfo}>
               <WKText style={styles.battleTitle}>WortKampf</WKText>
               <WKText style={styles.battleSub}>Canlı savaş — ELO kazan!</WKText>
@@ -187,7 +196,7 @@ export default function DashboardScreen() {
             activeOpacity={0.8}
           >
             <WKCard style={styles.analyticsCard}>
-              <WKText variant="heading2">📊</WKText>
+              <BarChart2 size={24} color={Colors.brand.primary} />
               <WKText variant="body" color={Colors.text.primaryDark}>
                 İstatistik
               </WKText>
@@ -200,7 +209,7 @@ export default function DashboardScreen() {
           {topRecommendations.length > 0 && (
             <View style={[styles.analyticsButton, { flex: 1 }]}>
               <WKCard style={styles.analyticsCard}>
-                <WKText variant="heading2">🤖</WKText>
+                <Zap size={24} color={Colors.accent.orange} />
                 <WKText variant="body" color={Colors.text.primaryDark}>
                   AI Öneri
                 </WKText>
@@ -256,7 +265,10 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     paddingVertical: Spacing.s24,
   },
-  stats: { alignItems: 'flex-end', gap: Spacing.s4 },
+  headerLeft: { flex: 1, flexShrink: 1, marginRight: Spacing.s12 },
+  stats: { alignItems: 'flex-end', gap: Spacing.s4, flexShrink: 0 },
+  statChip: { flexDirection: 'row', alignItems: 'center', gap: Spacing.s4 },
+  cardIconRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.s4 },
   levelBadge: {
     backgroundColor: Colors.bg.cardDark,
     borderRadius: Radius.chip,

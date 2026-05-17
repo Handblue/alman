@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { AppState, AppStateStatus } from 'react-native';
 import { Stack } from 'expo-router';
 import * as Notifications from 'expo-notifications';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { useUserStore } from '@/store/useUserStore';
 import { useProgressStore } from '@/store/useProgressStore';
@@ -99,9 +100,11 @@ export default function RootLayout() {
   }, [fontsLoaded, fontError]);
 
   return (
-    <ThemeProvider>
-      <Stack screenOptions={{ headerShown: false }} />
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <ThemeProvider>
+        <Stack screenOptions={{ headerShown: false }} />
+      </ThemeProvider>
+    </SafeAreaProvider>
   );
 }
 

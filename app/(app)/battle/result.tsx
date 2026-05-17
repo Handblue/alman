@@ -13,90 +13,94 @@ import { WKText } from '@/components/ui';
 import { Colors } from '@/constants/colors';
 import { useBattleStore } from '@/store/useBattleStore';
 import { useUserStore } from '@/store/useUserStore';
+import { battleHistoryService } from '@/services/battleHistoryService';
+import { achievementService } from '@/services/achievementService';
+import { speakingService } from '@/services/speakingService';
 import { useProgressStore } from '@/store/useProgressStore';
 import { useSocialStore } from '@/store/useSocialStore';
-import { QUESTION_COUNT } from '@/services/battleService';
-import { achievementService } from '@/services/achievementService';
-import { battleHistoryService } from '@/services/battleHistoryService';
-import { speakingService } from '@/services/speakingService';
 
 export default function BattleResultScreen() {
   const router = useRouter();
-  const { battle, myUid, me, opponent, myScore, opponentScore, eloChange, isWinner, reset } =
-    useBattleStore();
+  const {
+    phase,
+    battleId,
+    opponentName,
+    questions,
+    localAnswers,
+    result,
+    p1SubmitResult,
+    myScore,
+    opponentScore,
+    isWinner,
+    reset,
+  } = useBattleStore();
   const { addXP, xp, streak } = useUserStore();
   const { wordProgress, unitProgress } = useProgressStore();
   const { friends } = useSocialStore();
 
-  const scaleAnim = useRef(new Animated.Value(0.7)).current;
+  const scaleAnim = useRef(new Animated.Value(0.75)).current;
   const opacityAnim = useRef(new Animated.Value(0)).current;
   const processedRef = useRef(false);
 
-  // XP reward: score / 10 (max 50 from battle)
-  const xpEarned = Math.round(myScore / 10);
+  const xpEarned = result?.xpGain ?? (phase === 'done_p1' && p1SubmitResult ? 0 : 0);
 
   useEffect(() => {
     if (processedRef.current) return;
     processedRef.current = true;
 
-    // Haptic feedback
-    if (isWinner === true) {
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-    } else if (isWinner === false) {
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
-    } else {
-      Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
-    }
+    if (phase === 'result' && result) {
+      if (result.isWinner) {
+        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      } else if (!result.isDraw) {
+        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+      } else {
+        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+      }
 
-    // Save battle stats
-    achievementService.recordBattleResult(isWinner === true, eloChange);
-    speakingService.awardBattleWinCredits(battle?.id ?? 'unknown', isWinner === true);
+      achievementService.recordBattleResult(result.isWinner, 0);
+      speakingService.awardBattleWinCredits(battleId ?? 'unknown', result.isWinner);
 
-    if (battle) {
       battleHistoryService.addEntry({
-        id: battle.id,
-        battleId: battle.id,
-        opponentName: opponent?.displayName ?? 'Bilinmeyen Rakip',
-        opponentIsBot: opponent?.isBot ?? false,
-        didWin: isWinner === true,
-        isDraw: isWinner === null,
-        myScore,
-        opponentScore,
-        eloChange,
-        xpEarned,
+        id: battleId ?? Date.now().toString(),
+        battleId: battleId ?? '',
+        opponentName,
+        opponentIsBot: false,
+        didWin: result.isWinner,
+        isDraw: result.isDraw,
+        myScore: result.score,
+        opponentScore: result.opponentScore,
+        eloChange: 0,
+        xpEarned: result.xpGain,
         playedAt: new Date().toISOString(),
-        questionCount: battle.questions.length,
+        questionCount: questions.length,
+      });
+
+      if (xpEarned > 0) addXP(xpEarned);
+
+      const battleStats = achievementService.getBattleStats();
+      const pronStats = achievementService.getPronunciationStats();
+      const knownWords = Object.values(wordProgress).filter((w) => w.status === 'known').length;
+      const completedUnits = Object.values(unitProgress).filter((u) => u.isCompleted).length;
+      achievementService.checkAll({
+        xp: xp + xpEarned,
+        streak,
+        knownWords,
+        completedUnits,
+        battleWins: battleStats.wins,
+        battleCount: battleStats.total,
+        pronunciationFourPlus: pronStats.fourPlus,
+        folders: 0,
+        friends: friends.length,
       });
     }
 
-    // Award XP
-    if (xpEarned > 0) addXP(xpEarned);
-
-    // Check achievements
-    const battleStats = achievementService.getBattleStats();
-    const pronStats = achievementService.getPronunciationStats();
-    const knownWords = Object.values(wordProgress).filter(w => w.status === 'known').length;
-    const completedUnits = Object.values(unitProgress).filter(u => u.isCompleted).length;
-    achievementService.checkAll({
-      xp: xp + xpEarned,
-      streak,
-      knownWords,
-      completedUnits,
-      battleWins: battleStats.wins,
-      battleCount: battleStats.total,
-      pronunciationFourPlus: pronStats.fourPlus,
-      folders: 0,
-      friends: friends.length,
-    });
-
-    // Entrance animation
     Animated.parallel([
       Animated.spring(scaleAnim, { toValue: 1, tension: 60, friction: 7, useNativeDriver: true }),
       Animated.timing(opacityAnim, { toValue: 1, duration: 400, useNativeDriver: true }),
     ]).start();
-  }, [battle, eloChange, friends.length, isWinner, myScore, opponent?.displayName, opponent?.isBot, opponentScore, streak, wordProgress, unitProgress, xp, xpEarned]);
+  }, [phase]);
 
-  const handlePlayAgain = () => {
+  const handleBack = () => {
     reset();
     router.replace('/(app)/battle/lobby');
   };
@@ -106,104 +110,151 @@ export default function BattleResultScreen() {
     router.replace('/(app)/dashboard');
   };
 
-  if (!battle) return null;
+  // ── P1 "waiting for opponent" view ──────────────────────────────────────────
+  if (phase === 'done_p1' && p1SubmitResult) {
+    const answerMap = new Map(localAnswers.map((a) => [a.questionIndex, a.answer]));
 
-  const resultEmoji = isWinner === true ? '🏆' : isWinner === false ? '😔' : '🤝';
-  const resultText = isWinner === true ? 'Kazandın!' : isWinner === false ? 'Kaybettin' : 'Berabere!';
-  const resultColor = isWinner === true ? Colors.accent.gold : isWinner === false ? Colors.status.error : Colors.status.info;
+    return (
+      <LinearGradient colors={Colors.gradient.battle as any} style={styles.container}>
+        <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+          <Animated.View style={{ opacity: opacityAnim, transform: [{ scale: scaleAnim }], alignItems: 'center' }}>
+            <WKText style={styles.waitingEmoji}>⏳</WKText>
+            <WKText style={styles.waitingTitle}>Harika!</WKText>
+            <WKText style={styles.waitingSubtitle}>Cevaplarınız kaydedildi</WKText>
+          </Animated.View>
 
-  // Per-question breakdown
-  const questions = battle.questions;
-  const myAnswers = myUid ? battle.answers[myUid] ?? {} : {};
-
-  return (
-    <LinearGradient colors={Colors.gradient.battle as any} style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
-        {/* Result hero */}
-        <Animated.View style={{ opacity: opacityAnim, transform: [{ scale: scaleAnim }] }}>
-          <WKText style={styles.resultEmoji}>{resultEmoji}</WKText>
-          <WKText style={[styles.resultText, { color: resultColor }]}>{resultText}</WKText>
-        </Animated.View>
-
-        {/* Score board */}
-        <View style={styles.scoreCard}>
-          <View style={styles.scoreCol}>
-            <WKText style={styles.scoreName} numberOfLines={1}>{me?.displayName ?? '—'}</WKText>
-            <WKText style={[styles.scoreNum, myScore >= opponentScore && styles.scoreWinner]}>
-              {myScore}
+          <View style={styles.scoreCard}>
+            <WKText style={styles.scoreLabelCenter}>Senin Skoru</WKText>
+            <WKText style={styles.scoreNumCenter}>
+              {p1SubmitResult.score}/{p1SubmitResult.total}
             </WKText>
           </View>
-          <WKText style={styles.scoreDivider}>–</WKText>
-          <View style={styles.scoreCol}>
-            <WKText style={styles.scoreName} numberOfLines={1}>{opponent?.displayName ?? '—'}</WKText>
-            <WKText style={[styles.scoreNum, opponentScore > myScore && styles.scoreWinner]}>
-              {opponentScore}
+
+          <View style={styles.waitingBox}>
+            <WKText style={styles.waitingBoxTitle}>⚔️ {opponentName} Bekleniyor…</WKText>
+            <WKText style={styles.waitingBoxSub}>
+              Rakibiniz oynadığında "Beni Bekleyen" listesine düşecek. 72 saat süresi var.
             </WKText>
           </View>
-        </View>
 
-        {/* ELO + XP */}
-        <View style={styles.rewardsRow}>
-          <View style={styles.rewardChip}>
-            <WKText style={styles.rewardLabel}>ELO</WKText>
-            <WKText style={[styles.rewardValue, { color: eloChange >= 0 ? Colors.status.success : Colors.status.error }]}>
-              {eloChange >= 0 ? '+' : ''}{eloChange}
-            </WKText>
-          </View>
-          <View style={styles.rewardChip}>
-            <WKText style={styles.rewardLabel}>XP</WKText>
-            <WKText style={[styles.rewardValue, { color: Colors.accent.gold }]}>+{xpEarned}</WKText>
-          </View>
-        </View>
-
-        {/* Accuracy */}
-        {(() => {
-          const correct = Object.values(myAnswers).filter(a => a.correct).length;
-          const accuracy = QUESTION_COUNT > 0 ? Math.round((correct / QUESTION_COUNT) * 100) : 0;
-          return (
-            <WKText style={styles.accuracy}>
-              Doğruluk: {correct}/{QUESTION_COUNT} ({accuracy}%)
-            </WKText>
-          );
-        })()}
-
-        {/* Question breakdown */}
-        <WKText style={styles.breakdownTitle}>Soru Dökümü</WKText>
-        {questions.map((word, i) => {
-          const ans = myAnswers[i];
-          const icon = !ans ? '⏱' : ans.correct ? '✅' : '❌';
-          return (
-            <View key={i} style={styles.breakdownRow}>
-              <WKText style={styles.breakdownIcon}>{icon}</WKText>
-              <View style={styles.breakdownInfo}>
-                <WKText style={styles.breakdownGerman}>{word.german}</WKText>
-                <WKText style={styles.breakdownTurkish}>{word.turkish}</WKText>
+          <WKText style={styles.breakdownTitle}>Senin Cevapların</WKText>
+          {questions.map((q, i) => {
+            const myAns = answerMap.get(i);
+            const correct = myAns === q.correctAnswer;
+            const icon = !myAns ? '⏱' : correct ? '✅' : '❌';
+            return (
+              <View key={i} style={styles.breakdownRow}>
+                <WKText style={styles.breakdownIcon}>{icon}</WKText>
+                <View style={styles.breakdownInfo}>
+                  <WKText style={styles.breakdownGerman}>{q.word}</WKText>
+                  <WKText style={styles.breakdownCorrect}>{q.correctAnswer}</WKText>
+                  {myAns && !correct && (
+                    <WKText style={styles.breakdownWrong}>Senin cevabın: {myAns}</WKText>
+                  )}
+                </View>
               </View>
-              {ans && (
-                <WKText style={styles.breakdownTime}>
-                  {ans.answeredAt && battle.questionStartedAt
-                    ? `${((ans.answeredAt - (battle.questionStartedAt + i * 14500)) / 1000).toFixed(1)}s`
-                    : ''}
-                </WKText>
-              )}
-            </View>
-          );
-        })}
+            );
+          })}
 
-        {/* Actions */}
-        <View style={styles.actions}>
-          <Pressable style={styles.playAgainBtn} onPress={handlePlayAgain}>
-            <WKText style={styles.playAgainText}>⚔️ Tekrar Oyna</WKText>
-          </Pressable>
-          <Pressable style={styles.homeBtn} onPress={() => router.push('/(app)/battle/history')}>
-            <WKText style={styles.homeText}>Geçmişi Gör</WKText>
-          </Pressable>
-          <Pressable style={styles.homeBtn} onPress={handleHome}>
-            <WKText style={styles.homeText}>Ana Sayfa</WKText>
-          </Pressable>
-        </View>
-      </ScrollView>
-    </LinearGradient>
+          <View style={styles.actions}>
+            <Pressable style={styles.primaryBtn} onPress={handleBack}>
+              <WKText style={styles.primaryBtnText}>Battle Lobisine Dön</WKText>
+            </Pressable>
+            <Pressable style={styles.ghostBtn} onPress={handleHome}>
+              <WKText style={styles.ghostBtnText}>Ana Sayfa</WKText>
+            </Pressable>
+          </View>
+        </ScrollView>
+      </LinearGradient>
+    );
+  }
+
+  // ── P2 final result view ─────────────────────────────────────────────────────
+  if (phase === 'result' && result) {
+    const resultText = result.isDraw ? 'Berabere!' : result.isWinner ? 'Kazandın!' : 'Kaybettin';
+    const resultColor = result.isDraw
+      ? Colors.status.info
+      : result.isWinner
+      ? Colors.accent.gold
+      : Colors.status.error;
+
+    const answerMap = new Map(localAnswers.map((a) => [a.questionIndex, a.answer]));
+
+    return (
+      <LinearGradient colors={Colors.gradient.battle as any} style={styles.container}>
+        <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+          <Animated.View style={{ opacity: opacityAnim, transform: [{ scale: scaleAnim }], alignItems: 'center' }}>
+            <WKText style={styles.resultEmoji}>
+              {result.isDraw ? '🤝' : result.isWinner ? '🏆' : '⚔️'}
+            </WKText>
+            <WKText style={[styles.resultText, { color: resultColor }]}>{resultText}</WKText>
+            <WKText style={styles.resultMessage}>{result.message}</WKText>
+          </Animated.View>
+
+          {/* Score board */}
+          <View style={styles.scoreCard}>
+            <View style={styles.scoreCol}>
+              <WKText style={styles.scoreName}>Sen</WKText>
+              <WKText style={[styles.scoreNum, result.isWinner && styles.scoreWinner]}>
+                {result.score}
+              </WKText>
+            </View>
+            <WKText style={styles.scoreDivider}>–</WKText>
+            <View style={styles.scoreCol}>
+              <WKText style={styles.scoreName} numberOfLines={1}>{opponentName}</WKText>
+              <WKText style={[styles.scoreNum, !result.isWinner && !result.isDraw && styles.scoreWinner]}>
+                {result.opponentScore}
+              </WKText>
+            </View>
+          </View>
+
+          {/* XP */}
+          <View style={styles.xpChip}>
+            <WKText style={styles.xpLabel}>XP KAZANILDI</WKText>
+            <WKText style={styles.xpValue}>+{result.xpGain}</WKText>
+          </View>
+
+          {/* Question breakdown */}
+          <WKText style={styles.breakdownTitle}>Soru Dökümü</WKText>
+          {questions.map((q, i) => {
+            const myAns = answerMap.get(i);
+            const correct = myAns === q.correctAnswer;
+            const icon = !myAns ? '⏱' : correct ? '✅' : '❌';
+            return (
+              <View key={i} style={styles.breakdownRow}>
+                <WKText style={styles.breakdownIcon}>{icon}</WKText>
+                <View style={styles.breakdownInfo}>
+                  <WKText style={styles.breakdownGerman}>{q.word}</WKText>
+                  <WKText style={styles.breakdownCorrect}>{q.correctAnswer}</WKText>
+                  {myAns && !correct && (
+                    <WKText style={styles.breakdownWrong}>Senin cevabın: {myAns}</WKText>
+                  )}
+                </View>
+              </View>
+            );
+          })}
+
+          <View style={styles.actions}>
+            <Pressable style={styles.primaryBtn} onPress={handleBack}>
+              <WKText style={styles.primaryBtnText}>Tekrar Meydan Oku</WKText>
+            </Pressable>
+            <Pressable style={styles.ghostBtn} onPress={() => router.push('/(app)/battle/history')}>
+              <WKText style={styles.ghostBtnText}>Battle Geçmişi</WKText>
+            </Pressable>
+            <Pressable style={styles.ghostBtn} onPress={handleHome}>
+              <WKText style={styles.ghostBtnText}>Ana Sayfa</WKText>
+            </Pressable>
+          </View>
+        </ScrollView>
+      </LinearGradient>
+    );
+  }
+
+  // Fallback (shouldn't normally show)
+  return (
+    <View style={[styles.container, { alignItems: 'center', justifyContent: 'center' }]}>
+      <WKText style={{ color: Colors.text.secondary }}>Sonuç yükleniyor…</WKText>
+    </View>
   );
 }
 
@@ -216,16 +267,29 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     gap: 16,
   },
-  resultEmoji: {
-    fontSize: 72,
-    textAlign: 'center',
+
+  // Waiting (P1)
+  waitingEmoji: { fontSize: 56, marginBottom: 8 },
+  waitingTitle: { fontSize: 28, fontWeight: '900', color: '#fff' },
+  waitingSubtitle: { color: 'rgba(255,255,255,0.7)', fontSize: 15, marginTop: 4 },
+  waitingBox: {
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    borderRadius: 16,
+    padding: 20,
+    alignSelf: 'stretch',
+    gap: 8,
   },
-  resultText: {
-    fontSize: 32,
-    fontWeight: '900',
-    textAlign: 'center',
-    marginTop: 8,
-  },
+  waitingBoxTitle: { color: '#fff', fontWeight: '700', fontSize: 16 },
+  waitingBoxSub: { color: 'rgba(255,255,255,0.65)', fontSize: 13, lineHeight: 19 },
+
+  scoreLabelCenter: { color: 'rgba(255,255,255,0.7)', fontSize: 13 },
+  scoreNumCenter: { color: Colors.accent.gold, fontSize: 40, fontWeight: '900' },
+
+  // Result (P2)
+  resultEmoji: { fontSize: 56, marginBottom: 4 },
+  resultText: { fontSize: 32, fontWeight: '900', textAlign: 'center' },
+  resultMessage: { color: 'rgba(255,255,255,0.7)', fontSize: 14, textAlign: 'center', marginTop: 4 },
+
   scoreCard: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -234,120 +298,60 @@ const styles = StyleSheet.create({
     padding: 24,
     alignSelf: 'stretch',
     justifyContent: 'space-around',
-    marginTop: 8,
   },
-  scoreCol: {
-    alignItems: 'center',
-    flex: 1,
-    gap: 4,
-  },
-  scoreName: {
-    color: 'rgba(255,255,255,0.75)',
-    fontSize: 13,
-    maxWidth: 100,
-  },
-  scoreNum: {
-    color: '#fff',
-    fontSize: 40,
-    fontWeight: '900',
-  },
-  scoreWinner: {
-    color: Colors.accent.gold,
-  },
-  scoreDivider: {
-    color: 'rgba(255,255,255,0.4)',
-    fontSize: 28,
-    fontWeight: '300',
-  },
-  rewardsRow: {
-    flexDirection: 'row',
-    gap: 16,
-  },
-  rewardChip: {
+  scoreCol: { alignItems: 'center', flex: 1, gap: 4 },
+  scoreName: { color: 'rgba(255,255,255,0.7)', fontSize: 13, maxWidth: 100 },
+  scoreNum: { color: '#fff', fontSize: 40, fontWeight: '900' },
+  scoreWinner: { color: Colors.accent.gold },
+  scoreDivider: { color: 'rgba(255,255,255,0.4)', fontSize: 28, fontWeight: '300' },
+
+  xpChip: {
     backgroundColor: 'rgba(255,255,255,0.15)',
     borderRadius: 16,
     paddingVertical: 12,
-    paddingHorizontal: 24,
+    paddingHorizontal: 28,
     alignItems: 'center',
-    gap: 4,
+    gap: 2,
   },
-  rewardLabel: {
-    color: 'rgba(255,255,255,0.65)',
-    fontSize: 12,
-    fontWeight: '700',
-    letterSpacing: 1,
-  },
-  rewardValue: {
-    fontSize: 22,
-    fontWeight: '900',
-  },
-  accuracy: {
-    color: 'rgba(255,255,255,0.7)',
-    fontSize: 14,
-  },
+  xpLabel: { color: 'rgba(255,255,255,0.6)', fontSize: 11, fontWeight: '700', letterSpacing: 1 },
+  xpValue: { color: Colors.accent.gold, fontSize: 24, fontWeight: '900' },
+
   breakdownTitle: {
     color: '#fff',
     fontWeight: '700',
     fontSize: 16,
     alignSelf: 'flex-start',
-    marginTop: 8,
+    marginTop: 4,
   },
   breakdownRow: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     alignSelf: 'stretch',
     backgroundColor: 'rgba(255,255,255,0.08)',
     borderRadius: 12,
     padding: 12,
-    gap: 12,
+    gap: 10,
   },
-  breakdownIcon: {
-    fontSize: 20,
-    width: 28,
-    textAlign: 'center',
-  },
-  breakdownInfo: {
-    flex: 1,
-  },
-  breakdownGerman: {
-    color: '#fff',
-    fontWeight: '700',
-    fontSize: 15,
-  },
-  breakdownTurkish: {
-    color: 'rgba(255,255,255,0.6)',
-    fontSize: 13,
-  },
-  breakdownTime: {
-    color: 'rgba(255,255,255,0.5)',
-    fontSize: 12,
-  },
-  actions: {
-    gap: 12,
-    alignSelf: 'stretch',
-    marginTop: 8,
-  },
-  playAgainBtn: {
+  breakdownIcon: { fontSize: 18, width: 26, textAlign: 'center', marginTop: 2 },
+  breakdownInfo: { flex: 1 },
+  breakdownGerman: { color: Colors.word.green, fontWeight: '700', fontSize: 15 },
+  breakdownCorrect: { color: 'rgba(255,255,255,0.75)', fontSize: 13, marginTop: 2 },
+  breakdownWrong: { color: Colors.status.error, fontSize: 12, marginTop: 2 },
+
+  actions: { gap: 12, alignSelf: 'stretch', marginTop: 8 },
+  primaryBtn: {
     backgroundColor: '#fff',
     borderRadius: 28,
     paddingVertical: 16,
     alignItems: 'center',
   },
-  playAgainText: {
-    color: Colors.battle.purple,
-    fontWeight: '800',
-    fontSize: 17,
-  },
-  homeBtn: {
+  primaryBtnText: { color: Colors.battle.purple, fontWeight: '800', fontSize: 17 },
+  ghostBtn: {
     borderRadius: 28,
     paddingVertical: 14,
     alignItems: 'center',
     borderWidth: 1.5,
-    borderColor: 'rgba(255,255,255,0.4)',
+    borderColor: 'rgba(255,255,255,0.35)',
   },
-  homeText: {
-    color: 'rgba(255,255,255,0.85)',
-    fontWeight: '600',
-    fontSize: 15,
-  },
+  ghostBtnText: { color: 'rgba(255,255,255,0.85)', fontWeight: '600', fontSize: 15 },
 });

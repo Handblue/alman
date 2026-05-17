@@ -39,6 +39,12 @@ export const Colors = {
     secondary: '#B0BEC5',
     secondaryLight: '#757575',
     tertiary: '#607D8B',
+    muted: '#9CA3AF',
+    onColor: '#FFFFFF',
+  },
+  surface: {
+    subtle: '#F0F4FF',
+    warm: '#FFF8F0',
   },
   gradient: {
     primary: ['#1A73E8', '#00BCD4'],

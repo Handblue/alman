@@ -4,109 +4,152 @@ import {
   StyleSheet,
   Pressable,
   Animated,
+  ActivityIndicator,
+  Alert,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { WKText } from '@/components/ui';
 import { Colors } from '@/constants/colors';
 import { useBattleStore } from '@/store/useBattleStore';
-import { QUESTION_COUNT, QUESTION_TIME_MS } from '@/services/battleService';
 
-const TICK_MS = 100;
+const BETWEEN_DELAY = 1200; // ms to show correct/wrong before advancing
+const TICK_MS = 250;
 
 export default function BattleQuestionScreen() {
   const router = useRouter();
   const {
-    battle,
     battleId,
-    myUid,
-    me,
-    opponent,
-    myScore,
-    opponentScore,
-    currentWord,
-    options,
-    correctIndex,
-    selectedOptionIndex,
+    phase,
+    questions,
+    currentQuestionIndex,
+    timePerQuestion,
+    selectedAnswer,
     hasAnswered,
     timeLeft,
-    selectOption,
+    opponentName,
+    error,
+    selectAnswer,
+    advanceQuestion,
     setTimeLeft,
   } = useBattleStore();
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const betweenRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const fadeAnim = useRef(new Animated.Value(0)).current;
+  const questionStartRef = useRef(Date.now());
 
-  // Fade in on mount / question change
+  // Redirect on phase changes
+  useEffect(() => {
+    if (phase === 'done_p1') router.replace('/(app)/battle/result');
+    if (phase === 'result') router.replace('/(app)/battle/result');
+    if (phase === 'idle' && error) {
+      Alert.alert('Hata', error, [{ text: 'Tamam', onPress: () => router.back() }]);
+    }
+  }, [phase, error]);
+
+  // Fade in when question changes
   useEffect(() => {
     fadeAnim.setValue(0);
-    Animated.timing(fadeAnim, { toValue: 1, duration: 250, useNativeDriver: true }).start();
-  }, [battle?.currentQuestion]);
+    Animated.timing(fadeAnim, { toValue: 1, duration: 200, useNativeDriver: true }).start();
+    questionStartRef.current = Date.now();
+  }, [currentQuestionIndex]);
 
-  // Countdown timer (local, synced to questionStartedAt)
+  // Countdown timer
   useEffect(() => {
-    if (!battle?.questionStartedAt || battle.status !== 'question') return;
+    if (phase !== 'playing') return;
     if (timerRef.current) clearInterval(timerRef.current);
 
+    const totalSec = Math.round(timePerQuestion / 1000);
+    setTimeLeft(totalSec);
+
     timerRef.current = setInterval(() => {
-      const elapsed = Date.now() - battle.questionStartedAt!;
-      const remaining = Math.max(0, (QUESTION_TIME_MS - elapsed) / 1000);
+      const elapsed = Date.now() - questionStartRef.current;
+      const remaining = Math.max(0, (timePerQuestion - elapsed) / 1000);
       setTimeLeft(Math.ceil(remaining));
-      if (remaining <= 0 && timerRef.current) clearInterval(timerRef.current);
+
+      if (remaining <= 0 && timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+        // Time's up — auto-advance without recording an answer
+        advanceQuestion();
+      }
     }, TICK_MS);
 
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [battle?.currentQuestion, battle?.questionStartedAt]);
+  }, [currentQuestionIndex, phase]);
 
-  // Navigate when battle finishes
+  // Auto-advance after between pause
   useEffect(() => {
-    if (battle?.status === 'finished') {
-      router.replace('/(app)/battle/result');
-    }
-  }, [battle?.status]);
+    if (phase !== 'between') return;
+    if (timerRef.current) { clearInterval(timerRef.current); timerRef.current = null; }
 
-  const handleOption = useCallback((index: number) => {
-    if (hasAnswered) return;
-    selectOption(index);
-  }, [hasAnswered, selectOption]);
+    betweenRef.current = setTimeout(() => {
+      advanceQuestion();
+    }, BETWEEN_DELAY);
 
-  if (!currentWord || !battle) return null;
+    return () => {
+      if (betweenRef.current) clearTimeout(betweenRef.current);
+    };
+  }, [phase, currentQuestionIndex]);
 
-  const questionNo = battle.currentQuestion + 1;
-  const timerPct = timeLeft / (QUESTION_TIME_MS / 1000);
+  const handleOption = useCallback((opt: string) => {
+    if (hasAnswered || phase !== 'playing') return;
+    selectAnswer(opt);
+  }, [hasAnswered, phase, selectAnswer]);
+
+  // Loading state
+  if (phase === 'loading') {
+    return (
+      <View style={styles.loadingContainer}>
+        <ActivityIndicator color={Colors.battle.purple} size="large" />
+        <WKText style={styles.loadingText}>Sorular yükleniyor…</WKText>
+      </View>
+    );
+  }
+
+  // Submitting state
+  if (phase === 'submitting') {
+    return (
+      <LinearGradient colors={[Colors.bg.primaryDark, Colors.bg.cardDark]} style={styles.loadingContainer}>
+        <ActivityIndicator color={Colors.battle.purple} size="large" />
+        <WKText style={styles.loadingText}>Cevaplar kaydediliyor…</WKText>
+      </LinearGradient>
+    );
+  }
+
+  if (questions.length === 0) return null;
+
+  const question = questions[currentQuestionIndex];
+  if (!question) return null;
+
+  const total = questions.length;
+  const questionNo = currentQuestionIndex + 1;
+  const timerPct = timeLeft / Math.round(timePerQuestion / 1000);
   const timerColor = timeLeft > 6 ? Colors.status.success : timeLeft > 3 ? Colors.status.warning : Colors.status.error;
-
-  const opponentAnswered = battle.player2
-    ? !!battle.answers[battle.player2.uid]?.[battle.currentQuestion]
-    : false;
-  const myAnswered = myUid ? !!battle.answers[myUid]?.[battle.currentQuestion] : false;
 
   return (
     <LinearGradient colors={[Colors.bg.primaryDark, Colors.bg.cardDark]} style={styles.container}>
       {/* Top bar */}
       <View style={styles.topBar}>
-        <View style={styles.playerInfo}>
-          <WKText style={styles.playerName} numberOfLines={1}>{me?.displayName ?? '—'}</WKText>
-          <WKText style={styles.score}>{myScore}</WKText>
-          {myAnswered && <WKText style={styles.answeredBadge}>✓</WKText>}
+        <View style={{ flex: 1 }}>
+          <WKText style={styles.playerName} numberOfLines={1}>Sen</WKText>
         </View>
 
         <View style={styles.questionBadge}>
-          <WKText style={styles.questionNo}>{questionNo}/{QUESTION_COUNT}</WKText>
+          <WKText style={styles.questionNo}>{questionNo}/{total}</WKText>
         </View>
 
-        <View style={[styles.playerInfo, styles.playerInfoRight]}>
-          {opponentAnswered && <WKText style={styles.answeredBadge}>✓</WKText>}
-          <WKText style={styles.score}>{opponentScore}</WKText>
-          <WKText style={styles.playerName} numberOfLines={1}>{opponent?.displayName ?? '…'}</WKText>
+        <View style={[styles.playerRight]}>
+          <WKText style={styles.playerName} numberOfLines={1}>{opponentName}</WKText>
         </View>
       </View>
 
       {/* Timer bar */}
       <View style={styles.timerBarBg}>
-        <Animated.View
+        <View
           style={[
             styles.timerBarFill,
             { width: `${Math.round(timerPct * 100)}%`, backgroundColor: timerColor },
@@ -117,50 +160,61 @@ export default function BattleQuestionScreen() {
 
       {/* Word card */}
       <Animated.View style={[styles.wordCard, { opacity: fadeAnim }]}>
-        <WKText style={styles.wordLevel}>{currentWord.level}</WKText>
-        <WKText style={styles.germanWord}>{currentWord.german}</WKText>
-        <WKText style={styles.exampleSentence}>{currentWord.example}</WKText>
+        <WKText style={styles.germanWord}>{question.word}</WKText>
+        <WKText style={styles.questionPrompt}>Türkçe karşılığı nedir?</WKText>
       </Animated.View>
 
       {/* Options */}
-      <WKText style={styles.questionPrompt}>Türkçe karşılığı nedir?</WKText>
       <View style={styles.optionsGrid}>
-        {options.map((opt, i) => {
-          const isCorrect = hasAnswered && i === correctIndex;
-          const isWrong = hasAnswered && i === selectedOptionIndex && i !== correctIndex;
+        {question.options.map((opt, i) => {
+          const isSelected = selectedAnswer === opt;
+          const isCorrect = hasAnswered && opt === question.correctAnswer;
+          const isWrong = hasAnswered && isSelected && opt !== question.correctAnswer;
 
           return (
             <Pressable
-              key={opt}
+              key={`${currentQuestionIndex}-${i}`}
               style={({ pressed }) => [
                 styles.optionBtn,
                 isCorrect && styles.optionCorrect,
                 isWrong && styles.optionWrong,
+                isSelected && !hasAnswered && styles.optionSelected,
                 pressed && !hasAnswered && styles.optionPressed,
               ]}
-              onPress={() => handleOption(i)}
+              onPress={() => handleOption(opt)}
               disabled={hasAnswered}
             >
               <WKText style={styles.optionLetter}>
                 {['A', 'B', 'C', 'D'][i]}
               </WKText>
-              <WKText style={[styles.optionText, (isCorrect || isWrong) && styles.optionTextSelected]}>
+              <WKText
+                style={[
+                  styles.optionText,
+                  (isCorrect || isWrong) && styles.optionTextBold,
+                ]}
+              >
                 {opt}
               </WKText>
+              {isCorrect && <WKText style={styles.feedbackIcon}>✓</WKText>}
+              {isWrong && <WKText style={styles.feedbackIcon}>✗</WKText>}
             </Pressable>
           );
         })}
       </View>
 
-      {/* Between message */}
-      {battle.status === 'between' && (
-        <View style={styles.betweenOverlay}>
-          <WKText style={styles.betweenText}>
-            {selectedOptionIndex === correctIndex ? '✅ Doğru!' : '❌ Yanlış!'}
-          </WKText>
-          <WKText style={styles.betweenSub}>Sıradaki soru geliyor…</WKText>
-        </View>
-      )}
+      {/* Progress dots */}
+      <View style={styles.progressDots}>
+        {questions.map((_, i) => (
+          <View
+            key={i}
+            style={[
+              styles.dot,
+              i < currentQuestionIndex && styles.dotDone,
+              i === currentQuestionIndex && styles.dotCurrent,
+            ]}
+          />
+        ))}
+      </View>
     </LinearGradient>
   );
 }
@@ -171,41 +225,37 @@ const styles = StyleSheet.create({
     paddingTop: 56,
     paddingHorizontal: 20,
   },
+  loadingContainer: {
+    flex: 1,
+    backgroundColor: Colors.bg.primaryDark,
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 16,
+  },
+  loadingText: {
+    color: Colors.text.secondary,
+    fontSize: 15,
+  },
   topBar: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginBottom: 8,
-  },
-  playerInfo: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    flex: 1,
-  },
-  playerInfoRight: {
-    justifyContent: 'flex-end',
+    marginBottom: 12,
   },
   playerName: {
     color: Colors.text.secondary,
     fontSize: 12,
-    maxWidth: 80,
+    maxWidth: 90,
   },
-  score: {
-    color: '#fff',
-    fontWeight: '800',
-    fontSize: 18,
-  },
-  answeredBadge: {
-    color: Colors.status.success,
-    fontSize: 14,
-    fontWeight: '700',
+  playerRight: {
+    flex: 1,
+    alignItems: 'flex-end',
   },
   questionBadge: {
     backgroundColor: Colors.battle.purple,
     borderRadius: 12,
-    paddingHorizontal: 12,
-    paddingVertical: 4,
+    paddingHorizontal: 14,
+    paddingVertical: 5,
   },
   questionNo: {
     color: '#fff',
@@ -214,7 +264,7 @@ const styles = StyleSheet.create({
   },
   timerBarBg: {
     height: 6,
-    backgroundColor: Colors.bg.cardDark,
+    backgroundColor: 'rgba(255,255,255,0.1)',
     borderRadius: 3,
     overflow: 'hidden',
     marginBottom: 4,
@@ -227,43 +277,29 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: '700',
     textAlign: 'right',
-    marginBottom: 16,
+    marginBottom: 20,
   },
   wordCard: {
     backgroundColor: Colors.bg.cardDark,
     borderRadius: 20,
-    padding: 24,
+    padding: 28,
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 24,
     borderWidth: 1,
-    borderColor: Colors.battle.purple + '55',
-  },
-  wordLevel: {
-    color: Colors.battle.purple,
-    fontSize: 12,
-    fontWeight: '700',
-    letterSpacing: 1,
-    marginBottom: 8,
+    borderColor: Colors.battle.purple + '44',
   },
   germanWord: {
-    color: '#fff',
-    fontSize: 32,
+    color: Colors.word.green,
+    fontSize: 34,
     fontWeight: '900',
     textAlign: 'center',
+    letterSpacing: 0.5,
   },
-  exampleSentence: {
+  questionPrompt: {
     color: Colors.text.secondary,
     fontSize: 13,
     textAlign: 'center',
     marginTop: 8,
-    lineHeight: 18,
-    fontStyle: 'italic',
-  },
-  questionPrompt: {
-    color: Colors.text.secondary,
-    fontSize: 14,
-    textAlign: 'center',
-    marginBottom: 12,
   },
   optionsGrid: {
     gap: 10,
@@ -276,11 +312,14 @@ const styles = StyleSheet.create({
     padding: 16,
     gap: 12,
     borderWidth: 1.5,
-    borderColor: 'transparent',
+    borderColor: 'rgba(255,255,255,0.08)',
+  },
+  optionSelected: {
+    borderColor: Colors.battle.purple,
+    backgroundColor: Colors.battle.purple + '22',
   },
   optionPressed: {
-    opacity: 0.7,
-    borderColor: Colors.battle.purple,
+    opacity: 0.75,
   },
   optionCorrect: {
     backgroundColor: Colors.status.success + '33',
@@ -301,29 +340,30 @@ const styles = StyleSheet.create({
     fontSize: 15,
     flex: 1,
   },
-  optionTextSelected: {
+  optionTextBold: {
     fontWeight: '700',
   },
-  betweenOverlay: {
-    position: 'absolute',
-    bottom: 40,
-    left: 20,
-    right: 20,
-    backgroundColor: Colors.bg.cardDark,
-    borderRadius: 16,
-    padding: 20,
-    alignItems: 'center',
-    borderWidth: 1,
-    borderColor: Colors.battle.purple,
+  feedbackIcon: {
+    fontSize: 16,
+    fontWeight: '700',
   },
-  betweenText: {
-    color: '#fff',
-    fontSize: 22,
-    fontWeight: '800',
+  progressDots: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 6,
+    marginTop: 24,
   },
-  betweenSub: {
-    color: Colors.text.secondary,
-    fontSize: 14,
-    marginTop: 4,
+  dot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: 'rgba(255,255,255,0.2)',
+  },
+  dotDone: {
+    backgroundColor: Colors.status.success,
+  },
+  dotCurrent: {
+    backgroundColor: Colors.battle.purple,
+    width: 16,
   },
 });

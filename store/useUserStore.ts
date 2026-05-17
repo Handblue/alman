@@ -112,75 +112,47 @@ export const useUserStore = create<UserState>((set, get) => ({
   }),
 
   syncWithCloud: async () => {
-    if (!userService || !authService) return; // Skip in test environment
-
+    if (!authService) return;
     const user = authService.getCurrentUser();
     if (!user) return;
 
     const state = get();
     try {
-      await userService.updateUserProfile(user.uid, {
-        xp: state.xp,
-        level: state.level,
-        streak: state.streak,
-        lastActiveDate: state.lastActiveDate || '',
-        selectedLevel: state.selectedLevel,
-        selectedCategories: state.selectedCategories,
-        badges: state.badges,
+      await authService.authFetch('/users/me', {
+        method: 'PATCH',
+        body: JSON.stringify({
+          xp: state.xp,
+          level: state.level,
+          streak: state.streak,
+          lastActiveDate: state.lastActiveDate || '',
+        }),
       });
-    } catch (error) {
-      console.error('Failed to sync with cloud:', error);
+    } catch {
+      // offline ise sessizce geç
     }
   },
 
   initializeAuth: async () => {
-    if (!authService || !userService) {
-      // In test environment, just set online to false
+    if (!authService) {
       set({ isOnline: false });
       return;
     }
 
     try {
-      // Sign in anonymously
-      await authService.signInAnonymously();
-      set({ isOnline: true });
-
-      // Sync local data to cloud
-      const state = get();
-      await userService.syncLocalDataToCloud({
-        xp: state.xp,
-        level: state.level,
-        streak: state.streak,
-        lastActiveDate: state.lastActiveDate,
-        selectedLevel: state.selectedLevel,
-        selectedCategories: state.selectedCategories,
-        badges: state.badges,
-      });
-
-      // Subscribe to cloud changes
-      userService.subscribeToUserProfile(authService.getCurrentUser()!.uid, (profile: any) => {
-        if (profile) {
-          // Update local state with cloud data
-          storage.set('xp', profile.xp);
-          storage.set('streak', profile.streak);
-          storage.set('lastActiveDate', profile.lastActiveDate);
-          if (profile.selectedLevel) storage.set('level', profile.selectedLevel);
-          storage.set('categories', JSON.stringify(profile.selectedCategories));
-          storage.set('badges', JSON.stringify(profile.badges));
-
-          set({
-            xp: profile.xp,
-            level: profile.level,
-            streak: profile.streak,
-            lastActiveDate: profile.lastActiveDate,
-            selectedLevel: profile.selectedLevel,
-            selectedCategories: profile.selectedCategories,
-            badges: profile.badges,
-          });
-        }
-      });
+      await authService.initialize();
+      const user = authService.getCurrentUser();
+      if (user) {
+        set({
+          isOnline: true,
+          xp: user.xp ?? get().xp,
+          level: user.level ?? get().level,
+          streak: user.streak ?? get().streak,
+        });
+      } else {
+        set({ isOnline: false });
+      }
     } catch (error) {
-      console.error('Failed to initialize auth:', error);
+      console.error('Auth init hatası:', error);
       set({ isOnline: false });
     }
   },

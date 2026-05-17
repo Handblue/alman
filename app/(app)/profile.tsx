@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import { View, StyleSheet, ScrollView, Switch, TouchableOpacity, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
-import { WKText, WKCard } from '@/components/ui';
+import { WKText, WKCard, Avatar } from '@/components/ui';
+import { authService } from '@/services/authService';
+import { Flame, Swords, BarChart2, Lock } from '@/constants/icons';
 import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
 import { Radius } from '@/constants/radius';
@@ -82,8 +84,14 @@ export default function ProfileScreen() {
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scrollContent}>
         {/* Avatar */}
         <View style={styles.avatar}>
-          <WKText style={{ fontSize: 48 }} accessibilityLabel="Kullanıcı avatarı">🧑‍💻</WKText>
-          <WKText variant="heading1">Savaşçı</WKText>
+          <Avatar
+            name={authService.getCurrentUser()?.displayName ?? 'Savaşçı'}
+            size={80}
+            imageUri={authService.getCurrentUser()?.avatar ?? undefined}
+          />
+          <WKText variant="heading1">
+            {authService.getCurrentUser()?.displayName ?? 'Savaşçı'}
+          </WKText>
           <View style={styles.levelRow}>
             <WKText variant="body" color={Colors.brand.primary}>{selectedLevel ?? 'A1'} Seviyesi</WKText>
             {isPremium && (
@@ -103,7 +111,10 @@ export default function ProfileScreen() {
 
         {/* Battle Stats */}
         <WKCard style={styles.battleCard}>
-          <WKText variant="heading2" style={{ marginBottom: Spacing.s12 }}>⚔️ Battle İstatistikleri</WKText>
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6, marginBottom: Spacing.s12 }}>
+            <Swords size={18} color={Colors.battle.purple} />
+            <WKText variant="heading2">Battle İstatistikleri</WKText>
+          </View>
           <View style={styles.battleRow}>
             <View style={styles.battleStat}>
               <WKText style={[styles.battleNum, { color: Colors.battle.purple }]}>{battleStats.elo}</WKText>
@@ -139,7 +150,10 @@ export default function ProfileScreen() {
             <WKText variant="caption" color={Colors.text.secondary}>Toplam XP</WKText>
           </WKCard>
           <WKCard style={styles.statCard}>
-            <WKText variant="score" color={Colors.status.warning}>🔥 {streak}</WKText>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+              <Flame size={18} color={Colors.accent.orange} />
+              <WKText variant="score" color={Colors.status.warning}>{streak}</WKText>
+            </View>
             <WKText variant="caption" color={Colors.text.secondary}>Gün Serisi</WKText>
           </WKCard>
         </View>
@@ -289,7 +303,10 @@ export default function ProfileScreen() {
             <WKText variant="caption" color={Colors.text.secondary}>Görünüm, widget ve sistem kısayolları</WKText>
           </Pressable>
           <Pressable style={styles.quickLink} onPress={() => router.push('/(app)/statistics')}>
-            <WKText variant="bodySm">📊 İstatistikler</WKText>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+              <BarChart2 size={15} color={Colors.text.secondary} />
+              <WKText variant="bodySm">İstatistikler</WKText>
+            </View>
             <WKText variant="caption" color={Colors.text.secondary}>Öğrenme, battle ve speaking özetleri</WKText>
           </Pressable>
           <Pressable style={styles.quickLink} onPress={() => router.push('/(app)/achievements')}>
@@ -330,7 +347,7 @@ export default function ProfileScreen() {
                       <WKText style={[styles.badgeEmoji, !earned && styles.lockedEmoji]}>
                         {badge.emoji}
                       </WKText>
-                      {!earned && <WKText style={styles.lockOverlay}>🔒</WKText>}
+                      {!earned && <Lock size={16} color="rgba(255,255,255,0.7)" style={styles.lockOverlay} />}
                     </View>
 
                     <WKText

@@ -10,7 +10,8 @@ import { Radius } from '@/constants/radius';
 import { useUserStore } from '@/store/useUserStore';
 import { leaderboardService, LeaderboardEntry } from '@/services/leaderboardService';
 import { achievementService } from '@/services/achievementService';
-import { auth } from '@/firebase';
+import { authService } from '@/services/authService';
+import { Trophy, User, Swords } from '@/constants/icons';
 
 type Tab = 'weekly' | 'allTime' | 'elo';
 
@@ -76,7 +77,7 @@ export default function LeaderboardScreen() {
       setLeaderboardData(data);
 
       // Get user's rank
-      const user = await leaderboardService.getUserRank(auth?.currentUser?.uid || '');
+      const user = await leaderboardService.getUserRank(authService.getCurrentUser()?.id || '');
       setUserRank(user?.rank || null);
     } catch (error) {
       console.error('Failed to load leaderboard:', error);
@@ -121,9 +122,12 @@ export default function LeaderboardScreen() {
         >
           <WKText variant="body" color={Colors.text.primaryDark}>← Geri</WKText>
         </TouchableOpacity>
-        <WKText variant="hero" color={Colors.text.primaryDark} style={styles.headerTitle}>
-          Sıralama 🏆
-        </WKText>
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+          <WKText variant="hero" color={Colors.text.primaryDark} style={styles.headerTitle}>
+            Sıralama
+          </WKText>
+          <Trophy size={28} color={Colors.accent.gold} />
+        </View>
 
         {/* Tabs */}
         <View style={styles.tabs}>
@@ -156,9 +160,12 @@ export default function LeaderboardScreen() {
             accessibilityState={{ selected: activeTab === 'elo' }}
             style={[styles.tab, activeTab === 'elo' && styles.tabActive]}
           >
-            <WKText variant="caption" color={Colors.text.primaryDark}>
-              ⚔️ ELO
-            </WKText>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+              <Swords size={16} color={Colors.battle.purple} />
+              <WKText variant="caption" color={Colors.text.primaryDark}>
+                ELO
+              </WKText>
+            </View>
           </TouchableOpacity>
         </View>
       </LinearGradient>
@@ -168,7 +175,10 @@ export default function LeaderboardScreen() {
         {activeTab === 'elo' && (
           <View style={styles.listContainer}>
             <View style={styles.eloHeader}>
-              <WKText style={styles.eloHeaderTitle}>⚔️ Battle ELO Sıralaması</WKText>
+              <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+                <Swords size={16} color={Colors.battle.purple} />
+                <WKText style={styles.eloHeaderTitle}>Battle ELO Sıralaması</WKText>
+              </View>
               <WKText style={styles.eloHeaderSub}>Senin ELO'n: {battleStats.elo}</WKText>
             </View>
             {eloBoard.map((entry) => (
@@ -180,7 +190,10 @@ export default function LeaderboardScreen() {
                   <WKText variant="body" color={Colors.text.secondary} style={styles.rankNum}>
                     {getMedalEmoji(entry.rank)}
                   </WKText>
-                  <WKText variant="body">{entry.isMe ? '🎮' : '👤'}</WKText>
+                  {entry.isMe
+                    ? <WKText variant="body">🎮</WKText>
+                    : <User size={20} color={Colors.text.secondary} />
+                  }
                   <View>
                     <WKText variant="body" color={entry.isMe ? Colors.brand.primary : Colors.text.primaryDark}>
                       {entry.displayName}
@@ -216,7 +229,10 @@ export default function LeaderboardScreen() {
               <View style={styles.podium}>
                 {/* 2nd place */}
                 <View style={[styles.podiumItem, styles.podiumSecond]}>
-                  <WKText variant="heading1">{top3[1].avatar || '👤'}</WKText>
+                  {top3[1].avatar
+                    ? <WKText variant="heading1">{top3[1].avatar}</WKText>
+                    : <User size={20} color={Colors.text.secondary} />
+                  }
                   <WKText variant="caption" color={Colors.text.secondary}>🥈</WKText>
                   <WKText variant="caption" color={Colors.text.primaryDark} numberOfLines={1}>
                     {top3[1].displayName}
@@ -228,7 +244,10 @@ export default function LeaderboardScreen() {
 
                 {/* 1st place */}
                 <View style={[styles.podiumItem, styles.podiumFirst]}>
-                  <WKText variant="hero">{top3[0].avatar || '👤'}</WKText>
+                  {top3[0].avatar
+                    ? <WKText variant="hero">{top3[0].avatar}</WKText>
+                    : <User size={20} color={Colors.text.secondary} />
+                  }
                   <WKText variant="heading2">🥇</WKText>
                   <WKText variant="caption" color={Colors.text.primaryDark} numberOfLines={1}>
                     {top3[0].displayName}
@@ -240,7 +259,10 @@ export default function LeaderboardScreen() {
 
                 {/* 3rd place */}
                 <View style={[styles.podiumItem, styles.podiumThird]}>
-                  <WKText variant="heading1">{top3[2].avatar || '👤'}</WKText>
+                  {top3[2].avatar
+                    ? <WKText variant="heading1">{top3[2].avatar}</WKText>
+                    : <User size={20} color={Colors.text.secondary} />
+                  }
                   <WKText variant="caption" color={Colors.text.secondary}>🥉</WKText>
                   <WKText variant="caption" color={Colors.text.primaryDark} numberOfLines={1}>
                     {top3[2].displayName}
@@ -260,7 +282,10 @@ export default function LeaderboardScreen() {
                     <WKText variant="body" color={Colors.text.secondary} style={styles.rankNum}>
                       {getMedalEmoji(entry.rank || 0)}
                     </WKText>
-                    <WKText variant="body">{entry.avatar || '👤'}</WKText>
+                    {entry.avatar
+                      ? <WKText variant="body">{entry.avatar}</WKText>
+                      : <User size={20} color={Colors.text.secondary} />
+                    }
                     <WKText variant="body" color={Colors.text.primaryDark}>
                       {entry.displayName}
                     </WKText>

@@ -1,4 +1,5 @@
 export { WKText } from './WKText';
+export { Avatar } from './Avatar';
 export { WKCard } from './WKCard';
 export { WKButton } from './WKButton';
 export { WKChip } from './WKChip';

@@ -11,7 +11,7 @@ import { FlashCard } from '@/components/study/FlashCard';
 import { useProgressStore } from '@/store/useProgressStore';
 import { useUserStore } from '@/store/useUserStore';
 import { useAnalyticsStore } from '@/store/useAnalyticsStore';
-import { auth } from '@/firebase';
+import { authService } from '@/services/authService';
 
 export default function FlashcardScreen() {
   const { unitId } = useLocalSearchParams<{ unitId: string }>();
@@ -166,7 +166,7 @@ export default function FlashcardScreen() {
         ).catch(console.error);
 
         // Generate new recommendations based on session performance
-        const userId = auth?.currentUser?.uid;
+        const userId = authService.getCurrentUser()?.id;
         if (userId) {
           generateRecommendations(userId).catch(console.error);
         }

@@ -10,7 +10,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Svg, { Path, Rect, Circle, Line, Text as SvgText } from 'react-native-svg';
 import { router } from 'expo-router';
-import { auth } from '@/firebase';
+import { authService } from '@/services/authService';
 import {
   useAnalyticsStore,
   useTodayMetrics,
@@ -268,7 +268,7 @@ const FOCUS_OPTIONS = [
 ];
 
 export default function AnalyticsScreen() {
-  const userId = auth?.currentUser?.uid;
+  const userId = authService.getCurrentUser()?.id;
   const {
     loadAnalyticsData,
     loadAIData,

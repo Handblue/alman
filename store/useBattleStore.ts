@@ -1,156 +1,178 @@
 import { create } from 'zustand';
-import { Battle, BattlePlayer, battleService, buildOptions, DEFAULT_ELO } from '@/services/battleService';
-import { Word } from '@/data/words';
+import { battleApiService, BattleQuestion, BattleResult } from '@/services/battleApiService';
+
+export type BattlePhase =
+  | 'idle'
+  | 'loading'
+  | 'playing'
+  | 'between'      // brief pause after answering, before next question
+  | 'submitting'
+  | 'done_p1'      // challenger submitted, waiting for challengee
+  | 'result';      // final result visible
+
+interface LocalAnswer {
+  questionIndex: number;
+  answer: string;
+  timeMs: number;
+}
 
 interface BattleState {
-  // Current battle
+  // ── Metadata ──────────────────────────────────────────────────────────
   battleId: string | null;
-  battle: Battle | null;
-  myUid: string | null;
+  role: 'challenger' | 'challengee' | null;
+  opponentName: string;
 
-  // Matchmaking
-  isSearching: boolean;
-  searchError: string | null;
+  // ── Questions ─────────────────────────────────────────────────────────
+  questions: BattleQuestion[];
+  timePerQuestion: number; // ms
 
-  // Question UI state (local, not synced)
-  selectedOptionIndex: number | null;
+  // ── Question UI ───────────────────────────────────────────────────────
+  currentQuestionIndex: number;
+  selectedAnswer: string | null;
   hasAnswered: boolean;
   timeLeft: number; // seconds
+  questionStartMs: number;
 
-  // Derived helpers
-  me: BattlePlayer | null;
-  opponent: BattlePlayer | null;
+  // ── Collected answers ─────────────────────────────────────────────────
+  localAnswers: LocalAnswer[];
+
+  // ── Phase ─────────────────────────────────────────────────────────────
+  phase: BattlePhase;
+  error: string | null;
+
+  // ── Result ────────────────────────────────────────────────────────────
+  result: BattleResult | null;
+  p1SubmitResult: { score: number; total: number; message: string } | null;
+
+  // ── Result ────────────────────────────────────────────────────────────
   myScore: number;
   opponentScore: number;
-  currentWord: Word | null;
-  options: string[];
-  correctIndex: number;
-  eloChange: number;
-  isWinner: boolean | null; // null = draw
+  isWinner: boolean | null;
 
-  // Actions
-  startSearch: (xp: number, elo?: number) => Promise<void>;
-  cancelSearch: () => void;
-  setBattle: (battle: Battle) => void;
-  selectOption: (index: number) => Promise<void>;
+  // ── Actions ───────────────────────────────────────────────────────────
+  loadBattle: (battleId: string, role: 'challenger' | 'challengee', opponentName: string) => Promise<void>;
+  selectAnswer: (answer: string) => void;
+  advanceQuestion: () => void;
+  submitAnswers: () => Promise<void>;
   setTimeLeft: (t: number) => void;
   reset: () => void;
 }
 
-const initialState = {
+const defaults: Omit<BattleState, 'loadBattle' | 'selectAnswer' | 'advanceQuestion' | 'submitAnswers' | 'setTimeLeft' | 'reset'> = {
   battleId: null,
-  battle: null,
-  myUid: null,
-  isSearching: false,
-  searchError: null,
-  selectedOptionIndex: null,
+  role: null,
+  opponentName: 'Rakip',
+  questions: [],
+  timePerQuestion: 10_000,
+  currentQuestionIndex: 0,
+  selectedAnswer: null,
   hasAnswered: false,
-  timeLeft: 12,
-  me: null,
-  opponent: null,
+  timeLeft: 10,
+  questionStartMs: 0,
+  localAnswers: [],
+  phase: 'idle',
+  error: null,
+  result: null,
+  p1SubmitResult: null,
   myScore: 0,
   opponentScore: 0,
-  currentWord: null,
-  options: [],
-  correctIndex: 0,
-  eloChange: 0,
   isWinner: null,
 };
 
-function deriveFromBattle(battle: Battle, myUid: string) {
-  const me = battle.player1.uid === myUid ? battle.player1 : battle.player2;
-  const opponent = battle.player1.uid === myUid ? battle.player2 : battle.player1;
-  const myScore = battle.scores[myUid] ?? 0;
-  const opponentScore = battle.scores[opponent?.uid ?? ''] ?? 0;
-  const currentWord = battle.questions[battle.currentQuestion] ?? null;
-  const { options, correctIndex } = currentWord ? buildOptions(currentWord) : { options: [], correctIndex: 0 };
-
-  const eloChange = battle.eloChanges?.[myUid] ?? 0;
-  let isWinner: boolean | null = null;
-  if (battle.status === 'finished') {
-    if (battle.winnerId === null) isWinner = null; // draw
-    else isWinner = battle.winnerId === myUid;
-  }
-
-  return { me, opponent, myScore, opponentScore, currentWord, options, correctIndex, eloChange, isWinner };
-}
-
 export const useBattleStore = create<BattleState>((set, get) => ({
-  ...initialState,
+  ...defaults,
 
-  startSearch: async (xp, elo = DEFAULT_ELO) => {
-    set({ isSearching: true, searchError: null });
-
-    // Lazy import authService to avoid issues in test environments
-    let uid: string;
+  // ── Load questions from API and enter playing phase ──────────────────
+  loadBattle: async (battleId, role, opponentName) => {
+    set({ battleId, role, opponentName, phase: 'loading', error: null, localAnswers: [], currentQuestionIndex: 0 });
     try {
-      const { authService } = await import('@/services/authService');
-      const user = authService.getCurrentUser();
-      if (!user) throw new Error('Giriş yapılmamış');
-      uid = user.uid;
+      const data = await battleApiService.getQuestions(battleId);
+      set({
+        questions: data.questions,
+        timePerQuestion: data.timePerQuestion,
+        timeLeft: Math.round(data.timePerQuestion / 1000),
+        phase: 'playing',
+        questionStartMs: Date.now(),
+        selectedAnswer: null,
+        hasAnswered: false,
+      });
     } catch (e: any) {
-      set({ isSearching: false, searchError: e.message });
+      set({ phase: 'idle', error: e.message ?? 'Sorular yüklenemedi' });
+    }
+  },
+
+  // ── Player selects an answer ─────────────────────────────────────────
+  selectAnswer: (answer) => {
+    const { hasAnswered, currentQuestionIndex, localAnswers, questionStartMs, timePerQuestion } = get();
+    if (hasAnswered) return;
+
+    const timeMs = Math.min(Date.now() - questionStartMs, timePerQuestion);
+    const newAnswers = [...localAnswers, { questionIndex: currentQuestionIndex, answer, timeMs }];
+
+    set({ selectedAnswer: answer, hasAnswered: true, localAnswers: newAnswers, phase: 'between' });
+  },
+
+  // ── Move to next question (called after between-pause) ───────────────
+  advanceQuestion: () => {
+    const { currentQuestionIndex, questions, timePerQuestion, phase } = get();
+    // Guard against double-call from timer + between-timeout racing
+    if (phase !== 'playing' && phase !== 'between') return;
+    const next = currentQuestionIndex + 1;
+
+    if (next >= questions.length) {
+      // All questions answered — go to submit
+      get().submitAnswers();
       return;
     }
 
+    set({
+      currentQuestionIndex: next,
+      selectedAnswer: null,
+      hasAnswered: false,
+      timeLeft: Math.round(timePerQuestion / 1000),
+      questionStartMs: Date.now(),
+      phase: 'playing',
+    });
+  },
+
+  // ── Submit all answers to API ─────────────────────────────────────────
+  submitAnswers: async () => {
+    const { battleId, role, localAnswers, questions, phase } = get();
+    if (!battleId || !role) return;
+    if (phase === 'submitting' || phase === 'done_p1' || phase === 'result') return;
+
+    // If the last question timed out (no answer recorded), add a blank
+    const answeredIndices = new Set(localAnswers.map((a) => a.questionIndex));
+    const allAnswers = [...localAnswers];
+    for (let i = 0; i < questions.length; i++) {
+      if (!answeredIndices.has(i)) {
+        allAnswers.push({ questionIndex: i, answer: '', timeMs: questions.length * 10_000 });
+      }
+    }
+
+    set({ phase: 'submitting' });
     try {
-      const battleId = await battleService.findMatch({ xp, elo });
-      set({ battleId, myUid: uid, isSearching: false });
-
-      // Subscribe to live updates
-      battleService.subscribe(battleId, (battle) => {
-        const derived = deriveFromBattle(battle, uid);
+      if (role === 'challenger') {
+        const res = await battleApiService.submitAsChallenger(battleId, allAnswers);
+        set({ phase: 'done_p1', p1SubmitResult: res });
+      } else {
+        const res = await battleApiService.submitAsChallengee(battleId, allAnswers);
+        const myScore = res.score;
+        const opponentScore = res.opponentScore;
         set({
-          battle,
-          ...derived,
-          // Reset question UI when question changes
-          ...(battle.status === 'question' ? { selectedOptionIndex: null, hasAnswered: false, timeLeft: 12 } : {}),
-        });
-      });
-
-      // Schedule bot if we're waiting (player1 = creator)
-      const battle = await battleService.getBattle(battleId);
-      if (battle?.player1.uid === uid && battle.status === 'waiting') {
-        battleService.scheduleBot(battleId, () => {
-          // Bot added — Firestore subscription handles UI update
+          phase: 'result',
+          result: res,
+          myScore,
+          opponentScore,
+          isWinner: res.isDraw ? null : res.isWinner,
         });
       }
     } catch (e: any) {
-      set({ isSearching: false, searchError: e.message ?? 'Eşleşme hatası' });
+      set({ phase: 'idle', error: e.message ?? 'Cevaplar gönderilemedi' });
     }
-  },
-
-  cancelSearch: () => {
-    battleService.cleanup();
-    set({ ...initialState });
-  },
-
-  setBattle: (battle) => {
-    const { myUid } = get();
-    if (!myUid) return;
-    const derived = deriveFromBattle(battle, myUid);
-    set({ battle, ...derived });
-  },
-
-  selectOption: async (index) => {
-    const { battleId, battle, myUid, hasAnswered } = get();
-    if (!battleId || !battle || !myUid || hasAnswered) return;
-
-    const currentWord = battle.questions[battle.currentQuestion];
-    if (!currentWord) return;
-
-    const { correctIndex } = buildOptions(currentWord);
-    const correct = index === correctIndex;
-
-    set({ selectedOptionIndex: index, hasAnswered: true });
-
-    await battleService.submitAnswer(battleId, battle.currentQuestion, index, correct);
   },
 
   setTimeLeft: (t) => set({ timeLeft: t }),
 
-  reset: () => {
-    battleService.cleanup();
-    set({ ...initialState });
-  },
+  reset: () => set({ ...defaults }),
 }));
