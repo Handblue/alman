@@ -81,6 +81,23 @@ class AuthService {
     return json.user;
   }
 
+  // ─── Google OAuth ─────────────────────────────────────────────────────────
+  async signInWithGoogle(idToken: string): Promise<WKUser> {
+    const res = await fetch(`${API_BASE}/auth/google`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ idToken }),
+    });
+    const json = await res.json();
+    if (!res.ok) throw new Error(json.message || 'Google girişi başarısız');
+
+    this.accessToken = json.accessToken;
+    this.currentUser = json.user;
+    await this.saveSession();
+    this.notify();
+    return json.user;
+  }
+
   // ─── Şifre sıfırlama ──────────────────────────────────────────────────────
   async sendPasswordReset(email: string): Promise<void> {
     const res = await fetch(`${API_BASE}/auth/forgot-password`, {

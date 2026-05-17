@@ -12,6 +12,8 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
+import * as WebBrowser from 'expo-web-browser';
+import * as Google from 'expo-auth-session/providers/google';
 import { Mail, Lock, Eye, EyeOff, ChevronLeft } from '@/constants/icons';
 import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
@@ -21,13 +23,43 @@ import { WKButton } from '@/components/ui/WKButton';
 import { authService } from '@/services/authService';
 import { useUserStore } from '@/store/useUserStore';
 
+WebBrowser.maybeCompleteAuthSession();
+
+// Google OAuth Web Client ID — replace with your actual client ID from Google Cloud Console
+const GOOGLE_WEB_CLIENT_ID = 'YOUR_GOOGLE_WEB_CLIENT_ID.apps.googleusercontent.com';
+
 export default function LoginScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
 
   const initializeAuth = useUserStore((s) => s.initializeAuth);
+
+  const [, response, promptAsync] = Google.useAuthRequest({
+    webClientId: GOOGLE_WEB_CLIENT_ID,
+  });
+
+  React.useEffect(() => {
+    if (response?.type === 'success') {
+      const idToken = response.authentication?.idToken;
+      if (idToken) handleGoogleToken(idToken);
+    }
+  }, [response]);
+
+  const handleGoogleToken = async (idToken: string) => {
+    setGoogleLoading(true);
+    try {
+      await authService.signInWithGoogle(idToken);
+      await initializeAuth();
+      router.replace('/(app)/dashboard');
+    } catch (err: any) {
+      Alert.alert('Google Giriş Hatası', err.message || 'Giriş yapılamadı');
+    } finally {
+      setGoogleLoading(false);
+    }
+  };
 
   const handleLogin = async () => {
     if (!email.trim() || !password) {
@@ -152,6 +184,25 @@ export default function LoginScreen() {
             style={styles.loginBtn}
           />
 
+          {/* Ayırıcı */}
+          <View style={styles.dividerRow}>
+            <View style={styles.dividerLine} />
+            <WKText variant="bodySmall" color={Colors.text.secondary} style={styles.dividerText}>veya</WKText>
+            <View style={styles.dividerLine} />
+          </View>
+
+          {/* Google ile Giriş */}
+          <TouchableOpacity
+            style={[styles.googleBtn, googleLoading && styles.googleBtnDisabled]}
+            onPress={() => promptAsync()}
+            disabled={googleLoading || loading}
+            accessibilityLabel="Google ile giriş yap"
+          >
+            <WKText style={styles.googleBtnText}>
+              {googleLoading ? 'Bağlanıyor...' : '🔵 Google ile Giriş Yap'}
+            </WKText>
+          </TouchableOpacity>
+
           {/* Kayıt ol linki */}
           <View style={styles.registerRow}>
             <WKText variant="bodySmall" color={Colors.text.secondary}>
@@ -206,4 +257,20 @@ const styles = StyleSheet.create({
   loginBtn: { marginTop: Spacing.s24, width: '100%' },
   registerRow: { flexDirection: 'row', justifyContent: 'center', marginTop: Spacing.s20, alignItems: 'center' },
   registerLink: { fontFamily: 'Inter_600SemiBold' },
+  dividerRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.s8, marginTop: Spacing.s24 },
+  dividerLine: { flex: 1, height: 1, backgroundColor: Colors.border.dark },
+  dividerText: { paddingHorizontal: Spacing.s4 },
+  googleBtn: {
+    marginTop: Spacing.s12,
+    backgroundColor: '#FFFFFF',
+    borderRadius: Radius.button,
+    paddingVertical: Spacing.s12,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: Colors.border.primary,
+    minHeight: 52,
+    justifyContent: 'center',
+  },
+  googleBtnDisabled: { opacity: 0.6 },
+  googleBtnText: { color: '#1A1A1A', fontFamily: 'Inter_600SemiBold', fontSize: 15 },
 });
