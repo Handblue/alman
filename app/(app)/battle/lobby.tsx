@@ -19,6 +19,7 @@ import { Spacing } from '@/constants/spacing';
 import { battleApiService, BattleChallenge } from '@/services/battleApiService';
 import { friendsApiService } from '@/services/friendsApiService';
 import { useBattleStore } from '@/store/useBattleStore';
+import { useRealtimeBattleStore } from '@/store/useRealtimeBattleStore';
 import { authService } from '@/services/authService';
 
 type SentBattle = {
@@ -35,6 +36,12 @@ type Friend = { id: string; displayName: string; username: string; avatar?: stri
 export default function BattleLobbyScreen() {
   const router = useRouter();
   const { loadBattle, reset } = useBattleStore();
+  const { findMatch, phase: rtPhase, reset: rtReset } = useRealtimeBattleStore();
+
+  const handleFindRealtimeMatch = () => {
+    rtReset();
+    router.push('/(app)/battle/rtmatch');
+  };
 
   const [pending, setPending] = useState<BattleChallenge[]>([]);
   const [sent, setSent] = useState<SentBattle[]>([]);
@@ -163,9 +170,14 @@ export default function BattleLobbyScreen() {
         </Pressable>
         <WKText style={styles.headerTitle}>⚔️ Battle</WKText>
         <WKText style={styles.headerSub}>Arkadaşlarınla kelime savaşına gir!</WKText>
-        <Pressable style={styles.challengeBtn} onPress={openChallengeSheet}>
-          <WKText style={styles.challengeBtnText}>+ Meydan Oku</WKText>
-        </Pressable>
+        <View style={styles.headerBtns}>
+          <Pressable style={styles.realtimeBtn} onPress={handleFindRealtimeMatch}>
+            <WKText style={styles.realtimeBtnText}>⚡ Canlı Rakip Bul</WKText>
+          </Pressable>
+          <Pressable style={styles.challengeBtn} onPress={openChallengeSheet}>
+            <WKText style={styles.challengeBtnText}>+ Meydan Oku</WKText>
+          </Pressable>
+        </View>
       </LinearGradient>
 
       <ScrollView
@@ -321,13 +333,24 @@ const styles = StyleSheet.create({
   backText: { color: 'rgba(255,255,255,0.75)', fontSize: 16 },
   headerTitle: { fontSize: 28, fontWeight: '800', color: '#fff' },
   headerSub: { color: 'rgba(255,255,255,0.7)', fontSize: 14 },
+  headerBtns: {
+    flexDirection: 'row',
+    gap: 10,
+    marginTop: 8,
+    flexWrap: 'wrap',
+  },
+  realtimeBtn: {
+    backgroundColor: Colors.accent.orange,
+    borderRadius: 24,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+  },
+  realtimeBtnText: { color: '#fff', fontWeight: '800', fontSize: 15 },
   challengeBtn: {
-    alignSelf: 'flex-start',
     backgroundColor: '#fff',
     borderRadius: 24,
     paddingVertical: 10,
     paddingHorizontal: 24,
-    marginTop: 8,
   },
   challengeBtnText: { color: Colors.battle.purple, fontWeight: '800', fontSize: 15 },
 
