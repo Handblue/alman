@@ -31,6 +31,9 @@ export interface BattleResult {
   isWinner: boolean;
   isDraw: boolean;
   xpGain: number;
+  myElo: number;
+  eloDelta: number;
+  correctAnswers: number;
   message: string;
 }
 

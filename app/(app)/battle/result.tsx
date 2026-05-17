@@ -208,10 +208,20 @@ export default function BattleResultScreen() {
             </View>
           </View>
 
-          {/* XP */}
-          <View style={styles.xpChip}>
-            <WKText style={styles.xpLabel}>XP KAZANILDI</WKText>
-            <WKText style={styles.xpValue}>+{result.xpGain}</WKText>
+          {/* XP + ELO */}
+          <View style={styles.rewardRow}>
+            <View style={styles.xpChip}>
+              <WKText style={styles.xpLabel}>XP</WKText>
+              <WKText style={styles.xpValue}>+{result.xpGain}</WKText>
+            </View>
+            {result.myElo !== undefined && (
+              <View style={[styles.xpChip, { backgroundColor: Colors.battle.purple + '33' }]}>
+                <WKText style={[styles.xpLabel, { color: Colors.battle.purple }]}>ELO</WKText>
+                <WKText style={[styles.xpValue, { color: Colors.battle.purple }]}>
+                  {result.myElo} {result.eloDelta >= 0 ? `(+${result.eloDelta})` : `(${result.eloDelta})`}
+                </WKText>
+              </View>
+            )}
           </View>
 
           {/* Question breakdown */}
@@ -305,6 +315,12 @@ const styles = StyleSheet.create({
   scoreWinner: { color: Colors.accent.gold },
   scoreDivider: { color: 'rgba(255,255,255,0.4)', fontSize: 28, fontWeight: '300' },
 
+  rewardRow: {
+    flexDirection: 'row',
+    gap: 12,
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+  },
   xpChip: {
     backgroundColor: 'rgba(255,255,255,0.15)',
     borderRadius: 16,
