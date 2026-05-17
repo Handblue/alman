@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Pressable } from 'react-native';
 import { router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { WKText, WKButton } from '@/components/ui';
@@ -65,18 +65,19 @@ export default function LevelTestScreen() {
         const isCorrect = selected !== null && idx === q.correctIndex;
         const isWrong = isSelected && idx !== q.correctIndex;
         return (
-          <TouchableOpacity
+          <Pressable
             key={idx}
             accessibilityRole="radio"
             accessibilityLabel={opt}
             accessibilityState={{ checked: isSelected }}
+            android_ripple={null}
             onPress={() => handleSelect(idx)}
-            style={[styles.option, isCorrect && styles.correct, isWrong && styles.wrong]}
+            style={({ pressed }) => [styles.option, isCorrect && styles.correct, isWrong && styles.wrong, { opacity: pressed && !isCorrect && !isWrong ? 0.82 : 1 }]}
           >
             <WKText variant="body">{opt}</WKText>
             {isCorrect && <WKText color={Colors.status.success}> ✓</WKText>}
             {isWrong && <WKText color={Colors.status.error}> ✗</WKText>}
-          </TouchableOpacity>
+          </Pressable>
         );
       })}
       {selected !== null && (
@@ -87,9 +88,9 @@ export default function LevelTestScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: Colors.bg.primaryDark, paddingHorizontal: Spacing.s20, paddingTop: Spacing.s32 },
+  container: { flex: 1, backgroundColor: Colors.bg.light, paddingHorizontal: Spacing.s20, paddingTop: Spacing.s32 },
   center: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: Spacing.s16 },
-  option: { borderWidth: 1.5, borderColor: Colors.bg.cardDark, borderRadius: 12, padding: Spacing.s16, marginBottom: Spacing.s12, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  option: { borderWidth: 1.5, borderColor: Colors.border.primary, borderRadius: 12, padding: Spacing.s16, marginBottom: Spacing.s12, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   correct: { borderColor: Colors.status.success, backgroundColor: Colors.status.success + '20' },
   wrong: { borderColor: Colors.status.error, backgroundColor: Colors.status.error + '20' },
 });

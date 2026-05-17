@@ -14,10 +14,8 @@ export function DailyGoalCard() {
   return (
     <WKCard style={styles.card}>
       <View style={styles.row}>
-        <WKText variant="heading2">Günlük Hedef</WKText>
-        <WKText variant="body" color={Colors.accent.orange}>
-          🔥 {todayXP} / {DAILY_GOAL_XP} XP
-        </WKText>
+        <WKText style={styles.title}>Günlük Hedef</WKText>
+        <WKText style={styles.xp}>🔥 {todayXP} / {DAILY_GOAL_XP} XP</WKText>
       </View>
       <View
         style={styles.barBg}
@@ -31,20 +29,32 @@ export function DailyGoalCard() {
 }
 
 const styles = StyleSheet.create({
-  card: { marginBottom: Spacing.s16 },
+  card: { marginBottom: Spacing.s12 },
   row: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
     marginBottom: Spacing.s12,
   },
+  title: {
+    fontFamily: 'Inter_600SemiBold',
+    fontSize: 14,
+    color: Colors.text.primary,
+  },
+  xp: {
+    fontFamily: 'Inter_400Regular',
+    fontSize: 12,
+    color: Colors.accent.orange,
+  },
   barBg: {
-    height: 8,
-    backgroundColor: Colors.bg.cardDark,
-    borderRadius: 4,
+    height: 6,
+    backgroundColor: Colors.border.primary,
+    borderRadius: 3,
+    overflow: 'hidden',
   },
   barFill: {
-    height: 8,
-    backgroundColor: Colors.brand.primary,
-    borderRadius: 4,
+    height: 6,
+    backgroundColor: Colors.brand.violet,
+    borderRadius: 3,
   },
 });

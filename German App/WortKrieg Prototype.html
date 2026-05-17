@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>WortKrieg — App Prototype</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:100%;height:100%;background:#0D0D18;overflow:hidden;font-family:'Inter',sans-serif}
+  body{display:flex;align-items:center;justify-content:center}
+  ::-webkit-scrollbar{width:0;height:0}
+  @keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes recPulse{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,0.4)}70%{box-shadow:0 0 0 14px rgba(239,68,68,0)}}
+  @keyframes waveBar{0%,100%{transform:scaleY(.4)}50%{transform:scaleY(1.6)}}
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="ios-frame.jsx"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { useState, useEffect, useRef } = React;
+
+// ─── Tokens ────────────────────────────────────────────────────────
+const C = {
+  // Light surfaces
+  bg:        '#F4F5FA',
+  surface:   '#FFFFFF',
+  surfaceAlt:'#EDEEF5',
+  border:    '#E2E5F0',
+  text:      '#0F1623',
+  textSub:   '#4A5568',
+  textMuted: '#8492A6',
+  // Dark surfaces
+  bgDark:    '#0B1622',
+  surfDark:  '#152032',
+  surfDark2: '#1E3047',
+  textDark:  '#EDF2F7',
+  textDarkSub:'#7B95AD',
+  // Brand
+  violet:    '#6C5FE6',
+  violetLt:  '#EAE8FF',
+  violetMid: '#9B94EE',
+  // Accents — all pastel, strong enough for contrast
+  mint:      '#A8EDCC',
+  mintBg:    '#0D3D28',
+  mintText:  '#1A6644',
+  sky:       '#A0CAFF',
+  skyBg:     '#0C2340',
+  butter:    '#E8DF7A',
+  peach:     '#FFBFA0',
+  blush:     '#F5C0CE',
+  // Status
+  ok:        '#34C77B',
+  warn:      '#F59E0B',
+  err:       '#EF4444',
+  gold:      '#F5C842',
+};
+
+// ─── Atoms ─────────────────────────────────────────────────────────
+const Serif = ({c, s, children}) =>
+  <span style={{fontFamily:"'DM Serif Display',serif", color:c||'inherit', fontSize:s||'inherit'}}>{children}</span>;
+
+// Flat card — no nested borders
+function Card({children, dark, style}) {
+  return (
+    <div style={{
+      background: dark ? C.surfDark : C.surface,
+      borderRadius: 16,
+      border: `1px solid ${dark ? 'rgba(255,255,255,0.07)' : C.border}`,
+      padding: 16,
+      ...style,
+    }}>{children}</div>
+  );
+}
+
+function Chip({children, color=C.violet, bg=C.violetLt, style}) {
+  return (
+    <span style={{
+      display:'inline-block', borderRadius:99, fontSize:10, fontWeight:700,
+      padding:'3px 9px', background:bg, color, fontFamily:'Inter', letterSpacing:.3,
+      ...style,
+    }}>{children}</span>
+  );
+}
+
+function PBar({value, max, color=C.violet, trackColor, style}) {
+  const pct = Math.min(100, Math.max(0, (value/max)*100));
+  return (
+    <div style={{height:4, background:trackColor||C.border, borderRadius:99, overflow:'hidden', ...style}}>
+      <div style={{height:'100%', width:`${pct}%`, background:color, borderRadius:99}}/>
+    </div>
+  );
+}
+
+function Btn({label, onPress, variant='primary', style}) {
+  const vars = {
+    primary: {bg:C.text,    color:'#fff', border:'none'},
+    violet:  {bg:C.violet,  color:'#fff', border:'none'},
+    ghost:   {bg:'transparent', color:C.textSub, border:`1.5px solid ${C.border}`},
+    tint:    {bg:C.violetLt, color:C.violet, border:'none'},
+    darkOut: {bg:'transparent', color:C.textDark, border:`1.5px solid rgba(255,255,255,0.15)`},
+  };
+  const v = vars[variant]||vars.primary;
+  return (
+    <button onClick={onPress} style={{
+      height:46, padding:'0 22px', borderRadius:99,
+      background:v.bg, color:v.color, border:v.border,
+      fontSize:14, fontWeight:600, fontFamily:'Inter',
+      cursor:'pointer', display:'inline-flex', alignItems:'center', justifyContent:'center', gap:6,
+      ...style,
+    }}>{label}</button>
+  );
+}
+
+// ─── Bottom Nav ────────────────────────────────────────────────────
+const NAV_ITEMS = [
+  {id:'dashboard', label:'Ana Sayfa', glyph:'⌂'},
+  {id:'explore',   label:'Keşfet',   glyph:'◎'},
+  {id:'speak',     label:'Konuş',    glyph:'●', primary:true},
+  {id:'leaderboard',label:'Sıralama',glyph:'▲'},
+  {id:'profile',   label:'Profil',   glyph:'◉'},
+];
+
+function BottomNav({active, onNav, dark}) {
+  const navBg  = dark ? C.surfDark  : C.surface;
+  const navBdr = dark ? 'rgba(255,255,255,0.08)' : C.border;
+  const inact  = dark ? C.textDarkSub : C.textMuted;
+  const act    = C.violet;
+
+  return (
+    <div style={{
+      position:'absolute', bottom:0, left:0, right:0,
+      height:78,
+      background:navBg,
+      borderTop:`1px solid ${navBdr}`,
+      display:'flex', alignItems:'center', justifyContent:'space-around',
+      padding:'0 4px 16px',
+      zIndex:100,
+    }}>
+      {NAV_ITEMS.map(item => {
+        const isA = active === item.id;
+        if (item.primary) return (
+          <button key={item.id} onClick={()=>onNav(item.id)} style={{
+            width:50, height:50, borderRadius:99,
+            background:C.violet, border:'none', cursor:'pointer',
+            display:'flex', alignItems:'center', justifyContent:'center',
+            boxShadow:`0 4px 16px ${C.violet}55`,
+            flexShrink:0, marginBottom:6,
+          }}>
+            <span style={{fontSize:22}}>🎙</span>
+          </button>
+        );
+        return (
+          <button key={item.id} onClick={()=>onNav(item.id)} style={{
+            display:'flex', flexDirection:'column', alignItems:'center', gap:3,
+            background:'none', border:'none', cursor:'pointer', padding:'6px 12px',
+            position:'relative',
+          }}>
+            {isA && <div style={{position:'absolute',top:-1,left:'50%',transform:'translateX(-50%)',width:20,height:2.5,background:C.violet,borderRadius:99}}/>}
+            <span style={{fontSize:16, color:isA?act:inact, lineHeight:1}}>{item.glyph}</span>
+            <span style={{fontSize:9, color:isA?act:inact, fontWeight:isA?700:400, fontFamily:'Inter'}}>{item.label}</span>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─── DASHBOARD ─────────────────────────────────────────────────────
+function Dashboard({onNav}) {
+  const [toast, setToast] = useState(true);
+  useEffect(()=>{ const t=setTimeout(()=>setToast(false),3500); return()=>clearTimeout(t); },[]);
+
+  return (
+    <div style={{flex:1, background:C.bg, overflowY:'auto', paddingBottom:80}}>
+      {/* Toast */}
+      {toast && (
+        <div style={{
+          position:'absolute', top:10, left:14, right:14, zIndex:200,
+          background:C.text, borderRadius:14, padding:'11px 14px',
+          display:'flex', alignItems:'center', gap:10,
+          boxShadow:'0 6px 20px rgba(0,0,0,0.22)', animation:'slideDown .3s ease',
+        }}>
+          <span style={{fontSize:18}}>🏆</span>
+          <div style={{flex:1}}>
+            <div style={{fontSize:13, fontWeight:700, color:'#fff'}}>Yeni Rozet Kazandın!</div>
+            <div style={{fontSize:11, color:'rgba(255,255,255,0.5)', marginTop:1}}>7 günlük seri tamamlandı</div>
+          </div>
+          <button onClick={()=>setToast(false)} style={{background:'none',border:'none',color:'rgba(255,255,255,0.4)',cursor:'pointer',fontSize:16,lineHeight:1}}>×</button>
+        </div>
+      )}
+
+      {/* Header */}
+      <div style={{padding:'18px 18px 10px', display:'flex', justifyContent:'space-between', alignItems:'flex-start'}}>
+        <div>
+          <Serif s={28} c={C.text}><span style={{display:'block', lineHeight:1.1}}>WortKrieg</span></Serif>
+          <div style={{fontSize:12, color:C.textMuted, marginTop:4}}>Bugün ne öğreniyoruz?</div>
+        </div>
+        <div style={{display:'flex', flexDirection:'column', alignItems:'flex-end', gap:5}}>
+          <div style={{background:C.text, borderRadius:99, padding:'3px 10px'}}>
+            <span style={{fontSize:10, color:C.gold, fontWeight:700}}>Seviye 7</span>
+          </div>
+          <span style={{fontSize:13, color:C.text}}>🔥 14</span>
+          <span style={{fontSize:11, color:C.textSub, fontWeight:600}}>1 240 XP</span>
+        </div>
+      </div>
+
+      <div style={{padding:'0 14px', display:'flex', flexDirection:'column', gap:10}}>
+
+        {/* Hero card */}
+        <div onClick={()=>onNav('speak')} style={{
+          background:C.violet, borderRadius:20, padding:'18px 20px',
+          position:'relative', overflow:'hidden', cursor:'pointer',
+        }}>
+          {/* decorative circle */}
+          <div style={{position:'absolute',right:-18,top:-28,width:110,height:110,borderRadius:'50%',background:'rgba(255,255,255,0.08)',pointerEvents:'none'}}/>
+          <div style={{fontSize:11, color:'rgba(255,255,255,0.65)', marginBottom:5}}>Kaldığın yerden devam et</div>
+          <Serif s={21} c="#fff"><span style={{display:'block', lineHeight:1.2, marginBottom:3}}>Seyahat Kelimeleri</span></Serif>
+          <div style={{fontSize:11, color:'rgba(255,255,255,0.55)', marginBottom:14}}>Ders 6 · 12 dk kaldı</div>
+          <div style={{display:'flex', alignItems:'center', gap:10}}>
+            <div style={{
+              background:'rgba(255,255,255,0.95)', borderRadius:99,
+              padding:'8px 16px', fontSize:12, fontWeight:700, color:C.violet,
+              flexShrink:0,
+            }}>▶ Devam Et</div>
+            <div style={{flex:1}}>
+              <PBar value={67} max={100} color="rgba(255,255,255,0.9)" trackColor="rgba(255,255,255,0.2)"/>
+              <div style={{fontSize:9, color:'rgba(255,255,255,0.45)', marginTop:4}}>%67 tamamlandı</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Stats grid — 2x2 */}
+        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:8}}>
+          {[
+            {bg:C.peach,   ic:'🔥', val:'14',   lbl:'Streak · gün'},
+            {bg:C.butter,  ic:'⚡', val:'320',   lbl:'XP · bugün'},
+            {bg:C.violetLt,ic:'🏆', val:'#42',   lbl:'Sıralama · hafta'},
+            {bg:C.sky,     ic:'🎯', val:'86%',   lbl:'Doğruluk · son'},
+          ].map((s,i)=>(
+            <Card key={i} style={{padding:14}}>
+              <div style={{
+                width:32, height:32, borderRadius:'50%', background:s.bg,
+                display:'flex', alignItems:'center', justifyContent:'center',
+                fontSize:14, marginBottom:10,
+              }}>{s.ic}</div>
+              <div style={{fontSize:22, fontWeight:800, color:C.text, lineHeight:1}}>{s.val}</div>
+              <div style={{fontSize:10, color:C.textMuted, marginTop:4, lineHeight:1.3}}>{s.lbl}</div>
+            </Card>
+          ))}
+        </div>
+
+        {/* Daily Challenge */}
+        <div style={{background:C.mintBg, borderRadius:18, padding:'16px 16px 14px'}}>
+          <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-start', gap:8, marginBottom:10}}>
+            <div style={{flex:1, minWidth:0}}>
+              <div style={{fontSize:9, color:C.mint, fontWeight:700, letterSpacing:1.2, marginBottom:5}}>GÜNLÜK GÖREV</div>
+              <Serif s={18} c="#fff"><span style={{display:'block', lineHeight:1.25}}>B1 Kelime Savaşı</span></Serif>
+              <div style={{fontSize:11, color:'rgba(255,255,255,0.45)', marginTop:4}}>⏱ 3:42 kaldı · +50 XP</div>
+            </div>
+            <Chip bg="rgba(168,237,204,0.15)" color={C.mint} style={{flexShrink:0, marginTop:2}}>YENİ</Chip>
+          </div>
+          <PBar value={3} max={10} color={C.mint} trackColor="rgba(255,255,255,0.1)"/>
+          <div style={{fontSize:9, color:'rgba(255,255,255,0.3)', marginTop:5}}>3 / 10 tamamlandı</div>
+        </div>
+
+        {/* Tekrar */}
+        <Card style={{display:'flex', alignItems:'center', gap:12, padding:'13px 14px'}}>
+          <span style={{fontSize:20, flexShrink:0}}>🧠</span>
+          <div style={{flex:1, minWidth:0}}>
+            <div style={{fontSize:13, fontWeight:600, color:C.text}}>Tekrar Zamanı!</div>
+            <div style={{fontSize:11, color:C.textMuted, marginTop:2}}>28 kelime seni bekliyor</div>
+          </div>
+          <div style={{
+            background:C.violet, borderRadius:99,
+            minWidth:26, height:26, display:'flex', alignItems:'center', justifyContent:'center',
+            padding:'0 8px', flexShrink:0,
+          }}>
+            <span style={{fontSize:11, fontWeight:700, color:'#fff'}}>28</span>
+          </div>
+        </Card>
+
+        {/* Battle */}
+        <div onClick={()=>onNav('leaderboard')} style={{
+          background:'linear-gradient(135deg, #4E3BB5 0%, #1A5FB4 100%)',
+          borderRadius:16, padding:'14px 16px',
+          display:'flex', alignItems:'center', gap:12, cursor:'pointer',
+        }}>
+          <span style={{fontSize:24, flexShrink:0}}>⚔️</span>
+          <div style={{flex:1, minWidth:0}}>
+            <div style={{fontSize:14, fontWeight:800, color:'#fff'}}>WortKampf</div>
+            <div style={{fontSize:11, color:'rgba(255,255,255,0.6)', marginTop:2}}>Canlı savaş · ELO kazan!</div>
+          </div>
+          <span style={{color:'rgba(255,255,255,0.6)', fontSize:18, flexShrink:0}}>›</span>
+        </div>
+
+        {/* Son çalışılan */}
+        <div>
+          <div style={{fontSize:13, fontWeight:700, color:C.text, marginBottom:9}}>Son Çalışılan</div>
+          <div style={{display:'flex', gap:8, overflowX:'auto', paddingBottom:4}}>
+            {[
+              {color:C.sky,      title:'Seyahat',      sub:'45 kelime', prog:67},
+              {color:C.mint,     title:'Günlük Hayat', sub:'62 kelime', prog:32},
+              {color:C.violetLt, title:'Goethe B1',    sub:'120 kelime',prog:18},
+            ].map((u,i)=>(
+              <div key={i} onClick={()=>onNav('explore')} style={{
+                minWidth:118, background:C.surface, borderRadius:14,
+                border:`1px solid ${C.border}`, padding:12, cursor:'pointer', flexShrink:0,
+              }}>
+                <div style={{width:28, height:28, borderRadius:8, background:u.color, marginBottom:9}}/>
+                <div style={{fontSize:12, fontWeight:700, color:C.text}}>{u.title}</div>
+                <div style={{fontSize:10, color:C.textMuted, marginBottom:8, marginTop:1}}>{u.sub}</div>
+                <PBar value={u.prog} max={100} color={C.violet}/>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── EXPLORE ───────────────────────────────────────────────────────
+function Explore({onNav}) {
+  const [q, setQ] = useState('');
+  const [filt, setFilt] = useState('Tümü');
+  const filters = ['Tümü','A1–A2','B1–B2','Gramer','Konuşma'];
+
+  const playlists = [
+    {title:'Goethe B1',    desc:'Sınava hazırlık · 30 gün', emoji:'🎓', grad:'linear-gradient(135deg,#3D1FA8,#6C5FE6)'},
+    {title:'Günlük Almanca',desc:'Market, doktor, ulaşım',  emoji:'🏪', grad:'linear-gradient(135deg,#1560B0,#1A8FD1)'},
+    {title:'Deyimler',     desc:'Almanlar gibi konuş',       emoji:'💬', grad:'linear-gradient(135deg,#C04800,#E87A20)'},
+    {title:'Gramer Ustası',desc:"A1'den C1'e",               emoji:'📚', grad:'linear-gradient(135deg,#4E1FA0,#1A8FD1)'},
+  ];
+  const cats = [
+    {name:'Seyahat',   icon:'✈️', color:C.sky,      n:45},
+    {name:'İş Hayatı', icon:'💼', color:C.violetLt, n:82},
+    {name:'Yiyecek',   icon:'🍽️', color:C.peach,    n:36},
+    {name:'Sağlık',    icon:'❤️', color:C.blush,    n:54},
+    {name:'Eğitim',    icon:'📖', color:C.mint,     n:68},
+    {name:'Teknoloji', icon:'💻', color:C.butter,   n:41},
+  ];
+
+  return (
+    <div style={{flex:1, background:C.bg, overflowY:'auto', paddingBottom:80}}>
+      <div style={{padding:'18px 16px 0'}}>
+        <Serif s={26} c={C.text}><span style={{display:'block'}}>Keşfet</span></Serif>
+        <div style={{fontSize:12, color:C.textMuted, marginTop:3, marginBottom:13}}>Öğrenmek istediğin her şey burada</div>
+
+        {/* Search */}
+        <div style={{
+          display:'flex', alignItems:'center', gap:9,
+          background:C.surface, borderRadius:13, border:`1px solid ${C.border}`,
+          padding:'10px 13px', marginBottom:11,
+        }}>
+          <span style={{fontSize:14, color:C.textMuted}}>🔍</span>
+          <input value={q} onChange={e=>setQ(e.target.value)} placeholder="Kelime ara… (Almanca veya Türkçe)"
+            style={{flex:1,border:'none',outline:'none',fontSize:13,color:C.text,background:'transparent',fontFamily:'Inter'}}/>
+          {q && <button onClick={()=>setQ('')} style={{background:'none',border:'none',color:C.textMuted,cursor:'pointer',fontSize:13}}>✕</button>}
+        </div>
+
+        {/* Filters */}
+        <div style={{display:'flex', gap:6, overflowX:'auto', paddingBottom:6}}>
+          {filters.map(f=>(
+            <button key={f} onClick={()=>setFilt(f)} style={{
+              borderRadius:99, padding:'6px 13px', fontSize:11, fontWeight:600,
+              fontFamily:'Inter', cursor:'pointer', whiteSpace:'nowrap',
+              background: filt===f ? C.violet : C.surface,
+              color:       filt===f ? '#fff'    : C.textSub,
+              border:      filt===f ? 'none'    : `1px solid ${C.border}`,
+            }}>{f}</button>
+          ))}
+        </div>
+      </div>
+
+      <div style={{padding:'14px 14px 0', display:'flex', flexDirection:'column', gap:16}}>
+
+        {/* Playlists */}
+        <div>
+          <div style={{fontSize:13, fontWeight:700, color:C.text, marginBottom:9}}>✨ Öne Çıkanlar</div>
+          <div style={{display:'flex', gap:8, overflowX:'auto', paddingBottom:4}}>
+            {playlists.map((p,i)=>(
+              <div key={i} style={{
+                minWidth:144, borderRadius:18, padding:'14px 13px',
+                background:p.grad, cursor:'pointer', flexShrink:0,
+                display:'flex', flexDirection:'column', gap:5,
+              }}>
+                <span style={{fontSize:22}}>{p.emoji}</span>
+                <div style={{fontSize:13, fontWeight:800, color:'#fff', lineHeight:1.2}}>{p.title}</div>
+                <div style={{fontSize:10, color:'rgba(255,255,255,0.65)', lineHeight:1.4}}>{p.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Battle promo */}
+        <div onClick={()=>onNav('leaderboard')} style={{
+          background:'linear-gradient(90deg,#4E3BB5,#1560B0)',
+          borderRadius:14, padding:'14px 16px',
+          display:'flex', alignItems:'center', cursor:'pointer',
+        }}>
+          <div style={{flex:1}}>
+            <div style={{fontSize:14, fontWeight:800, color:'#fff'}}>⚔️ WortKampf</div>
+            <div style={{fontSize:11, color:'rgba(255,255,255,0.6)', marginTop:2}}>Canlı 1v1 savaşa katıl · ELO kazan!</div>
+          </div>
+          <span style={{color:'rgba(255,255,255,0.6)', fontSize:22}}>›</span>
+        </div>
+
+        {/* Categories */}
+        <div>
+          <div style={{fontSize:13, fontWeight:700, color:C.text, marginBottom:9}}>📂 Kategoriler</div>
+          <div style={{display:'flex', flexDirection:'column', gap:7}}>
+            {cats.map((c,i)=>(
+              <Card key={i} style={{display:'flex', alignItems:'center', gap:11, padding:'11px 13px', cursor:'pointer'}}>
+                <div style={{width:38, height:38, borderRadius:11, background:c.color, display:'flex', alignItems:'center', justifyContent:'center', fontSize:17, flexShrink:0}}>{c.icon}</div>
+                <div style={{flex:1, minWidth:0}}>
+                  <div style={{fontSize:13, fontWeight:600, color:C.text}}>{c.name}</div>
+                  <div style={{fontSize:11, color:C.textMuted, marginTop:1}}>{c.n} kelime</div>
+                </div>
+                <span style={{color:C.textMuted, fontSize:18, flexShrink:0}}>›</span>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Quick stats */}
+        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:8}}>
+          {[['1 240','Kelime'],['48','Ünite'],['12','Kategori']].map(([n,l],i)=>(
+            <Card key={i} style={{textAlign:'center', padding:'13px 6px'}}>
+              <div style={{fontSize:19, fontWeight:900, color:C.violet}}>{n}</div>
+              <div style={{fontSize:10, color:C.textMuted, marginTop:3}}>{l}</div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── SPEAKING ──────────────────────────────────────────────────────
+function Speak() {
+  const [state, setState] = useState('idle');
+  const [idx,   setIdx]   = useState(0);
+  const [score, setScore] = useState(null);
+  const [scores, setScores] = useState([]);
+
+  const words = [
+    {de:'Reisepass',  tr:'Pasaport',   ph:'≈ "Rayze-pas"',    ex:'Ich brauche meinen Reisepass.',    exTr:'Pasaportuma ihtiyacım var.'},
+    {de:'Flughafen',  tr:'Havalimanı', ph:'≈ "Flug-haafen"',  ex:'Der Flughafen ist sehr groß.',    exTr:'Havalimanı çok büyük.'},
+    {de:'Gepäck',     tr:'Bagaj',      ph:'≈ "Ge-pek"',       ex:'Mein Gepäck ist zu schwer.',       exTr:'Bagajım çok ağır.'},
+  ];
+  const w = words[idx];
+  const SCORE_COLOR = ['','#EF4444','#F59E0B','#F59E0B','#34C77B',C.gold];
+  const SCORE_LABEL = ['','Zayıf','Gelişmeli','Fena Değil','İyi!','Mükemmel! ★'];
+
+  function handleMic() {
+    if (state==='idle') { setState('recording'); return; }
+    if (state==='recording') {
+      setState('processing');
+      setTimeout(()=>{ setScore(4); setState('result'); }, 1500);
+    }
+  }
+  function next() {
+    setScores(p=>[...p, score]);
+    if (idx+1 < words.length) { setIdx(i=>i+1); setScore(null); setState('idle'); }
+    else setState('done');
+  }
+
+  if (state==='done') {
+    const all = [...scores, score].filter(Boolean);
+    const avg = all.length ? (all.reduce((a,b)=>a+b,0)/all.length).toFixed(1) : 0;
+    return (
+      <div style={{flex:1,background:C.bgDark,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',padding:'32px 22px',gap:18}}>
+        <span style={{fontSize:52}}>{Number(avg)>=4?'🎤':'💪'}</span>
+        <Serif s={26} c={C.textDark}><span style={{textAlign:'center',display:'block'}}>Telaffuz Tamamlandı!</span></Serif>
+        <Card dark style={{width:'100%'}}>
+          {[
+            ['Ortalama Skor', `${avg} / 5`, SCORE_COLOR[Math.round(avg)]||C.violet],
+            ['Mükemmel',      `${all.filter(s=>s===5).length} kelime ★`, C.gold],
+            ['XP Kazanıldı',  `+${words.length*8}`, C.violet],
+          ].map(([l,v,clr],i)=>(
+            <div key={i} style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'10px 0',borderBottom:i<2?`1px solid rgba(255,255,255,0.06)`:'none'}}>
+              <span style={{fontSize:12,color:C.textDarkSub}}>{l}</span>
+              <span style={{fontSize:17,fontWeight:700,color:clr}}>{v}</span>
+            </div>
+          ))}
+        </Card>
+        <Btn label="Tekrar Başla" variant="darkOut" onPress={()=>{setIdx(0);setScore(null);setScores([]);setState('idle');}} style={{width:'100%'}}/>
+      </div>
+    );
+  }
+
+  return (
+    <div style={{flex:1,background:C.bgDark,display:'flex',flexDirection:'column',padding:'14px 18px 14px',overflow:'hidden'}}>
+      {/* Progress row */}
+      <div style={{display:'flex',alignItems:'center',gap:10,marginBottom:18}}>
+        <span style={{fontSize:11,color:C.textDarkSub,whiteSpace:'nowrap'}}>{idx+1}/{words.length}</span>
+        <PBar value={idx+1} max={words.length} color={C.violet} trackColor={C.surfDark2} style={{flex:1}}/>
+        <button style={{background:'none',border:'none',cursor:'pointer',color:C.textDarkSub,fontSize:18,lineHeight:1}}>✕</button>
+      </div>
+
+      {/* Word card */}
+      <Card dark style={{textAlign:'center',padding:'22px 18px',marginBottom:10,display:'flex',flexDirection:'column',gap:7,alignItems:'center'}}>
+        <Chip bg={C.violetLt} color={C.violet}>A2 · Seyahat</Chip>
+        <Serif s={34} c={C.textDark}><span style={{display:'block',lineHeight:1.15,marginTop:6}}>{w.de}</span></Serif>
+        <span style={{fontSize:12,color:C.textDarkSub,fontStyle:'italic'}}>{w.ph}</span>
+        <span style={{fontSize:13,color:C.textDarkSub}}>{w.tr}</span>
+        <button style={{
+          marginTop:5,background:C.surfDark2,border:`1px solid rgba(255,255,255,0.08)`,
+          borderRadius:99,padding:'7px 15px',fontSize:11,color:C.textDarkSub,
+          cursor:'pointer',fontFamily:'Inter',
+        }}>🔈 Tekrar Dinle</button>
+      </Card>
+
+      {/* Example */}
+      <Card dark style={{padding:'11px 14px',marginBottom:16}}>
+        <div style={{fontSize:12,color:C.textDark,lineHeight:1.5}}>{w.ex}</div>
+        <div style={{fontSize:10,color:C.textDarkSub,marginTop:4,lineHeight:1.4}}>{w.exTr}</div>
+      </Card>
+
+      {/* Mic area */}
+      <div style={{flex:1,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:14}}>
+        {state==='idle'   && <span style={{fontSize:12,color:C.textDarkSub,textAlign:'center'}}>Butona bas ve kelimeyi söyle</span>}
+        {state==='recording' && <span style={{fontSize:12,color:C.err,textAlign:'center'}}>Dinliyorum… durdurmak için tekrar bas</span>}
+        {state==='processing' && (
+          <div style={{display:'flex',flexDirection:'column',alignItems:'center',gap:8}}>
+            <div style={{display:'flex',gap:3,alignItems:'center',height:24}}>
+              {[0,1,2,3,4].map(i=>(
+                <div key={i} style={{
+                  width:3,height:16,background:C.violet,borderRadius:2,
+                  animation:`waveBar .7s ease-in-out ${i*0.13}s infinite`,
+                  transformOrigin:'bottom',
+                }}/>
+              ))}
+            </div>
+            <span style={{fontSize:11,color:C.textDarkSub}}>Telaffuz analiz ediliyor…</span>
+          </div>
+        )}
+
+        <button onClick={handleMic} disabled={state==='processing'} style={{
+          width:76,height:76,borderRadius:'50%',fontSize:28,
+          border:`2px solid ${state==='recording'?C.err:state==='processing'?C.surfDark2:C.violet}`,
+          background:state==='recording'?`rgba(239,68,68,0.12)`:state==='processing'?C.surfDark2:`rgba(108,95,230,0.14)`,
+          cursor:state==='processing'?'not-allowed':'pointer',
+          display:'flex',alignItems:'center',justifyContent:'center',
+          animation:state==='recording'?'recPulse 1.2s ease-in-out infinite':undefined,
+          transition:'border-color .2s,background .2s',
+        }}>
+          <span>{state==='recording'?'⏹':state==='processing'?'⏳':'🎙️'}</span>
+        </button>
+      </div>
+
+      {/* Result */}
+      {state==='result' && score && (
+        <Card dark style={{
+          alignItems:'center',textAlign:'center',display:'flex',flexDirection:'column',gap:9,
+          padding:18,border:`1px solid ${SCORE_COLOR[score]}40`,
+        }}>
+          <div style={{display:'flex',gap:3}}>
+            {[1,2,3,4,5].map(i=>(
+              <span key={i} style={{fontSize:18,color:C.gold,opacity:i<=score?1:0.18}}>★</span>
+            ))}
+          </div>
+          <span style={{fontSize:16,fontWeight:700,color:SCORE_COLOR[score]}}>{SCORE_LABEL[score]}</span>
+          <span style={{fontSize:11,color:C.textDarkSub,lineHeight:1.5}}>
+            {score>=4?'Harika! Vurguyu iyi yakaladın.':'İlk sesi güzel söyledin. Son heceyi kısalt.'}
+          </span>
+          <div style={{display:'flex',gap:8,width:'100%',marginTop:4}}>
+            <button onClick={()=>{setScore(null);setState('idle');}} style={{
+              flex:1,background:'none',border:`1px solid rgba(255,255,255,0.12)`,
+              borderRadius:99,padding:'10px',fontSize:11,color:C.textDarkSub,
+              cursor:'pointer',fontFamily:'Inter',
+            }}>Tekrar Dene</button>
+            <Btn label={idx+1<words.length?'Sonraki →':'Bitir'} onPress={next} variant="violet" style={{flex:1}}/>
+          </div>
+        </Card>
+      )}
+    </div>
+  );
+}
+
+// ─── LEADERBOARD ───────────────────────────────────────────────────
+function Leaderboard() {
+  const [tab, setTab] = useState('weekly');
+  const users = [
+    {rank:1,  name:'Elif K.',    xp:4820, av:'👩',  ch:'+3'},
+    {rank:2,  name:'Mehmet A.', xp:4215, av:'👨',  ch:'-1'},
+    {rank:3,  name:'Zeynep T.', xp:3970, av:'👩‍🦱', ch:'+1'},
+    {rank:4,  name:'Ali R.',    xp:3640, av:'🧑',  ch:'0'},
+    {rank:5,  name:'Selin B.',  xp:3210, av:'👩‍🦳', ch:'+2'},
+    {rank:42, name:'Sen',       xp:1240, av:'🙂',  ch:'+5', me:true},
+  ];
+  const medals = ['🥇','🥈','🥉'];
+
+  return (
+    <div style={{flex:1,background:C.bgDark,overflowY:'auto',paddingBottom:80}}>
+      <div style={{padding:'20px 18px 14px'}}>
+        <Serif s={26} c={C.textDark}><span style={{display:'block'}}>Sıralama</span></Serif>
+        <div style={{fontSize:12,color:C.textDarkSub,marginTop:3}}>Haftanın en iyileri</div>
+      </div>
+
+      {/* My rank card */}
+      <div style={{
+        margin:'0 14px 13px',
+        background:'linear-gradient(135deg,#3D1FA8,#4E3BB5)',
+        borderRadius:18,padding:'16px 18px',
+      }}>
+        <div style={{fontSize:9,color:'rgba(255,255,255,0.45)',letterSpacing:1.2,marginBottom:8}}>SENİN SIRALAMAN</div>
+        <div style={{display:'flex',alignItems:'center',gap:12}}>
+          <div style={{width:44,height:44,borderRadius:'50%',background:'rgba(255,255,255,0.12)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:22}}>🙂</div>
+          <div style={{flex:1}}>
+            <div style={{fontSize:14,fontWeight:700,color:'#fff'}}>Sen</div>
+            <div style={{fontSize:11,color:'rgba(255,255,255,0.55)',marginTop:2}}>1 240 XP bu hafta</div>
+          </div>
+          <div style={{textAlign:'right'}}>
+            <Serif s={28} c="#fff"><span style={{display:'block',lineHeight:1}}>#42</span></Serif>
+            <div style={{fontSize:10,color:'rgba(255,255,255,0.45)',marginTop:2}}>↑ +5 bu hafta</div>
+          </div>
+        </div>
+        <PBar value={1240} max={4820} color="rgba(255,255,255,0.85)" trackColor="rgba(255,255,255,0.12)" style={{marginTop:12}}/>
+        <div style={{fontSize:9,color:'rgba(255,255,255,0.35)',marginTop:5}}>3 580 XP sonra #1 olursun</div>
+      </div>
+
+      {/* Tab */}
+      <div style={{display:'flex',margin:'0 14px 12px',background:C.surfDark2,borderRadius:99,padding:3}}>
+        {['weekly','alltime'].map(t=>(
+          <button key={t} onClick={()=>setTab(t)} style={{
+            flex:1,padding:'8px 0',borderRadius:99,
+            background:tab===t?C.violet:'transparent',
+            border:'none',cursor:'pointer',
+            fontSize:11,fontWeight:600,fontFamily:'Inter',
+            color:tab===t?'#fff':C.textDarkSub,
+          }}>{t==='weekly'?'Bu Hafta':'Tüm Zamanlar'}</button>
+        ))}
+      </div>
+
+      {/* List */}
+      <div style={{padding:'0 14px',display:'flex',flexDirection:'column',gap:7}}>
+        {users.map((u,i)=>(
+          <div key={i} style={{
+            display:'flex',alignItems:'center',gap:11,
+            background:u.me?`rgba(108,95,230,0.15)`:C.surfDark,
+            border:`1px solid ${u.me?`rgba(108,95,230,0.4)`:'rgba(255,255,255,0.06)'}`,
+            borderRadius:14,padding:'11px 13px',
+          }}>
+            <span style={{fontSize:u.rank<=3?16:13,width:24,textAlign:'center',color:u.rank<=3?'#fff':C.textDarkSub,fontWeight:700}}>
+              {u.rank<=3?medals[u.rank-1]:`#${u.rank}`}
+            </span>
+            <div style={{width:35,height:35,borderRadius:'50%',background:C.surfDark2,display:'flex',alignItems:'center',justifyContent:'center',fontSize:18,flexShrink:0}}>{u.av}</div>
+            <div style={{flex:1,minWidth:0}}>
+              <div style={{fontSize:13,fontWeight:u.me?700:500,color:C.textDark}}>{u.name}</div>
+              <div style={{fontSize:10,color:C.textDarkSub,marginTop:1}}>{u.xp.toLocaleString()} XP</div>
+            </div>
+            <span style={{fontSize:11,fontWeight:600,color:u.ch.startsWith('+')?C.ok:u.ch==='0'?C.textDarkSub:C.err}}>
+              {u.ch!=='0'?u.ch:'—'}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── PROFILE ───────────────────────────────────────────────────────
+function Profile() {
+  const [tab, setTab] = useState('progress');
+  const badges = [
+    {ic:'🔥',label:'7 Gün Seri',  color:C.peach},
+    {ic:'🎤',label:'İlk Kayıt',   color:C.mint},
+    {ic:'⚔️',label:'İlk Savaş',   color:C.violetLt},
+    {ic:'📚',label:'B1 Bitirildi',color:C.sky},
+    {ic:'🏆',label:'Top 50',      color:C.butter},
+    {ic:'🌟',label:'1000 XP',     color:C.blush},
+  ];
+  return (
+    <div style={{flex:1,background:C.bg,overflowY:'auto',paddingBottom:80}}>
+      {/* Hero header */}
+      <div style={{background:C.text,padding:'22px 18px 18px',display:'flex',flexDirection:'column',alignItems:'center',gap:10}}>
+        <div style={{width:64,height:64,borderRadius:'50%',background:C.violet,display:'flex',alignItems:'center',justifyContent:'center',fontSize:32}}>🙂</div>
+        <div style={{textAlign:'center'}}>
+          <Serif s={20} c="#fff"><span style={{display:'block'}}>Ahmet Yılmaz</span></Serif>
+          <div style={{fontSize:11,color:'rgba(255,255,255,0.4)',marginTop:3}}>@ahmetyilmaz · B1 Seviyesi</div>
+        </div>
+        <div style={{display:'flex',gap:20,marginTop:2}}>
+          {[['1 240','XP'],['14','Streak'],['#42','Sıralama']].map(([v,l])=>(
+            <div key={l} style={{textAlign:'center'}}>
+              <div style={{fontSize:18,fontWeight:700,color:'#fff'}}>{v}</div>
+              <div style={{fontSize:9,color:'rgba(255,255,255,0.35)',marginTop:2}}>{l}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Tabs */}
+      <div style={{display:'flex',background:C.surface,borderBottom:`1px solid ${C.border}`}}>
+        {[['progress','İlerleme'],['badges','Rozetler'],['stats','İstatistik']].map(([t,l])=>(
+          <button key={t} onClick={()=>setTab(t)} style={{
+            flex:1,padding:'12px 0',background:'none',border:'none',cursor:'pointer',
+            fontSize:11,fontWeight:600,fontFamily:'Inter',
+            color:tab===t?C.violet:C.textMuted,
+            borderBottom:tab===t?`2px solid ${C.violet}`:'2px solid transparent',
+          }}>{l}</button>
+        ))}
+      </div>
+
+      <div style={{padding:14,display:'flex',flexDirection:'column',gap:9}}>
+        {tab==='progress' && [
+          [C.sky,      'Seyahat',      67,'45/67'],
+          [C.violet,   'İş Hayatı',    42,'35/82'],
+          [C.mint,     'Günlük Hayat', 88,'55/62'],
+          [C.butter,   'Gramer',       25,'30/120'],
+        ].map(([clr,l,p,w],i)=>(
+          <Card key={i} style={{padding:14}}>
+            <div style={{display:'flex',justifyContent:'space-between',marginBottom:9}}>
+              <span style={{fontSize:13,fontWeight:600,color:C.text}}>{l}</span>
+              <span style={{fontSize:10,color:C.textMuted}}>{w} kelime</span>
+            </div>
+            <PBar value={p} max={100} color={clr}/>
+            <div style={{fontSize:10,color:C.textMuted,marginTop:5}}>%{p} tamamlandı</div>
+          </Card>
+        ))}
+
+        {tab==='badges' && (
+          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr 1fr',gap:8}}>
+            {badges.map((b,i)=>(
+              <Card key={i} style={{display:'flex',flexDirection:'column',alignItems:'center',gap:7,padding:'14px 8px'}}>
+                <div style={{width:38,height:38,borderRadius:'50%',background:b.color,display:'flex',alignItems:'center',justifyContent:'center',fontSize:18}}>{b.ic}</div>
+                <span style={{fontSize:9,color:C.textMuted,textAlign:'center',lineHeight:1.4}}>{b.label}</span>
+              </Card>
+            ))}
+          </div>
+        )}
+
+        {tab==='stats' && [
+          ['📅','Toplam Gün','42 gün'],['🎤','Telaffuz Oturumu','87'],
+          ['📖','Öğrenilen Kelime','312'],['⚔️','Savaş Kazanılan','14/20'],
+          ['🎯','Doğruluk Ort.','%82.4'],['🔥','En Uzun Seri','21 gün'],
+        ].map(([ic,l,v],i)=>(
+          <Card key={i} style={{display:'flex',alignItems:'center',gap:12,padding:'12px 14px'}}>
+            <span style={{fontSize:19,width:28,textAlign:'center',flexShrink:0}}>{ic}</span>
+            <span style={{flex:1,fontSize:12,color:C.text}}>{l}</span>
+            <span style={{fontSize:13,fontWeight:700,color:C.violet}}>{v}</span>
+          </Card>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── App Shell ─────────────────────────────────────────────────────
+function App({initialScreen}) {
+  const [screen, setScreen] = useState(initialScreen||'dashboard');
+  const dark = ['speak','leaderboard'].includes(screen);
+  const screens = {
+    dashboard: <Dashboard onNav={setScreen}/>,
+    explore:   <Explore onNav={setScreen}/>,
+    speak:     <Speak/>,
+    leaderboard:<Leaderboard/>,
+    profile:   <Profile/>,
+  };
+  return (
+    <div style={{width:'100%',height:'100%',display:'flex',flexDirection:'column',background:dark?C.bgDark:C.bg,position:'relative',overflow:'hidden',borderRadius:40}}>
+      {screens[screen]}
+      <BottomNav active={screen} onNav={setScreen} dark={dark}/>
+    </div>
+  );
+}
+
+// ─── Root ──────────────────────────────────────────────────────────
+const SCREEN_LABELS = {
+  dashboard:'01 — Ana Sayfa', explore:'02 — Keşfet',
+  speak:'03 — Telaffuz', leaderboard:'04 — Sıralama', profile:'05 — Profil',
+};
+
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{"bgColor":"#0D0D18","deviceScale":0.9,"showLabel":true}/*EDITMODE-END*/;
+
+function Root() {
+  const [tweaks, setTweaks] = useState(TWEAK_DEFAULTS);
+  const [tweakOpen, setTweakOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState('dashboard');
+
+  useEffect(()=>{
+    const h = e => {
+      if(e.data?.type==='__activate_edit_mode')   setTweakOpen(true);
+      if(e.data?.type==='__deactivate_edit_mode') setTweakOpen(false);
+    };
+    window.addEventListener('message',h);
+    window.parent.postMessage({type:'__edit_mode_available'},'*');
+    return ()=>window.removeEventListener('message',h);
+  },[]);
+
+  function setTweak(k,v){
+    const n={...tweaks,[k]:v};
+    setTweaks(n);
+    window.parent.postMessage({type:'__edit_mode_set_keys',edits:n},'*');
+  }
+
+  const dark = ['speak','leaderboard'].includes(activeTab);
+
+  return (
+    <div style={{width:'100vw',height:'100vh',background:tweaks.bgColor,display:'flex',alignItems:'center',justifyContent:'center',flexDirection:'column',gap:16,transition:'background .3s'}}>
+      {/* Screen tabs */}
+      <div style={{display:'flex',gap:6,flexWrap:'wrap',justifyContent:'center'}}>
+        {Object.entries(SCREEN_LABELS).map(([id,label])=>(
+          <button key={id} onClick={()=>setActiveTab(id)} style={{
+            padding:'5px 13px',borderRadius:99,fontSize:10,fontWeight:600,fontFamily:'Inter',cursor:'pointer',
+            background:activeTab===id?C.violet:'rgba(255,255,255,0.07)',
+            color:activeTab===id?'#fff':'rgba(255,255,255,0.45)',border:'none',
+          }}>{label}</button>
+        ))}
+      </div>
+
+      {/* Device */}
+      <div style={{transform:`scale(${tweaks.deviceScale})`,transformOrigin:'center center'}}>
+        <IOSDevice dark={dark}>
+          <App key={activeTab} initialScreen={activeTab}/>
+        </IOSDevice>
+      </div>
+
+      {tweaks.showLabel && (
+        <div style={{fontSize:10,color:'rgba(255,255,255,0.2)',fontFamily:'Inter',letterSpacing:1.2}}>{SCREEN_LABELS[activeTab]}</div>
+      )}
+
+      {/* Tweaks */}
+      {tweakOpen && (
+        <div style={{position:'fixed',bottom:20,right:20,background:'#16162A',border:'1px solid rgba(255,255,255,0.09)',borderRadius:16,padding:18,width:240,boxShadow:'0 8px 32px rgba(0,0,0,0.5)',zIndex:9999,display:'flex',flexDirection:'column',gap:14,fontFamily:'Inter'}}>
+          <div style={{fontSize:13,fontWeight:700,color:'#fff'}}>Tweaks</div>
+          <label style={{display:'flex',flexDirection:'column',gap:6}}>
+            <span style={{fontSize:10,color:'rgba(255,255,255,0.4)'}}>Arkaplan</span>
+            <div style={{display:'flex',gap:7}}>
+              {['#0D0D18','#0B1622','#1A1028','#F4F5FA'].map(col=>(
+                <button key={col} onClick={()=>setTweak('bgColor',col)} style={{width:26,height:26,borderRadius:7,background:col,border:tweaks.bgColor===col?`2px solid ${C.violet}`:'1.5px solid rgba(255,255,255,0.14)',cursor:'pointer'}}/>
+              ))}
+            </div>
+          </label>
+          <label style={{display:'flex',flexDirection:'column',gap:5}}>
+            <span style={{fontSize:10,color:'rgba(255,255,255,0.4)'}}>Boyut: {tweaks.deviceScale.toFixed(1)}x</span>
+            <input type="range" min="0.55" max="1.05" step="0.05" value={tweaks.deviceScale} onChange={e=>setTweak('deviceScale',parseFloat(e.target.value))} style={{width:'100%',accentColor:C.violet}}/>
+          </label>
+          <label style={{display:'flex',alignItems:'center',gap:8,cursor:'pointer'}}>
+            <input type="checkbox" checked={tweaks.showLabel} onChange={e=>setTweak('showLabel',e.target.checked)} style={{accentColor:C.violet}}/>
+            <span style={{fontSize:11,color:'rgba(255,255,255,0.45)'}}>Ekran etiketini göster</span>
+          </label>
+        </div>
+      )}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<Root/>);
+</script>
+</body>
+</html>

@@ -368,7 +368,7 @@ export default function StudyGroupsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
   },
   header: {
     paddingHorizontal: Spacing.s20,
@@ -381,11 +381,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   backText: {
-    color: Colors.text.primaryDark,
+    color: Colors.text.primary,
     fontSize: 16,
   },
   headerTitle: {
-    color: Colors.text.primaryDark,
+    color: Colors.text.primary,
     fontSize: 28,
     fontWeight: '800',
     marginBottom: Spacing.s12,
@@ -407,7 +407,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,255,255,0.35)',
   },
   headerBtnText: {
-    color: Colors.text.primaryDark,
+    color: Colors.text.primary,
     fontWeight: '600',
     fontSize: 14,
   },
@@ -427,7 +427,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,255,255,0.3)',
   },
   tabText: {
-    color: Colors.text.primaryDark,
+    color: Colors.text.primary,
     fontSize: 13,
     fontWeight: '600',
   },
@@ -454,7 +454,7 @@ const styles = StyleSheet.create({
   emptyTitle: {
     fontSize: 20,
     fontWeight: '700',
-    color: Colors.text.primaryDark,
+    color: Colors.text.primary,
     textAlign: 'center',
   },
   emptyDesc: {
@@ -470,7 +470,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   modalContent: {
-    backgroundColor: Colors.bg.cardDark,
+    backgroundColor: Colors.bg.card,
     borderTopLeftRadius: Radius.bottomSheet,
     borderTopRightRadius: Radius.bottomSheet,
     padding: Spacing.s24,
@@ -479,7 +479,7 @@ const styles = StyleSheet.create({
   modalTitle: {
     fontSize: 20,
     fontWeight: '700',
-    color: Colors.text.primaryDark,
+    color: Colors.text.primary,
     textAlign: 'center',
   },
   modalSubtitle: {
@@ -489,12 +489,12 @@ const styles = StyleSheet.create({
   },
   input: {
     borderWidth: 1,
-    borderColor: Colors.bg.primaryDark,
+    borderColor: Colors.border.primary,
     borderRadius: Radius.input,
     padding: Spacing.s16,
     fontSize: 16,
-    color: Colors.text.primaryDark,
-    backgroundColor: Colors.bg.primaryDark,
+    color: Colors.text.primary,
+    backgroundColor: Colors.bg.light,
     minHeight: 48,
   },
   inputMultiline: {
@@ -521,9 +521,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.s16,
     paddingVertical: Spacing.s8,
     borderRadius: Radius.chip,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
     borderWidth: 1,
-    borderColor: Colors.bg.primaryDark,
+    borderColor: Colors.border.primary,
     minHeight: 44,
     justifyContent: 'center',
   },
@@ -543,13 +543,13 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.s12,
     paddingHorizontal: Spacing.s16,
     borderRadius: Radius.card,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
     minHeight: 48,
     justifyContent: 'center',
   },
   toggleLabel: {
     fontSize: 15,
-    color: Colors.text.primaryDark,
+    color: Colors.text.primary,
   },
   modalActions: {
     flexDirection: 'row',

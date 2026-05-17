@@ -38,7 +38,7 @@ function ChallengeCard({ challenge, onJoin, isJoined }: {
     <WKCard style={styles.challengeCard}>
       <View style={styles.challengeHeader}>
         <View style={styles.challengeInfo}>
-          <WKText variant="heading2" color={Colors.text.primaryDark}>
+          <WKText variant="heading2" color={Colors.text.primary}>
             {challenge.title}
           </WKText>
           <WKText variant="caption" color={Colors.text.secondary}>
@@ -159,7 +159,7 @@ function CreateChallengeModal({ visible, onClose, onCreate }: {
   return (
     <View style={styles.modalOverlay}>
       <WKCard style={styles.modalContent}>
-        <WKText variant="heading2" color={Colors.text.primaryDark}>
+        <WKText variant="heading2" color={Colors.text.primary}>
           Yeni Challenge Oluştur
         </WKText>
 
@@ -272,9 +272,9 @@ export default function ChallengesScreen() {
           accessibilityLabel="Geri dön"
           style={styles.backButton}
         >
-          <WKText variant="body" color={Colors.text.primaryDark}>← Geri</WKText>
+          <WKText variant="body" color={Colors.text.primary}>← Geri</WKText>
         </TouchableOpacity>
-        <WKText variant="hero" color={Colors.text.primaryDark} style={styles.headerTitle}>
+        <WKText variant="hero" color={Colors.text.primary} style={styles.headerTitle}>
           Challenges 🏆
         </WKText>
 
@@ -295,7 +295,7 @@ export default function ChallengesScreen() {
           ) : challenges.length === 0 ? (
             <View style={styles.emptyState}>
               <WKText variant="heading1">🏆</WKText>
-              <WKText variant="heading2" color={Colors.text.primaryDark}>
+              <WKText variant="heading2" color={Colors.text.primary}>
                 Henüz challenge yok
               </WKText>
               <WKText variant="body" color={Colors.text.secondary} style={styles.emptyText}>
@@ -329,7 +329,7 @@ export default function ChallengesScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
   },
   gradientHeader: {
     paddingHorizontal: Spacing.s20,
@@ -427,7 +427,7 @@ const styles = StyleSheet.create({
     borderRadius: Radius.card,
     padding: Spacing.s16,
     fontSize: 16,
-    color: Colors.text.primaryDark,
+    color: Colors.text.primary,
     backgroundColor: Colors.bg.secondary,
   },
   textArea: {

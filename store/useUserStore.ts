@@ -40,6 +40,7 @@ interface UserState {
   level: number;
   badges: string[];
   isOnline: boolean;
+  displayName: string;
   setOnboarded: (v: boolean) => void;
   setLevel: (level: UserState['selectedLevel']) => void;
   setCategories: (ids: number[]) => void;
@@ -48,6 +49,7 @@ interface UserState {
   earnBadge: (id: string) => void;
   syncWithCloud: () => Promise<void>;
   initializeAuth: () => Promise<void>;
+  setDisplayName: (name: string) => void;
 }
 
 export const useUserStore = create<UserState>((set, get) => ({
@@ -60,6 +62,13 @@ export const useUserStore = create<UserState>((set, get) => ({
   level: xpToLevel(storage.getNumber('xp') ?? 0),
   badges: readStoredJson<string[]>(storage, 'badges', []),
   isOnline: false,
+  displayName: storage.getString('displayName') ?? 'Savaşçı',
+
+  setDisplayName: (name) => {
+    const trimmed = name.trim() || 'Savaşçı';
+    storage.set('displayName', trimmed);
+    set({ displayName: trimmed });
+  },
 
   setOnboarded: (v) => {
     storage.set('hasOnboarded', v);

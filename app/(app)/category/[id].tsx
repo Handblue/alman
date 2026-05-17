@@ -1,4 +1,4 @@
-import { FlatList, TouchableOpacity, StyleSheet, View } from 'react-native';
+import { FlatList, Pressable, StyleSheet, View } from 'react-native';
 import { useLocalSearchParams, router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { WKText, WKCard, WKChip } from '@/components/ui';
@@ -46,7 +46,7 @@ export default function CategoryDetailScreen() {
           const isCompleted = progress?.isCompleted ?? false;
 
           return (
-            <TouchableOpacity
+            <Pressable
               accessibilityRole="button"
               accessibilityLabel={`${item.title} ünitesi${isCompleted ? ', tamamlandı' : ''}`}
               onPress={() =>
@@ -55,7 +55,8 @@ export default function CategoryDetailScreen() {
                   params: { id: item.id },
                 })
               }
-              style={{ marginBottom: Spacing.s12 }}
+              android_ripple={null}
+              style={({ pressed }) => ({ marginBottom: Spacing.s12, opacity: pressed ? 0.82 : 1 })}
             >
               <WKCard style={[styles.unitCard, isCompleted && styles.unitCardDone]}>
                 <View style={[styles.numberBadge, { backgroundColor: category.color + '30' }]}>
@@ -81,7 +82,7 @@ export default function CategoryDetailScreen() {
                   <WKChip label="Başla" color={Colors.bg.cardDark} textColor={Colors.text.secondary} />
                 )}
               </WKCard>
-            </TouchableOpacity>
+            </Pressable>
           );
         }}
       />
@@ -92,7 +93,7 @@ export default function CategoryDetailScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
     paddingHorizontal: Spacing.s20,
     paddingTop: Spacing.s32,
   },

@@ -1,26 +1,20 @@
 import React from 'react';
-import { Pressable, PressableProps, StyleSheet, ViewStyle } from 'react-native';
-import Animated, {
-  useAnimatedStyle,
-  useSharedValue,
-  withSpring,
-} from 'react-native-reanimated';
+import { TouchableOpacity, TouchableOpacityProps, View, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import * as Haptics from 'expo-haptics';
 import { Colors } from '@/constants/colors';
-import { Radius } from '@/constants/radius';
-import { Shadows } from '@/constants/shadows';
 import { WKText } from './WKText';
 
-interface WKButtonProps extends PressableProps {
+interface WKButtonProps extends TouchableOpacityProps {
   label?: string;
   title?: string;
-  variant?: 'primary' | 'secondary' | 'ghost' | 'danger';
+  variant?: 'primary' | 'secondary' | 'ghost' | 'violet' | 'dark' | 'tint';
   size?: 'small' | 'medium' | 'large';
-  style?: ViewStyle;
 }
 
-const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
+const HEIGHT  = { small: 36, medium: 48, large: 56 };
+const PADV    = { small: 10, medium: 14, large: 18 };
+const PADH    = { small: 16, medium: 24, large: 28 };
+const FONT_SZ = { small: 13, medium: 14, large: 15 };
 
 export function WKButton({
   label,
@@ -29,116 +23,82 @@ export function WKButton({
   size = 'medium',
   style,
   disabled,
-  onPress,
   ...props
 }: WKButtonProps) {
-  const resolvedLabel = label ?? title ?? '';
-  const scale = useSharedValue(1);
+  const text = label ?? title ?? '';
+  const h  = HEIGHT[size];
+  const pv = PADV[size];
+  const ph = PADH[size];
+  const fs = FONT_SZ[size];
 
-  const animatedStyle = useAnimatedStyle(() => ({
-    transform: [{ scale: scale.value }],
-  }));
-
-  const sizeStyle = size === 'small'
-    ? styles.small
-    : size === 'large'
-      ? styles.large
-      : styles.medium;
-
-  const handlePressIn = () => {
-    scale.value = withSpring(0.97, { damping: 15, stiffness: 300 });
-  };
-
-  const handlePressOut = () => {
-    scale.value = withSpring(1, { damping: 15, stiffness: 300 });
-  };
-
-  const handlePress = (e: Parameters<NonNullable<PressableProps['onPress']>>[0]) => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
-    onPress?.(e);
-  };
+  const inner = (
+    variant === 'primary' ? (
+      <LinearGradient
+        colors={Colors.gradient.cta}
+        start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }}
+        style={[styles.inner, { minHeight: h, paddingVertical: pv, paddingHorizontal: ph }]}
+      >
+        <WKText style={[styles.label, { fontSize: fs, color: '#fff' }]}>{text}</WKText>
+      </LinearGradient>
+    ) : (
+      <View style={[
+        styles.inner,
+        { minHeight: h, paddingVertical: pv, paddingHorizontal: ph },
+        variant === 'violet' && styles.variantViolet,
+        variant === 'secondary' && styles.variantSecondary,
+        variant === 'ghost'   && styles.variantGhost,
+        variant === 'dark'    && styles.variantDark,
+        variant === 'tint'    && styles.variantTint,
+      ]}>
+        <WKText style={[styles.label, { fontSize: fs }, variantTextColor(variant)]}>
+          {text}
+        </WKText>
+      </View>
+    )
+  );
 
   return (
-    <AnimatedPressable
+    <TouchableOpacity
       accessibilityRole="button"
-      accessibilityLabel={resolvedLabel}
+      accessibilityLabel={text}
       disabled={disabled}
-      onPressIn={handlePressIn}
-      onPressOut={handlePressOut}
-      onPress={handlePress}
-      style={[styles.base, disabled && styles.disabled, animatedStyle, style]}
+      activeOpacity={0.82}
+      style={[styles.base, disabled && styles.disabled, style]}
       {...props}
     >
-      {variant === 'primary' && (
-        <LinearGradient
-          colors={Colors.gradient.cta as [string, string]}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 0 }}
-          style={[styles.inner, sizeStyle]}
-        >
-          <WKText variant="body" color={Colors.text.onColor} style={styles.label}>
-            {resolvedLabel}
-          </WKText>
-        </LinearGradient>
-      )}
-
-      {variant === 'secondary' && (
-        <Animated.View style={[styles.inner, styles.secondaryInner, sizeStyle]}>
-          <WKText variant="body" color={Colors.brand.primary} style={styles.label}>
-            {resolvedLabel}
-          </WKText>
-        </Animated.View>
-      )}
-
-      {variant === 'ghost' && (
-        <Animated.View style={[styles.inner, styles.ghostInner, sizeStyle]}>
-          <WKText variant="body" color={Colors.brand.primary} style={styles.label}>
-            {resolvedLabel}
-          </WKText>
-        </Animated.View>
-      )}
-
-      {variant === 'danger' && (
-        <LinearGradient
-          colors={['#FF5252', '#D32F2F']}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 0 }}
-          style={[styles.inner, sizeStyle]}
-        >
-          <WKText variant="body" color={Colors.text.onColor} style={styles.label}>
-            {resolvedLabel}
-          </WKText>
-        </LinearGradient>
-      )}
-    </AnimatedPressable>
+      {inner}
+    </TouchableOpacity>
   );
 }
 
+function variantTextColor(variant: string) {
+  switch (variant) {
+    case 'violet':    return { color: '#fff' };
+    case 'secondary': return { color: '#fff' };
+    case 'ghost':     return { color: Colors.text.muted };
+    case 'dark':      return { color: Colors.text.primaryDark };
+    case 'tint':      return { color: Colors.brand.violet };
+    default:          return { color: '#fff' };
+  }
+}
+
 const styles = StyleSheet.create({
-  base: {
-    borderRadius: Radius.button,
-    overflow: 'hidden',
-    ...Shadows.level2,
-  },
-  inner: {
-    borderRadius: Radius.button,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  secondaryInner: {
+  base:  { borderRadius: 999, overflow: 'hidden' },
+  inner: { borderRadius: 999, alignItems: 'center', justifyContent: 'center', flexDirection: 'row' },
+  label: { fontWeight: '600', fontFamily: 'Inter_600SemiBold' },
+  disabled: { opacity: 0.5 },
+
+  variantViolet:    { backgroundColor: Colors.brand.violet },
+  variantSecondary: { backgroundColor: Colors.brand.violet },
+  variantGhost: {
+    backgroundColor: 'transparent',
     borderWidth: 1.5,
-    borderColor: Colors.brand.primary,
-    backgroundColor: 'transparent',
+    borderColor: '#D9E1EC',
   },
-  ghostInner: {
-    backgroundColor: 'transparent',
+  variantDark: {
+    backgroundColor: '#243447',
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.12)',
   },
-  label: {
-    fontFamily: 'Inter_600SemiBold',
-    letterSpacing: 0.2,
-  },
-  disabled: { opacity: 0.45 },
-  small:  { minHeight: 40, paddingVertical: 10, paddingHorizontal: 16 },
-  medium: { minHeight: 52, paddingVertical: 14, paddingHorizontal: 24 },
-  large:  { minHeight: 58, paddingVertical: 18, paddingHorizontal: 32 },
+  variantTint: { backgroundColor: '#EEF2FF' },
 });

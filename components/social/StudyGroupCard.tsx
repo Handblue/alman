@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, View, StyleSheet } from 'react-native';
+import { Pressable, TouchableOpacity, View, StyleSheet } from 'react-native';
 import { WKText, WKCard } from '@/components/ui';
 import { useTheme } from '@/hooks/useTheme';
 import { Spacing } from '@/constants/spacing';
@@ -29,11 +29,12 @@ export function StudyGroupCard({ group, isMember, onPress, onJoin }: StudyGroupC
   const levelColor = LEVEL_COLORS[group.level];
 
   return (
-    <TouchableOpacity
+    <Pressable
       onPress={onPress}
       accessibilityRole="button"
       accessibilityLabel={`${group.name} çalışma grubu, ${memberCount} üye`}
-      style={styles.touchable}
+      android_ripple={null}
+      style={({ pressed }) => [styles.touchable, { opacity: pressed ? 0.82 : 1 }]}
     >
       <WKCard>
         <View style={styles.header}>
@@ -88,7 +89,7 @@ export function StudyGroupCard({ group, isMember, onPress, onJoin }: StudyGroupC
           )}
         </View>
       </WKCard>
-    </TouchableOpacity>
+    </Pressable>
   );
 }
 

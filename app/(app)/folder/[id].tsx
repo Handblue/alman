@@ -2,6 +2,7 @@ import { useState } from 'react';
 import {
   FlatList,
   TouchableOpacity,
+  Pressable,
   View,
   StyleSheet,
   Alert,
@@ -15,6 +16,7 @@ import { Spacing } from '@/constants/spacing';
 import { Radius } from '@/constants/radius';
 import { WORDS, Word } from '@/data/words';
 import { useFolderStore } from '@/store/useFolderStore';
+import { AddWordToFolderModal } from '@/components/folder/AddWordToFolderModal';
 
 export default function FolderDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -24,6 +26,7 @@ export default function FolderDetailScreen() {
 
   const [isRenaming, setIsRenaming] = useState(false);
   const [renameValue, setRenameValue] = useState(folder?.name ?? '');
+  const [showAddWord, setShowAddWord] = useState(false);
 
   if (!folder) {
     return (
@@ -103,15 +106,24 @@ export default function FolderDetailScreen() {
           <WKText variant="bodyLg" color={Colors.brand.primary}>← Geri</WKText>
         </TouchableOpacity>
 
-        {/* Delete folder */}
-        <TouchableOpacity
-          onPress={handleDelete}
-          accessibilityRole="button"
-          accessibilityLabel="Klasörü sil"
-          style={styles.iconBtn}
-        >
-          <WKText style={styles.iconBtnText}>🗑️</WKText>
-        </TouchableOpacity>
+        <View style={styles.navActions}>
+          <TouchableOpacity
+            onPress={() => setShowAddWord(true)}
+            accessibilityRole="button"
+            accessibilityLabel="Kelime ekle"
+            style={styles.iconBtn}
+          >
+            <WKText style={styles.iconBtnText}>➕</WKText>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={handleDelete}
+            accessibilityRole="button"
+            accessibilityLabel="Klasörü sil"
+            style={styles.iconBtn}
+          >
+            <WKText style={styles.iconBtnText}>🗑️</WKText>
+          </TouchableOpacity>
+        </View>
       </View>
 
       {/* Folder name (editable) */}
@@ -153,8 +165,16 @@ export default function FolderDetailScreen() {
         <View style={styles.empty}>
           <WKText style={styles.emptyEmoji}>📭</WKText>
           <WKText variant="body" color={Colors.text.secondary} style={styles.emptyText}>
-            Klasörünüz boş.{'\n'}Kelime kartlarından + ikonuyla ekleyebilirsiniz.
+            Klasörünüz boş.
           </WKText>
+          <TouchableOpacity
+            onPress={() => setShowAddWord(true)}
+            accessibilityRole="button"
+            accessibilityLabel="Kelime ekle"
+            style={styles.addWordBtn}
+          >
+            <WKText style={styles.addWordBtnText}>➕ Kelime Ekle</WKText>
+          </TouchableOpacity>
         </View>
       ) : (
         <FlatList
@@ -175,14 +195,15 @@ export default function FolderDetailScreen() {
                 style={{ marginRight: Spacing.s8 }}
               />
 
-              <TouchableOpacity
+              <Pressable
                 onPress={() => handleRemoveWord(item.id, item.german)}
                 accessibilityRole="button"
                 accessibilityLabel={`${item.german} kelimesini klasörden çıkar`}
-                style={styles.removeBtn}
+                android_ripple={null}
+                style={({ pressed }) => [styles.removeBtn, { opacity: pressed ? 0.82 : 1 }]}
               >
                 <WKText color={Colors.status.error} style={styles.removeBtnText}>✕</WKText>
-              </TouchableOpacity>
+              </Pressable>
             </View>
           )}
           ItemSeparatorComponent={() => (
@@ -190,6 +211,12 @@ export default function FolderDetailScreen() {
           )}
         />
       )}
+      <AddWordToFolderModal
+        visible={showAddWord}
+        folderId={currentFolder.id}
+        existingWordIds={currentFolder.wordIds}
+        onClose={() => setShowAddWord(false)}
+      />
     </SafeAreaView>
   );
 }
@@ -197,7 +224,7 @@ export default function FolderDetailScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
     paddingHorizontal: Spacing.s20,
     paddingTop: Spacing.s16,
   },
@@ -206,6 +233,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     marginBottom: Spacing.s16,
+  },
+  navActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   backBtn: {
     minHeight: 44,
@@ -224,7 +255,7 @@ const styles = StyleSheet.create({
     borderRadius: Radius.input,
     borderWidth: 1,
     borderColor: Colors.brand.primary,
-    color: Colors.text.primaryDark,
+    color: Colors.text.primary,
     paddingHorizontal: Spacing.s12,
     paddingVertical: Spacing.s8,
     fontSize: 24,
@@ -259,6 +290,20 @@ const styles = StyleSheet.create({
   removeBtnText: {
     fontSize: 18,
     fontWeight: '700',
+  },
+  addWordBtn: {
+    backgroundColor: Colors.brand.violetSoft,
+    borderRadius: Radius.chip,
+    paddingHorizontal: Spacing.s20,
+    paddingVertical: Spacing.s12,
+    minHeight: 44,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  addWordBtnText: {
+    fontFamily: 'Inter_600SemiBold',
+    fontSize: 14,
+    color: Colors.brand.primary,
   },
   empty: {
     flex: 1,

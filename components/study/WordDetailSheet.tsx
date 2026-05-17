@@ -99,7 +99,7 @@ export function WordDetailSheet({ word, onClose }: Props) {
             </TouchableOpacity>
           </View>
 
-          <WKText variant="bodyLg" style={{ marginBottom: Spacing.s16 }}>{currentWord.turkish}</WKText>
+          <WKText variant="bodyLg" color={Colors.text.primaryDark} style={{ marginBottom: Spacing.s16 }}>{currentWord.turkish}</WKText>
 
           <WKChip
             label={currentWord.level}
@@ -113,7 +113,7 @@ export function WordDetailSheet({ word, onClose }: Props) {
           </WKText>
           <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.s8, marginBottom: Spacing.s4 }}>
             <View style={{ flex: 1 }}>
-              <WKText variant="body" style={{ fontStyle: 'italic', marginBottom: Spacing.s4 }}>
+              <WKText variant="body" color={Colors.text.primaryDark} style={{ fontStyle: 'italic', marginBottom: Spacing.s4 }}>
                 {currentWord.example}
               </WKText>
               <WKText variant="bodySm" color={Colors.text.secondary}>

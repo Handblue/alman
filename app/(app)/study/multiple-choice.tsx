@@ -88,10 +88,10 @@ export default function MultipleChoiceScreen() {
       >
         {index + 1} / {words.length}
       </WKText>
-      <WKText variant="heading2" style={{ marginBottom: Spacing.s8 }}>
+      <WKText variant="heading2" color="#F8FAFC" style={{ marginBottom: Spacing.s8 }}>
         Türkçe anlamı nedir?
       </WKText>
-      <WKText variant="word" style={{ marginBottom: Spacing.s32 }}>{current.german}</WKText>
+      <WKText variant="word" color={Colors.word.green} style={{ marginBottom: Spacing.s32 }}>{current.german}</WKText>
 
       {options.map(opt => {
         const isSelected = selected === opt;
@@ -104,9 +104,10 @@ export default function MultipleChoiceScreen() {
             accessibilityLabel={opt}
             accessibilityState={{ selected: isSelected }}
             onPress={() => handleSelect(opt)}
+            activeOpacity={0.75}
             style={[styles.option, isCorrect && styles.correct, isWrong && styles.wrong]}
           >
-            <WKText variant="body">{opt}</WKText>
+            <WKText variant="body" color="#F8FAFC">{opt}</WKText>
             {isCorrect && <WKText color={Colors.status.success}>✓</WKText>}
             {isWrong && <WKText color={Colors.status.error}>✗</WKText>}
           </TouchableOpacity>
@@ -138,6 +139,7 @@ const styles = StyleSheet.create({
     gap: Spacing.s16,
   },
   option: {
+    backgroundColor: Colors.bg.cardDark,
     borderWidth: 1.5,
     borderColor: '#243447',
     borderRadius: 12,
@@ -149,10 +151,12 @@ const styles = StyleSheet.create({
   },
   correct: {
     borderColor: Colors.status.success,
-    backgroundColor: Colors.status.success + '20',
+    borderWidth: 2,
+    backgroundColor: '#1A3028',
   },
   wrong: {
     borderColor: Colors.status.error,
-    backgroundColor: Colors.status.error + '20',
+    borderWidth: 2,
+    backgroundColor: '#3A1A1F',
   },
 });

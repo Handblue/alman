@@ -36,7 +36,7 @@ function FriendCard({ friend }: { friend: Friend }) {
         <View style={styles.friendInfo}>
           <WKText variant="heading2">{friend.avatar || '👤'}</WKText>
           <View style={styles.friendDetails}>
-            <WKText variant="body" color={Colors.text.primaryDark}>
+            <WKText variant="body" color={Colors.text.primary}>
               {friend.displayName}
             </WKText>
             <WKText variant="caption" color={Colors.text.secondary}>
@@ -65,7 +65,7 @@ function FriendRequestCard({ request, onAccept, onDecline }: {
       <View style={styles.requestHeader}>
         <WKText variant="heading2">{request.fromAvatar || '👤'}</WKText>
         <View style={styles.requestInfo}>
-          <WKText variant="body" color={Colors.text.primaryDark}>
+          <WKText variant="body" color={Colors.text.primary}>
             {request.fromDisplayName}
           </WKText>
           <WKText variant="caption" color={Colors.text.secondary}>
@@ -183,9 +183,9 @@ export default function FriendsScreen() {
           accessibilityLabel="Geri dön"
           style={styles.backButton}
         >
-          <WKText variant="body" color={Colors.text.primaryDark}>← Geri</WKText>
+          <WKText variant="body" color={Colors.text.primary}>← Geri</WKText>
         </TouchableOpacity>
-        <WKText variant="hero" color={Colors.text.primaryDark} style={styles.headerTitle}>
+        <WKText variant="hero" color={Colors.text.primary} style={styles.headerTitle}>
           Arkadaşlar 👥
         </WKText>
 
@@ -195,7 +195,7 @@ export default function FriendsScreen() {
           accessibilityRole="button"
           accessibilityLabel="Çalışma gruplarına git"
         >
-          <WKText variant="caption" color={Colors.text.primaryDark}>
+          <WKText variant="caption" color={Colors.text.primary}>
             👥 Çalışma Grupları →
           </WKText>
         </TouchableOpacity>
@@ -207,7 +207,7 @@ export default function FriendsScreen() {
             accessibilityRole="tab"
             style={[styles.tab, activeTab === 'friends' && styles.tabActive]}
           >
-            <WKText variant="caption" color={Colors.text.primaryDark}>
+            <WKText variant="caption" color={Colors.text.primary}>
               Arkadaşlar ({friends.length})
             </WKText>
           </TouchableOpacity>
@@ -216,7 +216,7 @@ export default function FriendsScreen() {
             accessibilityRole="tab"
             style={[styles.tab, activeTab === 'requests' && styles.tabActive]}
           >
-            <WKText variant="caption" color={Colors.text.primaryDark}>
+            <WKText variant="caption" color={Colors.text.primary}>
               İstekler ({friendRequests.length})
             </WKText>
           </TouchableOpacity>
@@ -225,7 +225,7 @@ export default function FriendsScreen() {
             accessibilityRole="tab"
             style={[styles.tab, activeTab === 'add' && styles.tabActive]}
           >
-            <WKText variant="caption" color={Colors.text.primaryDark}>
+            <WKText variant="caption" color={Colors.text.primary}>
               Ekle
             </WKText>
           </TouchableOpacity>
@@ -253,7 +253,7 @@ export default function FriendsScreen() {
             ) : friends.length === 0 ? (
               <View style={styles.emptyState}>
                 <WKText variant="heading1">👥</WKText>
-                <WKText variant="heading2" color={Colors.text.primaryDark}>
+                <WKText variant="heading2" color={Colors.text.primary}>
                   Henüz arkadaşın yok
                 </WKText>
                 <WKText variant="body" color={Colors.text.secondary} style={styles.emptyText}>
@@ -277,7 +277,7 @@ export default function FriendsScreen() {
             ) : friendRequests.length === 0 ? (
               <View style={styles.emptyState}>
                 <WKText variant="heading1">📬</WKText>
-                <WKText variant="heading2" color={Colors.text.primaryDark}>
+                <WKText variant="heading2" color={Colors.text.primary}>
                   Yeni istek yok
                 </WKText>
                 <WKText variant="body" color={Colors.text.secondary} style={styles.emptyText}>
@@ -300,7 +300,7 @@ export default function FriendsScreen() {
         {activeTab === 'add' && (
           <View style={styles.content}>
             <WKCard style={styles.addFriendCard}>
-              <WKText variant="heading2" color={Colors.text.primaryDark}>
+              <WKText variant="heading2" color={Colors.text.primary}>
                 Arkadaş Ekle
               </WKText>
               <WKText variant="body" color={Colors.text.secondary} style={styles.addDescription}>
@@ -332,7 +332,7 @@ export default function FriendsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.bg.primaryDark,
+    backgroundColor: Colors.bg.light,
   },
   gradientHeader: {
     paddingHorizontal: Spacing.s20,
@@ -433,7 +433,7 @@ const styles = StyleSheet.create({
   shareProgressBtn: {
     padding: Spacing.s16,
     borderRadius: Radius.card,
-    backgroundColor: Colors.bg.cardDark,
+    backgroundColor: Colors.bg.card,
     borderWidth: 1,
     borderColor: Colors.brand.primary,
     alignItems: 'center',
@@ -458,7 +458,7 @@ const styles = StyleSheet.create({
     borderRadius: Radius.card,
     padding: Spacing.s16,
     fontSize: 16,
-    color: Colors.text.primaryDark,
+    color: Colors.text.primary,
     backgroundColor: Colors.bg.secondary,
   },
 });

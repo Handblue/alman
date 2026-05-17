@@ -1,66 +1,33 @@
 import React from 'react';
-import { Pressable, PressableProps, View, ViewProps, StyleSheet } from 'react-native';
-import Animated, {
-  useAnimatedStyle,
-  useSharedValue,
-  withSpring,
-} from 'react-native-reanimated';
+import { View, ViewProps } from 'react-native';
 import { useTheme } from '@/hooks/useTheme';
 import { Radius } from '@/constants/radius';
-import { Shadows } from '@/constants/shadows';
-import { Spacing } from '@/constants/spacing';
 
 interface WKCardProps extends ViewProps {
-  onPress?: PressableProps['onPress'];
-  pressable?: boolean;
+  dark?: boolean;
 }
 
-const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
-
-export function WKCard({ style, children, onPress, pressable, ...props }: WKCardProps) {
-  const { colors } = useTheme();
-  const scale = useSharedValue(1);
-
-  const animatedStyle = useAnimatedStyle(() => ({
-    transform: [{ scale: scale.value }],
-  }));
-
-  const cardStyle = [
-    styles.card,
-    { backgroundColor: colors.card },
-    style,
-  ];
-
-  if (onPress || pressable) {
-    return (
-      <AnimatedPressable
-        onPress={onPress}
-        onPressIn={() => {
-          scale.value = withSpring(0.98, { damping: 15, stiffness: 300 });
-        }}
-        onPressOut={() => {
-          scale.value = withSpring(1, { damping: 15, stiffness: 300 });
-        }}
-        style={[cardStyle, animatedStyle]}
-        accessibilityRole="button"
-        {...(props as PressableProps)}
-      >
-        {children}
-      </AnimatedPressable>
-    );
-  }
+export function WKCard({ style, children, dark, ...props }: WKCardProps) {
+  const { colors, isDark } = useTheme();
+  const useDark = dark ?? isDark;
 
   return (
-    <View style={cardStyle} {...props}>
+    <View
+      style={[{
+        backgroundColor: useDark ? '#1A2A3A' : '#FFFFFF',
+        borderRadius: Radius.card,
+        padding: 16,
+        borderWidth: 1,
+        borderColor: useDark ? 'rgba(255,255,255,0.08)' : '#D9E1EC',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: useDark ? 0 : 0.06,
+        shadowRadius: 4,
+        elevation: useDark ? 0 : 2,
+      }, style]}
+      {...props}
+    >
       {children}
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  card: {
-    borderRadius: Radius.card,
-    padding: Spacing.s16,
-    ...Shadows.level1,
-  },
-});

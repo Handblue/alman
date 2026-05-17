@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FlatList, TouchableOpacity, StyleSheet, View } from 'react-native';
+import { FlatList, Pressable, StyleSheet, View } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { WKText } from '@/components/ui';
@@ -22,11 +22,12 @@ export default function WordListScreen() {
         data={words}
         keyExtractor={item => String(item.id)}
         renderItem={({ item }) => (
-          <TouchableOpacity
+          <Pressable
             accessibilityRole="button"
             accessibilityLabel={`${item.german}: ${item.turkish}`}
             onPress={() => setSelected(item)}
-            style={styles.row}
+            android_ripple={null}
+            style={({ pressed }) => [styles.row, { opacity: pressed ? 0.75 : 1 }]}
           >
             <View style={{ flex: 1 }}>
               <WKText variant="word">{item.german}</WKText>
@@ -35,7 +36,7 @@ export default function WordListScreen() {
             {bookmarkedWords.includes(item.id) && (
               <WKText accessibilityLabel="Defterde">❤️</WKText>
             )}
-          </TouchableOpacity>
+          </Pressable>
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
       />
@@ -45,7 +46,7 @@ export default function WordListScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: Colors.bg.primaryDark, paddingHorizontal: Spacing.s20, paddingTop: Spacing.s32 },
+  container: { flex: 1, backgroundColor: Colors.bg.light, paddingHorizontal: Spacing.s20, paddingTop: Spacing.s32 },
   row: { flexDirection: 'row', alignItems: 'center', paddingVertical: Spacing.s12 },
-  separator: { height: 1, backgroundColor: Colors.bg.cardDark },
+  separator: { height: 1, backgroundColor: Colors.border.primary },
 });
