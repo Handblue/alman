@@ -1,0 +1,52 @@
+{
+  "name": "wortkrieg-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "start:dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/main.ts",
+    "start:prod": "node dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^11.1.21",
+    "@nestjs/config": "^4.0.4",
+    "@nestjs/core": "^11.1.21",
+    "@nestjs/jwt": "^11.0.2",
+    "@nestjs/passport": "^11.0.5",
+    "@nestjs/platform-express": "^11.1.21",
+    "@nestjs/platform-socket.io": "^11.1.21",
+    "@nestjs/swagger": "^11.4.3",
+    "@nestjs/typeorm": "^11.0.1",
+    "@nestjs/websockets": "^11.1.21",
+    "bcrypt": "^6.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "nodemailer": "^8.0.7",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.20.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "socket.io": "^4.8.3",
+    "typeorm": "^0.3.29"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.21",
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.8.0",
+    "@types/nodemailer": "^8.0.0",
+    "@types/passport-jwt": "^4.0.1",
+    "@types/passport-local": "^1.0.38",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^6.0.3"
+  }
+}
