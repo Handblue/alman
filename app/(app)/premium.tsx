@@ -12,9 +12,7 @@ import * as Haptics from 'expo-haptics';
 import { WKText } from '@/components/ui';
 import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
-import { createStorage } from '@/utils/storage';
-
-const storage = createStorage('premium');
+import { authService } from '@/services/authService';
 
 // ─── Feature list ─────────────────────────────────────────────────────────────
 
@@ -71,25 +69,31 @@ const PLANS = [
 export default function PremiumScreen() {
   const [selectedPlan, setSelectedPlan] = useState<string>('yearly');
   const [purchasing, setPurchasing] = useState(false);
-  const isPremium = storage.getBoolean('isPremium') ?? false;
+  const isPremium = authService.isPremium();
 
   const handlePurchase = async () => {
     if (purchasing) return;
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
     setPurchasing(true);
-
-    // TODO: Gerçek IAP — expo-in-app-purchases veya RevenueCat
-    // Şimdilik mock: 1.5s gecikme sonra premium aktif
-    await new Promise(r => setTimeout(r, 1500));
-    storage.set('isPremium', true);
-    setPurchasing(false);
-    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
-    router.back();
+    try {
+      // TODO: Integrate RevenueCat or expo-in-app-purchases for real store purchase
+      // After successful purchase verification, call backend to update plan
+      const planKey = selectedPlan === 'lifetime' ? 'premium_lifetime'
+        : selectedPlan === 'yearly' ? 'premium_yearly'
+        : 'premium';
+      await authService.updatePlan(planKey);
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      router.back();
+    } catch {
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+    } finally {
+      setPurchasing(false);
+    }
   };
 
-  const handleRestore = () => {
+  const handleRestore = async () => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    // TODO: expo-in-app-purchases restore
+    // TODO: RevenueCat restorePurchases() then sync plan with backend
   };
 
   if (isPremium) {

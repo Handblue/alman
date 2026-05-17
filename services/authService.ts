@@ -145,6 +145,26 @@ class AuthService {
     return !!this.accessToken && !!this.currentUser;
   }
 
+  isPremium(): boolean {
+    const plan = this.currentUser?.plan ?? 'free';
+    return plan === 'premium' || plan === 'premium_yearly' || plan === 'premium_lifetime';
+  }
+
+  async updatePlan(plan: string): Promise<void> {
+    const token = this.accessToken;
+    if (!token) return;
+    const res = await fetch(`${API_BASE}/users/me/plan`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      body: JSON.stringify({ plan }),
+    });
+    if (res.ok && this.currentUser) {
+      this.currentUser = { ...this.currentUser, plan };
+      await this.saveSession();
+      this.notify();
+    }
+  }
+
   onAuthStateChange(listener: (user: WKUser | null) => void): () => void {
     this.listeners.push(listener);
     // Hemen mevcut durumu bildir
