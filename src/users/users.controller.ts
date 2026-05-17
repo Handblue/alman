@@ -15,6 +15,13 @@ export class UsersController {
     return this.usersService.getPublicProfile(req.user.id);
   }
 
+  @Get('leaderboard')
+  @UseGuards(JwtAuthGuard)
+  @ApiBearerAuth()
+  async getLeaderboard(@Query('type') type: 'weekly' | 'allTime' = 'allTime', @Request() req) {
+    return this.usersService.getLeaderboard(type, req.user.id);
+  }
+
   @Get('search')
   @UseGuards(JwtAuthGuard)
   @ApiBearerAuth()

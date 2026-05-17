@@ -30,12 +30,36 @@ export class AuthService {
     password: string;
   }) {
     const displayName = `${data.firstName} ${data.lastName}`.trim();
+    const skipEmailVerification = process.env.SKIP_EMAIL_VERIFY === 'true';
+
     const user = await this.usersService.create({
       email: data.email.toLowerCase().trim(),
       username: data.username || data.email.split('@')[0],
       displayName,
       password: data.password,
     });
+
+    if (skipEmailVerification) {
+      // Domain hazır olmadığında: direkt doğrulanmış say, JWT döndür
+      user.isEmailVerified = true;
+      await this.usersService.save(user);
+      const accessToken = this.jwtService.sign({ sub: user.id, email: user.email });
+      return {
+        message: 'Kayıt başarılı! Hoş geldin.',
+        userId: user.id,
+        accessToken,
+        user: {
+          id: user.id,
+          email: user.email,
+          username: user.username,
+          displayName: user.displayName,
+          xp: user.xp,
+          level: user.level,
+          streak: user.streak,
+          plan: user.plan,
+        },
+      };
+    }
 
     // E-posta doğrulama token'ı oluştur
     const token = this.generateToken();
@@ -129,8 +153,12 @@ export class AuthService {
     user.emailVerificationExpiry = expiry;
     await this.usersService.save(user);
 
-    await this.mailService.sendVerificationEmail(user.email, user.displayName, token);
-    return { message: 'Doğrulama e-postası tekrar gönderildi.' };
+    try {
+      await this.mailService.sendVerificationEmail(user.email, user.displayName, token);
+    } catch (err: any) {
+      console.error('Doğrulama e-postası gönderilemedi:', err.message);
+    }
+    return { message: 'Doğrulama e-postası gönderildi (varsa gelen kutunuzu kontrol edin).' };
   }
 
   async forgotPassword(email: string) {

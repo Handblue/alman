@@ -68,6 +68,42 @@ export class UsersService {
     };
   }
 
+  async getLeaderboard(type: 'weekly' | 'allTime', requesterId: string) {
+    const qb = this.usersRepo
+      .createQueryBuilder('user')
+      .select(['user.id', 'user.username', 'user.displayName', 'user.avatar', 'user.xp', 'user.level'])
+      .where('user.profileVisibility != :hidden', { hidden: 'private' });
+
+    if (type === 'weekly') {
+      const weekAgo = new Date();
+      weekAgo.setDate(weekAgo.getDate() - 7);
+      qb.andWhere('user.updatedAt >= :weekAgo', { weekAgo });
+    }
+
+    const users = await qb.orderBy('user.xp', 'DESC').limit(10).getMany();
+
+    const entries = users.map((u, i) => ({
+      uid: u.id,
+      displayName: u.displayName,
+      xp: u.xp,
+      level: u.level,
+      avatar: u.avatar,
+      rank: i + 1,
+      isMe: u.id === requesterId,
+    }));
+
+    // Get requester's rank
+    const allCount = await this.usersRepo.createQueryBuilder('user').getCount();
+    const aboveCount = await this.usersRepo
+      .createQueryBuilder('user')
+      .where('user.xp > (SELECT u2.xp FROM "user" u2 WHERE u2.id = :id)', { id: requesterId })
+      .getCount();
+
+    const myRank = aboveCount + 1;
+
+    return { entries, myRank, total: allCount };
+  }
+
   async searchUsers(query: string, excludeId: string) {
     const users = await this.usersRepo
       .createQueryBuilder('user')
