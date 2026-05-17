@@ -57,6 +57,8 @@ export default function RootLayout() {
         router.push('/(app)/dashboard');
       } else if (data?.type === 'badge_earned') {
         router.push('/(app)/profile');
+      } else if (data?.type === 'battle_challenge') {
+        router.push('/(app)/battle/lobby');
       }
     });
     return () => sub.remove();
@@ -94,7 +96,9 @@ export default function RootLayout() {
         try { loadFromCloud(userId); } catch {}
       }
 
-      try { NotificationService.getInstance().initialize(); } catch {}
+      const ns = NotificationService.getInstance();
+      try { await ns.initialize(); } catch {}
+      try { await ns.registerAndSavePushToken(); } catch {}
       try { await flushOfflineQueue(); } catch {}
     })();
   }, [fontsLoaded, fontError]);

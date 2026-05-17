@@ -1,6 +1,10 @@
 import * as Notifications from 'expo-notifications';
+import * as Device from 'expo-device';
 import { Platform } from 'react-native';
 import { createStorage } from '@/utils/storage';
+import { authService } from '@/services/authService';
+
+const API_BASE = 'http://45.143.11.97/api';
 
 const storage = createStorage('notification-prefs');
 
@@ -183,5 +187,47 @@ export class NotificationService {
       },
       trigger: null,
     });
+  }
+
+  async sendBattleChallenge(challengerName: string): Promise<void> {
+    const prefs = this.getPreferences();
+    if (!prefs.challengeUpdates) return;
+
+    await Notifications.scheduleNotificationAsync({
+      content: {
+        title: '⚔️ Yeni Meydan Okuma!',
+        body: `${challengerName} seni battle'a çağırıyor!`,
+        sound: true,
+        data: { type: 'battle_challenge' },
+      },
+      trigger: null,
+    });
+  }
+
+  // ─── Push Token Registration ──────────────────────────────────────────────
+
+  async registerAndSavePushToken(): Promise<void> {
+    if (Platform.OS === 'web' || !Device.isDevice) return;
+
+    const { status } = await Notifications.getPermissionsAsync();
+    if (status !== 'granted') return;
+
+    try {
+      const tokenData = await Notifications.getExpoPushTokenAsync();
+      const token = tokenData.data;
+      const authToken = authService.getToken();
+      if (!authToken) return;
+
+      await fetch(`${API_BASE}/users/push-token`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${authToken}`,
+        },
+        body: JSON.stringify({ token }),
+      });
+    } catch {
+      // Non-critical — silently ignore
+    }
   }
 }
