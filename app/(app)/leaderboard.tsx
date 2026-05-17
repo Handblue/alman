@@ -10,7 +10,7 @@ import { Radius } from '@/constants/radius';
 import { useUserStore } from '@/store/useUserStore';
 import { leaderboardService, LeaderboardEntry } from '@/services/leaderboardService';
 import { achievementService } from '@/services/achievementService';
-import { auth } from '@/firebase';
+import { authService } from '@/services/authService';
 
 type Tab = 'weekly' | 'allTime' | 'elo';
 
@@ -78,7 +78,7 @@ export default function LeaderboardScreen() {
         data = await leaderboardService.getTopUsers();
       }
       setLeaderboardData(data);
-      const user = await leaderboardService.getUserRank(auth?.currentUser?.uid || '');
+      const user = await leaderboardService.getUserRank(authService.getCurrentUser()?.id || '');
       setUserRank(user?.rank || null);
     } catch {
       setLeaderboardData([]);
