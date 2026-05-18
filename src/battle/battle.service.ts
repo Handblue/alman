@@ -5,7 +5,7 @@ import {
   ForbiddenException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository, Or } from 'typeorm';
+import { Repository, Or, MoreThan } from 'typeorm';
 import { Battle, BattleQuestion, PlayerAnswers, BattleStatus } from './battle.entity';
 import { UsersService } from '../users/users.service';
 
@@ -74,6 +74,23 @@ export class BattleService {
     });
 
     const saved = await this.battleRepo.save(battle);
+
+    // Send push notification to challenged user
+    if (challengedId) {
+      const [challenger, pushToken] = await Promise.all([
+        this.usersService.findById(challengerId),
+        this.usersService.getPushToken(challengedId),
+      ]);
+      if (pushToken) {
+        await this.usersService.sendPushNotification(
+          pushToken,
+          '⚔️ Yeni Meydan Okuma!',
+          `${challenger.displayName} seni battle'a çağırıyor!`,
+          { type: 'battle_challenge', battleId: saved.id },
+        );
+      }
+    }
+
     return { battleId: saved.id, message: 'Meydan okuma gönderildi!' };
   }
 
@@ -144,9 +161,27 @@ export class BattleService {
 
     await this.battleRepo.save(battle);
 
-    // XP ver (sunucu-otoritatif)
+    // ELO + XP hesapla (sunucu-otoritatif)
     const isWinner = battle.winnerId === userId;
+    const isDraw = battle.winnerId === null;
     const xpGain = isWinner ? 200 : 50;
+
+    const p1 = await this.usersService.findById(battle.challengerId);
+    const p2 = await this.usersService.findById(userId);
+    const oldP2Elo = p2.elo;
+    // scoreA = 1 means p1 (challenger) won; scoreA = 0 means p2 won
+    const scoreA = isDraw ? 0.5 : (isWinner ? 0 : 1);
+    const { newEloA, newEloB } = this.calculateElo(p1.elo, p2.elo, scoreA);
+
+    p1.elo = newEloA;
+    p2.elo = newEloB;
+    p1.xp += isDraw ? 50 : (isWinner ? 50 : 200);
+    p2.xp += xpGain;
+    if (isDraw) { p1.battleDraws++; p2.battleDraws++; }
+    else if (isWinner) { p2.battleWins++; p1.battleLosses++; }
+    else { p1.battleWins++; p2.battleLosses++; }
+
+    await Promise.all([this.usersService.save(p1), this.usersService.save(p2)]);
 
     return {
       score: scored.score,
@@ -154,10 +189,12 @@ export class BattleService {
       total: battle.questions.length,
       winnerId: battle.winnerId,
       isWinner,
-      isDraw: battle.winnerId === null,
+      isDraw,
       xpGain,
+      myElo: newEloB,
+      eloDelta: newEloB - oldP2Elo,
       correctAnswers: scored.answers.filter((a) => a.correct).length,
-      message: battle.winnerId === null
+      message: isDraw
         ? 'Berabere! İyi mücadele.'
         : isWinner
           ? `Kazandınız! +${xpGain} XP`
@@ -165,12 +202,12 @@ export class BattleService {
     };
   }
 
-  // ─── Bekleyen battle'ları getir (oynanmamış, p1_done olanlar) ─────────────
+  // ─── Bekleyen battle'ları getir (oynanmamış, p1_done, süresi dolmamış) ────
   async getPendingBattles(userId: string) {
-    // Kullanıcıya gelen ve henüz cevaplanmamış
+    const now = new Date();
     const pending = await this.battleRepo.find({
       where: [
-        { challengedId: userId, status: 'p1_done' },
+        { challengedId: userId, status: 'p1_done', expiresAt: MoreThan(now) },
       ],
       relations: ['challenger'],
       order: { createdAt: 'DESC' },
@@ -194,8 +231,9 @@ export class BattleService {
 
   // ─── Kendi gönderdiğim ve rakibin cevabını beklediğim battle'lar ──────────
   async getSentBattles(userId: string) {
+    const now = new Date();
     const sent = await this.battleRepo.find({
-      where: { challengerId: userId, status: 'p1_done' },
+      where: { challengerId: userId, status: 'p1_done', expiresAt: MoreThan(now) },
       relations: ['challenged'],
       order: { createdAt: 'DESC' },
     });
@@ -318,6 +356,17 @@ export class BattleService {
   }
 
   // ─── Skor hesapla ─────────────────────────────────────────────────────────
+  // scoreA: 1 = A kazandı, 0 = B kazandı, 0.5 = berabere
+  private calculateElo(eloA: number, eloB: number, scoreA: number) {
+    const K = 32;
+    const expectedA = 1 / (1 + Math.pow(10, (eloB - eloA) / 400));
+    const expectedB = 1 - expectedA;
+    return {
+      newEloA: Math.round(eloA + K * (scoreA - expectedA)),
+      newEloB: Math.round(eloB + K * ((1 - scoreA) - expectedB)),
+    };
+  }
+
   private scoreAnswers(
     answers: { questionIndex: number; answer: string; timeMs: number }[],
     questions: BattleQuestion[],

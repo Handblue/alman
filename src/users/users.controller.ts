@@ -1,4 +1,4 @@
-import { Controller, Get, Patch, Param, Body, UseGuards, Request, Query } from '@nestjs/common';
+import { Controller, Get, Patch, Post, Param, Body, UseGuards, Request, Query } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { UsersService } from './users.service';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
@@ -35,6 +35,20 @@ export class UsersController {
   @ApiBearerAuth()
   async getUser(@Param('id') id: string) {
     return this.usersService.getPublicProfile(id);
+  }
+
+  @Post('push-token')
+  @UseGuards(JwtAuthGuard)
+  @ApiBearerAuth()
+  async savePushToken(@Request() req, @Body() body: { token: string }) {
+    return this.usersService.savePushToken(req.user.id, body.token);
+  }
+
+  @Patch('me/plan')
+  @UseGuards(JwtAuthGuard)
+  @ApiBearerAuth()
+  async updatePlan(@Request() req, @Body() body: { plan: string; expiresAt?: string }) {
+    return this.usersService.updatePlan(req.user.id, body.plan, body.expiresAt);
   }
 
   @Patch('me')

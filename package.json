@@ -34,7 +34,8 @@
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
     "socket.io": "^4.8.3",
-    "typeorm": "^0.3.29"
+    "typeorm": "^0.3.29",
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.21",
@@ -44,6 +45,7 @@
     "@types/nodemailer": "^8.0.0",
     "@types/passport-jwt": "^4.0.1",
     "@types/passport-local": "^1.0.38",
+    "@types/uuid": "^11.0.0",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",

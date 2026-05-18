@@ -96,7 +96,7 @@ export class UsersService {
     const allCount = await this.usersRepo.createQueryBuilder('user').getCount();
     const aboveCount = await this.usersRepo
       .createQueryBuilder('user')
-      .where('user.xp > (SELECT u2.xp FROM "user" u2 WHERE u2.id = :id)', { id: requesterId })
+      .where('user.xp > (SELECT u2.xp FROM "users" u2 WHERE u2.id = :id)', { id: requesterId })
       .getCount();
 
     const myRank = aboveCount + 1;
@@ -120,5 +120,36 @@ export class UsersService {
   async updateProfile(id: string, data: Partial<Pick<User, 'displayName' | 'avatar' | 'profileVisibility'>>) {
     await this.usersRepo.update(id, data);
     return this.getPublicProfile(id);
+  }
+
+  async updatePlan(userId: string, plan: string, expiresAt?: string): Promise<{ plan: string }> {
+    const allowedPlans = ['free', 'premium', 'premium_yearly', 'premium_lifetime'];
+    if (!allowedPlans.includes(plan)) {
+      throw new Error('Geçersiz plan');
+    }
+    await this.usersRepo.update(userId, { plan });
+    return { plan };
+  }
+
+  async savePushToken(userId: string, token: string): Promise<void> {
+    await this.usersRepo.update(userId, { pushToken: token });
+  }
+
+  async getPushToken(userId: string): Promise<string | null> {
+    const user = await this.usersRepo.findOne({ where: { id: userId }, select: ['pushToken'] });
+    return user?.pushToken ?? null;
+  }
+
+  async sendPushNotification(token: string, title: string, body: string, data?: Record<string, any>): Promise<void> {
+    if (!token.startsWith('ExponentPushToken')) return;
+    try {
+      await fetch('https://exp.host/--/api/v2/push/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ to: token, title, body, data: data ?? {}, sound: 'default' }),
+      });
+    } catch {
+      // Non-blocking — push failure should not break the request
+    }
   }
 }

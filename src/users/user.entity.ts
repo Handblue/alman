@@ -60,6 +60,21 @@ export class User {
   @Column({ default: 'public' })
   profileVisibility: string;
 
+  @Column({ default: 1200 })
+  elo: number;
+
+  @Column({ default: 0 })
+  battleWins: number;
+
+  @Column({ default: 0 })
+  battleLosses: number;
+
+  @Column({ default: 0 })
+  battleDraws: number;
+
+  @Column({ nullable: true })
+  pushToken: string;
+
   @CreateDateColumn()
   createdAt: Date;
 

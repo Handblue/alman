@@ -83,6 +83,57 @@ export class AuthService {
     };
   }
 
+  async googleSignIn(idToken: string) {
+    // Verify Google ID token with Google's tokeninfo endpoint
+    const resp = await fetch(`https://oauth2.googleapis.com/tokeninfo?id_token=${idToken}`);
+    if (!resp.ok) throw new UnauthorizedException('Geçersiz Google token');
+
+    const payload = await resp.json() as {
+      email: string;
+      name: string;
+      picture: string;
+      sub: string;
+      email_verified: string;
+    };
+
+    if (!payload.email || payload.email_verified !== 'true') {
+      throw new UnauthorizedException('Google e-postası doğrulanamadı');
+    }
+
+    let user = await this.usersService.findByEmail(payload.email.toLowerCase());
+
+    if (!user) {
+      // Create new user from Google profile
+      const baseName = payload.name || payload.email.split('@')[0];
+      const username = payload.email.split('@')[0].replace(/[^a-zA-Z0-9_]/g, '_');
+      user = await this.usersService.create({
+        email: payload.email.toLowerCase(),
+        username,
+        displayName: baseName,
+        password: crypto.randomBytes(24).toString('hex'), // random password — only Google auth
+      });
+      user.isEmailVerified = true;
+      if (payload.picture) user.avatar = payload.picture;
+      await this.usersService.save(user);
+    }
+
+    const token = this.jwtService.sign({ sub: user.id, email: user.email });
+    return {
+      accessToken: token,
+      user: {
+        id: user.id,
+        email: user.email,
+        username: user.username,
+        displayName: user.displayName,
+        avatar: user.avatar,
+        xp: user.xp,
+        level: user.level,
+        streak: user.streak,
+        plan: user.plan,
+      },
+    };
+  }
+
   async login(email: string, password: string) {
     const user = await this.usersService.findByEmail(email.toLowerCase().trim());
     if (!user) throw new UnauthorizedException('E-posta veya şifre hatalı');

@@ -130,4 +130,11 @@ export class AuthController {
   async resetPassword(@Body() dto: ResetPasswordDto) {
     return this.authService.resetPassword(dto.token, dto.newPassword);
   }
+
+  @Post('google')
+  @HttpCode(HttpStatus.OK)
+  @ApiOperation({ summary: 'Google ID token ile giriş yap / kayıt ol' })
+  async googleSignIn(@Body() body: { idToken: string }) {
+    return this.authService.googleSignIn(body.idToken);
+  }
 }
