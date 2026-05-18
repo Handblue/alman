@@ -101,13 +101,10 @@ export default function PronunciationScreen() {
 
   const handleRecord = useCallback(async () => {
     if (recordState === 'recording') {
-      // Stop
       setRecordState('processing');
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-      const durationMs = await pronunciationService.getRecordingDurationMs();
-      const uri = await pronunciationService.stopRecording();
       attemptRef.current += 1;
-      const res = pronunciationService.scoreRecording(uri, currentWord.german, attemptRef.current, durationMs);
+      const res = await pronunciationService.stopSTTAndScore(currentWord.german, attemptRef.current);
       setResult(res);
       setRecordState('idle');
       setPronunciationScore(currentWord.id, res.score);
@@ -117,7 +114,7 @@ export default function PronunciationScreen() {
 
     if (recordState !== 'idle') return;
     setResult(null);
-    const started = await pronunciationService.startRecording();
+    const started = await pronunciationService.startSTT();
     if (started) {
       setRecordState('recording');
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);

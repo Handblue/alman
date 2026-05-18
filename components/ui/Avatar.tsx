@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   initials: {
-    color: Colors.text.onColor,
+    color: Colors.text.primaryDark,
     fontFamily: 'Inter_700Bold',
   },
   image: {

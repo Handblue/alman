@@ -8,9 +8,7 @@ import { Radius } from '@/constants/radius';
 import { Spacing } from '@/constants/spacing';
 import { useTheme } from '@/hooks/useTheme';
 import { offlineContentService } from '@/services/offlineContentService';
-import { createStorage } from '@/utils/storage';
-
-const premiumStorage = createStorage('premium');
+import { authService } from '@/services/authService';
 
 function createStyles(colors: { bg: string; card: string; textPrimary: string; textSecondary: string }, isDark: boolean) {
   return StyleSheet.create({
@@ -44,7 +42,7 @@ export default function OfflineDownloadScreen() {
   const styles = createStyles(colors, isDark);
   const [downloadsVersion, setDownloadsVersion] = useState(0);
   const [busyPackId, setBusyPackId] = useState<string | null>(null);
-  const isPremium = premiumStorage.getBoolean('isPremium') ?? false;
+  const isPremium = authService.isPremium();
 
   const stats = useMemo(() => offlineContentService.getStats(), [downloadsVersion]);
   const downloadedIds = useMemo(

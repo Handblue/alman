@@ -6,3 +6,4 @@ export { WKChip } from './WKChip';
 export { PlayButton } from './PlayButton';
 export { AchievementToast } from './AchievementToast';
 export type { AchievementToastData } from './AchievementToast';
+export { OfflineBanner } from './OfflineBanner';

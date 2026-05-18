@@ -190,7 +190,7 @@ export default function StudyGroupsScreen() {
   const [showCreate, setShowCreate] = useState(false);
   const [showJoinCode, setShowJoinCode] = useState(false);
 
-  const currentUid = authService.getCurrentUser()?.uid ?? '';
+  const currentUid = authService.getCurrentUser()?.id ?? '';
 
   useEffect(() => {
     loadMyGroups();

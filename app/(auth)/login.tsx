@@ -111,7 +111,7 @@ export default function LoginScreen() {
               <WKText style={styles.logoText}>W</WKText>
             </LinearGradient>
             <WKText variant="heading1" style={styles.title}>Tekrar hoş geldin</WKText>
-            <WKText variant="bodySmall" color={Colors.text.secondary} style={styles.subtitle}>
+            <WKText variant="bodySm" color={Colors.text.secondary} style={styles.subtitle}>
               Hesabına giriş yap ve öğrenmeye devam et
             </WKText>
           </View>
@@ -119,7 +119,7 @@ export default function LoginScreen() {
           {/* Form */}
           <View style={styles.form}>
             <View style={styles.inputGroup}>
-              <WKText variant="bodySmall" color={Colors.text.secondary} style={styles.label}>
+              <WKText variant="bodySm" color={Colors.text.secondary} style={styles.label}>
                 E-posta
               </WKText>
               <View style={styles.inputRow}>
@@ -139,7 +139,7 @@ export default function LoginScreen() {
             </View>
 
             <View style={styles.inputGroup}>
-              <WKText variant="bodySmall" color={Colors.text.secondary} style={styles.label}>
+              <WKText variant="bodySm" color={Colors.text.secondary} style={styles.label}>
                 Şifre
               </WKText>
               <View style={styles.inputRow}>
@@ -170,7 +170,7 @@ export default function LoginScreen() {
               style={styles.forgotBtn}
               onPress={() => router.push('/(auth)/forgot-password')}
             >
-              <WKText variant="bodySmall" color={Colors.brand.primary}>
+              <WKText variant="bodySm" color={Colors.brand.primary}>
                 Şifremi unuttum
               </WKText>
             </TouchableOpacity>
@@ -187,7 +187,7 @@ export default function LoginScreen() {
           {/* Ayırıcı */}
           <View style={styles.dividerRow}>
             <View style={styles.dividerLine} />
-            <WKText variant="bodySmall" color={Colors.text.secondary} style={styles.dividerText}>veya</WKText>
+            <WKText variant="bodySm" color={Colors.text.secondary} style={styles.dividerText}>veya</WKText>
             <View style={styles.dividerLine} />
           </View>
 
@@ -205,11 +205,11 @@ export default function LoginScreen() {
 
           {/* Kayıt ol linki */}
           <View style={styles.registerRow}>
-            <WKText variant="bodySmall" color={Colors.text.secondary}>
+            <WKText variant="bodySm" color={Colors.text.secondary}>
               Hesabın yok mu?{' '}
             </WKText>
             <TouchableOpacity onPress={() => router.push('/(auth)/register')}>
-              <WKText variant="bodySmall" color={Colors.brand.primary} style={styles.registerLink}>
+              <WKText variant="bodySm" color={Colors.brand.primary} style={styles.registerLink}>
                 Kayıt ol
               </WKText>
             </TouchableOpacity>

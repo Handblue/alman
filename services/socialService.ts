@@ -69,16 +69,16 @@ class SocialService {
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
 
-    const requestId = `${user.uid}_${toUid}_${Date.now()}`;
+    const requestId = `${user.id}_${toUid}_${Date.now()}`;
     const requestRef = doc(firestore, 'friendRequests', requestId);
 
     // Get sender info
-    const userProfile = await this.getUserPublicProfile(user.uid);
+    const userProfile = await this.getUserPublicProfile(user.id);
     if (!userProfile) throw new Error('User profile not found');
 
     const request: FriendRequest = {
       id: requestId,
-      fromUid: user.uid,
+      fromUid: user.id,
       toUid,
       fromDisplayName: userProfile.displayName || 'Anonymous User',
       fromAvatar: userProfile.avatar,
@@ -100,7 +100,7 @@ class SocialService {
     if (!requestSnap.exists()) throw new Error('Friend request not found');
 
     const request = requestSnap.data() as FriendRequest;
-    if (request.toUid !== user.uid) throw new Error('Unauthorized');
+    if (request.toUid !== user.id) throw new Error('Unauthorized');
 
     // Update request status
     await updateDoc(requestRef, { status: 'accepted' });
@@ -121,7 +121,7 @@ class SocialService {
     if (!requestSnap.exists()) throw new Error('Friend request not found');
 
     const request = requestSnap.data() as FriendRequest;
-    if (request.toUid !== user.uid) throw new Error('Unauthorized');
+    if (request.toUid !== user.id) throw new Error('Unauthorized');
 
     await updateDoc(requestRef, { status: 'declined' });
   }
@@ -140,8 +140,8 @@ class SocialService {
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
 
-    const friendRef1 = doc(firestore, 'users', user.uid, 'friends', friendUid);
-    const friendRef2 = doc(firestore, 'users', friendUid, 'friends', user.uid);
+    const friendRef1 = doc(firestore, 'users', user.id, 'friends', friendUid);
+    const friendRef2 = doc(firestore, 'users', friendUid, 'friends', user.id);
 
     await Promise.all([
       updateDoc(friendRef1, { status: 'removed', removedAt: Timestamp.now() }),
@@ -227,7 +227,7 @@ class SocialService {
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
 
-    const userRef = doc(firestore, 'users', user.uid);
+    const userRef = doc(firestore, 'users', user.id);
     await updateDoc(userRef, {
       ...updates,
       updatedAt: new Date().toISOString(),
@@ -256,9 +256,9 @@ class SocialService {
     const newChallenge: SocialChallenge = {
       ...challenge,
       id: challengeId,
-      participants: [user.uid],
+      participants: [user.id],
       progress: {
-        [user.uid]: { completedWords: 0, streak: 0 },
+        [user.id]: { completedWords: 0, streak: 0 },
       },
     };
 
@@ -277,13 +277,13 @@ class SocialService {
     if (!challengeSnap.exists()) throw new Error('Challenge not found');
 
     const challenge = challengeSnap.data() as SocialChallenge;
-    if (challenge.participants.includes(user.uid)) {
+    if (challenge.participants.includes(user.id)) {
       throw new Error('Already joined this challenge');
     }
 
     await updateDoc(challengeRef, {
-      participants: arrayUnion(user.uid),
-      [`progress.${user.uid}`]: { completedWords: 0, streak: 0 },
+      participants: arrayUnion(user.id),
+      [`progress.${user.id}`]: { completedWords: 0, streak: 0 },
     });
   }
 
@@ -294,7 +294,7 @@ class SocialService {
 
     const challengeRef = doc(firestore, 'social', 'challenges', challengeId);
     await updateDoc(challengeRef, {
-      [`progress.${user.uid}`]: { completedWords, streak },
+      [`progress.${user.id}`]: { completedWords, streak },
     });
   }
 

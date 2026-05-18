@@ -8,9 +8,7 @@ import { Radius } from '@/constants/radius';
 import { Spacing } from '@/constants/spacing';
 import { useTheme } from '@/hooks/useTheme';
 import { speakingService } from '@/services/speakingService';
-import { createStorage } from '@/utils/storage';
-
-const premiumStorage = createStorage('premium');
+import { authService } from '@/services/authService';
 
 function createStyles(colors: { bg: string; card: string; textPrimary: string; textSecondary: string }) {
   return StyleSheet.create({
@@ -36,7 +34,7 @@ export default function SpeakingCreditsScreen() {
   const { colors } = useTheme();
   const styles = createStyles(colors);
   const [credits, setCredits] = useState(() => speakingService.getCredits());
-  const isPremium = premiumStorage.getBoolean('isPremium') ?? false;
+  const isPremium = authService.isPremium();
   const recentSessions = speakingService.getRecentSessions();
 
   useEffect(() => {

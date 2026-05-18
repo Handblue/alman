@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { StyleSheet, TouchableOpacity, View } from 'react-native';
+import { AccessibilityInfo, StyleSheet, TouchableOpacity, View } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import Animated, {
   cancelAnimation,
@@ -94,7 +94,7 @@ export function BattleQuestionCard({
   useEffect(() => {
     let isMounted = true;
     AccessibilityInfo.isReduceMotionEnabled()
-      .then((v) => { if (isMounted) setReduceMotionEnabled(v); })
+      .then((v: boolean) => { if (isMounted) setReduceMotionEnabled(v); })
       .catch(() => { if (isMounted) setReduceMotionEnabled(false); });
     return () => { isMounted = false; };
   }, []);

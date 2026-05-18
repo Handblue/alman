@@ -62,15 +62,15 @@ class StudyGroupService {
       id: groupId,
       name: params.name,
       description: params.description,
-      creatorUid: user.uid,
-      members: [user.uid],
+      creatorUid: user.id,
+      members: [user.id],
       maxMembers: params.maxMembers ?? 10,
       level: params.level,
       isPrivate: params.isPrivate,
       inviteCode,
       createdAt: new Date().toISOString(),
-      weeklyXP: { [user.uid]: 0 },
-      totalXP: { [user.uid]: 0 },
+      weeklyXP: { [user.id]: 0 },
+      totalXP: { [user.id]: 0 },
     };
 
     await setDoc(doc(db, 'studyGroups', groupId), newGroup);
@@ -87,12 +87,12 @@ class StudyGroupService {
 
     const group = groupSnap.data() as StudyGroup;
     if (group.members.length >= group.maxMembers) throw new Error('Group is full');
-    if (group.members.includes(user.uid)) throw new Error('Already a member');
+    if (group.members.includes(user.id)) throw new Error('Already a member');
 
     await updateDoc(groupRef, {
-      members: arrayUnion(user.uid),
-      [`weeklyXP.${user.uid}`]: 0,
-      [`totalXP.${user.uid}`]: 0,
+      members: arrayUnion(user.id),
+      [`weeklyXP.${user.id}`]: 0,
+      [`totalXP.${user.id}`]: 0,
     });
   }
 
@@ -113,7 +113,7 @@ class StudyGroupService {
 
     const groupRef = doc(db, 'studyGroups', groupId);
     await updateDoc(groupRef, {
-      members: arrayRemove(user.uid),
+      members: arrayRemove(user.id),
     });
   }
 
@@ -126,12 +126,12 @@ class StudyGroupService {
     if (!groupSnap.exists()) return;
 
     const group = groupSnap.data() as StudyGroup;
-    const currentXP = group.weeklyXP[user.uid] ?? 0;
-    const currentTotal = group.totalXP[user.uid] ?? 0;
+    const currentXP = group.weeklyXP[user.id] ?? 0;
+    const currentTotal = group.totalXP[user.id] ?? 0;
 
     await updateDoc(groupRef, {
-      [`weeklyXP.${user.uid}`]: currentXP + xpAmount,
-      [`totalXP.${user.uid}`]: currentTotal + xpAmount,
+      [`weeklyXP.${user.id}`]: currentXP + xpAmount,
+      [`totalXP.${user.id}`]: currentTotal + xpAmount,
     });
   }
 
@@ -140,7 +140,7 @@ class StudyGroupService {
     if (!user) return [];
 
     const groupsRef = collection(db, 'studyGroups');
-    const q = query(groupsRef, where('members', 'array-contains', user.uid));
+    const q = query(groupsRef, where('members', 'array-contains', user.id));
     const snap = await getDocs(q);
     return snap.docs.map(d => d.data() as StudyGroup);
   }
@@ -182,7 +182,7 @@ class StudyGroupService {
     const shareId = `share_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
     const shareData: ProgressShare = {
       id: shareId,
-      fromUid: user.uid,
+      fromUid: user.id,
       toUid: params.toUid ?? null,
       weeklyXP: params.weeklyXP,
       wordsLearned: params.wordsLearned,

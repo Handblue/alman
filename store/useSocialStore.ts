@@ -63,7 +63,7 @@ export const useSocialStore = create<SocialState>((set, get) => ({
       const user = authService.getCurrentUser();
       if (!user) return;
 
-      const friends = await socialServiceInstance.getFriends(user.uid);
+      const friends = await socialServiceInstance.getFriends(user.id);
       set({ friends });
     } catch (error) {
       console.error('Failed to load friends:', error);
@@ -81,8 +81,8 @@ export const useSocialStore = create<SocialState>((set, get) => ({
       if (!user) return;
 
       const [friendRequests, sentRequests] = await Promise.all([
-        socialServiceInstance.getPendingRequests(user.uid),
-        socialServiceInstance.getSentRequests(user.uid),
+        socialServiceInstance.getPendingRequests(user.id),
+        socialServiceInstance.getSentRequests(user.id),
       ]);
       set({ friendRequests, sentRequests });
     } catch (error) {
@@ -100,7 +100,7 @@ export const useSocialStore = create<SocialState>((set, get) => ({
       // Reload sent requests
       const user = authService.getCurrentUser();
       if (user) {
-        const sentRequests = await socialServiceInstance.getSentRequests(user.uid);
+        const sentRequests = await socialServiceInstance.getSentRequests(user.id);
         set({ sentRequests });
       }
     } catch (error) {
@@ -220,11 +220,11 @@ export const useSocialStore = create<SocialState>((set, get) => ({
       ]);
 
       // Set up subscriptions
-      socialServiceInstance.subscribeToFriends(user.uid, (friends: Friend[]) => {
+      socialServiceInstance.subscribeToFriends(user.id, (friends: Friend[]) => {
         set({ friends });
       });
 
-      socialServiceInstance.subscribeToFriendRequests(user.uid, (requests: FriendRequest[]) => {
+      socialServiceInstance.subscribeToFriendRequests(user.id, (requests: FriendRequest[]) => {
         set({ friendRequests: requests });
       });
 

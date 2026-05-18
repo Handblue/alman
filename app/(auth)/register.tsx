@@ -47,11 +47,12 @@ export default function RegisterScreen() {
 
     setLoading(true);
     try {
-      await authService.registerWithEmail(
-        email.trim().toLowerCase(),
+      await authService.register({
+        email: email.trim().toLowerCase(),
+        firstName: displayName.trim(),
+        lastName: '',
         password,
-        displayName.trim(),
-      );
+      });
       await initializeAuth();
       router.replace('/(onboarding)/level-test');
     } catch (err: any) {
@@ -94,7 +95,7 @@ export default function RegisterScreen() {
               <WKText style={styles.logoText}>W</WKText>
             </LinearGradient>
             <WKText variant="heading1" style={styles.title}>Hesap oluştur</WKText>
-            <WKText variant="bodySmall" color={Colors.text.secondary} style={styles.subtitle}>
+            <WKText variant="bodySm" color={Colors.text.secondary} style={styles.subtitle}>
               Almancayı savaş alanında öğrenmeye başla
             </WKText>
           </View>
@@ -152,11 +153,11 @@ export default function RegisterScreen() {
           />
 
           <View style={styles.loginRow}>
-            <WKText variant="bodySmall" color={Colors.text.secondary}>
+            <WKText variant="bodySm" color={Colors.text.secondary}>
               Zaten hesabın var mı?{' '}
             </WKText>
             <TouchableOpacity onPress={() => router.push('/(auth)/login')}>
-              <WKText variant="bodySmall" color={Colors.brand.primary} style={styles.loginLink}>
+              <WKText variant="bodySm" color={Colors.brand.primary} style={styles.loginLink}>
                 Giriş yap
               </WKText>
             </TouchableOpacity>
@@ -188,7 +189,7 @@ function Field({
 }: FieldProps) {
   return (
     <View style={styles.inputGroup}>
-      <WKText variant="bodySmall" color={Colors.text.secondary} style={styles.inputLabel}>
+      <WKText variant="bodySm" color={Colors.text.secondary} style={styles.inputLabel}>
         {label}
       </WKText>
       <View style={styles.inputRow}>
@@ -217,12 +218,12 @@ const styles = StyleSheet.create({
   flex: { flex: 1 },
   scroll: { flexGrow: 1, paddingHorizontal: Spacing.s20, paddingBottom: Spacing.s32 },
   backBtn: { marginTop: Spacing.s8, marginBottom: Spacing.s8, width: 44, height: 44, justifyContent: 'center' },
-  header: { alignItems: 'center', marginTop: Spacing.s16, marginBottom: Spacing.s28 ?? Spacing.s24, gap: Spacing.s12 },
+  header: { alignItems: 'center', marginTop: Spacing.s16, marginBottom: Spacing.s24, gap: Spacing.s12 },
   logoCircle: { width: 72, height: 72, borderRadius: 36, alignItems: 'center', justifyContent: 'center' },
   logoText: { fontSize: 36, fontFamily: 'Inter_800ExtraBold', color: '#FFFFFF' },
   title: { color: Colors.text.primaryDark },
   subtitle: { textAlign: 'center', lineHeight: 20 },
-  form: { gap: Spacing.s14 ?? Spacing.s12 },
+  form: { gap: Spacing.s12 },
   inputGroup: { gap: Spacing.s8 },
   inputLabel: { paddingLeft: Spacing.s4 },
   inputRow: {

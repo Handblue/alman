@@ -66,7 +66,7 @@ function ChallengeCard({ challenge, onJoin, isJoined }: {
           </WKText>
         </View>
         <View style={styles.stat}>
-          <WKText variant="heading2" color={Colors.accent.warning}>
+          <WKText variant="heading2" color={Colors.status.warning}>
             {progress.streak}
           </WKText>
           <WKText variant="caption" color={Colors.text.secondary}>

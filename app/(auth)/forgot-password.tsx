@@ -78,7 +78,7 @@ export default function ForgotPasswordScreen() {
               </View>
 
               <View style={styles.inputGroup}>
-                <WKText variant="bodySmall" color={Colors.text.secondary} style={styles.label}>
+                <WKText variant="bodySm" color={Colors.text.secondary} style={styles.label}>
                   E-posta
                 </WKText>
                 <View style={styles.inputRow}>

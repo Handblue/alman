@@ -17,7 +17,7 @@ function FriendCard({ friend }: { friend: Friend }) {
   const getStatusColor = (status: Friend['status']) => {
     switch (status) {
       case 'online': return Colors.accent.success;
-      case 'away': return Colors.accent.warning;
+      case 'away': return Colors.status.warning;
       default: return Colors.text.secondary;
     }
   };

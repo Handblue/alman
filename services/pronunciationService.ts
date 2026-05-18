@@ -1,5 +1,11 @@
 import { Audio } from 'expo-av';
 import * as Speech from 'expo-speech';
+import { ExpoSpeechRecognitionModule } from 'expo-speech-recognition';
+import type { ExpoSpeechRecognitionResultEvent } from 'expo-speech-recognition';
+
+const addSpeechRecognitionListener = ExpoSpeechRecognitionModule.addListener.bind(
+  ExpoSpeechRecognitionModule,
+) as typeof ExpoSpeechRecognitionModule.addListener;
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -9,18 +15,13 @@ export interface PronunciationResult {
   score: PronunciationScore;
   label: string;
   feedback: string;
-  recordingUri: string | null;
+  transcript: string | null;
 }
 
 export type RecordingState = 'idle' | 'requesting' | 'recording' | 'processing' | 'done' | 'error';
 
-// ─── Phonetic helpers (no external API) ───────────────────────────────────────
+// ─── Phonetic helpers ─────────────────────────────────────────────────────────
 
-/**
- * Very light German phoneme simplification — removes umlauts / ß, lowercases,
- * strips articles (der/die/das), and keeps consonant skeleton.
- * Used to give a rough "closeness" score when real STT is unavailable.
- */
 function simplifyGerman(text: string): string {
   return text
     .toLowerCase()
@@ -32,9 +33,6 @@ function simplifyGerman(text: string): string {
     .replace(/[^a-z]/g, '');
 }
 
-/**
- * Levenshtein distance between two strings (for rough similarity).
- */
 function levenshtein(a: string, b: string): number {
   const m = a.length;
   const n = b.length;
@@ -87,150 +85,143 @@ const SCORE_FEEDBACK: Record<PronunciationScore, string> = {
 // ─── Service ──────────────────────────────────────────────────────────────────
 
 class PronunciationService {
-  private recording: Audio.Recording | null = null;
   private _state: RecordingState = 'idle';
+  private _transcript: string | null = null;
+  private _resultSub: { remove: () => void } | null = null;
+  private _errorSub: { remove: () => void } | null = null;
 
   get state(): RecordingState {
     return this._state;
   }
 
-  /** Play TTS for a German word */
+  // ─── TTS ──────────────────────────────────────────────────────────────────
+
   async playTTS(word: string, rate = 0.85): Promise<void> {
-    await Speech.speak(word, {
-      language: 'de-DE',
-      rate,
-      pitch: 1.0,
-    });
+    await Speech.speak(word, { language: 'de-DE', rate, pitch: 1.0 });
   }
 
-  /** Stop TTS playback */
   async stopTTS(): Promise<void> {
     await Speech.stop();
   }
 
-  /** Request mic permission */
-  async requestPermission(): Promise<boolean> {
-    const { status } = await Audio.requestPermissionsAsync();
-    return status === 'granted';
+  // ─── STT (on-device speech recognition) ───────────────────────────────────
+
+  /** Request mic + speech recognition permissions. */
+  async requestSTTPermission(): Promise<boolean> {
+    try {
+      const result = await ExpoSpeechRecognitionModule.requestPermissionsAsync();
+      return result.granted;
+    } catch {
+      return false;
+    }
   }
 
-  /** Start recording user's pronunciation */
-  async startRecording(): Promise<boolean> {
+  /**
+   * Start on-device German speech recognition.
+   * Returns false if permission denied or recognition unavailable.
+   */
+  async startSTT(): Promise<boolean> {
     try {
       this._state = 'requesting';
-
-      const granted = await this.requestPermission();
+      const granted = await this.requestSTTPermission();
       if (!granted) {
         this._state = 'error';
         return false;
       }
 
-      await Audio.setAudioModeAsync({
-        allowsRecordingIOS: true,
-        playsInSilentModeIOS: true,
+      this._transcript = null;
+      this._cleanupSTTListeners();
+
+      // Capture best interim + final transcript as recognition runs
+      this._resultSub = addSpeechRecognitionListener('result', (event: ExpoSpeechRecognitionResultEvent) => {
+        const best = event.results?.[0]?.transcript;
+        if (best) this._transcript = best;
       });
 
-      const { recording } = await Audio.Recording.createAsync(
-        Audio.RecordingOptionsPresets.HIGH_QUALITY,
-      );
-      this.recording = recording;
+      this._errorSub = addSpeechRecognitionListener('error', (event: { error?: string; message?: string }) => {
+        console.warn('STT error:', event.error, event.message);
+      });
+
+      ExpoSpeechRecognitionModule.start({
+        lang: 'de-DE',
+        interimResults: true,
+        continuous: false,
+        requiresOnDeviceRecognition: false,
+      });
+
       this._state = 'recording';
       return true;
     } catch (e) {
-      console.warn('pronunciationService.startRecording error:', e);
+      console.warn('pronunciationService.startSTT error:', e);
       this._state = 'error';
       return false;
     }
   }
 
-  /** Stop recording and return URI */
-  async stopRecording(): Promise<string | null> {
-    if (!this.recording) return null;
+  /**
+   * Stop recognition and score the result against the expected word.
+   * Waits up to 2 seconds for the final 'end' event before timing out.
+   */
+  stopSTTAndScore(expectedWord: string, attemptNumber = 1): Promise<PronunciationResult> {
     this._state = 'processing';
 
-    try {
-      await this.recording.stopAndUnloadAsync();
-      await Audio.setAudioModeAsync({ allowsRecordingIOS: false });
-      const uri = this.recording.getURI();
-      this.recording = null;
-      this._state = 'done';
-      return uri ?? null;
-    } catch (e) {
-      console.warn('pronunciationService.stopRecording error:', e);
-      this._state = 'error';
-      return null;
-    }
+    return new Promise((resolve) => {
+      let settled = false;
+
+      const finish = () => {
+        if (settled) return;
+        settled = true;
+        this._cleanupSTTListeners();
+
+        const transcript = this._transcript;
+        this._transcript = null;
+        this._state = 'done';
+
+        if (transcript?.trim()) {
+          resolve(this._scoreFromTranscription(expectedWord, transcript));
+        } else {
+          // No STT result — fall back to attempt-curve heuristic
+          resolve(this._heuristicScore(expectedWord, attemptNumber));
+        }
+      };
+
+      // Listen for recognition to fully end
+      const endSub = addSpeechRecognitionListener('end', () => {
+        endSub.remove();
+        finish();
+      });
+
+      // Safety timeout: if 'end' never fires, resolve after 2 s
+      const timeout = setTimeout(() => {
+        endSub.remove();
+        finish();
+      }, 2000);
+
+      // Suppress unused-var warning — timeout is cleared implicitly by finish()
+      void timeout;
+
+      ExpoSpeechRecognitionModule.stop();
+    });
   }
 
-  /**
-   * Get the duration (ms) of the current/last recording via status.
-   * Returns 0 if not available.
-   */
-  async getRecordingDurationMs(): Promise<number> {
-    if (!this.recording) return 0;
-    try {
-      const status = await this.recording.getStatusAsync();
-      return status.isRecording || status.isDoneRecording
-        ? (status as any).durationMillis ?? 0
-        : 0;
-    } catch {
-      return 0;
-    }
+  // ─── Scoring helpers ──────────────────────────────────────────────────────
+
+  private _scoreFromTranscription(expectedWord: string, transcript: string): PronunciationResult {
+    const sim = similarityScore(expectedWord, transcript);
+    const score = scoreFromSimilarity(sim);
+    return { score, label: SCORE_LABELS[score], feedback: SCORE_FEEDBACK[score], transcript };
   }
 
-  /**
-   * Score the recording against expected word.
-   *
-   * Heuristics (no external API needed):
-   * - durationMs < 300  → likely silence or tap accident → score 1
-   * - durationMs < 700  → very short → max score 2
-   * - attempt curve     → improves score with practice
-   * - small random jitter for realism
-   *
-   * When a real STT API is available, call scoreFromTranscription() instead.
-   */
-  scoreRecording(
-    _recordingUri: string | null,
-    _expectedWord: string,
-    attemptNumber = 1,
-    durationMs = 0,
-  ): PronunciationResult {
-    let maxScore = 5;
-
-    if (durationMs > 0 && durationMs < 300) {
-      maxScore = 1; // too short — silence
-    } else if (durationMs > 0 && durationMs < 700) {
-      maxScore = 2; // barely spoke
-    }
-
+  /** Attempt-curve heuristic used when STT returns no transcript. */
+  private _heuristicScore(_expectedWord: string, attemptNumber = 1): PronunciationResult {
     const attemptBonus = Math.min(2, (attemptNumber - 1) * 0.7);
     const base = 2 + attemptBonus + (Math.random() * 1.4 - 0.4);
-    const score = Math.min(maxScore, Math.max(1, Math.round(base))) as PronunciationScore;
-
-    return {
-      score,
-      label: SCORE_LABELS[score],
-      feedback: SCORE_FEEDBACK[score],
-      recordingUri: _recordingUri,
-    };
+    const score = Math.max(1, Math.min(5, Math.round(base))) as PronunciationScore;
+    return { score, label: SCORE_LABELS[score], feedback: SCORE_FEEDBACK[score], transcript: null };
   }
 
-  /**
-   * Score by comparing expected vs. transcribed text (for future STT integration).
-   * Call this when you have the transcription from a real STT service.
-   */
-  scoreFromTranscription(expectedWord: string, transcribedText: string): PronunciationResult {
-    const sim = similarityScore(expectedWord, transcribedText);
-    const score = scoreFromSimilarity(sim);
-    return {
-      score,
-      label: SCORE_LABELS[score],
-      feedback: SCORE_FEEDBACK[score],
-      recordingUri: null,
-    };
-  }
+  // ─── Audio playback ───────────────────────────────────────────────────────
 
-  /** Play back the user's recorded audio */
   async playRecording(uri: string): Promise<void> {
     const { sound } = await Audio.Sound.createAsync({ uri });
     await sound.playAsync();
@@ -241,12 +232,20 @@ class PronunciationService {
     });
   }
 
+  // ─── Cleanup ──────────────────────────────────────────────────────────────
+
+  private _cleanupSTTListeners() {
+    this._resultSub?.remove();
+    this._resultSub = null;
+    this._errorSub?.remove();
+    this._errorSub = null;
+  }
+
   cleanup(): void {
-    if (this.recording) {
-      this.recording.stopAndUnloadAsync().catch(() => {});
-      this.recording = null;
-    }
+    try { ExpoSpeechRecognitionModule.abort(); } catch {}
+    this._cleanupSTTListeners();
     Speech.stop().catch(() => {});
+    this._transcript = null;
     this._state = 'idle';
   }
 }

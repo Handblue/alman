@@ -11,8 +11,9 @@ import { useSocialStore } from '@/store/useSocialStore';
 import { useAnalyticsStore } from '@/store/useAnalyticsStore';
 import { useDailyChallengeStore } from '@/store/useDailyChallengeStore';
 import { NotificationService } from '@/services/notificationService';
-import { OfflineQueueService } from '@/services/offlineQueueService';
-import { auth } from '@/firebase';
+import { authService } from '@/services/authService';
+import { setupWidgetDataSync } from '@/services/widgetDataService';
+import { widgetService } from '@/services/widgetService';
 import {
   useFonts,
   Inter_400Regular,
@@ -64,17 +65,6 @@ export default function RootLayout() {
     return () => sub.remove();
   }, []);
 
-  // ─── Foreground → offline queue flush ───────────────────────────────────
-  useEffect(() => {
-    const sub = AppState.addEventListener('change', async (nextState) => {
-      if (appState.current.match(/inactive|background/) && nextState === 'active') {
-        await flushOfflineQueue();
-      }
-      appState.current = nextState;
-    });
-    return () => sub.remove();
-  }, []);
-
   // ─── Fontlar yüklenince splash kapat + arka plan init ───────────────────
   useEffect(() => {
     if (!fontsLoaded && !fontError) return;
@@ -88,7 +78,7 @@ export default function RootLayout() {
       try { initializeFolderSync(); } catch {}
       try { initializeSocialSync(); } catch {}
 
-      const userId = auth?.currentUser?.uid;
+      const userId = authService.getCurrentUser()?.id;
       if (userId) {
         try { loadAnalyticsData(userId); } catch {}
         try { loadAIData(userId); } catch {}
@@ -99,8 +89,27 @@ export default function RootLayout() {
       const ns = NotificationService.getInstance();
       try { await ns.initialize(); } catch {}
       try { await ns.registerAndSavePushToken(); } catch {}
-      try { await flushOfflineQueue(); } catch {}
     })();
+
+    // Widget data sync — writes snapshot to shared storage on each app-active event
+    const cleanupWidget = setupWidgetDataSync(() => {
+      const snap = widgetService.getSnapshot();
+      return {
+        wordGerman: snap.wordOfTheDay.german,
+        wordTurkish: snap.wordOfTheDay.turkish,
+        streak: snap.streak,
+        xpToday: snap.xp,
+        goalProgress: snap.goalProgress,
+        dailyChallengeCompleted: snap.dailyChallenge.completed,
+        weeklyRank: 0,
+        winRate: 0,
+        lastUpdated: Date.now(),
+      };
+    });
+
+    return () => {
+      cleanupWidget();
+    };
   }, [fontsLoaded, fontError]);
 
   return (
@@ -110,41 +119,4 @@ export default function RootLayout() {
       </ThemeProvider>
     </SafeAreaProvider>
   );
-}
-
-async function flushOfflineQueue() {
-  const queue = OfflineQueueService.getInstance();
-  const stats = queue.getStats();
-  if (stats.total === 0) return;
-
-  queue.deduplicateProgressUpdates();
-
-  const userId = auth?.currentUser?.uid;
-  if (!userId) return;
-
-  const { db } = await import('@/firebase');
-  if (!db) return;
-
-  await queue.processQueue({
-    onChallengeComplete: async (action) => {
-      const { doc, setDoc, Timestamp } = await import('firebase/firestore');
-      await setDoc(doc(db, 'daily_challenges', userId, 'sessions', action.date), {
-        date: action.date, correctCount: action.correctCount,
-        totalCount: action.totalCount, xpEarned: action.xpEarned,
-        completed: true, syncedAt: Timestamp.now(),
-      }, { merge: true });
-    },
-    onStreakUpdate: async (action) => {
-      const { doc, updateDoc } = await import('firebase/firestore');
-      await updateDoc(doc(db, 'users', userId), { streak: action.streak, lastActiveDate: action.date });
-    },
-    onXPGain: async (action) => {
-      const { doc, updateDoc, increment } = await import('firebase/firestore');
-      await updateDoc(doc(db, 'users', userId), { xp: increment(action.amount) });
-    },
-    onBadgeEarn: async (action) => {
-      const { doc, updateDoc, arrayUnion } = await import('firebase/firestore');
-      await updateDoc(doc(db, 'users', userId), { badges: arrayUnion(action.badgeId) });
-    },
-  });
 }

@@ -37,7 +37,7 @@ export default function StudyGroupDetailScreen() {
   const [loading, setLoading] = useState(true);
   const unsubscribeRef = useRef<Unsubscribe | null>(null);
 
-  const currentUid = authService.getCurrentUser()?.uid ?? '';
+  const currentUid = authService.getCurrentUser()?.id ?? '';
   const isMember = group?.members.includes(currentUid) ?? false;
   const isCreator = group?.creatorUid === currentUid;
 
