@@ -1,0 +1,6 @@
+Erste Version von WortKrieg!
+• Über 2.400 deutsche Wörter in 160 Lektionen und 8 Kategorien (A1–C1)
+• 6 Lernmodi + smarte spaced-repetition-Wiederholung (SRS)
+• WortKampf: 1-gegen-1-Duelle in Echtzeit mit ELO-Rangliste
+• Ausspracheübungen, tägliche Challenges, Serien und Erfolge
+• Funktioniert offline, dunkles Design

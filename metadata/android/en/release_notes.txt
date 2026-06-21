@@ -1,0 +1,6 @@
+First release of WortKrieg!
+• 2,400+ German words across 160 units and 8 categories (A1–C1)
+• 6 study modes + smart spaced repetition (SRS)
+• Real-time 1v1 WortKampf battles with ELO ranking
+• Pronunciation practice, daily challenges, streaks and achievements
+• Works offline, dark theme
