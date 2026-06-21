@@ -46,3 +46,4 @@ google-services.json
 GoogleService-Info.plist
 *.mobileprovision
 *.p12
+tools/word-gen/phase3-generate.run.js
