@@ -1,0 +1,175 @@
+{
+  "kind": "gen",
+  "unitId": 158,
+  "categoryId": 8,
+  "number": 18,
+  "title": "Savaş ve Mücadele Deyimleri",
+  "theme": "Çatışma, savaş ve mücadeleyle kurulan deyimler; silah, ordu, zafer ve teslimiyet üzerinden rekabet ve direnç anlatımı.",
+  "firstWordId": 2356,
+  "words": [
+    {
+      "german": "die Waffe",
+      "turkish": "silah",
+      "example": "Worte können eine gefährliche Waffe sein.",
+      "exampleTranslation": "Kelimeler tehlikeli bir silah olabilir.",
+      "synonyms": [
+        "das Geschütz",
+        "das Mittel"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Sieg",
+      "turkish": "zafer / galibiyet",
+      "example": "Der Sieg war hart erkämpft.",
+      "exampleTranslation": "Zafer çok zorlu bir mücadeleyle kazanıldı.",
+      "synonyms": [
+        "der Triumph",
+        "der Erfolg"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Niederlage",
+      "turkish": "yenilgi / mağlubiyet",
+      "example": "Die Mannschaft akzeptierte die Niederlage mit Würde.",
+      "exampleTranslation": "Takım yenilgiyi onurla kabul etti.",
+      "synonyms": [
+        "die Pleite",
+        "der Misserfolg"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Held",
+      "turkish": "kahraman",
+      "example": "Im Krieg wurde er als Held gefeiert.",
+      "exampleTranslation": "Savaşta kahraman olarak kutlandı.",
+      "synonyms": [
+        "der Kämpfer",
+        "der Recke"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Verteidigung",
+      "turkish": "savunma",
+      "example": "Die Verteidigung der Stadt dauerte Wochen.",
+      "exampleTranslation": "Şehrin savunması haftalarca sürdü.",
+      "synonyms": [
+        "der Schutz",
+        "die Abwehr"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Angriff",
+      "turkish": "saldırı / hücum",
+      "example": "Angriff ist die beste Verteidigung.",
+      "exampleTranslation": "Saldırı en iyi savunmadır.",
+      "synonyms": [
+        "die Attacke",
+        "die Offensive"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Rückzug",
+      "turkish": "geri çekilme / ricat",
+      "example": "Der General befahl den Rückzug der Truppen.",
+      "exampleTranslation": "General birliklerin geri çekilmesini emretti.",
+      "synonyms": [
+        "der Abzug",
+        "die Flucht"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "kapitulieren",
+      "turkish": "teslim olmak / pes etmek",
+      "example": "Vor diesen Problemen will ich nicht kapitulieren.",
+      "exampleTranslation": "Bu sorunlar karşısında pes etmek istemiyorum.",
+      "synonyms": [
+        "aufgeben",
+        "sich ergeben"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Schwert",
+      "turkish": "kılıç",
+      "example": "Wer das Schwert zieht, lebt gefährlich.",
+      "exampleTranslation": "Kılıç çeken tehlikeli yaşar.",
+      "synonyms": [
+        "die Klinge",
+        "die Waffe"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Pulver",
+      "turkish": "barut / toz",
+      "example": "Er hat sein Pulver schon zu früh verschossen.",
+      "exampleTranslation": "Barutunu çok erken tüketti.",
+      "synonyms": [
+        "das Schießpulver"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Front",
+      "turkish": "cephe / ön saf",
+      "example": "An der politischen Front herrscht große Spannung.",
+      "exampleTranslation": "Siyasi cephede büyük gerginlik hâkim.",
+      "synonyms": [
+        "die Kampflinie",
+        "die Frontlinie"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Waffenstillstand",
+      "turkish": "ateşkes",
+      "example": "Beide Seiten einigten sich auf einen Waffenstillstand.",
+      "exampleTranslation": "İki taraf bir ateşkes üzerinde anlaştı.",
+      "synonyms": [
+        "die Waffenruhe",
+        "der Burgfrieden"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Schützengraben",
+      "turkish": "siper",
+      "example": "Die Soldaten harrten tagelang im Schützengraben aus.",
+      "exampleTranslation": "Askerler günlerce siperde dayandı.",
+      "synonyms": [
+        "der Graben",
+        "die Deckung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Bresche",
+      "turkish": "gedik / yarık",
+      "example": "Er sprang für seinen Kollegen in die Bresche.",
+      "exampleTranslation": "Meslektaşı için göğsünü siper etti.",
+      "synonyms": [
+        "die Lücke",
+        "der Durchbruch"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Scharmützel",
+      "turkish": "çatışma / küçük kapışma",
+      "example": "Zwischen den Parteien kam es zu einem Scharmützel.",
+      "exampleTranslation": "Taraflar arasında küçük bir kapışma yaşandı.",
+      "synonyms": [
+        "das Gefecht",
+        "die Auseinandersetzung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

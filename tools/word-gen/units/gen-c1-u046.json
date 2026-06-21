@@ -1,0 +1,170 @@
+{
+  "kind": "gen",
+  "unitId": 46,
+  "categoryId": 1,
+  "number": 18,
+  "title": "Duygular ve Kişilik",
+  "theme": "Temel duygular, ruh halleri ve insan karakterini anlatan sıfatlar. Birinin nasıl hissettiğini ve nasıl biri olduğunu ifade eden A1/A2 kelimeleri.",
+  "firstWordId": 676,
+  "words": [
+    {
+      "german": "glücklich",
+      "turkish": "mutlu",
+      "example": "Ich bin heute sehr glücklich.",
+      "exampleTranslation": "Bugün çok mutluyum.",
+      "synonyms": [
+        "froh",
+        "zufrieden"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "traurig",
+      "turkish": "üzgün",
+      "example": "Warum bist du so traurig?",
+      "exampleTranslation": "Neden bu kadar üzgünsün?",
+      "synonyms": [
+        "unglücklich"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "wütend",
+      "turkish": "kızgın / öfkeli",
+      "example": "Mein Vater ist sehr wütend.",
+      "exampleTranslation": "Babam çok kızgın.",
+      "synonyms": [
+        "zornig",
+        "sauer"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "müde",
+      "turkish": "yorgun",
+      "example": "Am Abend bin ich immer müde.",
+      "exampleTranslation": "Akşamları hep yorgun olurum.",
+      "synonyms": [
+        "erschöpft"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "nett",
+      "turkish": "nazik / hoş",
+      "example": "Meine Nachbarin ist sehr nett.",
+      "exampleTranslation": "Komşum çok nazik.",
+      "synonyms": [
+        "freundlich",
+        "lieb"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "freundlich",
+      "turkish": "arkadaş canlısı / cana yakın",
+      "example": "Der Verkäufer war sehr freundlich.",
+      "exampleTranslation": "Satıcı çok cana yakındı.",
+      "synonyms": [
+        "nett",
+        "höflich"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "fleißig",
+      "turkish": "çalışkan",
+      "example": "Sie ist eine fleißige Schülerin.",
+      "exampleTranslation": "O çalışkan bir öğrenci.",
+      "synonyms": [
+        "strebsam"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "faul",
+      "turkish": "tembel",
+      "example": "Mein Bruder ist manchmal sehr faul.",
+      "exampleTranslation": "Erkek kardeşim bazen çok tembel.",
+      "synonyms": [
+        "träge",
+        "untätig"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "ehrlich",
+      "turkish": "dürüst",
+      "example": "Sei bitte immer ehrlich zu mir.",
+      "exampleTranslation": "Lütfen bana karşı her zaman dürüst ol.",
+      "synonyms": [
+        "aufrichtig"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "ruhig",
+      "turkish": "sakin",
+      "example": "Bleib bitte ganz ruhig.",
+      "exampleTranslation": "Lütfen tamamen sakin kal.",
+      "synonyms": [
+        "gelassen",
+        "still"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "lustig",
+      "turkish": "komik / neşeli",
+      "example": "Der Film war sehr lustig.",
+      "exampleTranslation": "Film çok komikti.",
+      "synonyms": [
+        "witzig",
+        "heiter"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "schüchtern",
+      "turkish": "utangaç / çekingen",
+      "example": "Als Kind war ich sehr schüchtern.",
+      "exampleTranslation": "Çocukken çok utangaçtım.",
+      "synonyms": [
+        "zurückhaltend"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "nervös",
+      "turkish": "gergin / sinirli",
+      "example": "Vor der Prüfung bin ich nervös.",
+      "exampleTranslation": "Sınavdan önce gergin oluyorum.",
+      "synonyms": [
+        "aufgeregt",
+        "unruhig"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "lachen",
+      "turkish": "gülmek",
+      "example": "Die Kinder lachen den ganzen Tag.",
+      "exampleTranslation": "Çocuklar bütün gün gülüyor.",
+      "synonyms": [
+        "kichern",
+        "grinsen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "weinen",
+      "turkish": "ağlamak",
+      "example": "Das Baby weint die ganze Nacht.",
+      "exampleTranslation": "Bebek bütün gece ağlıyor.",
+      "synonyms": [
+        "heulen"
+      ],
+      "level": "A1"
+    }
+  ]
+}

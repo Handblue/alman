@@ -1,0 +1,173 @@
+{
+  "kind": "gen",
+  "unitId": 129,
+  "categoryId": 7,
+  "number": 5,
+  "title": "Zihin Felsefesi ve Bilinç",
+  "theme": "Zihin, bilinç, ruh-beden ilişkisi ve algıyla ilgili kavramları kapsar. Düşünme, niyetlilik ve öznel deneyim üzerine felsefi kelimeler.",
+  "firstWordId": 1921,
+  "words": [
+    {
+      "german": "das Selbstbewusstsein",
+      "turkish": "öz-farkındalık / öz-bilinç",
+      "example": "Das Selbstbewusstsein unterscheidet den Menschen vom Tier.",
+      "exampleTranslation": "Öz-bilinç insanı hayvandan ayırır.",
+      "synonyms": [
+        "die Selbstwahrnehmung",
+        "die Ichbewusstheit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Wahrnehmung",
+      "turkish": "algı / algılama",
+      "example": "Die Wahrnehmung der Farben ist subjektiv.",
+      "exampleTranslation": "Renklerin algılanması özneldir.",
+      "synonyms": [
+        "die Perzeption",
+        "das Gewahrwerden"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Empfindung",
+      "turkish": "duyum / his",
+      "example": "Schmerz ist eine sehr unmittelbare Empfindung.",
+      "exampleTranslation": "Acı çok dolaysız bir duyumdur.",
+      "synonyms": [
+        "das Gefühl",
+        "die Sensation"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Vorstellung",
+      "turkish": "tasarım / zihinde canlandırma",
+      "example": "Er hat eine klare Vorstellung von der Zukunft.",
+      "exampleTranslation": "Geleceğe dair açık bir tasarımı var.",
+      "synonyms": [
+        "die Idee",
+        "das Bild"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Gedanke",
+      "turkish": "düşünce / fikir",
+      "example": "Ein plötzlicher Gedanke kam ihr in den Sinn.",
+      "exampleTranslation": "Aniden aklına bir düşünce geldi.",
+      "synonyms": [
+        "die Überlegung",
+        "der Einfall"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Erlebnis",
+      "turkish": "yaşantı / deneyim",
+      "example": "Jedes bewusste Erlebnis hat eine eigene Qualität.",
+      "exampleTranslation": "Her bilinçli yaşantının kendine özgü bir niteliği vardır.",
+      "synonyms": [
+        "die Erlebnisweise",
+        "das Widerfahrnis"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Intentionalität",
+      "turkish": "yönelmişlik / niyetlilik",
+      "example": "Die Intentionalität richtet das Denken auf Objekte.",
+      "exampleTranslation": "Yönelmişlik düşünceyi nesnelere yöneltir.",
+      "synonyms": [
+        "die Gerichtetheit",
+        "die Zielgerichtetheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Dualismus",
+      "turkish": "ikicilik / düalizm",
+      "example": "Der Dualismus trennt Geist und Körper streng.",
+      "exampleTranslation": "Düalizm zihin ile bedeni keskince ayırır.",
+      "synonyms": [
+        "die Zweiheitslehre"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Leib-Seele-Problem",
+      "turkish": "ruh-beden problemi",
+      "example": "Das Leib-Seele-Problem beschäftigt Philosophen seit Jahrhunderten.",
+      "exampleTranslation": "Ruh-beden problemi filozofları yüzyıllardır meşgul ediyor.",
+      "synonyms": [
+        "das Körper-Geist-Problem"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Qualia",
+      "turkish": "nitel hâller / qualia",
+      "example": "Qualia beschreiben das subjektive Empfinden eines Erlebnisses.",
+      "exampleTranslation": "Qualia bir yaşantının öznel hissedilişini betimler.",
+      "synonyms": [
+        "die Empfindungsqualitäten",
+        "die Sinnesqualitäten"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Geist",
+      "turkish": "zihin / tin / ruh",
+      "example": "Der Geist verarbeitet ständig neue Eindrücke.",
+      "exampleTranslation": "Zihin sürekli yeni izlenimleri işler.",
+      "synonyms": [
+        "die Psyche",
+        "der Verstand"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Subjektivität",
+      "turkish": "öznellik",
+      "example": "Die Subjektivität des Erlebens lässt sich kaum messen.",
+      "exampleTranslation": "Yaşamanın öznelliği neredeyse ölçülemez.",
+      "synonyms": [
+        "die Innenperspektive",
+        "die Ichbezogenheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Monismus",
+      "turkish": "tekçilik / monizm",
+      "example": "Der Monismus führt alles auf eine Substanz zurück.",
+      "exampleTranslation": "Monizm her şeyi tek bir tözle açıklar.",
+      "synonyms": [
+        "die Einheitslehre"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Reiz",
+      "turkish": "uyaran / uyarı",
+      "example": "Ein äußerer Reiz löst eine Empfindung aus.",
+      "exampleTranslation": "Dışsal bir uyaran bir duyumu tetikler.",
+      "synonyms": [
+        "der Stimulus",
+        "die Anregung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Introspektion",
+      "turkish": "içe bakış / iç gözlem",
+      "example": "Durch Introspektion erkundet man die eigenen Gedanken.",
+      "exampleTranslation": "İçe bakış yoluyla insan kendi düşüncelerini araştırır.",
+      "synonyms": [
+        "die Selbstbeobachtung",
+        "die Innenschau"
+      ],
+      "level": "C1"
+    }
+  ]
+}

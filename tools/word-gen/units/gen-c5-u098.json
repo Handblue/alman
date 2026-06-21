@@ -1,0 +1,164 @@
+{
+  "kind": "gen",
+  "unitId": 98,
+  "categoryId": 5,
+  "number": 7,
+  "title": "Ev Kiralama ve Komşuluk",
+  "theme": "Daire arama, kira sözleşmesi, taşınma ve komşuluk ilişkileriyle ilgili günlük kelimeler. Konut ararken ve oturduğun yerde geçen ifadeler.",
+  "firstWordId": 1456,
+  "words": [
+    {
+      "german": "die Wohnung",
+      "turkish": "daire / konut",
+      "example": "Wir suchen eine neue Wohnung.",
+      "exampleTranslation": "Yeni bir daire arıyoruz.",
+      "synonyms": [
+        "das Apartment"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Nachbar",
+      "turkish": "komşu",
+      "example": "Mein Nachbar ist sehr freundlich.",
+      "exampleTranslation": "Komşum çok cana yakın.",
+      "synonyms": [
+        "der Anwohner"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Zuhause",
+      "turkish": "ev / yuva",
+      "example": "Hier ist mein neues Zuhause.",
+      "exampleTranslation": "Burası benim yeni yuvam.",
+      "synonyms": [
+        "das Heim"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Wohnungstür",
+      "turkish": "daire kapısı",
+      "example": "Bitte schließ die Wohnungstür ab.",
+      "exampleTranslation": "Lütfen daire kapısını kilitle.",
+      "synonyms": [
+        "die Eingangstür"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Treppenhaus",
+      "turkish": "merdiven boşluğu / apartman girişi",
+      "example": "Im Treppenhaus ist es sehr kalt.",
+      "exampleTranslation": "Merdiven boşluğunda çok soğuk.",
+      "synonyms": [
+        "das Stiegenhaus"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Vermieter",
+      "turkish": "ev sahibi (kiraya veren)",
+      "example": "Der Vermieter wohnt im Erdgeschoss.",
+      "exampleTranslation": "Ev sahibi zemin katta oturuyor.",
+      "synonyms": [
+        "der Hauseigentümer",
+        "der Hausherr"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Mieter",
+      "turkish": "kiracı",
+      "example": "Die neuen Mieter ziehen morgen ein.",
+      "exampleTranslation": "Yeni kiracılar yarın taşınıyor.",
+      "synonyms": [
+        "der Wohnungsnehmer"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Umzug",
+      "turkish": "taşınma / nakliye",
+      "example": "Der Umzug war sehr anstrengend.",
+      "exampleTranslation": "Taşınma çok yorucuydu.",
+      "synonyms": [
+        "der Wohnungswechsel"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Möbel",
+      "turkish": "mobilyalar / eşyalar",
+      "example": "Die Möbel sind schon in der Wohnung.",
+      "exampleTranslation": "Mobilyalar çoktan dairede.",
+      "synonyms": [
+        "das Mobiliar",
+        "die Einrichtung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Wohngemeinschaft",
+      "turkish": "ev arkadaşlığı / paylaşımlı ev (WG)",
+      "example": "Ich wohne in einer Wohngemeinschaft.",
+      "exampleTranslation": "Bir paylaşımlı evde yaşıyorum.",
+      "synonyms": [
+        "die WG"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Hausordnung",
+      "turkish": "apartman kuralları / yönetmeliği",
+      "example": "Die Hausordnung verbietet laute Musik.",
+      "exampleTranslation": "Apartman kuralları yüksek sesli müziği yasaklıyor.",
+      "synonyms": [
+        "die Hausregeln"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Mietvertrag",
+      "turkish": "kira sözleşmesi",
+      "example": "Wir unterschreiben morgen den Mietvertrag.",
+      "exampleTranslation": "Yarın kira sözleşmesini imzalıyoruz.",
+      "synonyms": [
+        "der Mietvertragsabschluss"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Kaution",
+      "turkish": "depozito / teminat",
+      "example": "Die Kaution beträgt drei Monatsmieten.",
+      "exampleTranslation": "Depozito üç aylık kira tutarındadır.",
+      "synonyms": [
+        "die Sicherheitsleistung",
+        "das Sicherheitspfand"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Nebenkosten",
+      "turkish": "ek giderler / yan masraflar / aidat",
+      "example": "Die Nebenkosten sind in der Miete enthalten.",
+      "exampleTranslation": "Ek giderler kiraya dahildir.",
+      "synonyms": [
+        "die Betriebskosten"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Besichtigung",
+      "turkish": "(daire) gezme / görme randevusu",
+      "example": "Die Besichtigung der Wohnung ist am Freitag.",
+      "exampleTranslation": "Dairenin gezilmesi cuma günü.",
+      "synonyms": [
+        "die Wohnungsbesichtigung"
+      ],
+      "level": "B1"
+    }
+  ]
+}

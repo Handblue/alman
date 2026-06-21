@@ -1,0 +1,168 @@
+{
+  "kind": "gen",
+  "unitId": 135,
+  "categoryId": 7,
+  "number": 11,
+  "title": "Diyalektik ve Tarih Felsefesi",
+  "theme": "Hegel ve Marx geleneğinde diyalektik, tarihsel süreç, yabancılaşma ve ilerleme kavramlarını kapsar. Tin, çelişki ve toplumsal dönüşüm üzerine felsefi kelimeler.",
+  "firstWordId": 2011,
+  "words": [
+    {
+      "german": "der Widerspruch",
+      "turkish": "çelişki / karşıtlık",
+      "example": "Hegel sieht im Widerspruch die Triebkraft der Geschichte.",
+      "exampleTranslation": "Hegel, çelişkide tarihin itici gücünü görür.",
+      "synonyms": [
+        "der Gegensatz",
+        "die Unstimmigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Fortschritt",
+      "turkish": "ilerleme",
+      "example": "Der technische Fortschritt verändert die Gesellschaft grundlegend.",
+      "exampleTranslation": "Teknik ilerleme toplumu köklü biçimde değiştirir.",
+      "synonyms": [
+        "die Weiterentwicklung",
+        "der Aufschwung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Entwicklung",
+      "turkish": "gelişim / gelişme",
+      "example": "Die geschichtliche Entwicklung verläuft nicht immer geradlinig.",
+      "exampleTranslation": "Tarihsel gelişim her zaman doğrusal ilerlemez.",
+      "synonyms": [
+        "die Evolution",
+        "der Prozess"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Klasse",
+      "turkish": "sınıf (toplumsal)",
+      "example": "Marx analysiert den Kampf zwischen den Klassen.",
+      "exampleTranslation": "Marx, sınıflar arasındaki mücadeleyi inceler.",
+      "synonyms": [
+        "die Gesellschaftsschicht",
+        "der Stand"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Produktion",
+      "turkish": "üretim",
+      "example": "Die Produktion bestimmt die gesellschaftlichen Verhältnisse.",
+      "exampleTranslation": "Üretim, toplumsal ilişkileri belirler.",
+      "synonyms": [
+        "die Herstellung",
+        "die Erzeugung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Geist",
+      "turkish": "tin / ruh / zihin",
+      "example": "Für Hegel verwirklicht sich der Geist in der Geschichte.",
+      "exampleTranslation": "Hegel'e göre tin, tarihte gerçekleşir.",
+      "synonyms": [
+        "der Verstand",
+        "die Vernunft"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Dialektik",
+      "turkish": "diyalektik",
+      "example": "Die Dialektik erklärt Entwicklung durch Widersprüche.",
+      "exampleTranslation": "Diyalektik, gelişmeyi çelişkiler yoluyla açıklar.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "die Aufhebung",
+      "turkish": "aşma / ortadan kaldırma (Hegelci anlamda)",
+      "example": "Die Aufhebung des Widerspruchs führt zu neuer Erkenntnis.",
+      "exampleTranslation": "Çelişkinin aşılması yeni bir bilgiye yol açar.",
+      "synonyms": [
+        "die Überwindung",
+        "die Abschaffung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Weltgeschichte",
+      "turkish": "dünya tarihi",
+      "example": "Die Weltgeschichte ist der Fortschritt im Bewusstsein der Freiheit.",
+      "exampleTranslation": "Dünya tarihi, özgürlük bilincindeki ilerlemedir.",
+      "synonyms": [
+        "die Menschheitsgeschichte",
+        "die Universalgeschichte"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Entfremdung",
+      "turkish": "yabancılaşma",
+      "example": "Marx beschreibt die Entfremdung des Arbeiters von seiner Arbeit.",
+      "exampleTranslation": "Marx, işçinin emeğine yabancılaşmasını betimler.",
+      "synonyms": [
+        "die Distanzierung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Überbau",
+      "turkish": "üstyapı",
+      "example": "Der Überbau spiegelt die ökonomische Basis wider.",
+      "exampleTranslation": "Üstyapı, ekonomik altyapıyı yansıtır.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "die Ideologie",
+      "turkish": "ideoloji",
+      "example": "Die herrschende Ideologie rechtfertigt die bestehenden Verhältnisse.",
+      "exampleTranslation": "Egemen ideoloji, mevcut ilişkileri meşrulaştırır.",
+      "synonyms": [
+        "die Weltanschauung",
+        "das Gedankengut"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Proletariat",
+      "turkish": "proletarya / işçi sınıfı",
+      "example": "Das Proletariat soll laut Marx die Revolution tragen.",
+      "exampleTranslation": "Marx'a göre proletarya, devrimi taşımalıdır.",
+      "synonyms": [
+        "die Arbeiterklasse",
+        "die Arbeiterschaft"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Synthese",
+      "turkish": "sentez",
+      "example": "Aus These und Antithese entsteht die Synthese.",
+      "exampleTranslation": "Tez ve antitezden sentez doğar.",
+      "synonyms": [
+        "die Verbindung",
+        "die Zusammenführung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Mehrwert",
+      "turkish": "artı değer",
+      "example": "Der Kapitalist eignet sich den Mehrwert an.",
+      "exampleTranslation": "Kapitalist, artı değere el koyar.",
+      "synonyms": [
+        "der Überschuss"
+      ],
+      "level": "C1"
+    }
+  ]
+}

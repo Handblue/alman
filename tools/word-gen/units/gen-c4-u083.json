@@ -1,0 +1,165 @@
+{
+  "kind": "gen",
+  "unitId": 83,
+  "categoryId": 4,
+  "number": 7,
+  "title": "telc — Konut, Kira ve Komşuluk",
+  "theme": "Konut arama, kira sözleşmesi ve ev sahibi/komşu ilişkileri bağlamında telc yazılı ve okuma kelimeleri.",
+  "firstWordId": 1231,
+  "words": [
+    {
+      "german": "die Kaution",
+      "turkish": "depozito / teminat",
+      "example": "Die Kaution beträgt drei Monatsmieten.",
+      "exampleTranslation": "Depozito üç aylık kira tutarındadır.",
+      "synonyms": [
+        "die Sicherheitsleistung",
+        "die Mietsicherheit"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Vermieter",
+      "turkish": "ev sahibi / kiraya veren",
+      "example": "Der Vermieter hat die Heizung reparieren lassen.",
+      "exampleTranslation": "Ev sahibi kaloriferi tamir ettirdi.",
+      "synonyms": [
+        "der Hauseigentümer"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Mieter",
+      "turkish": "kiracı",
+      "example": "Der Mieter zahlt die Miete pünktlich.",
+      "exampleTranslation": "Kiracı kirayı zamanında ödüyor.",
+      "synonyms": [
+        "der Wohnungsnutzer"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Nebenkosten",
+      "turkish": "yan giderler / ek masraflar",
+      "example": "Die Nebenkosten sind in der Miete enthalten.",
+      "exampleTranslation": "Yan giderler kiraya dahildir.",
+      "synonyms": [
+        "die Betriebskosten"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Nachbar",
+      "turkish": "komşu",
+      "example": "Mein Nachbar grüßt mich jeden Morgen freundlich.",
+      "exampleTranslation": "Komşum her sabah beni dostça selamlıyor.",
+      "synonyms": [
+        "der Anwohner"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Mietvertrag",
+      "turkish": "kira sözleşmesi",
+      "example": "Wir haben den Mietvertrag gestern unterschrieben.",
+      "exampleTranslation": "Kira sözleşmesini dün imzaladık.",
+      "synonyms": [
+        "der Wohnungsvertrag"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Hausordnung",
+      "turkish": "ev yönetmeliği / bina kuralları",
+      "example": "Laut Hausordnung ist nachts Ruhe einzuhalten.",
+      "exampleTranslation": "Ev yönetmeliğine göre geceleri sessizliğe uyulmalıdır.",
+      "synonyms": [
+        "die Wohnregeln"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Renovierung",
+      "turkish": "tadilat / yenileme",
+      "example": "Die Renovierung der Wohnung dauert zwei Wochen.",
+      "exampleTranslation": "Dairenin tadilatı iki hafta sürüyor.",
+      "synonyms": [
+        "die Sanierung",
+        "die Instandsetzung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Umzug",
+      "turkish": "taşınma / ev değiştirme",
+      "example": "Der Umzug in die neue Wohnung war anstrengend.",
+      "exampleTranslation": "Yeni daireye taşınma yorucuydu.",
+      "synonyms": [
+        "der Wohnungswechsel"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Schimmel",
+      "turkish": "küf",
+      "example": "An der Wand im Bad bildet sich Schimmel.",
+      "exampleTranslation": "Banyodaki duvarda küf oluşuyor.",
+      "synonyms": [
+        "der Pilzbefall"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Mangel",
+      "turkish": "kusur / eksiklik / arıza",
+      "example": "Ich habe dem Vermieter den Mangel sofort gemeldet.",
+      "exampleTranslation": "Kusuru ev sahibine hemen bildirdim.",
+      "synonyms": [
+        "der Defekt",
+        "das Problem"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Mietminderung",
+      "turkish": "kira indirimi (kusur nedeniyle)",
+      "example": "Wegen des Schimmels fordere ich eine Mietminderung.",
+      "exampleTranslation": "Küf nedeniyle kira indirimi talep ediyorum.",
+      "synonyms": [
+        "die Mietkürzung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Instandhaltung",
+      "turkish": "bakım / onarım yükümlülüğü",
+      "example": "Die Instandhaltung des Gebäudes obliegt dem Eigentümer.",
+      "exampleTranslation": "Binanın bakımı malikin yükümlülüğündedir.",
+      "synonyms": [
+        "die Wartung",
+        "die Pflege"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Eigenbedarfskündigung",
+      "turkish": "kendi ihtiyacı nedeniyle fesih",
+      "example": "Der Vermieter sprach eine Eigenbedarfskündigung aus.",
+      "exampleTranslation": "Ev sahibi kendi ihtiyacı nedeniyle fesih bildirdi.",
+      "synonyms": [
+        "die Kündigung wegen Eigenbedarfs"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Betriebskostenabrechnung",
+      "turkish": "işletme giderleri hesabı / aidat dökümü",
+      "example": "Die Betriebskostenabrechnung kommt einmal im Jahr.",
+      "exampleTranslation": "İşletme giderleri hesabı yılda bir kez gelir.",
+      "synonyms": [
+        "die Nebenkostenabrechnung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "kind": "gen",
+  "unitId": 55,
+  "categoryId": 2,
+  "number": 12,
+  "title": "Edatlar ve Hâl Yönetimi",
+  "theme": "Belirli hâlleri zorunlu kılan edatlar; Akkusativ, Dativ ve değişken (Wechsel) edatların yön ve konum mantığı.",
+  "firstWordId": 811,
+  "words": [
+    {
+      "german": "bis",
+      "turkish": "-e kadar / -a dek",
+      "example": "Ich warte bis Montag auf dich.",
+      "exampleTranslation": "Pazartesiye kadar seni bekliyorum.",
+      "synonyms": [
+        "bis zu"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "an",
+      "turkish": "-de / -e (yanına, kenarına)",
+      "example": "Das Bild hängt an der Wand.",
+      "exampleTranslation": "Resim duvarda asılı.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "aus",
+      "turkish": "-den (içinden) / -li",
+      "example": "Sie kommt aus der Türkei.",
+      "exampleTranslation": "O Türkiye'den geliyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "vor",
+      "turkish": "-in önünde / -den önce",
+      "example": "Das Auto steht vor dem Haus.",
+      "exampleTranslation": "Araba evin önünde duruyor.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "gegenüber",
+      "turkish": "-in karşısında",
+      "example": "Die Bank ist gegenüber dem Park.",
+      "exampleTranslation": "Banka parkın karşısında.",
+      "synonyms": [
+        "vis-à-vis"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "entlang",
+      "turkish": "boyunca",
+      "example": "Wir gehen den Fluss entlang.",
+      "exampleTranslation": "Nehir boyunca yürüyoruz.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "innerhalb",
+      "turkish": "-in içinde / dahilinde",
+      "example": "Innerhalb einer Woche kommt die Antwort.",
+      "exampleTranslation": "Bir hafta içinde cevap gelir.",
+      "synonyms": [
+        "binnen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "außerhalb",
+      "turkish": "-in dışında",
+      "example": "Er wohnt außerhalb der Stadt.",
+      "exampleTranslation": "O şehrin dışında yaşıyor.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "gegenüberstehen",
+      "turkish": "karşı karşıya olmak / karşısında durmak",
+      "example": "Wir stehen einem großen Problem gegenüber.",
+      "exampleTranslation": "Büyük bir sorunla karşı karşıyayız.",
+      "synonyms": [
+        "konfrontiert sein"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "abhängen",
+      "turkish": "-e bağlı olmak",
+      "example": "Der Erfolg hängt von dir ab.",
+      "exampleTranslation": "Başarı sana bağlı.",
+      "synonyms": [
+        "beruhen",
+        "basieren"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "sich kümmern",
+      "turkish": "ilgilenmek / -le ilgilenmek",
+      "example": "Sie kümmert sich um die Kinder.",
+      "exampleTranslation": "O çocuklarla ilgileniyor.",
+      "synonyms": [
+        "sich sorgen",
+        "betreuen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "bestehen aus",
+      "turkish": "-den oluşmak / meydana gelmek",
+      "example": "Das Team besteht aus fünf Personen.",
+      "exampleTranslation": "Takım beş kişiden oluşuyor.",
+      "synonyms": [
+        "sich zusammensetzen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "zugunsten",
+      "turkish": "-in lehine / yararına",
+      "example": "Er verzichtete zugunsten seines Bruders.",
+      "exampleTranslation": "Kardeşinin lehine vazgeçti.",
+      "synonyms": [
+        "zum Vorteil"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "anhand",
+      "turkish": "-e dayanarak / yardımıyla",
+      "example": "Anhand der Daten erklärt er alles.",
+      "exampleTranslation": "Verilere dayanarak her şeyi açıklıyor.",
+      "synonyms": [
+        "mithilfe",
+        "anhand von"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "ungeachtet",
+      "turkish": "-e rağmen / aldırmaksızın",
+      "example": "Ungeachtet der Kritik blieb er ruhig.",
+      "exampleTranslation": "Eleştiriye rağmen sakin kaldı.",
+      "synonyms": [
+        "trotz"
+      ],
+      "level": "C1"
+    }
+  ]
+}

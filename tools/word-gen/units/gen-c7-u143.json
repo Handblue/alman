@@ -1,0 +1,174 @@
+{
+  "kind": "gen",
+  "unitId": 143,
+  "categoryId": 7,
+  "number": 19,
+  "title": "Doğa, Çevre ve Teknoloji Felsefesi",
+  "theme": "Doğa, çevre etiği, teknoloji, ilerleme ve insan-doğa ilişkisiyle ilgili kavramları kapsar. Tekniğin anlamı ve ekolojik sorumluluk üzerine felsefi kelimeler.",
+  "firstWordId": 2131,
+  "words": [
+    {
+      "german": "die Verschwendung",
+      "turkish": "israf / savurganlık",
+      "example": "Die Verschwendung von Ressourcen schadet der Umwelt.",
+      "exampleTranslation": "Kaynakların israfı çevreye zarar verir.",
+      "synonyms": [
+        "die Vergeudung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Klimawandel",
+      "turkish": "iklim değişikliği",
+      "example": "Der Klimawandel bedroht das Gleichgewicht der Natur.",
+      "exampleTranslation": "İklim değişikliği doğanın dengesini tehdit ediyor.",
+      "synonyms": [
+        "die Klimaveränderung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Fortschritt",
+      "turkish": "ilerleme / gelişme",
+      "example": "Technischer Fortschritt bringt auch neue Risiken.",
+      "exampleTranslation": "Teknik ilerleme yeni riskler de getirir.",
+      "synonyms": [
+        "die Entwicklung",
+        "der Aufschwung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "bewahren",
+      "turkish": "korumak / muhafaza etmek",
+      "example": "Wir müssen die Natur für kommende Generationen bewahren.",
+      "exampleTranslation": "Doğayı gelecek nesiller için korumalıyız.",
+      "synonyms": [
+        "schützen",
+        "erhalten"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Ressource",
+      "turkish": "kaynak",
+      "example": "Sauberes Wasser ist eine knappe Ressource.",
+      "exampleTranslation": "Temiz su kıt bir kaynaktır.",
+      "synonyms": [
+        "das Hilfsmittel",
+        "der Rohstoff"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "ausbeuten",
+      "turkish": "sömürmek / acımasızca kullanmak",
+      "example": "Der Mensch beutet die Natur rücksichtslos aus.",
+      "exampleTranslation": "İnsan doğayı acımasızca sömürüyor.",
+      "synonyms": [
+        "ausnutzen",
+        "auspressen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Endlichkeit",
+      "turkish": "sonluluk / tükenebilirlik",
+      "example": "Die Endlichkeit der Rohstoffe zwingt uns zum Umdenken.",
+      "exampleTranslation": "Hammaddelerin sonluluğu bizi yeniden düşünmeye zorluyor.",
+      "synonyms": [
+        "die Begrenztheit",
+        "die Vergänglichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Instrumentalisierung",
+      "turkish": "araçsallaştırma / bir araca indirgeme",
+      "example": "Die Instrumentalisierung der Natur prägt das technische Denken.",
+      "exampleTranslation": "Doğanın araçsallaştırılması teknik düşünceyi şekillendirir.",
+      "synonyms": [
+        "die Vereinnahmung",
+        "die Funktionalisierung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Entfremdung",
+      "turkish": "yabancılaşma",
+      "example": "Die Technik vertieft die Entfremdung des Menschen von der Natur.",
+      "exampleTranslation": "Teknik, insanın doğaya yabancılaşmasını derinleştirir.",
+      "synonyms": [
+        "die Abkehr",
+        "die Distanzierung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Naturbeherrschung",
+      "turkish": "doğaya hâkimiyet / doğanın egemenlik altına alınması",
+      "example": "Die Naturbeherrschung gilt als Ideal der Moderne.",
+      "exampleTranslation": "Doğaya hâkimiyet, modernliğin ideali sayılır.",
+      "synonyms": [
+        "die Naturdominanz",
+        "die Naturkontrolle"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Tragfähigkeit",
+      "turkish": "taşıma kapasitesi / dayanma gücü",
+      "example": "Die ökologische Tragfähigkeit der Erde ist begrenzt.",
+      "exampleTranslation": "Dünyanın ekolojik taşıma kapasitesi sınırlıdır.",
+      "synonyms": [
+        "die Belastbarkeit",
+        "die Kapazität"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Maßhalten",
+      "turkish": "ölçülülük / sınır gözetme",
+      "example": "Nachhaltigkeit verlangt ein Maßhalten im Konsum.",
+      "exampleTranslation": "Sürdürülebilirlik, tüketimde ölçülülük gerektirir.",
+      "synonyms": [
+        "die Mäßigung",
+        "die Enthaltsamkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Selbstüberwindung",
+      "turkish": "kendini aşma / nefse hâkimiyet",
+      "example": "Ökologisches Handeln erfordert oft Selbstüberwindung.",
+      "exampleTranslation": "Ekolojik davranış çoğu zaman kendini aşmayı gerektirir.",
+      "synonyms": [
+        "die Selbstbeherrschung",
+        "die Selbstdisziplin"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Vermessenheit",
+      "turkish": "haddini aşma / küstahlık / kendini beğenmişlik",
+      "example": "Es zeugt von Vermessenheit, die Natur völlig kontrollieren zu wollen.",
+      "exampleTranslation": "Doğayı tümüyle kontrol etmek istemek haddini aşmaktır.",
+      "synonyms": [
+        "die Anmaßung",
+        "die Überheblichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Ehrfurcht",
+      "turkish": "derin saygı / hürmet",
+      "example": "Albert Schweitzer forderte Ehrfurcht vor dem Leben.",
+      "exampleTranslation": "Albert Schweitzer, yaşama karşı derin saygı talep etti.",
+      "synonyms": [
+        "die Achtung",
+        "der Respekt"
+      ],
+      "level": "C1"
+    }
+  ]
+}

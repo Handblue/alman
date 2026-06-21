@@ -1,0 +1,171 @@
+{
+  "kind": "gen",
+  "unitId": 112,
+  "categoryId": 6,
+  "number": 5,
+  "title": "Tıp ve Sağlık Bilimleri",
+  "theme": "Tıp fakültesi ve sağlık bilimleri terminolojisi: anatomi, hastalık, tanı, tedavi ve klinik araştırma kavramları.",
+  "firstWordId": 1666,
+  "words": [
+    {
+      "german": "die Diagnose",
+      "turkish": "tanı / teşhis",
+      "example": "Der Arzt stellte die Diagnose nach mehreren Tests.",
+      "exampleTranslation": "Doktor birkaç testten sonra tanıyı koydu.",
+      "synonyms": [
+        "die Befundung",
+        "die Krankheitsbestimmung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Symptom",
+      "turkish": "belirti / semptom",
+      "example": "Fieber ist ein typisches Symptom einer Infektion.",
+      "exampleTranslation": "Ateş, bir enfeksiyonun tipik belirtisidir.",
+      "synonyms": [
+        "das Anzeichen",
+        "das Krankheitszeichen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Befund",
+      "turkish": "bulgu / tıbbi sonuç",
+      "example": "Der Befund der Untersuchung war unauffällig.",
+      "exampleTranslation": "Muayenenin bulgusu normaldi.",
+      "synonyms": [
+        "das Untersuchungsergebnis"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Behandlung",
+      "turkish": "tedavi",
+      "example": "Die Behandlung dauerte mehrere Wochen.",
+      "exampleTranslation": "Tedavi birkaç hafta sürdü.",
+      "synonyms": [
+        "die Therapie",
+        "die Versorgung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Gewebe",
+      "turkish": "doku",
+      "example": "Das entzündete Gewebe wurde operativ entfernt.",
+      "exampleTranslation": "İltihaplı doku cerrahi olarak çıkarıldı.",
+      "synonyms": [
+        "das Körpergewebe"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Kreislauf",
+      "turkish": "dolaşım / kan dolaşımı",
+      "example": "Bewegung hält den Kreislauf in Schwung.",
+      "exampleTranslation": "Hareket dolaşımı canlı tutar.",
+      "synonyms": [
+        "der Blutkreislauf"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Entzündung",
+      "turkish": "iltihap / enflamasyon",
+      "example": "Die Entzündung im Knie verursachte starke Schmerzen.",
+      "exampleTranslation": "Dizdeki iltihap şiddetli ağrıya yol açtı.",
+      "synonyms": [
+        "die Inflammation"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Nebenwirkung",
+      "turkish": "yan etki",
+      "example": "Dieses Medikament hat kaum Nebenwirkungen.",
+      "exampleTranslation": "Bu ilacın neredeyse hiç yan etkisi yok.",
+      "synonyms": [
+        "die Begleiterscheinung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Eingriff",
+      "turkish": "müdahale / ameliyat",
+      "example": "Der chirurgische Eingriff verlief ohne Komplikationen.",
+      "exampleTranslation": "Cerrahi müdahale komplikasyonsuz geçti.",
+      "synonyms": [
+        "die Operation",
+        "der Eingriff am Herzen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Wirkstoff",
+      "turkish": "etken madde",
+      "example": "Der Wirkstoff lindert die Schmerzen schnell.",
+      "exampleTranslation": "Etken madde ağrıyı hızlıca dindirir.",
+      "synonyms": [
+        "die Substanz",
+        "der Aktivstoff"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Immunsystem",
+      "turkish": "bağışıklık sistemi",
+      "example": "Stress schwächt das Immunsystem erheblich.",
+      "exampleTranslation": "Stres bağışıklık sistemini önemli ölçüde zayıflatır.",
+      "synonyms": [
+        "die Immunabwehr",
+        "die Körperabwehr"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Erreger",
+      "turkish": "patojen / hastalık etkeni",
+      "example": "Der Erreger wird durch Tröpfchen übertragen.",
+      "exampleTranslation": "Etken damlacık yoluyla bulaşır.",
+      "synonyms": [
+        "der Krankheitserreger",
+        "der Keim"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Facharzt",
+      "turkish": "uzman hekim",
+      "example": "Sie wurde an einen Facharzt überwiesen.",
+      "exampleTranslation": "O, bir uzman hekime sevk edildi.",
+      "synonyms": [
+        "der Spezialist",
+        "der Fachmediziner"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Patientenakte",
+      "turkish": "hasta dosyası",
+      "example": "Alle Befunde stehen in der Patientenakte.",
+      "exampleTranslation": "Tüm bulgular hasta dosyasında yer alıyor.",
+      "synonyms": [
+        "die Krankenakte",
+        "die Patientendokumentation"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Genesung",
+      "turkish": "iyileşme / nekahat",
+      "example": "Wir wünschen ihm eine baldige Genesung.",
+      "exampleTranslation": "Ona acil şifalar diliyoruz.",
+      "synonyms": [
+        "die Heilung",
+        "die Erholung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

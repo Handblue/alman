@@ -1,0 +1,167 @@
+{
+  "kind": "gen",
+  "unitId": 137,
+  "categoryId": 7,
+  "number": 13,
+  "title": "Fenomenoloji ve Hermenötik",
+  "theme": "Bilincin yönelimselliği, yaşam dünyası, yorum ve anlama gibi fenomenolojik ve hermenötik kavramları kapsar. Deneyimin betimlenmesi ve metnin yorumlanması üzerine kelimeler.",
+  "firstWordId": 2041,
+  "words": [
+    {
+      "german": "die Wahrnehmung",
+      "turkish": "algı / algılama",
+      "example": "Jede Wahrnehmung ist auf einen Gegenstand gerichtet.",
+      "exampleTranslation": "Her algı bir nesneye yöneliktir.",
+      "synonyms": [
+        "die Sinneserfahrung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Sinn",
+      "turkish": "anlam / mana",
+      "example": "Wir suchen nach dem Sinn des Textes.",
+      "exampleTranslation": "Metnin anlamını arıyoruz.",
+      "synonyms": [
+        "die Bedeutung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Deutung",
+      "turkish": "yorum / yorumlama",
+      "example": "Seine Deutung des Gedichts überzeugte mich.",
+      "exampleTranslation": "Şiire dair yorumu beni ikna etti.",
+      "synonyms": [
+        "die Interpretation",
+        "die Auslegung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Bewusstsein",
+      "turkish": "bilinç",
+      "example": "Das Bewusstsein ist immer Bewusstsein von etwas.",
+      "exampleTranslation": "Bilinç her zaman bir şeyin bilincidir.",
+      "synonyms": [
+        "das Gewahrsein"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Erscheinung",
+      "turkish": "görünüş / fenomen",
+      "example": "Die Erscheinung zeigt sich dem Bewusstsein unmittelbar.",
+      "exampleTranslation": "Görünüş, bilince doğrudan kendini gösterir.",
+      "synonyms": [
+        "das Phänomen",
+        "die Manifestation"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Standpunkt",
+      "turkish": "bakış açısı / duruş noktası",
+      "example": "Jeder versteht den Text vom eigenen Standpunkt aus.",
+      "exampleTranslation": "Herkes metni kendi bakış açısından anlar.",
+      "synonyms": [
+        "die Sichtweise",
+        "die Perspektive"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Intentionalität",
+      "turkish": "yönelmişlik / yönelimsellik",
+      "example": "Die Intentionalität kennzeichnet jeden Bewusstseinsakt.",
+      "exampleTranslation": "Yönelmişlik her bilinç edimini niteler.",
+      "synonyms": [
+        "die Gerichtetheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Lebenswelt",
+      "turkish": "yaşam dünyası",
+      "example": "Die Wissenschaft entspringt der vorwissenschaftlichen Lebenswelt.",
+      "exampleTranslation": "Bilim, bilim öncesi yaşam dünyasından doğar.",
+      "synonyms": [
+        "die Alltagswelt"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Horizont",
+      "turkish": "ufuk / anlam ufku",
+      "example": "Im Gespräch verschmelzen die Horizonte der Beteiligten.",
+      "exampleTranslation": "Konuşmada katılanların ufukları kaynaşır.",
+      "synonyms": [
+        "der Erwartungsrahmen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Vorurteil",
+      "turkish": "önyargı / önanlama",
+      "example": "Ohne Vorurteile ist kein Verstehen möglich.",
+      "exampleTranslation": "Önyargılar olmadan hiçbir anlama mümkün değildir.",
+      "synonyms": [
+        "das Vorverständnis",
+        "die Voreingenommenheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Auslegung",
+      "turkish": "yorum / açımlama / tefsir",
+      "example": "Die Auslegung des Werkes bleibt immer vorläufig.",
+      "exampleTranslation": "Eserin yorumlanması her zaman geçici kalır.",
+      "synonyms": [
+        "die Interpretation",
+        "die Exegese"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Verstehen",
+      "turkish": "anlama / kavrama",
+      "example": "Das Verstehen bewegt sich in einem Zirkel.",
+      "exampleTranslation": "Anlama bir döngü içinde hareket eder.",
+      "synonyms": [
+        "das Begreifen",
+        "die Sinnerfassung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Leiblichkeit",
+      "turkish": "bedensellik / tensellik",
+      "example": "Die Leiblichkeit prägt unsere Erfahrung der Welt.",
+      "exampleTranslation": "Bedensellik, dünya deneyimimizi biçimlendirir.",
+      "synonyms": [
+        "die Körperlichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Anschauung",
+      "turkish": "görü / sezgi / temaşa",
+      "example": "In der Anschauung gibt sich die Sache selbst.",
+      "exampleTranslation": "Görüde şeyin kendisi kendini verir.",
+      "synonyms": [
+        "die Intuition"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Vergegenständlichung",
+      "turkish": "nesneleştirme / şeyleştirme",
+      "example": "Die Vergegenständlichung verwandelt das Erlebnis in ein Objekt.",
+      "exampleTranslation": "Nesneleştirme, yaşantıyı bir nesneye dönüştürür.",
+      "synonyms": [
+        "die Objektivierung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

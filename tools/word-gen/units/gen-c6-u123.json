@@ -1,0 +1,174 @@
+{
+  "kind": "gen",
+  "unitId": 123,
+  "categoryId": 6,
+  "number": 16,
+  "title": "İstatistik ve Araştırma Yöntemleri",
+  "theme": "Nicel ve nitel araştırma yöntemleri ile istatistik terminolojisi: örneklem, ölçüm, analiz ve sonuç çıkarımı.",
+  "firstWordId": 1831,
+  "words": [
+    {
+      "german": "die Grundgesamtheit",
+      "turkish": "evren / ana kütle",
+      "example": "Die Stichprobe soll die Grundgesamtheit gut abbilden.",
+      "exampleTranslation": "Örneklem, evreni iyi temsil etmelidir.",
+      "synonyms": [
+        "die Population"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Erhebung",
+      "turkish": "veri toplama / anket araştırması",
+      "example": "Die Erhebung der Daten dauerte drei Monate.",
+      "exampleTranslation": "Verilerin toplanması üç ay sürdü.",
+      "synonyms": [
+        "die Datenerhebung",
+        "die Sammlung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Befragung",
+      "turkish": "anket / sorgulama",
+      "example": "An der Befragung nahmen tausend Personen teil.",
+      "exampleTranslation": "Ankete bin kişi katıldı.",
+      "synonyms": [
+        "die Umfrage",
+        "das Interview"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Auswertung",
+      "turkish": "değerlendirme / analiz",
+      "example": "Die Auswertung der Ergebnisse erfolgt am Computer.",
+      "exampleTranslation": "Sonuçların değerlendirilmesi bilgisayarda yapılır.",
+      "synonyms": [
+        "die Analyse",
+        "die Bewertung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Mittelwert",
+      "turkish": "ortalama / aritmetik ortalama",
+      "example": "Der Mittelwert aller Noten beträgt 2,3.",
+      "exampleTranslation": "Tüm notların ortalaması 2,3'tür.",
+      "synonyms": [
+        "der Durchschnitt",
+        "das Mittel"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Streuung",
+      "turkish": "dağılım / saçılım / varyasyon",
+      "example": "Eine hohe Streuung deutet auf große Unterschiede hin.",
+      "exampleTranslation": "Yüksek bir dağılım büyük farklara işaret eder.",
+      "synonyms": [
+        "die Varianz",
+        "die Verteilung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Korrelation",
+      "turkish": "korelasyon / ilişki",
+      "example": "Zwischen beiden Variablen besteht eine starke Korrelation.",
+      "exampleTranslation": "İki değişken arasında güçlü bir korelasyon var.",
+      "synonyms": [
+        "der Zusammenhang",
+        "die Wechselbeziehung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Signifikanz",
+      "turkish": "anlamlılık / önem",
+      "example": "Das Ergebnis erreicht keine statistische Signifikanz.",
+      "exampleTranslation": "Sonuç istatistiksel anlamlılığa ulaşmıyor.",
+      "synonyms": [
+        "die Aussagekraft",
+        "die Bedeutsamkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Skala",
+      "turkish": "ölçek / skala",
+      "example": "Die Antworten werden auf einer fünfstufigen Skala erfasst.",
+      "exampleTranslation": "Yanıtlar beşli bir ölçekle kaydedilir.",
+      "synonyms": [
+        "die Messskala",
+        "die Abstufung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Stichprobengröße",
+      "turkish": "örneklem büyüklüğü",
+      "example": "Die Stichprobengröße war für eine Aussage zu klein.",
+      "exampleTranslation": "Örneklem büyüklüğü bir çıkarım için fazla küçüktü.",
+      "synonyms": [
+        "der Stichprobenumfang"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Beobachtung",
+      "turkish": "gözlem",
+      "example": "Die teilnehmende Beobachtung liefert qualitative Daten.",
+      "exampleTranslation": "Katılımcı gözlem nitel veriler sağlar.",
+      "synonyms": [
+        "die Observation",
+        "die Betrachtung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Gültigkeit",
+      "turkish": "geçerlilik",
+      "example": "Die Gültigkeit des Tests wurde sorgfältig geprüft.",
+      "exampleTranslation": "Testin geçerliliği dikkatlice incelendi.",
+      "synonyms": [
+        "die Validität",
+        "die Wirksamkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Verlässlichkeit",
+      "turkish": "güvenilirlik",
+      "example": "Die Verlässlichkeit der Messung ist entscheidend.",
+      "exampleTranslation": "Ölçümün güvenilirliği belirleyicidir.",
+      "synonyms": [
+        "die Zuverlässigkeit",
+        "die Reliabilität"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Verzerrung",
+      "turkish": "sapma / yanlılık / çarpıtma",
+      "example": "Eine systematische Verzerrung gefährdet die Ergebnisse.",
+      "exampleTranslation": "Sistematik bir yanlılık sonuçları tehlikeye atar.",
+      "synonyms": [
+        "der Bias",
+        "die Verfälschung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Messgenauigkeit",
+      "turkish": "ölçüm hassasiyeti / ölçüm doğruluğu",
+      "example": "Moderne Geräte erhöhen die Messgenauigkeit erheblich.",
+      "exampleTranslation": "Modern cihazlar ölçüm hassasiyetini önemli ölçüde artırır.",
+      "synonyms": [
+        "die Präzision",
+        "die Genauigkeit"
+      ],
+      "level": "B2"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "kind": "gen",
+  "unitId": 130,
+  "categoryId": 7,
+  "number": 6,
+  "title": "Siyaset Felsefesi ve Devlet",
+  "theme": "Devlet, iktidar, egemenlik, toplum sözleşmesi ve siyasi meşruiyetle ilgili kavramları kapsar. Adil yönetim ve siyasi düzen üzerine felsefi kelimeler.",
+  "firstWordId": 1936,
+  "words": [
+    {
+      "german": "die Souveränität",
+      "turkish": "egemenlik / hükümranlık",
+      "example": "Die Souveränität liegt beim Volk.",
+      "exampleTranslation": "Egemenlik halka aittir.",
+      "synonyms": [
+        "die Hoheit",
+        "die Oberhoheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Herrschaft",
+      "turkish": "iktidar / hükümranlık / egemenlik",
+      "example": "Jede Herrschaft braucht eine Rechtfertigung.",
+      "exampleTranslation": "Her iktidar bir meşrulaştırmaya ihtiyaç duyar.",
+      "synonyms": [
+        "die Vorherrschaft",
+        "das Regiment"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Legitimität",
+      "turkish": "meşruiyet",
+      "example": "Die Legitimität der Regierung wird angezweifelt.",
+      "exampleTranslation": "Hükümetin meşruiyeti sorgulanıyor.",
+      "synonyms": [
+        "die Rechtmäßigkeit",
+        "die Berechtigung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Gesellschaftsvertrag",
+      "turkish": "toplum sözleşmesi",
+      "example": "Rousseau schrieb über den Gesellschaftsvertrag.",
+      "exampleTranslation": "Rousseau toplum sözleşmesi üzerine yazdı.",
+      "synonyms": [
+        "der Sozialkontrakt"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Gemeinwohl",
+      "turkish": "ortak iyi / kamu yararı",
+      "example": "Politik soll dem Gemeinwohl dienen.",
+      "exampleTranslation": "Siyaset ortak iyiye hizmet etmelidir.",
+      "synonyms": [
+        "das Allgemeinwohl",
+        "das öffentliche Interesse"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Bürger",
+      "turkish": "yurttaş / vatandaş",
+      "example": "Jeder Bürger hat Rechte und Pflichten.",
+      "exampleTranslation": "Her yurttaşın hakları ve görevleri vardır.",
+      "synonyms": [
+        "der Staatsbürger",
+        "der Einwohner"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Verfassung",
+      "turkish": "anayasa",
+      "example": "Die Verfassung schützt die Grundrechte.",
+      "exampleTranslation": "Anayasa temel hakları korur.",
+      "synonyms": [
+        "die Konstitution",
+        "das Staatsgrundgesetz"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Gewalt",
+      "turkish": "iktidar erki / kuvvet / şiddet",
+      "example": "Die staatliche Gewalt ist geteilt.",
+      "exampleTranslation": "Devlet erki bölünmüştür.",
+      "synonyms": [
+        "die Macht",
+        "die Befugnis"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Staatsgewalt",
+      "turkish": "devlet erki / devlet otoritesi",
+      "example": "Die Staatsgewalt geht vom Volke aus.",
+      "exampleTranslation": "Devlet erki halktan kaynaklanır.",
+      "synonyms": [
+        "die Hoheitsgewalt",
+        "die öffentliche Gewalt"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Ideologie",
+      "turkish": "ideoloji",
+      "example": "Jede Partei vertritt eine bestimmte Ideologie.",
+      "exampleTranslation": "Her parti belirli bir ideolojiyi temsil eder.",
+      "synonyms": [
+        "die Weltanschauung",
+        "das Gedankengebäude"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Gemeinwesen",
+      "turkish": "siyasi topluluk / kamusal varlık / cemiyet",
+      "example": "Ein stabiles Gemeinwesen braucht Vertrauen.",
+      "exampleTranslation": "İstikrarlı bir siyasi topluluk güvene ihtiyaç duyar.",
+      "synonyms": [
+        "das Staatswesen",
+        "die Gemeinschaft"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Selbstbestimmung",
+      "turkish": "kendi kaderini tayin / özerklik",
+      "example": "Völker haben ein Recht auf Selbstbestimmung.",
+      "exampleTranslation": "Halkların kendi kaderini tayin hakkı vardır.",
+      "synonyms": [
+        "die Autonomie",
+        "die Eigenständigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Willkür",
+      "turkish": "keyfilik / keyfî yönetim",
+      "example": "Ein Rechtsstaat schützt vor staatlicher Willkür.",
+      "exampleTranslation": "Hukuk devleti, devletin keyfiliğine karşı korur.",
+      "synonyms": [
+        "die Beliebigkeit",
+        "die Eigenmächtigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Unterdrückung",
+      "turkish": "baskı / ezme / tahakküm",
+      "example": "Die Bürger lehnten sich gegen die Unterdrückung auf.",
+      "exampleTranslation": "Yurttaşlar baskıya karşı ayaklandı.",
+      "synonyms": [
+        "die Repression",
+        "die Knechtung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Untertan",
+      "turkish": "tebaa / uyruk",
+      "example": "Im Absolutismus war jeder ein Untertan des Königs.",
+      "exampleTranslation": "Mutlakiyette herkes kralın bir tebaasıydı.",
+      "synonyms": [
+        "der Gefolgsmann",
+        "der Abhängige"
+      ],
+      "level": "C1"
+    }
+  ]
+}

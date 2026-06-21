@@ -1,0 +1,171 @@
+{
+  "kind": "gen",
+  "unitId": 119,
+  "categoryId": 6,
+  "number": 12,
+  "title": "Tarih ve Arkeoloji",
+  "theme": "Tarih ve arkeoloji disiplinlerinin terminolojisi: dönemler, kaynaklar, kazı, kanıt ve tarihsel yorum.",
+  "firstWordId": 1771,
+  "words": [
+    {
+      "german": "die Ausgrabung",
+      "turkish": "kazı / arkeolojik kazı",
+      "example": "Bei der Ausgrabung fanden sie römische Münzen.",
+      "exampleTranslation": "Kazı sırasında Roma sikkeleri buldular.",
+      "synonyms": [
+        "die Grabung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Fund",
+      "turkish": "buluntu / bulgu",
+      "example": "Der Fund stammt aus der Bronzezeit.",
+      "exampleTranslation": "Buluntu Tunç Çağı'ndan kalmadır.",
+      "synonyms": [
+        "das Fundstück",
+        "der Befund"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Quelle",
+      "turkish": "kaynak",
+      "example": "Historiker prüfen jede Quelle sehr genau.",
+      "exampleTranslation": "Tarihçiler her kaynağı çok dikkatli inceler.",
+      "synonyms": [
+        "die Schriftquelle"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Epoche",
+      "turkish": "dönem / çağ",
+      "example": "Diese Epoche prägte die europäische Kunst.",
+      "exampleTranslation": "Bu dönem Avrupa sanatını şekillendirdi.",
+      "synonyms": [
+        "die Ära",
+        "der Zeitabschnitt"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Zeitalter",
+      "turkish": "çağ / devir",
+      "example": "Wir leben heute im digitalen Zeitalter.",
+      "exampleTranslation": "Bugün dijital çağda yaşıyoruz.",
+      "synonyms": [
+        "die Ära"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Ereignis",
+      "turkish": "olay",
+      "example": "Der Mauerfall war ein historisches Ereignis.",
+      "exampleTranslation": "Duvarın yıkılışı tarihi bir olaydı.",
+      "synonyms": [
+        "der Vorfall",
+        "das Geschehen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Erbe",
+      "turkish": "miras",
+      "example": "Diese Stadt schützt ihr kulturelles Erbe.",
+      "exampleTranslation": "Bu şehir kültürel mirasını koruyor.",
+      "synonyms": [
+        "das Vermächtnis",
+        "der Nachlass"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Denkmal",
+      "turkish": "anıt",
+      "example": "Das Denkmal erinnert an die Opfer des Krieges.",
+      "exampleTranslation": "Anıt, savaşın kurbanlarını anıyor.",
+      "synonyms": [
+        "das Monument",
+        "das Mahnmal"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Überlieferung",
+      "turkish": "rivayet / aktarım / gelenek",
+      "example": "Die mündliche Überlieferung ist oft ungenau.",
+      "exampleTranslation": "Sözlü aktarım çoğu zaman kesin değildir.",
+      "synonyms": [
+        "die Tradition",
+        "die Weitergabe"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Urkunde",
+      "turkish": "belge / vesika",
+      "example": "Die Urkunde belegt den Besitz des Landes.",
+      "exampleTranslation": "Belge, arazinin mülkiyetini kanıtlıyor.",
+      "synonyms": [
+        "das Dokument",
+        "die Akte"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Schicht",
+      "turkish": "katman / tabaka",
+      "example": "Jede Schicht erzählt von einer anderen Zeit.",
+      "exampleTranslation": "Her katman başka bir zamandan söz eder.",
+      "synonyms": [
+        "die Lage",
+        "das Stratum"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Umbruch",
+      "turkish": "köklü değişim / dönüşüm",
+      "example": "Die Industrialisierung war ein tiefer Umbruch.",
+      "exampleTranslation": "Sanayileşme derin bir köklü değişimdi.",
+      "synonyms": [
+        "der Wandel",
+        "die Wende"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Deutung",
+      "turkish": "yorum / yorumlama",
+      "example": "Die Deutung der Funde bleibt umstritten.",
+      "exampleTranslation": "Buluntuların yorumu tartışmalı kalıyor.",
+      "synonyms": [
+        "die Interpretation",
+        "die Auslegung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Geschichtsschreibung",
+      "turkish": "tarih yazımı / tarihçilik",
+      "example": "Die moderne Geschichtsschreibung hinterfragt alte Mythen.",
+      "exampleTranslation": "Modern tarih yazımı eski efsaneleri sorgular.",
+      "synonyms": [
+        "die Historiografie"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Hochkultur",
+      "turkish": "ileri uygarlık / yüksek kültür",
+      "example": "Ägypten war eine frühe Hochkultur.",
+      "exampleTranslation": "Mısır erken bir ileri uygarlıktı.",
+      "synonyms": [
+        "die Zivilisation"
+      ],
+      "level": "C1"
+    }
+  ]
+}

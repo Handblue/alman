@@ -1,0 +1,169 @@
+{
+  "kind": "gen",
+  "unitId": 147,
+  "categoryId": 8,
+  "number": 7,
+  "title": "Renkli Deyimler",
+  "theme": "Renk adlarının mecazi geçtiği deyimler; siyah, beyaz, kırmızı, mavi ve yeşil renklerle ruh hali, durum ve değer yargısı anlatımı.",
+  "firstWordId": 2191,
+  "words": [
+    {
+      "german": "blau sein",
+      "turkish": "sarhoş olmak / kafayı bulmak",
+      "example": "Nach der Feier war er total blau.",
+      "exampleTranslation": "Partiden sonra tamamen sarhoştu.",
+      "synonyms": [
+        "betrunken sein"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "blauäugig",
+      "turkish": "saf / toy / fazla iyimser",
+      "example": "Du bist viel zu blauäugig in solchen Geschäften.",
+      "exampleTranslation": "Böyle işlerde fazla safsın.",
+      "synonyms": [
+        "naiv",
+        "arglos"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "schwarzsehen",
+      "turkish": "karamsar olmak / kötümser düşünmek",
+      "example": "Sie sieht für die Zukunft immer schwarz.",
+      "exampleTranslation": "Gelecek için hep karamsar düşünüyor.",
+      "synonyms": [
+        "pessimistisch sein"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "rotsehen",
+      "turkish": "öfkeden gözü dönmek / çok kızmak",
+      "example": "Wenn er das hört, sieht er sofort rot.",
+      "exampleTranslation": "Bunu duyunca hemen öfkeden gözü döner.",
+      "synonyms": [
+        "wütend werden"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der rote Faden",
+      "turkish": "ana fikir / bağlayıcı temel düşünce",
+      "example": "Dem Vortrag fehlt der rote Faden.",
+      "exampleTranslation": "Sunumun ana fikri eksik.",
+      "synonyms": [
+        "der Leitgedanke",
+        "die Leitlinie"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "grünes Licht geben",
+      "turkish": "onay vermek / izin vermek",
+      "example": "Der Chef hat uns endlich grünes Licht gegeben.",
+      "exampleTranslation": "Patron sonunda bize onay verdi.",
+      "synonyms": [
+        "genehmigen",
+        "zustimmen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "grün vor Neid sein",
+      "turkish": "kıskançlıktan kıvranmak / çok kıskanmak",
+      "example": "Als sie das Auto sah, war sie grün vor Neid.",
+      "exampleTranslation": "Arabayı görünce kıskançlıktan kıvrandı.",
+      "synonyms": [
+        "eifersüchtig sein",
+        "neidisch sein"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "eine weiße Weste haben",
+      "turkish": "tertemiz olmak / sicili temiz olmak",
+      "example": "Der Politiker behauptet, eine weiße Weste zu haben.",
+      "exampleTranslation": "Politikacı sicilinin tertemiz olduğunu iddia ediyor.",
+      "synonyms": [
+        "unschuldig sein",
+        "makellos sein"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "schwarzfahren",
+      "turkish": "biletsiz seyahat etmek / kaçak binmek",
+      "example": "In der Bahn schwarzzufahren ist riskant.",
+      "exampleTranslation": "Trende kaçak seyahat etmek risklidir.",
+      "synonyms": [
+        "ohne Fahrschein fahren"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der schwarze Markt",
+      "turkish": "kara borsa",
+      "example": "Die Medikamente gab es nur auf dem schwarzen Markt.",
+      "exampleTranslation": "İlaçlar sadece kara borsada bulunuyordu.",
+      "synonyms": [
+        "der Schwarzhandel",
+        "der Schleichhandel"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "etwas schwarz auf weiß haben",
+      "turkish": "bir şeyi yazılı olarak / belgeli olarak elinde bulundurmak",
+      "example": "Ich will die Zusage schwarz auf weiß haben.",
+      "exampleTranslation": "Onayı yazılı olarak elimde istiyorum.",
+      "synonyms": [
+        "schriftlich haben"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das schwarze Schaf",
+      "turkish": "yüzkarası / ailenin sorunlu üyesi",
+      "example": "Er gilt als das schwarze Schaf der Familie.",
+      "exampleTranslation": "Ailenin yüzkarası olarak görülüyor.",
+      "synonyms": [
+        "der Außenseiter"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die graue Eminenz",
+      "turkish": "perde arkasındaki güç / gizli nüfuz sahibi kişi",
+      "example": "Er war die graue Eminenz hinter dem Minister.",
+      "exampleTranslation": "Bakanın arkasındaki perde arkası güçtü.",
+      "synonyms": [
+        "der Strippenzieher",
+        "der Drahtzieher"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "goldene Berge versprechen",
+      "turkish": "olmadık vaatlerde bulunmak / hayaller satmak",
+      "example": "Im Wahlkampf versprechen alle goldene Berge.",
+      "exampleTranslation": "Seçim kampanyasında herkes olmadık vaatlerde bulunuyor.",
+      "synonyms": [
+        "leere Versprechungen machen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "alles in rosa sehen",
+      "turkish": "her şeyi toz pembe görmek / fazla iyimser bakmak",
+      "example": "Frisch verliebt sieht er alles in rosa.",
+      "exampleTranslation": "Yeni aşık olunca her şeyi toz pembe görüyor.",
+      "synonyms": [
+        "alles durch die rosarote Brille sehen",
+        "optimistisch sein"
+      ],
+      "level": "B2"
+    }
+  ]
+}

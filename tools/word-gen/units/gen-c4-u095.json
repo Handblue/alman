@@ -1,0 +1,168 @@
+{
+  "kind": "gen",
+  "unitId": 95,
+  "categoryId": 4,
+  "number": 19,
+  "title": "telc — Kültür, Sanat ve Toplum",
+  "theme": "Kültürel etkinlikler, sanat ve toplumsal değişim tartışmaları bağlamında telc sınavının yüksek düzey kelimeleri.",
+  "firstWordId": 1411,
+  "words": [
+    {
+      "german": "die Aufführung",
+      "turkish": "gösteri / temsil / sahneleme",
+      "example": "Die Aufführung des Stücks war ausverkauft.",
+      "exampleTranslation": "Oyunun gösterimi tamamen doluydu.",
+      "synonyms": [
+        "die Vorstellung",
+        "die Darbietung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Gemälde",
+      "turkish": "tablo / resim",
+      "example": "Im Museum hängt ein berühmtes Gemälde.",
+      "exampleTranslation": "Müzede ünlü bir tablo asılı.",
+      "synonyms": [
+        "das Bild"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Ausstellung",
+      "turkish": "sergi",
+      "example": "Die Ausstellung moderner Kunst beginnt morgen.",
+      "exampleTranslation": "Modern sanat sergisi yarın başlıyor.",
+      "synonyms": [
+        "die Schau"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Roman",
+      "turkish": "roman",
+      "example": "Sie hat einen spannenden Roman geschrieben.",
+      "exampleTranslation": "O, heyecanlı bir roman yazdı.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "der Schauspieler",
+      "turkish": "oyuncu / aktör",
+      "example": "Der Schauspieler spielte seine Rolle hervorragend.",
+      "exampleTranslation": "Oyuncu rolünü mükemmel oynadı.",
+      "synonyms": [
+        "der Darsteller",
+        "der Mime"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Brauchtum",
+      "turkish": "gelenek / örf",
+      "example": "Das Brauchtum wird in jedem Dorf gepflegt.",
+      "exampleTranslation": "Gelenek her köyde yaşatılır.",
+      "synonyms": [
+        "der Brauch",
+        "die Sitte"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Vielfalt",
+      "turkish": "çeşitlilik / zenginlik",
+      "example": "Die kulturelle Vielfalt der Stadt beeindruckt mich.",
+      "exampleTranslation": "Şehrin kültürel çeşitliliği beni etkiliyor.",
+      "synonyms": [
+        "die Mannigfaltigkeit",
+        "die Diversität"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Wertschätzung",
+      "turkish": "değer verme / takdir",
+      "example": "Künstler verdienen mehr Wertschätzung in der Gesellschaft.",
+      "exampleTranslation": "Sanatçılar toplumda daha fazla takdiri hak ediyor.",
+      "synonyms": [
+        "die Anerkennung",
+        "die Achtung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Aufklärung",
+      "turkish": "aydınlanma / bilgilendirme",
+      "example": "Die Aufklärung veränderte das europäische Denken grundlegend.",
+      "exampleTranslation": "Aydınlanma, Avrupa düşüncesini kökten değiştirdi.",
+      "synonyms": [
+        "die Erleuchtung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Förderung",
+      "turkish": "destek / teşvik",
+      "example": "Die Förderung junger Künstler ist sehr wichtig.",
+      "exampleTranslation": "Genç sanatçıların desteklenmesi çok önemli.",
+      "synonyms": [
+        "die Unterstützung",
+        "die Subvention"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Wandel",
+      "turkish": "değişim / dönüşüm",
+      "example": "Der gesellschaftliche Wandel vollzieht sich langsam.",
+      "exampleTranslation": "Toplumsal değişim yavaş yavaş gerçekleşir.",
+      "synonyms": [
+        "die Veränderung",
+        "der Umbruch"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Zeitvertreib",
+      "turkish": "vakit geçirme / eğlence",
+      "example": "Lesen ist für ihn ein angenehmer Zeitvertreib.",
+      "exampleTranslation": "Okumak onun için keyifli bir vakit geçirme yoludur.",
+      "synonyms": [
+        "die Freizeitbeschäftigung",
+        "die Zerstreuung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Mitgestaltung",
+      "turkish": "birlikte şekillendirme / katılımcı katkı",
+      "example": "Bürger fordern mehr Mitgestaltung im kulturellen Leben.",
+      "exampleTranslation": "Vatandaşlar kültürel yaşamda daha fazla katılım talep ediyor.",
+      "synonyms": [
+        "die Teilhabe",
+        "die Beteiligung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Zugehörigkeit",
+      "turkish": "aidiyet / mensubiyet",
+      "example": "Sprache stiftet ein Gefühl der Zugehörigkeit.",
+      "exampleTranslation": "Dil, bir aidiyet duygusu yaratır.",
+      "synonyms": [
+        "die Verbundenheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Auseinandersetzung mit der Vergangenheit",
+      "turkish": "geçmişle yüzleşme / hesaplaşma",
+      "example": "Die Auseinandersetzung mit der Vergangenheit prägt die Kunst.",
+      "exampleTranslation": "Geçmişle yüzleşme, sanatı biçimlendirir.",
+      "synonyms": [
+        "die Vergangenheitsbewältigung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

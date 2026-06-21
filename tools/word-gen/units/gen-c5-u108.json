@@ -1,0 +1,154 @@
+{
+  "kind": "gen",
+  "unitId": 108,
+  "categoryId": 5,
+  "number": 17,
+  "title": "Şehirde Yön ve Adres Sorma",
+  "theme": "Yol tarifi alma, adres sorma ve şehirde yön bulmayla ilgili günlük kelimeler. Kaybolma, harita ve mekan tarif etme bağlamı.",
+  "firstWordId": 1606,
+  "words": [
+    {
+      "german": "links",
+      "turkish": "sol / solda / sola",
+      "example": "Gehen Sie an der Ampel nach links.",
+      "exampleTranslation": "Işıklarda sola dönün.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "rechts",
+      "turkish": "sağ / sağda / sağa",
+      "example": "Die Bank ist gleich rechts.",
+      "exampleTranslation": "Banka hemen sağda.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "geradeaus",
+      "turkish": "dosdoğru / düz ileri",
+      "example": "Fahren Sie immer geradeaus.",
+      "exampleTranslation": "Hep dümdüz devam edin.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "der Weg",
+      "turkish": "yol / patika",
+      "example": "Kennen Sie den Weg zum Bahnhof?",
+      "exampleTranslation": "Tren istasyonuna giden yolu biliyor musunuz?",
+      "synonyms": [
+        "der Pfad"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Karte",
+      "turkish": "harita / kart",
+      "example": "Ich schaue schnell auf die Karte.",
+      "exampleTranslation": "Hızlıca haritaya bakıyorum.",
+      "synonyms": [
+        "der Plan"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Ecke",
+      "turkish": "köşe",
+      "example": "Das Café ist um die Ecke.",
+      "exampleTranslation": "Kafe köşeyi dönünce.",
+      "synonyms": [
+        "der Winkel"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Kreuzung",
+      "turkish": "kavşak",
+      "example": "An der nächsten Kreuzung links abbiegen.",
+      "exampleTranslation": "Bir sonraki kavşaktan sola dön.",
+      "synonyms": [
+        "die Wegkreuzung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Ampel",
+      "turkish": "trafik ışığı",
+      "example": "Warten Sie an der roten Ampel.",
+      "exampleTranslation": "Kırmızı ışıkta bekleyin.",
+      "synonyms": [
+        "das Verkehrslicht"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "abbiegen",
+      "turkish": "dönmek (yol)",
+      "example": "Sie müssen hier nach rechts abbiegen.",
+      "exampleTranslation": "Burada sağa dönmeniz gerekiyor.",
+      "synonyms": [
+        "einbiegen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Platz",
+      "turkish": "meydan / yer",
+      "example": "Der Brunnen steht auf dem Platz.",
+      "exampleTranslation": "Çeşme meydanda duruyor.",
+      "synonyms": [
+        "der Marktplatz"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "gegenüber",
+      "turkish": "karşısında / karşı",
+      "example": "Die Post ist gegenüber der Kirche.",
+      "exampleTranslation": "Postane kilisenin karşısında.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "das Rathaus",
+      "turkish": "belediye binası",
+      "example": "Das Rathaus liegt im Zentrum.",
+      "exampleTranslation": "Belediye binası merkezde yer alıyor.",
+      "synonyms": [
+        "das Gemeindehaus"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Entfernung",
+      "turkish": "mesafe / uzaklık",
+      "example": "Die Entfernung zum Museum ist gering.",
+      "exampleTranslation": "Müzeye olan mesafe kısa.",
+      "synonyms": [
+        "die Distanz",
+        "die Strecke"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sich verlaufen",
+      "turkish": "yolunu kaybetmek / kaybolmak",
+      "example": "Ich habe mich in der Altstadt verlaufen.",
+      "exampleTranslation": "Eski şehirde kayboldum.",
+      "synonyms": [
+        "sich verirren"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sich orientieren",
+      "turkish": "yön bulmak / yönünü belirlemek",
+      "example": "Mit der App kann ich mich gut orientieren.",
+      "exampleTranslation": "Uygulamayla yönümü iyi bulabiliyorum.",
+      "synonyms": [
+        "sich zurechtfinden"
+      ],
+      "level": "B1"
+    }
+  ]
+}

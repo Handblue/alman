@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 128,
+  "categoryId": 7,
+  "number": 4,
+  "title": "Ontoloji ve Metafizik",
+  "theme": "Varlık, var oluş, töz ve gerçekliğin yapısıyla ilgili temel metafizik kavramları kapsar. Neyin var olduğu, varlığın doğası ve görünüş-gerçeklik ayrımı üzerine kelimeler.",
+  "firstWordId": 1906,
+  "words": [
+    {
+      "german": "das Dasein",
+      "turkish": "var oluş / orada-oluş",
+      "example": "Das Dasein des Menschen ist endlich.",
+      "exampleTranslation": "İnsanın var oluşu sonludur.",
+      "synonyms": [
+        "die Existenz",
+        "das Vorhandensein"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Existenz",
+      "turkish": "var oluş / mevcudiyet",
+      "example": "Die Existenz Gottes lässt sich nicht beweisen.",
+      "exampleTranslation": "Tanrı'nın var oluşu kanıtlanamaz.",
+      "synonyms": [
+        "das Dasein",
+        "das Bestehen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Wirklichkeit",
+      "turkish": "gerçeklik",
+      "example": "Die Wahrnehmung verzerrt oft die Wirklichkeit.",
+      "exampleTranslation": "Algı çoğu zaman gerçekliği çarpıtır.",
+      "synonyms": [
+        "die Realität",
+        "die Wahrheit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Erscheinung",
+      "turkish": "görünüş / fenomen",
+      "example": "Kant unterscheidet die Erscheinung vom Ding an sich.",
+      "exampleTranslation": "Kant görünüşü kendinde-şeyden ayırır.",
+      "synonyms": [
+        "das Phänomen",
+        "die Erscheinungsform"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Schein",
+      "turkish": "yanılsama / görünüş",
+      "example": "Der Schein trügt sehr oft.",
+      "exampleTranslation": "Görünüş çoğu zaman aldatır.",
+      "synonyms": [
+        "die Illusion",
+        "der Anschein"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Notwendigkeit",
+      "turkish": "zorunluluk",
+      "example": "Jede Wirkung folgt aus einer Notwendigkeit.",
+      "exampleTranslation": "Her etki bir zorunluluktan doğar.",
+      "synonyms": [
+        "die Unausweichlichkeit",
+        "der Zwang"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Substanz",
+      "turkish": "töz / cevher",
+      "example": "Für Spinoza gibt es nur eine Substanz.",
+      "exampleTranslation": "Spinoza'ya göre yalnızca tek bir töz vardır.",
+      "synonyms": [
+        "die Grundsubstanz",
+        "das Wesen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Akzidenz",
+      "turkish": "ilinek / araz",
+      "example": "Ein Akzidenz haftet stets einer Substanz an.",
+      "exampleTranslation": "Bir ilinek daima bir töze bağlıdır.",
+      "synonyms": [
+        "die Eigenschaft",
+        "das Merkmal"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Zeitlichkeit",
+      "turkish": "zamansallık",
+      "example": "Die Zeitlichkeit prägt unser ganzes Dasein.",
+      "exampleTranslation": "Zamansallık bütün var oluşumuza damgasını vurur.",
+      "synonyms": [
+        "die Vergänglichkeit",
+        "die Endlichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Räumlichkeit",
+      "turkish": "mekânsallık",
+      "example": "Die Räumlichkeit der Dinge bedingt ihre Anordnung.",
+      "exampleTranslation": "Şeylerin mekânsallığı düzenlenişlerini koşullar.",
+      "synonyms": [
+        "die Ausdehnung",
+        "die Örtlichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Seiende",
+      "turkish": "var olan / mevcut olan",
+      "example": "Die Metaphysik fragt nach dem Seienden als solchem.",
+      "exampleTranslation": "Metafizik var olanı, var olan olarak sorgular.",
+      "synonyms": [
+        "das Existierende",
+        "das Vorhandene"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Endlichkeit",
+      "turkish": "sonluluk",
+      "example": "Die Endlichkeit des Lebens erzeugt Sinnfragen.",
+      "exampleTranslation": "Hayatın sonluluğu anlam sorularını doğurur.",
+      "synonyms": [
+        "die Begrenztheit",
+        "die Vergänglichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Immanenz",
+      "turkish": "içkinlik",
+      "example": "Die Immanenz steht der Transzendenz gegenüber.",
+      "exampleTranslation": "İçkinlik aşkınlığın karşısında durur.",
+      "synonyms": [
+        "die Innerweltlichkeit",
+        "die Diesseitigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Beschaffenheit",
+      "turkish": "nitelik / yapı",
+      "example": "Die Beschaffenheit der Materie bleibt rätselhaft.",
+      "exampleTranslation": "Maddenin niteliği esrarengiz kalmaktadır.",
+      "synonyms": [
+        "die Eigenschaft",
+        "die Verfassung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Zufall",
+      "turkish": "rastlantı / olumsallık",
+      "example": "Ob alles Zufall ist, bleibt umstritten.",
+      "exampleTranslation": "Her şeyin rastlantı olup olmadığı tartışmalı kalır.",
+      "synonyms": [
+        "die Kontingenz",
+        "das Ungefähr"
+      ],
+      "level": "C1"
+    }
+  ]
+}

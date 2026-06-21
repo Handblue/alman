@@ -1,0 +1,171 @@
+{
+  "kind": "gen",
+  "unitId": 70,
+  "categoryId": 3,
+  "number": 11,
+  "title": "Goethe B2 — Toplum ve Göç",
+  "theme": "Toplumsal değişim, göç, entegrasyon ve sosyal sorunlar temalı B2 kelimeleri. Güncel toplumsal tartışmalar bağlamı.",
+  "firstWordId": 1036,
+  "words": [
+    {
+      "german": "der Zuwanderer",
+      "turkish": "göçmen / ülkeye gelen göçmen",
+      "example": "Viele Zuwanderer suchen hier eine bessere Zukunft.",
+      "exampleTranslation": "Birçok göçmen burada daha iyi bir gelecek arıyor.",
+      "synonyms": [
+        "der Einwanderer",
+        "der Migrant"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Heimat",
+      "turkish": "memleket / yurt / anavatan",
+      "example": "Nach Jahren fühlt sich die Stadt wie Heimat an.",
+      "exampleTranslation": "Yıllar sonra şehir memleket gibi hissettiriyor.",
+      "synonyms": [
+        "das Heimatland",
+        "die Herkunft"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Mehrheit",
+      "turkish": "çoğunluk",
+      "example": "Die Mehrheit der Befragten befürwortet mehr Vielfalt.",
+      "exampleTranslation": "Ankete katılanların çoğunluğu daha fazla çeşitliliği destekliyor.",
+      "synonyms": [
+        "der Großteil"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Minderheit",
+      "turkish": "azınlık",
+      "example": "Sprachliche Minderheiten brauchen besonderen Schutz.",
+      "exampleTranslation": "Dilsel azınlıkların özel korumaya ihtiyacı vardır.",
+      "synonyms": [
+        "die Randgruppe"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Flüchtling",
+      "turkish": "mülteci / sığınmacı",
+      "example": "Die Stadt nimmt jedes Jahr viele Flüchtlinge auf.",
+      "exampleTranslation": "Şehir her yıl birçok mülteci kabul ediyor.",
+      "synonyms": [
+        "der Geflüchtete",
+        "der Asylsuchende"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Herkunft",
+      "turkish": "köken / menşe",
+      "example": "Niemand sollte wegen seiner Herkunft benachteiligt werden.",
+      "exampleTranslation": "Hiç kimse kökeni yüzünden dezavantajlı duruma düşürülmemeli.",
+      "synonyms": [
+        "die Abstammung",
+        "der Ursprung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Vielfalt",
+      "turkish": "çeşitlilik / çoğulluk",
+      "example": "Kulturelle Vielfalt bereichert das ganze Land.",
+      "exampleTranslation": "Kültürel çeşitlilik tüm ülkeyi zenginleştirir.",
+      "synonyms": [
+        "die Diversität",
+        "die Mannigfaltigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Ausgrenzung",
+      "turkish": "dışlama / dışlanma",
+      "example": "Armut führt oft zur sozialen Ausgrenzung.",
+      "exampleTranslation": "Yoksulluk çoğu zaman toplumsal dışlanmaya yol açar.",
+      "synonyms": [
+        "die Diskriminierung",
+        "die Marginalisierung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Überalterung",
+      "turkish": "yaşlanma / nüfusun yaşlanması",
+      "example": "Die Überalterung belastet das Rentensystem stark.",
+      "exampleTranslation": "Nüfusun yaşlanması emeklilik sistemini ciddi şekilde zorluyor.",
+      "synonyms": [
+        "die Vergreisung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Teilhabe",
+      "turkish": "katılım / pay alma",
+      "example": "Bildung ermöglicht die Teilhabe am gesellschaftlichen Leben.",
+      "exampleTranslation": "Eğitim, toplumsal yaşama katılımı mümkün kılar.",
+      "synonyms": [
+        "die Teilnahme",
+        "die Mitwirkung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Zusammenhalt",
+      "turkish": "dayanışma / birlik beraberlik",
+      "example": "Ehrenamt stärkt den Zusammenhalt in der Nachbarschaft.",
+      "exampleTranslation": "Gönüllülük, mahalledeki birlik beraberliği güçlendirir.",
+      "synonyms": [
+        "die Geschlossenheit",
+        "die Verbundenheit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Benachteiligung",
+      "turkish": "dezavantaj / mağduriyet / haksızlığa uğrama",
+      "example": "Sie kämpft gegen die Benachteiligung von Frauen.",
+      "exampleTranslation": "O, kadınların dezavantajlı konumuna karşı mücadele ediyor.",
+      "synonyms": [
+        "die Schlechterstellung",
+        "die Diskriminierung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Chancengleichheit",
+      "turkish": "fırsat eşitliği",
+      "example": "Chancengleichheit bleibt für viele ein leeres Versprechen.",
+      "exampleTranslation": "Fırsat eşitliği birçokları için boş bir vaat olarak kalıyor.",
+      "synonyms": [
+        "die Gleichberechtigung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Leitkultur",
+      "turkish": "öncü kültür / belirleyici kültür",
+      "example": "Über eine deutsche Leitkultur wird heftig gestritten.",
+      "exampleTranslation": "Bir Alman öncü kültürü üzerine şiddetli tartışmalar yürütülüyor.",
+      "synonyms": [
+        "die Mehrheitskultur"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Bürgerschaft",
+      "turkish": "yurttaşlık / vatandaşlar topluluğu",
+      "example": "Eine aktive Bürgerschaft trägt die Demokratie mit.",
+      "exampleTranslation": "Aktif bir yurttaşlık demokrasiyi birlikte taşır.",
+      "synonyms": [
+        "die Bürgerlichkeit",
+        "die Bürgergesellschaft"
+      ],
+      "level": "C1"
+    }
+  ]
+}

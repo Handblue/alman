@@ -1,0 +1,167 @@
+{
+  "kind": "gen",
+  "unitId": 82,
+  "categoryId": 4,
+  "number": 6,
+  "title": "telc — İş İlanları ve Başvuru",
+  "theme": "İş ilanı okuma, özgeçmiş ve motivasyon mektubu yazma bağlamında telc sınavının istihdam temalı kelimeleri.",
+  "firstWordId": 1216,
+  "words": [
+    {
+      "german": "die Stellenanzeige",
+      "turkish": "iş ilanı",
+      "example": "Ich habe die Stellenanzeige in der Zeitung gelesen.",
+      "exampleTranslation": "İş ilanını gazetede okudum.",
+      "synonyms": [
+        "die Stellenausschreibung",
+        "das Stelleninserat"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Anschreiben",
+      "turkish": "motivasyon mektubu / ön yazı",
+      "example": "Das Anschreiben sollte nicht länger als eine Seite sein.",
+      "exampleTranslation": "Ön yazı bir sayfadan uzun olmamalı.",
+      "synonyms": [
+        "das Bewerbungsschreiben",
+        "das Motivationsschreiben"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Stelle",
+      "turkish": "pozisyon / iş yeri",
+      "example": "Ich bewerbe mich um eine Stelle als Verkäuferin.",
+      "exampleTranslation": "Satış elemanı pozisyonu için başvuruyorum.",
+      "synonyms": [
+        "der Arbeitsplatz",
+        "die Position"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Zeugnis",
+      "turkish": "diploma / belge / iş referansı",
+      "example": "Bitte legen Sie Ihre Zeugnisse der Bewerbung bei.",
+      "exampleTranslation": "Lütfen belgelerinizi başvuruya ekleyin.",
+      "synonyms": [
+        "das Arbeitszeugnis",
+        "die Bescheinigung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "einstellen",
+      "turkish": "işe almak",
+      "example": "Die Firma möchte zwei neue Mitarbeiter einstellen.",
+      "exampleTranslation": "Şirket iki yeni çalışan işe almak istiyor.",
+      "synonyms": [
+        "anstellen",
+        "beschäftigen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Vollzeitstelle",
+      "turkish": "tam zamanlı iş",
+      "example": "Er sucht eine Vollzeitstelle im Büro.",
+      "exampleTranslation": "Ofiste tam zamanlı bir iş arıyor.",
+      "synonyms": [
+        "die Vollzeitbeschäftigung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Teilzeit",
+      "turkish": "yarı zamanlı çalışma",
+      "example": "Nach der Geburt arbeitet sie in Teilzeit.",
+      "exampleTranslation": "Doğumdan sonra yarı zamanlı çalışıyor.",
+      "synonyms": [
+        "die Teilzeitarbeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Probezeit",
+      "turkish": "deneme süresi",
+      "example": "Die Probezeit dauert in der Regel sechs Monate.",
+      "exampleTranslation": "Deneme süresi genellikle altı ay sürer.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "die Kenntnisse",
+      "turkish": "bilgi / beceriler",
+      "example": "Für die Stelle sind gute Englischkenntnisse erforderlich.",
+      "exampleTranslation": "Bu pozisyon için iyi İngilizce bilgisi gereklidir.",
+      "synonyms": [
+        "das Wissen",
+        "die Fähigkeiten"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Arbeitgeber",
+      "turkish": "işveren",
+      "example": "Mein früherer Arbeitgeber hat mir ein gutes Zeugnis ausgestellt.",
+      "exampleTranslation": "Eski işverenim bana iyi bir referans verdi.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "der Arbeitnehmer",
+      "turkish": "çalışan / işçi",
+      "example": "Jeder Arbeitnehmer hat Anspruch auf bezahlten Urlaub.",
+      "exampleTranslation": "Her çalışanın ücretli izin hakkı vardır.",
+      "synonyms": [
+        "der Angestellte",
+        "die Arbeitskraft"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Anforderung",
+      "turkish": "gereklilik / talep edilen nitelik",
+      "example": "Ich erfülle alle Anforderungen der Stellenanzeige.",
+      "exampleTranslation": "İş ilanının tüm gerekliliklerini karşılıyorum.",
+      "synonyms": [
+        "die Voraussetzung",
+        "das Erfordernis"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Befristung",
+      "turkish": "süre sınırlaması / belirli süreli sözleşme",
+      "example": "Der Vertrag enthält eine Befristung auf zwei Jahre.",
+      "exampleTranslation": "Sözleşme iki yıllık bir süre sınırlaması içeriyor.",
+      "synonyms": [
+        "die zeitliche Begrenzung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Belastbarkeit",
+      "turkish": "stres dayanıklılığı / yüke dayanma kapasitesi",
+      "example": "Der Beruf erfordert ein hohes Maß an Belastbarkeit.",
+      "exampleTranslation": "Bu meslek yüksek derecede stres dayanıklılığı gerektirir.",
+      "synonyms": [
+        "die Stressresistenz",
+        "die Widerstandsfähigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Werdegang",
+      "turkish": "kariyer geçmişi / mesleki gelişim süreci",
+      "example": "Bitte schildern Sie kurz Ihren beruflichen Werdegang.",
+      "exampleTranslation": "Lütfen mesleki kariyer geçmişinizi kısaca anlatın.",
+      "synonyms": [
+        "die Laufbahn",
+        "die Karriere"
+      ],
+      "level": "C1"
+    }
+  ]
+}

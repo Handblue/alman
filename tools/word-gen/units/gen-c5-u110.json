@@ -1,0 +1,160 @@
+{
+  "kind": "gen",
+  "unitId": 110,
+  "categoryId": 5,
+  "number": 19,
+  "title": "Acil Durumlar ve Güvenlik",
+  "theme": "Kaza, acil durum ve güvenlikle ilgili günlük kelimeler. Polis, itfaiye, kayıp eşya ve yardım çağırma bağlamı.",
+  "firstWordId": 1636,
+  "words": [
+    {
+      "german": "die Polizei",
+      "turkish": "polis",
+      "example": "Rufen Sie schnell die Polizei!",
+      "exampleTranslation": "Çabuk polisi arayın!",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "die Feuerwehr",
+      "turkish": "itfaiye",
+      "example": "Die Feuerwehr löscht den Brand.",
+      "exampleTranslation": "İtfaiye yangını söndürüyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "der Unfall",
+      "turkish": "kaza",
+      "example": "Auf der Straße ist ein Unfall passiert.",
+      "exampleTranslation": "Caddede bir kaza oldu.",
+      "synonyms": [
+        "das Unglück"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Hilfe",
+      "turkish": "yardım",
+      "example": "Ich brauche dringend Ihre Hilfe.",
+      "exampleTranslation": "Acilen yardımınıza ihtiyacım var.",
+      "synonyms": [
+        "die Unterstützung"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Gefahr",
+      "turkish": "tehlike",
+      "example": "Achtung, hier besteht große Gefahr!",
+      "exampleTranslation": "Dikkat, burada büyük tehlike var!",
+      "synonyms": [
+        "das Risiko"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Notruf",
+      "turkish": "acil çağrı / acil arama",
+      "example": "Wähle bei einem Notfall den Notruf.",
+      "exampleTranslation": "Bir acil durumda acil çağrı numarasını ara.",
+      "synonyms": [
+        "der Notanruf"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Krankenwagen",
+      "turkish": "ambulans",
+      "example": "Der Krankenwagen kommt in fünf Minuten.",
+      "exampleTranslation": "Ambulans beş dakikada geliyor.",
+      "synonyms": [
+        "der Rettungswagen",
+        "die Ambulanz"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "verletzt",
+      "turkish": "yaralı / yaralanmış",
+      "example": "Zum Glück ist niemand schwer verletzt.",
+      "exampleTranslation": "Neyse ki kimse ağır yaralanmadı.",
+      "synonyms": [
+        "wund"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Dieb",
+      "turkish": "hırsız",
+      "example": "Der Dieb hat meine Tasche gestohlen.",
+      "exampleTranslation": "Hırsız çantamı çaldı.",
+      "synonyms": [
+        "der Räuber"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Vorsicht",
+      "turkish": "dikkat / ihtiyat",
+      "example": "Vorsicht, der Boden ist nass!",
+      "exampleTranslation": "Dikkat, zemin ıslak!",
+      "synonyms": [
+        "die Achtsamkeit"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "retten",
+      "turkish": "kurtarmak",
+      "example": "Die Feuerwehr konnte das Kind retten.",
+      "exampleTranslation": "İtfaiye çocuğu kurtarabildi.",
+      "synonyms": [
+        "bergen",
+        "befreien"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Diebstahl",
+      "turkish": "hırsızlık",
+      "example": "Ich möchte einen Diebstahl melden.",
+      "exampleTranslation": "Bir hırsızlık bildirmek istiyorum.",
+      "synonyms": [
+        "der Raub"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Notausgang",
+      "turkish": "acil çıkış",
+      "example": "Im Brandfall benutzen Sie den Notausgang.",
+      "exampleTranslation": "Yangın durumunda acil çıkışı kullanın.",
+      "synonyms": [
+        "der Fluchtweg"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "warnen",
+      "turkish": "uyarmak",
+      "example": "Ein Schild warnt vor dem Hund.",
+      "exampleTranslation": "Bir tabela köpeğe karşı uyarıyor.",
+      "synonyms": [
+        "mahnen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Verletzung",
+      "turkish": "yaralanma / yara",
+      "example": "Die Verletzung am Bein war nicht schlimm.",
+      "exampleTranslation": "Bacaktaki yaralanma kötü değildi.",
+      "synonyms": [
+        "die Wunde",
+        "die Blessur"
+      ],
+      "level": "B1"
+    }
+  ]
+}

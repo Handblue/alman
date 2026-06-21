@@ -1,0 +1,173 @@
+{
+  "kind": "gen",
+  "unitId": 89,
+  "categoryId": 4,
+  "number": 13,
+  "title": "telc — Göç ve Entegrasyon",
+  "theme": "Göç, uyum ve çok kültürlülük tartışmaları bağlamında telc sınavının toplumsal temalı B2/C1 kelimeleri.",
+  "firstWordId": 1321,
+  "words": [
+    {
+      "german": "der Migrant",
+      "turkish": "göçmen",
+      "example": "Viele Migranten besuchen einen Deutschkurs.",
+      "exampleTranslation": "Birçok göçmen bir Almanca kursuna gidiyor.",
+      "synonyms": [
+        "der Zuwanderer",
+        "der Einwanderer"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Staatsangehörigkeit",
+      "turkish": "vatandaşlık / uyrukluk",
+      "example": "Nach acht Jahren bekam er die deutsche Staatsangehörigkeit.",
+      "exampleTranslation": "Sekiz yıl sonra Alman vatandaşlığını aldı.",
+      "synonyms": [
+        "die Staatsbürgerschaft"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Flüchtling",
+      "turkish": "mülteci / sığınmacı",
+      "example": "Die Stadt nimmt viele Flüchtlinge auf.",
+      "exampleTranslation": "Şehir birçok mülteciyi kabul ediyor.",
+      "synonyms": [
+        "der Geflüchtete",
+        "der Asylsuchende"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Muttersprache",
+      "turkish": "anadil",
+      "example": "Ihre Muttersprache ist Türkisch.",
+      "exampleTranslation": "Onun anadili Türkçedir.",
+      "synonyms": [
+        "die Erstsprache"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Heimat",
+      "turkish": "memleket / yurt / anavatan",
+      "example": "Er vermisst seine alte Heimat sehr.",
+      "exampleTranslation": "Eski memleketini çok özlüyor.",
+      "synonyms": [
+        "das Heimatland",
+        "die Herkunft"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Vielfalt",
+      "turkish": "çeşitlilik",
+      "example": "Kulturelle Vielfalt bereichert unsere Gesellschaft.",
+      "exampleTranslation": "Kültürel çeşitlilik toplumumuzu zenginleştirir.",
+      "synonyms": [
+        "die Diversität",
+        "die Mannigfaltigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Diskriminierung",
+      "turkish": "ayrımcılık",
+      "example": "Diskriminierung am Arbeitsplatz ist verboten.",
+      "exampleTranslation": "İş yerinde ayrımcılık yasaktır.",
+      "synonyms": [
+        "die Benachteiligung",
+        "die Ungleichbehandlung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Chancengleichheit",
+      "turkish": "fırsat eşitliği",
+      "example": "Bildung soll Chancengleichheit für alle schaffen.",
+      "exampleTranslation": "Eğitim herkes için fırsat eşitliği sağlamalı.",
+      "synonyms": [
+        "die Gleichberechtigung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Fachkraft",
+      "turkish": "uzman / nitelikli eleman",
+      "example": "Deutschland sucht ausländische Fachkräfte.",
+      "exampleTranslation": "Almanya yabancı nitelikli elemanlar arıyor.",
+      "synonyms": [
+        "der Experte",
+        "der Spezialist"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Herkunft",
+      "turkish": "köken / menşe",
+      "example": "Niemand darf wegen seiner Herkunft benachteiligt werden.",
+      "exampleTranslation": "Hiç kimse kökeni nedeniyle dezavantajlı duruma düşürülemez.",
+      "synonyms": [
+        "die Abstammung",
+        "die Wurzeln"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "sich anpassen",
+      "turkish": "uyum sağlamak / adapte olmak",
+      "example": "Neuankömmlinge müssen sich an das Leben anpassen.",
+      "exampleTranslation": "Yeni gelenler yaşama uyum sağlamak zorundadır.",
+      "synonyms": [
+        "sich eingliedern",
+        "sich einleben"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Zusammenleben",
+      "turkish": "bir arada yaşama / birlikte yaşam",
+      "example": "Das Zusammenleben verschiedener Kulturen erfordert Toleranz.",
+      "exampleTranslation": "Farklı kültürlerin bir arada yaşaması hoşgörü gerektirir.",
+      "synonyms": [
+        "die Koexistenz",
+        "das Miteinander"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Teilhabe",
+      "turkish": "katılım / pay sahibi olma",
+      "example": "Sprachkenntnisse ermöglichen die gesellschaftliche Teilhabe.",
+      "exampleTranslation": "Dil bilgisi toplumsal katılımı mümkün kılar.",
+      "synonyms": [
+        "die Beteiligung",
+        "die Mitwirkung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Ausgrenzung",
+      "turkish": "dışlama / dışlanma",
+      "example": "Armut führt oft zur sozialen Ausgrenzung.",
+      "exampleTranslation": "Yoksulluk çoğu zaman toplumsal dışlanmaya yol açar.",
+      "synonyms": [
+        "die Marginalisierung",
+        "der Ausschluss"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Abschiebung",
+      "turkish": "sınır dışı etme",
+      "example": "Gegen die Abschiebung wurde Klage eingereicht.",
+      "exampleTranslation": "Sınır dışı etmeye karşı dava açıldı.",
+      "synonyms": [
+        "die Ausweisung",
+        "die Rückführung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

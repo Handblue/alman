@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 74,
+  "categoryId": 3,
+  "number": 15,
+  "title": "Goethe B2 — Argümantasyon ve Tartışma",
+  "theme": "Görüş bildirme, gerekçelendirme, karşı çıkma ve fikir savunma için gerekli B2 düzeyi tartışma kelimeleri ve fiilleri. Sözlü/yazılı sınav argümantasyonu bağlamı.",
+  "firstWordId": 1096,
+  "words": [
+    {
+      "german": "die Stellungnahme",
+      "turkish": "görüş bildirme / tutum belirleme",
+      "example": "Ich gebe eine kurze Stellungnahme zum Thema ab.",
+      "exampleTranslation": "Konu hakkında kısa bir görüş bildiriyorum.",
+      "synonyms": [
+        "die Äußerung",
+        "das Statement"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "behaupten",
+      "turkish": "iddia etmek / öne sürmek",
+      "example": "Er behauptet, dass er immer recht hat.",
+      "exampleTranslation": "Her zaman haklı olduğunu iddia ediyor.",
+      "synonyms": [
+        "festhalten",
+        "versichern"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "widersprechen",
+      "turkish": "karşı çıkmak / itiraz etmek",
+      "example": "Ich muss dir in diesem Punkt widersprechen.",
+      "exampleTranslation": "Bu konuda sana karşı çıkmak zorundayım.",
+      "synonyms": [
+        "entgegnen",
+        "anfechten"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Standpunkt",
+      "turkish": "bakış açısı / görüş",
+      "example": "Jeder vertritt hier seinen eigenen Standpunkt.",
+      "exampleTranslation": "Burada herkes kendi görüşünü savunuyor.",
+      "synonyms": [
+        "die Position",
+        "die Sichtweise"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "betonen",
+      "turkish": "vurgulamak / altını çizmek",
+      "example": "Ich möchte besonders diesen Aspekt betonen.",
+      "exampleTranslation": "Özellikle bu yönü vurgulamak istiyorum.",
+      "synonyms": [
+        "hervorheben",
+        "unterstreichen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die These",
+      "turkish": "tez / sav",
+      "example": "Seine These überzeugt mich nicht ganz.",
+      "exampleTranslation": "Tezi beni tam olarak ikna etmiyor.",
+      "synonyms": [
+        "die Behauptung",
+        "der Leitsatz"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Einwand",
+      "turkish": "itiraz / çekince",
+      "example": "Gegen diesen Vorschlag habe ich einen Einwand.",
+      "exampleTranslation": "Bu öneriye karşı bir itirazım var.",
+      "synonyms": [
+        "der Vorbehalt",
+        "die Bedenken"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "entgegnen",
+      "turkish": "karşılık vermek / yanıtlamak",
+      "example": "Darauf konnte sie nichts entgegnen.",
+      "exampleTranslation": "Buna karşılık verecek bir şey bulamadı.",
+      "synonyms": [
+        "erwidern",
+        "kontern"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "gegenüberstellen",
+      "turkish": "karşılaştırmak / karşı karşıya koymak",
+      "example": "Man muss Vorteile und Nachteile gegenüberstellen.",
+      "exampleTranslation": "Artıları ve eksileri karşı karşıya koymak gerekir.",
+      "synonyms": [
+        "kontrastieren",
+        "vergleichen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Begründung",
+      "turkish": "gerekçe / temellendirme",
+      "example": "Seine Begründung war logisch und überzeugend.",
+      "exampleTranslation": "Gerekçesi mantıklı ve ikna ediciydi.",
+      "synonyms": [
+        "die Argumentation",
+        "die Rechtfertigung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "einleuchtend",
+      "turkish": "inandırıcı / açık ve mantıklı",
+      "example": "Dein Argument klingt durchaus einleuchtend.",
+      "exampleTranslation": "Argümanın oldukça inandırıcı geliyor.",
+      "synonyms": [
+        "plausibel",
+        "nachvollziehbar"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "entkräften",
+      "turkish": "çürütmek / geçersiz kılmak",
+      "example": "Mit Fakten konnte er den Vorwurf entkräften.",
+      "exampleTranslation": "Gerçeklerle suçlamayı çürütebildi.",
+      "synonyms": [
+        "widerlegen",
+        "entwerten"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Gegenargument",
+      "turkish": "karşı argüman",
+      "example": "Auf jedes Gegenargument war sie vorbereitet.",
+      "exampleTranslation": "Her karşı argümana karşı hazırlıklıydı.",
+      "synonyms": [
+        "der Einwand",
+        "die Entgegnung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "fundiert",
+      "turkish": "sağlam temele dayalı / iyi temellendirilmiş",
+      "example": "Seine Kritik war sachlich und fundiert.",
+      "exampleTranslation": "Eleştirisi nesnel ve sağlam temele dayalıydı.",
+      "synonyms": [
+        "sachkundig",
+        "stichhaltig"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "untermauern",
+      "turkish": "desteklemek / kanıtla pekiştirmek",
+      "example": "Er untermauert seine These mit Beispielen.",
+      "exampleTranslation": "Tezini örneklerle destekliyor.",
+      "synonyms": [
+        "belegen",
+        "stützen"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "kind": "gen",
+  "unitId": 93,
+  "categoryId": 4,
+  "number": 17,
+  "title": "telc — Çalışma Hayatı ve İş Yeri",
+  "theme": "İş yeri ilişkileri, kariyer gelişimi ve modern çalışma biçimleri bağlamında telc B2/C1 mesleki kelimeleri.",
+  "firstWordId": 1381,
+  "words": [
+    {
+      "german": "das Homeoffice",
+      "turkish": "evden çalışma / ev ofisi",
+      "example": "Sie arbeitet dreimal pro Woche im Homeoffice.",
+      "exampleTranslation": "Haftada üç kez evden çalışıyor.",
+      "synonyms": [
+        "die Heimarbeit",
+        "die Telearbeit"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Kollege",
+      "turkish": "iş arkadaşı (erkek) / meslektaş",
+      "example": "Mein Kollege hilft mir bei diesem Projekt.",
+      "exampleTranslation": "İş arkadaşım bu projede bana yardım ediyor.",
+      "synonyms": [
+        "der Mitarbeiter",
+        "der Arbeitskollege"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Besprechung",
+      "turkish": "toplantı / görüşme",
+      "example": "Die Besprechung beginnt um neun Uhr.",
+      "exampleTranslation": "Toplantı saat dokuzda başlıyor.",
+      "synonyms": [
+        "das Meeting",
+        "die Sitzung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Stelle",
+      "turkish": "iş / pozisyon / kadro",
+      "example": "Er hat sich um eine neue Stelle beworben.",
+      "exampleTranslation": "Yeni bir iş için başvurdu.",
+      "synonyms": [
+        "der Arbeitsplatz",
+        "die Position"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Gehalt",
+      "turkish": "maaş / aylık ücret",
+      "example": "Mein Gehalt wird am Monatsende überwiesen.",
+      "exampleTranslation": "Maaşım ay sonunda havale ediliyor.",
+      "synonyms": [
+        "der Lohn",
+        "die Vergütung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Beförderung",
+      "turkish": "terfi / yükseltilme",
+      "example": "Nach drei Jahren bekam sie eine Beförderung.",
+      "exampleTranslation": "Üç yıl sonra bir terfi aldı.",
+      "synonyms": [
+        "der Aufstieg",
+        "das Vorrücken"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Teamarbeit",
+      "turkish": "ekip çalışması / takım çalışması",
+      "example": "Erfolgreiche Teamarbeit erfordert gute Kommunikation.",
+      "exampleTranslation": "Başarılı ekip çalışması iyi iletişim gerektirir.",
+      "synonyms": [
+        "die Zusammenarbeit",
+        "die Kooperation"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Gleitzeit",
+      "turkish": "esnek mesai / kayan çalışma saati",
+      "example": "Dank Gleitzeit kann ich später anfangen.",
+      "exampleTranslation": "Esnek mesai sayesinde daha geç başlayabiliyorum.",
+      "synonyms": [
+        "die flexible Arbeitszeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Gewerkschaft",
+      "turkish": "sendika",
+      "example": "Die Gewerkschaft fordert höhere Löhne.",
+      "exampleTranslation": "Sendika daha yüksek ücretler talep ediyor.",
+      "synonyms": [
+        "der Arbeitnehmerverband"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Betriebsrat",
+      "turkish": "işyeri/işçi temsil kurulu",
+      "example": "Der Betriebsrat vertritt die Interessen der Belegschaft.",
+      "exampleTranslation": "İşyeri kurulu çalışanların çıkarlarını temsil eder.",
+      "synonyms": [
+        "die Arbeitnehmervertretung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Überstunde",
+      "turkish": "fazla mesai / ek çalışma saati",
+      "example": "Letzte Woche habe ich viele Überstunden gemacht.",
+      "exampleTranslation": "Geçen hafta çok fazla mesai yaptım.",
+      "synonyms": [
+        "die Mehrarbeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Fachkräftemangel",
+      "turkish": "nitelikli eleman/iş gücü açığı",
+      "example": "Der Fachkräftemangel betrifft viele Branchen.",
+      "exampleTranslation": "Nitelikli eleman açığı birçok sektörü etkiliyor.",
+      "synonyms": [
+        "der Arbeitskräftemangel",
+        "der Personalmangel"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Belegschaft",
+      "turkish": "çalışanlar / personel kadrosu",
+      "example": "Die gesamte Belegschaft wurde informiert.",
+      "exampleTranslation": "Tüm personel bilgilendirildi.",
+      "synonyms": [
+        "das Personal",
+        "die Mitarbeiterschaft"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Vereinbarkeit",
+      "turkish": "bağdaştırılabilirlik / uyumluluk (iş-yaşam)",
+      "example": "Die Vereinbarkeit von Beruf und Familie ist wichtig.",
+      "exampleTranslation": "İş ve ailenin bağdaştırılabilirliği önemlidir.",
+      "synonyms": [
+        "die Vereinbarung",
+        "die Abstimmung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Auslastung",
+      "turkish": "iş yükü / kapasite kullanımı / doluluk",
+      "example": "Die Auslastung der Mitarbeiter ist derzeit sehr hoch.",
+      "exampleTranslation": "Çalışanların iş yükü şu anda çok yüksek.",
+      "synonyms": [
+        "die Beanspruchung",
+        "die Kapazitätsauslastung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

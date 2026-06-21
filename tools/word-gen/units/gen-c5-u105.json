@@ -1,0 +1,152 @@
+{
+  "kind": "gen",
+  "unitId": 105,
+  "categoryId": 5,
+  "number": 14,
+  "title": "Aile ve Ev İşleri",
+  "theme": "Ev içi günlük yaşam, temizlik, yemek hazırlığı ve aile rutinleriyle ilgili kelimeler. Günlük ev işleri ve sorumluluklar bağlamı.",
+  "firstWordId": 1561,
+  "words": [
+    {
+      "german": "putzen",
+      "turkish": "temizlemek / silmek",
+      "example": "Ich putze jeden Samstag das Bad.",
+      "exampleTranslation": "Her cumartesi banyoyu temizlerim.",
+      "synonyms": [
+        "sauber machen",
+        "reinigen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "kochen",
+      "turkish": "yemek pişirmek / kaynamak",
+      "example": "Meine Mutter kocht heute Suppe.",
+      "exampleTranslation": "Annem bugün çorba pişiriyor.",
+      "synonyms": [
+        "zubereiten"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Wäsche",
+      "turkish": "çamaşır",
+      "example": "Ich wasche heute die Wäsche.",
+      "exampleTranslation": "Bugün çamaşır yıkıyorum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "das Geschirr",
+      "turkish": "bulaşık / mutfak takımı",
+      "example": "Nach dem Essen spüle ich das Geschirr.",
+      "exampleTranslation": "Yemekten sonra bulaşıkları yıkarım.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "die Ordnung",
+      "turkish": "düzen / tertip",
+      "example": "Im Zimmer herrscht endlich Ordnung.",
+      "exampleTranslation": "Odada sonunda düzen var.",
+      "synonyms": [
+        "die Sauberkeit"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "aufräumen",
+      "turkish": "toplamak / düzenlemek",
+      "example": "Die Kinder räumen ihre Spielsachen auf.",
+      "exampleTranslation": "Çocuklar oyuncaklarını topluyor.",
+      "synonyms": [
+        "ordnen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Haushalt",
+      "turkish": "ev işleri / hane",
+      "example": "Wir teilen uns den Haushalt zu zweit.",
+      "exampleTranslation": "Ev işlerini ikimiz paylaşıyoruz.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "spülen",
+      "turkish": "bulaşık yıkamak / durulamak",
+      "example": "Kannst du bitte die Teller spülen?",
+      "exampleTranslation": "Lütfen tabakları yıkar mısın?",
+      "synonyms": [
+        "abwaschen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "wischen",
+      "turkish": "silmek / paspaslamak",
+      "example": "Ich wische jeden Tag den Boden.",
+      "exampleTranslation": "Her gün yeri siliyorum.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "vorbereiten",
+      "turkish": "hazırlamak",
+      "example": "Ich bereite das Abendessen vor.",
+      "exampleTranslation": "Akşam yemeğini hazırlıyorum.",
+      "synonyms": [
+        "zubereiten"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Einkaufsliste",
+      "turkish": "alışveriş listesi",
+      "example": "Brot steht auf der Einkaufsliste.",
+      "exampleTranslation": "Ekmek alışveriş listesinde yazıyor.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "der Besen",
+      "turkish": "süpürge",
+      "example": "Ich kehre den Flur mit dem Besen.",
+      "exampleTranslation": "Holü süpürgeyle süpürüyorum.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "betreuen",
+      "turkish": "bakmak / ilgilenmek",
+      "example": "Sie betreut die Kinder am Nachmittag.",
+      "exampleTranslation": "Öğleden sonra çocuklara o bakıyor.",
+      "synonyms": [
+        "versorgen",
+        "beaufsichtigen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Aufgabe",
+      "turkish": "görev / iş",
+      "example": "Müll rausbringen ist meine Aufgabe.",
+      "exampleTranslation": "Çöpü çıkarmak benim görevim.",
+      "synonyms": [
+        "der Auftrag"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "erledigen",
+      "turkish": "halletmek / bitirmek",
+      "example": "Ich erledige die Hausarbeit am Wochenende.",
+      "exampleTranslation": "Ev işlerini hafta sonu hallederim.",
+      "synonyms": [
+        "bewältigen",
+        "schaffen"
+      ],
+      "level": "B1"
+    }
+  ]
+}

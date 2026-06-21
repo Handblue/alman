@@ -1,0 +1,165 @@
+{
+  "kind": "gen",
+  "unitId": 76,
+  "categoryId": 3,
+  "number": 17,
+  "title": "Goethe C1 — Politika ve Toplum Düzeni",
+  "theme": "Siyaset, demokrasi, devlet kurumları ve toplumsal düzen temalı C1 kelimeleri. Politik tartışma ve resmi metin bağlamı.",
+  "firstWordId": 1126,
+  "words": [
+    {
+      "german": "die Regierung",
+      "turkish": "hükümet",
+      "example": "Die Regierung hat ein neues Gesetz beschlossen.",
+      "exampleTranslation": "Hükümet yeni bir yasa kabul etti.",
+      "synonyms": [
+        "das Kabinett"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Wahl",
+      "turkish": "seçim",
+      "example": "Die Wahl findet nächsten Sonntag statt.",
+      "exampleTranslation": "Seçim önümüzdeki pazar yapılacak.",
+      "synonyms": [
+        "die Abstimmung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Partei",
+      "turkish": "parti",
+      "example": "Welche Partei hast du gewählt?",
+      "exampleTranslation": "Hangi partiyi seçtin?",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "das Parlament",
+      "turkish": "parlamento / meclis",
+      "example": "Das Parlament tagt heute über den Haushalt.",
+      "exampleTranslation": "Meclis bugün bütçe üzerine toplanıyor.",
+      "synonyms": [
+        "der Bundestag",
+        "die Volksvertretung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Bürger",
+      "turkish": "yurttaş / vatandaş",
+      "example": "Jeder Bürger hat das Recht zu wählen.",
+      "exampleTranslation": "Her vatandaşın oy verme hakkı vardır.",
+      "synonyms": [
+        "der Staatsbürger",
+        "der Einwohner"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Abgeordnete",
+      "turkish": "milletvekili",
+      "example": "Der Abgeordnete hielt eine lange Rede.",
+      "exampleTranslation": "Milletvekili uzun bir konuşma yaptı.",
+      "synonyms": [
+        "der Parlamentarier",
+        "der Volksvertreter"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Mehrheit",
+      "turkish": "çoğunluk",
+      "example": "Die Mehrheit stimmte für den Vorschlag.",
+      "exampleTranslation": "Çoğunluk teklif lehine oy kullandı.",
+      "synonyms": [
+        "der Großteil"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Verfassung",
+      "turkish": "anayasa",
+      "example": "Die Verfassung garantiert die Meinungsfreiheit.",
+      "exampleTranslation": "Anayasa ifade özgürlüğünü güvence altına alır.",
+      "synonyms": [
+        "die Staatsordnung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Verwaltung",
+      "turkish": "yönetim / idare",
+      "example": "Die Verwaltung bearbeitet den Antrag langsam.",
+      "exampleTranslation": "İdare başvuruyu yavaş işliyor.",
+      "synonyms": [
+        "die Administration"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Minister",
+      "turkish": "bakan",
+      "example": "Der Minister trat nach dem Skandal zurück.",
+      "exampleTranslation": "Bakan skandaldan sonra istifa etti.",
+      "synonyms": [
+        "das Regierungsmitglied"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Bündnis",
+      "turkish": "ittifak / birlik",
+      "example": "Die Länder schlossen ein militärisches Bündnis.",
+      "exampleTranslation": "Ülkeler askeri bir ittifak kurdu.",
+      "synonyms": [
+        "die Allianz",
+        "der Pakt"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Staatsbürgerschaft",
+      "turkish": "vatandaşlık",
+      "example": "Er beantragte die deutsche Staatsbürgerschaft.",
+      "exampleTranslation": "Alman vatandaşlığına başvurdu.",
+      "synonyms": [
+        "die Nationalität"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Gesetzesvorlage",
+      "turkish": "yasa tasarısı",
+      "example": "Die Gesetzesvorlage wurde im Parlament abgelehnt.",
+      "exampleTranslation": "Yasa tasarısı parlamentoda reddedildi.",
+      "synonyms": [
+        "der Gesetzentwurf"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Souveränität",
+      "turkish": "egemenlik",
+      "example": "Jeder Staat verteidigt seine nationale Souveränität.",
+      "exampleTranslation": "Her devlet ulusal egemenliğini savunur.",
+      "synonyms": [
+        "die Eigenständigkeit",
+        "die Selbstbestimmung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Amtszeit",
+      "turkish": "görev süresi",
+      "example": "Die Amtszeit des Präsidenten endet im Herbst.",
+      "exampleTranslation": "Cumhurbaşkanının görev süresi sonbaharda sona eriyor.",
+      "synonyms": [
+        "die Legislaturperiode",
+        "die Mandatszeit"
+      ],
+      "level": "C1"
+    }
+  ]
+}

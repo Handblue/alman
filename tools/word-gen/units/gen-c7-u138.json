@@ -1,0 +1,163 @@
+{
+  "kind": "gen",
+  "unitId": 138,
+  "categoryId": 7,
+  "number": 14,
+  "title": "Dil Felsefesi ve Anlam",
+  "theme": "Dil, anlam, gönderim, dil oyunları ve önermelerle ilgili kavramları kapsar. Sözcüklerin ve cümlelerin anlamı üzerine analitik felsefi kelimeler.",
+  "firstWordId": 2056,
+  "words": [
+    {
+      "german": "die Bedeutung",
+      "turkish": "anlam / önem",
+      "example": "Die Bedeutung eines Wortes hängt vom Gebrauch ab.",
+      "exampleTranslation": "Bir kelimenin anlamı kullanımına bağlıdır.",
+      "synonyms": [
+        "der Sinngehalt",
+        "die Bewandtnis"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Sinn",
+      "turkish": "anlam / mana",
+      "example": "Der Sinn dieses Satzes bleibt mir unklar.",
+      "exampleTranslation": "Bu cümlenin anlamı bana belirsiz kalıyor.",
+      "synonyms": [
+        "der Gehalt"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Aussage",
+      "turkish": "önerme / ifade",
+      "example": "Jede Aussage kann wahr oder falsch sein.",
+      "exampleTranslation": "Her önerme doğru ya da yanlış olabilir.",
+      "synonyms": [
+        "die Behauptung",
+        "die Feststellung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Satz",
+      "turkish": "cümle / önerme",
+      "example": "Dieser Satz hat eine klare grammatische Struktur.",
+      "exampleTranslation": "Bu cümlenin açık bir dilbilgisel yapısı var.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "der Gebrauch",
+      "turkish": "kullanım",
+      "example": "Der Gebrauch des Wortes verändert seine Bedeutung.",
+      "exampleTranslation": "Kelimenin kullanımı anlamını değiştirir.",
+      "synonyms": [
+        "die Verwendung",
+        "die Anwendung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Ausdruck",
+      "turkish": "ifade / deyiş",
+      "example": "Dieser Ausdruck hat mehrere Bedeutungen.",
+      "exampleTranslation": "Bu ifadenin birden çok anlamı var.",
+      "synonyms": [
+        "die Wendung",
+        "die Formulierung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Referenz",
+      "turkish": "gönderim / referans",
+      "example": "Die Referenz eines Namens ist sein Träger.",
+      "exampleTranslation": "Bir ismin gönderimi onun taşıyıcısıdır.",
+      "synonyms": [
+        "der Bezug",
+        "die Bezugnahme"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Sprachspiel",
+      "turkish": "dil oyunu",
+      "example": "Wittgenstein erklärte Bedeutung durch das Sprachspiel.",
+      "exampleTranslation": "Wittgenstein anlamı dil oyunu üzerinden açıkladı.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "der Wahrheitswert",
+      "turkish": "doğruluk değeri",
+      "example": "Der Wahrheitswert einer Aussage ist wahr oder falsch.",
+      "exampleTranslation": "Bir önermenin doğruluk değeri doğru ya da yanlıştır.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "das Zeichen",
+      "turkish": "gösteren / işaret",
+      "example": "Ein sprachliches Zeichen verbindet Form und Inhalt.",
+      "exampleTranslation": "Dilsel bir gösteren biçim ile içeriği birleştirir.",
+      "synonyms": [
+        "das Symbol"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Sprechakt",
+      "turkish": "konuşma edimi / söz edimi",
+      "example": "Ein Versprechen ist ein typischer Sprechakt.",
+      "exampleTranslation": "Bir söz vermek tipik bir konuşma edimidir.",
+      "synonyms": [
+        "die Sprechhandlung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Mehrdeutigkeit",
+      "turkish": "çokanlamlılık / belirsizlik",
+      "example": "Die Mehrdeutigkeit des Begriffs führt zu Missverständnissen.",
+      "exampleTranslation": "Kavramın çokanlamlılığı yanlış anlamalara yol açar.",
+      "synonyms": [
+        "die Ambiguität",
+        "die Doppeldeutigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Kontext",
+      "turkish": "bağlam",
+      "example": "Ohne Kontext bleibt die Äußerung mehrdeutig.",
+      "exampleTranslation": "Bağlam olmadan ifade çokanlamlı kalır.",
+      "synonyms": [
+        "der Zusammenhang",
+        "das Umfeld"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Äußerung",
+      "turkish": "sözce / dile getirme",
+      "example": "Jede Äußerung erfolgt in einer bestimmten Situation.",
+      "exampleTranslation": "Her sözce belirli bir durumda gerçekleşir.",
+      "synonyms": [
+        "die Aussage",
+        "die Bemerkung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Begriff",
+      "turkish": "kavram",
+      "example": "Der Begriff der Wahrheit ist philosophisch umstritten.",
+      "exampleTranslation": "Doğruluk kavramı felsefi olarak tartışmalıdır.",
+      "synonyms": [
+        "die Vorstellung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

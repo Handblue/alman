@@ -1,0 +1,171 @@
+{
+  "kind": "gen",
+  "unitId": 127,
+  "categoryId": 6,
+  "number": 20,
+  "title": "Yükseköğretim ve Akademik Kariyer",
+  "theme": "Üniversite hayatı ve akademik kariyere özgü kurumsal terminoloji: dereceler, unvanlar, burslar, yayın ve bölüm yapısı.",
+  "firstWordId": 1891,
+  "words": [
+    {
+      "german": "der Abschluss",
+      "turkish": "diploma / mezuniyet derecesi",
+      "example": "Sie hat ihren Abschluss mit Auszeichnung gemacht.",
+      "exampleTranslation": "Diplomasını dereceyle aldı.",
+      "synonyms": [
+        "der Studienabschluss",
+        "der Hochschulabschluss"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Promotion",
+      "turkish": "doktora",
+      "example": "Nach dem Master begann er seine Promotion.",
+      "exampleTranslation": "Yüksek lisanstan sonra doktorasına başladı.",
+      "synonyms": [
+        "das Doktorat",
+        "das Doktorstudium"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Studiengang",
+      "turkish": "bölüm / lisans programı",
+      "example": "Der Studiengang dauert sechs Semester.",
+      "exampleTranslation": "Bu program altı dönem sürüyor.",
+      "synonyms": [
+        "das Studienfach",
+        "die Studienrichtung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Fakultät",
+      "turkish": "fakülte",
+      "example": "Die Fakultät für Medizin ist sehr renommiert.",
+      "exampleTranslation": "Tıp fakültesi çok saygın.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "das Stipendium",
+      "turkish": "burs",
+      "example": "Er erhielt ein Stipendium für sein Auslandsstudium.",
+      "exampleTranslation": "Yurt dışı eğitimi için burs aldı.",
+      "synonyms": [
+        "die Studienbeihilfe",
+        "das Förderstipendium"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Lehrveranstaltung",
+      "turkish": "ders / öğretim etkinliği",
+      "example": "Diese Lehrveranstaltung findet montags statt.",
+      "exampleTranslation": "Bu ders pazartesi günleri yapılıyor.",
+      "synonyms": [
+        "das Seminar",
+        "die Vorlesung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Dozent",
+      "turkish": "öğretim görevlisi",
+      "example": "Der Dozent erklärte das Thema sehr verständlich.",
+      "exampleTranslation": "Öğretim görevlisi konuyu çok anlaşılır anlattı.",
+      "synonyms": [
+        "der Lehrbeauftragte",
+        "der Hochschullehrer"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Veröffentlichung",
+      "turkish": "yayın / yayımlama",
+      "example": "Ihre Veröffentlichung erschien in einer Fachzeitschrift.",
+      "exampleTranslation": "Yayını bir uzmanlık dergisinde çıktı.",
+      "synonyms": [
+        "die Publikation",
+        "der Aufsatz"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Professur",
+      "turkish": "profesörlük / kürsü",
+      "example": "Er bewarb sich auf eine Professur in Berlin.",
+      "exampleTranslation": "Berlin'de bir profesörlüğe başvurdu.",
+      "synonyms": [
+        "der Lehrstuhl"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Lehrstuhl",
+      "turkish": "kürsü / profesörlük makamı",
+      "example": "Sie leitet den Lehrstuhl für Soziologie.",
+      "exampleTranslation": "Sosyoloji kürsüsünü yönetiyor.",
+      "synonyms": [
+        "die Professur"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Fachbereich",
+      "turkish": "bölüm / anabilim dalı",
+      "example": "Der Fachbereich Informatik bietet neue Kurse an.",
+      "exampleTranslation": "Bilişim bölümü yeni kurslar sunuyor.",
+      "synonyms": [
+        "das Department",
+        "die Abteilung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Drittmittel",
+      "turkish": "üçüncü taraf fonu / dış araştırma fonu",
+      "example": "Das Projekt wird durch Drittmittel finanziert.",
+      "exampleTranslation": "Proje dış fonlarla finanse ediliyor.",
+      "synonyms": [
+        "die Fördergelder",
+        "die Forschungsgelder"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Förderung",
+      "turkish": "destek / teşvik / fonlama",
+      "example": "Die Förderung läuft über drei Jahre.",
+      "exampleTranslation": "Destek üç yıl boyunca sürüyor.",
+      "synonyms": [
+        "die Unterstützung",
+        "die Finanzierung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Gutachten",
+      "turkish": "bilirkişi raporu / hakem değerlendirmesi",
+      "example": "Der Professor schrieb ein Gutachten zur Dissertation.",
+      "exampleTranslation": "Profesör tez hakkında bir değerlendirme yazdı.",
+      "synonyms": [
+        "die Beurteilung",
+        "die Stellungnahme"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Leistungspunkt",
+      "turkish": "kredi / ECTS puanı",
+      "example": "Jedes Modul bringt fünf Leistungspunkte.",
+      "exampleTranslation": "Her modül beş kredi kazandırıyor.",
+      "synonyms": [
+        "das Kreditpunkt",
+        "der Credit Point"
+      ],
+      "level": "C1"
+    }
+  ]
+}

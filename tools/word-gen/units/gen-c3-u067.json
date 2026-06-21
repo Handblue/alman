@@ -1,0 +1,162 @@
+{
+  "kind": "gen",
+  "unitId": 67,
+  "categoryId": 3,
+  "number": 8,
+  "title": "Goethe B1 — Seyahat ve Tatil",
+  "theme": "Tatil planlama, ulaşım, konaklama ve turistik deneyimler temalı kelimeler. Seyahat anlatımı ve şikayet/rezervasyon bağlamları.",
+  "firstWordId": 991,
+  "words": [
+    {
+      "german": "die Reiseroute",
+      "turkish": "seyahat güzergahı / rota",
+      "example": "Wir haben die Reiseroute vorab genau geplant.",
+      "exampleTranslation": "Seyahat güzergahını önceden ayrıntılı planladık.",
+      "synonyms": [
+        "die Route",
+        "der Reiseweg"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "buchen",
+      "turkish": "rezervasyon yapmak / yer ayırtmak",
+      "example": "Ich möchte ein Hotelzimmer online buchen.",
+      "exampleTranslation": "İnternetten bir otel odası ayırtmak istiyorum.",
+      "synonyms": [
+        "reservieren"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Halbpension",
+      "turkish": "yarım pansiyon",
+      "example": "Das Hotel bietet günstige Halbpension an.",
+      "exampleTranslation": "Otel uygun fiyatlı yarım pansiyon sunuyor.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "die Ankunft",
+      "turkish": "varış / geliş",
+      "example": "Unsere Ankunft im Hotel war erst spät.",
+      "exampleTranslation": "Otele varışımız ancak geç oldu.",
+      "synonyms": [
+        "das Eintreffen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "besichtigen",
+      "turkish": "gezip görmek / ziyaret etmek",
+      "example": "Morgen wollen wir das Schloss besichtigen.",
+      "exampleTranslation": "Yarın şatoyu gezmek istiyoruz.",
+      "synonyms": [
+        "anschauen",
+        "ansehen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Pauschalreise",
+      "turkish": "her şey dahil tatil / paket tur",
+      "example": "Eine Pauschalreise ist oft günstiger als Einzelbuchungen.",
+      "exampleTranslation": "Paket tur çoğu zaman tek tek rezervasyondan ucuzdur.",
+      "synonyms": [
+        "die Paketreise"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Reklamation",
+      "turkish": "şikayet / itiraz",
+      "example": "Wegen des Lärms reichte er eine Reklamation ein.",
+      "exampleTranslation": "Gürültü yüzünden bir şikayette bulundu.",
+      "synonyms": [
+        "die Beanstandung",
+        "die Mängelrüge"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Stornierung",
+      "turkish": "iptal",
+      "example": "Die kostenlose Stornierung ist bis morgen möglich.",
+      "exampleTranslation": "Ücretsiz iptal yarına kadar mümkün.",
+      "synonyms": [
+        "die Annullierung",
+        "die Absage"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Aufenthalt",
+      "turkish": "konaklama / kalma süresi",
+      "example": "Unser Aufenthalt am Meer war erholsam.",
+      "exampleTranslation": "Deniz kıyısındaki konaklamamız dinlendiriciydi.",
+      "synonyms": [
+        "der Verbleib"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Unterbringung",
+      "turkish": "yerleştirme / barındırma",
+      "example": "Die Unterbringung im Gästehaus war einfach.",
+      "exampleTranslation": "Misafirhanedeki konaklama sadeydi.",
+      "synonyms": [
+        "die Beherbergung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Zwischenstopp",
+      "turkish": "ara durak / mola",
+      "example": "Der Flug hat einen Zwischenstopp in Wien.",
+      "exampleTranslation": "Uçuşun Viyana'da bir ara durağı var.",
+      "synonyms": [
+        "die Zwischenlandung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Sehenswürdigkeiten besichtigen",
+      "turkish": "gezilecek yerleri görmek",
+      "example": "Touristen besichtigen gern die Sehenswürdigkeiten der Altstadt.",
+      "exampleTranslation": "Turistler eski şehrin gezilecek yerlerini görmeyi sever.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "die Beherbergung",
+      "turkish": "ağırlama / konaklatma",
+      "example": "Die Beherbergung der Gäste war tadellos organisiert.",
+      "exampleTranslation": "Misafirlerin ağırlanması kusursuz düzenlenmişti.",
+      "synonyms": [
+        "die Bewirtung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Reiserücktritt",
+      "turkish": "seyahatten cayma / seyahat iptali",
+      "example": "Eine Versicherung deckt den Reiserücktritt im Krankheitsfall.",
+      "exampleTranslation": "Bir sigorta, hastalık halinde seyahat iptalini karşılar.",
+      "synonyms": [
+        "die Reiseabsage"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "abgelegen",
+      "turkish": "ücra / uzak / tenha",
+      "example": "Das Ferienhaus liegt abgelegen in den Bergen.",
+      "exampleTranslation": "Tatil evi dağlarda ücra bir yerde bulunuyor.",
+      "synonyms": [
+        "entlegen",
+        "einsam"
+      ],
+      "level": "C1"
+    }
+  ]
+}

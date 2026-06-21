@@ -1,0 +1,173 @@
+{
+  "kind": "gen",
+  "unitId": 136,
+  "categoryId": 7,
+  "number": 12,
+  "title": "Varoluşçuluk ve Anlam",
+  "theme": "Varoluşçu düşüncede özgürlük, kaygı, saçma, otantiklik ve hiçlik kavramlarını kapsar. İnsanın var oluşu ve yaşamın anlamı üzerine felsefi kelimeler.",
+  "firstWordId": 2026,
+  "words": [
+    {
+      "german": "die Existenz",
+      "turkish": "varoluş / var oluş",
+      "example": "Die menschliche Existenz geht der Essenz voraus.",
+      "exampleTranslation": "İnsanın varoluşu özünden önce gelir.",
+      "synonyms": [
+        "das Dasein",
+        "das Vorhandensein"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Geworfenheit",
+      "turkish": "atılmışlık / fırlatılmışlık",
+      "example": "Heidegger beschreibt unsere Geworfenheit in die Welt.",
+      "exampleTranslation": "Heidegger dünyaya atılmışlığımızı betimler.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "die Angst",
+      "turkish": "kaygı / bunaltı",
+      "example": "Die Angst offenbart dem Menschen seine Freiheit.",
+      "exampleTranslation": "Kaygı insana özgürlüğünü açığa çıkarır.",
+      "synonyms": [
+        "die Beklemmung",
+        "die Furcht"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Sorge",
+      "turkish": "endişe / kaygı (varoluşsal)",
+      "example": "Die Sorge prägt das alltägliche Dasein des Menschen.",
+      "exampleTranslation": "Kaygı insanın gündelik var oluşunu belirler.",
+      "synonyms": [
+        "die Besorgnis",
+        "das Kümmern"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Absurde",
+      "turkish": "saçma / absürt olan",
+      "example": "Camus sieht im Absurden die Grundlage des Lebens.",
+      "exampleTranslation": "Camus saçmada yaşamın temelini görür.",
+      "synonyms": [
+        "das Sinnwidrige",
+        "das Widersinnige"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Sinnlosigkeit",
+      "turkish": "anlamsızlık",
+      "example": "Die Sinnlosigkeit des Daseins bedrückte ihn zutiefst.",
+      "exampleTranslation": "Var oluşun anlamsızlığı onu derinden bunalttı.",
+      "synonyms": [
+        "die Bedeutungslosigkeit",
+        "die Zwecklosigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Eigentlichkeit",
+      "turkish": "otantiklik / asıllık",
+      "example": "In der Eigentlichkeit lebt der Mensch sein wahres Selbst.",
+      "exampleTranslation": "Otantiklikte insan kendi gerçek benliğini yaşar.",
+      "synonyms": [
+        "die Authentizität",
+        "die Echtheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Entscheidung",
+      "turkish": "karar / seçim",
+      "example": "Jede Entscheidung wirft uns auf uns selbst zurück.",
+      "exampleTranslation": "Her karar bizi kendimize geri fırlatır.",
+      "synonyms": [
+        "der Entschluss",
+        "die Wahl"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Endlichkeit",
+      "turkish": "sonluluk",
+      "example": "Die Endlichkeit des Lebens verleiht ihm seinen Wert.",
+      "exampleTranslation": "Yaşamın sonluluğu ona değerini verir.",
+      "synonyms": [
+        "die Begrenztheit",
+        "die Vergänglichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Entfremdung",
+      "turkish": "yabancılaşma",
+      "example": "Die Entfremdung trennt den Menschen von sich selbst.",
+      "exampleTranslation": "Yabancılaşma insanı kendinden ayırır.",
+      "synonyms": [
+        "die Selbstentfremdung",
+        "die Befremdung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Verzweiflung",
+      "turkish": "umutsuzluk / çaresizlik",
+      "example": "Kierkegaard nennt die Verzweiflung die Krankheit zum Tode.",
+      "exampleTranslation": "Kierkegaard umutsuzluğu ölümcül hastalık olarak adlandırır.",
+      "synonyms": [
+        "die Hoffnungslosigkeit",
+        "die Aussichtslosigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Selbstbestimmung",
+      "turkish": "kendi kaderini tayin / özerklik",
+      "example": "Selbstbestimmung verlangt Mut zur eigenen Entscheidung.",
+      "exampleTranslation": "Kendi kaderini tayin, kendi kararına cesaret gerektirir.",
+      "synonyms": [
+        "die Autonomie",
+        "die Eigenständigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Sinn",
+      "turkish": "anlam",
+      "example": "Der Mensch sucht den Sinn seines Daseins.",
+      "exampleTranslation": "İnsan var oluşunun anlamını arar.",
+      "synonyms": [
+        "die Bedeutung",
+        "der Zweck"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Vergeblichkeit",
+      "turkish": "boşunalık / nafilelik",
+      "example": "Sisyphos erfährt die Vergeblichkeit seines Tuns.",
+      "exampleTranslation": "Sisifos yaptığı işin boşunalığını deneyimler.",
+      "synonyms": [
+        "die Nutzlosigkeit",
+        "die Fruchtlosigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Selbstverwirklichung",
+      "turkish": "kendini gerçekleştirme",
+      "example": "Selbstverwirklichung gelingt nur durch freie Entscheidungen.",
+      "exampleTranslation": "Kendini gerçekleştirme ancak özgür kararlarla başarılır.",
+      "synonyms": [
+        "die Selbstentfaltung",
+        "die Entfaltung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

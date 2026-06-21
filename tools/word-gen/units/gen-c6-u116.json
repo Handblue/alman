@@ -1,0 +1,153 @@
+{
+  "kind": "gen",
+  "unitId": 116,
+  "categoryId": 6,
+  "number": 9,
+  "title": "Bilişim ve Veri Bilimi",
+  "theme": "Bilgisayar bilimi ve veri bilimi terminolojisi: algoritmalar, yazılım, ağlar ve yapay zeka kavramları.",
+  "firstWordId": 1726,
+  "words": [
+    {
+      "german": "der Quellcode",
+      "turkish": "kaynak kodu",
+      "example": "Der Quellcode dieser Anwendung ist frei verfügbar.",
+      "exampleTranslation": "Bu uygulamanın kaynak kodu serbestçe erişilebilir.",
+      "synonyms": [
+        "der Programmcode",
+        "der Code"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Programmierung",
+      "turkish": "programlama",
+      "example": "Die Programmierung der Software dauerte mehrere Monate.",
+      "exampleTranslation": "Yazılımın programlanması birkaç ay sürdü.",
+      "synonyms": [
+        "die Codierung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Anwendung",
+      "turkish": "uygulama",
+      "example": "Diese Anwendung läuft auf jedem Betriebssystem.",
+      "exampleTranslation": "Bu uygulama her işletim sisteminde çalışır.",
+      "synonyms": [
+        "das Programm",
+        "die Software"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Datenstruktur",
+      "turkish": "veri yapısı",
+      "example": "Eine gute Datenstruktur beschleunigt das Programm erheblich.",
+      "exampleTranslation": "İyi bir veri yapısı programı önemli ölçüde hızlandırır.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "die Schleife",
+      "turkish": "döngü",
+      "example": "Die Schleife wiederholt den Befehl zehnmal.",
+      "exampleTranslation": "Döngü, komutu on kez tekrarlar.",
+      "synonyms": [
+        "die Iteration"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Datenbank",
+      "turkish": "veritabanı",
+      "example": "Alle Kundendaten werden in der Datenbank gespeichert.",
+      "exampleTranslation": "Tüm müşteri verileri veritabanında saklanır.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "der Datensatz",
+      "turkish": "veri kaydı / kayıt",
+      "example": "Jeder Datensatz enthält Name und Adresse.",
+      "exampleTranslation": "Her kayıt ad ve adres içerir.",
+      "synonyms": [
+        "der Eintrag"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Abfrage",
+      "turkish": "sorgu",
+      "example": "Die Abfrage liefert alle aktiven Nutzer zurück.",
+      "exampleTranslation": "Sorgu, tüm aktif kullanıcıları geri döndürür.",
+      "synonyms": [
+        "die Anfrage"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Server",
+      "turkish": "sunucu",
+      "example": "Der Server ist wegen Wartungsarbeiten kurz offline.",
+      "exampleTranslation": "Sunucu, bakım çalışmaları nedeniyle kısa süre kapalı.",
+      "synonyms": [
+        "der Rechner"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Schnittstelle",
+      "turkish": "arayüz",
+      "example": "Die Schnittstelle verbindet beide Programme miteinander.",
+      "exampleTranslation": "Arayüz, iki programı birbirine bağlar.",
+      "synonyms": [
+        "das Interface"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Modell",
+      "turkish": "model",
+      "example": "Das Modell erkennt Gesichter mit hoher Genauigkeit.",
+      "exampleTranslation": "Model, yüzleri yüksek doğrulukla tanır.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "das Training",
+      "turkish": "eğitim (model eğitimi)",
+      "example": "Das Training des Modells benötigt riesige Datenmengen.",
+      "exampleTranslation": "Modelin eğitimi devasa veri miktarları gerektirir.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "die Mustererkennung",
+      "turkish": "örüntü tanıma",
+      "example": "Mustererkennung hilft, Betrug frühzeitig zu entdecken.",
+      "exampleTranslation": "Örüntü tanıma, dolandırıcılığı erkenden bulmaya yardımcı olur.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "die Sicherheitslücke",
+      "turkish": "güvenlik açığı",
+      "example": "Die Sicherheitslücke wurde durch ein Update geschlossen.",
+      "exampleTranslation": "Güvenlik açığı bir güncelleme ile kapatıldı.",
+      "synonyms": [
+        "die Schwachstelle"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Zugriff",
+      "turkish": "erişim",
+      "example": "Ohne Passwort ist kein Zugriff auf das System möglich.",
+      "exampleTranslation": "Parola olmadan sisteme erişim mümkün değildir.",
+      "synonyms": [
+        "der Zugang"
+      ],
+      "level": "C1"
+    }
+  ]
+}

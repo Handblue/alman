@@ -1,0 +1,157 @@
+{
+  "kind": "gen",
+  "unitId": 106,
+  "categoryId": 5,
+  "number": 15,
+  "title": "Giyim Alışverişi ve Mağaza",
+  "theme": "Kıyafet alışverişi, beden seçimi, deneme ve iade işlemleriyle ilgili günlük kelimeler. Mağazada giysi satın alma bağlamı.",
+  "firstWordId": 1576,
+  "words": [
+    {
+      "german": "die Umkleidekabine",
+      "turkish": "deneme kabini / soyunma kabini",
+      "example": "Die Umkleidekabine ist gleich da hinten.",
+      "exampleTranslation": "Deneme kabini hemen şurada, arkada.",
+      "synonyms": [
+        "die Anprobekabine",
+        "die Kabine"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "anprobieren",
+      "turkish": "denemek (giysi) / üstüne giyip bakmak",
+      "example": "Darf ich diese Hose anprobieren?",
+      "exampleTranslation": "Bu pantolonu deneyebilir miyim?",
+      "synonyms": [
+        "ausprobieren"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Anprobe",
+      "turkish": "deneme (giysi denemesi) / prova",
+      "example": "Die Anprobe dauert nur fünf Minuten.",
+      "exampleTranslation": "Deneme sadece beş dakika sürer.",
+      "synonyms": [
+        "das Anprobieren"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "reduziert",
+      "turkish": "indirimli / fiyatı düşürülmüş",
+      "example": "Diese Jacke ist stark reduziert.",
+      "exampleTranslation": "Bu ceket bayağı indirimli.",
+      "synonyms": [
+        "herabgesetzt",
+        "vergünstigt"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Schlussverkauf",
+      "turkish": "sezon sonu indirimi / büyük indirim",
+      "example": "Im Schlussverkauf kostet alles weniger.",
+      "exampleTranslation": "Sezon sonu indiriminde her şey daha ucuz.",
+      "synonyms": [
+        "der Ausverkauf",
+        "der Sale"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "zurückgeben",
+      "turkish": "geri vermek / iade etmek",
+      "example": "Kann ich die Schuhe zurückgeben?",
+      "exampleTranslation": "Ayakkabıları iade edebilir miyim?",
+      "synonyms": [
+        "retournieren"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Kassenbon",
+      "turkish": "kasa fişi / satış fişi",
+      "example": "Bitte bringen Sie den Kassenbon mit.",
+      "exampleTranslation": "Lütfen kasa fişini yanınızda getirin.",
+      "synonyms": [
+        "der Bon",
+        "der Kassenzettel"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Baumwolle",
+      "turkish": "pamuk",
+      "example": "Das T-Shirt ist aus reiner Baumwolle.",
+      "exampleTranslation": "Tişört saf pamuktan.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "die Wolle",
+      "turkish": "yün / yapağı",
+      "example": "Dieser Pullover ist aus warmer Wolle.",
+      "exampleTranslation": "Bu kazak sıcak yünden.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "die Mode",
+      "turkish": "moda",
+      "example": "Diese Schuhe sind gerade große Mode.",
+      "exampleTranslation": "Bu ayakkabılar şu an büyük moda.",
+      "synonyms": [
+        "der Trend"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "eng",
+      "turkish": "dar / sıkı",
+      "example": "Diese Hose ist mir zu eng.",
+      "exampleTranslation": "Bu pantolon bana çok dar.",
+      "synonyms": [
+        "schmal"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "weit",
+      "turkish": "bol / geniş",
+      "example": "Der Pullover ist mir etwas zu weit.",
+      "exampleTranslation": "Kazak bana biraz fazla bol.",
+      "synonyms": [
+        "locker"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "günstig",
+      "turkish": "uygun fiyatlı / ucuz / elverişli",
+      "example": "Dieses Hemd ist heute sehr günstig.",
+      "exampleTranslation": "Bu gömlek bugün çok uygun fiyatlı.",
+      "synonyms": [
+        "preiswert"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "neu",
+      "turkish": "yeni",
+      "example": "Ich suche eine neue Jacke.",
+      "exampleTranslation": "Yeni bir ceket arıyorum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "kosten",
+      "turkish": "(fiyat olarak) tutmak / etmek / mal olmak",
+      "example": "Wie viel kostet dieser Mantel?",
+      "exampleTranslation": "Bu palto ne kadar tutuyor?",
+      "synonyms": [],
+      "level": "A1"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 154,
+  "categoryId": 8,
+  "number": 14,
+  "title": "Zaman ve Saat Deyimleri",
+  "theme": "Zaman, saat ve takvimle ilgili deyimler; an, gün, yıl ve gecikme üzerinden zamanlama ve aciliyet anlatan ifadeler.",
+  "firstWordId": 2296,
+  "words": [
+    {
+      "german": "der Augenblick",
+      "turkish": "an / lahza",
+      "example": "Einen Augenblick bitte, ich komme sofort.",
+      "exampleTranslation": "Bir saniye lütfen, hemen geliyorum.",
+      "synonyms": [
+        "der Moment",
+        "die Sekunde"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "rund um die Uhr",
+      "turkish": "günün her saati / aralıksız 24 saat",
+      "example": "Die Apotheke hat rund um die Uhr geöffnet.",
+      "exampleTranslation": "Eczane günün her saati açık.",
+      "synonyms": [
+        "pausenlos",
+        "Tag und Nacht"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "höchste Zeit",
+      "turkish": "tam zamanı / son an / artık vakit geldi",
+      "example": "Es ist höchste Zeit, dass wir gehen.",
+      "exampleTranslation": "Gitmemizin tam zamanı.",
+      "synonyms": [
+        "allerhöchste Eisenbahn",
+        "dringend"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "pünktlich",
+      "turkish": "dakik / tam vaktinde",
+      "example": "Der Zug fährt pünktlich um acht Uhr ab.",
+      "exampleTranslation": "Tren tam saat sekizde kalkar.",
+      "synonyms": [
+        "rechtzeitig",
+        "fristgerecht"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Verzögerung",
+      "turkish": "gecikme / erteleme",
+      "example": "Wegen einer Verzögerung kam der Bus später an.",
+      "exampleTranslation": "Bir gecikme yüzünden otobüs daha geç geldi.",
+      "synonyms": [
+        "der Aufschub",
+        "die Verschleppung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "in letzter Minute",
+      "turkish": "son dakikada / son anda",
+      "example": "Er hat in letzter Minute alles gerettet.",
+      "exampleTranslation": "Son dakikada her şeyi kurtardı.",
+      "synonyms": [
+        "in letzter Sekunde",
+        "kurz vor knapp"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Zeit totschlagen",
+      "turkish": "vakit öldürmek / zaman geçirmek",
+      "example": "Im Wartezimmer schlugen wir die Zeit tot.",
+      "exampleTranslation": "Bekleme odasında vakit öldürdük.",
+      "synonyms": [
+        "sich die Zeit vertreiben",
+        "trödeln"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "von heute auf morgen",
+      "turkish": "bir günden diğerine / aniden",
+      "example": "Man lernt keine Sprache von heute auf morgen.",
+      "exampleTranslation": "Hiçbir dil bir günden diğerine öğrenilmez.",
+      "synonyms": [
+        "über Nacht",
+        "schlagartig"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "im Handumdrehen",
+      "turkish": "göz açıp kapayıncaya kadar / çabucak",
+      "example": "Sie löste die Aufgabe im Handumdrehen.",
+      "exampleTranslation": "Ödevi göz açıp kapayıncaya kadar çözdü.",
+      "synonyms": [
+        "blitzschnell",
+        "ruckzuck"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Zeit drängt",
+      "turkish": "vakit daralıyor / zaman dar",
+      "example": "Wir müssen uns beeilen, die Zeit drängt.",
+      "exampleTranslation": "Acele etmeliyiz, vakit daralıyor.",
+      "synonyms": [
+        "es eilt",
+        "es wird knapp"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "verstreichen",
+      "turkish": "(zaman) geçip gitmek / akıp gitmek",
+      "example": "Die Frist ist ungenutzt verstrichen.",
+      "exampleTranslation": "Süre kullanılmadan geçip gitti.",
+      "synonyms": [
+        "vergehen",
+        "ablaufen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Sternstunde",
+      "turkish": "zirve anı / unutulmaz an / tarihî an",
+      "example": "Das war eine Sternstunde der Wissenschaft.",
+      "exampleTranslation": "Bu, bilimin unutulmaz bir anıydı.",
+      "synonyms": [
+        "der Höhepunkt",
+        "der Glanzmoment"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "auf die lange Bank schieben",
+      "turkish": "sürüncemede bırakmak / sürekli ertelemek",
+      "example": "Schieb die Entscheidung nicht auf die lange Bank.",
+      "exampleTranslation": "Kararı sürüncemede bırakma.",
+      "synonyms": [
+        "aufschieben",
+        "hinauszögern"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "in den frühen Morgenstunden",
+      "turkish": "sabahın erken saatlerinde / gün ağarırken",
+      "example": "Der Brand brach in den frühen Morgenstunden aus.",
+      "exampleTranslation": "Yangın sabahın erken saatlerinde çıktı.",
+      "synonyms": [
+        "im Morgengrauen",
+        "bei Tagesanbruch"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "zur gegebenen Zeit",
+      "turkish": "zamanı gelince / uygun vakitte",
+      "example": "Ich informiere dich zur gegebenen Zeit.",
+      "exampleTranslation": "Zamanı gelince seni bilgilendiririm.",
+      "synonyms": [
+        "zum richtigen Zeitpunkt",
+        "beizeiten"
+      ],
+      "level": "C1"
+    }
+  ]
+}

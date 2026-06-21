@@ -1,0 +1,162 @@
+{
+  "kind": "gen",
+  "unitId": 69,
+  "categoryId": 3,
+  "number": 10,
+  "title": "Goethe B2 — Çalışma Dünyası",
+  "theme": "İşyeri, kariyer gelişimi, çalışma koşulları ve iş piyasası temalı B2 düzeyi kelimeler. Mesleki tartışma ve görüşme bağlamları.",
+  "firstWordId": 1021,
+  "words": [
+    {
+      "german": "der Arbeitgeber",
+      "turkish": "işveren",
+      "example": "Mein Arbeitgeber zahlt das Gehalt immer pünktlich.",
+      "exampleTranslation": "İşverenim maaşı her zaman zamanında öder.",
+      "synonyms": [
+        "der Dienstherr"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Arbeitnehmer",
+      "turkish": "çalışan / işçi",
+      "example": "Jeder Arbeitnehmer hat Anspruch auf Urlaub.",
+      "exampleTranslation": "Her çalışanın izin hakkı vardır.",
+      "synonyms": [
+        "der Beschäftigte",
+        "die Arbeitskraft"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Gehalt",
+      "turkish": "maaş",
+      "example": "Ihr Gehalt wird monatlich überwiesen.",
+      "exampleTranslation": "Maaşınız aylık olarak havale edilir.",
+      "synonyms": [
+        "der Lohn",
+        "die Bezahlung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Überstunde",
+      "turkish": "fazla mesai",
+      "example": "Diese Woche habe ich viele Überstunden gemacht.",
+      "exampleTranslation": "Bu hafta çok fazla mesai yaptım.",
+      "synonyms": [
+        "die Mehrarbeit"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Teilzeit",
+      "turkish": "yarı zamanlı çalışma",
+      "example": "Nach der Geburt arbeitet sie in Teilzeit.",
+      "exampleTranslation": "Doğumdan sonra yarı zamanlı çalışıyor.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "die Beförderung",
+      "turkish": "terfi",
+      "example": "Er hofft auf eine baldige Beförderung.",
+      "exampleTranslation": "Yakında bir terfi alacağını umuyor.",
+      "synonyms": [
+        "der Aufstieg"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Probezeit",
+      "turkish": "deneme süresi",
+      "example": "In der Probezeit kann man leicht gekündigt werden.",
+      "exampleTranslation": "Deneme süresinde kolayca işten çıkarılabilirsin.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "entlassen",
+      "turkish": "işten çıkarmak",
+      "example": "Die Firma musste hundert Mitarbeiter entlassen.",
+      "exampleTranslation": "Şirket yüz çalışanı işten çıkarmak zorunda kaldı.",
+      "synonyms": [
+        "feuern",
+        "freisetzen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Mindestlohn",
+      "turkish": "asgari ücret",
+      "example": "Der gesetzliche Mindestlohn wurde erhöht.",
+      "exampleTranslation": "Yasal asgari ücret artırıldı.",
+      "synonyms": [
+        "der Grundlohn"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Rente",
+      "turkish": "emekli maaşı / emeklilik",
+      "example": "Mit 67 Jahren geht er in Rente.",
+      "exampleTranslation": "67 yaşında emekli olacak.",
+      "synonyms": [
+        "die Pension",
+        "die Altersbezüge"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "befristet",
+      "turkish": "süreli / belirli süreli",
+      "example": "Sie hat nur einen befristeten Arbeitsvertrag.",
+      "exampleTranslation": "Sadece belirli süreli bir iş sözleşmesi var.",
+      "synonyms": [
+        "zeitlich begrenzt"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Belegschaft",
+      "turkish": "personel / çalışanların tümü",
+      "example": "Die gesamte Belegschaft protestierte gegen die Kürzungen.",
+      "exampleTranslation": "Tüm personel kesintilere karşı protesto etti.",
+      "synonyms": [
+        "die Mitarbeiterschaft",
+        "das Personal"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Vereinbarkeit",
+      "turkish": "bağdaştırılabilirlik / uyumlaştırma",
+      "example": "Die Vereinbarkeit von Familie und Beruf bleibt schwierig.",
+      "exampleTranslation": "Aile ve mesleğin bağdaştırılması zor olmaya devam ediyor.",
+      "synonyms": [
+        "die Vereinbarung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Ruhestand",
+      "turkish": "emeklilik (dönemi)",
+      "example": "Nach vierzig Jahren tritt er in den Ruhestand.",
+      "exampleTranslation": "Kırk yıldan sonra emekliliğe ayrılıyor.",
+      "synonyms": [
+        "die Pensionierung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Aufstieg",
+      "turkish": "yükselme / kariyer basamağı çıkışı",
+      "example": "Sein beruflicher Aufstieg verlief sehr schnell.",
+      "exampleTranslation": "Mesleki yükselişi çok hızlı gerçekleşti.",
+      "synonyms": [
+        "der Karrieresprung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

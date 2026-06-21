@@ -1,0 +1,169 @@
+{
+  "kind": "gen",
+  "unitId": 145,
+  "categoryId": 8,
+  "number": 5,
+  "title": "Hayvanlı Deyimler",
+  "theme": "İçinde hayvan adı geçen Almanca deyimler; tilki, ayı, domuz, kuş gibi hayvanların mecazi kullanımıyla karakter, şans ve davranış anlatımı.",
+  "firstWordId": 2161,
+  "words": [
+    {
+      "german": "einen Bären aufbinden",
+      "turkish": "birine kazık atmak / yutturmak / kandırmak",
+      "example": "Du willst mir wohl einen Bären aufbinden!",
+      "exampleTranslation": "Beni kandırmaya mı çalışıyorsun!",
+      "synonyms": [
+        "belügen",
+        "täuschen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "einen Vogel haben",
+      "turkish": "kaçık olmak / aklını kaçırmak",
+      "example": "Du hast ja einen Vogel, das ist viel zu teuer!",
+      "exampleTranslation": "Sen aklını kaçırmışsın, bu çok pahalı!",
+      "synonyms": [
+        "verrückt sein",
+        "spinnen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Katze im Sack kaufen",
+      "turkish": "görmeden mal almak / körü körüne satın almak",
+      "example": "Kauf nicht die Katze im Sack, prüf das Auto!",
+      "exampleTranslation": "Görmeden alma, arabayı kontrol et!",
+      "synonyms": [
+        "blind kaufen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "einen Frosch im Hals haben",
+      "turkish": "boğazı düğümlenmek / sesi çıkmamak",
+      "example": "Entschuldigung, ich habe einen Frosch im Hals.",
+      "exampleTranslation": "Pardon, boğazım düğümlendi.",
+      "synonyms": [
+        "heiser sein"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "mit den Hühnern aufstehen",
+      "turkish": "çok erken kalkmak / horozlarla kalkmak",
+      "example": "Im Urlaub stehe ich nie mit den Hühnern auf.",
+      "exampleTranslation": "Tatilde asla çok erken kalkmam.",
+      "synonyms": [
+        "früh aufstehen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "ein schlauer Fuchs",
+      "turkish": "kurnaz kişi / kurnaz tilki",
+      "example": "Mein Opa ist wirklich ein schlauer Fuchs.",
+      "exampleTranslation": "Dedem gerçekten kurnaz bir tilkidir.",
+      "synonyms": [
+        "der Schlaukopf",
+        "der Pfiffikus"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "einen Kater haben",
+      "turkish": "akşamdan kalma olmak / mahmur olmak",
+      "example": "Nach der Party hatte ich einen schlimmen Kater.",
+      "exampleTranslation": "Partiden sonra fena akşamdan kalmaydım.",
+      "synonyms": [
+        "verkatert sein"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Sau rauslassen",
+      "turkish": "çılgınca eğlenmek / kafayı dağıtmak",
+      "example": "Heute Abend lassen wir richtig die Sau raus.",
+      "exampleTranslation": "Bu akşam adamakıllı kafa dağıtacağız.",
+      "synonyms": [
+        "feiern",
+        "ausgelassen sein"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "jemandem einen Floh ins Ohr setzen",
+      "turkish": "birine olmadık bir fikir/hayal kaptırmak",
+      "example": "Wer hat dir diesen Floh ins Ohr gesetzt?",
+      "exampleTranslation": "Bu fikri kafana kim soktu?",
+      "synonyms": [
+        "einreden",
+        "eine Idee einreden"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "einen Maulwurf haben",
+      "turkish": "içeride bir köştebek/casus bulunmak",
+      "example": "Die Firma hat offenbar einen Maulwurf.",
+      "exampleTranslation": "Firmada belli ki bir köştebek var.",
+      "synonyms": [
+        "der Spitzel",
+        "der Spion"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "schwarze Schafe",
+      "turkish": "yüz karası kişiler / istisna olan kötüler",
+      "example": "In jeder Branche gibt es schwarze Schafe.",
+      "exampleTranslation": "Her sektörde yüz karası kişiler vardır.",
+      "synonyms": [
+        "der Außenseiter"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "Schwein gehabt",
+      "turkish": "şans yaver gitti / paçayı sıyırmak",
+      "example": "Kein Strafzettel? Da hast du Schwein gehabt!",
+      "exampleTranslation": "Ceza yok mu? Şansın yaver gitti!",
+      "synonyms": [
+        "Glück gehabt"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "den Stier bei den Hörnern packen",
+      "turkish": "sorunu cesaretle göğüslemek / boğayı boynuzundan tutmak",
+      "example": "Pack endlich den Stier bei den Hörnern!",
+      "exampleTranslation": "Artık sorunu cesaretle göğüsle!",
+      "synonyms": [
+        "mutig handeln",
+        "anpacken"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "weiße Mäuse sehen",
+      "turkish": "sayıklamak / sarhoşluktan halüsinasyon görmek",
+      "example": "Nach so viel Wein sieht er weiße Mäuse.",
+      "exampleTranslation": "O kadar şaraptan sonra sayıklıyor.",
+      "synonyms": [
+        "halluzinieren"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "den inneren Schweinehund überwinden",
+      "turkish": "içindeki tembelliği yenmek / kendini zorlamak",
+      "example": "Morgens muss ich meinen inneren Schweinehund überwinden.",
+      "exampleTranslation": "Sabahları içimdeki tembelliği yenmem gerekiyor.",
+      "synonyms": [
+        "sich überwinden",
+        "sich aufraffen"
+      ],
+      "level": "C1"
+    }
+  ]
+}

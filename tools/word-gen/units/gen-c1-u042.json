@@ -1,0 +1,142 @@
+{
+  "kind": "gen",
+  "unitId": 42,
+  "categoryId": 1,
+  "number": 14,
+  "title": "Hayvanlar",
+  "theme": "Ev, çiftlik ve doğadaki yaygın hayvan isimleri ile onlarla ilgili temel sözcükler. Çocukların ve yeni başlayanların ilk öğrendiği somut A1/A2 kelimeleri.",
+  "firstWordId": 616,
+  "words": [
+    {
+      "german": "der Vogel",
+      "turkish": "kuş",
+      "example": "Der Vogel singt im Baum.",
+      "exampleTranslation": "Kuş ağaçta şarkı söylüyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "der Fisch",
+      "turkish": "balık",
+      "example": "Der Fisch schwimmt im Wasser.",
+      "exampleTranslation": "Balık suda yüzüyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "die Kuh",
+      "turkish": "inek",
+      "example": "Die Kuh gibt uns Milch.",
+      "exampleTranslation": "İnek bize süt verir.",
+      "synonyms": [
+        "das Rind"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Pferd",
+      "turkish": "at",
+      "example": "Das Pferd läuft sehr schnell.",
+      "exampleTranslation": "At çok hızlı koşuyor.",
+      "synonyms": [
+        "der Gaul"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Huhn",
+      "turkish": "tavuk",
+      "example": "Das Huhn legt jeden Tag ein Ei.",
+      "exampleTranslation": "Tavuk her gün bir yumurta yumurtlar.",
+      "synonyms": [
+        "die Henne"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Schwein",
+      "turkish": "domuz",
+      "example": "Das Schwein liegt im Schlamm.",
+      "exampleTranslation": "Domuz çamurda yatıyor.",
+      "synonyms": [
+        "das Ferkel",
+        "die Sau"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Löwe",
+      "turkish": "aslan",
+      "example": "Der Löwe ist der König der Tiere.",
+      "exampleTranslation": "Aslan hayvanların kralıdır.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "der Bär",
+      "turkish": "ayı",
+      "example": "Der Bär schläft im Winter.",
+      "exampleTranslation": "Ayı kışın uyur.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "der Fuchs",
+      "turkish": "tilki",
+      "example": "Der Fuchs ist sehr schlau.",
+      "exampleTranslation": "Tilki çok kurnazdır.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "der Wolf",
+      "turkish": "kurt",
+      "example": "Der Wolf lebt im Wald.",
+      "exampleTranslation": "Kurt ormanda yaşar.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "die Biene",
+      "turkish": "arı",
+      "example": "Die Biene macht Honig.",
+      "exampleTranslation": "Arı bal yapar.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "die Maus",
+      "turkish": "fare",
+      "example": "Die Maus läuft schnell weg.",
+      "exampleTranslation": "Fare hızlıca kaçar.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "das Tier",
+      "turkish": "hayvan",
+      "example": "Der Hund ist ein liebes Tier.",
+      "exampleTranslation": "Köpek sevimli bir hayvandır.",
+      "synonyms": [
+        "das Lebewesen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "fliegen",
+      "turkish": "uçmak",
+      "example": "Die Vögel fliegen nach Süden.",
+      "exampleTranslation": "Kuşlar güneye uçar.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "füttern",
+      "turkish": "beslemek / yem vermek",
+      "example": "Wir füttern die Katze jeden Morgen.",
+      "exampleTranslation": "Kediyi her sabah besleriz.",
+      "synonyms": [],
+      "level": "A2"
+    }
+  ]
+}

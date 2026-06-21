@@ -1,0 +1,162 @@
+{
+  "kind": "gen",
+  "unitId": 85,
+  "categoryId": 4,
+  "number": 9,
+  "title": "telc — Çevre ve Sürdürülebilirlik",
+  "theme": "Çevre koruma, iklim ve sürdürülebilir yaşam tartışmaları bağlamında telc B2/C1 düzeyindeki güncel kelimeler.",
+  "firstWordId": 1261,
+  "words": [
+    {
+      "german": "der Klimawandel",
+      "turkish": "iklim değişikliği",
+      "example": "Der Klimawandel bedroht viele Tierarten.",
+      "exampleTranslation": "İklim değişikliği birçok hayvan türünü tehdit ediyor.",
+      "synonyms": [
+        "die Klimaveränderung",
+        "die Erderwärmung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Müll",
+      "turkish": "çöp / atık",
+      "example": "Wir trennen den Müll seit Jahren.",
+      "exampleTranslation": "Yıllardır çöpü ayrıştırıyoruz.",
+      "synonyms": [
+        "der Abfall"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Umweltverschmutzung",
+      "turkish": "çevre kirliliği",
+      "example": "Die Umweltverschmutzung in Großstädten nimmt zu.",
+      "exampleTranslation": "Büyük şehirlerde çevre kirliliği artıyor.",
+      "synonyms": [
+        "die Verschmutzung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Energie",
+      "turkish": "enerji",
+      "example": "Wir sollten weniger Energie verbrauchen.",
+      "exampleTranslation": "Daha az enerji tüketmeliyiz.",
+      "synonyms": [
+        "die Kraft"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "schützen",
+      "turkish": "korumak",
+      "example": "Wir müssen die Natur besser schützen.",
+      "exampleTranslation": "Doğayı daha iyi korumalıyız.",
+      "synonyms": [
+        "bewahren",
+        "verteidigen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die erneuerbare Energie",
+      "turkish": "yenilenebilir enerji",
+      "example": "Erneuerbare Energie ersetzt langsam die Kohle.",
+      "exampleTranslation": "Yenilenebilir enerji yavaşça kömürün yerini alıyor.",
+      "synonyms": [
+        "die Ökoenergie"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Treibhauseffekt",
+      "turkish": "sera etkisi",
+      "example": "Der Treibhauseffekt erwärmt unseren Planeten.",
+      "exampleTranslation": "Sera etkisi gezegenimizi ısıtıyor.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "die Mülltrennung",
+      "turkish": "çöp ayrıştırma / atık ayrıştırma",
+      "example": "Die Mülltrennung ist in Deutschland Pflicht.",
+      "exampleTranslation": "Çöp ayrıştırma Almanya'da zorunludur.",
+      "synonyms": [
+        "die Abfalltrennung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Verbrauch",
+      "turkish": "tüketim",
+      "example": "Der Verbrauch von Plastik muss sinken.",
+      "exampleTranslation": "Plastik tüketimi azalmalı.",
+      "synonyms": [
+        "der Konsum",
+        "die Nutzung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Artenvielfalt",
+      "turkish": "biyoçeşitlilik / tür çeşitliliği",
+      "example": "Die Artenvielfalt im Regenwald ist enorm.",
+      "exampleTranslation": "Yağmur ormanındaki biyoçeşitlilik muazzamdır.",
+      "synonyms": [
+        "die Biodiversität"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "vermeiden",
+      "turkish": "kaçınmak / önlemek",
+      "example": "Man sollte unnötigen Plastikmüll vermeiden.",
+      "exampleTranslation": "Gereksiz plastik atıktan kaçınmalı.",
+      "synonyms": [
+        "verhindern",
+        "umgehen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der CO2-Ausstoß",
+      "turkish": "karbondioksit emisyonu / salımı",
+      "example": "Der CO2-Ausstoß der Industrie ist gestiegen.",
+      "exampleTranslation": "Sanayinin karbondioksit emisyonu yükseldi.",
+      "synonyms": [
+        "die Emission",
+        "der Kohlendioxidausstoß"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der ökologische Fußabdruck",
+      "turkish": "ekolojik ayak izi",
+      "example": "Sein ökologischer Fußabdruck ist sehr klein.",
+      "exampleTranslation": "Onun ekolojik ayak izi çok küçük.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "die Ressourcenschonung",
+      "turkish": "kaynakların korunması / kaynak tasarrufu",
+      "example": "Ressourcenschonung ist für die Zukunft entscheidend.",
+      "exampleTranslation": "Kaynakların korunması gelecek için belirleyicidir.",
+      "synonyms": [
+        "die Ressourceneffizienz"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Klimaneutralität",
+      "turkish": "iklim nötrlüğü / karbon nötrlüğü",
+      "example": "Das Land strebt bis 2045 Klimaneutralität an.",
+      "exampleTranslation": "Ülke 2045'e kadar iklim nötrlüğünü hedefliyor.",
+      "synonyms": [
+        "die CO2-Neutralität"
+      ],
+      "level": "C1"
+    }
+  ]
+}

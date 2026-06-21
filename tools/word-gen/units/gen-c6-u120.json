@@ -1,0 +1,170 @@
+{
+  "kind": "gen",
+  "unitId": 120,
+  "categoryId": 6,
+  "number": 13,
+  "title": "Dilbilim ve Filoloji",
+  "theme": "Dilbilim ve filoloji terminolojisi: dilin yapısı, ses, anlam, dilbilgisi düzeyleri ve dil edinimi.",
+  "firstWordId": 1786,
+  "words": [
+    {
+      "german": "die Aussprache",
+      "turkish": "telaffuz / söyleyiş",
+      "example": "Ihre deutsche Aussprache ist fast akzentfrei.",
+      "exampleTranslation": "Almanca telaffuzunuz neredeyse aksansız.",
+      "synonyms": [
+        "die Artikulation"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Betonung",
+      "turkish": "vurgu",
+      "example": "Die Betonung liegt auf der ersten Silbe.",
+      "exampleTranslation": "Vurgu ilk hecededir.",
+      "synonyms": [
+        "der Akzent",
+        "die Hervorhebung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Satzbau",
+      "turkish": "cümle yapısı / sözdizimi",
+      "example": "Der deutsche Satzbau folgt festen Regeln.",
+      "exampleTranslation": "Almanca cümle yapısı sabit kurallara uyar.",
+      "synonyms": [
+        "die Syntax",
+        "die Satzstruktur"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Bedeutung",
+      "turkish": "anlam / önem",
+      "example": "Dieses Wort hat mehrere Bedeutungen.",
+      "exampleTranslation": "Bu kelimenin birden çok anlamı var.",
+      "synonyms": [
+        "der Sinn",
+        "die Semantik"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Wortschatz",
+      "turkish": "kelime hazinesi / söz varlığı",
+      "example": "Sein Wortschatz wächst mit jedem Buch.",
+      "exampleTranslation": "Kelime hazinesi her kitapla birlikte büyüyor.",
+      "synonyms": [
+        "das Vokabular",
+        "der Wortbestand"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Muttersprache",
+      "turkish": "ana dil",
+      "example": "Türkisch ist meine Muttersprache.",
+      "exampleTranslation": "Türkçe benim ana dilimdir.",
+      "synonyms": [
+        "die Erstsprache"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Mehrsprachigkeit",
+      "turkish": "çok dillilik",
+      "example": "Mehrsprachigkeit fördert das logische Denken.",
+      "exampleTranslation": "Çok dillilik mantıksal düşünmeyi destekler.",
+      "synonyms": [
+        "die Vielsprachigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Herkunft",
+      "turkish": "köken / kaynak",
+      "example": "Die Herkunft dieses Wortes ist lateinisch.",
+      "exampleTranslation": "Bu kelimenin kökeni Latincedir.",
+      "synonyms": [
+        "der Ursprung",
+        "die Abstammung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Spracherwerb",
+      "turkish": "dil edinimi",
+      "example": "Der kindliche Spracherwerb verläuft erstaunlich schnell.",
+      "exampleTranslation": "Çocuktaki dil edinimi şaşırtıcı derecede hızlı ilerler.",
+      "synonyms": [
+        "die Sprachaneignung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Sprachwandel",
+      "turkish": "dil değişimi",
+      "example": "Der Sprachwandel vollzieht sich über Jahrhunderte.",
+      "exampleTranslation": "Dil değişimi yüzyıllar boyunca gerçekleşir.",
+      "synonyms": [
+        "die Sprachveränderung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Beugung",
+      "turkish": "çekim (sözcük çekimi)",
+      "example": "Die Beugung der Verben bereitet vielen Lernenden Mühe.",
+      "exampleTranslation": "Fiil çekimi birçok öğrenene zorluk çıkarır.",
+      "synonyms": [
+        "die Flexion",
+        "die Deklination"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Begriff",
+      "turkish": "kavram / terim",
+      "example": "Der Begriff lässt sich schwer genau definieren.",
+      "exampleTranslation": "Kavramı tam olarak tanımlamak zordur.",
+      "synonyms": [
+        "der Terminus",
+        "die Vorstellung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Verwandtschaft",
+      "turkish": "akrabalık (diller arası)",
+      "example": "Die Verwandtschaft beider Sprachen ist deutlich erkennbar.",
+      "exampleTranslation": "İki dilin akrabalığı açıkça fark edilebilir.",
+      "synonyms": [
+        "die Sprachverwandtschaft"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Aussage",
+      "turkish": "ifade / önerme",
+      "example": "Die Aussage des Satzes bleibt mehrdeutig.",
+      "exampleTranslation": "Cümlenin ifadesi belirsiz kalıyor.",
+      "synonyms": [
+        "die Äußerung",
+        "die Feststellung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Zusammenhang",
+      "turkish": "bağlam / bağlantı",
+      "example": "Ohne Kontext bleibt der Zusammenhang unklar.",
+      "exampleTranslation": "Bağlam olmadan bağıntı belirsiz kalır.",
+      "synonyms": [
+        "der Kontext",
+        "die Verbindung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

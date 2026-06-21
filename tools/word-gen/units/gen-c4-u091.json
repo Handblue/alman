@@ -1,0 +1,171 @@
+{
+  "kind": "gen",
+  "unitId": 91,
+  "categoryId": 4,
+  "number": 15,
+  "title": "telc — Tüketici Hakları ve Sözleşmeler",
+  "theme": "Alışveriş, sözleşme ve tüketici koruması bağlamında telc sınavının hukuki-ekonomik orta-üst düzey kelimeleri.",
+  "firstWordId": 1351,
+  "words": [
+    {
+      "german": "der Kaufvertrag",
+      "turkish": "satın alma sözleşmesi",
+      "example": "Mit der Unterschrift wird der Kaufvertrag gültig.",
+      "exampleTranslation": "İmza ile satın alma sözleşmesi geçerli olur.",
+      "synonyms": [
+        "die Kaufvereinbarung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Garantie",
+      "turkish": "garanti",
+      "example": "Auf das Gerät gibt es zwei Jahre Garantie.",
+      "exampleTranslation": "Cihaz için iki yıl garanti var.",
+      "synonyms": [
+        "die Gewährleistung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Ware",
+      "turkish": "mal / ürün",
+      "example": "Die bestellte Ware kam beschädigt an.",
+      "exampleTranslation": "Sipariş edilen ürün hasarlı geldi.",
+      "synonyms": [
+        "das Produkt",
+        "der Artikel"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Widerrufsrecht",
+      "turkish": "cayma hakkı",
+      "example": "Bei Onlinekäufen haben Sie ein Widerrufsrecht.",
+      "exampleTranslation": "İnternet alışverişlerinde cayma hakkınız vardır.",
+      "synonyms": [
+        "das Rücktrittsrecht"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Rückgabe",
+      "turkish": "iade",
+      "example": "Die Rückgabe ist innerhalb von 14 Tagen möglich.",
+      "exampleTranslation": "İade 14 gün içinde mümkündür.",
+      "synonyms": [
+        "die Retoure"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Abonnement",
+      "turkish": "abonelik",
+      "example": "Mein Abonnement verlängert sich automatisch.",
+      "exampleTranslation": "Aboneliğim otomatik olarak uzuyor.",
+      "synonyms": [
+        "das Abo",
+        "der Bezug"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Mahnung",
+      "turkish": "gecikme uyarısı / ihtar",
+      "example": "Nach der dritten Mahnung drohen Kosten.",
+      "exampleTranslation": "Üçüncü ihtardan sonra masraflar söz konusu olur.",
+      "synonyms": [
+        "die Zahlungserinnerung",
+        "die Erinnerung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Entschädigung",
+      "turkish": "tazminat",
+      "example": "Der Kunde verlangte eine Entschädigung für den Schaden.",
+      "exampleTranslation": "Müşteri hasar için tazminat talep etti.",
+      "synonyms": [
+        "der Schadensersatz",
+        "die Kompensation"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Verbraucher",
+      "turkish": "tüketici",
+      "example": "Der Verbraucher wird durch das Gesetz geschützt.",
+      "exampleTranslation": "Tüketici yasa ile korunur.",
+      "synonyms": [
+        "der Konsument",
+        "der Kunde"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Verbraucherschutz",
+      "turkish": "tüketici koruması",
+      "example": "Der Verbraucherschutz berät bei unfairen Verträgen.",
+      "exampleTranslation": "Tüketici koruma, haksız sözleşmelerde danışmanlık verir.",
+      "synonyms": [
+        "der Konsumentenschutz"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Reklamation",
+      "turkish": "şikayet / kusur bildirimi",
+      "example": "Die Reklamation wurde sofort bearbeitet.",
+      "exampleTranslation": "Şikayet hemen işleme alındı.",
+      "synonyms": [
+        "die Beanstandung",
+        "die Mängelrüge"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Mangel",
+      "turkish": "kusur / ayıp / eksiklik",
+      "example": "Das Produkt hatte einen versteckten Mangel.",
+      "exampleTranslation": "Ürünün gizli bir kusuru vardı.",
+      "synonyms": [
+        "der Defekt",
+        "der Fehler"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Erstattung",
+      "turkish": "geri ödeme / iade",
+      "example": "Sie erhalten eine volle Erstattung des Kaufpreises.",
+      "exampleTranslation": "Satın alma bedelinin tamamı geri ödenir.",
+      "synonyms": [
+        "die Rückerstattung",
+        "die Rückzahlung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "verbindlich",
+      "turkish": "bağlayıcı / kesin",
+      "example": "Die Bestellung ist nun rechtlich verbindlich.",
+      "exampleTranslation": "Sipariş artık yasal olarak bağlayıcıdır.",
+      "synonyms": [
+        "bindend",
+        "obligatorisch"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Kulanz",
+      "turkish": "iyi niyet / hoşgörü (jest olarak çözüm)",
+      "example": "Aus Kulanz tauschte der Händler das Gerät um.",
+      "exampleTranslation": "Satıcı iyi niyetle cihazı değiştirdi.",
+      "synonyms": [
+        "das Entgegenkommen",
+        "die Großzügigkeit"
+      ],
+      "level": "C1"
+    }
+  ]
+}

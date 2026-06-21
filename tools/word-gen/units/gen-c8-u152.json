@@ -1,0 +1,170 @@
+{
+  "kind": "gen",
+  "unitId": 152,
+  "categoryId": 8,
+  "number": 12,
+  "title": "Sayı ve Ölçü Deyimleri",
+  "theme": "Sayılar, miktarlar ve ölçülerle kurulan deyimler; bir, iki, yedi gibi rakamların mecazi kullanımı ve büyüklük/azlık ifadeleri.",
+  "firstWordId": 2266,
+  "words": [
+    {
+      "german": "das Dutzend",
+      "turkish": "düzine (on iki)",
+      "example": "Im Korb lagen ein Dutzend frische Eier.",
+      "exampleTranslation": "Sepette bir düzine taze yumurta vardı.",
+      "synonyms": [
+        "zwölf Stück"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Hälfte",
+      "turkish": "yarı / yarısı",
+      "example": "Die Hälfte der Pizza ist schon weg.",
+      "exampleTranslation": "Pizzanın yarısı çoktan bitti.",
+      "synonyms": [
+        "der halbe Teil"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Viertel",
+      "turkish": "çeyrek",
+      "example": "Es ist ein Viertel nach acht.",
+      "exampleTranslation": "Saat sekizi çeyrek geçiyor.",
+      "synonyms": [
+        "der vierte Teil"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Drittel",
+      "turkish": "üçte bir",
+      "example": "Ein Drittel der Klasse war krank.",
+      "exampleTranslation": "Sınıfın üçte biri hastaydı.",
+      "synonyms": [
+        "der dritte Teil"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Paar",
+      "turkish": "çift / birkaç",
+      "example": "Ich kaufe ein Paar neue Schuhe.",
+      "exampleTranslation": "Yeni bir çift ayakkabı alıyorum.",
+      "synonyms": [
+        "das Pärchen",
+        "zwei zusammengehörige Dinge"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "in null Komma nichts",
+      "turkish": "bir çırpıda / çok hızlı",
+      "example": "Er war in null Komma nichts fertig.",
+      "exampleTranslation": "O, bir çırpıda işini bitirdi.",
+      "synonyms": [
+        "blitzschnell",
+        "im Nu"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "alle Jubeljahre",
+      "turkish": "yılda bir / çok nadiren",
+      "example": "Wir sehen uns nur alle Jubeljahre.",
+      "exampleTranslation": "Birbirimizi çok nadiren görüyoruz.",
+      "synonyms": [
+        "sehr selten",
+        "kaum"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das schwarze Schaf",
+      "turkish": "yüz karası / ailenin uğursuzu",
+      "example": "Er ist das schwarze Schaf der Familie.",
+      "exampleTranslation": "O, ailenin yüz karası.",
+      "synonyms": [
+        "der Außenseiter"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "zwei Fliegen mit einer Klappe schlagen",
+      "turkish": "bir taşla iki kuş vurmak",
+      "example": "So schlägst du zwei Fliegen mit einer Klappe.",
+      "exampleTranslation": "Böylece bir taşla iki kuş vurursun.",
+      "synonyms": [
+        "zwei Ziele gleichzeitig erreichen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das A und O",
+      "turkish": "alfa ve omega / en önemli şey",
+      "example": "Übung ist das A und O beim Lernen.",
+      "exampleTranslation": "Öğrenirken pratik en önemli şeydir.",
+      "synonyms": [
+        "das Wichtigste",
+        "der Kernpunkt"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "jemandem reinen Wein einschenken",
+      "turkish": "birine açıkça doğruyu söylemek",
+      "example": "Ich muss dir endlich reinen Wein einschenken.",
+      "exampleTranslation": "Sonunda sana açıkça doğruyu söylemeliyim.",
+      "synonyms": [
+        "die Wahrheit sagen",
+        "offen reden"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "jeden Pfennig zweimal umdrehen",
+      "turkish": "her kuruşu hesaplamak, çok tutumlu olmak",
+      "example": "Als Student musste ich jeden Pfennig zweimal umdrehen.",
+      "exampleTranslation": "Öğrenciyken her kuruşu hesaplamak zorundaydım.",
+      "synonyms": [
+        "sehr sparsam sein",
+        "knausern"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "alles über einen Kamm scheren",
+      "turkish": "hepsini aynı kefeye koymak",
+      "example": "Man sollte nicht alles über einen Kamm scheren.",
+      "exampleTranslation": "Her şeyi aynı kefeye koymamak gerekir.",
+      "synonyms": [
+        "pauschalisieren",
+        "verallgemeinern"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die fünfte Kolonne",
+      "turkish": "beşinci kol / içerideki gizli düşman",
+      "example": "Man fürchtete eine fünfte Kolonne im Land.",
+      "exampleTranslation": "Ülkede bir beşinci kol olmasından korkuluyordu.",
+      "synonyms": [
+        "die Saboteure",
+        "verdeckte Gegner"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "für ein Butterbrot und ein Ei",
+      "turkish": "yok pahasına, çok ucuza",
+      "example": "Er verkaufte das Auto für ein Butterbrot und ein Ei.",
+      "exampleTranslation": "Arabayı yok pahasına sattı.",
+      "synonyms": [
+        "sehr billig",
+        "für wenig Geld"
+      ],
+      "level": "C1"
+    }
+  ]
+}

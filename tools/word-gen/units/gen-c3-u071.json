@@ -1,0 +1,172 @@
+{
+  "kind": "gen",
+  "unitId": 71,
+  "categoryId": 3,
+  "number": 12,
+  "title": "Goethe B2 — Teknoloji ve Dijitalleşme",
+  "theme": "Dijital dönüşüm, yapay zeka, otomasyon ve teknolojinin etkileri temalı B2 kelimeleri. Teknolojinin avantaj/dezavantaj tartışması bağlamı.",
+  "firstWordId": 1051,
+  "words": [
+    {
+      "german": "der Fortschritt",
+      "turkish": "ilerleme / gelişme",
+      "example": "Der technische Fortschritt verändert unseren Alltag.",
+      "exampleTranslation": "Teknik ilerleme günlük hayatımızı değiştiriyor.",
+      "synonyms": [
+        "die Entwicklung",
+        "der Aufschwung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "speichern",
+      "turkish": "kaydetmek / depolamak",
+      "example": "Ich speichere meine Dateien in der Cloud.",
+      "exampleTranslation": "Dosyalarımı bulutta kaydediyorum.",
+      "synonyms": [
+        "sichern",
+        "ablegen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Roboter",
+      "turkish": "robot",
+      "example": "In der Fabrik arbeiten heute viele Roboter.",
+      "exampleTranslation": "Fabrikada bugün birçok robot çalışıyor.",
+      "synonyms": [
+        "der Automat",
+        "die Maschine"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Nutzer",
+      "turkish": "kullanıcı",
+      "example": "Jeder Nutzer muss die Regeln akzeptieren.",
+      "exampleTranslation": "Her kullanıcı kuralları kabul etmek zorundadır.",
+      "synonyms": [
+        "der Anwender",
+        "der Benutzer"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Bildschirm",
+      "turkish": "ekran",
+      "example": "Ich starre den ganzen Tag auf den Bildschirm.",
+      "exampleTranslation": "Bütün gün ekrana bakıyorum.",
+      "synonyms": [
+        "der Monitor",
+        "die Anzeige"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Digitalisierung",
+      "turkish": "dijitalleşme",
+      "example": "Die Digitalisierung verändert viele Berufe grundlegend.",
+      "exampleTranslation": "Dijitalleşme birçok mesleği kökten değiştiriyor.",
+      "synonyms": [
+        "die Digitalumstellung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Automatisierung",
+      "turkish": "otomasyon / otomatikleştirme",
+      "example": "Die Automatisierung kostet manche Menschen ihren Job.",
+      "exampleTranslation": "Otomasyon bazı insanların işine mal oluyor.",
+      "synonyms": [
+        "die Mechanisierung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Datensicherheit",
+      "turkish": "veri güvenliği",
+      "example": "Viele Firmen investieren stark in die Datensicherheit.",
+      "exampleTranslation": "Birçok şirket veri güvenliğine çok yatırım yapıyor.",
+      "synonyms": [
+        "der Informationsschutz"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "künstlich",
+      "turkish": "yapay",
+      "example": "Künstliche Intelligenz wird immer leistungsfähiger.",
+      "exampleTranslation": "Yapay zeka giderek daha güçlü hale geliyor.",
+      "synonyms": [
+        "synthetisch",
+        "nachgemacht"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Vernetzung",
+      "turkish": "ağ kurma / birbirine bağlanma",
+      "example": "Die Vernetzung der Geräte bringt neue Risiken.",
+      "exampleTranslation": "Cihazların birbirine bağlanması yeni riskler getiriyor.",
+      "synonyms": [
+        "die Verknüpfung",
+        "die Verbindung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "überwachen",
+      "turkish": "izlemek / denetlemek / gözetlemek",
+      "example": "Kameras überwachen den gesamten Eingangsbereich.",
+      "exampleTranslation": "Kameralar tüm giriş alanını gözetliyor.",
+      "synonyms": [
+        "kontrollieren",
+        "beobachten"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Cyberkriminalität",
+      "turkish": "siber suç",
+      "example": "Die Cyberkriminalität nimmt jedes Jahr deutlich zu.",
+      "exampleTranslation": "Siber suç her yıl belirgin şekilde artıyor.",
+      "synonyms": [
+        "die Internetkriminalität",
+        "die Computerkriminalität"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Datenmissbrauch",
+      "turkish": "verilerin kötüye kullanımı",
+      "example": "Der Datenmissbrauch durch Konzerne beunruhigt viele Verbraucher.",
+      "exampleTranslation": "Şirketlerin verileri kötüye kullanması birçok tüketiciyi endişelendiriyor.",
+      "synonyms": [
+        "der Datenmissstand"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "selbstlernend",
+      "turkish": "kendi kendine öğrenen",
+      "example": "Selbstlernende Systeme verbessern sich ohne menschliches Eingreifen.",
+      "exampleTranslation": "Kendi kendine öğrenen sistemler insan müdahalesi olmadan gelişir.",
+      "synonyms": [
+        "selbstoptimierend",
+        "adaptiv"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Errungenschaft",
+      "turkish": "başarı / kazanım / elde edilen şey",
+      "example": "Das Internet gilt als große Errungenschaft der Menschheit.",
+      "exampleTranslation": "İnternet, insanlığın büyük bir kazanımı olarak görülür.",
+      "synonyms": [
+        "die Leistung",
+        "der Erfolg"
+      ],
+      "level": "C1"
+    }
+  ]
+}

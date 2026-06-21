@@ -1,0 +1,154 @@
+{
+  "kind": "gen",
+  "unitId": 56,
+  "categoryId": 2,
+  "number": 13,
+  "title": "İlgi Cümleleri",
+  "theme": "İsmi niteleyen yan cümleler (Relativsätze); ilgi zamirlerinin hâl ve cinse göre çekimi, cümle içi kullanım.",
+  "firstWordId": 826,
+  "words": [
+    {
+      "german": "der",
+      "turkish": "(eril nesneyi niteleyen ilgi zamiri) ki o / -en",
+      "example": "Der Mann, der dort steht, ist mein Vater.",
+      "exampleTranslation": "Orada duran adam babamdır.",
+      "synonyms": [
+        "welcher"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die",
+      "turkish": "(dişil/çoğul nesneyi niteleyen ilgi zamiri) ki o / -en",
+      "example": "Die Frau, die hier wohnt, ist nett.",
+      "exampleTranslation": "Burada oturan kadın çok kibar.",
+      "synonyms": [
+        "welche"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das",
+      "turkish": "(nötr nesneyi niteleyen ilgi zamiri) ki o / -en",
+      "example": "Das Auto, das rot ist, gehört mir.",
+      "exampleTranslation": "Kırmızı olan araba bana ait.",
+      "synonyms": [
+        "welches"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "wer",
+      "turkish": "kim / her kim",
+      "example": "Wer früh kommt, bekommt einen guten Platz.",
+      "exampleTranslation": "Erken gelen iyi bir yer kapar.",
+      "synonyms": [
+        "derjenige, der"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "was",
+      "turkish": "ne / her ne",
+      "example": "Ich verstehe nicht, was du meinst.",
+      "exampleTranslation": "Ne demek istediğini anlamıyorum.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "wo",
+      "turkish": "nerede / -dığı yer",
+      "example": "Das ist die Stadt, wo ich geboren bin.",
+      "exampleTranslation": "Burası benim doğduğum şehir.",
+      "synonyms": [
+        "in der"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "den",
+      "turkish": "(eril akkusativ nesneyi niteleyen ilgi zamiri) ki onu / -dığı",
+      "example": "Der Film, den ich sah, war spannend.",
+      "exampleTranslation": "İzlediğim film heyecanlıydı.",
+      "synonyms": [
+        "welchen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "dem",
+      "turkish": "(eril/nötr dativ nesneyi niteleyen ilgi zamiri) ki ona / -dığı",
+      "example": "Der Freund, dem ich helfe, ist krank.",
+      "exampleTranslation": "Yardım ettiğim arkadaş hasta.",
+      "synonyms": [
+        "welchem"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "denen",
+      "turkish": "(çoğul dativ nesneyi niteleyen ilgi zamiri) ki onlara / -dıkları",
+      "example": "Die Kinder, denen wir helfen, sind glücklich.",
+      "exampleTranslation": "Yardım ettiğimiz çocuklar mutlu.",
+      "synonyms": [
+        "welchen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "welcher",
+      "turkish": "(ilgi zamiri) ki o / hangisi",
+      "example": "Der Stuhl, welcher kaputt ist, steht dort.",
+      "exampleTranslation": "Kırık olan sandalye orada duruyor.",
+      "synonyms": [
+        "der"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "dessen",
+      "turkish": "(eril/nötr genitiv ilgi zamiri) ki onun / -nın",
+      "example": "Der Mann, dessen Auto rot ist, lacht.",
+      "exampleTranslation": "Arabası kırmızı olan adam gülüyor.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "deren",
+      "turkish": "(dişil/çoğul genitiv ilgi zamiri) ki onun / -nın",
+      "example": "Die Frau, deren Sohn studiert, ist stolz.",
+      "exampleTranslation": "Oğlu okuyan kadın gururlu.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "wofür",
+      "turkish": "ne için / -dığı şey için",
+      "example": "Ich weiß nicht, wofür er das Geld braucht.",
+      "exampleTranslation": "Parayı ne için istediğini bilmiyorum.",
+      "synonyms": [
+        "für was"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "wessen",
+      "turkish": "kimin / her kimin",
+      "example": "Wessen Buch das ist, weiß niemand.",
+      "exampleTranslation": "Bunun kimin kitabı olduğunu kimse bilmiyor.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "weshalb",
+      "turkish": "neden / -dığı sebep",
+      "example": "Der Grund, weshalb er ging, blieb unklar.",
+      "exampleTranslation": "Gitme sebebi belirsiz kaldı.",
+      "synonyms": [
+        "weswegen",
+        "warum"
+      ],
+      "level": "C1"
+    }
+  ]
+}

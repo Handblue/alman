@@ -1,0 +1,144 @@
+{
+  "kind": "gen",
+  "unitId": 44,
+  "categoryId": 1,
+  "number": 16,
+  "title": "Boş Zaman ve Hobiler",
+  "theme": "Serbest zaman etkinlikleri, hobiler ve eğlence ile ilgili sözcükler. İnsanların keyifli vakit geçirirken yaptıkları aktiviteleri anlatan A1/A2 kelimeleri.",
+  "firstWordId": 646,
+  "words": [
+    {
+      "german": "die Musik",
+      "turkish": "müzik",
+      "example": "Ich höre gern laute Musik.",
+      "exampleTranslation": "Yüksek sesli müzik dinlemeyi severim.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "der Sport",
+      "turkish": "spor",
+      "example": "Am Wochenende mache ich viel Sport.",
+      "exampleTranslation": "Hafta sonu çok spor yaparım.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "tanzen",
+      "turkish": "dans etmek",
+      "example": "Wir tanzen die ganze Nacht.",
+      "exampleTranslation": "Bütün gece dans ediyoruz.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "schwimmen",
+      "turkish": "yüzmek",
+      "example": "Im Sommer schwimme ich im See.",
+      "exampleTranslation": "Yazın gölde yüzerim.",
+      "synonyms": [
+        "baden"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "malen",
+      "turkish": "resim yapmak / boyamak",
+      "example": "Das Kind malt ein buntes Bild.",
+      "exampleTranslation": "Çocuk renkli bir resim yapıyor.",
+      "synonyms": [
+        "zeichnen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "singen",
+      "turkish": "şarkı söylemek",
+      "example": "Sie singt ein schönes Lied.",
+      "exampleTranslation": "O güzel bir şarkı söylüyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "das Lied",
+      "turkish": "şarkı",
+      "example": "Dieses Lied gefällt mir sehr.",
+      "exampleTranslation": "Bu şarkıyı çok beğeniyorum.",
+      "synonyms": [
+        "der Song"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Gitarre",
+      "turkish": "gitar",
+      "example": "Mein Bruder spielt sehr gut Gitarre.",
+      "exampleTranslation": "Kardeşim çok iyi gitar çalar.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "das Kino",
+      "turkish": "sinema",
+      "example": "Heute Abend gehen wir ins Kino.",
+      "exampleTranslation": "Bu akşam sinemaya gidiyoruz.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "die Party",
+      "turkish": "parti",
+      "example": "Am Samstag gibt es eine große Party.",
+      "exampleTranslation": "Cumartesi büyük bir parti var.",
+      "synonyms": [
+        "die Feier"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Spiel",
+      "turkish": "oyun / maç",
+      "example": "Das Spiel macht allen viel Spaß.",
+      "exampleTranslation": "Oyun herkese çok eğlenceli geliyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "die Karte",
+      "turkish": "kart / iskambil kağıdı / bilet / harita",
+      "example": "Wir spielen am Abend gern Karten.",
+      "exampleTranslation": "Akşamları severek kağıt oynarız.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "das Fahrrad",
+      "turkish": "bisiklet",
+      "example": "Ich fahre jeden Tag mit dem Fahrrad.",
+      "exampleTranslation": "Her gün bisikletle giderim.",
+      "synonyms": [
+        "das Rad"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "das Schach",
+      "turkish": "satranç",
+      "example": "Mein Opa spielt sehr gut Schach.",
+      "exampleTranslation": "Dedem çok iyi satranç oynar.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "sich entspannen",
+      "turkish": "rahatlamak / dinlenmek",
+      "example": "Am Sonntag entspanne ich mich zu Hause.",
+      "exampleTranslation": "Pazar günü evde rahatlarım.",
+      "synonyms": [
+        "sich ausruhen",
+        "relaxen"
+      ],
+      "level": "A2"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "kind": "gen",
+  "unitId": 77,
+  "categoryId": 3,
+  "number": 18,
+  "title": "Goethe C1 — Soyut Kavramlar ve Düşünce",
+  "theme": "Soyut düşünme, değerler, anlam ve felsefi-zihinsel süreçleri ifade eden C1 düzeyi kelimeleri. Karmaşık görüş ve değerlendirme bağlamı.",
+  "firstWordId": 1141,
+  "words": [
+    {
+      "german": "der Begriff",
+      "turkish": "kavram / terim",
+      "example": "Freiheit ist ein sehr abstrakter Begriff.",
+      "exampleTranslation": "Özgürlük çok soyut bir kavramdır.",
+      "synonyms": [
+        "der Terminus",
+        "das Konzept"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Sinn",
+      "turkish": "anlam / mana",
+      "example": "Viele Menschen suchen den Sinn des Lebens.",
+      "exampleTranslation": "Birçok insan hayatın anlamını arar.",
+      "synonyms": [
+        "die Bedeutung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Bedeutung",
+      "turkish": "anlam / önem",
+      "example": "Dieses Wort hat mehrere Bedeutungen.",
+      "exampleTranslation": "Bu kelimenin birden çok anlamı vardır.",
+      "synonyms": [
+        "der Sinn",
+        "die Wichtigkeit"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Vorstellung",
+      "turkish": "tasavvur / hayal / fikir",
+      "example": "Ich habe eine klare Vorstellung von Gerechtigkeit.",
+      "exampleTranslation": "Adalet hakkında net bir fikrim var.",
+      "synonyms": [
+        "die Idee",
+        "das Bild"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Zweifel",
+      "turkish": "şüphe / kuşku",
+      "example": "Ich habe Zweifel an dieser Behauptung.",
+      "exampleTranslation": "Bu iddia konusunda şüphelerim var.",
+      "synonyms": [
+        "die Skepsis",
+        "das Bedenken"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Eindruck",
+      "turkish": "izlenim / intiba",
+      "example": "Sie hat einen tiefen Eindruck auf mich gemacht.",
+      "exampleTranslation": "Bende derin bir izlenim bıraktı.",
+      "synonyms": [
+        "das Gefühl"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Überzeugung",
+      "turkish": "inanç / kanaat",
+      "example": "Er handelt aus tiefer moralischer Überzeugung.",
+      "exampleTranslation": "Derin bir ahlaki inançla hareket ediyor.",
+      "synonyms": [
+        "die Gewissheit",
+        "der Glaube"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Absicht",
+      "turkish": "niyet / amaç",
+      "example": "Seine Absicht war von Anfang an klar.",
+      "exampleTranslation": "Niyeti baştan beri belliydi.",
+      "synonyms": [
+        "das Ziel"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Bedürfnis",
+      "turkish": "ihtiyaç / gereksinim",
+      "example": "Jeder Mensch hat das Bedürfnis nach Anerkennung.",
+      "exampleTranslation": "Her insanın takdir görme ihtiyacı vardır.",
+      "synonyms": [
+        "das Verlangen",
+        "der Wunsch"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Auffassung",
+      "turkish": "görüş / anlayış / kavrayış",
+      "example": "Nach meiner Auffassung ist das ungerecht.",
+      "exampleTranslation": "Bana göre bu adaletsizdir.",
+      "synonyms": [
+        "die Ansicht"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Einsicht",
+      "turkish": "kavrayış / iç görü / anlayış",
+      "example": "Diese Erfahrung brachte ihm eine wichtige Einsicht.",
+      "exampleTranslation": "Bu deneyim ona önemli bir kavrayış kazandırdı.",
+      "synonyms": [
+        "das Verständnis"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Gesinnung",
+      "turkish": "zihniyet / kanaat / ahlaki tutum",
+      "example": "Er ist für seine ehrliche Gesinnung bekannt.",
+      "exampleTranslation": "Dürüst zihniyetiyle tanınır.",
+      "synonyms": [
+        "die Haltung",
+        "die Einstellung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Erwägung",
+      "turkish": "düşünüp taşınma / değerlendirme",
+      "example": "Wir ziehen alle Argumente in Erwägung.",
+      "exampleTranslation": "Tüm argümanları değerlendirmeye alıyoruz.",
+      "synonyms": [
+        "die Überlegung",
+        "die Betrachtung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Beliebigkeit",
+      "turkish": "keyfîlik / gelişigüzellik / rastgelelik",
+      "example": "Werte verlieren in der Beliebigkeit ihre Kraft.",
+      "exampleTranslation": "Değerler keyfîlik içinde güçlerini yitirir.",
+      "synonyms": [
+        "die Willkür",
+        "die Zufälligkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Tragweite",
+      "turkish": "kapsam / önem / etki menzili",
+      "example": "Die Tragweite dieser Entscheidung war enorm.",
+      "exampleTranslation": "Bu kararın etki menzili muazzamdı.",
+      "synonyms": [
+        "die Reichweite",
+        "das Ausmaß"
+      ],
+      "level": "C1"
+    }
+  ]
+}

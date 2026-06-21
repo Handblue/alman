@@ -1,0 +1,162 @@
+{
+  "kind": "gen",
+  "unitId": 111,
+  "categoryId": 5,
+  "number": 20,
+  "title": "Tamir, Bakım ve Servis Hizmetleri",
+  "theme": "Ev ve eşya tamiri, arıza bildirimi ve servis hizmetleriyle ilgili günlük kelimeler. Tamirci, usta ve onarım randevusu bağlamı.",
+  "firstWordId": 1651,
+  "words": [
+    {
+      "german": "kaputt",
+      "turkish": "bozuk / kırık",
+      "example": "Meine Waschmaschine ist leider kaputt.",
+      "exampleTranslation": "Çamaşır makinem maalesef bozuk.",
+      "synonyms": [
+        "defekt"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "reparieren",
+      "turkish": "tamir etmek / onarmak",
+      "example": "Kannst du mein Fahrrad reparieren?",
+      "exampleTranslation": "Bisikletimi tamir edebilir misin?",
+      "synonyms": [
+        "instand setzen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Werkzeug",
+      "turkish": "alet / takım",
+      "example": "Der Mann holt sein Werkzeug.",
+      "exampleTranslation": "Adam aletlerini getiriyor.",
+      "synonyms": [
+        "das Gerät"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "funktionieren",
+      "turkish": "çalışmak / işlemek",
+      "example": "Der Fernseher funktioniert nicht mehr.",
+      "exampleTranslation": "Televizyon artık çalışmıyor.",
+      "synonyms": [
+        "laufen",
+        "gehen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Schlüssel",
+      "turkish": "anahtar",
+      "example": "Ich brauche einen Schlüssel für die Tür.",
+      "exampleTranslation": "Kapı için bir anahtara ihtiyacım var.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "die Reparatur",
+      "turkish": "tamir / onarım",
+      "example": "Die Reparatur dauert zwei Tage.",
+      "exampleTranslation": "Tamir iki gün sürüyor.",
+      "synonyms": [
+        "die Instandsetzung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Handwerker",
+      "turkish": "usta / zanaatkâr",
+      "example": "Der Handwerker kommt morgen früh.",
+      "exampleTranslation": "Usta yarın sabah erken geliyor.",
+      "synonyms": [
+        "der Monteur"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Werkstatt",
+      "turkish": "tamirhane / atölye",
+      "example": "Mein Auto steht in der Werkstatt.",
+      "exampleTranslation": "Arabam tamirhanede.",
+      "synonyms": [
+        "die Autowerkstatt"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Schaden",
+      "turkish": "hasar / zarar",
+      "example": "Der Schaden ist nicht so groß.",
+      "exampleTranslation": "Hasar o kadar büyük değil.",
+      "synonyms": [
+        "der Defekt",
+        "die Beschädigung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Garantie",
+      "turkish": "garanti",
+      "example": "Das Gerät hat noch zwei Jahre Garantie.",
+      "exampleTranslation": "Cihazın hâlâ iki yıl garantisi var.",
+      "synonyms": [
+        "die Gewährleistung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Kundendienst",
+      "turkish": "müşteri hizmetleri / servis",
+      "example": "Ich rufe den Kundendienst an.",
+      "exampleTranslation": "Müşteri hizmetlerini arıyorum.",
+      "synonyms": [
+        "der Service",
+        "die Kundenbetreuung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Panne",
+      "turkish": "arıza / yolda kalma",
+      "example": "Wir hatten eine Panne auf der Autobahn.",
+      "exampleTranslation": "Otoyolda bir arıza yaşadık.",
+      "synonyms": [
+        "der Defekt"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Störung",
+      "turkish": "arıza / kesinti",
+      "example": "Es gibt eine Störung im Internet.",
+      "exampleTranslation": "İnternette bir kesinti var.",
+      "synonyms": [
+        "die Unterbrechung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Kostenvoranschlag",
+      "turkish": "maliyet teklifi / keşif",
+      "example": "Bitte machen Sie mir einen Kostenvoranschlag.",
+      "exampleTranslation": "Lütfen bana bir maliyet teklifi yapın.",
+      "synonyms": [
+        "das Angebot"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Ersatzteil",
+      "turkish": "yedek parça",
+      "example": "Wir warten noch auf den Ersatzteil.",
+      "exampleTranslation": "Hâlâ yedek parçayı bekliyoruz.",
+      "synonyms": [
+        "das Bauteil"
+      ],
+      "level": "B1"
+    }
+  ]
+}

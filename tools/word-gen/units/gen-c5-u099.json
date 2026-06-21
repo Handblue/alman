@@ -1,0 +1,165 @@
+{
+  "kind": "gen",
+  "unitId": 99,
+  "categoryId": 5,
+  "number": 8,
+  "title": "Doktor Randevusu ve Hastalık",
+  "theme": "Doktora gitme, randevu alma, belirtileri anlatma ve tedaviyle ilgili günlük sağlık kelimeleri. Hastalık şikayetleri ve muayene bağlamı.",
+  "firstWordId": 1471,
+  "words": [
+    {
+      "german": "der Hals",
+      "turkish": "boğaz / boyun",
+      "example": "Mein Hals tut beim Schlucken weh.",
+      "exampleTranslation": "Yutkunurken boğazım ağrıyor.",
+      "synonyms": [
+        "die Kehle"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Husten",
+      "turkish": "öksürük",
+      "example": "Ich habe seit drei Tagen Husten.",
+      "exampleTranslation": "Üç gündür öksürüğüm var.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "der Schmerz",
+      "turkish": "ağrı / acı",
+      "example": "Der Schmerz im Rücken wird stärker.",
+      "exampleTranslation": "Sırttaki ağrı gittikçe artıyor.",
+      "synonyms": [
+        "das Weh"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Doktor",
+      "turkish": "doktor",
+      "example": "Der Doktor untersucht mich gleich.",
+      "exampleTranslation": "Doktor beni birazdan muayene edecek.",
+      "synonyms": [
+        "der Mediziner",
+        "die Ärztin"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Tablette",
+      "turkish": "tablet / hap",
+      "example": "Nimm die Tablette nach dem Essen.",
+      "exampleTranslation": "Hapı yemekten sonra al.",
+      "synonyms": [
+        "die Pille"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Untersuchung",
+      "turkish": "muayene / inceleme",
+      "example": "Die Untersuchung dauert nur zehn Minuten.",
+      "exampleTranslation": "Muayene sadece on dakika sürüyor.",
+      "synonyms": [
+        "die Visite",
+        "der Check"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Krankheit",
+      "turkish": "hastalık",
+      "example": "Seine Krankheit ist nicht ansteckend.",
+      "exampleTranslation": "Hastalığı bulaşıcı değil.",
+      "synonyms": [
+        "das Leiden"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Grippe",
+      "turkish": "grip",
+      "example": "Wegen der Grippe bleibe ich zu Hause.",
+      "exampleTranslation": "Grip yüzünden evde kalıyorum.",
+      "synonyms": [
+        "die Influenza"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Spritze",
+      "turkish": "iğne / enjeksiyon",
+      "example": "Der Arzt gibt mir eine Spritze.",
+      "exampleTranslation": "Doktor bana bir iğne yapıyor.",
+      "synonyms": [
+        "die Injektion",
+        "die Impfung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "das Wartezimmer",
+      "turkish": "bekleme odası",
+      "example": "Im Wartezimmer sitzen viele Patienten.",
+      "exampleTranslation": "Bekleme odasında birçok hasta oturuyor.",
+      "synonyms": [
+        "der Warteraum"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Patient",
+      "turkish": "hasta",
+      "example": "Der Patient wartet auf seinen Termin.",
+      "exampleTranslation": "Hasta randevusunu bekliyor.",
+      "synonyms": [
+        "der Kranke"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Diagnose",
+      "turkish": "teşhis / tanı",
+      "example": "Die Diagnose des Arztes war eindeutig.",
+      "exampleTranslation": "Doktorun teşhisi açıktı.",
+      "synonyms": [
+        "der Befund",
+        "die Feststellung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Krankschreibung",
+      "turkish": "istirahat raporu / hastalık izni",
+      "example": "Ich brauche eine Krankschreibung für die Arbeit.",
+      "exampleTranslation": "İş için bir istirahat raporuna ihtiyacım var.",
+      "synonyms": [
+        "der Krankenschein",
+        "die Arbeitsunfähigkeitsbescheinigung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Salbe",
+      "turkish": "merhem / krem",
+      "example": "Trag die Salbe zweimal täglich auf.",
+      "exampleTranslation": "Merhemi günde iki kez sür.",
+      "synonyms": [
+        "die Creme"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Beschwerden",
+      "turkish": "şikayetler / rahatsızlıklar",
+      "example": "Beschreiben Sie bitte Ihre Beschwerden genau.",
+      "exampleTranslation": "Lütfen şikayetlerinizi tam olarak anlatın.",
+      "synonyms": [
+        "die Symptome",
+        "die Leiden"
+      ],
+      "level": "B1"
+    }
+  ]
+}

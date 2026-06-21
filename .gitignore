@@ -47,3 +47,4 @@ GoogleService-Info.plist
 *.mobileprovision
 *.p12
 tools/word-gen/phase3-generate.run.js
+tools/word-gen/regen-dedup.run.js

@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 49,
+  "categoryId": 2,
+  "number": 6,
+  "title": "Sıfatlar ve Çekimleri",
+  "theme": "Almanca sıfatların temel anlamları ve cümlede artikele göre çekim mantığı. Günlük tasvirlerden derecelendirmeye kadar sıfat kullanımını işler.",
+  "firstWordId": 721,
+  "words": [
+    {
+      "german": "bunt",
+      "turkish": "rengarenk / renkli",
+      "example": "Sie trägt ein buntes Kleid.",
+      "exampleTranslation": "Rengarenk bir elbise giyiyor.",
+      "synonyms": [
+        "farbig",
+        "farbenfroh"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "blass",
+      "turkish": "solgun / soluk",
+      "example": "Nach der Krankheit war er ganz blass.",
+      "exampleTranslation": "Hastalıktan sonra epey solgundu.",
+      "synonyms": [
+        "bleich",
+        "fahl"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "sauber",
+      "turkish": "temiz",
+      "example": "Das Zimmer ist jetzt sauber.",
+      "exampleTranslation": "Oda artık temiz.",
+      "synonyms": [
+        "rein",
+        "gepflegt"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "höflich",
+      "turkish": "kibar / nazik",
+      "example": "Der Kellner war sehr höflich.",
+      "exampleTranslation": "Garson çok kibardı.",
+      "synonyms": [
+        "nett",
+        "zuvorkommend"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "ordentlich",
+      "turkish": "düzenli / derli toplu",
+      "example": "Sie hält ihr Zimmer immer ordentlich.",
+      "exampleTranslation": "Odasını her zaman düzenli tutar.",
+      "synonyms": [
+        "aufgeräumt",
+        "geordnet"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "schüchtern",
+      "turkish": "utangaç / çekingen",
+      "example": "Das schüchterne Kind sagt nichts.",
+      "exampleTranslation": "Utangaç çocuk hiçbir şey söylemiyor.",
+      "synonyms": [
+        "zurückhaltend",
+        "scheu"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "ehrgeizig",
+      "turkish": "hırslı / azimli",
+      "example": "Eine ehrgeizige Studentin lernt jeden Tag.",
+      "exampleTranslation": "Hırslı bir öğrenci her gün ders çalışır.",
+      "synonyms": [
+        "strebsam",
+        "zielstrebig"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "zuverlässig",
+      "turkish": "güvenilir",
+      "example": "Er ist ein zuverlässiger Kollege.",
+      "exampleTranslation": "O güvenilir bir meslektaştır.",
+      "synonyms": [
+        "verlässlich",
+        "vertrauenswürdig"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "auffällig",
+      "turkish": "göze çarpan / dikkat çekici",
+      "example": "Sie hat eine auffällige Brille.",
+      "exampleTranslation": "Dikkat çekici bir gözlüğü var.",
+      "synonyms": [
+        "markant",
+        "ins Auge fallend"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sorgfältig",
+      "turkish": "özenli / dikkatli",
+      "example": "Er prüft den Vertrag sorgfältig.",
+      "exampleTranslation": "Sözleşmeyi özenle inceliyor.",
+      "synonyms": [
+        "gewissenhaft",
+        "akkurat"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "gelassen",
+      "turkish": "sakin / soğukkanlı",
+      "example": "Sie bleibt auch unter Stress gelassen.",
+      "exampleTranslation": "Stres altında bile sakin kalır.",
+      "synonyms": [
+        "ruhig",
+        "besonnen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "wählerisch",
+      "turkish": "seçici / titiz",
+      "example": "Beim Essen ist er sehr wählerisch.",
+      "exampleTranslation": "Yemek konusunda çok seçicidir.",
+      "synonyms": [
+        "anspruchsvoll",
+        "heikel"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "anspruchsvoll",
+      "turkish": "zorlu / iddialı / talepkâr",
+      "example": "Das ist eine anspruchsvolle Aufgabe.",
+      "exampleTranslation": "Bu zorlu bir görev.",
+      "synonyms": [
+        "fordernd",
+        "niveauvoll"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "makellos",
+      "turkish": "kusursuz / lekesiz",
+      "example": "Ihr Ruf ist absolut makellos.",
+      "exampleTranslation": "İtibarı son derece kusursuz.",
+      "synonyms": [
+        "einwandfrei",
+        "tadellos"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "scharfsinnig",
+      "turkish": "keskin zekâlı / zekice",
+      "example": "Sie stellte eine scharfsinnige Frage.",
+      "exampleTranslation": "Keskin zekâlı bir soru sordu.",
+      "synonyms": [
+        "geistreich",
+        "klug"
+      ],
+      "level": "C1"
+    }
+  ]
+}

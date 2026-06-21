@@ -1,0 +1,167 @@
+{
+  "kind": "gen",
+  "unitId": 122,
+  "categoryId": 6,
+  "number": 15,
+  "title": "Çevre ve Yer Bilimleri",
+  "theme": "Çevre bilimi, jeoloji ve coğrafya terminolojisi: iklim, doğal kaynaklar, ekosistemler ve sürdürülebilirlik.",
+  "firstWordId": 1816,
+  "words": [
+    {
+      "german": "der Treibhauseffekt",
+      "turkish": "sera etkisi",
+      "example": "Der Treibhauseffekt erwärmt die Erdatmosphäre stetig.",
+      "exampleTranslation": "Sera etkisi yeryüzü atmosferini sürekli ısıtıyor.",
+      "synonyms": [
+        "die Erderwärmung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Rohstoff",
+      "turkish": "ham madde / doğal kaynak",
+      "example": "Erdöl ist ein wichtiger fossiler Rohstoff.",
+      "exampleTranslation": "Petrol önemli bir fosil ham maddedir.",
+      "synonyms": [
+        "der Grundstoff",
+        "das Ausgangsmaterial"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "erneuerbar",
+      "turkish": "yenilenebilir",
+      "example": "Wind und Sonne sind erneuerbare Energiequellen.",
+      "exampleTranslation": "Rüzgar ve güneş yenilenebilir enerji kaynaklarıdır.",
+      "synonyms": [
+        "regenerativ"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Umweltverschmutzung",
+      "turkish": "çevre kirliliği",
+      "example": "Die Umweltverschmutzung bedroht viele Tierarten.",
+      "exampleTranslation": "Çevre kirliliği birçok hayvan türünü tehdit ediyor.",
+      "synonyms": [
+        "die Verschmutzung",
+        "die Kontamination"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Naturschutz",
+      "turkish": "doğa koruma",
+      "example": "Der Naturschutz hat in diesem Gebiet hohe Priorität.",
+      "exampleTranslation": "Doğa koruma bu bölgede yüksek önceliğe sahip.",
+      "synonyms": [
+        "der Umweltschutz"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Grundwasser",
+      "turkish": "yer altı suyu / taban suyu",
+      "example": "Pestizide gelangen oft ins Grundwasser.",
+      "exampleTranslation": "Pestisitler sıklıkla yer altı suyuna karışır.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "der Boden",
+      "turkish": "toprak / zemin",
+      "example": "Der Boden ist hier sehr fruchtbar.",
+      "exampleTranslation": "Buradaki toprak çok verimli.",
+      "synonyms": [
+        "das Erdreich",
+        "der Untergrund"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Nachhaltigkeit",
+      "turkish": "sürdürülebilirlik",
+      "example": "Nachhaltigkeit ist das Ziel moderner Energiepolitik.",
+      "exampleTranslation": "Sürdürülebilirlik modern enerji politikasının hedefidir.",
+      "synonyms": [
+        "die Beständigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Erdkruste",
+      "turkish": "yer kabuğu",
+      "example": "Die Erdkruste besteht aus mehreren Platten.",
+      "exampleTranslation": "Yer kabuğu birkaç levhadan oluşur.",
+      "synonyms": [
+        "die Erdrinde"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Sediment",
+      "turkish": "tortu / çökelti",
+      "example": "Am Flussgrund lagert sich feines Sediment ab.",
+      "exampleTranslation": "Nehir tabanında ince tortu birikir.",
+      "synonyms": [
+        "die Ablagerung",
+        "der Niederschlag"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Gestein",
+      "turkish": "kayaç / taş kütlesi",
+      "example": "Vulkanisches Gestein kühlt langsam ab.",
+      "exampleTranslation": "Volkanik kayaç yavaşça soğur.",
+      "synonyms": [
+        "der Fels",
+        "das Felsgestein"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Schadstoff",
+      "turkish": "zararlı madde / kirletici",
+      "example": "Fabriken stoßen viele Schadstoffe aus.",
+      "exampleTranslation": "Fabrikalar birçok zararlı madde salar.",
+      "synonyms": [
+        "das Giftstoff",
+        "der Schmutzstoff"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Schutzgebiet",
+      "turkish": "koruma alanı",
+      "example": "In diesem Schutzgebiet leben seltene Vögel.",
+      "exampleTranslation": "Bu koruma alanında nadir kuşlar yaşıyor.",
+      "synonyms": [
+        "das Reservat",
+        "das Naturschutzgebiet"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Belastung",
+      "turkish": "yük / kirlilik baskısı",
+      "example": "Die ökologische Belastung der Meere steigt.",
+      "exampleTranslation": "Denizlerin ekolojik yükü artıyor.",
+      "synonyms": [
+        "die Beanspruchung",
+        "der Druck"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Wasserkreislauf",
+      "turkish": "su döngüsü",
+      "example": "Verdunstung ist Teil des Wasserkreislaufs.",
+      "exampleTranslation": "Buharlaşma su döngüsünün bir parçasıdır.",
+      "synonyms": [
+        "der Wasserzyklus"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 79,
+  "categoryId": 3,
+  "number": 20,
+  "title": "Goethe C1 — Nüans ve Üslup",
+  "theme": "İnce anlam farkları, vurgu, deyimsel kullanım ve üslup için gerekli C1 düzeyi kelime ve ifadeleri. Sözlü akıcılık ve ileri düzey ifade bağlamı.",
+  "firstWordId": 1171,
+  "words": [
+    {
+      "german": "andeuten",
+      "turkish": "ima etmek / sezdirmek",
+      "example": "Er deutete an, dass er bald gehen würde.",
+      "exampleTranslation": "Yakında gideceğini ima etti.",
+      "synonyms": [
+        "anspielen",
+        "durchblicken lassen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "betonen",
+      "turkish": "vurgulamak / önemle belirtmek",
+      "example": "Sie betonte die Wichtigkeit der Pünktlichkeit.",
+      "exampleTranslation": "Dakikliğin önemini vurguladı.",
+      "synonyms": [
+        "hervorheben",
+        "unterstreichen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Unterschied",
+      "turkish": "fark / ayrım",
+      "example": "Der feine Unterschied entgeht vielen Lesern.",
+      "exampleTranslation": "İnce fark birçok okuyucunun gözünden kaçar.",
+      "synonyms": [
+        "die Differenz",
+        "die Abweichung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Wirkung",
+      "turkish": "etki / tesir",
+      "example": "Das Wort hat eine starke Wirkung auf ihn.",
+      "exampleTranslation": "Bu kelimenin onun üzerinde güçlü bir etkisi var.",
+      "synonyms": [
+        "der Effekt",
+        "der Einfluss"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "ausdrücken",
+      "turkish": "ifade etmek / dile getirmek",
+      "example": "Sie kann ihre Gefühle gut ausdrücken.",
+      "exampleTranslation": "Duygularını iyi ifade edebiliyor.",
+      "synonyms": [
+        "formulieren",
+        "äußern"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Anspielung",
+      "turkish": "gönderme / ima / kinaye",
+      "example": "Seine Anspielung auf die Politik war deutlich.",
+      "exampleTranslation": "Siyasete yaptığı gönderme açıktı.",
+      "synonyms": [
+        "die Andeutung",
+        "die Anführung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Wendung",
+      "turkish": "deyim / ifade kalıbı / dönüş",
+      "example": "Diese idiomatische Wendung klingt sehr natürlich.",
+      "exampleTranslation": "Bu deyimsel ifade çok doğal geliyor.",
+      "synonyms": [
+        "die Redewendung",
+        "der Ausdruck"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Beigeschmack",
+      "turkish": "yan anlam / hoş olmayan çağrışım",
+      "example": "Das Wort hat einen negativen Beigeschmack.",
+      "exampleTranslation": "Bu kelimenin olumsuz bir yan anlamı var.",
+      "synonyms": [
+        "der Nebensinn",
+        "die Konnotation"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Spitze",
+      "turkish": "iğneleme / dokundurma / uç",
+      "example": "Seine Bemerkung enthielt eine versteckte Spitze.",
+      "exampleTranslation": "Sözü gizli bir iğneleme içeriyordu.",
+      "synonyms": [
+        "der Seitenhieb",
+        "die Stichelei"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "treffend",
+      "turkish": "isabetli / yerinde / tam yerine oturan",
+      "example": "Das war eine treffende Beschreibung der Lage.",
+      "exampleTranslation": "Durumun isabetli bir tarifiydi.",
+      "synonyms": [
+        "passend",
+        "zutreffend"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "abwertend",
+      "turkish": "aşağılayıcı / küçümseyici",
+      "example": "Er benutzte das Wort in abwertendem Ton.",
+      "exampleTranslation": "Kelimeyi aşağılayıcı bir tonda kullandı.",
+      "synonyms": [
+        "herabsetzend",
+        "pejorativ"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Konnotation",
+      "turkish": "çağrışım / yan anlam",
+      "example": "Jedes Wort trägt eine eigene Konnotation.",
+      "exampleTranslation": "Her kelime kendine özgü bir çağrışım taşır.",
+      "synonyms": [
+        "die Nebenbedeutung",
+        "der Beiklang"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Untertreibung",
+      "turkish": "azımsama / küçümseme (söyleyişte)",
+      "example": "Das war eine elegante Untertreibung seinerseits.",
+      "exampleTranslation": "Bu onun adına zarif bir azımsamaydı.",
+      "synonyms": [
+        "das Understatement",
+        "die Litotes"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "verklausuliert",
+      "turkish": "üstü kapalı / dolambaçlı ifade edilmiş",
+      "example": "Sein Brief war absichtlich verklausuliert formuliert.",
+      "exampleTranslation": "Mektubu kasıtlı olarak üstü kapalı yazılmıştı.",
+      "synonyms": [
+        "umständlich",
+        "verschlüsselt"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Nuance",
+      "turkish": "nüans / ince anlam farkı",
+      "example": "Die feinen Nuancen machen den Stil aus.",
+      "exampleTranslation": "İnce nüanslar üslubu oluşturur.",
+      "synonyms": [
+        "die Feinheit",
+        "die Abstufung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

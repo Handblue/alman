@@ -1,0 +1,171 @@
+{
+  "kind": "gen",
+  "unitId": 92,
+  "categoryId": 4,
+  "number": 16,
+  "title": "telc — Sağlıklı Yaşam ve Beslenme",
+  "theme": "Sağlıklı yaşam tarzı, beslenme ve stres bağlamında telc sınavının güncel tartışma temalı kelimeleri.",
+  "firstWordId": 1366,
+  "words": [
+    {
+      "german": "die Ernährung",
+      "turkish": "beslenme",
+      "example": "Eine gesunde Ernährung ist sehr wichtig.",
+      "exampleTranslation": "Sağlıklı bir beslenme çok önemlidir.",
+      "synonyms": [
+        "die Kost",
+        "die Verpflegung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Bewegung",
+      "turkish": "hareket / egzersiz",
+      "example": "Regelmäßige Bewegung hält den Körper fit.",
+      "exampleTranslation": "Düzenli hareket vücudu formda tutar.",
+      "synonyms": [
+        "die Aktivität"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "abnehmen",
+      "turkish": "kilo vermek / zayıflamak",
+      "example": "Ich möchte ein paar Kilo abnehmen.",
+      "exampleTranslation": "Birkaç kilo vermek istiyorum.",
+      "synonyms": [
+        "schlanker werden"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Mahlzeit",
+      "turkish": "öğün",
+      "example": "Das Frühstück ist die wichtigste Mahlzeit.",
+      "exampleTranslation": "Kahvaltı en önemli öğündür.",
+      "synonyms": [
+        "das Essen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Schlaf",
+      "turkish": "uyku",
+      "example": "Guter Schlaf stärkt die Gesundheit.",
+      "exampleTranslation": "İyi uyku sağlığı güçlendirir.",
+      "synonyms": [
+        "die Nachtruhe"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sich entspannen",
+      "turkish": "rahatlamak / gevşemek",
+      "example": "Am Wochenende entspanne ich mich beim Lesen.",
+      "exampleTranslation": "Hafta sonu okuyarak rahatlıyorum.",
+      "synonyms": [
+        "sich erholen",
+        "abschalten"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Sucht",
+      "turkish": "bağımlılık",
+      "example": "Die Sucht nach Zucker ist weit verbreitet.",
+      "exampleTranslation": "Şeker bağımlılığı çok yaygındır.",
+      "synonyms": [
+        "die Abhängigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "vorbeugen",
+      "turkish": "önlemek / önlem almak",
+      "example": "Mit Sport kann man vielen Krankheiten vorbeugen.",
+      "exampleTranslation": "Sporla birçok hastalığı önleyebiliriz.",
+      "synonyms": [
+        "verhindern",
+        "vermeiden"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Erholung",
+      "turkish": "dinlenme / toparlanma",
+      "example": "Nach der Arbeit brauche ich etwas Erholung.",
+      "exampleTranslation": "İşten sonra biraz dinlenmeye ihtiyacım var.",
+      "synonyms": [
+        "die Entspannung",
+        "die Regeneration"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Gewohnheit",
+      "turkish": "alışkanlık",
+      "example": "Schlechte Gewohnheiten kann man ändern.",
+      "exampleTranslation": "Kötü alışkanlıklar değiştirilebilir.",
+      "synonyms": [
+        "die Routine",
+        "der Brauch"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Gleichgewicht",
+      "turkish": "denge",
+      "example": "Ein gesundes Leben braucht inneres Gleichgewicht.",
+      "exampleTranslation": "Sağlıklı bir yaşam iç denge gerektirir.",
+      "synonyms": [
+        "die Balance",
+        "die Ausgewogenheit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Selbstdisziplin",
+      "turkish": "öz disiplin",
+      "example": "Ohne Selbstdisziplin bleibt kein Vorsatz lange bestehen.",
+      "exampleTranslation": "Öz disiplin olmadan hiçbir karar uzun sürmez.",
+      "synonyms": [
+        "die Selbstbeherrschung",
+        "die Willenskraft"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "ausgewogen",
+      "turkish": "dengeli",
+      "example": "Eine ausgewogene Ernährung versorgt den Körper optimal.",
+      "exampleTranslation": "Dengeli bir beslenme vücudu en iyi şekilde besler.",
+      "synonyms": [
+        "ausgeglichen",
+        "harmonisch"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Wohlbefinden",
+      "turkish": "iyilik hâli / esenlik",
+      "example": "Sport steigert das körperliche und seelische Wohlbefinden.",
+      "exampleTranslation": "Spor bedensel ve ruhsal esenliği artırır.",
+      "synonyms": [
+        "das Wohlsein",
+        "die Zufriedenheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Belastbarkeit",
+      "turkish": "dayanıklılık / yük kaldırma gücü",
+      "example": "Ausreichend Schlaf erhöht die psychische Belastbarkeit.",
+      "exampleTranslation": "Yeterli uyku psikolojik dayanıklılığı artırır.",
+      "synonyms": [
+        "die Widerstandskraft",
+        "die Resilienz"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "kind": "gen",
+  "unitId": 104,
+  "categoryId": 5,
+  "number": 13,
+  "title": "Spor ve Sağlıklı Yaşam",
+  "theme": "Spor yapma, egzersiz ve sağlıklı yaşam alışkanlıklarıyla ilgili günlük kelimeler. Spor salonu, antrenman ve hareket bağlamı.",
+  "firstWordId": 1546,
+  "words": [
+    {
+      "german": "der Sport",
+      "turkish": "spor",
+      "example": "Ich mache jeden Tag Sport.",
+      "exampleTranslation": "Her gün spor yapıyorum.",
+      "synonyms": [
+        "die Bewegung"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Fußball",
+      "turkish": "futbol / futbol topu",
+      "example": "Die Kinder spielen Fußball im Park.",
+      "exampleTranslation": "Çocuklar parkta futbol oynuyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "das Schwimmen",
+      "turkish": "yüzme",
+      "example": "Schwimmen ist gut für den Rücken.",
+      "exampleTranslation": "Yüzmek sırt için iyidir.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "das Fahrrad",
+      "turkish": "bisiklet",
+      "example": "Ich fahre mit dem Fahrrad zur Arbeit.",
+      "exampleTranslation": "İşe bisikletle gidiyorum.",
+      "synonyms": [
+        "das Rad"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Ball",
+      "turkish": "top",
+      "example": "Wirf mir bitte den Ball zu!",
+      "exampleTranslation": "Lütfen topu bana at!",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "das Training",
+      "turkish": "antrenman / idman",
+      "example": "Das Training beginnt um sieben Uhr.",
+      "exampleTranslation": "Antrenman saat yedide başlıyor.",
+      "synonyms": [
+        "das Workout"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "das Fitnessstudio",
+      "turkish": "spor salonu / fitness merkezi",
+      "example": "Ich gehe dreimal pro Woche ins Fitnessstudio.",
+      "exampleTranslation": "Haftada üç kez spor salonuna gidiyorum.",
+      "synonyms": [
+        "das Fitnesscenter"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Mannschaft",
+      "turkish": "takım",
+      "example": "Unsere Mannschaft hat das Spiel gewonnen.",
+      "exampleTranslation": "Takımımız maçı kazandı.",
+      "synonyms": [
+        "das Team"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Verein",
+      "turkish": "kulüp / dernek",
+      "example": "Er ist Mitglied in einem Sportverein.",
+      "exampleTranslation": "O bir spor kulübünün üyesi.",
+      "synonyms": [
+        "der Klub"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Gesundheit",
+      "turkish": "sağlık",
+      "example": "Sport ist wichtig für die Gesundheit.",
+      "exampleTranslation": "Spor sağlık için önemlidir.",
+      "synonyms": [
+        "das Wohlbefinden"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Muskel",
+      "turkish": "kas",
+      "example": "Beim Training trainiere ich meine Muskeln.",
+      "exampleTranslation": "Antrenmanda kaslarımı çalıştırıyorum.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "die Ernährung",
+      "turkish": "beslenme",
+      "example": "Eine gesunde Ernährung ist sehr wichtig.",
+      "exampleTranslation": "Sağlıklı beslenme çok önemlidir.",
+      "synonyms": [
+        "die Kost"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Kondition",
+      "turkish": "kondisyon / form",
+      "example": "Durch Joggen verbessere ich meine Kondition.",
+      "exampleTranslation": "Koşarak kondisyonumu geliştiriyorum.",
+      "synonyms": [
+        "die Ausdauer",
+        "die Fitness"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Mitgliedschaft",
+      "turkish": "üyelik",
+      "example": "Meine Mitgliedschaft im Fitnessstudio kostet monatlich.",
+      "exampleTranslation": "Spor salonundaki üyeliğim aylık ücretli.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "sich aufwärmen",
+      "turkish": "ısınmak (egzersiz öncesi)",
+      "example": "Vor dem Sport solltest du dich aufwärmen.",
+      "exampleTranslation": "Spordan önce ısınmalısın.",
+      "synonyms": [
+        "sich dehnen"
+      ],
+      "level": "B1"
+    }
+  ]
+}

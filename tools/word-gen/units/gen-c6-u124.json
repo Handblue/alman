@@ -1,0 +1,175 @@
+{
+  "kind": "gen",
+  "unitId": 124,
+  "categoryId": 6,
+  "number": 17,
+  "title": "Akademik Yazım ve Bilimsel Metin",
+  "theme": "Bilimsel makale ve tez yazımına özgü terminoloji: metin yapısı, kaynak gösterme, argümantasyon ve akademik üslup.",
+  "firstWordId": 1846,
+  "words": [
+    {
+      "german": "die Gliederung",
+      "turkish": "yapı / bölümleme / içerik düzeni",
+      "example": "Die Gliederung der Arbeit muss logisch aufgebaut sein.",
+      "exampleTranslation": "Çalışmanın bölümlemesi mantıklı bir şekilde kurulmuş olmalı.",
+      "synonyms": [
+        "die Struktur",
+        "der Aufbau"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Einleitung",
+      "turkish": "giriş (bölümü)",
+      "example": "In der Einleitung stellt man die Forschungsfrage vor.",
+      "exampleTranslation": "Giriş bölümünde araştırma sorusu tanıtılır.",
+      "synonyms": [
+        "die Hinführung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Plagiat",
+      "turkish": "intihal / aşırma",
+      "example": "Ein Plagiat kann den Studienabschluss gefährden.",
+      "exampleTranslation": "Bir intihal, mezuniyeti tehlikeye atabilir.",
+      "synonyms": [
+        "die Urheberrechtsverletzung",
+        "der geistige Diebstahl"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die These",
+      "turkish": "tez / sav / iddia",
+      "example": "Der Autor verteidigt seine These mit Beispielen.",
+      "exampleTranslation": "Yazar tezini örneklerle savunuyor.",
+      "synonyms": [
+        "die Behauptung",
+        "der Standpunkt"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Beleg",
+      "turkish": "kanıt / delil / dayanak",
+      "example": "Für jede Behauptung braucht man einen Beleg.",
+      "exampleTranslation": "Her iddia için bir kanıt gerekir.",
+      "synonyms": [
+        "der Nachweis",
+        "der Beweis"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Begründung",
+      "turkish": "gerekçe / gerekçelendirme",
+      "example": "Seine Argumentation hat eine überzeugende Begründung.",
+      "exampleTranslation": "Onun savı, ikna edici bir gerekçeye sahip.",
+      "synonyms": [
+        "die Rechtfertigung",
+        "die Erklärung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Fachsprache",
+      "turkish": "uzmanlık dili / teknik dil",
+      "example": "Wissenschaftliche Texte verwenden eine präzise Fachsprache.",
+      "exampleTranslation": "Bilimsel metinler kesin bir uzmanlık dili kullanır.",
+      "synonyms": [
+        "die Terminologie",
+        "der Fachjargon"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Zusammenfassung",
+      "turkish": "özet",
+      "example": "Am Ende folgt eine kurze Zusammenfassung der Ergebnisse.",
+      "exampleTranslation": "Sonunda sonuçların kısa bir özeti gelir.",
+      "synonyms": [
+        "das Resümee",
+        "der Überblick"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Quellenangabe",
+      "turkish": "kaynak gösterimi / kaynak belirtimi",
+      "example": "Ohne korrekte Quellenangabe gilt der Text als Plagiat.",
+      "exampleTranslation": "Doğru kaynak gösterimi olmadan metin intihal sayılır.",
+      "synonyms": [
+        "der Quellennachweis",
+        "die Quellenverweis"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Literaturverzeichnis",
+      "turkish": "kaynakça / bibliyografya",
+      "example": "Alle zitierten Werke stehen im Literaturverzeichnis.",
+      "exampleTranslation": "Alıntılanan tüm eserler kaynakçada yer alır.",
+      "synonyms": [
+        "die Bibliografie",
+        "das Quellenverzeichnis"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Sachlichkeit",
+      "turkish": "nesnellik / tarafsızlık / olgusallık",
+      "example": "Akademische Texte zeichnen sich durch Sachlichkeit aus.",
+      "exampleTranslation": "Akademik metinler nesnellikleriyle öne çıkar.",
+      "synonyms": [
+        "die Objektivität",
+        "die Neutralität"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Wiedergabe",
+      "turkish": "aktarma / yeniden ifade etme",
+      "example": "Die Wiedergabe fremder Gedanken muss gekennzeichnet werden.",
+      "exampleTranslation": "Başkalarının düşüncelerinin aktarımı işaretlenmelidir.",
+      "synonyms": [
+        "die Darstellung",
+        "die Schilderung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Umschreibung",
+      "turkish": "açımlama / başka sözcüklerle ifade etme (parafraz)",
+      "example": "Eine Umschreibung ersetzt das wörtliche Zitat.",
+      "exampleTranslation": "Bir açımlama, birebir alıntının yerini alır.",
+      "synonyms": [
+        "die Paraphrase",
+        "die Umformulierung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Urheberschaft",
+      "turkish": "eser sahipliği / telif sahipliği",
+      "example": "Die Urheberschaft des Textes ist eindeutig belegt.",
+      "exampleTranslation": "Metnin eser sahipliği açıkça kanıtlanmıştır.",
+      "synonyms": [
+        "die Autorschaft",
+        "die Verfasserschaft"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Redlichkeit",
+      "turkish": "dürüstlük / doğruluk (bilimsel)",
+      "example": "Wissenschaftliche Redlichkeit verbietet das Fälschen von Daten.",
+      "exampleTranslation": "Bilimsel dürüstlük, verilerin tahrif edilmesini yasaklar.",
+      "synonyms": [
+        "die Aufrichtigkeit",
+        "die Integrität"
+      ],
+      "level": "C1"
+    }
+  ]
+}

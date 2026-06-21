@@ -1,0 +1,152 @@
+{
+  "kind": "gen",
+  "unitId": 114,
+  "categoryId": 6,
+  "number": 7,
+  "title": "Kimya ve Laboratuvar",
+  "theme": "Kimya disiplini ve laboratuvar çalışmasına özgü terminoloji: maddeler, reaksiyonlar, deney düzenekleri ve ölçüm.",
+  "firstWordId": 1696,
+  "words": [
+    {
+      "german": "das Element",
+      "turkish": "element",
+      "example": "Wasserstoff ist das leichteste chemische Element.",
+      "exampleTranslation": "Hidrojen en hafif kimyasal elementtir.",
+      "synonyms": [
+        "der Grundstoff"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Verbindung",
+      "turkish": "bileşik / bağ",
+      "example": "Wasser ist eine Verbindung aus Wasserstoff und Sauerstoff.",
+      "exampleTranslation": "Su, hidrojen ve oksijenden oluşan bir bileşiktir.",
+      "synonyms": [
+        "die Substanz"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Reaktion",
+      "turkish": "reaksiyon / tepkime",
+      "example": "Die Reaktion setzt viel Wärme frei.",
+      "exampleTranslation": "Reaksiyon çok fazla ısı açığa çıkarır.",
+      "synonyms": [
+        "die Umsetzung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Dichte",
+      "turkish": "yoğunluk",
+      "example": "Blei hat eine sehr hohe Dichte.",
+      "exampleTranslation": "Kurşunun yoğunluğu çok yüksektir.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "die Säure",
+      "turkish": "asit",
+      "example": "Die Säure greift das Metall an.",
+      "exampleTranslation": "Asit metale etki eder.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "die Base",
+      "turkish": "baz",
+      "example": "Eine Base neutralisiert die Säure.",
+      "exampleTranslation": "Bir baz asidi nötralize eder.",
+      "synonyms": [
+        "die Lauge"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Konzentration",
+      "turkish": "derişim / yoğunluk",
+      "example": "Die Konzentration der Lösung ist sehr hoch.",
+      "exampleTranslation": "Çözeltinin derişimi çok yüksektir.",
+      "synonyms": [
+        "der Gehalt"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Substanz",
+      "turkish": "madde",
+      "example": "Diese Substanz ist bei Raumtemperatur fest.",
+      "exampleTranslation": "Bu madde oda sıcaklığında katıdır.",
+      "synonyms": [
+        "der Stoff",
+        "die Materie"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Molekül",
+      "turkish": "molekül",
+      "example": "Ein Wassermolekül besteht aus drei Atomen.",
+      "exampleTranslation": "Bir su molekülü üç atomdan oluşur.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "das Reagenz",
+      "turkish": "reaktif / ayıraç",
+      "example": "Das Reagenz färbt die Lösung blau.",
+      "exampleTranslation": "Reaktif çözeltiyi maviye boyar.",
+      "synonyms": [
+        "das Reaktionsmittel"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Aggregatzustand",
+      "turkish": "maddenin hâli",
+      "example": "Wasser kann drei Aggregatzustände annehmen.",
+      "exampleTranslation": "Su üç farklı hâl alabilir.",
+      "synonyms": [
+        "der Materiezustand"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Löslichkeit",
+      "turkish": "çözünürlük",
+      "example": "Die Löslichkeit von Salz steigt mit der Temperatur.",
+      "exampleTranslation": "Tuzun çözünürlüğü sıcaklıkla artar.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "der Gefahrstoff",
+      "turkish": "tehlikeli madde",
+      "example": "Jeder Gefahrstoff muss sicher gelagert werden.",
+      "exampleTranslation": "Her tehlikeli madde güvenli şekilde depolanmalıdır.",
+      "synonyms": [
+        "die Chemikalie"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Niederschlag",
+      "turkish": "çökelti / çökme",
+      "example": "Beim Mischen bildet sich ein weißer Niederschlag.",
+      "exampleTranslation": "Karıştırırken beyaz bir çökelti oluşur.",
+      "synonyms": [
+        "das Sediment"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Verdünnung",
+      "turkish": "seyreltme / seyreltik çözelti",
+      "example": "Durch Verdünnung sinkt die Konzentration der Säure.",
+      "exampleTranslation": "Seyreltme ile asidin derişimi düşer.",
+      "synonyms": [],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "kind": "gen",
+  "unitId": 64,
+  "categoryId": 3,
+  "number": 5,
+  "title": "Goethe B1 — Sağlık ve Beslenme",
+  "theme": "Doktor ziyareti, hastalıklar, beslenme ve sağlıklı yaşam temalı Goethe sınav kelimeleri. Sağlık üzerine görüş bildirme ve tavsiye verme bağlamları.",
+  "firstWordId": 946,
+  "words": [
+    {
+      "german": "die Diagnose",
+      "turkish": "teşhis / tanı",
+      "example": "Der Arzt stellte eine klare Diagnose.",
+      "exampleTranslation": "Doktor net bir teşhis koydu.",
+      "synonyms": [
+        "die Befundstellung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Impfung",
+      "turkish": "aşı / aşılama",
+      "example": "Die Impfung schützt vor vielen Krankheiten.",
+      "exampleTranslation": "Aşı birçok hastalığa karşı korur.",
+      "synonyms": [
+        "die Schutzimpfung",
+        "die Vakzination"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Nebenwirkung",
+      "turkish": "yan etki",
+      "example": "Dieses Medikament hat kaum Nebenwirkungen.",
+      "exampleTranslation": "Bu ilacın neredeyse hiç yan etkisi yok.",
+      "synonyms": [
+        "die Begleiterscheinung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sich ernähren",
+      "turkish": "beslenmek",
+      "example": "Sie ernährt sich sehr gesund.",
+      "exampleTranslation": "O çok sağlıklı besleniyor.",
+      "synonyms": [
+        "sich verpflegen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Bewegung",
+      "turkish": "hareket / egzersiz",
+      "example": "Regelmäßige Bewegung hält den Körper fit.",
+      "exampleTranslation": "Düzenli hareket vücudu zinde tutar.",
+      "synonyms": [
+        "die Betätigung",
+        "die Aktivität"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Genesung",
+      "turkish": "iyileşme / şifa bulma",
+      "example": "Wir wünschen dir eine schnelle Genesung.",
+      "exampleTranslation": "Sana çabuk bir iyileşme diliyoruz.",
+      "synonyms": [
+        "die Heilung",
+        "die Erholung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Nährstoff",
+      "turkish": "besin maddesi / besin ögesi",
+      "example": "Gemüse enthält viele wichtige Nährstoffe.",
+      "exampleTranslation": "Sebze birçok önemli besin maddesi içerir.",
+      "synonyms": [
+        "der Nährwert"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Vorsorge",
+      "turkish": "koruyucu sağlık önlemi / tedbir",
+      "example": "Zur Vorsorge geht sie jährlich zum Arzt.",
+      "exampleTranslation": "Tedbir amacıyla her yıl doktora gidiyor.",
+      "synonyms": [
+        "die Prävention",
+        "die Früherkennung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "ansteckend",
+      "turkish": "bulaşıcı",
+      "example": "Eine Grippe ist sehr ansteckend.",
+      "exampleTranslation": "Grip çok bulaşıcıdır.",
+      "synonyms": [
+        "infektiös",
+        "übertragbar"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Sucht",
+      "turkish": "bağımlılık",
+      "example": "Rauchen kann zu einer Sucht werden.",
+      "exampleTranslation": "Sigara içmek bir bağımlılığa dönüşebilir.",
+      "synonyms": [
+        "die Abhängigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "ausgewogen",
+      "turkish": "dengeli",
+      "example": "Eine ausgewogene Ernährung ist wichtig.",
+      "exampleTranslation": "Dengeli bir beslenme önemlidir.",
+      "synonyms": [
+        "ausgeglichen",
+        "harmonisch"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Mangel",
+      "turkish": "eksiklik / yetersizlik",
+      "example": "Ein Mangel an Vitaminen macht müde.",
+      "exampleTranslation": "Vitamin eksikliği yorgunluğa yol açar.",
+      "synonyms": [
+        "das Defizit",
+        "der Fehlbestand"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "chronisch",
+      "turkish": "kronik / süreğen",
+      "example": "Er leidet an einer chronischen Krankheit.",
+      "exampleTranslation": "O kronik bir hastalıktan muzdarip.",
+      "synonyms": [
+        "dauerhaft",
+        "langwierig"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Schonkost",
+      "turkish": "hafif perhiz / mideyi yormayan diyet",
+      "example": "Nach der Operation braucht er Schonkost.",
+      "exampleTranslation": "Ameliyattan sonra hafif perhize ihtiyacı var.",
+      "synonyms": [
+        "die Diätkost",
+        "die Leichtkost"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "vorbeugen",
+      "turkish": "önlemek / önünü almak",
+      "example": "Mit Sport kann man Krankheiten vorbeugen.",
+      "exampleTranslation": "Sporla hastalıkların önüne geçilebilir.",
+      "synonyms": [
+        "verhüten",
+        "abwenden"
+      ],
+      "level": "C1"
+    }
+  ]
+}

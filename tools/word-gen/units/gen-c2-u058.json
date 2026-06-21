@@ -1,0 +1,174 @@
+{
+  "kind": "gen",
+  "unitId": 58,
+  "categoryId": 2,
+  "number": 15,
+  "title": "Edilgen Çatı (Passiv)",
+  "theme": "Vorgangspassiv ve Zustandspassiv yapıları; werden ve sein ile edilgen cümleler, fail belirtme (von/durch) ve zaman çekimleri.",
+  "firstWordId": 856,
+  "words": [
+    {
+      "german": "öffnen",
+      "turkish": "açmak",
+      "example": "Das Fenster wird jeden Morgen geöffnet.",
+      "exampleTranslation": "Pencere her sabah açılır.",
+      "synonyms": [
+        "aufmachen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "schließen",
+      "turkish": "kapatmak / kapamak",
+      "example": "Der Laden ist um acht Uhr geschlossen.",
+      "exampleTranslation": "Dükkan saat sekizde kapalıdır.",
+      "synonyms": [
+        "zumachen",
+        "abschließen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "bauen",
+      "turkish": "inşa etmek / yapmak",
+      "example": "Hier wird ein neues Haus gebaut.",
+      "exampleTranslation": "Burada yeni bir ev inşa ediliyor.",
+      "synonyms": [
+        "errichten",
+        "konstruieren"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "reparieren",
+      "turkish": "tamir etmek / onarmak",
+      "example": "Das Auto wurde gestern repariert.",
+      "exampleTranslation": "Araba dün tamir edildi.",
+      "synonyms": [
+        "instand setzen",
+        "ausbessern"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "kochen",
+      "turkish": "pişirmek / kaynatmak",
+      "example": "Das Essen wird von der Mutter gekocht.",
+      "exampleTranslation": "Yemek anne tarafından pişiriliyor.",
+      "synonyms": [
+        "zubereiten"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "waschen",
+      "turkish": "yıkamak",
+      "example": "Die Wäsche muss heute gewaschen werden.",
+      "exampleTranslation": "Çamaşırların bugün yıkanması gerekiyor.",
+      "synonyms": [
+        "reinigen",
+        "säubern"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "übersetzen",
+      "turkish": "çevirmek / tercüme etmek",
+      "example": "Der Text wird ins Deutsche übersetzt.",
+      "exampleTranslation": "Metin Almancaya çevriliyor.",
+      "synonyms": [
+        "übertragen",
+        "dolmetschen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "untersuchen",
+      "turkish": "incelemek / muayene etmek",
+      "example": "Der Fall wird von der Polizei untersucht.",
+      "exampleTranslation": "Vaka polis tarafından inceleniyor.",
+      "synonyms": [
+        "prüfen",
+        "erforschen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Täter",
+      "turkish": "fail / suçlu",
+      "example": "Der Täter wurde durch eine Kamera erkannt.",
+      "exampleTranslation": "Fail bir kamera tarafından teşhis edildi.",
+      "synonyms": [
+        "der Verursacher",
+        "der Schuldige"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "durchführen",
+      "turkish": "gerçekleştirmek / yürütmek",
+      "example": "Die Prüfung wird nächste Woche durchgeführt.",
+      "exampleTranslation": "Sınav gelecek hafta gerçekleştirilecek.",
+      "synonyms": [
+        "ausführen",
+        "vornehmen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "herstellen",
+      "turkish": "üretmek / imal etmek",
+      "example": "Diese Waren werden in Deutschland hergestellt.",
+      "exampleTranslation": "Bu mallar Almanya'da üretiliyor.",
+      "synonyms": [
+        "produzieren",
+        "fertigen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "veröffentlichen",
+      "turkish": "yayımlamak / yayınlamak",
+      "example": "Die Ergebnisse wurden gestern veröffentlicht.",
+      "exampleTranslation": "Sonuçlar dün yayımlandı.",
+      "synonyms": [
+        "publizieren",
+        "bekannt geben"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "beheben",
+      "turkish": "gidermek / ortadan kaldırmak",
+      "example": "Der Fehler muss sofort behoben werden.",
+      "exampleTranslation": "Hatanın derhal giderilmesi gerekiyor.",
+      "synonyms": [
+        "beseitigen",
+        "abstellen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "abreißen",
+      "turkish": "yıkmak / yıkıp sökmek",
+      "example": "Das alte Gebäude wurde letzten Monat abgerissen.",
+      "exampleTranslation": "Eski bina geçen ay yıkıldı.",
+      "synonyms": [
+        "niederreißen",
+        "abbrechen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Urheber",
+      "turkish": "yaratıcı / müsebbip / hak sahibi",
+      "example": "Der Urheber des Schadens bleibt unbekannt.",
+      "exampleTranslation": "Zararın müsebbibi bilinmiyor.",
+      "synonyms": [
+        "der Verfasser",
+        "der Verursacher"
+      ],
+      "level": "C1"
+    }
+  ]
+}

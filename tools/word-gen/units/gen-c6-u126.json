@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 126,
+  "categoryId": 6,
+  "number": 19,
+  "title": "Bilim Felsefesi ve Yöntembilim",
+  "theme": "Bilimin doğası, kuram oluşturma ve bilimsel yöntem üzerine üst düzey kavramlar: teori, kanıt, nedensellik ve çıkarım.",
+  "firstWordId": 1876,
+  "words": [
+    {
+      "german": "die Annahme",
+      "turkish": "varsayım / kabul",
+      "example": "Diese Annahme ließ sich später nicht bestätigen.",
+      "exampleTranslation": "Bu varsayım daha sonra doğrulanamadı.",
+      "synonyms": [
+        "die Vermutung",
+        "die Voraussetzung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Bestätigung",
+      "turkish": "doğrulama / teyit",
+      "example": "Die Daten lieferten eine klare Bestätigung der Vorhersage.",
+      "exampleTranslation": "Veriler, tahminin açık bir doğrulamasını sundu.",
+      "synonyms": [
+        "die Verifikation",
+        "der Beleg"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Widerlegung",
+      "turkish": "çürütme / yanlışlama",
+      "example": "Ein einziges Gegenbeispiel genügt zur Widerlegung.",
+      "exampleTranslation": "Çürütme için tek bir karşı örnek yeterlidir.",
+      "synonyms": [
+        "die Falsifikation"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Ursache",
+      "turkish": "neden / sebep",
+      "example": "Die wahre Ursache des Phänomens blieb unklar.",
+      "exampleTranslation": "Olgunun gerçek nedeni belirsiz kaldı.",
+      "synonyms": [
+        "der Grund",
+        "der Auslöser"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Wirkung",
+      "turkish": "etki / sonuç",
+      "example": "Jede Ursache hat eine messbare Wirkung.",
+      "exampleTranslation": "Her nedenin ölçülebilir bir etkisi vardır.",
+      "synonyms": [
+        "der Effekt",
+        "die Folge"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Zusammenhang",
+      "turkish": "bağlantı / ilişki",
+      "example": "Der Forscher untersuchte den Zusammenhang beider Variablen.",
+      "exampleTranslation": "Araştırmacı her iki değişken arasındaki ilişkiyi inceledi.",
+      "synonyms": [
+        "die Beziehung",
+        "die Verbindung",
+        "die Korrelation"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Ableitung",
+      "turkish": "türetme / çıkarım",
+      "example": "Die Ableitung aus den Prämissen war logisch zwingend.",
+      "exampleTranslation": "Öncüllerden yapılan çıkarım mantıksal olarak zorunluydu.",
+      "synonyms": [
+        "die Herleitung",
+        "die Folgerung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Vermutung",
+      "turkish": "tahmin / sanı",
+      "example": "Seine Vermutung wurde durch Experimente gestützt.",
+      "exampleTranslation": "Onun tahmini deneylerle desteklendi.",
+      "synonyms": [
+        "die Annahme",
+        "die Mutmaßung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Objektivität",
+      "turkish": "nesnellik / tarafsızlık",
+      "example": "Wissenschaftliche Objektivität verlangt nachvollziehbare Methoden.",
+      "exampleTranslation": "Bilimsel nesnellik, izlenebilir yöntemler gerektirir.",
+      "synonyms": [
+        "die Unvoreingenommenheit",
+        "die Sachlichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Vorgehen",
+      "turkish": "yöntem / izlenen yol",
+      "example": "Das methodische Vorgehen wurde genau dokumentiert.",
+      "exampleTranslation": "Yöntemsel izlenen yol ayrıntılı olarak belgelendi.",
+      "synonyms": [
+        "die Vorgehensweise",
+        "das Verfahren"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Wissensanspruch",
+      "turkish": "bilgi iddiası",
+      "example": "Jeder Wissensanspruch muss kritisch geprüft werden.",
+      "exampleTranslation": "Her bilgi iddiası eleştirel olarak sınanmalıdır.",
+      "synonyms": [
+        "der Geltungsanspruch"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Reproduzierbarkeit",
+      "turkish": "yinelenebilirlik / tekrar üretilebilirlik",
+      "example": "Die Reproduzierbarkeit der Ergebnisse ist entscheidend.",
+      "exampleTranslation": "Sonuçların yinelenebilirliği belirleyicidir.",
+      "synonyms": [
+        "die Wiederholbarkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Aussagekraft",
+      "turkish": "anlamlılık / kanıt değeri",
+      "example": "Die Aussagekraft der Studie ist begrenzt.",
+      "exampleTranslation": "Çalışmanın kanıt değeri sınırlıdır.",
+      "synonyms": [
+        "die Relevanz",
+        "die Bedeutsamkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "plausibel",
+      "turkish": "makul / inandırıcı",
+      "example": "Seine Erklärung klingt durchaus plausibel.",
+      "exampleTranslation": "Onun açıklaması gerçekten makul geliyor.",
+      "synonyms": [
+        "nachvollziehbar",
+        "einleuchtend",
+        "glaubhaft"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "schlüssig",
+      "turkish": "tutarlı / mantıklı",
+      "example": "Die Argumentation war logisch und schlüssig.",
+      "exampleTranslation": "Argümantasyon mantıklı ve tutarlıydı.",
+      "synonyms": [
+        "stimmig",
+        "kohärent",
+        "folgerichtig"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 87,
+  "categoryId": 4,
+  "number": 11,
+  "title": "telc — Tartışma ve Görüş Bildirme",
+  "theme": "telc sözlü ve yazılı bölümlerinde tartışma yürütme, görüş savunma ve karşı çıkma için kullanılan işlevsel kalıp kelimeler.",
+  "firstWordId": 1291,
+  "words": [
+    {
+      "german": "die Ansicht",
+      "turkish": "görüş / kanı",
+      "example": "Meiner Ansicht nach ist das falsch.",
+      "exampleTranslation": "Bana göre bu yanlış.",
+      "synonyms": [
+        "die Auffassung",
+        "der Standpunkt"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "zustimmen",
+      "turkish": "katılmak / onaylamak",
+      "example": "Ich kann dir da nur zustimmen.",
+      "exampleTranslation": "Sana bu konuda ancak katılabilirim.",
+      "synonyms": [
+        "beipflichten",
+        "zusagen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "widersprechen",
+      "turkish": "karşı çıkmak / itiraz etmek",
+      "example": "Da muss ich Ihnen leider widersprechen.",
+      "exampleTranslation": "Bu konuda maalesef size karşı çıkmalıyım.",
+      "synonyms": [
+        "entgegnen",
+        "kontern"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Argument",
+      "turkish": "argüman / kanıt",
+      "example": "Dein Argument überzeugt mich nicht.",
+      "exampleTranslation": "Argümanın beni ikna etmiyor.",
+      "synonyms": [
+        "der Einwand",
+        "der Grund"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Beispiel",
+      "turkish": "örnek",
+      "example": "Ich nenne dir ein konkretes Beispiel.",
+      "exampleTranslation": "Sana somut bir örnek vereyim.",
+      "synonyms": [
+        "der Beleg",
+        "der Fall"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "behaupten",
+      "turkish": "iddia etmek / öne sürmek",
+      "example": "Er behauptet, alles selbst gemacht zu haben.",
+      "exampleTranslation": "Her şeyi kendisi yaptığını iddia ediyor.",
+      "synonyms": [
+        "versichern",
+        "beteuern"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Standpunkt",
+      "turkish": "bakış açısı / tutum",
+      "example": "Ich verstehe deinen Standpunkt durchaus.",
+      "exampleTranslation": "Senin bakış açını gayet anlıyorum.",
+      "synonyms": [
+        "die Sichtweise",
+        "die Position"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "einwenden",
+      "turkish": "itiraz olarak öne sürmek",
+      "example": "Dagegen lässt sich einiges einwenden.",
+      "exampleTranslation": "Buna karşı birkaç şey öne sürülebilir.",
+      "synonyms": [
+        "entgegenhalten",
+        "beanstanden"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Begründung",
+      "turkish": "gerekçe / temellendirme",
+      "example": "Seine Begründung war überzeugend.",
+      "exampleTranslation": "Gerekçesi inandırıcıydı.",
+      "synonyms": [
+        "die Rechtfertigung",
+        "der Grund"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Kompromiss",
+      "turkish": "uzlaşma / taviz",
+      "example": "Am Ende fanden wir einen guten Kompromiss.",
+      "exampleTranslation": "Sonunda iyi bir uzlaşma bulduk.",
+      "synonyms": [
+        "der Mittelweg",
+        "die Einigung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "betonen",
+      "turkish": "vurgulamak / altını çizmek",
+      "example": "Ich möchte besonders diesen Punkt betonen.",
+      "exampleTranslation": "Özellikle bu noktayı vurgulamak istiyorum.",
+      "synonyms": [
+        "hervorheben",
+        "unterstreichen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die These",
+      "turkish": "tez / sav",
+      "example": "Ihre These ist gewagt, aber interessant.",
+      "exampleTranslation": "Teziniz cesur ama ilginç.",
+      "synonyms": [
+        "die Behauptung",
+        "die Annahme"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "entgegnen",
+      "turkish": "karşılık vermek / yanıtlamak",
+      "example": "Darauf wusste sie nichts zu entgegnen.",
+      "exampleTranslation": "Buna karşılık verecek bir şey bilmiyordu.",
+      "synonyms": [
+        "erwidern",
+        "kontern"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Einwand",
+      "turkish": "itiraz / çekince",
+      "example": "Gegen diesen Vorschlag habe ich einen Einwand.",
+      "exampleTranslation": "Bu öneriye karşı bir itirazım var.",
+      "synonyms": [
+        "der Vorbehalt",
+        "die Bedenken"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "abschließend",
+      "turkish": "sonuç olarak / nihayet",
+      "example": "Abschließend möchte ich Folgendes festhalten.",
+      "exampleTranslation": "Sonuç olarak şunu belirtmek isterim.",
+      "synonyms": [
+        "zusammenfassend",
+        "schließlich"
+      ],
+      "level": "C1"
+    }
+  ]
+}

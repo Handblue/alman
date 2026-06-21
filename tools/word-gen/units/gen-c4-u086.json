@@ -1,0 +1,173 @@
+{
+  "kind": "gen",
+  "unitId": 86,
+  "categoryId": 4,
+  "number": 10,
+  "title": "telc — Medya, Basın ve Dijitalleşme",
+  "theme": "Kitle iletişim, sosyal medya ve dijital dönüşüm tartışmalarında telc sınavının medya temalı kelimeleri.",
+  "firstWordId": 1276,
+  "words": [
+    {
+      "german": "die Schlagzeile",
+      "turkish": "manşet / başlık",
+      "example": "Die Schlagzeile stand auf der ersten Seite.",
+      "exampleTranslation": "Manşet ilk sayfada yer alıyordu.",
+      "synonyms": [
+        "die Überschrift",
+        "der Titel"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Sendung",
+      "turkish": "yayın / program",
+      "example": "Die Sendung läuft jeden Abend im Fernsehen.",
+      "exampleTranslation": "Program her akşam televizyonda yayınlanıyor.",
+      "synonyms": [
+        "das Programm",
+        "die Ausstrahlung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Beitrag",
+      "turkish": "yazı / katkı / gönderi",
+      "example": "Sie hat einen Beitrag in der Zeitung gelesen.",
+      "exampleTranslation": "Gazetede bir yazı okudu.",
+      "synonyms": [
+        "der Artikel",
+        "der Post"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Werbung",
+      "turkish": "reklam",
+      "example": "Im Fernsehen gibt es zu viel Werbung.",
+      "exampleTranslation": "Televizyonda çok fazla reklam var.",
+      "synonyms": [
+        "die Reklame",
+        "die Anzeige"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Nutzer",
+      "turkish": "kullanıcı",
+      "example": "Viele Nutzer teilen Bilder auf der Plattform.",
+      "exampleTranslation": "Birçok kullanıcı platformda resim paylaşıyor.",
+      "synonyms": [
+        "der Anwender",
+        "der User"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Quelle",
+      "turkish": "kaynak",
+      "example": "Eine seriöse Quelle ist beim Recherchieren wichtig.",
+      "exampleTranslation": "Araştırma yaparken güvenilir bir kaynak önemlidir.",
+      "synonyms": [
+        "der Ursprung",
+        "der Beleg"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Berichterstattung",
+      "turkish": "haber yapma / haber sunumu",
+      "example": "Die Berichterstattung über den Unfall war einseitig.",
+      "exampleTranslation": "Kazayla ilgili haber sunumu tek taraflıydı.",
+      "synonyms": [
+        "die Reportage",
+        "die Nachrichtenlage"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Meinungsfreiheit",
+      "turkish": "ifade özgürlüğü / düşünce özgürlüğü",
+      "example": "Die Meinungsfreiheit ist ein Grundrecht.",
+      "exampleTranslation": "İfade özgürlüğü temel bir haktır.",
+      "synonyms": [
+        "die Redefreiheit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Reichweite",
+      "turkish": "erişim / menzil",
+      "example": "Influencer haben eine große Reichweite im Internet.",
+      "exampleTranslation": "Influencer'ların internette büyük bir erişimi var.",
+      "synonyms": [
+        "die Ausdehnung",
+        "der Wirkungsbereich"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Falschmeldung",
+      "turkish": "yalan haber / asılsız haber",
+      "example": "Im Netz verbreiten sich Falschmeldungen sehr schnell.",
+      "exampleTranslation": "İnternette yalan haberler çok hızlı yayılıyor.",
+      "synonyms": [
+        "die Fake News",
+        "die Ente"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Datenmissbrauch",
+      "turkish": "verilerin kötüye kullanımı",
+      "example": "Datenmissbrauch ist eine ernste Gefahr im Internet.",
+      "exampleTranslation": "Verilerin kötüye kullanımı internette ciddi bir tehlikedir.",
+      "synonyms": [
+        "der Datenmissstand"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Glaubwürdigkeit",
+      "turkish": "inandırıcılık / güvenilirlik",
+      "example": "Die Glaubwürdigkeit der Medien wird oft diskutiert.",
+      "exampleTranslation": "Medyanın güvenilirliği sık sık tartışılır.",
+      "synonyms": [
+        "die Vertrauenswürdigkeit",
+        "die Seriosität"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Meinungsmache",
+      "turkish": "kanaat oluşturma / manipülasyon",
+      "example": "Hinter der Schlagzeile steckte gezielte Meinungsmache.",
+      "exampleTranslation": "Manşetin arkasında planlı bir manipülasyon vardı.",
+      "synonyms": [
+        "die Manipulation",
+        "die Propaganda"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Vernetzung",
+      "turkish": "ağ kurma / bağlantı / şebekeleşme",
+      "example": "Die digitale Vernetzung verändert unsere Kommunikation.",
+      "exampleTranslation": "Dijital ağ kurma iletişimimizi değiştiriyor.",
+      "synonyms": [
+        "die Verknüpfung",
+        "die Verbindung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Filterblase",
+      "turkish": "filtre balonu",
+      "example": "In der Filterblase sieht man nur ähnliche Meinungen.",
+      "exampleTranslation": "Filtre balonunda yalnızca benzer görüşler görülür.",
+      "synonyms": [
+        "die Echokammer"
+      ],
+      "level": "C1"
+    }
+  ]
+}

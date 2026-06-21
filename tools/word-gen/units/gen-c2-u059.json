@@ -1,0 +1,160 @@
+{
+  "kind": "gen",
+  "unitId": 59,
+  "categoryId": 2,
+  "number": 16,
+  "title": "Dilek-Şart Kipi II (Konjunktiv II)",
+  "theme": "Gerçek dışı durumlar, nazik ricalar ve varsayımlar için Konjunktiv II; würde yapısı ve hätte/wäre/könnte biçimleri.",
+  "firstWordId": 871,
+  "words": [
+    {
+      "german": "möchten",
+      "turkish": "istemek (nazik)",
+      "example": "Ich möchte einen Kaffee, bitte.",
+      "exampleTranslation": "Bir kahve istiyorum, lütfen.",
+      "synonyms": [
+        "wünschen",
+        "begehren"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "hätte",
+      "turkish": "sahip olurdu / -sa olurdu",
+      "example": "Ich hätte gern ein Glas Wasser.",
+      "exampleTranslation": "Bir bardak su rica ediyorum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "wäre",
+      "turkish": "olurdu / olsa",
+      "example": "Das wäre wunderbar.",
+      "exampleTranslation": "Bu harika olurdu.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "gern",
+      "turkish": "memnuniyetle / seve seve",
+      "example": "Ich würde gern mitkommen.",
+      "exampleTranslation": "Seve seve gelirdim.",
+      "synonyms": [
+        "gerne"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "könnte",
+      "turkish": "yapabilirdi / -ebilir miydi",
+      "example": "Könntest du mir bitte helfen?",
+      "exampleTranslation": "Bana yardım edebilir misin lütfen?",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "müsste",
+      "turkish": "yapması gerekirdi",
+      "example": "Ich müsste eigentlich nach Hause gehen.",
+      "exampleTranslation": "Aslında eve gitmem gerekirdi.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "der Wunsch",
+      "turkish": "dilek / istek",
+      "example": "Ich habe einen großen Wunsch.",
+      "exampleTranslation": "Büyük bir dileğim var.",
+      "synonyms": [
+        "der Traum",
+        "das Verlangen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Bitte",
+      "turkish": "rica",
+      "example": "Ich hätte eine Bitte an dich.",
+      "exampleTranslation": "Senden bir ricam olacaktı.",
+      "synonyms": [
+        "das Anliegen",
+        "der Wunsch"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "sollte",
+      "turkish": "yapmalıydı / -meli",
+      "example": "Du solltest mehr schlafen.",
+      "exampleTranslation": "Daha çok uyumalısın.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "höflich",
+      "turkish": "nazik / kibar",
+      "example": "Sie hat sehr höflich gefragt.",
+      "exampleTranslation": "Çok nazik bir şekilde sordu.",
+      "synonyms": [
+        "freundlich",
+        "zuvorkommend"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Annahme",
+      "turkish": "varsayım / kabul",
+      "example": "Das ist nur eine Annahme von mir.",
+      "exampleTranslation": "Bu sadece benim bir varsayımım.",
+      "synonyms": [
+        "die Vermutung",
+        "die Mutmaßung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Vermutung",
+      "turkish": "tahmin / sanı",
+      "example": "Meine Vermutung war leider falsch.",
+      "exampleTranslation": "Tahminim maalesef yanlıştı.",
+      "synonyms": [
+        "die Annahme",
+        "der Verdacht"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Konjunktiv",
+      "turkish": "dilek-şart kipi",
+      "example": "Den Konjunktiv II benutzt man für Wünsche.",
+      "exampleTranslation": "Konjunktiv II dilekler için kullanılır.",
+      "synonyms": [
+        "die Möglichkeitsform"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Bedingung",
+      "turkish": "koşul / şart",
+      "example": "Unter einer Bedingung würde ich zustimmen.",
+      "exampleTranslation": "Bir koşulla kabul ederdim.",
+      "synonyms": [
+        "die Voraussetzung",
+        "die Prämisse"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "hypothetisch",
+      "turkish": "varsayımsal / kurgusal",
+      "example": "Das ist eine rein hypothetische Frage.",
+      "exampleTranslation": "Bu tamamen varsayımsal bir soru.",
+      "synonyms": [
+        "fiktiv",
+        "theoretisch",
+        "angenommen"
+      ],
+      "level": "C1"
+    }
+  ]
+}

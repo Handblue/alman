@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 160,
+  "categoryId": 8,
+  "number": 20,
+  "title": "Edebi ve Yüksek Deyimler",
+  "theme": "Yazılı dilde ve resmi bağlamda kullanılan ileri düzey, edebi deyimler; soyut kavramlar ve incelikli üslupla kurulan kalıp ifadeler.",
+  "firstWordId": 2386,
+  "words": [
+    {
+      "german": "die Seele",
+      "turkish": "ruh / can",
+      "example": "Musik berührt die Seele auf besondere Weise.",
+      "exampleTranslation": "Müzik ruha özel bir şekilde dokunur.",
+      "synonyms": [
+        "das Gemüt",
+        "der Geist"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Geist",
+      "turkish": "ruh / zihin / akıl",
+      "example": "Sein scharfer Geist beeindruckte alle Gäste.",
+      "exampleTranslation": "Keskin zekası tüm misafirleri etkiledi.",
+      "synonyms": [
+        "der Verstand",
+        "der Intellekt"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Sehnsucht",
+      "turkish": "özlem / hasret",
+      "example": "Eine tiefe Sehnsucht nach der Heimat erfüllte ihn.",
+      "exampleTranslation": "Derin bir memleket özlemi onu doldurdu.",
+      "synonyms": [
+        "das Verlangen",
+        "die Wehmut"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Schicksal",
+      "turkish": "kader / yazgı / alın yazısı",
+      "example": "Das Schicksal führte die beiden wieder zusammen.",
+      "exampleTranslation": "Kader ikisini yeniden bir araya getirdi.",
+      "synonyms": [
+        "das Verhängnis",
+        "die Bestimmung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Vergänglichkeit",
+      "turkish": "geçicilik / faniluk / ölümlülük",
+      "example": "Der Herbst erinnert uns an die Vergänglichkeit.",
+      "exampleTranslation": "Sonbahar bize geçiciliği hatırlatır.",
+      "synonyms": [
+        "die Sterblichkeit",
+        "die Endlichkeit"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Wehmut",
+      "turkish": "hüzün / melankoli / tatlı keder",
+      "example": "Mit Wehmut blickte sie auf alte Fotos.",
+      "exampleTranslation": "Hüzünle eski fotoğraflara baktı.",
+      "synonyms": [
+        "die Melancholie",
+        "die Schwermut"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Zeitgeist",
+      "turkish": "çağın ruhu / zamanın ruhu",
+      "example": "Der Roman fängt den Zeitgeist der Epoche ein.",
+      "exampleTranslation": "Roman, dönemin çağın ruhunu yakalar.",
+      "synonyms": [
+        "die Geisteshaltung",
+        "die Stimmung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Muße",
+      "turkish": "dinginlik / boş vakit / huzurlu zaman",
+      "example": "In der Muße entstehen oft die besten Gedanken.",
+      "exampleTranslation": "Dinginlikte çoğu zaman en iyi düşünceler doğar.",
+      "synonyms": [
+        "die Ruhe",
+        "die Beschaulichkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Wandel",
+      "turkish": "değişim / dönüşüm",
+      "example": "Die Gesellschaft befindet sich im stetigen Wandel.",
+      "exampleTranslation": "Toplum sürekli bir değişim içindedir.",
+      "synonyms": [
+        "die Veränderung",
+        "die Umwälzung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "zwischen den Zeilen lesen",
+      "turkish": "satır aralarını okumak / üstü kapalı anlamı sezmek",
+      "example": "Man muss hier zwischen den Zeilen lesen.",
+      "exampleTranslation": "Burada satır aralarını okumak gerekir.",
+      "synonyms": [
+        "andeuten verstehen",
+        "das Unausgesprochene erfassen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "etwas in den höchsten Tönen loben",
+      "turkish": "bir şeyi göklere çıkarmak / övgüye boğmak",
+      "example": "Die Kritiker lobten den Film in den höchsten Tönen.",
+      "exampleTranslation": "Eleştirmenler filmi göklere çıkardı.",
+      "synonyms": [
+        "überschwänglich loben",
+        "in den Himmel heben"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Inbegriff",
+      "turkish": "simge / timsal / en saf örnek",
+      "example": "Sie gilt als der Inbegriff der Eleganz.",
+      "exampleTranslation": "O, zarafetin timsali olarak görülür.",
+      "synonyms": [
+        "der Prototyp",
+        "das Sinnbild"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Bürde",
+      "turkish": "yük / ağır sorumluluk",
+      "example": "Die Verantwortung wurde ihm zur schweren Bürde.",
+      "exampleTranslation": "Sorumluluk onun için ağır bir yük oldu.",
+      "synonyms": [
+        "die Last",
+        "das Joch"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "den Schleier lüften",
+      "turkish": "perdeyi aralamak / sırrı açığa çıkarmak",
+      "example": "Der Autor lüftet den Schleier über das Geheimnis.",
+      "exampleTranslation": "Yazar, sırrın üzerindeki perdeyi aralıyor.",
+      "synonyms": [
+        "enthüllen",
+        "offenbaren"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "etwas mit Argusaugen beobachten",
+      "turkish": "bir şeyi şahin gözüyle izlemek / dikkatle gözetlemek",
+      "example": "Die Presse beobachtete den Prozess mit Argusaugen.",
+      "exampleTranslation": "Basın davayı şahin gözüyle izledi.",
+      "synonyms": [
+        "scharf beobachten",
+        "wachsam überwachen"
+      ],
+      "level": "C1"
+    }
+  ]
+}

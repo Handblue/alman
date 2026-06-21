@@ -1,0 +1,163 @@
+{
+  "kind": "gen",
+  "unitId": 109,
+  "categoryId": 5,
+  "number": 18,
+  "title": "Bayram, Tatil ve Kutlamalar",
+  "theme": "Resmi bayramlar, özel günler ve kutlamalarla ilgili günlük kelimeler. Doğum günü, davet ve hediye bağlamı.",
+  "firstWordId": 1621,
+  "words": [
+    {
+      "german": "der Geburtstag",
+      "turkish": "doğum günü",
+      "example": "Heute ist mein Geburtstag.",
+      "exampleTranslation": "Bugün benim doğum günüm.",
+      "synonyms": [
+        "der Ehrentag"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Geschenk",
+      "turkish": "hediye",
+      "example": "Ich kaufe ein Geschenk für dich.",
+      "exampleTranslation": "Senin için bir hediye alıyorum.",
+      "synonyms": [
+        "das Präsent",
+        "die Gabe"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "feiern",
+      "turkish": "kutlamak",
+      "example": "Wir feiern heute Abend zusammen.",
+      "exampleTranslation": "Bu akşam birlikte kutluyoruz.",
+      "synonyms": [
+        "begehen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Party",
+      "turkish": "parti",
+      "example": "Die Party beginnt um acht Uhr.",
+      "exampleTranslation": "Parti saat sekizde başlıyor.",
+      "synonyms": [
+        "das Fest",
+        "die Feier"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Gast",
+      "turkish": "misafir / konuk",
+      "example": "Der Gast bringt einen Kuchen mit.",
+      "exampleTranslation": "Misafir yanında bir kek getiriyor.",
+      "synonyms": [
+        "der Besucher"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Einladung",
+      "turkish": "davet / davetiye",
+      "example": "Danke für die Einladung zum Essen.",
+      "exampleTranslation": "Yemeğe davet için teşekkürler.",
+      "synonyms": [
+        "die Aufforderung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "einladen",
+      "turkish": "davet etmek",
+      "example": "Ich lade dich zu meiner Feier ein.",
+      "exampleTranslation": "Seni kutlamama davet ediyorum.",
+      "synonyms": [
+        "bitten"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "schenken",
+      "turkish": "hediye etmek / bağışlamak",
+      "example": "Er schenkt ihr rote Rosen.",
+      "exampleTranslation": "Ona kırmızı güller hediye ediyor.",
+      "synonyms": [
+        "überreichen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Feiertag",
+      "turkish": "resmi bayram / tatil günü",
+      "example": "Am Feiertag haben die Geschäfte zu.",
+      "exampleTranslation": "Bayramda dükkânlar kapalı.",
+      "synonyms": [
+        "der Festtag"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Kerze",
+      "turkish": "mum",
+      "example": "Auf der Torte brennen viele Kerzen.",
+      "exampleTranslation": "Pastanın üzerinde birçok mum yanıyor.",
+      "synonyms": [
+        "das Licht"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Luftballon",
+      "turkish": "balon",
+      "example": "Die Kinder spielen mit einem Luftballon.",
+      "exampleTranslation": "Çocuklar bir balonla oynuyor.",
+      "synonyms": [
+        "der Ballon"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "gratulieren",
+      "turkish": "tebrik etmek / kutlamak",
+      "example": "Ich gratuliere dir zum Geburtstag.",
+      "exampleTranslation": "Doğum gününü kutlarım.",
+      "synonyms": [
+        "beglückwünschen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Glückwunsch",
+      "turkish": "tebrik / iyi dilek",
+      "example": "Herzlichen Glückwunsch zur Hochzeit!",
+      "exampleTranslation": "Düğününüz hayırlı olsun!",
+      "synonyms": [
+        "die Gratulation"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Gastgeber",
+      "turkish": "ev sahibi / davet eden",
+      "example": "Der Gastgeber begrüßt alle Gäste herzlich.",
+      "exampleTranslation": "Ev sahibi tüm misafirleri içtenlikle karşılıyor.",
+      "synonyms": [
+        "der Wirt"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Überraschung",
+      "turkish": "sürpriz / şaşkınlık",
+      "example": "Die Party war eine große Überraschung.",
+      "exampleTranslation": "Parti büyük bir sürprizdi.",
+      "synonyms": [
+        "die Verblüffung"
+      ],
+      "level": "B1"
+    }
+  ]
+}

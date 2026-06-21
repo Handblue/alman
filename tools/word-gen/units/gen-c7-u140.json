@@ -1,0 +1,166 @@
+{
+  "kind": "gen",
+  "unitId": 140,
+  "categoryId": 7,
+  "number": 16,
+  "title": "Din Felsefesi ve Aşkınlık",
+  "theme": "Tanrı, inanç, aşkınlık, kötülük problemi ve kutsal gibi kavramları kapsar. İnancın akılla ilişkisi ve dinî varlık üzerine felsefi kelimeler.",
+  "firstWordId": 2086,
+  "words": [
+    {
+      "german": "der Glaube",
+      "turkish": "inanç / iman",
+      "example": "Sein Glaube an Gott gibt ihm Halt.",
+      "exampleTranslation": "Tanrı'ya olan inancı ona güç verir.",
+      "synonyms": [
+        "die Überzeugung",
+        "das Vertrauen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Offenbarung",
+      "turkish": "vahiy / ifşa",
+      "example": "Die Offenbarung gilt als Wort Gottes.",
+      "exampleTranslation": "Vahiy, Tanrı'nın sözü olarak kabul edilir.",
+      "synonyms": [
+        "die Enthüllung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Transzendenz",
+      "turkish": "aşkınlık",
+      "example": "Die Transzendenz übersteigt jede menschliche Erfahrung.",
+      "exampleTranslation": "Aşkınlık her türlü insani deneyimi aşar.",
+      "synonyms": [
+        "die Jenseitigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Heilige",
+      "turkish": "kutsal / kutsallık",
+      "example": "Das Heilige weckt zugleich Ehrfurcht und Faszination.",
+      "exampleTranslation": "Kutsal, aynı anda hem huşu hem hayranlık uyandırır.",
+      "synonyms": [
+        "das Sakrale"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Allmacht",
+      "turkish": "her şeye gücü yetme / kudret",
+      "example": "Die Allmacht Gottes ist ein zentrales Dogma.",
+      "exampleTranslation": "Tanrı'nın her şeye gücünün yetmesi merkezi bir dogmadır.",
+      "synonyms": [
+        "die Omnipotenz"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Böse",
+      "turkish": "kötülük / kötü olan",
+      "example": "Woher kommt das Böse in der Welt?",
+      "exampleTranslation": "Dünyadaki kötülük nereden gelir?",
+      "synonyms": [
+        "das Übel",
+        "die Bosheit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Theodizee",
+      "turkish": "teodise (kötülük karşısında Tanrı'nın savunulması)",
+      "example": "Die Theodizee fragt nach Gottes Gerechtigkeit angesichts des Leids.",
+      "exampleTranslation": "Teodise, acı karşısında Tanrı'nın adaletini sorgular.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "die Unendlichkeit",
+      "turkish": "sonsuzluk",
+      "example": "Die Unendlichkeit Gottes lässt sich kaum begreifen.",
+      "exampleTranslation": "Tanrı'nın sonsuzluğu zorlukla kavranabilir.",
+      "synonyms": [
+        "die Ewigkeit",
+        "die Grenzenlosigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Absolute",
+      "turkish": "mutlak / mutlak olan",
+      "example": "Das Absolute steht über aller Bedingtheit.",
+      "exampleTranslation": "Mutlak olan, her türlü koşulluluğun üzerindedir.",
+      "synonyms": [
+        "das Unbedingte"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Atheismus",
+      "turkish": "tanrıtanımazlık / ateizm",
+      "example": "Der Atheismus leugnet die Existenz Gottes.",
+      "exampleTranslation": "Ateizm, Tanrı'nın varlığını reddeder.",
+      "synonyms": [
+        "die Gottlosigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Immanenz",
+      "turkish": "içkinlik",
+      "example": "Die Immanenz sieht das Göttliche in der Welt selbst.",
+      "exampleTranslation": "İçkinlik, ilahi olanı dünyanın kendisinde görür.",
+      "synonyms": [
+        "die Diesseitigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Ehrfurcht",
+      "turkish": "huşu / derin saygı",
+      "example": "Vor dem Heiligen empfand er tiefe Ehrfurcht.",
+      "exampleTranslation": "Kutsal olanın karşısında derin bir huşu duydu.",
+      "synonyms": [
+        "die Andacht",
+        "die Scheu"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Erlösung",
+      "turkish": "kurtuluş / selamet",
+      "example": "Der Glaube verspricht den Menschen Erlösung.",
+      "exampleTranslation": "İnanç, insanlara kurtuluş vaat eder.",
+      "synonyms": [
+        "die Rettung",
+        "das Heil"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Zweifel",
+      "turkish": "şüphe / kuşku",
+      "example": "Der Zweifel an Gott begleitet viele Gläubige.",
+      "exampleTranslation": "Tanrı'ya dair şüphe birçok inananı izler.",
+      "synonyms": [
+        "die Skepsis",
+        "das Misstrauen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Frömmigkeit",
+      "turkish": "dindarlık / takva",
+      "example": "Ihre Frömmigkeit zeigt sich im täglichen Gebet.",
+      "exampleTranslation": "Dindarlığı, günlük duada kendini gösterir.",
+      "synonyms": [
+        "die Gläubigkeit",
+        "die Religiosität"
+      ],
+      "level": "C1"
+    }
+  ]
+}

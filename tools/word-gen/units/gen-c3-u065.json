@@ -1,0 +1,162 @@
+{
+  "kind": "gen",
+  "unitId": 65,
+  "categoryId": 3,
+  "number": 6,
+  "title": "Goethe B1 — Çevre ve İklim",
+  "theme": "Çevre koruma, iklim değişikliği, geri dönüşüm ve sürdürülebilirlik temalı kelimeler. Sınavlarda sık çıkan çevre tartışmaları bağlamı.",
+  "firstWordId": 961,
+  "words": [
+    {
+      "german": "der Klimawandel",
+      "turkish": "iklim değişikliği",
+      "example": "Der Klimawandel bedroht viele Tierarten.",
+      "exampleTranslation": "İklim değişikliği birçok hayvan türünü tehdit ediyor.",
+      "synonyms": [
+        "die Klimaveränderung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Mülltrennung",
+      "turkish": "atık ayırma / çöp ayırma",
+      "example": "Mülltrennung ist in Deutschland sehr wichtig.",
+      "exampleTranslation": "Atık ayırma Almanya'da çok önemlidir.",
+      "synonyms": [
+        "die Abfalltrennung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Verschmutzung",
+      "turkish": "kirlilik / kirletme",
+      "example": "Die Verschmutzung der Meere nimmt zu.",
+      "exampleTranslation": "Denizlerin kirliliği artıyor.",
+      "synonyms": [
+        "die Verunreinigung",
+        "die Kontamination"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Klimaschutz",
+      "turkish": "iklim koruma",
+      "example": "Wir müssen mehr für den Klimaschutz tun.",
+      "exampleTranslation": "İklim koruma için daha çok şey yapmalıyız.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "die Energie",
+      "turkish": "enerji",
+      "example": "Sonnenkollektoren liefern saubere Energie.",
+      "exampleTranslation": "Güneş panelleri temiz enerji sağlar.",
+      "synonyms": [
+        "der Strom"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Erderwärmung",
+      "turkish": "küresel ısınma",
+      "example": "Die Erderwärmung lässt die Gletscher schmelzen.",
+      "exampleTranslation": "Küresel ısınma buzulları eritiyor.",
+      "synonyms": [
+        "die globale Erwärmung",
+        "die Erderhitzung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Treibhauseffekt",
+      "turkish": "sera etkisi",
+      "example": "Der Treibhauseffekt erhöht die Temperaturen weltweit.",
+      "exampleTranslation": "Sera etkisi dünya çapında sıcaklıkları yükseltir.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "die Wiederverwertung",
+      "turkish": "geri dönüşüm",
+      "example": "Die Wiederverwertung von Plastik schont Ressourcen.",
+      "exampleTranslation": "Plastiğin geri dönüşümü kaynakları korur.",
+      "synonyms": [
+        "das Recycling",
+        "die Wiederaufbereitung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Ressource",
+      "turkish": "kaynak",
+      "example": "Wasser ist eine wertvolle Ressource.",
+      "exampleTranslation": "Su değerli bir kaynaktır.",
+      "synonyms": [
+        "der Rohstoff",
+        "das Hilfsmittel"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Schadstoff",
+      "turkish": "zararlı madde / kirletici",
+      "example": "Autos stoßen viele Schadstoffe aus.",
+      "exampleTranslation": "Arabalar çok zararlı madde salar.",
+      "synonyms": [
+        "der Giftstoff"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die erneuerbare Energie",
+      "turkish": "yenilenebilir enerji",
+      "example": "Erneuerbare Energien ersetzen nach und nach die Kohle.",
+      "exampleTranslation": "Yenilenebilir enerjiler kömürün yerini yavaş yavaş alıyor.",
+      "synonyms": [
+        "die regenerative Energie",
+        "die Ökoenergie"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Artenvielfalt",
+      "turkish": "biyoçeşitlilik / tür çeşitliliği",
+      "example": "Der Regenwald beherbergt eine große Artenvielfalt.",
+      "exampleTranslation": "Yağmur ormanı büyük bir tür çeşitliliği barındırır.",
+      "synonyms": [
+        "die Biodiversität",
+        "die Artenfülle"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der ökologische Fußabdruck",
+      "turkish": "ekolojik ayak izi",
+      "example": "Fliegen vergrößert deinen ökologischen Fußabdruck.",
+      "exampleTranslation": "Uçmak ekolojik ayak izini büyütür.",
+      "synonyms": [
+        "der CO2-Fußabdruck"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Kreislaufwirtschaft",
+      "turkish": "döngüsel ekonomi",
+      "example": "Die Kreislaufwirtschaft vermeidet unnötigen Abfall.",
+      "exampleTranslation": "Döngüsel ekonomi gereksiz atığı önler.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "der Raubbau",
+      "turkish": "aşırı sömürü / talan",
+      "example": "Der Raubbau an der Natur hat schwerwiegende Folgen.",
+      "exampleTranslation": "Doğanın talan edilmesinin ağır sonuçları vardır.",
+      "synonyms": [
+        "die Übernutzung",
+        "die Ausbeutung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

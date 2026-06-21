@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 146,
+  "categoryId": 8,
+  "number": 6,
+  "title": "Vücut ve Beden Deyimleri",
+  "theme": "Beden organlarıyla kurulan deyimler; el, baş, kalp, göz ve burun üzerinden duygu, tutum ve davranış anlatan ifadeler.",
+  "firstWordId": 2176,
+  "words": [
+    {
+      "german": "Hand und Fuß haben",
+      "turkish": "tutarlı/sağlam olmak / mantıklı olmak",
+      "example": "Sein Plan hat wirklich Hand und Fuß.",
+      "exampleTranslation": "Onun planı gerçekten tutarlı ve sağlam.",
+      "synonyms": [
+        "durchdacht sein",
+        "schlüssig sein"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Nase voll haben",
+      "turkish": "bıkmak / gına gelmek",
+      "example": "Ich habe die Nase voll von seinen Ausreden.",
+      "exampleTranslation": "Onun bahanelerinden gına geldi bana.",
+      "synonyms": [
+        "genug haben",
+        "satthaben"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "ein Auge zudrücken",
+      "turkish": "göz yummak / görmezden gelmek",
+      "example": "Der Lehrer drückte bei dem Fehler ein Auge zu.",
+      "exampleTranslation": "Öğretmen bu hataya göz yumdu.",
+      "synonyms": [
+        "nachsichtig sein",
+        "übersehen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "den Mund halten",
+      "turkish": "çenesini tutmak / susmak",
+      "example": "Halt bitte den Mund, ich muss mich konzentrieren.",
+      "exampleTranslation": "Lütfen sus, konsantre olmam gerekiyor.",
+      "synonyms": [
+        "schweigen",
+        "still sein"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "kalte Füße bekommen",
+      "turkish": "korkup vazgeçmek / cesareti kırılmak",
+      "example": "Kurz vor der Hochzeit bekam er kalte Füße.",
+      "exampleTranslation": "Düğünden hemen önce korkup vazgeçti.",
+      "synonyms": [
+        "zurückschrecken",
+        "den Mut verlieren"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "jemandem die kalte Schulter zeigen",
+      "turkish": "birine soğuk davranmak / yüz vermemek",
+      "example": "Seit dem Streit zeigt sie ihm die kalte Schulter.",
+      "exampleTranslation": "Kavgadan beri ona soğuk davranıyor.",
+      "synonyms": [
+        "abweisen",
+        "ignorieren"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "sich etwas aus den Fingern saugen",
+      "turkish": "uydurmak / yoktan icat etmek",
+      "example": "Diese Geschichte hat er sich aus den Fingern gesaugt.",
+      "exampleTranslation": "Bu hikâyeyi tamamen uydurdu.",
+      "synonyms": [
+        "erfinden",
+        "frei erfinden"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Stirn runzeln",
+      "turkish": "kaşlarını çatmak / alnını kırıştırmak",
+      "example": "Beim Lesen des Briefes runzelte er die Stirn.",
+      "exampleTranslation": "Mektubu okurken kaşlarını çattı.",
+      "synonyms": [
+        "die Augenbrauen hochziehen",
+        "missbilligend schauen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "Haare auf den Zähnen haben",
+      "turkish": "dik başlı/sert mizaçlı olmak / kendini ezdirmemek",
+      "example": "Die neue Chefin hat Haare auf den Zähnen.",
+      "exampleTranslation": "Yeni patron oldukça sert ve dik başlı biri.",
+      "synonyms": [
+        "resolut sein",
+        "durchsetzungsstark sein"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "jemandem den Kopf verdrehen",
+      "turkish": "birinin aklını başından almak / kendine âşık etmek",
+      "example": "Sie hat ihm völlig den Kopf verdreht.",
+      "exampleTranslation": "Onun aklını tamamen başından aldı.",
+      "synonyms": [
+        "betören",
+        "verzaubern"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "ganz Ohr sein",
+      "turkish": "can kulağıyla dinlemek / tüm dikkatini vermek",
+      "example": "Erzähl ruhig weiter, ich bin ganz Ohr.",
+      "exampleTranslation": "Anlatmaya devam et, seni can kulağıyla dinliyorum.",
+      "synonyms": [
+        "aufmerksam zuhören",
+        "gespannt lauschen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Zähne zusammenbeißen",
+      "turkish": "dişini sıkmak / metanetle dayanmak",
+      "example": "Beim Training muss man oft die Zähne zusammenbeißen.",
+      "exampleTranslation": "Antrenmanda çoğu zaman dişini sıkman gerekir.",
+      "synonyms": [
+        "durchhalten",
+        "tapfer ertragen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "Hals über Kopf",
+      "turkish": "apar topar / aceleyle ve düşünmeden",
+      "example": "Sie verließ Hals über Kopf das Land.",
+      "exampleTranslation": "Apar topar ülkeyi terk etti.",
+      "synonyms": [
+        "überstürzt",
+        "kopflos"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "jemandem die Hände binden",
+      "turkish": "birinin elini kolunu bağlamak / hareket alanını kısıtlamak",
+      "example": "Die strengen Regeln binden uns die Hände.",
+      "exampleTranslation": "Katı kurallar elimizi kolumuzu bağlıyor.",
+      "synonyms": [
+        "lähmen",
+        "handlungsunfähig machen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "ins Auge fassen",
+      "turkish": "göz önünde bulundurmak / planlamak",
+      "example": "Wir fassen einen Umzug nach München ins Auge.",
+      "exampleTranslation": "Münih'e taşınmayı planlıyoruz.",
+      "synonyms": [
+        "erwägen",
+        "in Betracht ziehen"
+      ],
+      "level": "C1"
+    }
+  ]
+}

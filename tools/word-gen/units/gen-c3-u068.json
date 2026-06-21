@@ -1,0 +1,175 @@
+{
+  "kind": "gen",
+  "unitId": 68,
+  "categoryId": 3,
+  "number": 9,
+  "title": "Goethe B1 — Eğitim ve Öğrenim",
+  "theme": "Okul, üniversite, kurslar ve öğrenme yöntemleri temalı kelimeler. Eğitim hayatı ve dil öğrenimi üzerine konuşma bağlamları.",
+  "firstWordId": 1006,
+  "words": [
+    {
+      "german": "der Unterricht",
+      "turkish": "ders",
+      "example": "Der Unterricht beginnt morgens um acht Uhr.",
+      "exampleTranslation": "Ders sabah saat sekizde başlıyor.",
+      "synonyms": [
+        "die Lehrstunde",
+        "die Lektion"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Klassenzimmer",
+      "turkish": "sınıf (oda)",
+      "example": "Im Klassenzimmer hängt eine große Landkarte.",
+      "exampleTranslation": "Sınıfta büyük bir harita asılı.",
+      "synonyms": [
+        "der Klassenraum",
+        "der Unterrichtsraum"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Zeugnis",
+      "turkish": "karne / belge",
+      "example": "Am Ende des Schuljahres bekommen wir ein Zeugnis.",
+      "exampleTranslation": "Okul yılının sonunda bir karne alıyoruz.",
+      "synonyms": [
+        "das Schulzeugnis",
+        "die Bescheinigung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Stundenplan",
+      "turkish": "ders programı",
+      "example": "Unser Stundenplan ändert sich jede Woche.",
+      "exampleTranslation": "Ders programımız her hafta değişiyor.",
+      "synonyms": [
+        "der Lehrplan",
+        "der Wochenplan"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Klassenarbeit",
+      "turkish": "yazılı sınav (sınıfta)",
+      "example": "Morgen schreiben wir eine Klassenarbeit in Mathe.",
+      "exampleTranslation": "Yarın matematikten yazılı sınav yapacağız.",
+      "synonyms": [
+        "der Test",
+        "die Schularbeit"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Stipendium",
+      "turkish": "burs",
+      "example": "Sie hat ein Stipendium für ihr Studium bekommen.",
+      "exampleTranslation": "Öğrenimi için bir burs aldı.",
+      "synonyms": [
+        "die Studienbeihilfe",
+        "die Förderung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Vorlesung",
+      "turkish": "üniversite dersi (anlatım)",
+      "example": "Die Vorlesung über Geschichte war sehr spannend.",
+      "exampleTranslation": "Tarih dersi çok ilgi çekiciydi.",
+      "synonyms": [
+        "der Vortrag",
+        "die Lehrveranstaltung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Seminar",
+      "turkish": "seminer",
+      "example": "Im Seminar diskutieren wir wissenschaftliche Texte.",
+      "exampleTranslation": "Seminerde bilimsel metinleri tartışıyoruz.",
+      "synonyms": [
+        "der Kurs",
+        "die Übung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Hochschule",
+      "turkish": "yüksekokul / üniversite",
+      "example": "Nach dem Abitur möchte sie an einer Hochschule studieren.",
+      "exampleTranslation": "Liseden sonra bir yüksekokulda okumak istiyor.",
+      "synonyms": [
+        "die Fachhochschule",
+        "die Akademie"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Studiengang",
+      "turkish": "bölüm / öğrenim programı",
+      "example": "Welcher Studiengang interessiert dich am meisten?",
+      "exampleTranslation": "Hangi bölüm seni en çok ilgilendiriyor?",
+      "synonyms": [
+        "das Studienfach",
+        "die Fachrichtung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Immatrikulation",
+      "turkish": "üniversiteye kayıt",
+      "example": "Die Immatrikulation erfolgt vor dem ersten Semester.",
+      "exampleTranslation": "Üniversiteye kayıt ilk dönemden önce yapılır.",
+      "synonyms": [
+        "die Einschreibung",
+        "die Anmeldung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Hochschulreife",
+      "turkish": "üniversiteye giriş yeterliliği",
+      "example": "Mit dem Abitur erwirbt man die allgemeine Hochschulreife.",
+      "exampleTranslation": "Abitur ile genel üniversite giriş yeterliliği kazanılır.",
+      "synonyms": [
+        "die Studienberechtigung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Eigenständigkeit",
+      "turkish": "bağımsızlık / özerklik",
+      "example": "Beim Lernen ist Eigenständigkeit besonders wichtig.",
+      "exampleTranslation": "Öğrenirken bağımsızlık özellikle önemlidir.",
+      "synonyms": [
+        "die Selbstständigkeit",
+        "die Autonomie"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Fachwissen",
+      "turkish": "uzmanlık bilgisi",
+      "example": "Für diesen Beruf braucht man fundiertes Fachwissen.",
+      "exampleTranslation": "Bu meslek için sağlam uzmanlık bilgisi gerekir.",
+      "synonyms": [
+        "die Sachkenntnis",
+        "die Expertise"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Vertiefung",
+      "turkish": "derinleştirme / uzmanlaşma",
+      "example": "Im Master folgt eine Vertiefung des Wissens.",
+      "exampleTranslation": "Yüksek lisansta bilginin derinleştirilmesi gelir.",
+      "synonyms": [
+        "die Spezialisierung",
+        "die Schwerpunktbildung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

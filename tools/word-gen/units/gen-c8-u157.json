@@ -1,0 +1,174 @@
+{
+  "kind": "gen",
+  "unitId": 157,
+  "categoryId": 8,
+  "number": 17,
+  "title": "Şans ve Kader Deyimleri",
+  "theme": "Talih, şans ve kaderle ilgili deyimler; iyi/kötü şans, fırsat, risk ve tesadüf üzerine mecazi ifadeler.",
+  "firstWordId": 2341,
+  "words": [
+    {
+      "german": "das Glück",
+      "turkish": "şans / talih / mutluluk",
+      "example": "Beim Spiel hatte er großes Glück.",
+      "exampleTranslation": "Oyunda büyük şansı vardı.",
+      "synonyms": [
+        "das Wohlergehen",
+        "die Fortune"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Pech",
+      "turkish": "şanssızlık / aksilik",
+      "example": "So ein Pech, der Zug ist gerade weg!",
+      "exampleTranslation": "Ne aksilik, tren az önce gitti!",
+      "synonyms": [
+        "das Missgeschick",
+        "das Unglück"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Zufall",
+      "turkish": "tesadüf / rastlantı",
+      "example": "Wir haben uns durch puren Zufall getroffen.",
+      "exampleTranslation": "Tamamen tesadüf eseri karşılaştık.",
+      "synonyms": [
+        "der Glücksfall"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Gelegenheit",
+      "turkish": "fırsat / olanak",
+      "example": "Du solltest diese Gelegenheit nicht verpassen.",
+      "exampleTranslation": "Bu fırsatı kaçırmamalısın.",
+      "synonyms": [
+        "die Chance",
+        "der Anlass"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Risiko",
+      "turkish": "risk / tehlike",
+      "example": "Er ist bereit, ein großes Risiko einzugehen.",
+      "exampleTranslation": "Büyük bir riski göze almaya hazır.",
+      "synonyms": [
+        "die Gefahr",
+        "das Wagnis"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Schicksal",
+      "turkish": "kader / alın yazısı / kısmet",
+      "example": "Niemand kann seinem Schicksal entkommen.",
+      "exampleTranslation": "Kimse kaderinden kaçamaz.",
+      "synonyms": [
+        "das Verhängnis",
+        "die Vorsehung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "glücklicherweise",
+      "turkish": "şükür ki / iyi ki / bereket versin",
+      "example": "Glücklicherweise blieb bei dem Unfall niemand verletzt.",
+      "exampleTranslation": "Şükür ki kazada kimse yaralanmadı.",
+      "synonyms": [
+        "zum Glück",
+        "erfreulicherweise"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "riskieren",
+      "turkish": "riske atmak / göze almak",
+      "example": "Er riskierte sein ganzes Geld beim Wetten.",
+      "exampleTranslation": "Tüm parasını bahiste riske attı.",
+      "synonyms": [
+        "wagen",
+        "aufs Spiel setzen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Wagnis",
+      "turkish": "riskli girişim / cüret",
+      "example": "Diese Investition war ein großes Wagnis.",
+      "exampleTranslation": "Bu yatırım büyük bir riskli girişimdi.",
+      "synonyms": [
+        "das Risiko",
+        "das Abenteuer"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "Glück im Unglück haben",
+      "turkish": "kötü günde şanslı olmak / kazadan ucuz kurtulmak",
+      "example": "Beim Sturz hatte sie Glück im Unglück.",
+      "exampleTranslation": "Düşerken kazadan ucuz kurtuldu.",
+      "synonyms": [
+        "noch einmal davonkommen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "auf gut Glück",
+      "turkish": "şansa bağlı olarak / rastgele / Allah'a emanet",
+      "example": "Wir fuhren auf gut Glück in die Stadt.",
+      "exampleTranslation": "Şansa bağlı olarak şehre gittik.",
+      "synonyms": [
+        "aufs Geratewohl",
+        "blindlings"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Fügung",
+      "turkish": "kader cilvesi / takdir / kısmet",
+      "example": "Es war eine glückliche Fügung des Schicksals.",
+      "exampleTranslation": "Bu, kaderin mutlu bir cilvesiydi.",
+      "synonyms": [
+        "das Schicksal",
+        "die Vorsehung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "den Vogel abschießen",
+      "turkish": "turnayı gözünden vurmak / herkesi geçmek",
+      "example": "Mit seiner Idee hat er den Vogel abgeschossen.",
+      "exampleTranslation": "Fikriyle herkesi geride bıraktı.",
+      "synonyms": [
+        "alle übertreffen",
+        "den Höhepunkt erreichen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Blatt wendet sich",
+      "turkish": "talih döner / işler tersine döner",
+      "example": "Plötzlich wendete sich das Blatt zu seinen Gunsten.",
+      "exampleTranslation": "Aniden talih onun lehine döndü.",
+      "synonyms": [
+        "die Lage ändert sich",
+        "das Glück wechselt"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "alles auf eine Karte setzen",
+      "turkish": "her şeyi tek kâğıda oynamak / hepsini riske atmak",
+      "example": "Er setzte bei dem Projekt alles auf eine Karte.",
+      "exampleTranslation": "Projede her şeyini tek bir karta oynadı.",
+      "synonyms": [
+        "alles riskieren",
+        "va banque spielen"
+      ],
+      "level": "C1"
+    }
+  ]
+}

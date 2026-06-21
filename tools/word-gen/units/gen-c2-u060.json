@@ -1,0 +1,175 @@
+{
+  "kind": "gen",
+  "unitId": 60,
+  "categoryId": 2,
+  "number": 17,
+  "title": "Dolaylı Anlatım (Konjunktiv I)",
+  "theme": "Başkasının sözünü aktarmada kullanılan Konjunktiv I; haber dili, dolaylı soru ve aktarma fiilleri.",
+  "firstWordId": 886,
+  "words": [
+    {
+      "german": "die Frage",
+      "turkish": "soru",
+      "example": "Er stellte mir eine schwierige Frage.",
+      "exampleTranslation": "Bana zor bir soru sordu.",
+      "synonyms": [
+        "die Anfrage"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Antwort",
+      "turkish": "cevap / yanıt",
+      "example": "Seine Antwort war sehr höflich.",
+      "exampleTranslation": "Cevabı çok nazikti.",
+      "synonyms": [
+        "die Erwiderung",
+        "die Reaktion"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Nachricht",
+      "turkish": "haber / mesaj",
+      "example": "Die Nachricht kam heute Morgen.",
+      "exampleTranslation": "Haber bu sabah geldi.",
+      "synonyms": [
+        "die Meldung",
+        "die Information"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Zeitung",
+      "turkish": "gazete",
+      "example": "Laut der Zeitung steigt der Preis.",
+      "exampleTranslation": "Gazeteye göre fiyat yükseliyor.",
+      "synonyms": [
+        "das Blatt",
+        "die Presse"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "erzählen",
+      "turkish": "anlatmak / aktarmak",
+      "example": "Sie erzählt, sie sei sehr müde.",
+      "exampleTranslation": "Çok yorgun olduğunu anlatıyor.",
+      "synonyms": [
+        "berichten",
+        "schildern"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Bericht",
+      "turkish": "rapor / haber metni",
+      "example": "Der Bericht erschien in der Zeitung.",
+      "exampleTranslation": "Rapor gazetede yayımlandı.",
+      "synonyms": [
+        "die Reportage",
+        "die Darstellung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "behaupten",
+      "turkish": "iddia etmek / öne sürmek",
+      "example": "Er behauptet, er habe nichts gewusst.",
+      "exampleTranslation": "Hiçbir şey bilmediğini iddia ediyor.",
+      "synonyms": [
+        "versichern",
+        "bekräftigen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "angeblich",
+      "turkish": "sözde / iddiaya göre",
+      "example": "Er ist angeblich krank geworden.",
+      "exampleTranslation": "İddiaya göre hastalanmış.",
+      "synonyms": [
+        "vermeintlich",
+        "vorgeblich"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Aussage",
+      "turkish": "ifade / beyan",
+      "example": "Ihre Aussage war völlig glaubwürdig.",
+      "exampleTranslation": "İfadesi tamamen inandırıcıydı.",
+      "synonyms": [
+        "die Äußerung",
+        "die Erklärung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "betonen",
+      "turkish": "vurgulamak / altını çizmek",
+      "example": "Der Minister betont, die Lage sei stabil.",
+      "exampleTranslation": "Bakan, durumun istikrarlı olduğunu vurguluyor.",
+      "synonyms": [
+        "hervorheben",
+        "unterstreichen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Quelle",
+      "turkish": "kaynak",
+      "example": "Laut einer zuverlässigen Quelle stimmt das.",
+      "exampleTranslation": "Güvenilir bir kaynağa göre bu doğru.",
+      "synonyms": [
+        "der Ursprung",
+        "der Beleg"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Wiedergabe",
+      "turkish": "aktarım / nakil",
+      "example": "Die indirekte Wiedergabe verlangt Konjunktiv.",
+      "exampleTranslation": "Dolaylı aktarım dilek kipi gerektirir.",
+      "synonyms": [
+        "die Darstellung",
+        "die Reproduktion"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "verlauten",
+      "turkish": "açıklanmak / duyurulmak",
+      "example": "Aus dem Ministerium verlautet, alles sei geregelt.",
+      "exampleTranslation": "Bakanlıktan her şeyin halledildiği bildiriliyor.",
+      "synonyms": [
+        "bekanntgeben",
+        "verkünden"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Konjunktion",
+      "turkish": "bağlaç",
+      "example": "Die Konjunktion „ob“ leitet indirekte Fragen ein.",
+      "exampleTranslation": "„ob“ bağlacı dolaylı soruları başlatır.",
+      "synonyms": [
+        "das Bindewort",
+        "der Konnektor"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "mutmaßlich",
+      "turkish": "tahminen / zanlı (olarak)",
+      "example": "Der mutmaßliche Täter sei geflohen, heißt es.",
+      "exampleTranslation": "Zanlının kaçtığı söyleniyor.",
+      "synonyms": [
+        "vermutlich",
+        "wahrscheinlich"
+      ],
+      "level": "C1"
+    }
+  ]
+}

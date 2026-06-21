@@ -1,0 +1,154 @@
+{
+  "kind": "gen",
+  "unitId": 97,
+  "categoryId": 5,
+  "number": 6,
+  "title": "Postane ve Kargo",
+  "theme": "Posta gönderme, paket alma ve kargo takibiyle ilgili günlük kelimeler. Mektup, pul, paket ve teslimat işlemlerinde geçen ifadeler.",
+  "firstWordId": 1441,
+  "words": [
+    {
+      "german": "die Post",
+      "turkish": "posta / postane",
+      "example": "Ich gehe zur Post.",
+      "exampleTranslation": "Postaneye gidiyorum.",
+      "synonyms": [
+        "das Postamt"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Brief",
+      "turkish": "mektup",
+      "example": "Ich schreibe einen Brief an meine Oma.",
+      "exampleTranslation": "Anneanneme bir mektup yazıyorum.",
+      "synonyms": [
+        "das Schreiben"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Paket",
+      "turkish": "paket / koli",
+      "example": "Das Paket ist heute angekommen.",
+      "exampleTranslation": "Paket bugün geldi.",
+      "synonyms": [
+        "die Sendung"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Adresse",
+      "turkish": "adres",
+      "example": "Schreib bitte die Adresse hier.",
+      "exampleTranslation": "Lütfen adresi buraya yaz.",
+      "synonyms": [
+        "die Anschrift"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Briefmarke",
+      "turkish": "pul",
+      "example": "Ich klebe eine Briefmarke auf den Brief.",
+      "exampleTranslation": "Mektubun üzerine bir pul yapıştırıyorum.",
+      "synonyms": [
+        "das Porto"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Postleitzahl",
+      "turkish": "posta kodu",
+      "example": "Die Postleitzahl steht vor dem Ort.",
+      "exampleTranslation": "Posta kodu şehir adından önce gelir.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "der Briefkasten",
+      "turkish": "posta kutusu",
+      "example": "Ich werfe den Brief in den Briefkasten.",
+      "exampleTranslation": "Mektubu posta kutusuna atıyorum.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "das Päckchen",
+      "turkish": "küçük paket / koli",
+      "example": "Das Päckchen ist leichter als ein Paket.",
+      "exampleTranslation": "Küçük paket, normal paketten daha hafiftir.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "der Umschlag",
+      "turkish": "zarf",
+      "example": "Der Brief liegt im Umschlag.",
+      "exampleTranslation": "Mektup zarfın içinde.",
+      "synonyms": [
+        "das Kuvert"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Empfänger",
+      "turkish": "alıcı",
+      "example": "Der Empfänger wohnt in Berlin.",
+      "exampleTranslation": "Alıcı Berlin'de oturuyor.",
+      "synonyms": [
+        "der Adressat"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "abholen",
+      "turkish": "almak / teslim almak",
+      "example": "Ich muss das Paket morgen abholen.",
+      "exampleTranslation": "Paketi yarın almam gerekiyor.",
+      "synonyms": [
+        "entgegennehmen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Absender",
+      "turkish": "gönderici",
+      "example": "Der Absender steht oben links.",
+      "exampleTranslation": "Gönderici sol üstte yazıyor.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "die Sendung",
+      "turkish": "gönderi",
+      "example": "Ich verfolge meine Sendung online.",
+      "exampleTranslation": "Gönderimi internetten takip ediyorum.",
+      "synonyms": [
+        "die Lieferung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Zustellung",
+      "turkish": "teslimat",
+      "example": "Die Zustellung erfolgt am Montag.",
+      "exampleTranslation": "Teslimat pazartesi günü yapılacak.",
+      "synonyms": [
+        "die Lieferung",
+        "die Auslieferung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Gewicht",
+      "turkish": "ağırlık",
+      "example": "Das Gewicht des Pakets bestimmt das Porto.",
+      "exampleTranslation": "Paketin ağırlığı gönderi ücretini belirler.",
+      "synonyms": [
+        "die Schwere"
+      ],
+      "level": "B1"
+    }
+  ]
+}

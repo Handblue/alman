@@ -1,0 +1,172 @@
+{
+  "kind": "gen",
+  "unitId": 149,
+  "categoryId": 8,
+  "number": 9,
+  "title": "Yemek ve İçecek Deyimleri",
+  "theme": "Yiyecek, içecek ve mutfakla kurulan deyimler; ekmek, çorba, tuz ve elma gibi gıdalar üzerinden yaşam durumları anlatımı.",
+  "firstWordId": 2221,
+  "words": [
+    {
+      "german": "die Extrawurst",
+      "turkish": "ayrıcalık / özel muamele",
+      "example": "Du willst wohl immer eine Extrawurst.",
+      "exampleTranslation": "Sen herhalde hep özel muamele istiyorsun.",
+      "synonyms": [
+        "die Sonderbehandlung",
+        "die Ausnahme"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Suppe auslöffeln",
+      "turkish": "açtığı belaya katlanmak / sorumluluğu üstlenmek",
+      "example": "Jetzt musst du die Suppe selbst auslöffeln.",
+      "exampleTranslation": "Şimdi bu işin sorumluluğunu kendin üstlenmek zorundasın.",
+      "synonyms": [
+        "die Folgen tragen",
+        "geradestehen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Apfel der Zwietracht",
+      "turkish": "anlaşmazlık / nifak tohumu",
+      "example": "Das Erbe wurde zum Apfel der Zwietracht.",
+      "exampleTranslation": "Miras bir anlaşmazlık konusu hâline geldi.",
+      "synonyms": [
+        "der Streitpunkt",
+        "der Zankapfel"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "alles in Butter",
+      "turkish": "her şey yolunda / her şey tıkırında",
+      "example": "Keine Sorge, bei uns ist alles in Butter.",
+      "exampleTranslation": "Merak etme, bizde her şey yolunda.",
+      "synonyms": [
+        "alles bestens",
+        "alles in Ordnung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das fünfte Rad am Wagen sein",
+      "turkish": "fazlalık olmak / beşinci tekerlek olmak",
+      "example": "In der Gruppe fühlte ich mich wie das fünfte Rad am Wagen.",
+      "exampleTranslation": "Grupta kendimi fazlalık gibi hissettim.",
+      "synonyms": [
+        "überflüssig sein"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "es geht um die Wurst",
+      "turkish": "ya hep ya hiç / her şey buna bağlı",
+      "example": "Im Finale geht es jetzt um die Wurst.",
+      "exampleTranslation": "Finalde artık her şey buna bağlı.",
+      "synonyms": [
+        "es kommt auf alles an",
+        "jetzt oder nie"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das ist mir Wurst",
+      "turkish": "umurumda değil / bana fark etmez",
+      "example": "Ob wir gehen oder bleiben, das ist mir Wurst.",
+      "exampleTranslation": "Gitsek de kalsak da bana fark etmez.",
+      "synonyms": [
+        "das ist mir gleichgültig"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "seinen Senf dazugeben",
+      "turkish": "lafa karışmak / sözünü sokuşturmak",
+      "example": "Er muss überall seinen Senf dazugeben.",
+      "exampleTranslation": "O her konuya lafını sokuşturmak zorunda.",
+      "synonyms": [
+        "sich einmischen",
+        "kommentieren"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "wie warme Semmeln weggehen",
+      "turkish": "kapış kapış gitmek / çok hızlı satılmak",
+      "example": "Die Tickets gingen weg wie warme Semmeln.",
+      "exampleTranslation": "Biletler kapış kapış gitti.",
+      "synonyms": [
+        "sich gut verkaufen",
+        "reißenden Absatz finden"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Haar in der Suppe suchen",
+      "turkish": "kılı kırk yarmak / kusur aramak",
+      "example": "Sie sucht immer das Haar in der Suppe.",
+      "exampleTranslation": "O hep kusur arar.",
+      "synonyms": [
+        "nörgeln",
+        "bemängeln"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Kirschen in Nachbars Garten",
+      "turkish": "komşunun bağı / başkasının nimeti daha çekici görünür",
+      "example": "Für ihn sind die Kirschen in Nachbars Garten immer süßer.",
+      "exampleTranslation": "Onun için komşunun nimeti hep daha tatlı görünür.",
+      "synonyms": [
+        "das Verbotene reizt"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "Öl ins Feuer gießen",
+      "turkish": "yangına körükle gitmek / alevlendirmek",
+      "example": "Mit dieser Bemerkung goss er nur Öl ins Feuer.",
+      "exampleTranslation": "Bu sözüyle yangına sadece körükle gitti.",
+      "synonyms": [
+        "anheizen",
+        "verschärfen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "für einen Apfel und ein Ei",
+      "turkish": "yok pahasına / çok ucuza",
+      "example": "Das alte Auto bekam er für einen Apfel und ein Ei.",
+      "exampleTranslation": "Eski arabayı yok pahasına aldı.",
+      "synonyms": [
+        "spottbillig",
+        "fast geschenkt"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "klein, aber fein",
+      "turkish": "küçük ama kaliteli / küçük ama hoş",
+      "example": "Unser Café ist klein, aber fein.",
+      "exampleTranslation": "Kafemiz küçük ama hoş.",
+      "synonyms": [
+        "bescheiden, aber gut"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "den Braten riechen",
+      "turkish": "işin farkına varmak / kokuyu almak",
+      "example": "Der Dieb roch den Braten und verschwand schnell.",
+      "exampleTranslation": "Hırsız işin farkına vardı ve hızla kayboldu.",
+      "synonyms": [
+        "Verdacht schöpfen",
+        "etwas ahnen"
+      ],
+      "level": "C1"
+    }
+  ]
+}

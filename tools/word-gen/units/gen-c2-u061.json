@@ -1,0 +1,169 @@
+{
+  "kind": "gen",
+  "unitId": 61,
+  "categoryId": 2,
+  "number": 18,
+  "title": "İsim-Fiil Birleşimleri",
+  "theme": "Resmî ve akademik dilde sık geçen Nomen-Verb-Verbindungen (kalıplaşmış isim-fiil öbekleri) ve işlev fiilli yapılar.",
+  "firstWordId": 901,
+  "words": [
+    {
+      "german": "die Frage",
+      "turkish": "soru",
+      "example": "Darf ich eine Frage stellen?",
+      "exampleTranslation": "Bir soru sorabilir miyim?",
+      "synonyms": [
+        "die Erkundigung"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Antwort",
+      "turkish": "cevap / yanıt",
+      "example": "Er gibt mir keine Antwort.",
+      "exampleTranslation": "Bana bir cevap vermiyor.",
+      "synonyms": [
+        "die Reaktion"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Hilfe",
+      "turkish": "yardım",
+      "example": "Vielen Dank für deine Hilfe.",
+      "exampleTranslation": "Yardımın için çok teşekkürler.",
+      "synonyms": [
+        "die Unterstützung"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Angst",
+      "turkish": "korku",
+      "example": "Das Kind hat Angst vor Hunden.",
+      "exampleTranslation": "Çocuk köpeklerden korkuyor.",
+      "synonyms": [
+        "die Furcht"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Entscheidung",
+      "turkish": "karar",
+      "example": "Wir müssen heute eine Entscheidung treffen.",
+      "exampleTranslation": "Bugün bir karar vermemiz gerekiyor.",
+      "synonyms": [
+        "der Entschluss",
+        "die Wahl"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Spaß",
+      "turkish": "eğlence / zevk",
+      "example": "Das Spiel macht mir großen Spaß.",
+      "exampleTranslation": "Bu oyun bana çok zevk veriyor.",
+      "synonyms": [
+        "das Vergnügen",
+        "die Freude"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Rede",
+      "turkish": "konuşma / nutuk",
+      "example": "Der Präsident hält eine wichtige Rede.",
+      "exampleTranslation": "Cumhurbaşkanı önemli bir konuşma yapıyor.",
+      "synonyms": [
+        "der Vortrag",
+        "die Ansprache"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Rücksicht",
+      "turkish": "saygı gösterme / dikkat etme",
+      "example": "Bitte nimm Rücksicht auf die Nachbarn.",
+      "exampleTranslation": "Lütfen komşulara karşı dikkatli ol.",
+      "synonyms": [
+        "die Achtsamkeit"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Maßnahme",
+      "turkish": "önlem / tedbir",
+      "example": "Die Regierung ergreift strenge Maßnahmen.",
+      "exampleTranslation": "Hükümet sıkı önlemler alıyor.",
+      "synonyms": [
+        "die Vorkehrung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Einfluss",
+      "turkish": "etki / nüfuz",
+      "example": "Die Medien üben großen Einfluss aus.",
+      "exampleTranslation": "Medya büyük bir etki uyguluyor.",
+      "synonyms": [
+        "die Auswirkung",
+        "die Einwirkung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Verfügung",
+      "turkish": "emir / tasarruf / kullanıma sunulma",
+      "example": "Die Unterlagen stehen Ihnen zur Verfügung.",
+      "exampleTranslation": "Belgeler kullanımınıza hazırdır.",
+      "synonyms": [
+        "die Anordnung",
+        "die Bereitstellung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Kritik",
+      "turkish": "eleştiri",
+      "example": "An dem Plan wurde scharfe Kritik geübt.",
+      "exampleTranslation": "Plana sert eleştiri yöneltildi.",
+      "synonyms": [
+        "der Tadel",
+        "die Beanstandung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Stellung",
+      "turkish": "tutum / pozisyon / mevki",
+      "example": "Der Minister nimmt zu den Vorwürfen Stellung.",
+      "exampleTranslation": "Bakan suçlamalara ilişkin tavır takınıyor.",
+      "synonyms": [
+        "die Position",
+        "die Haltung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Bezug",
+      "turkish": "atıf / ilişki / referans",
+      "example": "Sie nimmt Bezug auf den vorherigen Artikel.",
+      "exampleTranslation": "Önceki makaleye atıfta bulunuyor.",
+      "synonyms": [
+        "der Zusammenhang"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Betracht",
+      "turkish": "göz önünde bulundurma / dikkate alma",
+      "example": "Diese Option ziehen wir ernsthaft in Betracht.",
+      "exampleTranslation": "Bu seçeneği ciddi şekilde göz önünde bulunduruyoruz.",
+      "synonyms": [
+        "die Erwägung",
+        "die Berücksichtigung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

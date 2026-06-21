@@ -1,0 +1,173 @@
+{
+  "kind": "gen",
+  "unitId": 63,
+  "categoryId": 2,
+  "number": 20,
+  "title": "Sözcük Türetme ve Bağlaç İfadeleri",
+  "theme": "Almancada ön ek/son ekle sözcük türetme ve metin bağlayıcı (Konnektoren) ifadeler; isim, sıfat ve zarf türetme ile akıcı metin kurma.",
+  "firstWordId": 931,
+  "words": [
+    {
+      "german": "und",
+      "turkish": "ve",
+      "example": "Ich lese und schreibe gern.",
+      "exampleTranslation": "Okumayı ve yazmayı severim.",
+      "synonyms": [
+        "sowie"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "aber",
+      "turkish": "ama / fakat",
+      "example": "Es ist klein, aber schön.",
+      "exampleTranslation": "Küçük ama güzel.",
+      "synonyms": [
+        "jedoch",
+        "doch"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Freundschaft",
+      "turkish": "arkadaşlık / dostluk",
+      "example": "Unsere Freundschaft ist sehr wichtig.",
+      "exampleTranslation": "Arkadaşlığımız çok önemli.",
+      "synonyms": [
+        "die Kameradschaft"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "dann",
+      "turkish": "sonra / o zaman",
+      "example": "Erst esse ich, dann lerne ich.",
+      "exampleTranslation": "Önce yemek yerim, sonra çalışırım.",
+      "synonyms": [
+        "danach",
+        "anschließend"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "arbeitslos",
+      "turkish": "işsiz",
+      "example": "Mein Nachbar ist seit Januar arbeitslos.",
+      "exampleTranslation": "Komşum ocaktan beri işsiz.",
+      "synonyms": [
+        "erwerbslos",
+        "stellenlos"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Kindheit",
+      "turkish": "çocukluk",
+      "example": "Meine Kindheit war sehr glücklich.",
+      "exampleTranslation": "Çocukluğum çok mutluydu.",
+      "synonyms": [
+        "die Jugendzeit"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Gesundheit",
+      "turkish": "sağlık",
+      "example": "Deine Gesundheit ist das Wichtigste.",
+      "exampleTranslation": "Sağlığın en önemli şeydir.",
+      "synonyms": [
+        "das Wohlbefinden",
+        "die Verfassung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "unfreundlich",
+      "turkish": "kaba / dostça olmayan",
+      "example": "Der Kellner war heute sehr unfreundlich.",
+      "exampleTranslation": "Garson bugün çok kabaydı.",
+      "synonyms": [
+        "unhöflich",
+        "abweisend"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sinnvoll",
+      "turkish": "anlamlı / mantıklı",
+      "example": "Dein Vorschlag klingt wirklich sinnvoll.",
+      "exampleTranslation": "Önerin gerçekten mantıklı geliyor.",
+      "synonyms": [
+        "zweckmäßig",
+        "vernünftig"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "dennoch",
+      "turkish": "yine de / buna rağmen",
+      "example": "Es regnete, dennoch gingen wir spazieren.",
+      "exampleTranslation": "Yağmur yağdı, yine de yürüyüşe çıktık.",
+      "synonyms": [
+        "trotzdem",
+        "gleichwohl"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "folglich",
+      "turkish": "dolayısıyla / bunun sonucunda",
+      "example": "Er war krank, folglich blieb er zu Hause.",
+      "exampleTranslation": "Hastaydı, dolayısıyla evde kaldı.",
+      "synonyms": [
+        "somit",
+        "daher"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "unverständlich",
+      "turkish": "anlaşılmaz / anlaşılması güç",
+      "example": "Seine Erklärung war völlig unverständlich.",
+      "exampleTranslation": "Açıklaması tamamen anlaşılmazdı.",
+      "synonyms": [
+        "unklar",
+        "undurchschaubar"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "hingegen",
+      "turkish": "buna karşılık / oysa",
+      "example": "Er mag Tee, sie hingegen trinkt Kaffee.",
+      "exampleTranslation": "O çay sever, oysa o kahve içer.",
+      "synonyms": [
+        "dagegen",
+        "wohingegen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Verbundenheit",
+      "turkish": "bağlılık / yakınlık",
+      "example": "Sie fühlt eine tiefe Verbundenheit zur Heimat.",
+      "exampleTranslation": "Memleketine derin bir bağlılık hissediyor.",
+      "synonyms": [
+        "die Zugehörigkeit",
+        "die Loyalität"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "missverständlich",
+      "turkish": "yanlış anlaşılmaya açık / muğlak",
+      "example": "Die Formulierung im Vertrag ist missverständlich.",
+      "exampleTranslation": "Sözleşmedeki ifade yanlış anlaşılmaya açık.",
+      "synonyms": [
+        "zweideutig",
+        "mehrdeutig"
+      ],
+      "level": "C1"
+    }
+  ]
+}

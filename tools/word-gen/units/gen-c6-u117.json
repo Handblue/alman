@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 117,
+  "categoryId": 6,
+  "number": 10,
+  "title": "Psikoloji ve Bilişsel Bilimler",
+  "theme": "Psikoloji ve bilişsel bilim terminolojisi: zihinsel süreçler, davranış, kişilik ve psikolojik araştırma yöntemleri.",
+  "firstWordId": 1741,
+  "words": [
+    {
+      "german": "die Wahrnehmung",
+      "turkish": "algı / algılama",
+      "example": "Unsere Wahrnehmung kann uns leicht täuschen.",
+      "exampleTranslation": "Algımız bizi kolayca yanıltabilir.",
+      "synonyms": [
+        "die Sinneswahrnehmung",
+        "das Empfinden"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Gedächtnis",
+      "turkish": "hafıza / bellek",
+      "example": "Sein Gedächtnis für Zahlen ist erstaunlich.",
+      "exampleTranslation": "Sayılara olan hafızası şaşırtıcı.",
+      "synonyms": [
+        "die Erinnerung",
+        "das Erinnerungsvermögen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Verhalten",
+      "turkish": "davranış",
+      "example": "Sein aggressives Verhalten überraschte alle.",
+      "exampleTranslation": "Saldırgan davranışı herkesi şaşırttı.",
+      "synonyms": [
+        "die Verhaltensweise",
+        "das Benehmen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Reiz",
+      "turkish": "uyaran / uyarıcı",
+      "example": "Ein lauter Reiz löste eine Reaktion aus.",
+      "exampleTranslation": "Yüksek sesli bir uyaran tepki başlattı.",
+      "synonyms": [
+        "der Stimulus",
+        "der Auslöser"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Persönlichkeit",
+      "turkish": "kişilik / şahsiyet",
+      "example": "Ihre Persönlichkeit wirkt sehr offen.",
+      "exampleTranslation": "Kişiliği çok açık görünüyor.",
+      "synonyms": [
+        "der Charakter",
+        "das Wesen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Störung",
+      "turkish": "bozukluk / rahatsızlık",
+      "example": "Eine psychische Störung braucht professionelle Hilfe.",
+      "exampleTranslation": "Bir ruhsal bozukluk profesyonel yardım gerektirir.",
+      "synonyms": [
+        "die Erkrankung",
+        "die Beeinträchtigung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Belastung",
+      "turkish": "yük / stres / zorlanma",
+      "example": "Die seelische Belastung wurde immer größer.",
+      "exampleTranslation": "Ruhsal yük giderek arttı.",
+      "synonyms": [
+        "der Stress",
+        "die Anspannung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Bedürfnis",
+      "turkish": "ihtiyaç / gereksinim",
+      "example": "Jeder Mensch hat ein Bedürfnis nach Sicherheit.",
+      "exampleTranslation": "Her insanın güvenlik ihtiyacı vardır.",
+      "synonyms": [
+        "der Bedarf",
+        "das Verlangen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Kognition",
+      "turkish": "biliş",
+      "example": "Die Kognition umfasst Denken und Erinnern.",
+      "exampleTranslation": "Biliş, düşünmeyi ve hatırlamayı kapsar.",
+      "synonyms": [
+        "die Erkenntnisfähigkeit",
+        "die Denkleistung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Konditionierung",
+      "turkish": "koşullanma / şartlanma",
+      "example": "Pawlow erforschte die klassische Konditionierung.",
+      "exampleTranslation": "Pavlov klasik koşullanmayı araştırdı.",
+      "synonyms": [
+        "die Prägung",
+        "die Gewöhnung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Reife",
+      "turkish": "olgunluk / erginlik",
+      "example": "Emotionale Reife entwickelt sich mit der Zeit.",
+      "exampleTranslation": "Duygusal olgunluk zamanla gelişir.",
+      "synonyms": [
+        "die Mündigkeit",
+        "die Ausgereiftheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Antrieb",
+      "turkish": "dürtü / itki / motivasyon",
+      "example": "Ihm fehlt der innere Antrieb zum Lernen.",
+      "exampleTranslation": "Onda öğrenmek için içsel dürtü eksik.",
+      "synonyms": [
+        "die Motivation",
+        "der Ansporn"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Therapieansatz",
+      "turkish": "terapi yaklaşımı / tedavi yaklaşımı",
+      "example": "Dieser Therapieansatz beruht auf Gesprächen.",
+      "exampleTranslation": "Bu terapi yaklaşımı konuşmalara dayanır.",
+      "synonyms": [
+        "das Behandlungskonzept",
+        "die Behandlungsmethode"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Versuchsperson",
+      "turkish": "denek",
+      "example": "Jede Versuchsperson bekam dieselbe Aufgabe.",
+      "exampleTranslation": "Her denek aynı görevi aldı.",
+      "synonyms": [
+        "der Proband",
+        "die Testperson"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Auswertung",
+      "turkish": "değerlendirme / analiz",
+      "example": "Die Auswertung der Daten dauerte mehrere Wochen.",
+      "exampleTranslation": "Verilerin değerlendirilmesi birkaç hafta sürdü.",
+      "synonyms": [
+        "die Analyse",
+        "die Beurteilung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

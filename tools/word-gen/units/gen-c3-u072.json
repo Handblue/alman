@@ -1,0 +1,174 @@
+{
+  "kind": "gen",
+  "unitId": 72,
+  "categoryId": 3,
+  "number": 13,
+  "title": "Goethe B2 — Ekonomi ve Tüketim",
+  "theme": "Ekonomi, finans, tüketim alışkanlıkları ve pazar temalı B2 kelimeleri. Ekonomik gelişmeler hakkında tartışma bağlamı.",
+  "firstWordId": 1066,
+  "words": [
+    {
+      "german": "der Verbraucher",
+      "turkish": "tüketici",
+      "example": "Der Verbraucher achtet heute stärker auf Preise.",
+      "exampleTranslation": "Tüketici bugün fiyatlara daha çok dikkat ediyor.",
+      "synonyms": [
+        "der Konsument",
+        "der Kunde"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Einkommen",
+      "turkish": "gelir",
+      "example": "Sein Einkommen reicht kaum für die Miete.",
+      "exampleTranslation": "Geliri kiraya zar zor yetiyor.",
+      "synonyms": [
+        "der Verdienst",
+        "die Einkünfte"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Ware",
+      "turkish": "mal / emtia",
+      "example": "Die Ware wird morgen ins Lager geliefert.",
+      "exampleTranslation": "Mal yarın depoya teslim edilecek.",
+      "synonyms": [
+        "das Produkt",
+        "der Artikel"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Wirtschaft",
+      "turkish": "ekonomi / iktisat",
+      "example": "Die Wirtschaft wächst dieses Jahr nur langsam.",
+      "exampleTranslation": "Ekonomi bu yıl yalnızca yavaş büyüyor.",
+      "synonyms": [
+        "die Ökonomie",
+        "die Konjunktur"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Handel",
+      "turkish": "ticaret",
+      "example": "Der internationale Handel hat stark zugenommen.",
+      "exampleTranslation": "Uluslararası ticaret hızla arttı.",
+      "synonyms": [
+        "das Geschäft",
+        "der Warenverkehr"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Nachfrage",
+      "turkish": "talep",
+      "example": "Die Nachfrage nach Elektroautos steigt rasant.",
+      "exampleTranslation": "Elektrikli araçlara olan talep hızla yükseliyor.",
+      "synonyms": [
+        "der Bedarf",
+        "das Verlangen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Umsatz",
+      "turkish": "ciro / satış hasılatı",
+      "example": "Der Umsatz des Konzerns stieg um zehn Prozent.",
+      "exampleTranslation": "Şirketin cirosu yüzde on arttı.",
+      "synonyms": [
+        "der Erlös",
+        "die Einnahmen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Kaufkraft",
+      "turkish": "satın alma gücü",
+      "example": "Durch die Inflation sinkt die Kaufkraft der Bürger.",
+      "exampleTranslation": "Enflasyon yüzünden vatandaşların satın alma gücü düşüyor.",
+      "synonyms": [
+        "das Kaufvermögen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Schwankung",
+      "turkish": "dalgalanma / oynaklık",
+      "example": "Starke Schwankungen der Preise verunsichern die Anleger.",
+      "exampleTranslation": "Fiyatların güçlü dalgalanması yatırımcıları tedirgin ediyor.",
+      "synonyms": [
+        "die Volatilität",
+        "die Veränderung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Wohlstand",
+      "turkish": "refah / zenginlik",
+      "example": "Der Handel hat den Wohlstand des Landes gesteigert.",
+      "exampleTranslation": "Ticaret ülkenin refahını artırdı.",
+      "synonyms": [
+        "der Reichtum",
+        "die Prosperität"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Verschuldung",
+      "turkish": "borçlanma / borç yükü",
+      "example": "Die Verschuldung der Haushalte hat stark zugenommen.",
+      "exampleTranslation": "Hanelerin borçlanması büyük ölçüde arttı.",
+      "synonyms": [
+        "die Verbindlichkeit",
+        "die Überschuldung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Aufschwung",
+      "turkish": "canlanma / iktisadi yükseliş",
+      "example": "Nach der Krise folgte ein kräftiger Aufschwung.",
+      "exampleTranslation": "Krizden sonra güçlü bir canlanma geldi.",
+      "synonyms": [
+        "der Boom",
+        "die Erholung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Rückgang",
+      "turkish": "gerileme / düşüş",
+      "example": "Ein Rückgang der Exporte belastet die Industrie.",
+      "exampleTranslation": "İhracattaki bir gerileme sanayiyi zorluyor.",
+      "synonyms": [
+        "die Abnahme",
+        "der Einbruch"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Liquidität",
+      "turkish": "likidite / nakit gücü",
+      "example": "Die Bank achtet streng auf ihre Liquidität.",
+      "exampleTranslation": "Banka likiditesine sıkı sıkıya dikkat ediyor.",
+      "synonyms": [
+        "die Zahlungsfähigkeit",
+        "die Flüssigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Marktsättigung",
+      "turkish": "pazar doygunluğu",
+      "example": "Wegen der Marktsättigung sinken die Verkaufszahlen.",
+      "exampleTranslation": "Pazar doygunluğu yüzünden satış rakamları düşüyor.",
+      "synonyms": [
+        "die Übersättigung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

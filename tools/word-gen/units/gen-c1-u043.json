@@ -1,0 +1,154 @@
+{
+  "kind": "gen",
+  "unitId": 43,
+  "categoryId": 1,
+  "number": 15,
+  "title": "Şehir ve Mekanlar",
+  "theme": "Bir şehirdeki binalar, kamusal yerler ve yön bulma sözcükleri. Sokakta gezerken bir yeri tarif etmeye ve bulmaya yarayan A1/A2 kelimeleri.",
+  "firstWordId": 631,
+  "words": [
+    {
+      "german": "die Post",
+      "turkish": "postane / posta",
+      "example": "Die Post ist gleich neben der Bank.",
+      "exampleTranslation": "Postane bankanın hemen yanında.",
+      "synonyms": [
+        "das Postamt"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Bibliothek",
+      "turkish": "kütüphane",
+      "example": "Ich lese gern in der Bibliothek.",
+      "exampleTranslation": "Kütüphanede okumayı severim.",
+      "synonyms": [
+        "die Bücherei"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Museum",
+      "turkish": "müze",
+      "example": "Am Sonntag besuchen wir das Museum.",
+      "exampleTranslation": "Pazar günü müzeyi ziyaret ediyoruz.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "die Kirche",
+      "turkish": "kilise",
+      "example": "Die Kirche steht mitten in der Stadt.",
+      "exampleTranslation": "Kilise şehrin ortasında duruyor.",
+      "synonyms": [
+        "der Dom"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Park",
+      "turkish": "park",
+      "example": "Die Kinder spielen im Park.",
+      "exampleTranslation": "Çocuklar parkta oynuyor.",
+      "synonyms": [
+        "die Grünanlage"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Platz",
+      "turkish": "meydan / yer",
+      "example": "Auf dem Platz steht ein großer Brunnen.",
+      "exampleTranslation": "Meydanda büyük bir çeşme var.",
+      "synonyms": [
+        "der Marktplatz"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Brücke",
+      "turkish": "köprü",
+      "example": "Wir gehen über die Brücke.",
+      "exampleTranslation": "Köprünün üzerinden geçiyoruz.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "das Kino",
+      "turkish": "sinema",
+      "example": "Heute Abend gehen wir ins Kino.",
+      "exampleTranslation": "Bu akşam sinemaya gidiyoruz.",
+      "synonyms": [
+        "das Lichtspielhaus"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Ampel",
+      "turkish": "trafik ışığı",
+      "example": "Bei Rot bleibst du an der Ampel stehen.",
+      "exampleTranslation": "Kırmızıda trafik ışığında durursun.",
+      "synonyms": [
+        "die Verkehrsampel"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Bürgersteig",
+      "turkish": "kaldırım",
+      "example": "Geh bitte auf dem Bürgersteig.",
+      "exampleTranslation": "Lütfen kaldırımda yürü.",
+      "synonyms": [
+        "der Gehweg",
+        "das Trottoir"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Ecke",
+      "turkish": "köşe",
+      "example": "Das Café ist an der nächsten Ecke.",
+      "exampleTranslation": "Kafe bir sonraki köşede.",
+      "synonyms": [
+        "der Winkel"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "links",
+      "turkish": "sol / solda",
+      "example": "An der Kreuzung gehst du links.",
+      "exampleTranslation": "Kavşakta sola gidersin.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "rechts",
+      "turkish": "sağ / sağda",
+      "example": "Die Bäckerei ist rechts.",
+      "exampleTranslation": "Fırın sağda.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "geradeaus",
+      "turkish": "dümdüz / düz ileri",
+      "example": "Gehen Sie immer geradeaus.",
+      "exampleTranslation": "Hep dümdüz gidin.",
+      "synonyms": [
+        "direkt"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "abbiegen",
+      "turkish": "dönmek (yön değiştirmek)",
+      "example": "An der Ampel müssen Sie links abbiegen.",
+      "exampleTranslation": "Trafik ışığında sola dönmelisiniz.",
+      "synonyms": [
+        "einbiegen"
+      ],
+      "level": "A2"
+    }
+  ]
+}

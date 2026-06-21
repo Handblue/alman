@@ -1,0 +1,174 @@
+{
+  "kind": "gen",
+  "unitId": 133,
+  "categoryId": 7,
+  "number": 9,
+  "title": "Antik Yunan Felsefesi",
+  "theme": "Sokrates, Platon ve Aristoteles ile Antik Yunan düşüncesinin temel kavramlarını kapsar. İdealar, erdem, mutluluk ve diyalektik üzerine klasik felsefi kelimeler.",
+  "firstWordId": 1981,
+  "words": [
+    {
+      "german": "die Idee",
+      "turkish": "ide / fikir / idea",
+      "example": "Bei Platon existiert die Idee des Guten unabhängig.",
+      "exampleTranslation": "Platon'da İyi ideası bağımsız olarak vardır.",
+      "synonyms": [
+        "die Form",
+        "das Urbild"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Tugendhaftigkeit",
+      "turkish": "erdemlilik / faziletli oluş",
+      "example": "Aristoteles verbindet Tugendhaftigkeit mit dem rechten Handeln.",
+      "exampleTranslation": "Aristoteles erdemliliği doğru davranışla ilişkilendirir.",
+      "synonyms": [
+        "die Rechtschaffenheit",
+        "die Sittlichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Glückseligkeit",
+      "turkish": "mutluluk / saadet / eudaimonia",
+      "example": "Die Glückseligkeit gilt als höchstes Ziel des Lebens.",
+      "exampleTranslation": "Mutluluk, yaşamın en yüksek amacı sayılır.",
+      "synonyms": [
+        "die Seligkeit",
+        "die Glückseligkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Weisheit",
+      "turkish": "bilgelik / hikmet",
+      "example": "Sokrates strebte zeitlebens nach wahrer Weisheit.",
+      "exampleTranslation": "Sokrates ömrü boyunca gerçek bilgeliğin peşinden gitti.",
+      "synonyms": [
+        "die Klugheit",
+        "die Einsicht"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Tugendbegriff",
+      "turkish": "erdem kavramı",
+      "example": "Der Tugendbegriff steht im Zentrum der antiken Ethik.",
+      "exampleTranslation": "Erdem kavramı antik etiğin merkezinde yer alır.",
+      "synonyms": [
+        "die Tugendlehre"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Gleichnis",
+      "turkish": "benzetme / kıssa / mesel",
+      "example": "Platons Gleichnis von der Höhle ist berühmt.",
+      "exampleTranslation": "Platon'un mağara benzetmesi ünlüdür.",
+      "synonyms": [
+        "das Sinnbild",
+        "die Allegorie"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Seele",
+      "turkish": "ruh / can",
+      "example": "Für Platon ist die Seele unsterblich.",
+      "exampleTranslation": "Platon'a göre ruh ölümsüzdür.",
+      "synonyms": [
+        "die Psyche",
+        "der Geist"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Vernunftseele",
+      "turkish": "akıl ruhu / rasyonel ruh",
+      "example": "Die Vernunftseele lenkt nach Platon die Begierden.",
+      "exampleTranslation": "Platon'a göre akıl ruhu arzuları yönetir.",
+      "synonyms": [
+        "der Verstand"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Maßhalten",
+      "turkish": "ölçülülük / itidal",
+      "example": "Das Maßhalten galt den Griechen als hohe Tugend.",
+      "exampleTranslation": "Ölçülülük, Yunanlara göre yüce bir erdemdi.",
+      "synonyms": [
+        "die Mäßigung",
+        "die Besonnenheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Mittelweg",
+      "turkish": "orta yol / altın orta",
+      "example": "Aristoteles empfahl stets den goldenen Mittelweg.",
+      "exampleTranslation": "Aristoteles her zaman altın orta yolu önerdi.",
+      "synonyms": [
+        "die Mitte",
+        "der Kompromiss"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Vergänglichkeit",
+      "turkish": "gelip geçicilik / fanilik",
+      "example": "Die Sinnenwelt ist von Vergänglichkeit geprägt.",
+      "exampleTranslation": "Duyular dünyası gelip geçicilikle damgalıdır.",
+      "synonyms": [
+        "die Endlichkeit",
+        "die Sterblichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Unsterblichkeit",
+      "turkish": "ölümsüzlük",
+      "example": "Platon argumentiert für die Unsterblichkeit der Seele.",
+      "exampleTranslation": "Platon ruhun ölümsüzlüğü için argüman sunar.",
+      "synonyms": [
+        "die Unvergänglichkeit",
+        "die Ewigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Urform",
+      "turkish": "ilk form / asıl biçim / arketip",
+      "example": "Jedes Ding verweist auf seine ideale Urform.",
+      "exampleTranslation": "Her şey kendi ideal ilk formuna işaret eder.",
+      "synonyms": [
+        "das Urbild",
+        "der Archetyp"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Trugschluss",
+      "turkish": "yanılgı / safsata / hatalı çıkarım",
+      "example": "Sokrates entlarvte jeden Trugschluss seiner Gegner.",
+      "exampleTranslation": "Sokrates rakiplerinin her safsatasını ortaya çıkardı.",
+      "synonyms": [
+        "der Fehlschluss",
+        "das Sophisma"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Gesprächskunst",
+      "turkish": "söyleşi sanatı / diyalog sanatı",
+      "example": "Sokrates beherrschte die Gesprächskunst meisterhaft.",
+      "exampleTranslation": "Sokrates söyleşi sanatına ustaca hâkimdi.",
+      "synonyms": [
+        "die Rhetorik",
+        "die Redekunst"
+      ],
+      "level": "B2"
+    }
+  ]
+}

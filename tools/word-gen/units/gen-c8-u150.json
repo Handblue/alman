@@ -1,0 +1,171 @@
+{
+  "kind": "gen",
+  "unitId": 150,
+  "categoryId": 8,
+  "number": 10,
+  "title": "Doğa ve Hava Deyimleri",
+  "theme": "Hava olayları, mevsimler ve doğa unsurlarıyla kurulan deyimler; yağmur, fırtına, güneş ve buz üzerinden durum betimleme.",
+  "firstWordId": 2236,
+  "words": [
+    {
+      "german": "der Donner",
+      "turkish": "gök gürültüsü",
+      "example": "Nach dem Blitz hörten wir lauten Donner.",
+      "exampleTranslation": "Şimşekten sonra yüksek bir gök gürültüsü duyduk.",
+      "synonyms": [
+        "das Grollen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Blitz",
+      "turkish": "şimşek / yıldırım",
+      "example": "Ein heller Blitz erleuchtete den Himmel.",
+      "exampleTranslation": "Parlak bir şimşek gökyüzünü aydınlattı.",
+      "synonyms": [
+        "der Lichtblitz"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Nebel",
+      "turkish": "sis",
+      "example": "Am Morgen lag dichter Nebel über dem Tal.",
+      "exampleTranslation": "Sabah vadinin üzerinde yoğun bir sis vardı.",
+      "synonyms": [
+        "der Dunst",
+        "der Hochnebel"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Himmel",
+      "turkish": "gökyüzü / gök",
+      "example": "Der Himmel ist heute strahlend blau.",
+      "exampleTranslation": "Gökyüzü bugün parlak mavi.",
+      "synonyms": [
+        "das Firmament"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Eis",
+      "turkish": "buz / dondurma",
+      "example": "Auf dem See bildet sich dünnes Eis.",
+      "exampleTranslation": "Gölün üzerinde ince bir buz oluşuyor.",
+      "synonyms": [
+        "die Eisschicht"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Frost",
+      "turkish": "ayaz / don",
+      "example": "In der Nacht gab es starken Frost.",
+      "exampleTranslation": "Gece şiddetli ayaz vardı.",
+      "synonyms": [
+        "die Kälte",
+        "der Bodenfrost"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Felsen",
+      "turkish": "kaya",
+      "example": "Das Schiff zerschellte an einem Felsen.",
+      "exampleTranslation": "Gemi bir kayaya çarparak parçalandı.",
+      "synonyms": [
+        "der Fels",
+        "das Gestein"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Gipfel",
+      "turkish": "zirve / doruk",
+      "example": "Wir erreichten den Gipfel bei Sonnenaufgang.",
+      "exampleTranslation": "Gün doğarken zirveye ulaştık.",
+      "synonyms": [
+        "der Berggipfel",
+        "die Spitze"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Flamme",
+      "turkish": "alev",
+      "example": "Die Flamme der Kerze flackerte im Wind.",
+      "exampleTranslation": "Mumun alevi rüzgârda titreşti.",
+      "synonyms": [
+        "das Feuer",
+        "die Lohe"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Wirbelsturm",
+      "turkish": "kasırga / hortum",
+      "example": "Der Wirbelsturm zerstörte viele Häuser.",
+      "exampleTranslation": "Kasırga birçok evi yıktı.",
+      "synonyms": [
+        "der Tornado",
+        "der Orkan"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Hitze",
+      "turkish": "sıcaklık / aşırı sıcak",
+      "example": "Bei dieser Hitze bleiben wir im Schatten.",
+      "exampleTranslation": "Bu sıcakta gölgede kalıyoruz.",
+      "synonyms": [
+        "die Wärme",
+        "die Glut"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Hagel",
+      "turkish": "dolu",
+      "example": "Der Hagel beschädigte die ganze Ernte.",
+      "exampleTranslation": "Dolu bütün hasata zarar verdi.",
+      "synonyms": [
+        "der Hagelschlag"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Glut",
+      "turkish": "kor / köz",
+      "example": "Unter der Asche glomm noch die Glut.",
+      "exampleTranslation": "Külün altında hâlâ kor parıldıyordu.",
+      "synonyms": [
+        "die Embers",
+        "die Hitze"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Böe",
+      "turkish": "ani sert rüzgâr / bora",
+      "example": "Eine heftige Böe riss den Schirm um.",
+      "exampleTranslation": "Şiddetli bir bora şemsiyeyi devirdi.",
+      "synonyms": [
+        "der Windstoß",
+        "die Sturmböe"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Lichtung",
+      "turkish": "ormanda açıklık / kayran",
+      "example": "Mitten im Wald fanden wir eine Lichtung.",
+      "exampleTranslation": "Ormanın ortasında bir açıklık bulduk.",
+      "synonyms": [
+        "die Waldwiese",
+        "die Blöße"
+      ],
+      "level": "C1"
+    }
+  ]
+}

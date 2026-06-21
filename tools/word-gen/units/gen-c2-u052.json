@@ -1,0 +1,173 @@
+{
+  "kind": "gen",
+  "unitId": 52,
+  "categoryId": 2,
+  "number": 9,
+  "title": "Ayrılabilen Fiiller",
+  "theme": "Önekleri cümlede ayrılan fiiller (trennbare Verben); öneklerin anlama etkisi ve cümle sonuna gelen önek yapısı.",
+  "firstWordId": 766,
+  "words": [
+    {
+      "german": "anrufen",
+      "turkish": "telefonla aramak",
+      "example": "Ich rufe dich heute Abend an.",
+      "exampleTranslation": "Seni bu akşam arayacağım.",
+      "synonyms": [
+        "telefonieren",
+        "kontaktieren"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "aufstehen",
+      "turkish": "kalkmak / ayağa kalkmak",
+      "example": "Ich stehe jeden Morgen um sieben auf.",
+      "exampleTranslation": "Her sabah yedide kalkıyorum.",
+      "synonyms": [
+        "sich erheben"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "einkaufen",
+      "turkish": "alışveriş yapmak",
+      "example": "Wir kaufen am Samstag im Supermarkt ein.",
+      "exampleTranslation": "Cumartesi süpermarkette alışveriş yapıyoruz.",
+      "synonyms": [
+        "besorgen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "ausgehen",
+      "turkish": "dışarı çıkmak / sona ermek",
+      "example": "Am Wochenende gehen wir gern aus.",
+      "exampleTranslation": "Hafta sonu severek dışarı çıkarız.",
+      "synonyms": [
+        "weggehen",
+        "ausfallen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "mitkommen",
+      "turkish": "birlikte gelmek / eşlik etmek",
+      "example": "Kommst du heute Abend mit?",
+      "exampleTranslation": "Bu akşam birlikte geliyor musun?",
+      "synonyms": [
+        "begleiten",
+        "mitgehen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "zumachen",
+      "turkish": "kapatmak",
+      "example": "Bitte mach das Fenster zu.",
+      "exampleTranslation": "Lütfen pencereyi kapat.",
+      "synonyms": [
+        "schließen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "vorbereiten",
+      "turkish": "hazırlamak",
+      "example": "Ich bereite das Essen für die Gäste vor.",
+      "exampleTranslation": "Misafirler için yemeği hazırlıyorum.",
+      "synonyms": [
+        "zubereiten",
+        "planen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "wegwerfen",
+      "turkish": "atmak / çöpe atmak",
+      "example": "Wirf die alte Zeitung endlich weg.",
+      "exampleTranslation": "Şu eski gazeteyi artık at.",
+      "synonyms": [
+        "entsorgen",
+        "wegschmeißen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "abholen",
+      "turkish": "almaya gitmek / teslim almak",
+      "example": "Ich hole dich am Bahnhof ab.",
+      "exampleTranslation": "Seni istasyondan alırım.",
+      "synonyms": [
+        "holen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "teilnehmen",
+      "turkish": "katılmak",
+      "example": "Viele Studenten nehmen an der Tagung teil.",
+      "exampleTranslation": "Birçok öğrenci toplantıya katılıyor.",
+      "synonyms": [
+        "mitwirken",
+        "sich beteiligen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "durchführen",
+      "turkish": "gerçekleştirmek / uygulamak",
+      "example": "Das Institut führt eine Studie durch.",
+      "exampleTranslation": "Enstitü bir araştırma gerçekleştiriyor.",
+      "synonyms": [
+        "realisieren",
+        "umsetzen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "festlegen",
+      "turkish": "belirlemek / saptamak",
+      "example": "Wir legen den Termin für Montag fest.",
+      "exampleTranslation": "Randevuyu pazartesi olarak belirliyoruz.",
+      "synonyms": [
+        "bestimmen",
+        "definieren"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "voraussetzen",
+      "turkish": "ön koşul saymak / varsaymak",
+      "example": "Die Stelle setzt gute Sprachkenntnisse voraus.",
+      "exampleTranslation": "Bu pozisyon iyi dil bilgisini ön koşul sayar.",
+      "synonyms": [
+        "erfordern",
+        "verlangen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "hervorheben",
+      "turkish": "vurgulamak / öne çıkarmak",
+      "example": "Der Autor hebt diesen Aspekt besonders hervor.",
+      "exampleTranslation": "Yazar bu yönü özellikle vurguluyor.",
+      "synonyms": [
+        "betonen",
+        "unterstreichen",
+        "akzentuieren"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "zurückführen",
+      "turkish": "(bir şeye) bağlamak / dayandırmak",
+      "example": "Man führt das Problem auf den Klimawandel zurück.",
+      "exampleTranslation": "Sorun iklim değişikliğine bağlanıyor.",
+      "synonyms": [
+        "zuschreiben",
+        "ableiten"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "kind": "gen",
+  "unitId": 78,
+  "categoryId": 3,
+  "number": 19,
+  "title": "Goethe C1 — Akademik Yazım Dili",
+  "theme": "Akademik makale, rapor ve resmi metinlerde kullanılan üst düzey bağlaç, fiil ve isimleştirme yapıları. Yazılı C1 sınav metni üretme bağlamı.",
+  "firstWordId": 1156,
+  "words": [
+    {
+      "german": "der Abschnitt",
+      "turkish": "paragraf / bölüm",
+      "example": "Jeder Abschnitt behandelt ein neues Argument.",
+      "exampleTranslation": "Her paragraf yeni bir argümanı ele alır.",
+      "synonyms": [
+        "der Absatz",
+        "das Kapitel"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "zusammenfassen",
+      "turkish": "özetlemek",
+      "example": "Im Schluss fasse ich die Ergebnisse zusammen.",
+      "exampleTranslation": "Sonuç bölümünde sonuçları özetliyorum.",
+      "synonyms": [
+        "resümieren"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Quelle",
+      "turkish": "kaynak",
+      "example": "Diese Behauptung stützt sich auf eine Quelle.",
+      "exampleTranslation": "Bu iddia bir kaynağa dayanmaktadır.",
+      "synonyms": [
+        "der Beleg",
+        "die Fundstelle"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Inhalt",
+      "turkish": "içerik",
+      "example": "Der Inhalt des Textes ist klar gegliedert.",
+      "exampleTranslation": "Metnin içeriği açıkça yapılandırılmıştır.",
+      "synonyms": [
+        "der Gehalt"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "betreffen",
+      "turkish": "ilgilendirmek / kapsamak",
+      "example": "Dieser Punkt betrifft die zweite These.",
+      "exampleTranslation": "Bu nokta ikinci tezi ilgilendiriyor.",
+      "synonyms": [
+        "angehen",
+        "berühren"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Gliederung",
+      "turkish": "(metin) yapısı / plan",
+      "example": "Die Gliederung des Aufsatzes ist übersichtlich.",
+      "exampleTranslation": "Makalenin yapısı düzenlidir.",
+      "synonyms": [
+        "die Struktur",
+        "der Aufbau"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Bezug",
+      "turkish": "ilişki / atıf",
+      "example": "Der Autor nimmt Bezug auf frühere Studien.",
+      "exampleTranslation": "Yazar önceki çalışmalara atıfta bulunuyor.",
+      "synonyms": [
+        "der Zusammenhang",
+        "die Beziehung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Aussage",
+      "turkish": "ifade / önerme",
+      "example": "Diese Aussage lässt sich nicht verallgemeinern.",
+      "exampleTranslation": "Bu ifade genellenemez.",
+      "synonyms": [
+        "die Behauptung",
+        "die Feststellung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "erläutern",
+      "turkish": "açıklamak / izah etmek",
+      "example": "Ich erläutere zunächst die zentralen Begriffe.",
+      "exampleTranslation": "Önce temel kavramları açıklıyorum.",
+      "synonyms": [
+        "erklären",
+        "erörtern"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "einleitend",
+      "turkish": "giriş niteliğinde / başlangıçta",
+      "example": "Einleitend wird das Thema kurz umrissen.",
+      "exampleTranslation": "Girişte konu kısaca özetlenir.",
+      "synonyms": [
+        "anfangs",
+        "vorab"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "hervorheben",
+      "turkish": "vurgulamak / öne çıkarmak",
+      "example": "Der Verfasser hebt diesen Aspekt besonders hervor.",
+      "exampleTranslation": "Yazar bu yönü özellikle vurguluyor.",
+      "synonyms": [
+        "betonen",
+        "unterstreichen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "darlegen",
+      "turkish": "ortaya koymak / izah etmek",
+      "example": "Im Folgenden lege ich meine Position dar.",
+      "exampleTranslation": "Aşağıda görüşümü ortaya koyuyorum.",
+      "synonyms": [
+        "ausführen",
+        "schildern"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Erörterung",
+      "turkish": "tartışma / ele alış",
+      "example": "Die Erörterung des Problems erfolgt im Hauptteil.",
+      "exampleTranslation": "Sorunun tartışılması ana bölümde yapılır.",
+      "synonyms": [
+        "die Diskussion",
+        "die Abhandlung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "folglich",
+      "turkish": "dolayısıyla / sonuç olarak",
+      "example": "Die Daten sind unvollständig, folglich bleibt das Ergebnis vorläufig.",
+      "exampleTranslation": "Veriler eksik, dolayısıyla sonuç geçicidir.",
+      "synonyms": [
+        "somit",
+        "mithin"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Sachverhalt",
+      "turkish": "durum / olgu / vaka",
+      "example": "Der komplexe Sachverhalt wird sachlich dargestellt.",
+      "exampleTranslation": "Karmaşık durum nesnel biçimde aktarılır.",
+      "synonyms": [
+        "der Tatbestand",
+        "die Gegebenheit"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "kind": "gen",
+  "unitId": 80,
+  "categoryId": 4,
+  "number": 4,
+  "title": "telc — Resmi Yazışma ve Dilekçe",
+  "theme": "telc yazılı bölümünde resmi mektup, dilekçe ve şikayet/talep metinlerinde geçen kalıp kelimeler ve kurumsal yazışma terimleri.",
+  "firstWordId": 1186,
+  "words": [
+    {
+      "german": "der Absender",
+      "turkish": "gönderen / gönderici",
+      "example": "Der Absender steht oben links auf dem Brief.",
+      "exampleTranslation": "Gönderen, mektubun sol üst köşesinde yer alır.",
+      "synonyms": [
+        "der Verfasser"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Empfänger",
+      "turkish": "alıcı",
+      "example": "Bitte tragen Sie die Adresse des Empfängers ein.",
+      "exampleTranslation": "Lütfen alıcının adresini girin.",
+      "synonyms": [
+        "der Adressat"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Betreff",
+      "turkish": "konu (yazışmada)",
+      "example": "Im Betreff schreibe ich kurz den Grund.",
+      "exampleTranslation": "Konu satırına nedeni kısaca yazıyorum.",
+      "synonyms": [
+        "der Gegenstand"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Anrede",
+      "turkish": "hitap / selamlama",
+      "example": "Die Anrede lautet: Sehr geehrte Damen und Herren.",
+      "exampleTranslation": "Hitap şöyledir: Sayın Bayanlar ve Baylar.",
+      "synonyms": [
+        "die Begrüßung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Anlage",
+      "turkish": "ek (mektupta)",
+      "example": "Die Rechnung finden Sie in der Anlage.",
+      "exampleTranslation": "Faturayı ekte bulabilirsiniz.",
+      "synonyms": [
+        "der Anhang",
+        "die Beilage"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Unterschrift",
+      "turkish": "imza",
+      "example": "Bitte setzen Sie Ihre Unterschrift unter das Schreiben.",
+      "exampleTranslation": "Lütfen yazının altına imzanızı atın.",
+      "synonyms": [
+        "die Signatur"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Anliegen",
+      "turkish": "talep / mesele / istek",
+      "example": "Ich möchte Ihnen mein Anliegen kurz schildern.",
+      "exampleTranslation": "Size talebimi kısaca anlatmak istiyorum.",
+      "synonyms": [
+        "das Begehren"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Zahlungsaufforderung",
+      "turkish": "ödeme uyarısı / ödeme talebi",
+      "example": "Wir haben eine zweite Zahlungsaufforderung erhalten.",
+      "exampleTranslation": "İkinci bir ödeme uyarısı aldık.",
+      "synonyms": [
+        "die Mahnung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Mahnung",
+      "turkish": "ihtar / hatırlatma yazısı",
+      "example": "Nach der dritten Mahnung drohte das Unternehmen.",
+      "exampleTranslation": "Üçüncü ihtardan sonra şirket tehditte bulundu.",
+      "synonyms": [
+        "die Erinnerung",
+        "die Zahlungserinnerung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Rückerstattung",
+      "turkish": "geri ödeme / iade",
+      "example": "Ich bitte Sie um eine vollständige Rückerstattung.",
+      "exampleTranslation": "Sizden tam bir geri ödeme rica ediyorum.",
+      "synonyms": [
+        "die Erstattung",
+        "die Rückzahlung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Bearbeitung",
+      "turkish": "işleme / işlem (bir başvurunun)",
+      "example": "Die Bearbeitung des Antrags dauert zwei Wochen.",
+      "exampleTranslation": "Başvurunun işlenmesi iki hafta sürüyor.",
+      "synonyms": [
+        "die Abwicklung",
+        "die Verarbeitung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Aktenzeichen",
+      "turkish": "dosya numarası / referans numarası",
+      "example": "Geben Sie bei Rückfragen bitte das Aktenzeichen an.",
+      "exampleTranslation": "Geri dönüşlerde lütfen dosya numarasını belirtin.",
+      "synonyms": [
+        "die Vorgangsnummer",
+        "das Geschäftszeichen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Widerspruch",
+      "turkish": "itiraz",
+      "example": "Gegen den Bescheid lege ich Widerspruch ein.",
+      "exampleTranslation": "Karara karşı itiraz ediyorum.",
+      "synonyms": [
+        "der Einspruch",
+        "der Einwand"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Bescheid",
+      "turkish": "resmi karar / bildirim",
+      "example": "Wir warten noch auf den Bescheid der Behörde.",
+      "exampleTranslation": "Hâlâ kurumun kararını bekliyoruz.",
+      "synonyms": [
+        "die Mitteilung",
+        "die Benachrichtigung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Frist setzen",
+      "turkish": "süre tanımak / mühlet vermek",
+      "example": "Ich setze Ihnen eine Frist bis Freitag.",
+      "exampleTranslation": "Size cumaya kadar bir süre tanıyorum.",
+      "synonyms": [
+        "einen Termin festlegen"
+      ],
+      "level": "C1"
+    }
+  ]
+}

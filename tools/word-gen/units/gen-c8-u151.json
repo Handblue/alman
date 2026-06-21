@@ -1,0 +1,170 @@
+{
+  "kind": "gen",
+  "unitId": 151,
+  "categoryId": 8,
+  "number": 11,
+  "title": "Su ve Deniz Deyimleri",
+  "theme": "Su, deniz ve denizcilikle ilgili deyimler; dalga, gemi, balık ve akıntı üzerinden zorluk, akış ve fırsat anlatımı.",
+  "firstWordId": 2251,
+  "words": [
+    {
+      "german": "ins kalte Wasser springen",
+      "turkish": "soğuk suya atlamak / hazırlıksız bir zorluğa atılmak",
+      "example": "Beim neuen Job musste ich gleich ins kalte Wasser springen.",
+      "exampleTranslation": "Yeni işte hemen hazırlıksız bir zorluğa atılmak zorunda kaldım.",
+      "synonyms": [
+        "sich einer Herausforderung stellen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "wie ein Fisch im Wasser",
+      "turkish": "sudaki balık gibi / çok rahat ve mutlu",
+      "example": "Auf der Bühne fühlt sie sich wie ein Fisch im Wasser.",
+      "exampleTranslation": "Sahnede kendini sudaki balık gibi hisseder.",
+      "synonyms": [
+        "in seinem Element sein"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "mit dem Strom schwimmen",
+      "turkish": "akıntıyla gitmek / çoğunluğa uymak",
+      "example": "Viele schwimmen lieber mit dem Strom als aufzufallen.",
+      "exampleTranslation": "Çoğu kişi dikkat çekmektense akıntıyla gitmeyi tercih eder.",
+      "synonyms": [
+        "sich anpassen",
+        "der Masse folgen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "ins Wasser fallen",
+      "turkish": "suya düşmek / gerçekleşmemek (plan)",
+      "example": "Wegen des Regens ist unser Ausflug ins Wasser gefallen.",
+      "exampleTranslation": "Yağmur yüzünden gezimiz suya düştü.",
+      "synonyms": [
+        "scheitern",
+        "nicht stattfinden"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "untergehen",
+      "turkish": "batmak / boğulup yok olmak / silinip gitmek",
+      "example": "Seine Stimme ging im Lärm der Menge unter.",
+      "exampleTranslation": "Sesi kalabalığın gürültüsünde kaybolup gitti.",
+      "synonyms": [
+        "versinken",
+        "verschwinden"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "gegen den Strom schwimmen",
+      "turkish": "akıntıya karşı yüzmek / çoğunluğa karşı durmak",
+      "example": "Wer neue Ideen hat, muss oft gegen den Strom schwimmen.",
+      "exampleTranslation": "Yeni fikirleri olan kişi çoğu zaman akıntıya karşı yüzmek zorundadır.",
+      "synonyms": [
+        "sich widersetzen",
+        "aus der Reihe tanzen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "Schiffbruch erleiden",
+      "turkish": "hüsrana uğramak / başarısızlığa uğramak",
+      "example": "Mit diesem Plan hat das Unternehmen Schiffbruch erlitten.",
+      "exampleTranslation": "Bu planla şirket başarısızlığa uğradı.",
+      "synonyms": [
+        "scheitern",
+        "misslingen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "ein Sturm im Wasserglas",
+      "turkish": "bir bardak suda fırtına / önemsiz bir mesele",
+      "example": "Die ganze Aufregung war nur ein Sturm im Wasserglas.",
+      "exampleTranslation": "Bütün bu telaş sadece bir bardak suda fırtınaydı.",
+      "synonyms": [
+        "viel Lärm um nichts",
+        "eine Übertreibung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "sich über Wasser halten",
+      "turkish": "suyun üstünde kalmak / zar zor geçinmek / ayakta kalmak",
+      "example": "Mit Gelegenheitsjobs hält er sich gerade so über Wasser.",
+      "exampleTranslation": "Geçici işlerle ancak zar zor ayakta kalıyor.",
+      "synonyms": [
+        "überleben",
+        "sich durchschlagen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "ein dicker Fisch",
+      "turkish": "büyük balık / önemli (ele geçen) kişi veya kazanç",
+      "example": "Mit diesem Verdächtigen ging der Polizei ein dicker Fisch ins Netz.",
+      "exampleTranslation": "Bu şüpheliyle polisin ağına büyük bir balık takıldı.",
+      "synonyms": [
+        "ein großer Fang",
+        "eine wichtige Person"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "stille Wasser sind tief",
+      "turkish": "durgun sular derin akar / sessiz kişiler sürpriz yapar",
+      "example": "Er sagt wenig, aber stille Wasser sind tief.",
+      "exampleTranslation": "Az konuşuyor ama durgun sular derin akar.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "mit allen Wassern gewaschen sein",
+      "turkish": "kurnaz ve tecrübeli olmak / her işin ehli olmak",
+      "example": "Diesen Händler täuscht niemand, er ist mit allen Wassern gewaschen.",
+      "exampleTranslation": "Bu tüccarı kimse kandıramaz, son derece kurnaz ve tecrübelidir.",
+      "synonyms": [
+        "abgebrüht sein",
+        "gerissen sein"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Wogen glätten",
+      "turkish": "ortamı yatıştırmak / gerginliği gidermek",
+      "example": "Der Chef versuchte, nach dem Streit die Wogen zu glätten.",
+      "exampleTranslation": "Patron tartışmadan sonra gerginliği gidermeye çalıştı.",
+      "synonyms": [
+        "beruhigen",
+        "schlichten"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "alle Brücken hinter sich abbrechen",
+      "turkish": "bütün gemileri yakmak / geri dönüşü olmayacak şekilde kopmak",
+      "example": "Mit der Auswanderung brach sie alle Brücken hinter sich ab.",
+      "exampleTranslation": "Göç ederek bütün gemileri yaktı.",
+      "synonyms": [
+        "sich endgültig lösen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Ruder herumreißen",
+      "turkish": "dümeni kırmak / gidişatı tersine çevirmek",
+      "example": "In letzter Minute riss das Team das Ruder herum und gewann.",
+      "exampleTranslation": "Son dakikada takım gidişatı tersine çevirdi ve kazandı.",
+      "synonyms": [
+        "die Wende schaffen",
+        "das Blatt wenden"
+      ],
+      "level": "C1"
+    }
+  ]
+}

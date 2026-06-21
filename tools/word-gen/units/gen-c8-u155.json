@@ -1,0 +1,162 @@
+{
+  "kind": "gen",
+  "unitId": 155,
+  "categoryId": 8,
+  "number": 15,
+  "title": "Çalışma ve El Sanatları Deyimleri",
+  "theme": "Zanaat, alet ve el emeğiyle kurulan deyimler; çekiç, çivi, demir ve ahşap üzerinden çaba, beceri ve başarı anlatımı.",
+  "firstWordId": 2311,
+  "words": [
+    {
+      "german": "der Hammer",
+      "turkish": "çekiç / harika (argo, çok iyi)",
+      "example": "Gib mir bitte den Hammer und die Nägel.",
+      "exampleTranslation": "Lütfen bana çekici ve çivileri ver.",
+      "synonyms": [
+        "der Schlägel"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Faden",
+      "turkish": "iplik / ip",
+      "example": "Der Faden ist beim Nähen gerissen.",
+      "exampleTranslation": "Dikiş yaparken iplik koptu.",
+      "synonyms": [
+        "das Garn",
+        "der Zwirn"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Nadel",
+      "turkish": "iğne",
+      "example": "Ich suche die Nadel im Nähkasten.",
+      "exampleTranslation": "Dikiş kutusunda iğneyi arıyorum.",
+      "synonyms": [
+        "die Stecknadel"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Brett",
+      "turkish": "tahta / kalas",
+      "example": "Er sägt das Brett in zwei Teile.",
+      "exampleTranslation": "Tahtayı iki parçaya kesiyor.",
+      "synonyms": [
+        "die Planke",
+        "das Holzbrett"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Handwerk",
+      "turkish": "el sanatı / zanaat / meslek",
+      "example": "Sie hat ihr Handwerk gründlich gelernt.",
+      "exampleTranslation": "Zanaatını iyice öğrendi.",
+      "synonyms": [
+        "das Gewerbe",
+        "das Metier"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Säge",
+      "turkish": "testere",
+      "example": "Mit der Säge schneidet er das Holz.",
+      "exampleTranslation": "Testereyle ahşabı kesiyor.",
+      "synonyms": [
+        "die Handsäge"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Zange",
+      "turkish": "kerpeten / pense",
+      "example": "Reich mir die Zange, der Draht ist hart.",
+      "exampleTranslation": "Bana penseyi uzat, tel sert.",
+      "synonyms": [
+        "die Kneifzange"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Strick",
+      "turkish": "halat / ip (kalın)",
+      "example": "Er bindet die Kiste mit einem Strick fest.",
+      "exampleTranslation": "Sandığı kalın bir iple sıkıca bağlıyor.",
+      "synonyms": [
+        "das Seil",
+        "das Tau"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Eisen",
+      "turkish": "demir",
+      "example": "Das Eisen wird im Feuer ganz heiß.",
+      "exampleTranslation": "Demir ateşte iyice ısınıyor.",
+      "synonyms": [
+        "das Metall"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Schmiede",
+      "turkish": "demirci atölyesi / nalbur",
+      "example": "Der Hufschmied arbeitet in der alten Schmiede.",
+      "exampleTranslation": "Nalbant eski demirci atölyesinde çalışıyor.",
+      "synonyms": [
+        "die Werkstatt"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Amboss",
+      "turkish": "örs",
+      "example": "Der Schmied schlägt das Eisen auf dem Amboss.",
+      "exampleTranslation": "Demirci demiri örsün üzerinde dövüyor.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "die Mühle",
+      "turkish": "değirmen",
+      "example": "Die alte Mühle mahlt noch immer Getreide.",
+      "exampleTranslation": "Eski değirmen hâlâ tahıl öğütüyor.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "der Schmied",
+      "turkish": "demirci",
+      "example": "Jeder ist seines Glückes Schmied.",
+      "exampleTranslation": "Herkes kendi kaderinin demircisidir.",
+      "synonyms": [
+        "der Hufschmied"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Gerüst",
+      "turkish": "iskele / çatı (yapısal)",
+      "example": "Die Maurer stehen auf dem hohen Gerüst.",
+      "exampleTranslation": "Duvarcılar yüksek iskelenin üzerinde duruyor.",
+      "synonyms": [
+        "das Baugerüst",
+        "das Gestell"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Meißel",
+      "turkish": "keski / kalem (taş/metal işleme)",
+      "example": "Mit dem Meißel bearbeitet der Steinmetz den Stein.",
+      "exampleTranslation": "Taş ustası taşı keskiyle işliyor.",
+      "synonyms": [
+        "das Stecheisen"
+      ],
+      "level": "C1"
+    }
+  ]
+}

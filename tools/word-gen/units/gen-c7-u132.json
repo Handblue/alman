@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 132,
+  "categoryId": 7,
+  "number": 8,
+  "title": "Estetik ve Sanat Felsefesi",
+  "theme": "Güzellik, yüce, beğeni, sanat eseri ve estetik deneyimle ilgili kavramları kapsar. Sanatın anlamı ve estetik yargı üzerine felsefi kelimeler.",
+  "firstWordId": 1966,
+  "words": [
+    {
+      "german": "die Schönheit",
+      "turkish": "güzellik",
+      "example": "Die Schönheit der Natur inspirierte viele Maler.",
+      "exampleTranslation": "Doğanın güzelliği birçok ressama ilham verdi.",
+      "synonyms": [
+        "die Anmut",
+        "die Ästhetik"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Kunstwerk",
+      "turkish": "sanat eseri",
+      "example": "Dieses Kunstwerk hängt im Museum.",
+      "exampleTranslation": "Bu sanat eseri müzede asılı.",
+      "synonyms": [
+        "das Meisterwerk",
+        "die Schöpfung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Geschmack",
+      "turkish": "beğeni / zevk",
+      "example": "Über Geschmack lässt sich nicht streiten.",
+      "exampleTranslation": "Zevkler tartışılmaz.",
+      "synonyms": [
+        "das Empfinden",
+        "der Sinn"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Form",
+      "turkish": "biçim / form",
+      "example": "Die Form eines Werkes prägt seine Wirkung.",
+      "exampleTranslation": "Bir eserin biçimi etkisini belirler.",
+      "synonyms": [
+        "die Gestalt",
+        "die Struktur"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Harmonie",
+      "turkish": "uyum / ahenk",
+      "example": "In diesem Bild herrscht eine vollkommene Harmonie.",
+      "exampleTranslation": "Bu resimde kusursuz bir uyum hâkim.",
+      "synonyms": [
+        "der Einklang",
+        "die Übereinstimmung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Inhalt",
+      "turkish": "içerik / muhteva",
+      "example": "Form und Inhalt müssen zusammenpassen.",
+      "exampleTranslation": "Biçim ve içerik birbiriyle uyuşmalı.",
+      "synonyms": [
+        "der Gehalt",
+        "die Substanz"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Erhabene",
+      "turkish": "yüce / yücelik",
+      "example": "Kant unterschied das Schöne vom Erhabenen.",
+      "exampleTranslation": "Kant, güzeli yüce olandan ayırdı.",
+      "synonyms": [
+        "die Größe",
+        "die Würde"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Genie",
+      "turkish": "dehâ",
+      "example": "Mozart galt schon als Kind als Genie.",
+      "exampleTranslation": "Mozart daha çocukken bir dehâ olarak görülüyordu.",
+      "synonyms": [
+        "das Talent",
+        "der Meister"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Mimesis",
+      "turkish": "mimesis / taklit",
+      "example": "Die Mimesis beschreibt die Nachahmung der Natur in der Kunst.",
+      "exampleTranslation": "Mimesis, sanatta doğanın taklidini anlatır.",
+      "synonyms": [
+        "die Nachahmung",
+        "die Imitation"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Darstellung",
+      "turkish": "temsil / tasvir",
+      "example": "Die Darstellung des Leidens berührt den Betrachter.",
+      "exampleTranslation": "Acının tasviri izleyiciyi etkiler.",
+      "synonyms": [
+        "die Abbildung",
+        "die Wiedergabe"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Wahrnehmung",
+      "turkish": "algı / idrak",
+      "example": "Die ästhetische Wahrnehmung ist subjektiv geprägt.",
+      "exampleTranslation": "Estetik algı öznel olarak biçimlenir.",
+      "synonyms": [
+        "die Empfindung",
+        "die Sinneserfahrung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Ästhetik",
+      "turkish": "estetik / sanat felsefesi",
+      "example": "Die Ästhetik untersucht das Wesen des Schönen.",
+      "exampleTranslation": "Estetik, güzelin özünü inceler.",
+      "synonyms": [
+        "die Schönheitslehre",
+        "die Kunstphilosophie"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Reiz",
+      "turkish": "cazibe / çekicilik / uyaran",
+      "example": "Der besondere Reiz dieses Werkes liegt in den Farben.",
+      "exampleTranslation": "Bu eserin özel çekiciliği renklerinde yatıyor.",
+      "synonyms": [
+        "der Charme",
+        "die Anziehungskraft"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Komposition",
+      "turkish": "kompozisyon / düzenleme",
+      "example": "Die Komposition des Gemäldes wirkt ausgewogen.",
+      "exampleTranslation": "Tablonun kompozisyonu dengeli görünüyor.",
+      "synonyms": [
+        "die Anordnung",
+        "der Aufbau"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Schöpfung",
+      "turkish": "yaratım / yaratı",
+      "example": "Jede künstlerische Schöpfung trägt eine eigene Handschrift.",
+      "exampleTranslation": "Her sanatsal yaratım kendine özgü bir imza taşır.",
+      "synonyms": [
+        "das Werk",
+        "die Kreation"
+      ],
+      "level": "C1"
+    }
+  ]
+}

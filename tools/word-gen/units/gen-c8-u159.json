@@ -1,0 +1,148 @@
+{
+  "kind": "gen",
+  "unitId": 159,
+  "categoryId": 8,
+  "number": 19,
+  "title": "Tarih ve Kültürel Deyimler",
+  "theme": "Tarihî olay, mitoloji ve kültürel köken taşıyan deyimler; antik dönem, din ve halk anlatılarından gelen kalıp ifadeler.",
+  "firstWordId": 2371,
+  "words": [
+    {
+      "german": "der Sündenbock",
+      "turkish": "günah keçisi",
+      "example": "Er wurde zum Sündenbock für das ganze Team.",
+      "exampleTranslation": "O, bütün takımın günah keçisi oldu.",
+      "synonyms": [
+        "der Prügelknabe"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Trojanische Pferd",
+      "turkish": "Truva atı",
+      "example": "Die App war ein Trojanisches Pferd für Spione.",
+      "exampleTranslation": "Uygulama, casuslar için bir Truva atıydı.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "die Achillesferse",
+      "turkish": "Aşil topuğu / zayıf nokta",
+      "example": "Mathematik ist seine Achillesferse.",
+      "exampleTranslation": "Matematik onun zayıf noktasıdır.",
+      "synonyms": [
+        "die Schwachstelle",
+        "der Schwachpunkt"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "den Rubikon überschreiten",
+      "turkish": "dönüşü olmayan adımı atmak",
+      "example": "Mit dieser Entscheidung überschritt sie den Rubikon.",
+      "exampleTranslation": "Bu kararla geri dönüşü olmayan adımı attı.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "das Damoklesschwert",
+      "turkish": "Demokles'in kılıcı / sürekli tehdit",
+      "example": "Die Kündigung schwebt wie ein Damoklesschwert über ihm.",
+      "exampleTranslation": "İşten çıkarılma onun üzerinde Demokles'in kılıcı gibi sallanıyor.",
+      "synonyms": [
+        "die Bedrohung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Pyrrhussieg",
+      "turkish": "Pirus zaferi / ağır bedelli zafer",
+      "example": "Der Prozess endete mit einem Pyrrhussieg.",
+      "exampleTranslation": "Dava ağır bedelli bir zaferle sona erdi.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "die Büchse der Pandora",
+      "turkish": "Pandora'nın kutusu",
+      "example": "Mit der Frage öffnete er die Büchse der Pandora.",
+      "exampleTranslation": "Bu soruyla Pandora'nın kutusunu açtı.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "der rote Faden",
+      "turkish": "ana fikir / bütünü bağlayan ortak çizgi",
+      "example": "In seiner Rede fehlte der rote Faden.",
+      "exampleTranslation": "Konuşmasında bir ana fikir eksikti.",
+      "synonyms": [
+        "der Leitgedanke",
+        "die Leitlinie"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Auge um Auge",
+      "turkish": "göze göz (kısas)",
+      "example": "Das Prinzip Auge um Auge führt zu Gewalt.",
+      "exampleTranslation": "Göze göz ilkesi şiddete yol açar.",
+      "synonyms": [
+        "die Vergeltung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der barmherzige Samariter",
+      "turkish": "iyi yürekli Samiriyeli / yardımsever kişi",
+      "example": "Wie ein barmherziger Samariter half er dem Fremden.",
+      "exampleTranslation": "İyi yürekli bir Samiriyeli gibi yabancıya yardım etti.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "das Aschenputtel",
+      "turkish": "Külkedisi / hor görülen kişi",
+      "example": "In der Firma war sie das Aschenputtel.",
+      "exampleTranslation": "Şirkette o, hor görülen kişiydi.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "die Hexenjagd",
+      "turkish": "cadı avı / haksız kovuşturma",
+      "example": "Gegen den Politiker begann eine wahre Hexenjagd.",
+      "exampleTranslation": "Politikacıya karşı gerçek bir cadı avı başladı.",
+      "synonyms": [
+        "die Verfolgung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die eierlegende Wollmilchsau",
+      "turkish": "her derde deva / her işi gören şey",
+      "example": "Dieses Gerät ist die eierlegende Wollmilchsau.",
+      "exampleTranslation": "Bu cihaz her işi gören bir şey.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "german": "durch die Lappen gehen",
+      "turkish": "elden kaçmak / kaçırmak",
+      "example": "Die Chance ist mir durch die Lappen gegangen.",
+      "exampleTranslation": "Fırsat elimden kaçtı.",
+      "synonyms": [
+        "entwischen",
+        "entkommen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "den Bock zum Gärtner machen",
+      "turkish": "kurda kuzu emanet etmek",
+      "example": "Ihn einzustellen heißt, den Bock zum Gärtner zu machen.",
+      "exampleTranslation": "Onu işe almak, kurda kuzu emanet etmek demek.",
+      "synonyms": [],
+      "level": "B1"
+    }
+  ]
+}

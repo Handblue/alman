@@ -1,0 +1,172 @@
+{
+  "kind": "gen",
+  "unitId": 75,
+  "categoryId": 3,
+  "number": 16,
+  "title": "Goethe C1 — Bilim ve Araştırma",
+  "theme": "Bilimsel araştırma, yöntem, hipotez ve akademik bilgi üretimi temalı C1 düzeyi kelimeleri. Bilimsel metin ve sunum bağlamı.",
+  "firstWordId": 1111,
+  "words": [
+    {
+      "german": "die Untersuchung",
+      "turkish": "araştırma / inceleme / tetkik",
+      "example": "Die Untersuchung dauerte mehrere Jahre.",
+      "exampleTranslation": "İnceleme birkaç yıl sürdü.",
+      "synonyms": [
+        "die Studie",
+        "die Analyse"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "entdecken",
+      "turkish": "keşfetmek / bulmak",
+      "example": "Forscher entdeckten ein neues Virus.",
+      "exampleTranslation": "Araştırmacılar yeni bir virüs keşfetti.",
+      "synonyms": [
+        "aufdecken"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Entwicklung",
+      "turkish": "gelişme / geliştirme",
+      "example": "Die Entwicklung neuer Methoden ist wichtig.",
+      "exampleTranslation": "Yeni yöntemlerin geliştirilmesi önemlidir.",
+      "synonyms": [
+        "die Evolution"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Versuch",
+      "turkish": "deney / deneme / girişim",
+      "example": "Der Versuch lieferte überraschende Ergebnisse.",
+      "exampleTranslation": "Deney şaşırtıcı sonuçlar verdi.",
+      "synonyms": [
+        "der Test",
+        "die Probe"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Forscherin",
+      "turkish": "kadın araştırmacı / bilim insanı",
+      "example": "Die Forscherin veröffentlichte ihre Daten.",
+      "exampleTranslation": "Araştırmacı verilerini yayımladı.",
+      "synonyms": [
+        "die Wissenschaftlerin"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Erfindung",
+      "turkish": "icat / buluş",
+      "example": "Diese Erfindung veränderte die ganze Branche.",
+      "exampleTranslation": "Bu icat tüm sektörü değiştirdi.",
+      "synonyms": [
+        "die Neuerung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "auswerten",
+      "turkish": "değerlendirmek / analiz etmek (veriyi)",
+      "example": "Wir werten die gesammelten Daten aus.",
+      "exampleTranslation": "Topladığımız verileri değerlendiriyoruz.",
+      "synonyms": [
+        "interpretieren",
+        "beurteilen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Beobachtung",
+      "turkish": "gözlem",
+      "example": "Diese Beobachtung bestätigt unsere Annahme.",
+      "exampleTranslation": "Bu gözlem varsayımımızı doğruluyor.",
+      "synonyms": [
+        "die Wahrnehmung",
+        "die Feststellung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Annahme",
+      "turkish": "varsayım / kabul",
+      "example": "Unsere Annahme erwies sich als richtig.",
+      "exampleTranslation": "Varsayımımız doğru çıktı.",
+      "synonyms": [
+        "die Vermutung",
+        "die Voraussetzung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Befund",
+      "turkish": "bulgu / sonuç (araştırma)",
+      "example": "Der Befund bestätigte die frühere Theorie.",
+      "exampleTranslation": "Bulgu önceki kuramı doğruladı.",
+      "synonyms": [
+        "das Resultat",
+        "die Feststellung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Auswertung",
+      "turkish": "değerlendirme / analiz (sonuç)",
+      "example": "Die Auswertung der Umfrage dauert Wochen.",
+      "exampleTranslation": "Anketin değerlendirilmesi haftalar sürüyor.",
+      "synonyms": [
+        "die Analyse",
+        "die Interpretation"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Hypothese aufstellen",
+      "turkish": "hipotez kurmak / ortaya atmak",
+      "example": "Sie konnte eine klare Hypothese aufstellen.",
+      "exampleTranslation": "Net bir hipotez ortaya atabildi.",
+      "synonyms": [
+        "vermuten",
+        "annehmen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Erkenntnisgewinn",
+      "turkish": "bilgi kazanımı / yeni bilgiye ulaşma",
+      "example": "Der Erkenntnisgewinn dieser Studie ist enorm.",
+      "exampleTranslation": "Bu çalışmanın bilgi kazanımı muazzamdır.",
+      "synonyms": [
+        "der Wissenszuwachs",
+        "die Einsicht"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Stichhaltigkeit",
+      "turkish": "geçerlilik / tutarlılık (kanıtın)",
+      "example": "Die Stichhaltigkeit der Argumente überzeugte alle.",
+      "exampleTranslation": "Argümanların tutarlılığı herkesi ikna etti.",
+      "synonyms": [
+        "die Plausibilität",
+        "die Triftigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Reproduzierbarkeit",
+      "turkish": "yeniden üretilebilirlik / tekrarlanabilirlik",
+      "example": "Die Reproduzierbarkeit der Ergebnisse ist entscheidend.",
+      "exampleTranslation": "Sonuçların tekrarlanabilirliği belirleyicidir.",
+      "synonyms": [
+        "die Wiederholbarkeit",
+        "die Nachvollziehbarkeit"
+      ],
+      "level": "C1"
+    }
+  ]
+}

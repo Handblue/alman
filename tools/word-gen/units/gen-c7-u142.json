@@ -1,0 +1,175 @@
+{
+  "kind": "gen",
+  "unitId": 142,
+  "categoryId": 7,
+  "number": 18,
+  "title": "Çağdaş ve Postmodern Düşünce",
+  "theme": "Yapıbozum, söylem, güç, fark ve büyük anlatıların eleştirisi gibi 20. yüzyıl sonrası kavramları kapsar. Modernliğin sorgulanması üzerine felsefi kelimeler.",
+  "firstWordId": 2116,
+  "words": [
+    {
+      "german": "die Dekonstruktion",
+      "turkish": "yapıbozum / yapısöküm",
+      "example": "Derrida entwickelte die Methode der Dekonstruktion.",
+      "exampleTranslation": "Derrida yapıbozum yöntemini geliştirdi.",
+      "synonyms": [
+        "die Auflösung",
+        "die Zerlegung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Diskurs",
+      "turkish": "söylem",
+      "example": "Der öffentliche Diskurs prägt unser Denken.",
+      "exampleTranslation": "Kamusal söylem düşüncemizi biçimlendirir.",
+      "synonyms": [
+        "die Rede",
+        "der Redefluss"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Macht",
+      "turkish": "iktidar / güç",
+      "example": "Foucault analysierte die Macht in Institutionen.",
+      "exampleTranslation": "Foucault kurumlardaki iktidarı çözümledi.",
+      "synonyms": [
+        "die Herrschaft",
+        "die Gewalt",
+        "der Einfluss"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Differenz",
+      "turkish": "fark / ayrım",
+      "example": "Die Differenz erzeugt Bedeutung in der Sprache.",
+      "exampleTranslation": "Fark, dilde anlam üretir.",
+      "synonyms": [
+        "der Unterschied",
+        "die Abweichung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Metaerzählung",
+      "turkish": "büyük anlatı / üst anlatı",
+      "example": "Lyotard kritisierte jede große Metaerzählung.",
+      "exampleTranslation": "Lyotard her büyük üst anlatıyı eleştirdi.",
+      "synonyms": [
+        "das Großnarrativ",
+        "die Großerzählung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Hyperrealität",
+      "turkish": "hipergerçeklik",
+      "example": "In der Hyperrealität verschwindet das Original.",
+      "exampleTranslation": "Hipergerçeklikte özgün olan kaybolur.",
+      "synonyms": [
+        "die Überwirklichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Simulation",
+      "turkish": "simülasyon / benzetim",
+      "example": "Baudrillard sprach von einer reinen Simulation.",
+      "exampleTranslation": "Baudrillard saf bir simülasyondan söz etti.",
+      "synonyms": [
+        "die Nachbildung",
+        "die Vortäuschung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Pluralität",
+      "turkish": "çoğulluk",
+      "example": "Die Postmoderne feiert die Pluralität der Stimmen.",
+      "exampleTranslation": "Postmodernizm seslerin çoğulluğunu kutlar.",
+      "synonyms": [
+        "die Vielfalt",
+        "die Mehrheit",
+        "die Vielheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Relativismus",
+      "turkish": "görelilik / rölativizm",
+      "example": "Der Relativismus leugnet absolute Wahrheiten.",
+      "exampleTranslation": "Rölativizm mutlak hakikatleri reddeder.",
+      "synonyms": [
+        "die Beliebigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Dezentrierung",
+      "turkish": "merkezsizleştirme / özneden arındırma",
+      "example": "Die Dezentrierung des Subjekts prägt diese Theorie.",
+      "exampleTranslation": "Öznenin merkezsizleştirilmesi bu kuramı belirler.",
+      "synonyms": [
+        "die Entzentrierung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Subjekt",
+      "turkish": "özne",
+      "example": "Das autonome Subjekt wird radikal hinterfragt.",
+      "exampleTranslation": "Özerk özne kökten biçimde sorgulanır.",
+      "synonyms": [
+        "das Ich",
+        "der Handelnde"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Repräsentation",
+      "turkish": "temsil",
+      "example": "Sprache ist nie eine reine Repräsentation der Welt.",
+      "exampleTranslation": "Dil, dünyanın hiçbir zaman saf bir temsili değildir.",
+      "synonyms": [
+        "die Darstellung",
+        "die Abbildung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Beliebigkeit",
+      "turkish": "keyfîlik / gelişigüzellik",
+      "example": "Kritiker werfen der Postmoderne reine Beliebigkeit vor.",
+      "exampleTranslation": "Eleştirmenler postmodernizmi salt keyfîlikle suçlar.",
+      "synonyms": [
+        "die Willkür",
+        "die Wahllosigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Fragmentierung",
+      "turkish": "parçalanma / bölünmüşlük",
+      "example": "Die Fragmentierung der Identität ist allgegenwärtig.",
+      "exampleTranslation": "Kimliğin parçalanması her yerde mevcuttur.",
+      "synonyms": [
+        "die Zersplitterung",
+        "die Aufsplitterung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Ironie",
+      "turkish": "ironi / alaysama",
+      "example": "Postmoderne Texte verwenden oft spielerische Ironie.",
+      "exampleTranslation": "Postmodern metinler sıkça oyunbaz bir ironi kullanır.",
+      "synonyms": [
+        "der Spott",
+        "die Doppeldeutigkeit"
+      ],
+      "level": "B2"
+    }
+  ]
+}

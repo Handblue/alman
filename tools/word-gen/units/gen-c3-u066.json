@@ -1,0 +1,174 @@
+{
+  "kind": "gen",
+  "unitId": 66,
+  "categoryId": 3,
+  "number": 7,
+  "title": "Goethe B1 — Medya ve İletişim",
+  "theme": "Medya, internet, sosyal ağlar ve haberleşme temalı Goethe kelimeleri. Medya kullanımı hakkında görüş bildirme bağlamları.",
+  "firstWordId": 976,
+  "words": [
+    {
+      "german": "die Nachricht",
+      "turkish": "haber / mesaj",
+      "example": "Ich habe deine Nachricht gerade gelesen.",
+      "exampleTranslation": "Mesajını az önce okudum.",
+      "synonyms": [
+        "die Meldung",
+        "die Botschaft"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Sendung",
+      "turkish": "yayın / program",
+      "example": "Diese Sendung läuft jeden Sonntagabend.",
+      "exampleTranslation": "Bu program her pazar akşamı yayınlanıyor.",
+      "synonyms": [
+        "das Programm",
+        "die Übertragung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Zeitung",
+      "turkish": "gazete",
+      "example": "Mein Vater liest jeden Morgen die Zeitung.",
+      "exampleTranslation": "Babam her sabah gazete okur.",
+      "synonyms": [
+        "das Blatt",
+        "die Tageszeitung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Nutzer",
+      "turkish": "kullanıcı",
+      "example": "Viele Nutzer beschweren sich über die neue App.",
+      "exampleTranslation": "Birçok kullanıcı yeni uygulamadan şikayet ediyor.",
+      "synonyms": [
+        "der Anwender",
+        "der Benutzer"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "abonnieren",
+      "turkish": "abone olmak",
+      "example": "Ich möchte diesen Kanal abonnieren.",
+      "exampleTranslation": "Bu kanala abone olmak istiyorum.",
+      "synonyms": [
+        "beziehen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Schlagzeile",
+      "turkish": "manşet / başlık",
+      "example": "Die Schlagzeile stand auf der ersten Seite.",
+      "exampleTranslation": "Manşet ilk sayfada yer alıyordu.",
+      "synonyms": [
+        "die Überschrift",
+        "der Titel"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Beitrag",
+      "turkish": "gönderi / katkı / yazı",
+      "example": "Ihr Beitrag hat viele Kommentare bekommen.",
+      "exampleTranslation": "Gönderisi birçok yorum aldı.",
+      "synonyms": [
+        "der Post",
+        "der Artikel"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Reichweite",
+      "turkish": "erişim / menzil",
+      "example": "Das Video hatte eine enorme Reichweite.",
+      "exampleTranslation": "Videonun çok büyük bir erişimi vardı.",
+      "synonyms": [
+        "die Verbreitung",
+        "der Wirkungskreis"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Berichterstattung",
+      "turkish": "haber yapma / haberleşme",
+      "example": "Die Berichterstattung über den Vorfall war einseitig.",
+      "exampleTranslation": "Olayla ilgili haber yapma tek taraflıydı.",
+      "synonyms": [
+        "die Reportage",
+        "die Nachrichtengebung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "glaubwürdig",
+      "turkish": "güvenilir / inandırıcı",
+      "example": "Diese Quelle wirkt nicht besonders glaubwürdig.",
+      "exampleTranslation": "Bu kaynak pek güvenilir görünmüyor.",
+      "synonyms": [
+        "seriös",
+        "vertrauenswürdig"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "veröffentlichen",
+      "turkish": "yayımlamak / yayınlamak",
+      "example": "Die Zeitung wird den Bericht morgen veröffentlichen.",
+      "exampleTranslation": "Gazete raporu yarın yayımlayacak.",
+      "synonyms": [
+        "publizieren",
+        "herausgeben"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Falschmeldung",
+      "turkish": "yalan haber / asılsız haber",
+      "example": "Im Netz verbreiten sich Falschmeldungen sehr schnell.",
+      "exampleTranslation": "İnternette yalan haberler çok hızlı yayılıyor.",
+      "synonyms": [
+        "die Fehlinformation",
+        "die Ente"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Meinungsfreiheit",
+      "turkish": "ifade özgürlüğü / düşünce özgürlüğü",
+      "example": "Die Meinungsfreiheit ist ein hohes Gut.",
+      "exampleTranslation": "İfade özgürlüğü çok değerli bir haktır.",
+      "synonyms": [
+        "die Redefreiheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Glaubwürdigkeit",
+      "turkish": "güvenilirlik / inandırıcılık",
+      "example": "Der Sender verlor seine Glaubwürdigkeit.",
+      "exampleTranslation": "Kanal güvenilirliğini kaybetti.",
+      "synonyms": [
+        "die Seriosität",
+        "die Vertrauenswürdigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Boulevardpresse",
+      "turkish": "magazin basını / bulvar basını",
+      "example": "Die Boulevardpresse übertreibt oft maßlos.",
+      "exampleTranslation": "Magazin basını sık sık aşırı abartır.",
+      "synonyms": [
+        "die Sensationspresse",
+        "die Regenbogenpresse"
+      ],
+      "level": "C1"
+    }
+  ]
+}

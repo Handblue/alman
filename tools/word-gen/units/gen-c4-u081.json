@@ -1,0 +1,166 @@
+{
+  "kind": "gen",
+  "unitId": 81,
+  "categoryId": 4,
+  "number": 5,
+  "title": "telc — Sağlık Sistemi ve Sigorta",
+  "theme": "Almanya sağlık sistemi, hastalık sigortası ve doktor randevusu bağlamında telc sınavında çıkan kurumsal ve seviye kelimeleri.",
+  "firstWordId": 1201,
+  "words": [
+    {
+      "german": "die Gesundheitskarte",
+      "turkish": "sağlık (sigorta) kartı",
+      "example": "Bitte zeigen Sie Ihre Gesundheitskarte beim Arzt vor.",
+      "exampleTranslation": "Lütfen doktorda sağlık kartınızı gösterin.",
+      "synonyms": [
+        "die Versichertenkarte"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Hausarzt",
+      "turkish": "aile hekimi / pratisyen hekim",
+      "example": "Mein Hausarzt hat mich zum Facharzt überwiesen.",
+      "exampleTranslation": "Aile hekimim beni uzman doktora sevk etti.",
+      "synonyms": [
+        "der Allgemeinmediziner"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Facharzt",
+      "turkish": "uzman doktor / uzman hekim",
+      "example": "Für die Augen brauche ich einen Facharzt.",
+      "exampleTranslation": "Gözlerim için bir uzman doktora ihtiyacım var.",
+      "synonyms": [
+        "der Spezialist"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Überweisung",
+      "turkish": "sevk (kağıdı)",
+      "example": "Ohne Überweisung nimmt mich der Facharzt nicht.",
+      "exampleTranslation": "Sevk olmadan uzman doktor beni kabul etmiyor.",
+      "synonyms": [
+        "der Überweisungsschein"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Beschwerden",
+      "turkish": "şikâyetler / rahatsızlıklar",
+      "example": "Seit Tagen habe ich starke Beschwerden im Rücken.",
+      "exampleTranslation": "Günlerdir sırtımda şiddetli ağrılarım var.",
+      "synonyms": [
+        "die Symptome",
+        "die Schmerzen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Beitragssatz",
+      "turkish": "prim oranı / katkı payı oranı",
+      "example": "Der Beitragssatz der Krankenkasse ist gestiegen.",
+      "exampleTranslation": "Hastalık sigortasının prim oranı arttı.",
+      "synonyms": [
+        "der Versicherungsbeitrag"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Zuzahlung",
+      "turkish": "ek ödeme / katkı payı",
+      "example": "Für Medikamente fällt oft eine Zuzahlung an.",
+      "exampleTranslation": "İlaçlar için çoğu zaman bir ek ödeme çıkıyor.",
+      "synonyms": [
+        "der Eigenanteil",
+        "die Eigenbeteiligung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Vorsorgeuntersuchung",
+      "turkish": "önleyici (koruyucu) muayene / check-up",
+      "example": "Ab vierzig wird die Vorsorgeuntersuchung dringend empfohlen.",
+      "exampleTranslation": "Kırk yaşından sonra önleyici muayene şiddetle önerilir.",
+      "synonyms": [
+        "die Früherkennung",
+        "der Check-up"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Krankmeldung",
+      "turkish": "hastalık bildirimi / istirahat raporu",
+      "example": "Die Krankmeldung muss dem Arbeitgeber vorliegen.",
+      "exampleTranslation": "Hastalık raporu işverene ulaşmış olmalı.",
+      "synonyms": [
+        "die Arbeitsunfähigkeitsbescheinigung",
+        "der Krankenschein"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Krankenkasse",
+      "turkish": "hastalık sigortası kurumu / sandık",
+      "example": "Meine Krankenkasse übernimmt die Kosten der Behandlung.",
+      "exampleTranslation": "Hastalık sigortam tedavi masraflarını karşılıyor.",
+      "synonyms": [
+        "der Krankenversicherer"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Nebenwirkung",
+      "turkish": "yan etki",
+      "example": "Dieses Medikament hat kaum Nebenwirkungen.",
+      "exampleTranslation": "Bu ilacın neredeyse hiç yan etkisi yok.",
+      "synonyms": [
+        "die unerwünschte Wirkung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Kostenübernahme",
+      "turkish": "masrafların üstlenilmesi / ödeme garantisi",
+      "example": "Die Kostenübernahme muss vorher beantragt werden.",
+      "exampleTranslation": "Masrafların üstlenilmesi önceden talep edilmelidir.",
+      "synonyms": [
+        "die Kostenerstattung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Befreiung",
+      "turkish": "muafiyet",
+      "example": "Bei geringem Einkommen ist eine Befreiung möglich.",
+      "exampleTranslation": "Düşük gelirde bir muafiyet mümkündür.",
+      "synonyms": [
+        "die Freistellung",
+        "der Erlass"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "ambulant",
+      "turkish": "ayakta (tedavi) / yatışsız",
+      "example": "Der Eingriff erfolgt ambulant ohne Übernachtung.",
+      "exampleTranslation": "Müdahale yatış olmadan ayakta yapılır.",
+      "synonyms": [
+        "nicht stationär"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "verschreibungspflichtig",
+      "turkish": "reçeteye tabi",
+      "example": "Antibiotika sind in Deutschland verschreibungspflichtig.",
+      "exampleTranslation": "Antibiyotikler Almanya'da reçeteye tabidir.",
+      "synonyms": [
+        "rezeptpflichtig"
+      ],
+      "level": "C1"
+    }
+  ]
+}

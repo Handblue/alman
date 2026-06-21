@@ -1,0 +1,172 @@
+{
+  "kind": "gen",
+  "unitId": 73,
+  "categoryId": 3,
+  "number": 14,
+  "title": "Goethe B2 — Kültür ve Sanat",
+  "theme": "Edebiyat, müzik, görsel sanatlar, müze ve kültürel etkinlikler temalı B2 kelimeleri. Kültür-sanat üzerine yorum ve değerlendirme bağlamı.",
+  "firstWordId": 1081,
+  "words": [
+    {
+      "german": "der Roman",
+      "turkish": "roman",
+      "example": "Sie liest gerade einen spannenden Roman.",
+      "exampleTranslation": "Şu anda heyecanlı bir roman okuyor.",
+      "synonyms": [
+        "das Werk",
+        "die Erzählung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Ausstellung",
+      "turkish": "sergi",
+      "example": "Die Ausstellung im Museum ist sehr beeindruckend.",
+      "exampleTranslation": "Müzedeki sergi çok etkileyici.",
+      "synonyms": [
+        "die Schau",
+        "die Präsentation"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Aufführung",
+      "turkish": "gösterim / sahneleme",
+      "example": "Die Aufführung des Theaterstücks war ausverkauft.",
+      "exampleTranslation": "Tiyatro oyununun sahnelemesi tamamen doluydu.",
+      "synonyms": [
+        "die Vorstellung",
+        "die Inszenierung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Gemälde",
+      "turkish": "tablo / resim",
+      "example": "Dieses Gemälde hängt seit Jahren im Museum.",
+      "exampleTranslation": "Bu tablo yıllardır müzede asılı duruyor.",
+      "synonyms": [
+        "das Bild",
+        "das Kunstwerk"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Schauspieler",
+      "turkish": "oyuncu / aktör",
+      "example": "Der Schauspieler spielte seine Rolle überzeugend.",
+      "exampleTranslation": "Oyuncu rolünü inandırıcı biçimde oynadı.",
+      "synonyms": [
+        "der Darsteller",
+        "der Mime"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Meisterwerk",
+      "turkish": "başyapıt / şaheser",
+      "example": "Dieser Roman gilt als literarisches Meisterwerk.",
+      "exampleTranslation": "Bu roman edebi bir başyapıt sayılıyor.",
+      "synonyms": [
+        "das Glanzstück"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Handlung",
+      "turkish": "olay örgüsü / aksiyon",
+      "example": "Die Handlung des Films war ziemlich verworren.",
+      "exampleTranslation": "Filmin olay örgüsü oldukça karışıktı.",
+      "synonyms": [
+        "der Plot",
+        "das Geschehen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Klang",
+      "turkish": "tını / ses",
+      "example": "Der warme Klang des Cellos berührte alle.",
+      "exampleTranslation": "Çellonun sıcak tınısı herkesi etkiledi.",
+      "synonyms": [
+        "der Ton",
+        "der Sound"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Leinwand",
+      "turkish": "tuval / beyazperde",
+      "example": "Der Maler spannte eine neue Leinwand auf.",
+      "exampleTranslation": "Ressam yeni bir tuval gerdi.",
+      "synonyms": [
+        "das Tuch"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Erzähler",
+      "turkish": "anlatıcı",
+      "example": "Der Erzähler des Romans bleibt anonym.",
+      "exampleTranslation": "Romanın anlatıcısı isimsiz kalır.",
+      "synonyms": [
+        "der Berichtende"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Verfilmung",
+      "turkish": "filme uyarlama / sinema uyarlaması",
+      "example": "Die Verfilmung des Buches gefällt mir besser.",
+      "exampleTranslation": "Kitabın filme uyarlaması daha çok hoşuma gidiyor.",
+      "synonyms": [
+        "die Adaption"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Uraufführung",
+      "turkish": "ilk gösterim / prömiyer",
+      "example": "Die Uraufführung der Oper fand in Wien statt.",
+      "exampleTranslation": "Operanın ilk gösterimi Viyana'da gerçekleşti.",
+      "synonyms": [
+        "die Premiere",
+        "die Erstaufführung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Nachlass",
+      "turkish": "miras / geriye kalan eserler",
+      "example": "Im Nachlass des Dichters fanden sich Briefe.",
+      "exampleTranslation": "Şairin mirasında mektuplar bulundu.",
+      "synonyms": [
+        "das Erbe",
+        "die Hinterlassenschaft"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Vergänglichkeit",
+      "turkish": "geçicilik / fanilik",
+      "example": "Das Gedicht thematisiert die Vergänglichkeit des Lebens.",
+      "exampleTranslation": "Şiir, hayatın geçiciliğini konu alıyor.",
+      "synonyms": [
+        "die Flüchtigkeit",
+        "die Endlichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Wiederbelebung",
+      "turkish": "yeniden canlandırma / yeniden hayata geçirme",
+      "example": "Die Wiederbelebung alter Traditionen ist umstritten.",
+      "exampleTranslation": "Eski geleneklerin yeniden canlandırılması tartışmalı.",
+      "synonyms": [
+        "die Erneuerung",
+        "die Renaissance"
+      ],
+      "level": "C1"
+    }
+  ]
+}

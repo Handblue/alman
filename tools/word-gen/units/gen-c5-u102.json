@@ -1,0 +1,172 @@
+{
+  "kind": "gen",
+  "unitId": 102,
+  "categoryId": 5,
+  "number": 11,
+  "title": "İş Yeri ve Ofis Hayatı",
+  "theme": "Günlük iş ortamı, ofis araçları, mesai ve meslektaşlarla iletişimle ilgili kelimeler. Çalışma gününün rutin bağlamı.",
+  "firstWordId": 1516,
+  "words": [
+    {
+      "german": "der Chef",
+      "turkish": "patron / amir / şef",
+      "example": "Mein Chef ist heute nicht im Büro.",
+      "exampleTranslation": "Patronum bugün ofiste değil.",
+      "synonyms": [
+        "der Vorgesetzte",
+        "der Boss"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Kollege",
+      "turkish": "iş arkadaşı / meslektaş",
+      "example": "Mein Kollege hilft mir bei der Arbeit.",
+      "exampleTranslation": "İş arkadaşım işte bana yardım ediyor.",
+      "synonyms": [
+        "der Mitarbeiter",
+        "der Arbeitskollege"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Computer",
+      "turkish": "bilgisayar",
+      "example": "Der Computer im Büro ist sehr langsam.",
+      "exampleTranslation": "Ofisteki bilgisayar çok yavaş.",
+      "synonyms": [
+        "der Rechner",
+        "der PC"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Büro",
+      "turkish": "ofis / büro",
+      "example": "Ich arbeite jeden Tag im Büro.",
+      "exampleTranslation": "Her gün ofiste çalışıyorum.",
+      "synonyms": [
+        "das Arbeitszimmer",
+        "die Geschäftsstelle"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Schreibtisch",
+      "turkish": "çalışma masası / yazı masası",
+      "example": "Mein Schreibtisch ist immer ordentlich.",
+      "exampleTranslation": "Çalışma masam her zaman düzenli.",
+      "synonyms": [
+        "der Arbeitstisch"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Besprechung",
+      "turkish": "toplantı / görüşme",
+      "example": "Die Besprechung beginnt um zehn Uhr.",
+      "exampleTranslation": "Toplantı saat onda başlıyor.",
+      "synonyms": [
+        "das Meeting",
+        "die Sitzung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Aufgabe",
+      "turkish": "görev / iş",
+      "example": "Diese Aufgabe muss bis morgen fertig sein.",
+      "exampleTranslation": "Bu görev yarına kadar bitmeli.",
+      "synonyms": [
+        "die Tätigkeit",
+        "der Auftrag"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Drucker",
+      "turkish": "yazıcı",
+      "example": "Der Drucker funktioniert leider nicht.",
+      "exampleTranslation": "Yazıcı maalesef çalışmıyor.",
+      "synonyms": [
+        "das Druckgerät"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "das Gehalt",
+      "turkish": "maaş",
+      "example": "Mein Gehalt kommt am Ende des Monats.",
+      "exampleTranslation": "Maaşım ayın sonunda geliyor.",
+      "synonyms": [
+        "der Lohn",
+        "das Einkommen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Abteilung",
+      "turkish": "departman / bölüm",
+      "example": "Sie arbeitet in der Abteilung für Marketing.",
+      "exampleTranslation": "Pazarlama departmanında çalışıyor.",
+      "synonyms": [
+        "der Bereich",
+        "die Sektion"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Feierabend",
+      "turkish": "mesai bitişi / paydos",
+      "example": "Nach dem Feierabend gehe ich nach Hause.",
+      "exampleTranslation": "Mesai bitiminden sonra eve gidiyorum.",
+      "synonyms": [
+        "das Arbeitsende"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Unterlagen",
+      "turkish": "belgeler / evraklar",
+      "example": "Bitte bring die Unterlagen zur Besprechung mit.",
+      "exampleTranslation": "Lütfen belgeleri toplantıya getir.",
+      "synonyms": [
+        "die Dokumente",
+        "die Akten"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Überstunden",
+      "turkish": "fazla mesai",
+      "example": "Diese Woche mache ich viele Überstunden.",
+      "exampleTranslation": "Bu hafta çok fazla mesai yapıyorum.",
+      "synonyms": [
+        "die Mehrarbeit"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Lohnabrechnung",
+      "turkish": "maaş bordrosu / ücret hesabı",
+      "example": "Die Lohnabrechnung bekomme ich per E-Mail.",
+      "exampleTranslation": "Maaş bordrosunu e-posta ile alıyorum.",
+      "synonyms": [
+        "die Gehaltsabrechnung",
+        "der Lohnzettel"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Telefonkonferenz",
+      "turkish": "telefon konferansı / sesli toplantı",
+      "example": "Wir haben um drei Uhr eine Telefonkonferenz.",
+      "exampleTranslation": "Saat üçte bir telefon konferansımız var.",
+      "synonyms": [
+        "die Telko",
+        "die Videokonferenz"
+      ],
+      "level": "B1"
+    }
+  ]
+}

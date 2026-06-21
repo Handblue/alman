@@ -1,0 +1,170 @@
+{
+  "kind": "gen",
+  "unitId": 96,
+  "categoryId": 4,
+  "number": 20,
+  "title": "telc — Soyut Kavramlar ve Bağlaç Yapıları",
+  "theme": "telc C1 düzeyinde soyut düşünce ifade etme ve metin bağdaşıklığı için kullanılan üst düzey bağlaç, edat ve soyut isim grupları.",
+  "firstWordId": 1426,
+  "words": [
+    {
+      "german": "dennoch",
+      "turkish": "yine de / buna rağmen",
+      "example": "Es regnete stark; dennoch gingen wir spazieren.",
+      "exampleTranslation": "Çok yağmur yağıyordu; yine de yürüyüşe çıktık.",
+      "synonyms": [
+        "trotzdem",
+        "gleichwohl"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "deswegen",
+      "turkish": "bu yüzden / bu nedenle",
+      "example": "Er war krank, deswegen blieb er zu Hause.",
+      "exampleTranslation": "Hastaydı, bu yüzden evde kaldı.",
+      "synonyms": [
+        "deshalb",
+        "daher"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sobald",
+      "turkish": "-ir -mez / hemen … -ince",
+      "example": "Ich rufe dich an, sobald ich ankomme.",
+      "exampleTranslation": "Varır varmaz seni ararım.",
+      "synonyms": [
+        "sowie"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sondern",
+      "turkish": "aksine / bilakis",
+      "example": "Er ist nicht müde, sondern nur faul.",
+      "exampleTranslation": "Yorgun değil, sadece tembel.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "einerseits",
+      "turkish": "bir yandan",
+      "example": "Einerseits ist es teuer, andererseits sehr gut.",
+      "exampleTranslation": "Bir yandan pahalı, öte yandan çok iyi.",
+      "synonyms": [
+        "zum einen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "trotz",
+      "turkish": "-e rağmen",
+      "example": "Trotz des Regens fand das Fest statt.",
+      "exampleTranslation": "Yağmura rağmen şenlik gerçekleşti.",
+      "synonyms": [
+        "ungeachtet"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "wegen",
+      "turkish": "-den dolayı / yüzünden",
+      "example": "Wegen des Staus kam ich zu spät.",
+      "exampleTranslation": "Trafik yüzünden geç kaldım.",
+      "synonyms": [
+        "aufgrund",
+        "infolge"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Voraussetzung",
+      "turkish": "ön koşul / şart",
+      "example": "Gute Vorbereitung ist die Voraussetzung für Erfolg.",
+      "exampleTranslation": "İyi hazırlık, başarının ön koşuludur.",
+      "synonyms": [
+        "die Bedingung",
+        "die Grundlage"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Ursache",
+      "turkish": "sebep / neden",
+      "example": "Die Ursache des Unfalls ist noch unklar.",
+      "exampleTranslation": "Kazanın nedeni hâlâ belirsiz.",
+      "synonyms": [
+        "der Grund",
+        "der Auslöser"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Folge",
+      "turkish": "sonuç / netice",
+      "example": "Die Folgen der Krise waren verheerend.",
+      "exampleTranslation": "Krizin sonuçları yıkıcıydı.",
+      "synonyms": [
+        "die Konsequenz",
+        "die Auswirkung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Zusammenhang",
+      "turkish": "bağlantı / ilişki / bağlam",
+      "example": "Es gibt einen klaren Zusammenhang zwischen beiden.",
+      "exampleTranslation": "İkisi arasında açık bir bağlantı var.",
+      "synonyms": [
+        "die Verbindung",
+        "der Bezug"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "folglich",
+      "turkish": "dolayısıyla / sonuç olarak",
+      "example": "Er war unvorbereitet, folglich scheiterte er.",
+      "exampleTranslation": "Hazırlıksızdı, dolayısıyla başarısız oldu.",
+      "synonyms": [
+        "somit",
+        "demzufolge"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "hingegen",
+      "turkish": "buna karşılık / oysa",
+      "example": "Sie schweigt, er hingegen redet ständig.",
+      "exampleTranslation": "O susuyor, buna karşılık o sürekli konuşuyor.",
+      "synonyms": [
+        "dagegen",
+        "wohingegen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "sofern",
+      "turkish": "… olduğu sürece / şu şartla ki",
+      "example": "Ich helfe dir, sofern du es wirklich willst.",
+      "exampleTranslation": "Gerçekten istiyorsan sana yardım ederim.",
+      "synonyms": [
+        "wenn",
+        "insofern als"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Beziehungsweise",
+      "turkish": "ya da / daha doğrusu (bzw.)",
+      "example": "Er kommt am Montag beziehungsweise Dienstag.",
+      "exampleTranslation": "Pazartesi ya da daha doğrusu salı gelir.",
+      "synonyms": [
+        "oder",
+        "genauer gesagt"
+      ],
+      "level": "C1"
+    }
+  ]
+}

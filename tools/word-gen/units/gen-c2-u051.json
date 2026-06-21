@@ -1,0 +1,169 @@
+{
+  "kind": "gen",
+  "unitId": 51,
+  "categoryId": 2,
+  "number": 8,
+  "title": "Dönüşlü Fiiller",
+  "theme": "sich ile kullanılan dönüşlü fiiller; günlük rutinler, duygular ve Akkusativ/Dativ dönüşlü zamir farkı.",
+  "firstWordId": 751,
+  "words": [
+    {
+      "german": "sich waschen",
+      "turkish": "yıkanmak",
+      "example": "Ich wasche mich jeden Morgen.",
+      "exampleTranslation": "Her sabah yıkanırım.",
+      "synonyms": [
+        "sich säubern",
+        "sich reinigen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "sich kämmen",
+      "turkish": "saçını taramak",
+      "example": "Sie kämmt sich vor dem Spiegel.",
+      "exampleTranslation": "Aynanın önünde saçını tarıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "sich freuen",
+      "turkish": "sevinmek / mutlu olmak",
+      "example": "Ich freue mich über das Geschenk.",
+      "exampleTranslation": "Hediyeye seviniyorum.",
+      "synonyms": [
+        "sich erfreuen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "sich setzen",
+      "turkish": "oturmak",
+      "example": "Bitte setzen Sie sich hierher.",
+      "exampleTranslation": "Lütfen buraya oturun.",
+      "synonyms": [
+        "Platz nehmen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "sich duschen",
+      "turkish": "duş almak",
+      "example": "Am Abend dusche ich mich gern.",
+      "exampleTranslation": "Akşam severek duş alırım.",
+      "synonyms": [
+        "sich abbrausen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "sich ärgern",
+      "turkish": "kızmak / sinirlenmek",
+      "example": "Er ärgert sich über den Stau.",
+      "exampleTranslation": "Trafik sıkışıklığına kızıyor.",
+      "synonyms": [
+        "sich aufregen",
+        "sich grämen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "sich interessieren",
+      "turkish": "ilgilenmek",
+      "example": "Wir interessieren uns für Musik.",
+      "exampleTranslation": "Müzikle ilgileniyoruz.",
+      "synonyms": [
+        "sich begeistern"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sich erinnern",
+      "turkish": "hatırlamak",
+      "example": "Ich erinnere mich an deinen Namen.",
+      "exampleTranslation": "Adını hatırlıyorum.",
+      "synonyms": [
+        "sich entsinnen",
+        "zurückdenken"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sich entscheiden",
+      "turkish": "karar vermek",
+      "example": "Sie entscheidet sich für den Job.",
+      "exampleTranslation": "İş için karar veriyor.",
+      "synonyms": [
+        "sich entschließen",
+        "wählen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sich beeilen",
+      "turkish": "acele etmek",
+      "example": "Wir müssen uns jetzt beeilen.",
+      "exampleTranslation": "Şimdi acele etmeliyiz.",
+      "synonyms": [
+        "sich sputen",
+        "hetzen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "sich gewöhnen",
+      "turkish": "alışmak",
+      "example": "Ich gewöhne mich an das Wetter.",
+      "exampleTranslation": "Havaya alışıyorum.",
+      "synonyms": [
+        "sich anpassen",
+        "sich akklimatisieren"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "sich verlassen",
+      "turkish": "güvenmek / dayanmak",
+      "example": "Du kannst dich auf mich verlassen.",
+      "exampleTranslation": "Bana güvenebilirsin.",
+      "synonyms": [
+        "vertrauen",
+        "bauen auf"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "sich bemühen",
+      "turkish": "çaba göstermek / gayret etmek",
+      "example": "Er bemüht sich um eine Lösung.",
+      "exampleTranslation": "Bir çözüm için çaba gösteriyor.",
+      "synonyms": [
+        "sich anstrengen",
+        "sich mühen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "sich beschweren",
+      "turkish": "şikayet etmek",
+      "example": "Die Gäste beschweren sich über den Lärm.",
+      "exampleTranslation": "Misafirler gürültüden şikayet ediyor.",
+      "synonyms": [
+        "sich beklagen",
+        "reklamieren"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "sich erkundigen",
+      "turkish": "bilgi almak / sormak",
+      "example": "Ich erkundige mich nach dem Weg.",
+      "exampleTranslation": "Yolu soruyorum.",
+      "synonyms": [
+        "sich informieren",
+        "nachfragen"
+      ],
+      "level": "C1"
+    }
+  ]
+}

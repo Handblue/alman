@@ -1,0 +1,151 @@
+{
+  "kind": "gen",
+  "unitId": 50,
+  "categoryId": 2,
+  "number": 7,
+  "title": "Sıfatların Karşılaştırması",
+  "theme": "Sıfatların üstünlük ve enüstünlük dereceleri (Komparativ ve Superlativ), düzenli ve düzensiz biçimler, karşılaştırma yapıları.",
+  "firstWordId": 736,
+  "words": [
+    {
+      "german": "besser",
+      "turkish": "daha iyi",
+      "example": "Heute geht es mir besser als gestern.",
+      "exampleTranslation": "Bugün kendimi dünden daha iyi hissediyorum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "älter",
+      "turkish": "daha yaşlı / daha eski",
+      "example": "Mein Bruder ist älter als ich.",
+      "exampleTranslation": "Erkek kardeşim benden daha büyük.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "größer",
+      "turkish": "daha büyük / daha uzun (boy)",
+      "example": "Berlin ist größer als München.",
+      "exampleTranslation": "Berlin Münih'ten daha büyük.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "länger",
+      "turkish": "daha uzun",
+      "example": "Der Sommer ist länger als der Winter.",
+      "exampleTranslation": "Yaz kıştan daha uzundur.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "jünger",
+      "turkish": "daha genç",
+      "example": "Meine Schwester ist jünger als ich.",
+      "exampleTranslation": "Kız kardeşim benden daha genç.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "höher",
+      "turkish": "daha yüksek",
+      "example": "Dieser Berg ist höher als der andere.",
+      "exampleTranslation": "Bu dağ diğerinden daha yüksek.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "am besten",
+      "turkish": "en iyi",
+      "example": "Von allen kocht sie am besten.",
+      "exampleTranslation": "Hepsinin içinde en iyi o yemek yapar.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "am meisten",
+      "turkish": "en çok",
+      "example": "Er verdient von uns allen am meisten.",
+      "exampleTranslation": "Hepimizin içinde en çok o kazanıyor.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "lieber",
+      "turkish": "tercihen / daha çok (isteyerek)",
+      "example": "Ich trinke lieber Tee als Kaffee.",
+      "exampleTranslation": "Kahve yerine daha çok çay içerim.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "der Unterschied",
+      "turkish": "fark",
+      "example": "Der Unterschied zwischen beiden ist groß.",
+      "exampleTranslation": "İkisi arasındaki fark büyüktür.",
+      "synonyms": [
+        "die Differenz",
+        "die Abweichung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "ähnlich",
+      "turkish": "benzer",
+      "example": "Die zwei Modelle sind sich sehr ähnlich.",
+      "exampleTranslation": "İki model birbirine çok benziyor.",
+      "synonyms": [
+        "vergleichbar",
+        "gleichartig"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "deutlich",
+      "turkish": "belirgin / açıkça",
+      "example": "Die neue Version ist deutlich schneller.",
+      "exampleTranslation": "Yeni sürüm belirgin şekilde daha hızlı.",
+      "synonyms": [
+        "klar",
+        "merklich",
+        "erheblich"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "überlegen",
+      "turkish": "üstün",
+      "example": "Ihr Team war dem unseren klar überlegen.",
+      "exampleTranslation": "Onların takımı bizimkine açıkça üstündü.",
+      "synonyms": [
+        "dominant",
+        "stärker"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "geringfügig",
+      "turkish": "önemsiz derecede / cüzi",
+      "example": "Die Preise sind nur geringfügig gestiegen.",
+      "exampleTranslation": "Fiyatlar yalnızca cüzi miktarda arttı.",
+      "synonyms": [
+        "unwesentlich",
+        "minimal",
+        "marginal"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "zunehmend",
+      "turkish": "giderek artan",
+      "example": "Das Wetter wird zunehmend wärmer.",
+      "exampleTranslation": "Hava giderek daha sıcak oluyor.",
+      "synonyms": [
+        "wachsend",
+        "steigend"
+      ],
+      "level": "C1"
+    }
+  ]
+}

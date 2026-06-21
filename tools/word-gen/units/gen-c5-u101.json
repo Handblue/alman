@@ -1,0 +1,170 @@
+{
+  "kind": "gen",
+  "unitId": 101,
+  "categoryId": 5,
+  "number": 10,
+  "title": "Telefon ve İletişim",
+  "theme": "Telefon görüşmesi yapma, mesajlaşma ve iletişim kurmayla ilgili günlük kelimeler. Arama, bağlantı ve görüşme bağlamı.",
+  "firstWordId": 1501,
+  "words": [
+    {
+      "german": "anrufen",
+      "turkish": "telefonla aramak",
+      "example": "Ich rufe dich heute Abend an.",
+      "exampleTranslation": "Seni bu akşam ararım.",
+      "synonyms": [
+        "telefonieren",
+        "kontaktieren"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Telefon",
+      "turkish": "telefon",
+      "example": "Das Telefon klingelt schon wieder.",
+      "exampleTranslation": "Telefon yine çalıyor.",
+      "synonyms": [
+        "der Apparat",
+        "der Fernsprecher"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Nummer",
+      "turkish": "numara",
+      "example": "Wie ist deine neue Nummer?",
+      "exampleTranslation": "Yeni numaran nedir?",
+      "synonyms": [
+        "die Rufnummer",
+        "die Telefonnummer"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Nachricht",
+      "turkish": "mesaj / haber",
+      "example": "Ich schicke dir gleich eine Nachricht.",
+      "exampleTranslation": "Sana hemen bir mesaj gönderiyorum.",
+      "synonyms": [
+        "die Mitteilung",
+        "die SMS"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Anruf",
+      "turkish": "telefon araması",
+      "example": "Ich erwarte einen wichtigen Anruf.",
+      "exampleTranslation": "Önemli bir arama bekliyorum.",
+      "synonyms": [
+        "das Gespräch"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Verbindung",
+      "turkish": "bağlantı",
+      "example": "Die Verbindung ist heute sehr schlecht.",
+      "exampleTranslation": "Bağlantı bugün çok kötü.",
+      "synonyms": [
+        "der Kontakt",
+        "der Anschluss"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "klingeln",
+      "turkish": "çalmak (zil/telefon)",
+      "example": "Mein Handy klingelt die ganze Zeit.",
+      "exampleTranslation": "Telefonum sürekli çalıyor.",
+      "synonyms": [
+        "läuten"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Mailbox",
+      "turkish": "sesli mesaj kutusu",
+      "example": "Sprich bitte auf die Mailbox.",
+      "exampleTranslation": "Lütfen sesli mesaj bırak.",
+      "synonyms": [
+        "der Anrufbeantworter"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Empfang",
+      "turkish": "sinyal / çekim / kabul",
+      "example": "Hier habe ich keinen Empfang.",
+      "exampleTranslation": "Burada hiç çekmiyor.",
+      "synonyms": [
+        "das Signal",
+        "der Netzempfang"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "zurückrufen",
+      "turkish": "geri aramak",
+      "example": "Ich rufe dich später zurück.",
+      "exampleTranslation": "Seni sonra geri ararım.",
+      "synonyms": [
+        "wiederanrufen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "besetzt",
+      "turkish": "meşgul (hat)",
+      "example": "Die Leitung ist gerade besetzt.",
+      "exampleTranslation": "Hat şu an meşgul.",
+      "synonyms": [
+        "belegt"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "sich melden",
+      "turkish": "haber vermek / kendini bildirmek",
+      "example": "Melde dich, wenn du angekommen bist.",
+      "exampleTranslation": "Vardığında haber ver.",
+      "synonyms": [
+        "sich abmelden",
+        "Bescheid geben"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "verbinden",
+      "turkish": "bağlamak (hatta)",
+      "example": "Ich verbinde Sie mit dem Chef.",
+      "exampleTranslation": "Sizi müdüre bağlıyorum.",
+      "synonyms": [
+        "weiterleiten",
+        "durchstellen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Leitung",
+      "turkish": "hat (telefon hattı)",
+      "example": "Bleiben Sie bitte in der Leitung.",
+      "exampleTranslation": "Lütfen hatta kalın.",
+      "synonyms": [
+        "der Anschluss",
+        "die Telefonleitung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "auflegen",
+      "turkish": "telefonu kapatmak",
+      "example": "Bitte leg jetzt nicht auf.",
+      "exampleTranslation": "Lütfen şimdi telefonu kapatma.",
+      "synonyms": [
+        "beenden"
+      ],
+      "level": "B1"
+    }
+  ]
+}

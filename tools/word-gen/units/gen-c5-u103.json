@@ -1,0 +1,172 @@
+{
+  "kind": "gen",
+  "unitId": 103,
+  "categoryId": 5,
+  "number": 12,
+  "title": "Boş Zaman ve Hobiler",
+  "theme": "Serbest zaman etkinlikleri, hobiler ve eğlenceyle ilgili günlük kelimeler. Sinema, müzik, okuma ve buluşma bağlamı.",
+  "firstWordId": 1531,
+  "words": [
+    {
+      "german": "das Hobby",
+      "turkish": "hobi / uğraş",
+      "example": "Mein Hobby ist Fotografieren.",
+      "exampleTranslation": "Benim hobim fotoğraf çekmek.",
+      "synonyms": [
+        "die Freizeitbeschäftigung",
+        "das Steckenpferd"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Film",
+      "turkish": "film",
+      "example": "Der Film war wirklich spannend.",
+      "exampleTranslation": "Film gerçekten heyecanlıydı.",
+      "synonyms": [
+        "der Streifen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Spaß",
+      "turkish": "eğlence / keyif",
+      "example": "Tennis macht mir großen Spaß.",
+      "exampleTranslation": "Tenis bana büyük keyif veriyor.",
+      "synonyms": [
+        "das Vergnügen",
+        "die Freude"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Freizeit",
+      "turkish": "boş zaman / serbest zaman",
+      "example": "In meiner Freizeit spiele ich Gitarre.",
+      "exampleTranslation": "Boş zamanımda gitar çalarım.",
+      "synonyms": [
+        "die Mußestunden"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "tanzen",
+      "turkish": "dans etmek",
+      "example": "Am Wochenende gehen wir tanzen.",
+      "exampleTranslation": "Hafta sonu dans etmeye gideriz.",
+      "synonyms": [
+        "das Tanzbein schwingen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "malen",
+      "turkish": "resim yapmak / boyamak",
+      "example": "Sie malt gern bunte Bilder.",
+      "exampleTranslation": "Renkli resimler yapmayı sever.",
+      "synonyms": [
+        "zeichnen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "sich treffen",
+      "turkish": "buluşmak / görüşmek",
+      "example": "Wir treffen uns heute Abend im Park.",
+      "exampleTranslation": "Bu akşam parkta buluşuyoruz.",
+      "synonyms": [
+        "sich sehen",
+        "zusammenkommen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Verein",
+      "turkish": "kulüp / dernek",
+      "example": "Er spielt Fußball in einem Verein.",
+      "exampleTranslation": "Bir kulüpte futbol oynuyor.",
+      "synonyms": [
+        "der Klub",
+        "die Vereinigung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "das Spiel",
+      "turkish": "oyun / maç",
+      "example": "Das Spiel beginnt um acht Uhr.",
+      "exampleTranslation": "Oyun saat sekizde başlıyor.",
+      "synonyms": [
+        "die Partie",
+        "der Wettkampf"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "sammeln",
+      "turkish": "biriktirmek / toplamak",
+      "example": "Mein Bruder sammelt alte Briefmarken.",
+      "exampleTranslation": "Kardeşim eski pulları biriktiriyor.",
+      "synonyms": [
+        "zusammentragen",
+        "anhäufen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "basteln",
+      "turkish": "el işi yapmak / uğraşıp yapmak",
+      "example": "Die Kinder basteln gern mit Papier.",
+      "exampleTranslation": "Çocuklar kâğıtla el işi yapmayı sever.",
+      "synonyms": [
+        "werkeln",
+        "tüfteln"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "sich verabreden",
+      "turkish": "randevulaşmak / sözleşmek",
+      "example": "Wir verabreden uns für Samstagabend.",
+      "exampleTranslation": "Cumartesi akşamı için sözleşiyoruz.",
+      "synonyms": [
+        "ausmachen",
+        "vereinbaren"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Eintrittskarte",
+      "turkish": "giriş bileti",
+      "example": "Ich habe zwei Eintrittskarten fürs Konzert.",
+      "exampleTranslation": "Konser için iki giriş biletim var.",
+      "synonyms": [
+        "die Karte",
+        "das Ticket"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Vorstellung",
+      "turkish": "gösteri / temsil",
+      "example": "Die Vorstellung im Theater war ausverkauft.",
+      "exampleTranslation": "Tiyatrodaki gösteri tamamen doluydu.",
+      "synonyms": [
+        "die Aufführung",
+        "die Show"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Eintritt",
+      "turkish": "giriş / giriş ücreti",
+      "example": "Der Eintritt ins Museum ist heute frei.",
+      "exampleTranslation": "Müzeye giriş bugün ücretsiz.",
+      "synonyms": [
+        "der Zutritt",
+        "die Eintrittsgebühr"
+      ],
+      "level": "B1"
+    }
+  ]
+}

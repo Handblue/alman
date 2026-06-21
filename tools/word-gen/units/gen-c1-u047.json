@@ -1,0 +1,166 @@
+{
+  "kind": "gen",
+  "unitId": 47,
+  "categoryId": 1,
+  "number": 19,
+  "title": "Günlük Rutin ve Ev İşleri",
+  "theme": "Sabahtan akşama günlük rutindeki eylemler ve ev içindeki temel işler. İnsanların her gün düzenli olarak yaptığı aktiviteleri anlatan A1/A2 kelimeleri.",
+  "firstWordId": 691,
+  "words": [
+    {
+      "german": "aufwachen",
+      "turkish": "uyanmak",
+      "example": "Ich wache jeden Morgen um sechs Uhr auf.",
+      "exampleTranslation": "Her sabah saat altıda uyanırım.",
+      "synonyms": [
+        "erwachen",
+        "wach werden"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "aufstehen",
+      "turkish": "kalkmak / ayağa kalkmak",
+      "example": "Am Montag stehe ich sehr früh auf.",
+      "exampleTranslation": "Pazartesi günü çok erken kalkarım.",
+      "synonyms": [
+        "sich erheben"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "sich waschen",
+      "turkish": "yıkanmak",
+      "example": "Ich wasche mich jeden Morgen im Bad.",
+      "exampleTranslation": "Her sabah banyoda yıkanırım.",
+      "synonyms": [
+        "sich säubern"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "duschen",
+      "turkish": "duş almak",
+      "example": "Nach dem Sport dusche ich immer.",
+      "exampleTranslation": "Spordan sonra her zaman duş alırım.",
+      "synonyms": [
+        "sich abbrausen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Frühstück",
+      "turkish": "kahvaltı",
+      "example": "Das Frühstück steht schon auf dem Tisch.",
+      "exampleTranslation": "Kahvaltı çoktan masada hazır.",
+      "synonyms": [
+        "die Morgenmahlzeit"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "kochen",
+      "turkish": "yemek pişirmek / kaynamak",
+      "example": "Meine Mutter kocht heute eine Suppe.",
+      "exampleTranslation": "Annem bugün bir çorba pişiriyor.",
+      "synonyms": [
+        "zubereiten"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "putzen",
+      "turkish": "temizlemek / silmek",
+      "example": "Am Samstag putze ich die ganze Wohnung.",
+      "exampleTranslation": "Cumartesi günü bütün evi temizlerim.",
+      "synonyms": [
+        "säubern",
+        "reinigen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "aufräumen",
+      "turkish": "toplamak / düzenlemek",
+      "example": "Die Kinder räumen ihr Zimmer auf.",
+      "exampleTranslation": "Çocuklar odalarını topluyor.",
+      "synonyms": [
+        "ordnen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "waschen",
+      "turkish": "yıkamak",
+      "example": "Ich wasche heute meine Kleidung.",
+      "exampleTranslation": "Bugün kıyafetlerimi yıkıyorum.",
+      "synonyms": [
+        "reinigen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "bügeln",
+      "turkish": "ütülemek",
+      "example": "Nach dem Waschen bügle ich die Hemden.",
+      "exampleTranslation": "Yıkamadan sonra gömlekleri ütülerim.",
+      "synonyms": [
+        "plätten"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "einkaufen",
+      "turkish": "alışveriş yapmak",
+      "example": "Wir kaufen am Freitag im Supermarkt ein.",
+      "exampleTranslation": "Cuma günü süpermarkette alışveriş yaparız.",
+      "synonyms": [
+        "besorgen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "trinken",
+      "turkish": "içmek",
+      "example": "Am Morgen trinke ich einen Kaffee.",
+      "exampleTranslation": "Sabahları bir kahve içerim.",
+      "synonyms": [
+        "zu sich nehmen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "sich ausruhen",
+      "turkish": "dinlenmek",
+      "example": "Am Abend ruhe ich mich auf dem Sofa aus.",
+      "exampleTranslation": "Akşamları kanepede dinlenirim.",
+      "synonyms": [
+        "sich erholen",
+        "entspannen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "zuerst",
+      "turkish": "önce / ilk olarak",
+      "example": "Zuerst frühstücke ich, dann gehe ich los.",
+      "exampleTranslation": "Önce kahvaltı yaparım, sonra çıkarım.",
+      "synonyms": [
+        "erst",
+        "anfangs"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "gewöhnlich",
+      "turkish": "genellikle / alışılmış",
+      "example": "Gewöhnlich stehe ich um sieben Uhr auf.",
+      "exampleTranslation": "Genellikle saat yedide kalkarım.",
+      "synonyms": [
+        "normalerweise",
+        "üblicherweise"
+      ],
+      "level": "A1"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 144,
+  "categoryId": 7,
+  "number": 20,
+  "title": "Argümantasyon ve Felsefi Tartışma",
+  "theme": "Felsefi tartışmada kullanılan akıl yürütme, gerekçelendirme, çürütme ve safsata gibi metodolojik kavramları kapsar. Tez savunma ve eleştirel düşünme üzerine kelimeler.",
+  "firstWordId": 2146,
+  "words": [
+    {
+      "german": "das Argument",
+      "turkish": "argüman / kanıt",
+      "example": "Sein Argument war logisch und überzeugend.",
+      "exampleTranslation": "Argümanı mantıklı ve ikna ediciydi.",
+      "synonyms": [
+        "der Beleg",
+        "das Vorbringen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Argumentation",
+      "turkish": "argümantasyon / akıl yürütme",
+      "example": "Die Argumentation des Autors ist gut strukturiert.",
+      "exampleTranslation": "Yazarın akıl yürütmesi iyi yapılandırılmış.",
+      "synonyms": [
+        "die Beweisführung",
+        "die Gedankenführung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Begründung",
+      "turkish": "gerekçe / gerekçelendirme",
+      "example": "Ohne eine klare Begründung überzeugt die These nicht.",
+      "exampleTranslation": "Açık bir gerekçe olmadan tez ikna etmiyor.",
+      "synonyms": [
+        "die Rechtfertigung",
+        "die Herleitung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Gegenthese",
+      "turkish": "karşı tez / antitez",
+      "example": "Er stellte der These eine starke Gegenthese gegenüber.",
+      "exampleTranslation": "Teze karşı güçlü bir antitez koydu.",
+      "synonyms": [
+        "die Antithese",
+        "die Behauptung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Einwand",
+      "turkish": "itiraz / çekince",
+      "example": "Gegen dieses Argument gibt es einen ernsten Einwand.",
+      "exampleTranslation": "Bu argümana karşı ciddi bir itiraz var.",
+      "synonyms": [
+        "der Vorbehalt",
+        "die Entgegnung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "schlüssig",
+      "turkish": "tutarlı / mantıklı sonuca varan",
+      "example": "Seine Beweisführung war völlig schlüssig.",
+      "exampleTranslation": "Kanıtlaması tamamen tutarlıydı.",
+      "synonyms": [
+        "kohärent",
+        "folgerichtig"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Widerlegung",
+      "turkish": "çürütme",
+      "example": "Die Widerlegung seiner These gelang ihr mühelos.",
+      "exampleTranslation": "Tezini çürütmeyi zahmetsizce başardı.",
+      "synonyms": [
+        "die Entkräftung",
+        "die Refutation"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Konklusion",
+      "turkish": "vargı / sonuç (çıkarım)",
+      "example": "Aus den Prämissen folgt diese Konklusion zwingend.",
+      "exampleTranslation": "Öncüllerden bu vargı zorunlu olarak çıkar.",
+      "synonyms": [
+        "der Schluss",
+        "die Folgerung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Trugschluss",
+      "turkish": "safsata / yanlış çıkarım",
+      "example": "Diese Argumentation beruht auf einem Trugschluss.",
+      "exampleTranslation": "Bu akıl yürütme bir safsataya dayanıyor.",
+      "synonyms": [
+        "der Fehlschluss",
+        "das Sophisma"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Zirkelschluss",
+      "turkish": "döngüsel akıl yürütme / kısırdöngü",
+      "example": "Sein Beweis ist ein klassischer Zirkelschluss.",
+      "exampleTranslation": "Kanıtı klasik bir kısırdöngü.",
+      "synonyms": [
+        "die Zirkularität",
+        "der Ringschluss"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Gegenbeweis",
+      "turkish": "karşı kanıt",
+      "example": "Bisher fehlt jeder Gegenbeweis zu seiner Behauptung.",
+      "exampleTranslation": "Şimdiye dek savına karşı hiçbir karşı kanıt yok.",
+      "synonyms": [
+        "die Widerlegung",
+        "der Gegenbeleg"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Beweislast",
+      "turkish": "ispat yükü / kanıtlama yükümlülüğü",
+      "example": "Die Beweislast liegt bei dem, der behauptet.",
+      "exampleTranslation": "İspat yükü, iddiada bulunana aittir.",
+      "synonyms": [
+        "die Beweispflicht",
+        "die Nachweispflicht"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "entkräften",
+      "turkish": "çürütmek / geçersiz kılmak",
+      "example": "Mit einem Beispiel konnte er den Einwand entkräften.",
+      "exampleTranslation": "Bir örnekle itirazı çürütebildi.",
+      "synonyms": [
+        "widerlegen",
+        "entwerten"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "unterstellen",
+      "turkish": "örtük varsaymak / atfetmek",
+      "example": "Du unterstellst mir eine Absicht, die ich nicht habe.",
+      "exampleTranslation": "Bana sahip olmadığım bir niyet atfediyorsun.",
+      "synonyms": [
+        "voraussetzen",
+        "annehmen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "stichhaltig",
+      "turkish": "sağlam / geçerli (argüman)",
+      "example": "Seine Einwände sind durchaus stichhaltig.",
+      "exampleTranslation": "İtirazları gerçekten sağlam.",
+      "synonyms": [
+        "triftig",
+        "fundiert"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "kind": "gen",
+  "unitId": 45,
+  "categoryId": 1,
+  "number": 17,
+  "title": "İletişim ve Teknoloji",
+  "theme": "Telefon, internet ve günlük dijital araçlarla ilgili temel sözcükler. Mesajlaşma, arama ve cihaz kullanımıyla ilgili A1/A2 kelimeleri.",
+  "firstWordId": 661,
+  "words": [
+    {
+      "german": "das Telefon",
+      "turkish": "telefon",
+      "example": "Mein Telefon ist kaputt.",
+      "exampleTranslation": "Telefonum bozuk.",
+      "synonyms": [
+        "der Apparat"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Computer",
+      "turkish": "bilgisayar",
+      "example": "Ich arbeite jeden Tag am Computer.",
+      "exampleTranslation": "Her gün bilgisayarda çalışıyorum.",
+      "synonyms": [
+        "der Rechner",
+        "der PC"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die E-Mail",
+      "turkish": "e-posta",
+      "example": "Ich schreibe dir eine E-Mail.",
+      "exampleTranslation": "Sana bir e-posta yazıyorum.",
+      "synonyms": [
+        "die Mail",
+        "die elektronische Post"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Nachricht",
+      "turkish": "mesaj / haber",
+      "example": "Ich habe eine Nachricht bekommen.",
+      "exampleTranslation": "Bir mesaj aldım.",
+      "synonyms": [
+        "die Mitteilung",
+        "die SMS"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "anrufen",
+      "turkish": "aramak (telefonla)",
+      "example": "Ich rufe meine Mutter an.",
+      "exampleTranslation": "Annemi arıyorum.",
+      "synonyms": [
+        "telefonieren"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Nummer",
+      "turkish": "numara",
+      "example": "Wie ist deine Nummer?",
+      "exampleTranslation": "Numaran kaç?",
+      "synonyms": [
+        "die Ziffer"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "antworten",
+      "turkish": "cevap vermek",
+      "example": "Bitte antworte mir schnell.",
+      "exampleTranslation": "Lütfen bana çabuk cevap ver.",
+      "synonyms": [
+        "erwidern",
+        "reagieren"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "senden",
+      "turkish": "göndermek",
+      "example": "Ich sende dir das Foto.",
+      "exampleTranslation": "Sana fotoğrafı gönderiyorum.",
+      "synonyms": [
+        "schicken",
+        "verschicken"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Brief",
+      "turkish": "mektup",
+      "example": "Ich schreibe meiner Oma einen Brief.",
+      "exampleTranslation": "Anneanneme bir mektup yazıyorum.",
+      "synonyms": [
+        "das Schreiben"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Adresse",
+      "turkish": "adres",
+      "example": "Schreib bitte deine Adresse auf.",
+      "exampleTranslation": "Lütfen adresini yaz.",
+      "synonyms": [
+        "die Anschrift"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Bildschirm",
+      "turkish": "ekran",
+      "example": "Der Bildschirm ist sehr groß.",
+      "exampleTranslation": "Ekran çok büyük.",
+      "synonyms": [
+        "das Display",
+        "der Monitor"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Kabel",
+      "turkish": "kablo",
+      "example": "Das Kabel ist zu kurz.",
+      "exampleTranslation": "Kablo çok kısa.",
+      "synonyms": [
+        "die Leitung",
+        "die Schnur"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Briefmarke",
+      "turkish": "pul",
+      "example": "Ich klebe eine Briefmarke auf den Brief.",
+      "exampleTranslation": "Mektuba bir pul yapıştırıyorum.",
+      "synonyms": [
+        "die Marke",
+        "das Postwertzeichen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "besetzt",
+      "turkish": "meşgul (telefon)",
+      "example": "Die Leitung ist gerade besetzt.",
+      "exampleTranslation": "Hat şu an meşgul.",
+      "synonyms": [
+        "belegt"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Verbindung",
+      "turkish": "bağlantı",
+      "example": "Die Verbindung ist sehr schlecht.",
+      "exampleTranslation": "Bağlantı çok kötü.",
+      "synonyms": [
+        "der Anschluss",
+        "der Kontakt"
+      ],
+      "level": "A2"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "kind": "gen",
+  "unitId": 90,
+  "categoryId": 4,
+  "number": 14,
+  "title": "telc — Kamu Daireleri ve Bürokrasi",
+  "theme": "Belediye, yabancılar dairesi ve resmi kurumlarla işlemler bağlamında telc sınavının bürokrasi terimleri.",
+  "firstWordId": 1336,
+  "words": [
+    {
+      "german": "die Meldebescheinigung",
+      "turkish": "ikametgah belgesi / yerleşim yeri belgesi",
+      "example": "Für die Anmeldung brauche ich eine Meldebescheinigung.",
+      "exampleTranslation": "Kayıt için bir ikametgah belgesine ihtiyacım var.",
+      "synonyms": [
+        "der Wohnsitznachweis"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Anmeldung",
+      "turkish": "kayıt / başvuru bildirimi",
+      "example": "Die Anmeldung beim Bürgeramt ist kostenlos.",
+      "exampleTranslation": "Belediye dairesindeki kayıt ücretsizdir.",
+      "synonyms": [
+        "die Registrierung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Einwohnermeldeamt",
+      "turkish": "nüfus müdürlüğü / kayıt dairesi",
+      "example": "Du musst dich beim Einwohnermeldeamt anmelden.",
+      "exampleTranslation": "Nüfus müdürlüğüne kaydolmalısın.",
+      "synonyms": [
+        "das Bürgeramt",
+        "das Meldeamt"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Ausländerbehörde",
+      "turkish": "yabancılar dairesi",
+      "example": "Die Ausländerbehörde verlängert meinen Aufenthaltstitel.",
+      "exampleTranslation": "Yabancılar dairesi oturum iznimi uzatıyor.",
+      "synonyms": [
+        "das Ausländeramt"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Sachbearbeiter",
+      "turkish": "görevli memur / dosya sorumlusu",
+      "example": "Der Sachbearbeiter prüft meine Unterlagen.",
+      "exampleTranslation": "Görevli memur belgelerimi inceliyor.",
+      "synonyms": [
+        "der Beamte",
+        "der Bearbeiter"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Aufenthaltstitel",
+      "turkish": "oturma izni belgesi",
+      "example": "Mein Aufenthaltstitel läuft nächsten Monat ab.",
+      "exampleTranslation": "Oturma izni belgem gelecek ay sona eriyor.",
+      "synonyms": [
+        "die Aufenthaltsberechtigung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Bescheinigung",
+      "turkish": "belge / onaylı yazı",
+      "example": "Bitte legen Sie eine ärztliche Bescheinigung vor.",
+      "exampleTranslation": "Lütfen bir doktor raporu ibraz edin.",
+      "synonyms": [
+        "das Attest",
+        "der Beleg"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Bescheid",
+      "turkish": "resmi karar / tebligat",
+      "example": "Der Bescheid des Finanzamts kam gestern.",
+      "exampleTranslation": "Vergi dairesinin tebligatı dün geldi.",
+      "synonyms": [
+        "die Mitteilung",
+        "der Verwaltungsakt"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Beglaubigung",
+      "turkish": "tasdik / onaylama",
+      "example": "Für die Kopie ist eine amtliche Beglaubigung nötig.",
+      "exampleTranslation": "Kopya için resmi bir tasdik gereklidir.",
+      "synonyms": [
+        "die Bestätigung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "einreichen",
+      "turkish": "sunmak / teslim etmek (belge)",
+      "example": "Sie müssen den Antrag fristgerecht einreichen.",
+      "exampleTranslation": "Başvuruyu süresinde teslim etmelisiniz.",
+      "synonyms": [
+        "abgeben",
+        "vorlegen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Sozialamt",
+      "turkish": "sosyal yardım dairesi",
+      "example": "Das Sozialamt unterstützt Menschen ohne Einkommen.",
+      "exampleTranslation": "Sosyal yardım dairesi geliri olmayan insanlara destek olur.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "der Widerspruch",
+      "turkish": "itiraz",
+      "example": "Gegen den Bescheid kann man Widerspruch einlegen.",
+      "exampleTranslation": "Karara karşı itirazda bulunulabilir.",
+      "synonyms": [
+        "der Einspruch"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Verwaltungsakt",
+      "turkish": "idari işlem",
+      "example": "Jeder Verwaltungsakt muss schriftlich begründet werden.",
+      "exampleTranslation": "Her idari işlem yazılı olarak gerekçelendirilmelidir.",
+      "synonyms": [
+        "die behördliche Verfügung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Zuständigkeit",
+      "turkish": "yetki / görev alanı",
+      "example": "Für Ihr Anliegen liegt die Zuständigkeit beim Bezirksamt.",
+      "exampleTranslation": "Talebiniz için yetki ilçe dairesindedir.",
+      "synonyms": [
+        "die Kompetenz",
+        "der Geschäftsbereich"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Ermessensspielraum",
+      "turkish": "takdir yetkisi / takdir alanı",
+      "example": "Die Behörde hat hier einen großen Ermessensspielraum.",
+      "exampleTranslation": "Daire burada geniş bir takdir yetkisine sahiptir.",
+      "synonyms": [
+        "der Handlungsspielraum"
+      ],
+      "level": "C1"
+    }
+  ]
+}

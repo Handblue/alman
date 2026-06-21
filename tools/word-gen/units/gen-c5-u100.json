@@ -1,0 +1,164 @@
+{
+  "kind": "gen",
+  "unitId": 100,
+  "categoryId": 5,
+  "number": 9,
+  "title": "Resmi Daireler ve Bürokrasi",
+  "theme": "Belediye, nüfus ve yabancılar dairesi gibi resmi kurumlarda işlem yaparken geçen günlük kelimeler. Form doldurma, başvuru ve belge işlemleri.",
+  "firstWordId": 1486,
+  "words": [
+    {
+      "german": "die Unterschrift",
+      "turkish": "imza",
+      "example": "Bitte setzen Sie hier Ihre Unterschrift.",
+      "exampleTranslation": "Lütfen imzanızı buraya atın.",
+      "synonyms": [
+        "das Signum"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Ausweis",
+      "turkish": "kimlik / kimlik kartı",
+      "example": "Zeigen Sie bitte Ihren Ausweis.",
+      "exampleTranslation": "Lütfen kimliğinizi gösterin.",
+      "synonyms": [
+        "der Personalausweis"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "ausfüllen",
+      "turkish": "doldurmak",
+      "example": "Sie müssen das Formular ausfüllen.",
+      "exampleTranslation": "Formu doldurmanız gerekiyor.",
+      "synonyms": [
+        "eintragen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "gültig",
+      "turkish": "geçerli",
+      "example": "Mein Pass ist noch gültig.",
+      "exampleTranslation": "Pasaportum hâlâ geçerli.",
+      "synonyms": [
+        "wirksam"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "abgeben",
+      "turkish": "teslim etmek / vermek",
+      "example": "Ich gebe den Antrag am Schalter ab.",
+      "exampleTranslation": "Başvuruyu gişede teslim ediyorum.",
+      "synonyms": [
+        "einreichen",
+        "übergeben"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Amt",
+      "turkish": "resmi daire / makam",
+      "example": "Das Amt ist heute geschlossen.",
+      "exampleTranslation": "Daire bugün kapalı.",
+      "synonyms": [
+        "die Dienststelle"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Anmeldung",
+      "turkish": "kayıt / giriş bildirimi",
+      "example": "Die Anmeldung beim Amt ist Pflicht.",
+      "exampleTranslation": "Dairede kayıt zorunludur.",
+      "synonyms": [
+        "die Registrierung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "das Einwohnermeldeamt",
+      "turkish": "nüfus dairesi",
+      "example": "Ich gehe zum Einwohnermeldeamt.",
+      "exampleTranslation": "Nüfus dairesine gidiyorum.",
+      "synonyms": [
+        "das Meldeamt",
+        "das Bürgeramt"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Schalter",
+      "turkish": "gişe / banko",
+      "example": "Bitte warten Sie am Schalter drei.",
+      "exampleTranslation": "Lütfen üç numaralı gişede bekleyin.",
+      "synonyms": [
+        "der Schreibtisch"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Stempel",
+      "turkish": "mühür / damga",
+      "example": "Das Dokument braucht einen Stempel.",
+      "exampleTranslation": "Belge bir mühre ihtiyaç duyuyor.",
+      "synonyms": [
+        "der Abdruck"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Aufenthalt",
+      "turkish": "ikamet / kalış",
+      "example": "Mein Aufenthalt in Deutschland ist legal.",
+      "exampleTranslation": "Almanya'daki ikametim yasaldır.",
+      "synonyms": [
+        "der Verbleib"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Bescheinigung",
+      "turkish": "belge / onay yazısı",
+      "example": "Ich brauche eine Bescheinigung vom Amt.",
+      "exampleTranslation": "Daireden bir belgeye ihtiyacım var.",
+      "synonyms": [
+        "das Attest",
+        "die Urkunde"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Beamte",
+      "turkish": "memur / devlet memuru",
+      "example": "Der Beamte prüft meine Unterlagen.",
+      "exampleTranslation": "Memur belgelerimi kontrol ediyor.",
+      "synonyms": [
+        "der Sachbearbeiter"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Gebühr",
+      "turkish": "harç / ücret",
+      "example": "Für den Antrag fällt eine Gebühr an.",
+      "exampleTranslation": "Başvuru için bir harç alınıyor.",
+      "synonyms": [
+        "die Abgabe"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Geburtsurkunde",
+      "turkish": "doğum belgesi",
+      "example": "Bringen Sie bitte Ihre Geburtsurkunde mit.",
+      "exampleTranslation": "Lütfen doğum belgenizi yanınızda getirin.",
+      "synonyms": [
+        "der Geburtsnachweis"
+      ],
+      "level": "B1"
+    }
+  ]
+}

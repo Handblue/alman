@@ -1,0 +1,175 @@
+{
+  "kind": "gen",
+  "unitId": 139,
+  "categoryId": 7,
+  "number": 15,
+  "title": "Bilim Felsefesi",
+  "theme": "Bilimsel yöntem, hipotez, yanlışlanabilirlik, paradigma ve açıklama gibi kavramları kapsar. Bilimsel bilginin yapısı ve gerekçelendirilmesi üzerine felsefi kelimeler.",
+  "firstWordId": 2071,
+  "words": [
+    {
+      "german": "die Falsifikation",
+      "turkish": "yanlışlama",
+      "example": "Die Falsifikation einer Theorie erfordert ein Gegenbeispiel.",
+      "exampleTranslation": "Bir kuramın yanlışlanması bir karşıt örnek gerektirir.",
+      "synonyms": [
+        "die Widerlegung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Verifikation",
+      "turkish": "doğrulama",
+      "example": "Eine vollständige Verifikation aller Fälle ist unmöglich.",
+      "exampleTranslation": "Tüm durumların eksiksiz doğrulanması imkânsızdır.",
+      "synonyms": [
+        "die Bestätigung",
+        "der Nachweis"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "widerlegen",
+      "turkish": "çürütmek / yanlışlamak",
+      "example": "Ein einziges Experiment kann die Hypothese widerlegen.",
+      "exampleTranslation": "Tek bir deney hipotezi çürütebilir.",
+      "synonyms": [
+        "entkräften",
+        "falsifizieren"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "bestätigen",
+      "turkish": "doğrulamak / teyit etmek",
+      "example": "Die Daten bestätigen unsere ursprüngliche Vermutung.",
+      "exampleTranslation": "Veriler bizim ilk tahminimizi doğruluyor.",
+      "synonyms": [
+        "bekräftigen",
+        "erhärten"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Vorhersage",
+      "turkish": "öngörü / tahmin",
+      "example": "Eine gute Theorie ermöglicht präzise Vorhersagen.",
+      "exampleTranslation": "İyi bir kuram kesin öngörüler sağlar.",
+      "synonyms": [
+        "die Prognose",
+        "die Voraussage"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Erklärung",
+      "turkish": "açıklama",
+      "example": "Die Wissenschaft sucht nach kausalen Erklärungen.",
+      "exampleTranslation": "Bilim nedensel açıklamalar arar.",
+      "synonyms": [
+        "die Begründung",
+        "die Deutung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Gesetz",
+      "turkish": "yasa / kanun",
+      "example": "Naturgesetze gelten unabhängig vom Beobachter.",
+      "exampleTranslation": "Doğa yasaları gözlemciden bağımsız geçerlidir.",
+      "synonyms": [
+        "die Gesetzmäßigkeit",
+        "die Regel"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Modell",
+      "turkish": "model",
+      "example": "Ein Modell vereinfacht die komplexe Wirklichkeit.",
+      "exampleTranslation": "Bir model karmaşık gerçekliği basitleştirir.",
+      "synonyms": [
+        "das Abbild",
+        "das Schema"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Beobachtung",
+      "turkish": "gözlem",
+      "example": "Jede Beobachtung ist von Theorien geprägt.",
+      "exampleTranslation": "Her gözlem kuramlarca biçimlendirilir.",
+      "synonyms": [
+        "die Wahrnehmung",
+        "die Betrachtung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Reproduzierbarkeit",
+      "turkish": "yeniden üretilebilirlik / tekrarlanabilirlik",
+      "example": "Reproduzierbarkeit gilt als Kennzeichen seriöser Forschung.",
+      "exampleTranslation": "Tekrarlanabilirlik ciddi araştırmanın bir ölçütü sayılır.",
+      "synonyms": [
+        "die Wiederholbarkeit",
+        "die Nachvollziehbarkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Bewährung",
+      "turkish": "(deneye/sınamaya) dayanma, geçerliliğini koruma",
+      "example": "Die Bewährung einer Theorie ersetzt keinen Beweis.",
+      "exampleTranslation": "Bir kuramın sınamalara dayanması kanıtın yerini tutmaz.",
+      "synonyms": [
+        "die Erprobung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Annahme",
+      "turkish": "varsayım / kabul",
+      "example": "Jedes Modell beruht auf vereinfachenden Annahmen.",
+      "exampleTranslation": "Her model basitleştirici varsayımlara dayanır.",
+      "synonyms": [
+        "die Vermutung",
+        "die Voraussetzung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Zusammenhang",
+      "turkish": "bağlantı / ilişki",
+      "example": "Korrelation belegt noch keinen kausalen Zusammenhang.",
+      "exampleTranslation": "Korelasyon henüz nedensel bir bağlantıyı kanıtlamaz.",
+      "synonyms": [
+        "die Verbindung",
+        "die Beziehung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "plausibel",
+      "turkish": "makul / inandırıcı",
+      "example": "Die Erklärung klingt plausibel, ist aber unbewiesen.",
+      "exampleTranslation": "Açıklama makul geliyor ama kanıtlanmamış.",
+      "synonyms": [
+        "einleuchtend",
+        "nachvollziehbar",
+        "glaubwürdig"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "vorläufig",
+      "turkish": "geçici / şimdilik",
+      "example": "Wissenschaftliches Wissen bleibt grundsätzlich vorläufig.",
+      "exampleTranslation": "Bilimsel bilgi temelde geçicidir.",
+      "synonyms": [
+        "provisorisch",
+        "einstweilig"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "kind": "gen",
+  "unitId": 118,
+  "categoryId": 6,
+  "number": 11,
+  "title": "Sosyoloji ve Toplum Bilimleri",
+  "theme": "Sosyoloji terminolojisi: toplumsal yapı, kurumlar, gruplar, eşitsizlik ve toplumsal değişim kavramları.",
+  "firstWordId": 1756,
+  "words": [
+    {
+      "german": "die Schicht",
+      "turkish": "toplumsal tabaka / katman",
+      "example": "Sie stammt aus einer bürgerlichen Schicht.",
+      "exampleTranslation": "Burjuva bir tabakadan geliyor.",
+      "synonyms": [
+        "die Gesellschaftsschicht",
+        "das Milieu"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Schichtung",
+      "turkish": "toplumsal tabakalaşma",
+      "example": "Die soziale Schichtung prägt unsere Gesellschaft.",
+      "exampleTranslation": "Toplumsal tabakalaşma toplumumuzu biçimlendirir.",
+      "synonyms": [
+        "die Stratifikation"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Rolle",
+      "turkish": "rol / toplumsal rol",
+      "example": "Jeder Mensch übernimmt verschiedene soziale Rollen.",
+      "exampleTranslation": "Her insan farklı toplumsal roller üstlenir.",
+      "synonyms": [
+        "die Funktion",
+        "die Position"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Interaktion",
+      "turkish": "etkileşim",
+      "example": "Soziale Interaktion findet überall im Alltag statt.",
+      "exampleTranslation": "Toplumsal etkileşim günlük hayatta her yerde gerçekleşir.",
+      "synonyms": [
+        "die Wechselwirkung",
+        "der Austausch"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Ungleichheit",
+      "turkish": "eşitsizlik",
+      "example": "Soziale Ungleichheit nimmt in vielen Ländern zu.",
+      "exampleTranslation": "Toplumsal eşitsizlik birçok ülkede artıyor.",
+      "synonyms": [
+        "die Disparität",
+        "die Ungerechtigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Klasse",
+      "turkish": "sınıf / toplumsal sınıf",
+      "example": "Karl Marx schrieb über den Kampf der Klassen.",
+      "exampleTranslation": "Karl Marx sınıfların mücadelesi hakkında yazdı.",
+      "synonyms": [
+        "die Gesellschaftsklasse",
+        "der Stand"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Benachteiligung",
+      "turkish": "dezavantaj / mağduriyet / ayrımcılığa uğrama",
+      "example": "Die Benachteiligung von Frauen besteht weiterhin.",
+      "exampleTranslation": "Kadınların mağduriyeti hâlâ sürüyor.",
+      "synonyms": [
+        "die Diskriminierung",
+        "die Schlechterstellung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Wandel",
+      "turkish": "değişim / dönüşüm",
+      "example": "Der gesellschaftliche Wandel verläuft oft langsam.",
+      "exampleTranslation": "Toplumsal değişim çoğu zaman yavaş ilerler.",
+      "synonyms": [
+        "die Veränderung",
+        "der Umbruch"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Abweichung",
+      "turkish": "sapma / normdan sapma",
+      "example": "Kriminalität gilt als soziale Abweichung.",
+      "exampleTranslation": "Suç, toplumsal bir sapma olarak görülür.",
+      "synonyms": [
+        "die Devianz",
+        "die Normverletzung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Migration",
+      "turkish": "göç",
+      "example": "Migration verändert die Struktur der Bevölkerung.",
+      "exampleTranslation": "Göç, nüfusun yapısını değiştirir.",
+      "synonyms": [
+        "die Zuwanderung",
+        "die Wanderung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Minderheit",
+      "turkish": "azınlık",
+      "example": "Ethnische Minderheiten brauchen besonderen Schutz.",
+      "exampleTranslation": "Etnik azınlıkların özel korumaya ihtiyacı vardır.",
+      "synonyms": [
+        "die Randgruppe"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Identität",
+      "turkish": "kimlik",
+      "example": "Die kulturelle Identität entwickelt sich im Laufe des Lebens.",
+      "exampleTranslation": "Kültürel kimlik yaşam boyunca gelişir.",
+      "synonyms": [
+        "das Selbstverständnis",
+        "das Selbstbild"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Sozialisation",
+      "turkish": "toplumsallaşma / sosyalleşme",
+      "example": "Die Familie ist zentral für die Sozialisation des Kindes.",
+      "exampleTranslation": "Aile, çocuğun toplumsallaşması için merkezîdir.",
+      "synonyms": [
+        "die Vergesellschaftung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Zugehörigkeit",
+      "turkish": "aidiyet / mensubiyet",
+      "example": "Das Gefühl der Zugehörigkeit stärkt die Gemeinschaft.",
+      "exampleTranslation": "Aidiyet duygusu topluluğu güçlendirir.",
+      "synonyms": [
+        "die Verbundenheit",
+        "die Mitgliedschaft"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Ausgrenzung",
+      "turkish": "dışlama / dışlanma",
+      "example": "Soziale Ausgrenzung führt oft zu Armut.",
+      "exampleTranslation": "Toplumsal dışlanma çoğu zaman yoksulluğa yol açar.",
+      "synonyms": [
+        "die Marginalisierung",
+        "die Exklusion"
+      ],
+      "level": "C1"
+    }
+  ]
+}

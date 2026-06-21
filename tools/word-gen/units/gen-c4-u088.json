@@ -1,0 +1,180 @@
+{
+  "kind": "gen",
+  "unitId": 88,
+  "categoryId": 4,
+  "number": 12,
+  "title": "telc — Grafik ve İstatistik Yorumu",
+  "theme": "telc yazılı bölümünde grafik, tablo ve istatistik betimleme görevinde kullanılan sayısal ve eğilim belirten kelimeler.",
+  "firstWordId": 1306,
+  "words": [
+    {
+      "german": "steigen",
+      "turkish": "yükselmek / artmak",
+      "example": "Die Zahl der Studenten steigt jedes Jahr.",
+      "exampleTranslation": "Öğrenci sayısı her yıl artıyor.",
+      "synonyms": [
+        "zunehmen",
+        "ansteigen",
+        "wachsen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sinken",
+      "turkish": "düşmek / azalmak",
+      "example": "Die Arbeitslosigkeit sinkt seit zwei Jahren.",
+      "exampleTranslation": "İşsizlik iki yıldır düşüyor.",
+      "synonyms": [
+        "fallen",
+        "abnehmen",
+        "zurückgehen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Diagramm",
+      "turkish": "diyagram / grafik",
+      "example": "Das Diagramm zeigt die Verkaufszahlen im Jahr 2025.",
+      "exampleTranslation": "Diyagram 2025 yılındaki satış rakamlarını gösteriyor.",
+      "synonyms": [
+        "die Grafik",
+        "das Schaubild"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Tabelle",
+      "turkish": "tablo / çizelge",
+      "example": "Die Tabelle stellt die Daten übersichtlich dar.",
+      "exampleTranslation": "Tablo verileri açık biçimde sunuyor.",
+      "synonyms": [
+        "die Übersicht",
+        "das Verzeichnis"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Anteil",
+      "turkish": "pay / oran / hisse",
+      "example": "Der Anteil der Frauen liegt bei vierzig Prozent.",
+      "exampleTranslation": "Kadınların oranı yüzde kırk civarındadır.",
+      "synonyms": [
+        "der Prozentsatz",
+        "die Quote"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Achse",
+      "turkish": "eksen",
+      "example": "Auf der senkrechten Achse stehen die Prozentwerte.",
+      "exampleTranslation": "Dikey eksende yüzde değerleri yer alıyor.",
+      "synonyms": [
+        "die Koordinatenachse"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Höhepunkt",
+      "turkish": "zirve / doruk noktası",
+      "example": "Im Juli erreichte der Umsatz seinen Höhepunkt.",
+      "exampleTranslation": "Temmuzda ciro zirvesine ulaştı.",
+      "synonyms": [
+        "der Gipfel",
+        "das Maximum",
+        "der Spitzenwert"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Tiefpunkt",
+      "turkish": "dip noktası / en düşük seviye",
+      "example": "Die Kurve erreichte im Winter ihren Tiefpunkt.",
+      "exampleTranslation": "Eğri kışın en düşük noktasına ulaştı.",
+      "synonyms": [
+        "das Minimum",
+        "der Tiefststand"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Entwicklung",
+      "turkish": "gelişme / seyir",
+      "example": "Die Entwicklung der Preise war positiv.",
+      "exampleTranslation": "Fiyatların seyri olumluydu.",
+      "synonyms": [
+        "der Verlauf",
+        "der Trend"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Durchschnitt",
+      "turkish": "ortalama",
+      "example": "Der Durchschnitt der Werte beträgt fünfzig Punkte.",
+      "exampleTranslation": "Değerlerin ortalaması elli puandır.",
+      "synonyms": [
+        "der Mittelwert",
+        "der Schnitt"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "betragen",
+      "turkish": "tutmak / (miktar olarak) olmak",
+      "example": "Der Anteil beträgt genau ein Drittel.",
+      "exampleTranslation": "Pay tam olarak üçte birdir.",
+      "synonyms": [
+        "sich belaufen auf",
+        "ausmachen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Säulendiagramm",
+      "turkish": "sütun grafiği",
+      "example": "Das Säulendiagramm vergleicht die Umsätze pro Quartal.",
+      "exampleTranslation": "Sütun grafiği çeyrek başına ciroları karşılaştırıyor.",
+      "synonyms": [
+        "das Balkendiagramm",
+        "das Stabdiagramm"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "rückläufig",
+      "turkish": "azalan / gerileyen",
+      "example": "Die Geburtenrate ist seit Jahren rückläufig.",
+      "exampleTranslation": "Doğum oranı yıllardır gerilemekte.",
+      "synonyms": [
+        "abnehmend",
+        "sinkend",
+        "fallend"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "stagnieren",
+      "turkish": "durağanlaşmak / sabit kalmak",
+      "example": "Die Verkaufszahlen stagnieren seit dem Sommer.",
+      "exampleTranslation": "Satış rakamları yazdan beri durağan.",
+      "synonyms": [
+        "stillstehen",
+        "gleich bleiben"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "sprunghaft",
+      "turkish": "ani / sıçramalı",
+      "example": "Die Nachfrage stieg sprunghaft an.",
+      "exampleTranslation": "Talep aniden sıçrayarak arttı.",
+      "synonyms": [
+        "plötzlich",
+        "abrupt",
+        "schlagartig"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "kind": "gen",
+  "unitId": 134,
+  "categoryId": 7,
+  "number": 10,
+  "title": "Modern Felsefe ve Aydınlanma",
+  "theme": "Descartes'tan Kant'a uzanan modern dönemin akıl, özne, eleştiri ve aydınlanma kavramlarını kapsar. Şüphe, deneyim ve us üzerine felsefi kelimeler.",
+  "firstWordId": 1996,
+  "words": [
+    {
+      "german": "der Zweifel",
+      "turkish": "şüphe / kuşku",
+      "example": "Descartes begann seine Philosophie mit dem Zweifel.",
+      "exampleTranslation": "Descartes felsefesine şüpheyle başladı.",
+      "synonyms": [
+        "die Skepsis",
+        "das Misstrauen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Gewissheit",
+      "turkish": "kesinlik / yakine",
+      "example": "Er suchte nach einer unerschütterlichen Gewissheit.",
+      "exampleTranslation": "Sarsılmaz bir kesinlik arıyordu.",
+      "synonyms": [
+        "die Sicherheit",
+        "die Überzeugung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Subjekt",
+      "turkish": "özne",
+      "example": "Das denkende Subjekt steht im Mittelpunkt.",
+      "exampleTranslation": "Düşünen özne merkezde durur.",
+      "synonyms": [
+        "das Ich"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Aufklärung",
+      "turkish": "aydınlanma",
+      "example": "Die Aufklärung betonte den Mut zum eigenen Verstand.",
+      "exampleTranslation": "Aydınlanma kendi aklını kullanma cesaretini vurguladı.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "german": "die Kritik",
+      "turkish": "eleştiri",
+      "example": "Kants Kritik untersucht die Grenzen der Vernunft.",
+      "exampleTranslation": "Kant'ın eleştirisi aklın sınırlarını inceler.",
+      "synonyms": [
+        "die Beanstandung",
+        "die Prüfung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Verstand",
+      "turkish": "akıl / anlık / idrak",
+      "example": "Der menschliche Verstand ordnet die Erfahrung.",
+      "exampleTranslation": "İnsan anlığı deneyimi düzenler.",
+      "synonyms": [
+        "der Intellekt",
+        "die Ratio"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Unmündigkeit",
+      "turkish": "ergin olmama / erginsizlik",
+      "example": "Aufklärung ist der Ausgang aus der Unmündigkeit.",
+      "exampleTranslation": "Aydınlanma, ergin olmamadan çıkıştır.",
+      "synonyms": [
+        "die Unselbstständigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Mündigkeit",
+      "turkish": "erginlik / kendi aklını kullanabilme",
+      "example": "Bildung soll zur geistigen Mündigkeit führen.",
+      "exampleTranslation": "Eğitim, zihinsel erginliğe götürmelidir.",
+      "synonyms": [
+        "die Selbstständigkeit",
+        "die Reife"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Vorstellung",
+      "turkish": "tasavvur / temsil / fikir",
+      "example": "Jede Vorstellung verbindet sich mit dem Ich.",
+      "exampleTranslation": "Her tasavvur ben ile birleşir.",
+      "synonyms": [
+        "die Idee",
+        "das Bild"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Geist",
+      "turkish": "tin / zihin / ruh",
+      "example": "Der Geist erkennt sich in der Reflexion selbst.",
+      "exampleTranslation": "Tin, düşünümde kendini tanır.",
+      "synonyms": [
+        "der Verstand",
+        "die Seele"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Anschauung",
+      "turkish": "görü / sezgi / bakış",
+      "example": "Raum und Zeit sind Formen der Anschauung.",
+      "exampleTranslation": "Uzam ve zaman, görünün formlarıdır.",
+      "synonyms": [
+        "die Wahrnehmung",
+        "die Sichtweise"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Grundsatz",
+      "turkish": "ilke / temel önerme",
+      "example": "Dieser Grundsatz gilt unabhängig von der Erfahrung.",
+      "exampleTranslation": "Bu ilke deneyimden bağımsız olarak geçerlidir.",
+      "synonyms": [
+        "das Prinzip",
+        "die Maxime"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Wesensschau",
+      "turkish": "öz görüsü / öze bakış",
+      "example": "Die Wesensschau will das Allgemeine erfassen.",
+      "exampleTranslation": "Öz görüsü, tümel olanı kavramak ister.",
+      "synonyms": [
+        "die Intuition"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Zweifelsfall",
+      "turkish": "şüpheli durum / kuşkulu hal",
+      "example": "Im Zweifelsfall entscheidet die klare Einsicht.",
+      "exampleTranslation": "Şüpheli durumda açık kavrayış karar verir.",
+      "synonyms": [
+        "der Grenzfall"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Einsicht",
+      "turkish": "kavrayış / iç görü / anlama",
+      "example": "Philosophie strebt nach tiefer Einsicht.",
+      "exampleTranslation": "Felsefe derin bir kavrayışa çabalar.",
+      "synonyms": [
+        "die Erkenntnis",
+        "das Verständnis"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "kind": "gen",
+  "unitId": 153,
+  "categoryId": 8,
+  "number": 13,
+  "title": "Ev ve Eşya Deyimleri",
+  "theme": "Ev, oda ve günlük eşyalarla kurulan deyimler; kapı, masa, yatak ve mutfak aletleri üzerinden durum ve davranış anlatımı.",
+  "firstWordId": 2281,
+  "words": [
+    {
+      "german": "die Tür einrennen",
+      "turkish": "ısrarla aynı şeyi talep etmek / açık kapıyı zorlamak",
+      "example": "Mit diesem Vorschlag rennst du bei mir offene Türen ein.",
+      "exampleTranslation": "Bu öneriyle bende zaten açık olan kapıyı zorluyorsun.",
+      "synonyms": [
+        "leichtes Spiel haben",
+        "auf Zustimmung stoßen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "jemandem die Tür vor der Nase zuschlagen",
+      "turkish": "kapıyı birinin suratına kapatmak / kesin ret vermek",
+      "example": "Der Beamte schlug mir die Tür vor der Nase zu.",
+      "exampleTranslation": "Memur kapıyı suratıma kapattı.",
+      "synonyms": [
+        "abweisen",
+        "jemanden abblitzen lassen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "mit der Tür ins Haus fallen",
+      "turkish": "lafı dolandırmadan doğrudan konuya girmek",
+      "example": "Entschuldige, dass ich gleich mit der Tür ins Haus falle.",
+      "exampleTranslation": "Hemen sadede geldiğim için kusura bakma.",
+      "synonyms": [
+        "direkt zur Sache kommen",
+        "ohne Umschweife reden"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "reinen Tisch machen",
+      "turkish": "hesabı temizlemek / açıkça konuşup işi netleştirmek",
+      "example": "Wir sollten endlich reinen Tisch machen.",
+      "exampleTranslation": "Artık sonunda her şeyi açıklığa kavuşturmalıyız.",
+      "synonyms": [
+        "Klarheit schaffen",
+        "aufräumen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "etwas unter den Tisch fallen lassen",
+      "turkish": "bir şeyi görmezden gelmek / üstünü örtmek",
+      "example": "Diesen wichtigen Punkt darf man nicht unter den Tisch fallen lassen.",
+      "exampleTranslation": "Bu önemli noktayı görmezden gelmemek gerekir.",
+      "synonyms": [
+        "ignorieren",
+        "vernachlässigen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Bett hüten",
+      "turkish": "hasta yatağında yatmak / yatağa düşmek",
+      "example": "Wegen der Grippe muss er das Bett hüten.",
+      "exampleTranslation": "Grip yüzünden yatakta kalmak zorunda.",
+      "synonyms": [
+        "krank im Bett liegen",
+        "sich auskurieren"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "sich ins gemachte Bett legen",
+      "turkish": "hazıra konmak / başkasının emeğinden faydalanmak",
+      "example": "Er hat nichts geleistet und legt sich ins gemachte Bett.",
+      "exampleTranslation": "Hiçbir şey yapmadı ve hazıra konuyor.",
+      "synonyms": [
+        "profitieren ohne Mühe"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "alles in den Schatten stellen",
+      "turkish": "her şeyi gölgede bırakmak / fazlasıyla geçmek",
+      "example": "Ihre Leistung stellt alles bisher Dagewesene in den Schatten.",
+      "exampleTranslation": "Onun başarısı şimdiye kadarki her şeyi gölgede bırakıyor.",
+      "synonyms": [
+        "übertreffen",
+        "überragen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "an die Decke gehen",
+      "turkish": "tepesi atmak / çok öfkelenmek",
+      "example": "Wenn er das hört, geht er bestimmt an die Decke.",
+      "exampleTranslation": "Bunu duyarsa kesinlikle tepesi atar.",
+      "synonyms": [
+        "wütend werden",
+        "explodieren"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "jemandem reinen Wein einschenken",
+      "turkish": "birine acı gerçeği açıkça söylemek",
+      "example": "Der Arzt schenkte dem Patienten reinen Wein ein.",
+      "exampleTranslation": "Doktor hastaya gerçeği olduğu gibi söyledi.",
+      "synonyms": [
+        "die Wahrheit sagen",
+        "offen reden"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "den Löffel abgeben",
+      "turkish": "nalları dikmek / ölmek (argo)",
+      "example": "Eines Tages müssen wir alle den Löffel abgeben.",
+      "exampleTranslation": "Bir gün hepimiz nalları dikeceğiz.",
+      "synonyms": [
+        "sterben",
+        "ins Gras beißen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "Tacheles reden",
+      "turkish": "açık açık ve net konuşmak",
+      "example": "Jetzt reden wir endlich mal Tacheles.",
+      "exampleTranslation": "Şimdi artık açık açık konuşalım.",
+      "synonyms": [
+        "Klartext reden",
+        "offen sprechen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Hahn",
+      "turkish": "musluk / horoz",
+      "example": "Bitte dreh den Hahn fester zu, er tropft.",
+      "exampleTranslation": "Lütfen musluğu daha sıkı kapat, damlatıyor.",
+      "synonyms": [
+        "der Wasserhahn"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Besen",
+      "turkish": "süpürge",
+      "example": "Neue Besen kehren gut, sagt man oft.",
+      "exampleTranslation": "Yeni süpürgeler iyi süpürür, derler sık sık.",
+      "synonyms": [
+        "der Reisigbesen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "alte Möbel",
+      "turkish": "eski mobilyalar",
+      "example": "Die alten Möbel passen nicht in die neue Wohnung.",
+      "exampleTranslation": "Eski mobilyalar yeni eve uymuyor.",
+      "synonyms": [
+        "das Mobiliar",
+        "die Einrichtung"
+      ],
+      "level": "B2"
+    }
+  ]
+}

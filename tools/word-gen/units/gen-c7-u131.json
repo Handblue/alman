@@ -1,0 +1,183 @@
+{
+  "kind": "gen",
+  "unitId": 131,
+  "categoryId": 7,
+  "number": 7,
+  "title": "Özgürlük, Adalet ve Eşitlik",
+  "theme": "Özgürlük, adalet, eşitlik, haklar ve dayanışma gibi normatif siyasi-toplumsal değerleri kapsar. Hak ve ödev kavramları çevresinde dönen felsefi kelimeler.",
+  "firstWordId": 1951,
+  "words": [
+    {
+      "german": "die Autonomie",
+      "turkish": "özerklik / kendi kararını verme",
+      "example": "Jeder Mensch hat ein Recht auf Autonomie.",
+      "exampleTranslation": "Her insanın özerklik hakkı vardır.",
+      "synonyms": [
+        "die Selbstbestimmung",
+        "die Eigenständigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Unterdrückung",
+      "turkish": "baskı / ezme",
+      "example": "Das Volk leidet unter politischer Unterdrückung.",
+      "exampleTranslation": "Halk siyasi baskı altında acı çekiyor.",
+      "synonyms": [
+        "die Repression",
+        "die Knechtung",
+        "die Tyrannei"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Verdienst",
+      "turkish": "liyakat / hak edilmiş başarı",
+      "example": "Belohnung sollte sich nach dem Verdienst richten.",
+      "exampleTranslation": "Ödül, liyakate göre belirlenmelidir.",
+      "synonyms": [
+        "die Leistung",
+        "die Würdigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Umverteilung",
+      "turkish": "yeniden dağıtım",
+      "example": "Steuern ermöglichen eine gerechte Umverteilung des Reichtums.",
+      "exampleTranslation": "Vergiler, servetin adil yeniden dağıtımını sağlar.",
+      "synonyms": [
+        "die Verteilung",
+        "der Ausgleich",
+        "die Neuverteilung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Willkür",
+      "turkish": "keyfilik / keyfi yönetim",
+      "example": "Gegen staatliche Willkür muss man sich wehren.",
+      "exampleTranslation": "Devletin keyfiliğine karşı direnmek gerekir.",
+      "synonyms": [
+        "die Eigenmächtigkeit",
+        "die Beliebigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Billigkeit",
+      "turkish": "hakkaniyet / nesafet",
+      "example": "Das Gericht entschied nach Recht und Billigkeit.",
+      "exampleTranslation": "Mahkeme, hukuka ve hakkaniyete göre karar verdi.",
+      "synonyms": [
+        "die Fairness",
+        "die Angemessenheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Mündigkeit",
+      "turkish": "reşitlik / kendi kararını verme yetisi / olgunluk",
+      "example": "Bildung fördert die Mündigkeit der Bürger.",
+      "exampleTranslation": "Eğitim, vatandaşların reşitliğini destekler.",
+      "synonyms": [
+        "die Reife",
+        "die Selbstständigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Entrechtung",
+      "turkish": "hak gaspı / haktan yoksun bırakma",
+      "example": "Die Entrechtung von Minderheiten ist inakzeptabel.",
+      "exampleTranslation": "Azınlıkların haklarından yoksun bırakılması kabul edilemez.",
+      "synonyms": [
+        "die Entmündigung",
+        "die Rechtlosigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Ausbeutung",
+      "turkish": "sömürü",
+      "example": "Die Ausbeutung der Arbeiter wurde scharf kritisiert.",
+      "exampleTranslation": "İşçilerin sömürülmesi sert biçimde eleştirildi.",
+      "synonyms": [
+        "die Ausnutzung",
+        "die Unterdrückung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Gleichheit",
+      "turkish": "eşitlik",
+      "example": "Die Verfassung garantiert die Gleichheit aller Menschen.",
+      "exampleTranslation": "Anayasa, tüm insanların eşitliğini güvence altına alır.",
+      "synonyms": [
+        "die Gleichberechtigung",
+        "die Egalität",
+        "die Gleichstellung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Anspruch",
+      "turkish": "hak / talep",
+      "example": "Jeder hat Anspruch auf eine faire Behandlung.",
+      "exampleTranslation": "Herkesin adil muamele görme hakkı vardır.",
+      "synonyms": [
+        "das Anrecht",
+        "die Forderung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Befreiung",
+      "turkish": "özgürleşme / kurtuluş",
+      "example": "Die Befreiung von der Unterdrückung dauerte Jahre.",
+      "exampleTranslation": "Baskıdan kurtuluş yıllar sürdü.",
+      "synonyms": [
+        "die Emanzipation",
+        "die Loslösung",
+        "die Erlösung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Zusammenhalt",
+      "turkish": "dayanışma / birlik beraberlik",
+      "example": "Der gesellschaftliche Zusammenhalt ist heute gefährdet.",
+      "exampleTranslation": "Toplumsal dayanışma bugün tehlike altında.",
+      "synonyms": [
+        "die Geschlossenheit",
+        "die Verbundenheit",
+        "die Einigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Unabhängigkeit",
+      "turkish": "bağımsızlık",
+      "example": "Das Land kämpfte lange um seine Unabhängigkeit.",
+      "exampleTranslation": "Ülke bağımsızlığı için uzun süre mücadele etti.",
+      "synonyms": [
+        "die Eigenständigkeit",
+        "die Souveränität",
+        "die Freiheit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Diskriminierung",
+      "turkish": "ayrımcılık",
+      "example": "Diskriminierung am Arbeitsplatz ist gesetzlich verboten.",
+      "exampleTranslation": "İş yerinde ayrımcılık yasalarla yasaktır.",
+      "synonyms": [
+        "die Benachteiligung",
+        "die Ausgrenzung",
+        "die Herabsetzung"
+      ],
+      "level": "B2"
+    }
+  ]
+}

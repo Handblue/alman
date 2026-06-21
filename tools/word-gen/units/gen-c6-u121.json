@@ -1,0 +1,175 @@
+{
+  "kind": "gen",
+  "unitId": 121,
+  "categoryId": 6,
+  "number": 14,
+  "title": "Edebiyat ve Sanat Bilimi",
+  "theme": "Edebiyat bilimi ve sanat tarihi terminolojisi: türler, biçim, üslup, eleştiri ve estetik çözümleme.",
+  "firstWordId": 1801,
+  "words": [
+    {
+      "german": "die Gattung",
+      "turkish": "tür / edebi tür",
+      "example": "Das Drama ist eine literarische Gattung.",
+      "exampleTranslation": "Dram, edebi bir türdür.",
+      "synonyms": [
+        "die Textsorte",
+        "das Genre"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Erzählung",
+      "turkish": "anlatı / öykü",
+      "example": "Diese Erzählung hat einen offenen Schluss.",
+      "exampleTranslation": "Bu anlatının açık bir sonu var.",
+      "synonyms": [
+        "die Geschichte",
+        "die Novelle"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Erzähler",
+      "turkish": "anlatıcı",
+      "example": "Der Erzähler bleibt im Roman unsichtbar.",
+      "exampleTranslation": "Anlatıcı romanda görünmez kalır.",
+      "synonyms": [
+        "die Erzählinstanz"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Handlung",
+      "turkish": "olay örgüsü / aksiyon",
+      "example": "Die Handlung spielt im 19. Jahrhundert.",
+      "exampleTranslation": "Olay örgüsü 19. yüzyılda geçer.",
+      "synonyms": [
+        "die Geschehnisse",
+        "der Plot"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Aufbau",
+      "turkish": "yapı / kuruluş",
+      "example": "Der Aufbau des Gedichts ist symmetrisch.",
+      "exampleTranslation": "Şiirin yapısı simetriktir.",
+      "synonyms": [
+        "die Struktur",
+        "die Gliederung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Stil",
+      "turkish": "üslup / biçem",
+      "example": "Ihr Stil ist klar und nüchtern.",
+      "exampleTranslation": "Onun üslubu açık ve sadedir.",
+      "synonyms": [
+        "die Schreibweise",
+        "die Ausdrucksweise"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Metapher",
+      "turkish": "metafor / eğretileme",
+      "example": "Diese Metapher beschreibt das Leben als Reise.",
+      "exampleTranslation": "Bu metafor hayatı bir yolculuk olarak betimler.",
+      "synonyms": [
+        "das Sinnbild",
+        "das Bild"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Interpretation",
+      "turkish": "yorum / çözümleme",
+      "example": "Seine Interpretation des Romans überzeugt mich.",
+      "exampleTranslation": "Romanı yorumlayışı beni ikna ediyor.",
+      "synonyms": [
+        "die Deutung",
+        "die Auslegung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Lyrik",
+      "turkish": "şiir sanatı / lirik",
+      "example": "Die Lyrik der Romantik ist sehr gefühlvoll.",
+      "exampleTranslation": "Romantizm şiiri çok duygusaldır.",
+      "synonyms": [
+        "die Dichtung",
+        "die Poesie"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Sinnbild",
+      "turkish": "simge / sembol",
+      "example": "Die Taube gilt als Sinnbild des Friedens.",
+      "exampleTranslation": "Güvercin barışın simgesi sayılır.",
+      "synonyms": [
+        "das Symbol",
+        "das Emblem"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Deutung",
+      "turkish": "yorumlama / anlamlandırma",
+      "example": "Mehrere Deutungen des Textes sind möglich.",
+      "exampleTranslation": "Metnin birden çok yorumu mümkündür.",
+      "synonyms": [
+        "die Interpretation",
+        "die Auslegung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Strömung",
+      "turkish": "akım / cereyan",
+      "example": "Der Expressionismus war eine wichtige Strömung.",
+      "exampleTranslation": "Ekspresyonizm önemli bir akımdı.",
+      "synonyms": [
+        "die Bewegung",
+        "die Richtung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Epoche",
+      "turkish": "dönem / çağ",
+      "example": "Die Klassik ist eine prägende Epoche.",
+      "exampleTranslation": "Klasik dönem belirleyici bir çağdır.",
+      "synonyms": [
+        "das Zeitalter",
+        "der Zeitabschnitt"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Ästhetik",
+      "turkish": "estetik / güzellik bilimi",
+      "example": "Die Ästhetik des Werkes wirkt zeitlos.",
+      "exampleTranslation": "Eserin estetiği zamansız etki bırakır.",
+      "synonyms": [
+        "die Schönheitslehre",
+        "die Formschönheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Wirkung",
+      "turkish": "etki / tesir",
+      "example": "Die Wirkung des Gedichts ist beklemmend.",
+      "exampleTranslation": "Şiirin etkisi iç sıkıcıdır.",
+      "synonyms": [
+        "der Effekt",
+        "der Eindruck"
+      ],
+      "level": "C1"
+    }
+  ]
+}

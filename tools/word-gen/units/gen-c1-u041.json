@@ -1,0 +1,161 @@
+{
+  "kind": "gen",
+  "unitId": 41,
+  "categoryId": 1,
+  "number": 13,
+  "title": "Meslekler ve İş",
+  "theme": "Günlük yaşamda karşılaşılan temel meslek isimleri ve iş yeriyle ilgili sözcükler. İnsanların ne iş yaptığını ve nerede çalıştığını anlatmaya yarayan A1/A2 kelimeleri.",
+  "firstWordId": 601,
+  "words": [
+    {
+      "german": "der Lehrer",
+      "turkish": "öğretmen (erkek)",
+      "example": "Der Lehrer erklärt die neue Grammatik.",
+      "exampleTranslation": "Öğretmen yeni dilbilgisini açıklıyor.",
+      "synonyms": [
+        "der Pädagoge"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Ärztin",
+      "turkish": "doktor (kadın)",
+      "example": "Die Ärztin arbeitet im Krankenhaus.",
+      "exampleTranslation": "Doktor (kadın) hastanede çalışıyor.",
+      "synonyms": [
+        "die Doktorin"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Verkäufer",
+      "turkish": "satıcı (erkek)",
+      "example": "Der Verkäufer hilft mir im Geschäft.",
+      "exampleTranslation": "Satıcı dükkanda bana yardım ediyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "der Fahrer",
+      "turkish": "şoför / sürücü",
+      "example": "Der Fahrer wartet vor dem Haus.",
+      "exampleTranslation": "Şoför evin önünde bekliyor.",
+      "synonyms": [
+        "der Chauffeur"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Büro",
+      "turkish": "büro / ofis",
+      "example": "Ich arbeite den ganzen Tag im Büro.",
+      "exampleTranslation": "Bütün gün büroda çalışıyorum.",
+      "synonyms": [
+        "das Arbeitszimmer"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Fabrik",
+      "turkish": "fabrika",
+      "example": "Mein Vater arbeitet in einer Fabrik.",
+      "exampleTranslation": "Babam bir fabrikada çalışıyor.",
+      "synonyms": [
+        "das Werk"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "das Geschäft",
+      "turkish": "dükkan / mağaza",
+      "example": "Das Geschäft öffnet um neun Uhr.",
+      "exampleTranslation": "Dükkan saat dokuzda açılıyor.",
+      "synonyms": [
+        "der Laden"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Chef",
+      "turkish": "patron / amir",
+      "example": "Mein Chef ist heute nicht da.",
+      "exampleTranslation": "Patronum bugün burada değil.",
+      "synonyms": [
+        "der Boss",
+        "der Vorgesetzte"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Kollege",
+      "turkish": "meslektaş / iş arkadaşı (erkek)",
+      "example": "Mein Kollege hilft mir bei der Arbeit.",
+      "exampleTranslation": "İş arkadaşım işte bana yardım ediyor.",
+      "synonyms": [
+        "der Mitarbeiter"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Computer",
+      "turkish": "bilgisayar",
+      "example": "Der Computer im Büro ist sehr schnell.",
+      "exampleTranslation": "Bürodaki bilgisayar çok hızlı.",
+      "synonyms": [
+        "der Rechner",
+        "der PC"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Gehalt",
+      "turkish": "maaş",
+      "example": "Sie bekommt jeden Monat ihr Gehalt.",
+      "exampleTranslation": "Her ay maaşını alıyor.",
+      "synonyms": [
+        "der Lohn",
+        "die Bezahlung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Beamte",
+      "turkish": "memur (erkek)",
+      "example": "Der Beamte arbeitet bei der Stadt.",
+      "exampleTranslation": "Memur belediyede çalışıyor.",
+      "synonyms": [
+        "der Staatsdiener"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Firma",
+      "turkish": "firma / şirket",
+      "example": "Die Firma sucht neue Mitarbeiter.",
+      "exampleTranslation": "Firma yeni çalışanlar arıyor.",
+      "synonyms": [
+        "der Betrieb"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Polizistin",
+      "turkish": "polis (kadın)",
+      "example": "Die Polizistin steht an der Straße.",
+      "exampleTranslation": "Polis (kadın) yolun kenarında duruyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "die Stelle",
+      "turkish": "iş yeri / pozisyon (iş)",
+      "example": "Sie sucht eine neue Stelle in der Stadt.",
+      "exampleTranslation": "Şehirde yeni bir iş arıyor.",
+      "synonyms": [
+        "die Arbeitsstelle",
+        "der Arbeitsplatz"
+      ],
+      "level": "A1"
+    }
+  ]
+}

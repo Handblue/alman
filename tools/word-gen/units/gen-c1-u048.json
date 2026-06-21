@@ -1,0 +1,158 @@
+{
+  "kind": "gen",
+  "unitId": 48,
+  "categoryId": 1,
+  "number": 20,
+  "title": "Spor ve Sağlıklı Yaşam",
+  "theme": "Spor dalları, egzersiz ve aktif yaşamla ilgili temel sözcükler. Hareket, antrenman ve fiziksel etkinlikleri anlatan A1/A2 kelimeleri.",
+  "firstWordId": 706,
+  "words": [
+    {
+      "german": "der Sport",
+      "turkish": "spor",
+      "example": "Ich mache jeden Tag Sport.",
+      "exampleTranslation": "Her gün spor yapıyorum.",
+      "synonyms": [
+        "die Bewegung"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Fußball",
+      "turkish": "futbol / futbol topu",
+      "example": "Die Kinder spielen Fußball im Park.",
+      "exampleTranslation": "Çocuklar parkta futbol oynuyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "der Ball",
+      "turkish": "top",
+      "example": "Der Ball liegt auf dem Rasen.",
+      "exampleTranslation": "Top çimenin üzerinde duruyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "schwimmen",
+      "turkish": "yüzmek",
+      "example": "Im Sommer gehe ich gern schwimmen.",
+      "exampleTranslation": "Yazın yüzmeye gitmeyi severim.",
+      "synonyms": [
+        "baden"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "laufen",
+      "turkish": "koşmak / yürümek",
+      "example": "Jeden Morgen laufe ich im Park.",
+      "exampleTranslation": "Her sabah parkta koşarım.",
+      "synonyms": [
+        "rennen",
+        "joggen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "springen",
+      "turkish": "zıplamak / atlamak",
+      "example": "Der Spieler kann sehr hoch springen.",
+      "exampleTranslation": "Oyuncu çok yükseğe zıplayabiliyor.",
+      "synonyms": [
+        "hüpfen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "werfen",
+      "turkish": "atmak / fırlatmak",
+      "example": "Er wirft den Ball zu mir.",
+      "exampleTranslation": "Topu bana atıyor.",
+      "synonyms": [
+        "schmeißen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "gewinnen",
+      "turkish": "kazanmak",
+      "example": "Unsere Mannschaft will das Spiel gewinnen.",
+      "exampleTranslation": "Takımımız maçı kazanmak istiyor.",
+      "synonyms": [
+        "siegen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Mannschaft",
+      "turkish": "takım",
+      "example": "Die Mannschaft trainiert am Wochenende.",
+      "exampleTranslation": "Takım hafta sonu antrenman yapıyor.",
+      "synonyms": [
+        "das Team"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Spieler",
+      "turkish": "oyuncu",
+      "example": "Der Spieler schießt ein Tor.",
+      "exampleTranslation": "Oyuncu bir gol atıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "das Tor",
+      "turkish": "gol / kale",
+      "example": "Er schießt ein schönes Tor.",
+      "exampleTranslation": "Güzel bir gol atıyor.",
+      "synonyms": [
+        "der Treffer"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Spiel",
+      "turkish": "maç / oyun",
+      "example": "Das Spiel beginnt um drei Uhr.",
+      "exampleTranslation": "Maç saat üçte başlıyor.",
+      "synonyms": [
+        "die Partie",
+        "das Match"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Schwimmbad",
+      "turkish": "yüzme havuzu",
+      "example": "Wir gehen heute ins Schwimmbad.",
+      "exampleTranslation": "Bugün yüzme havuzuna gidiyoruz.",
+      "synonyms": [
+        "das Hallenbad",
+        "das Freibad"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Training",
+      "turkish": "antrenman",
+      "example": "Das Training dauert zwei Stunden.",
+      "exampleTranslation": "Antrenman iki saat sürüyor.",
+      "synonyms": [
+        "die Übung"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "das Fahrrad",
+      "turkish": "bisiklet",
+      "example": "Ich fahre mit dem Fahrrad zur Arbeit.",
+      "exampleTranslation": "İşe bisikletle gidiyorum.",
+      "synonyms": [
+        "das Rad"
+      ],
+      "level": "A1"
+    }
+  ]
+}

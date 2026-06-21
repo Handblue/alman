@@ -1,0 +1,174 @@
+{
+  "kind": "gen",
+  "unitId": 57,
+  "categoryId": 2,
+  "number": 14,
+  "title": "Sıfat-Fiiller (Partizipler)",
+  "theme": "Partizip I ve Partizip II'nin sıfat ve zarf olarak kullanımı; etken/edilgen niteleme yapıları ve genişletilmiş sıfat öbekleri.",
+  "firstWordId": 841,
+  "words": [
+    {
+      "german": "spannend",
+      "turkish": "heyecan verici / sürükleyici",
+      "example": "Das war ein wirklich spannender Film.",
+      "exampleTranslation": "Bu gerçekten sürükleyici bir filmdi.",
+      "synonyms": [
+        "fesselnd",
+        "aufregend"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "kochend",
+      "turkish": "kaynayan / kaynar",
+      "example": "Vorsicht, das Wasser ist kochend heiß!",
+      "exampleTranslation": "Dikkat, su kaynar derecede sıcak!",
+      "synonyms": [
+        "siedend"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "lachend",
+      "turkish": "gülen / gülerek",
+      "example": "Das lachende Kind rennt durch den Park.",
+      "exampleTranslation": "Gülen çocuk parkta koşuyor.",
+      "synonyms": [
+        "fröhlich"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "geöffnet",
+      "turkish": "açık / açılmış",
+      "example": "Die geöffnete Tür ließ frische Luft herein.",
+      "exampleTranslation": "Açık kapı içeriye taze hava aldı.",
+      "synonyms": [
+        "offen",
+        "aufgemacht"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "geschlossen",
+      "turkish": "kapalı / kapatılmış",
+      "example": "Am Sonntag bleiben die geschlossenen Läden leer.",
+      "exampleTranslation": "Pazar günü kapalı dükkânlar boş kalır.",
+      "synonyms": [
+        "zu",
+        "verschlossen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "steigend",
+      "turkish": "artan / yükselen",
+      "example": "Die steigenden Preise machen vielen Menschen Sorgen.",
+      "exampleTranslation": "Yükselen fiyatlar birçok insanı endişelendiriyor.",
+      "synonyms": [
+        "ansteigend",
+        "kletternd"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "wachsend",
+      "turkish": "büyüyen / artan",
+      "example": "Die wachsende Stadt braucht mehr Wohnungen.",
+      "exampleTranslation": "Büyüyen şehir daha fazla konuta ihtiyaç duyuyor.",
+      "synonyms": [
+        "expandierend",
+        "anwachsend"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "dringend",
+      "turkish": "acil / ivedi",
+      "example": "Ich muss dich dringend sprechen.",
+      "exampleTranslation": "Seninle acilen konuşmam gerekiyor.",
+      "synonyms": [
+        "eilig",
+        "unaufschiebbar"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "begeistert",
+      "turkish": "hayran kalmış / coşkulu",
+      "example": "Die begeisterten Zuschauer klatschten lange.",
+      "exampleTranslation": "Coşkulu seyirciler uzun süre alkışladı.",
+      "synonyms": [
+        "enthusiastisch",
+        "mitgerissen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "bevorstehend",
+      "turkish": "yaklaşan / yakında olacak",
+      "example": "Alle freuen sich auf die bevorstehenden Ferien.",
+      "exampleTranslation": "Herkes yaklaşan tatili dört gözle bekliyor.",
+      "synonyms": [
+        "nahend",
+        "anstehend"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "anhaltend",
+      "turkish": "süregelen / kalıcı",
+      "example": "Der anhaltende Regen überflutete die Felder.",
+      "exampleTranslation": "Süregelen yağmur tarlaları su altında bıraktı.",
+      "synonyms": [
+        "andauernd",
+        "fortdauernd"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "entscheidend",
+      "turkish": "belirleyici / kesin",
+      "example": "Das war der entscheidende Moment des Spiels.",
+      "exampleTranslation": "Bu, oyunun belirleyici anıydı.",
+      "synonyms": [
+        "ausschlaggebend",
+        "wesentlich"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "weitreichend",
+      "turkish": "kapsamlı / geniş çaplı",
+      "example": "Die Reform hatte weitreichende Folgen.",
+      "exampleTranslation": "Reformun geniş çaplı sonuçları oldu.",
+      "synonyms": [
+        "umfassend",
+        "tiefgreifend"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "zunehmend",
+      "turkish": "giderek artan / artmakta olan",
+      "example": "Die zunehmende Hitze belastet die Bauern.",
+      "exampleTranslation": "Giderek artan sıcaklık çiftçileri zorluyor.",
+      "synonyms": [
+        "ansteigend",
+        "anwachsend"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "maßgebend",
+      "turkish": "belirleyici / ölçüt alınan",
+      "example": "Seine Meinung war für die Entscheidung maßgebend.",
+      "exampleTranslation": "Onun görüşü karar için belirleyiciydi.",
+      "synonyms": [
+        "bestimmend",
+        "richtungsweisend"
+      ],
+      "level": "C1"
+    }
+  ]
+}

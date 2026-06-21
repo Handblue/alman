@@ -1,0 +1,176 @@
+{
+  "kind": "gen",
+  "unitId": 148,
+  "categoryId": 8,
+  "number": 8,
+  "title": "Para ve Bolluk Deyimleri",
+  "theme": "Para, zenginlik ve yoksullukla ilgili deyimler; harcama, tasarruf, borç ve değer üzerine mecazi ifadeler.",
+  "firstWordId": 2206,
+  "words": [
+    {
+      "german": "der Geizhals",
+      "turkish": "cimri / pinti kişi",
+      "example": "Mein Nachbar ist ein richtiger Geizhals.",
+      "exampleTranslation": "Komşum tam bir cimridir.",
+      "synonyms": [
+        "der Knauser",
+        "der Pfennigfuchser"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Ausgabe",
+      "turkish": "harcama / gider",
+      "example": "Unsere Ausgaben sind diesen Monat sehr hoch.",
+      "exampleTranslation": "Bu ay giderlerimiz çok yüksek.",
+      "synonyms": [
+        "die Kosten",
+        "der Aufwand"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "vermögend",
+      "turkish": "varlıklı / zengin",
+      "example": "Ihre Familie ist sehr vermögend.",
+      "exampleTranslation": "Ailesi çok varlıklıdır.",
+      "synonyms": [
+        "reich",
+        "wohlhabend"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Schnäppchen",
+      "turkish": "kelepir / ucuza kapatılan mal",
+      "example": "Im Schlussverkauf habe ich ein Schnäppchen gemacht.",
+      "exampleTranslation": "İndirimde bir kelepir buldum.",
+      "synonyms": [
+        "das günstige Angebot",
+        "der Glücksgriff"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "verschwenden",
+      "turkish": "israf etmek / boşa harcamak",
+      "example": "Du sollst dein Geld nicht so verschwenden.",
+      "exampleTranslation": "Paranı böyle israf etmemelisin.",
+      "synonyms": [
+        "vergeuden",
+        "verprassen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Armut",
+      "turkish": "yoksulluk / fakirlik",
+      "example": "Viele Menschen leben in bitterer Armut.",
+      "exampleTranslation": "Birçok insan acı bir yoksulluk içinde yaşıyor.",
+      "synonyms": [
+        "die Mittellosigkeit",
+        "die Not"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Reichtum",
+      "turkish": "zenginlik / servet",
+      "example": "Sein Reichtum beeindruckt alle Gäste.",
+      "exampleTranslation": "Onun zenginliği tüm misafirleri etkiliyor.",
+      "synonyms": [
+        "der Wohlstand",
+        "das Vermögen"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "knapp bei Kasse sein",
+      "turkish": "parası kıt olmak / cebi delik olmak",
+      "example": "Am Monatsende bin ich oft knapp bei Kasse.",
+      "exampleTranslation": "Ay sonunda genelde param kıt olur.",
+      "synonyms": [
+        "pleite sein",
+        "kein Geld haben"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "tief in die Tasche greifen",
+      "turkish": "kesenin ağzını açmak / çok para harcamak",
+      "example": "Für das neue Auto musste er tief in die Tasche greifen.",
+      "exampleTranslation": "Yeni araba için kesesinin ağzını iyice açması gerekti.",
+      "synonyms": [
+        "viel bezahlen",
+        "viel ausgeben"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Geld zum Fenster hinauswerfen",
+      "turkish": "parayı çar çur etmek / pencereden atmak",
+      "example": "Mit solchen Käufen wirft er das Geld zum Fenster hinaus.",
+      "exampleTranslation": "Böyle alışverişlerle parayı pencereden atıyor.",
+      "synonyms": [
+        "das Geld verprassen",
+        "Geld vergeuden"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "jeden Cent zweimal umdrehen",
+      "turkish": "her kuruşu hesaplamak / çok tutumlu olmak",
+      "example": "Als Studentin musste sie jeden Cent zweimal umdrehen.",
+      "exampleTranslation": "Öğrenciyken her kuruşu iki kez hesaplamak zorundaydı.",
+      "synonyms": [
+        "sehr sparsam sein",
+        "knausern"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Schulden",
+      "turkish": "borçlar",
+      "example": "Er versucht, seine Schulden langsam abzubauen.",
+      "exampleTranslation": "Borçlarını yavaş yavaş azaltmaya çalışıyor.",
+      "synonyms": [
+        "die Verbindlichkeiten",
+        "die Verschuldung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "in den roten Zahlen sein",
+      "turkish": "ekside olmak / zarar içinde olmak",
+      "example": "Die Firma ist seit Monaten in den roten Zahlen.",
+      "exampleTranslation": "Şirket aylardır zarar içinde.",
+      "synonyms": [
+        "Verluste machen",
+        "im Minus sein"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "etwas für einen Apfel und ein Ei kaufen",
+      "turkish": "bir şeyi sudan ucuza almak / çok ucuza kapatmak",
+      "example": "Den alten Schrank habe ich für einen Apfel und ein Ei gekauft.",
+      "exampleTranslation": "Eski dolabı sudan ucuza aldım.",
+      "synonyms": [
+        "sehr günstig kaufen",
+        "spottbillig kaufen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "auf großem Fuß leben",
+      "turkish": "har vurup harman savurarak yaşamak / lüks yaşamak",
+      "example": "Nach dem Lottogewinn lebte er auf großem Fuß.",
+      "exampleTranslation": "Loto kazandıktan sonra lüks içinde yaşadı.",
+      "synonyms": [
+        "verschwenderisch leben",
+        "im Luxus leben"
+      ],
+      "level": "C1"
+    }
+  ]
+}

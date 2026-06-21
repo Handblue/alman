@@ -1,0 +1,174 @@
+{
+  "kind": "gen",
+  "unitId": 125,
+  "categoryId": 6,
+  "number": 18,
+  "title": "Akademik Sunum ve Tartışma",
+  "theme": "Konferans, seminer ve sözlü sunumlara özgü terminoloji: sunum yapma, soru-cevap, tartışma ve görüş bildirme.",
+  "firstWordId": 1861,
+  "words": [
+    {
+      "german": "der Vortrag",
+      "turkish": "sunum / konuşma / konferans",
+      "example": "Sie hielt einen Vortrag über erneuerbare Energien.",
+      "exampleTranslation": "Yenilenebilir enerjiler üzerine bir sunum yaptı.",
+      "synonyms": [
+        "die Präsentation",
+        "die Rede"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Tagung",
+      "turkish": "konferans / kurultay / toplantı",
+      "example": "Die Tagung findet jährlich in Berlin statt.",
+      "exampleTranslation": "Konferans her yıl Berlin'de düzenleniyor.",
+      "synonyms": [
+        "die Konferenz",
+        "der Kongress"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Folie",
+      "turkish": "sunum slaytı / asetat",
+      "example": "Auf der nächsten Folie sehen Sie die Statistik.",
+      "exampleTranslation": "Bir sonraki slaytta istatistiği görüyorsunuz.",
+      "synonyms": [
+        "das Dia"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Schaubild",
+      "turkish": "şema / grafik gösterim",
+      "example": "Das Schaubild zeigt die Entwicklung der Preise.",
+      "exampleTranslation": "Şema fiyatların gelişimini gösteriyor.",
+      "synonyms": [
+        "das Diagramm",
+        "die Grafik"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Diskussion",
+      "turkish": "tartışma / müzakere",
+      "example": "Nach dem Vortrag begann eine lebhafte Diskussion.",
+      "exampleTranslation": "Sunumdan sonra canlı bir tartışma başladı.",
+      "synonyms": [
+        "die Debatte",
+        "der Meinungsaustausch"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Gegenargument",
+      "turkish": "karşı argüman / karşı görüş",
+      "example": "Sein Gegenargument überzeugte das ganze Publikum.",
+      "exampleTranslation": "Karşı argümanı tüm dinleyicileri ikna etti.",
+      "synonyms": [
+        "der Gegeneinwand",
+        "die Entgegnung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Beurteilung",
+      "turkish": "değerlendirme / yargı",
+      "example": "Ihre Beurteilung der Lage war sehr sachlich.",
+      "exampleTranslation": "Durumla ilgili değerlendirmesi çok nesneldi.",
+      "synonyms": [
+        "die Bewertung",
+        "das Urteil"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Rückfrage",
+      "turkish": "soru / yeniden sorma / ek soru",
+      "example": "Bei Rückfragen wenden Sie sich bitte an mich.",
+      "exampleTranslation": "Sorularınız olursa lütfen bana başvurun.",
+      "synonyms": [
+        "die Nachfrage"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Veranschaulichung",
+      "turkish": "görselleştirme / somutlaştırma",
+      "example": "Zur Veranschaulichung nutzte er ein einfaches Beispiel.",
+      "exampleTranslation": "Somutlaştırmak için basit bir örnek kullandı.",
+      "synonyms": [
+        "die Illustration",
+        "die Darstellung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Einwand",
+      "turkish": "itiraz / çekince",
+      "example": "Gegen diesen Vorschlag erhob sie einen Einwand.",
+      "exampleTranslation": "Bu öneriye karşı bir itirazda bulundu.",
+      "synonyms": [
+        "der Vorbehalt",
+        "die Beanstandung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Stellungnahme",
+      "turkish": "görüş bildirme / beyan / tutum",
+      "example": "Der Experte gab eine klare Stellungnahme ab.",
+      "exampleTranslation": "Uzman net bir görüş bildirdi.",
+      "synonyms": [
+        "die Äußerung",
+        "das Statement"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Einschätzung",
+      "turkish": "değerlendirme / öngörü / kanaat",
+      "example": "Nach meiner Einschätzung ist das Risiko gering.",
+      "exampleTranslation": "Bana göre risk düşüktür.",
+      "synonyms": [
+        "die Bewertung",
+        "die Annahme"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Erläuterung",
+      "turkish": "açıklama / izah",
+      "example": "Er bat um eine genauere Erläuterung des Begriffs.",
+      "exampleTranslation": "Kavramın daha ayrıntılı bir açıklamasını rica etti.",
+      "synonyms": [
+        "die Ausführung",
+        "die Präzisierung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Anmerkung",
+      "turkish": "not / şerh / değini",
+      "example": "Ich habe noch eine kleine Anmerkung dazu.",
+      "exampleTranslation": "Bununla ilgili küçük bir notum daha var.",
+      "synonyms": [
+        "die Bemerkung",
+        "der Hinweis"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "der Nachdruck",
+      "turkish": "vurgu / ısrar / önem",
+      "example": "Sie betonte ihre Forderung mit großem Nachdruck.",
+      "exampleTranslation": "Talebini büyük bir vurguyla dile getirdi.",
+      "synonyms": [
+        "die Betonung",
+        "die Eindringlichkeit"
+      ],
+      "level": "C1"
+    }
+  ]
+}

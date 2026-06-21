@@ -1,0 +1,173 @@
+{
+  "kind": "gen",
+  "unitId": 94,
+  "categoryId": 4,
+  "number": 18,
+  "title": "telc — Bilim ve Teknoloji Gelişmeleri",
+  "theme": "Bilimsel ilerleme, araştırma ve teknolojik yenilikler bağlamında telc okuma metinlerinde geçen üst düzey kelimeler.",
+  "firstWordId": 1396,
+  "words": [
+    {
+      "german": "die Entwicklung",
+      "turkish": "gelişme / geliştirme",
+      "example": "Die Entwicklung neuer Impfstoffe dauert oft Jahre.",
+      "exampleTranslation": "Yeni aşıların geliştirilmesi genellikle yıllar sürer.",
+      "synonyms": [
+        "der Fortschritt",
+        "die Weiterentwicklung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Erfindung",
+      "turkish": "buluş / icat",
+      "example": "Die Erfindung des Computers veränderte die Welt.",
+      "exampleTranslation": "Bilgisayarın icadı dünyayı değiştirdi.",
+      "synonyms": [
+        "die Neuerung",
+        "die Innovation"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Roboter",
+      "turkish": "robot",
+      "example": "Der Roboter übernimmt gefährliche Arbeiten in der Fabrik.",
+      "exampleTranslation": "Robot, fabrikada tehlikeli işleri üstlenir.",
+      "synonyms": [
+        "der Automat",
+        "die Maschine"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Energie",
+      "turkish": "enerji",
+      "example": "Solaranlagen erzeugen saubere Energie aus Sonnenlicht.",
+      "exampleTranslation": "Güneş panelleri güneş ışığından temiz enerji üretir.",
+      "synonyms": [
+        "die Kraft",
+        "der Strom"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "entwickeln",
+      "turkish": "geliştirmek",
+      "example": "Wissenschaftler entwickeln ein neues Verfahren zur Heilung.",
+      "exampleTranslation": "Bilim insanları tedavi için yeni bir yöntem geliştiriyor.",
+      "synonyms": [
+        "erschaffen",
+        "konstruieren"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Technologie",
+      "turkish": "teknoloji",
+      "example": "Diese Technologie ermöglicht schnellere Datenübertragung.",
+      "exampleTranslation": "Bu teknoloji daha hızlı veri aktarımını mümkün kılar.",
+      "synonyms": [
+        "die Technik"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Automatisierung",
+      "turkish": "otomasyon / otomatikleştirme",
+      "example": "Die Automatisierung verändert viele Berufe grundlegend.",
+      "exampleTranslation": "Otomasyon birçok mesleği kökten değiştiriyor.",
+      "synonyms": [
+        "die Mechanisierung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Innovation",
+      "turkish": "yenilik / inovasyon",
+      "example": "Ohne Innovation bleibt ein Unternehmen nicht konkurrenzfähig.",
+      "exampleTranslation": "Yenilik olmadan bir şirket rekabetçi kalamaz.",
+      "synonyms": [
+        "die Neuerung",
+        "der Fortschritt"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Verfahren",
+      "turkish": "yöntem / işlem / süreç",
+      "example": "Das neue Verfahren spart Zeit und Material.",
+      "exampleTranslation": "Yeni yöntem zaman ve malzeme tasarrufu sağlar.",
+      "synonyms": [
+        "die Methode",
+        "der Prozess"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Anwendung",
+      "turkish": "uygulama / kullanım",
+      "example": "Die Anwendung künstlicher Intelligenz wächst rasant.",
+      "exampleTranslation": "Yapay zekanın uygulanması hızla artıyor.",
+      "synonyms": [
+        "der Einsatz",
+        "die Nutzung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Genforschung",
+      "turkish": "gen araştırması / genetik araştırma",
+      "example": "Die Genforschung eröffnet neue Wege in der Medizin.",
+      "exampleTranslation": "Gen araştırması tıpta yeni yollar açıyor.",
+      "synonyms": [
+        "die Genetik"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Durchbruch",
+      "turkish": "atılım / çığır açan gelişme",
+      "example": "Den Forschern gelang ein wichtiger medizinischer Durchbruch.",
+      "exampleTranslation": "Araştırmacılar önemli bir tıbbi atılım gerçekleştirdi.",
+      "synonyms": [
+        "der Meilenstein",
+        "der Erfolg"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Tragweite",
+      "turkish": "kapsam / etki menzili / önem derecesi",
+      "example": "Die Tragweite dieser Entdeckung ist noch unklar.",
+      "exampleTranslation": "Bu keşfin kapsamı henüz belirsizdir.",
+      "synonyms": [
+        "die Bedeutung",
+        "das Ausmaß"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "bahnbrechend",
+      "turkish": "çığır açan / öncü",
+      "example": "Seine bahnbrechende Forschung wurde weltweit anerkannt.",
+      "exampleTranslation": "Onun çığır açan araştırması dünya çapında tanındı.",
+      "synonyms": [
+        "wegweisend",
+        "revolutionär"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Errungenschaft",
+      "turkish": "başarı / kazanım / elde edilen ilerleme",
+      "example": "Die Mondlandung war eine große technische Errungenschaft.",
+      "exampleTranslation": "Ay'a iniş büyük bir teknik kazanımdı.",
+      "synonyms": [
+        "die Leistung",
+        "der Erfolg"
+      ],
+      "level": "C1"
+    }
+  ]
+}

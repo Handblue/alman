@@ -1,0 +1,169 @@
+{
+  "kind": "gen",
+  "unitId": 115,
+  "categoryId": 6,
+  "number": 8,
+  "title": "Mühendislik ve Teknoloji",
+  "theme": "Mühendislik disiplinleri ve teknik üretim terminolojisi: malzeme, makine, üretim ve sistem tasarımı.",
+  "firstWordId": 1711,
+  "words": [
+    {
+      "german": "der Werkstoff",
+      "turkish": "malzeme / hammadde",
+      "example": "Dieser Werkstoff ist besonders hitzebeständig.",
+      "exampleTranslation": "Bu malzeme özellikle ısıya dayanıklıdır.",
+      "synonyms": [
+        "das Material"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Legierung",
+      "turkish": "alaşım",
+      "example": "Diese Legierung enthält Kupfer und Zinn.",
+      "exampleTranslation": "Bu alaşım bakır ve kalay içerir.",
+      "synonyms": [
+        "die Metallmischung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Belastbarkeit",
+      "turkish": "dayanıklılık / yük taşıma kapasitesi",
+      "example": "Die Belastbarkeit des Bauteils wurde getestet.",
+      "exampleTranslation": "Parçanın dayanıklılığı test edildi.",
+      "synonyms": [
+        "die Widerstandsfähigkeit",
+        "die Tragfähigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Getriebe",
+      "turkish": "şanzıman / dişli kutusu",
+      "example": "Das Getriebe überträgt die Kraft auf die Räder.",
+      "exampleTranslation": "Şanzıman gücü tekerleklere aktarır.",
+      "synonyms": [
+        "die Übersetzung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Antrieb",
+      "turkish": "tahrik / motor gücü",
+      "example": "Der elektrische Antrieb arbeitet sehr leise.",
+      "exampleTranslation": "Elektrikli tahrik çok sessiz çalışır.",
+      "synonyms": [
+        "der Motor",
+        "die Triebkraft"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Bauteil",
+      "turkish": "parça / yapı elemanı",
+      "example": "Jedes Bauteil muss genau passen.",
+      "exampleTranslation": "Her parça tam olarak uymalıdır.",
+      "synonyms": [
+        "die Komponente",
+        "das Element"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Schaltung",
+      "turkish": "devre / şema",
+      "example": "Die Schaltung steuert den gesamten Stromfluss.",
+      "exampleTranslation": "Devre, tüm akım akışını kontrol eder.",
+      "synonyms": [
+        "der Schaltkreis"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Spannung",
+      "turkish": "gerilim / voltaj",
+      "example": "Die Spannung im Stromkreis ist zu hoch.",
+      "exampleTranslation": "Devredeki gerilim çok yüksek.",
+      "synonyms": [
+        "die elektrische Spannung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Bauelement",
+      "turkish": "yapı elemanı / komponent",
+      "example": "Ein defektes Bauelement verursachte den Ausfall.",
+      "exampleTranslation": "Bozuk bir komponent arızaya yol açtı.",
+      "synonyms": [
+        "die Komponente"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Fertigung",
+      "turkish": "imalat / üretim",
+      "example": "Die Fertigung der Teile erfolgt vollautomatisch.",
+      "exampleTranslation": "Parçaların imalatı tamamen otomatik gerçekleşir.",
+      "synonyms": [
+        "die Herstellung",
+        "die Produktion"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Konstruktion",
+      "turkish": "tasarım / yapı / konstrüksiyon",
+      "example": "Die Konstruktion der Brücke dauerte zwei Jahre.",
+      "exampleTranslation": "Köprünün konstrüksiyonu iki yıl sürdü.",
+      "synonyms": [
+        "der Aufbau",
+        "die Bauweise"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Verfahren",
+      "turkish": "yöntem / işlem / prosedür",
+      "example": "Dieses Verfahren spart Material und Energie.",
+      "exampleTranslation": "Bu yöntem malzeme ve enerji tasarrufu sağlar.",
+      "synonyms": [
+        "die Methode",
+        "der Prozess"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Prototyp",
+      "turkish": "prototip / ilk örnek",
+      "example": "Der Prototyp wird nächste Woche vorgestellt.",
+      "exampleTranslation": "Prototip gelecek hafta tanıtılacak.",
+      "synonyms": [
+        "das Versuchsmodell",
+        "der Erstentwurf"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Steuerung",
+      "turkish": "kontrol / kumanda / yönetim",
+      "example": "Die Steuerung der Maschine läuft digital.",
+      "exampleTranslation": "Makinenin kumandası dijital olarak çalışır.",
+      "synonyms": [
+        "die Kontrolle",
+        "die Regelung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Regelung",
+      "turkish": "regülasyon / ayarlama / düzenleme",
+      "example": "Die automatische Regelung hält die Temperatur konstant.",
+      "exampleTranslation": "Otomatik regülasyon sıcaklığı sabit tutar.",
+      "synonyms": [
+        "die Steuerung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "kind": "gen",
+  "unitId": 113,
+  "categoryId": 6,
+  "number": 6,
+  "title": "Biyoloji ve Yaşam Bilimleri",
+  "theme": "Hücre biyolojisi, genetik, evrim ve ekoloji alanlarında üniversite düzeyi yaşam bilimleri terminolojisi.",
+  "firstWordId": 1681,
+  "words": [
+    {
+      "german": "die Zelle",
+      "turkish": "hücre",
+      "example": "Jede Zelle besitzt einen Zellkern.",
+      "exampleTranslation": "Her hücrenin bir çekirdeği vardır.",
+      "synonyms": [
+        "die Grundeinheit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Vererbung",
+      "turkish": "kalıtım / soyaçekim",
+      "example": "Die Vererbung von Merkmalen folgt bestimmten Regeln.",
+      "exampleTranslation": "Özelliklerin kalıtımı belirli kurallara uyar.",
+      "synonyms": [
+        "die Erblichkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Mutation",
+      "turkish": "mutasyon",
+      "example": "Eine Mutation kann das Erbgut verändern.",
+      "exampleTranslation": "Bir mutasyon kalıtsal materyali değiştirebilir.",
+      "synonyms": [
+        "die Veränderung",
+        "die Genmutation"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Anpassung",
+      "turkish": "uyum / adaptasyon",
+      "example": "Die Anpassung an die Umwelt sichert das Überleben.",
+      "exampleTranslation": "Çevreye uyum hayatta kalmayı güvence altına alır.",
+      "synonyms": [
+        "die Adaptation",
+        "die Anpassungsfähigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Stoffwechsel",
+      "turkish": "metabolizma",
+      "example": "Der Stoffwechsel liefert dem Körper Energie.",
+      "exampleTranslation": "Metabolizma vücuda enerji sağlar.",
+      "synonyms": [
+        "der Metabolismus"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Bakterie",
+      "turkish": "bakteri",
+      "example": "Diese Bakterie vermehrt sich sehr schnell.",
+      "exampleTranslation": "Bu bakteri çok hızlı çoğalır.",
+      "synonyms": [
+        "das Bakterium",
+        "der Keim"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Population",
+      "turkish": "popülasyon / canlı topluluğu",
+      "example": "Die Population der Vögel nimmt langsam ab.",
+      "exampleTranslation": "Kuş popülasyonu yavaşça azalıyor.",
+      "synonyms": [
+        "der Bestand",
+        "die Gruppe"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Zellteilung",
+      "turkish": "hücre bölünmesi",
+      "example": "Durch Zellteilung entstehen neue Zellen.",
+      "exampleTranslation": "Hücre bölünmesiyle yeni hücreler oluşur.",
+      "synonyms": [
+        "die Mitose"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Erbgut",
+      "turkish": "kalıtsal materyal / genom",
+      "example": "Das Erbgut ist in der DNA gespeichert.",
+      "exampleTranslation": "Kalıtsal materyal DNA'da depolanır.",
+      "synonyms": [
+        "das Genom",
+        "die Erbinformation"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Selektion",
+      "turkish": "seçilim / doğal seçilim",
+      "example": "Die natürliche Selektion bevorzugt angepasste Lebewesen.",
+      "exampleTranslation": "Doğal seçilim, uyum sağlamış canlıları kayırır.",
+      "synonyms": [
+        "die Auslese",
+        "die Auswahl"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Enzym",
+      "turkish": "enzim",
+      "example": "Ein Enzym beschleunigt chemische Reaktionen.",
+      "exampleTranslation": "Bir enzim kimyasal tepkimeleri hızlandırır.",
+      "synonyms": [
+        "der Biokatalysator",
+        "der Katalysator"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Photosynthese",
+      "turkish": "fotosentez",
+      "example": "Pflanzen erzeugen durch Photosynthese Sauerstoff.",
+      "exampleTranslation": "Bitkiler fotosentez yoluyla oksijen üretir.",
+      "synonyms": [
+        "die Kohlenstoffassimilation"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "das Ökosystem",
+      "turkish": "ekosistem",
+      "example": "Ein gesundes Ökosystem bleibt im Gleichgewicht.",
+      "exampleTranslation": "Sağlıklı bir ekosistem dengede kalır.",
+      "synonyms": [
+        "der Lebensraum",
+        "das Biotop"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Membran",
+      "turkish": "zar / membran",
+      "example": "Die Membran umschließt das Innere der Zelle.",
+      "exampleTranslation": "Zar, hücrenin iç kısmını çevreler.",
+      "synonyms": [
+        "die Zellmembran",
+        "die Hülle"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Fortpflanzung",
+      "turkish": "üreme / çoğalma",
+      "example": "Die Fortpflanzung sichert das Fortbestehen der Art.",
+      "exampleTranslation": "Üreme, türün devamlılığını güvence altına alır.",
+      "synonyms": [
+        "die Vermehrung",
+        "die Reproduktion"
+      ],
+      "level": "C1"
+    }
+  ]
+}

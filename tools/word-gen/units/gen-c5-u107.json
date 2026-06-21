@@ -1,0 +1,159 @@
+{
+  "kind": "gen",
+  "unitId": 107,
+  "categoryId": 5,
+  "number": 16,
+  "title": "Toplu Taşıma ve Bilet",
+  "theme": "Otobüs, tren ve metro kullanımı, bilet alma ve aktarmayla ilgili günlük ulaşım kelimeleri. Şehir içi seyahat ve duraklar bağlamı.",
+  "firstWordId": 1591,
+  "words": [
+    {
+      "german": "die Fahrkarte",
+      "turkish": "bilet",
+      "example": "Ich kaufe eine Fahrkarte für den Bus.",
+      "exampleTranslation": "Otobüs için bir bilet alıyorum.",
+      "synonyms": [
+        "der Fahrschein",
+        "das Ticket"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Straßenbahn",
+      "turkish": "tramvay",
+      "example": "Die Straßenbahn hält direkt vor dem Haus.",
+      "exampleTranslation": "Tramvay tam evin önünde duruyor.",
+      "synonyms": [
+        "die Tram"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Linie",
+      "turkish": "hat / sefer numarası",
+      "example": "Die Linie 5 fährt zum Stadtzentrum.",
+      "exampleTranslation": "5 numaralı hat şehir merkezine gidiyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "der Fahrgast",
+      "turkish": "yolcu",
+      "example": "Jeder Fahrgast braucht eine gültige Fahrkarte.",
+      "exampleTranslation": "Her yolcunun geçerli bir bilete ihtiyacı var.",
+      "synonyms": [
+        "der Passagier",
+        "der Reisende"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Fahrt",
+      "turkish": "yolculuk / sefer",
+      "example": "Die Fahrt mit dem Zug dauert zwei Stunden.",
+      "exampleTranslation": "Trenle yolculuk iki saat sürüyor.",
+      "synonyms": [
+        "die Reise"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "die Monatskarte",
+      "turkish": "aylık abonman bileti",
+      "example": "Mit der Monatskarte fahre ich jeden Tag.",
+      "exampleTranslation": "Aylık abonman ile her gün gidiyorum.",
+      "synonyms": [
+        "die Zeitkarte"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Fahrkartenautomat",
+      "turkish": "bilet makinesi",
+      "example": "Der Fahrkartenautomat ist leider kaputt.",
+      "exampleTranslation": "Bilet makinesi maalesef bozuk.",
+      "synonyms": [
+        "der Ticketautomat"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Bahnsteig",
+      "turkish": "peron",
+      "example": "Der Zug fährt von Bahnsteig drei ab.",
+      "exampleTranslation": "Tren üç numaralı perondan kalkıyor.",
+      "synonyms": [
+        "der Perron"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "das Gleis",
+      "turkish": "ray / peron numarası",
+      "example": "Bitte warten Sie an Gleis sieben.",
+      "exampleTranslation": "Lütfen yedi numaralı peronda bekleyin.",
+      "synonyms": [
+        "das Schienengleis"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Verbindung",
+      "turkish": "bağlantı / aktarmalı sefer",
+      "example": "Es gibt eine direkte Verbindung nach Berlin.",
+      "exampleTranslation": "Berlin'e doğrudan bir bağlantı var.",
+      "synonyms": [
+        "der Anschluss"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Schaffner",
+      "turkish": "kondüktör / bilet kontrolörü",
+      "example": "Der Schaffner kontrolliert die Fahrkarten im Zug.",
+      "exampleTranslation": "Kondüktör trende biletleri kontrol ediyor.",
+      "synonyms": [
+        "der Kontrolleur"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "die Kontrolle",
+      "turkish": "kontrol / denetim",
+      "example": "Bei der Kontrolle zeige ich meine Fahrkarte.",
+      "exampleTranslation": "Kontrolde biletimi gösteriyorum.",
+      "synonyms": [
+        "die Überprüfung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Schwarzfahren",
+      "turkish": "kaçak/biletsiz yolculuk",
+      "example": "Schwarzfahren kostet vierzig Euro Strafe.",
+      "exampleTranslation": "Biletsiz yolculuk kırk euro ceza demek.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "german": "der Entwerter",
+      "turkish": "bilet damgalama makinesi",
+      "example": "Stecke deine Fahrkarte in den Entwerter.",
+      "exampleTranslation": "Biletini damgalama makinesine sok.",
+      "synonyms": [
+        "der Fahrkartenentwerter"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Nahverkehr",
+      "turkish": "yakın mesafe toplu taşıma",
+      "example": "Der Nahverkehr in der Stadt ist sehr gut.",
+      "exampleTranslation": "Şehirdeki toplu taşıma çok iyi.",
+      "synonyms": [
+        "der öffentliche Verkehr"
+      ],
+      "level": "B1"
+    }
+  ]
+}

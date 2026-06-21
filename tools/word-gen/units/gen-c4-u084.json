@@ -1,0 +1,172 @@
+{
+  "kind": "gen",
+  "unitId": 84,
+  "categoryId": 4,
+  "number": 8,
+  "title": "telc — Eğitim, Kurs ve Meslek",
+  "theme": "Eğitim sistemi, meslek eğitimi (Ausbildung) ve kurs kayıtları bağlamında telc sınavının eğitim temalı kelimeleri.",
+  "firstWordId": 1246,
+  "words": [
+    {
+      "german": "der Ausbildungsplatz",
+      "turkish": "meslek eğitimi yeri / çıraklık yeri",
+      "example": "Er hat einen Ausbildungsplatz als Mechaniker gefunden.",
+      "exampleTranslation": "Mekanikerlik için bir meslek eğitimi yeri buldu.",
+      "synonyms": [
+        "die Lehrstelle"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "der Praktikant",
+      "turkish": "stajyer",
+      "example": "Der Praktikant arbeitet drei Monate in der Firma.",
+      "exampleTranslation": "Stajyer firmada üç ay çalışıyor.",
+      "synonyms": [
+        "der Praktikumsteilnehmer"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Anmeldung",
+      "turkish": "kayıt / başvuru",
+      "example": "Die Anmeldung zum Sprachkurs ist kostenlos.",
+      "exampleTranslation": "Dil kursuna kayıt ücretsizdir.",
+      "synonyms": [
+        "die Registrierung",
+        "die Einschreibung"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Teilnahmebescheinigung",
+      "turkish": "katılım belgesi",
+      "example": "Nach dem Kurs erhältst du eine Teilnahmebescheinigung.",
+      "exampleTranslation": "Kurstan sonra bir katılım belgesi alırsın.",
+      "synonyms": [
+        "das Teilnahmezertifikat"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "das Zeugnis",
+      "turkish": "karne / diploma belgesi",
+      "example": "Mein Zeugnis war dieses Jahr sehr gut.",
+      "exampleTranslation": "Karnem bu yıl çok iyiydi.",
+      "synonyms": [
+        "die Bescheinigung",
+        "das Diplom"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Anerkennung",
+      "turkish": "denklik / tanınma",
+      "example": "Die Anerkennung des Diploms dauert mehrere Monate.",
+      "exampleTranslation": "Diplomanın denkliği birkaç ay sürüyor.",
+      "synonyms": [
+        "die Akzeptanz",
+        "die Würdigung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "das Stipendium",
+      "turkish": "burs",
+      "example": "Sie hat ein Stipendium für ihr Studium bekommen.",
+      "exampleTranslation": "Öğrenimi için bir burs aldı.",
+      "synonyms": [
+        "die Studienförderung",
+        "die Förderung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Studiengang",
+      "turkish": "bölüm / öğrenim programı",
+      "example": "Welchen Studiengang möchtest du wählen?",
+      "exampleTranslation": "Hangi bölümü seçmek istiyorsun?",
+      "synonyms": [
+        "die Studienrichtung",
+        "das Fach"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Fortbildung",
+      "turkish": "ileri/mesleki eğitim, hizmet içi eğitim",
+      "example": "Mein Arbeitgeber bezahlt die Fortbildung am Wochenende.",
+      "exampleTranslation": "İşverenim hafta sonu eğitimini ödüyor.",
+      "synonyms": [
+        "die Schulung",
+        "die Qualifizierung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Lehrgang",
+      "turkish": "kurs / eğitim programı",
+      "example": "Der Lehrgang dauert insgesamt sechs Wochen.",
+      "exampleTranslation": "Kurs toplamda altı hafta sürüyor.",
+      "synonyms": [
+        "der Kurs",
+        "die Lehrveranstaltung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Abschluss",
+      "turkish": "mezuniyet / diploma derecesi",
+      "example": "Ohne Abschluss findet man schwer eine Stelle.",
+      "exampleTranslation": "Diploma olmadan iş bulmak zordur.",
+      "synonyms": [
+        "das Examen",
+        "die Graduierung"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Werdegang",
+      "turkish": "kariyer geçmişi / gelişim süreci",
+      "example": "Sein beruflicher Werdegang ist beeindruckend.",
+      "exampleTranslation": "Onun mesleki gelişim süreci etkileyicidir.",
+      "synonyms": [
+        "die Laufbahn",
+        "die Entwicklung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Durchlässigkeit",
+      "turkish": "geçişlilik (eğitim sisteminde)",
+      "example": "Die Durchlässigkeit des Bildungssystems ermöglicht spätere Aufstiege.",
+      "exampleTranslation": "Eğitim sisteminin geçişliliği sonradan yükselmeyi mümkün kılar.",
+      "synonyms": [
+        "die Übergangsfähigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Berufsorientierung",
+      "turkish": "meslek yönelimi / meslek danışmanlığı",
+      "example": "Die Schule bietet eine intensive Berufsorientierung an.",
+      "exampleTranslation": "Okul yoğun bir meslek yönelimi sunuyor.",
+      "synonyms": [
+        "die Berufsberatung",
+        "die Berufsfindung"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "die Selbstverwirklichung",
+      "turkish": "kendini gerçekleştirme",
+      "example": "Lebenslanges Lernen dient auch der Selbstverwirklichung.",
+      "exampleTranslation": "Hayat boyu öğrenme aynı zamanda kendini gerçekleştirmeye hizmet eder.",
+      "synonyms": [
+        "die Selbstentfaltung",
+        "die Selbstfindung"
+      ],
+      "level": "C1"
+    }
+  ]
+}

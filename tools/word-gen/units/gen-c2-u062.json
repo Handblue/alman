@@ -1,0 +1,177 @@
+{
+  "kind": "gen",
+  "unitId": 62,
+  "categoryId": 2,
+  "number": 19,
+  "title": "Mastar ve Amaç Yapıları",
+  "theme": "zu'lu mastar grupları ve amaç/karşıtlık ifade eden mastar yapıları; um zu, ohne zu, anstatt zu ve mastar isteyen fiiller.",
+  "firstWordId": 916,
+  "words": [
+    {
+      "german": "anfangen",
+      "turkish": "başlamak",
+      "example": "Ich fange an, Deutsch zu lernen.",
+      "exampleTranslation": "Almanca öğrenmeye başlıyorum.",
+      "synonyms": [
+        "beginnen",
+        "starten",
+        "loslegen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "vergessen",
+      "turkish": "unutmak",
+      "example": "Vergiss nicht, mich anzurufen!",
+      "exampleTranslation": "Beni aramayı unutma!",
+      "synonyms": [
+        "verschwitzen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "versuchen",
+      "turkish": "denemek / çalışmak (gayret)",
+      "example": "Ich versuche, pünktlich zu sein.",
+      "exampleTranslation": "Dakik olmaya çalışıyorum.",
+      "synonyms": [
+        "probieren",
+        "testen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "beginnen",
+      "turkish": "başlamak",
+      "example": "Es beginnt zu regnen.",
+      "exampleTranslation": "Yağmur yağmaya başlıyor.",
+      "synonyms": [
+        "anfangen",
+        "starten"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "hoffen",
+      "turkish": "ummak / umut etmek",
+      "example": "Ich hoffe, dich bald zu sehen.",
+      "exampleTranslation": "Seni yakında görmeyi umuyorum.",
+      "synonyms": [
+        "erhoffen",
+        "wünschen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "planen",
+      "turkish": "planlamak",
+      "example": "Wir planen, nach Berlin zu ziehen.",
+      "exampleTranslation": "Berlin'e taşınmayı planlıyoruz.",
+      "synonyms": [
+        "vorhaben",
+        "beabsichtigen",
+        "vorsehen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "das Ziel",
+      "turkish": "hedef / amaç",
+      "example": "Sein Ziel ist es, Arzt zu werden.",
+      "exampleTranslation": "Amacı doktor olmak.",
+      "synonyms": [
+        "die Absicht",
+        "das Vorhaben"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "versprechen",
+      "turkish": "söz vermek / vaat etmek",
+      "example": "Er verspricht, pünktlich zu kommen.",
+      "exampleTranslation": "Dakik gelmeye söz veriyor.",
+      "synonyms": [
+        "zusichern",
+        "geloben"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "bereit",
+      "turkish": "hazır / istekli",
+      "example": "Ich bin bereit, dir zu helfen.",
+      "exampleTranslation": "Sana yardım etmeye hazırım.",
+      "synonyms": [
+        "gewillt",
+        "willig"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "die Gelegenheit",
+      "turkish": "fırsat / olanak",
+      "example": "Ich hatte die Gelegenheit, ihn zu treffen.",
+      "exampleTranslation": "Onunla tanışma fırsatım oldu.",
+      "synonyms": [
+        "die Möglichkeit",
+        "die Chance"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "scheinen",
+      "turkish": "görünmek / öyle görünmek",
+      "example": "Er scheint zu schlafen.",
+      "exampleTranslation": "Uyuyor gibi görünüyor.",
+      "synonyms": [
+        "wirken",
+        "anmuten"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "der Zweck",
+      "turkish": "amaç / maksat",
+      "example": "Das dient dem Zweck, Zeit zu sparen.",
+      "exampleTranslation": "Bu, zaman kazanma amacına hizmet eder.",
+      "synonyms": [
+        "die Absicht",
+        "der Sinn"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "die Bereitschaft",
+      "turkish": "isteklilik / hazır olma",
+      "example": "Seine Bereitschaft zu helfen ist groß.",
+      "exampleTranslation": "Yardım etme istekliliği büyük.",
+      "synonyms": [
+        "die Bereitwilligkeit",
+        "die Willigkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "zögern",
+      "turkish": "tereddüt etmek / duraksamak",
+      "example": "Er zögerte, die Wahrheit zu sagen.",
+      "exampleTranslation": "Gerçeği söylemekte tereddüt etti.",
+      "synonyms": [
+        "zaudern",
+        "schwanken"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "beabsichtigen",
+      "turkish": "niyet etmek / amaçlamak",
+      "example": "Sie beabsichtigt, im Ausland zu studieren.",
+      "exampleTranslation": "Yurtdışında okumayı amaçlıyor.",
+      "synonyms": [
+        "vorhaben",
+        "bezwecken"
+      ],
+      "level": "C1"
+    }
+  ]
+}

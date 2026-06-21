@@ -1,0 +1,171 @@
+{
+  "kind": "gen",
+  "unitId": 54,
+  "categoryId": 2,
+  "number": 11,
+  "title": "Akkusativ ve Dativ Hâli",
+  "theme": "İsimlerin ve zamirlerin -i ve -e hâli (Akkusativ/Dativ); artikel ve zamir değişimleri, hâli belirleyen fiiller.",
+  "firstWordId": 796,
+  "words": [
+    {
+      "german": "der Ball",
+      "turkish": "top",
+      "example": "Ich werfe dir den Ball zu.",
+      "exampleTranslation": "Topu sana atıyorum.",
+      "synonyms": [
+        "der Spielball"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "der Brief",
+      "turkish": "mektup",
+      "example": "Ich schreibe meiner Oma einen Brief.",
+      "exampleTranslation": "Babaanneme bir mektup yazıyorum.",
+      "synonyms": [
+        "das Schreiben"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "das Geschenk",
+      "turkish": "hediye",
+      "example": "Sie gibt dem Kind ein Geschenk.",
+      "exampleTranslation": "Çocuğa bir hediye veriyor.",
+      "synonyms": [
+        "das Präsent",
+        "die Gabe"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "schenken",
+      "turkish": "hediye etmek",
+      "example": "Ich schenke dir eine Blume.",
+      "exampleTranslation": "Sana bir çiçek hediye ediyorum.",
+      "synonyms": [
+        "vermachen",
+        "überreichen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "danken",
+      "turkish": "teşekkür etmek",
+      "example": "Ich danke dir für deine Hilfe.",
+      "exampleTranslation": "Yardımın için sana teşekkür ediyorum.",
+      "synonyms": [
+        "sich bedanken"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "gefallen",
+      "turkish": "hoşuna gitmek / beğenilmek",
+      "example": "Das Bild gefällt mir sehr.",
+      "exampleTranslation": "Bu resim çok hoşuma gidiyor.",
+      "synonyms": [
+        "zusagen",
+        "behagen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "zeigen",
+      "turkish": "göstermek",
+      "example": "Er zeigt mir den Weg.",
+      "exampleTranslation": "O bana yolu gösteriyor.",
+      "synonyms": [
+        "vorführen",
+        "präsentieren"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "gehören",
+      "turkish": "ait olmak",
+      "example": "Dieses Auto gehört meinem Vater.",
+      "exampleTranslation": "Bu araba babama ait.",
+      "synonyms": [
+        "zugehören"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "antworten",
+      "turkish": "cevap vermek",
+      "example": "Sie antwortet dem Lehrer höflich.",
+      "exampleTranslation": "Öğretmene kibarca cevap veriyor.",
+      "synonyms": [
+        "erwidern",
+        "entgegnen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "begegnen",
+      "turkish": "karşılaşmak / rastlamak",
+      "example": "Ich bin ihm gestern begegnet.",
+      "exampleTranslation": "Ona dün rastladım.",
+      "synonyms": [
+        "treffen",
+        "stoßen auf"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "vertrauen",
+      "turkish": "güvenmek",
+      "example": "Ich vertraue meinem besten Freund.",
+      "exampleTranslation": "En iyi arkadaşıma güveniyorum.",
+      "synonyms": [
+        "sich verlassen auf"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "widersprechen",
+      "turkish": "karşı çıkmak / itiraz etmek",
+      "example": "Er widerspricht seinem Chef selten.",
+      "exampleTranslation": "Patronuna nadiren karşı çıkar.",
+      "synonyms": [
+        "entgegnen",
+        "einwenden"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "zustimmen",
+      "turkish": "onaylamak / katılmak",
+      "example": "Ich stimme deinem Vorschlag zu.",
+      "exampleTranslation": "Senin önerine katılıyorum.",
+      "synonyms": [
+        "beipflichten",
+        "billigen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "unterliegen",
+      "turkish": "tabi olmak / yenilmek",
+      "example": "Der Vertrag unterliegt strengen Regeln.",
+      "exampleTranslation": "Sözleşme katı kurallara tabidir.",
+      "synonyms": [
+        "unterstehen",
+        "erliegen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "entgegenkommen",
+      "turkish": "kolaylık göstermek / uzlaşmak",
+      "example": "Wir kommen unseren Kunden gern entgegen.",
+      "exampleTranslation": "Müşterilerimize seve seve kolaylık gösteririz.",
+      "synonyms": [
+        "nachgeben",
+        "sich annähern"
+      ],
+      "level": "C1"
+    }
+  ]
+}

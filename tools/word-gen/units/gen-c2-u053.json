@@ -1,0 +1,173 @@
+{
+  "kind": "gen",
+  "unitId": 53,
+  "categoryId": 2,
+  "number": 10,
+  "title": "Ayrılmayan Fiiller",
+  "theme": "be-, ver-, ent-, er-, ge- gibi öneklerle değişmeyen (untrennbare) fiiller; öneklerin fiilin anlamını nasıl dönüştürdüğü.",
+  "firstWordId": 781,
+  "words": [
+    {
+      "german": "besuchen",
+      "turkish": "ziyaret etmek",
+      "example": "Ich besuche morgen meine Großmutter.",
+      "exampleTranslation": "Yarın büyükannemi ziyaret edeceğim.",
+      "synonyms": [
+        "aufsuchen",
+        "vorbeikommen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "bekommen",
+      "turkish": "almak / elde etmek",
+      "example": "Ich bekomme heute ein Paket.",
+      "exampleTranslation": "Bugün bir paket alıyorum.",
+      "synonyms": [
+        "erhalten",
+        "kriegen"
+      ],
+      "level": "A1"
+    },
+    {
+      "german": "vergessen",
+      "turkish": "unutmak",
+      "example": "Ich habe deinen Namen vergessen.",
+      "exampleTranslation": "Adını unuttum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "german": "erklären",
+      "turkish": "açıklamak / anlatmak",
+      "example": "Kannst du mir das erklären?",
+      "exampleTranslation": "Bunu bana açıklayabilir misin?",
+      "synonyms": [
+        "erläutern",
+        "darlegen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "beschreiben",
+      "turkish": "tarif etmek / betimlemek",
+      "example": "Beschreibe bitte den Weg zum Bahnhof.",
+      "exampleTranslation": "Lütfen istasyona giden yolu tarif et.",
+      "synonyms": [
+        "schildern",
+        "darstellen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "gehören",
+      "turkish": "ait olmak",
+      "example": "Dieses Buch gehört meiner Schwester.",
+      "exampleTranslation": "Bu kitap kız kardeşime ait.",
+      "synonyms": [
+        "im Besitz sein von",
+        "zustehen"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "entdecken",
+      "turkish": "keşfetmek",
+      "example": "Wir haben ein schönes Café entdeckt.",
+      "exampleTranslation": "Güzel bir kafe keşfettik.",
+      "synonyms": [
+        "finden",
+        "aufspüren"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "erreichen",
+      "turkish": "ulaşmak / erişmek",
+      "example": "Ich konnte ihn telefonisch nicht erreichen.",
+      "exampleTranslation": "Ona telefonla ulaşamadım.",
+      "synonyms": [
+        "erlangen",
+        "schaffen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "gefallen",
+      "turkish": "hoşa gitmek / beğenilmek",
+      "example": "Die neue Wohnung gefällt mir sehr.",
+      "exampleTranslation": "Yeni daire çok hoşuma gidiyor.",
+      "synonyms": [
+        "zusagen",
+        "behagen"
+      ],
+      "level": "B1"
+    },
+    {
+      "german": "zerstören",
+      "turkish": "yok etmek / tahrip etmek",
+      "example": "Der Sturm hat viele Häuser zerstört.",
+      "exampleTranslation": "Fırtına birçok evi yok etti.",
+      "synonyms": [
+        "vernichten",
+        "ruinieren"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "entwickeln",
+      "turkish": "geliştirmek",
+      "example": "Die Firma entwickelt neue Software.",
+      "exampleTranslation": "Şirket yeni yazılım geliştiriyor.",
+      "synonyms": [
+        "erarbeiten",
+        "ausarbeiten"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "verbessern",
+      "turkish": "iyileştirmek / düzeltmek",
+      "example": "Wir wollen unseren Service verbessern.",
+      "exampleTranslation": "Hizmetimizi iyileştirmek istiyoruz.",
+      "synonyms": [
+        "optimieren",
+        "korrigieren"
+      ],
+      "level": "B2"
+    },
+    {
+      "german": "erwägen",
+      "turkish": "düşünüp taşınmak / göz önünde bulundurmak",
+      "example": "Wir erwägen einen Umzug nach Berlin.",
+      "exampleTranslation": "Berlin'e taşınmayı düşünüyoruz.",
+      "synonyms": [
+        "überlegen",
+        "in Betracht ziehen"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "entgegnen",
+      "turkish": "karşılık vermek / yanıtlamak",
+      "example": "Sie entgegnete ihm scharf und bestimmt.",
+      "exampleTranslation": "Ona sert ve kararlı bir şekilde karşılık verdi.",
+      "synonyms": [
+        "erwidern",
+        "kontern"
+      ],
+      "level": "C1"
+    },
+    {
+      "german": "verwirklichen",
+      "turkish": "gerçekleştirmek / hayata geçirmek",
+      "example": "Er konnte seinen Traum endlich verwirklichen.",
+      "exampleTranslation": "Hayalini sonunda gerçekleştirebildi.",
+      "synonyms": [
+        "realisieren",
+        "umsetzen"
+      ],
+      "level": "C1"
+    }
+  ]
+}
