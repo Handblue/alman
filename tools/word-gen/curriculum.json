@@ -184,14 +184,21 @@
       "id": 41,
       "categoryId": 1,
       "number": 13,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Meslekler ve İş",
+      "theme": "Günlük yaşamda karşılaşılan temel meslek isimleri ve iş yeriyle ilgili sözcükler. İnsanların ne iş yaptığını ve nerede çalıştığını anlatmaya yarayan A1/A2 kelimeleri.",
+      "subtopics": [
+        "yaygın meslekler (öğretmen, doktor, satıcı, şoför)",
+        "iş yerleri (büro, fabrika, dükkan, hastane)",
+        "iş eylemleri (çalışmak, kazanmak, başvurmak)",
+        "iş arkadaşları ve unvanlar (patron, müdür, meslektaş)",
+        "çalışma araçları ve eşyaları (bilgisayar, masa, evrak)",
+        "çalışma koşulları (maaş, mesai, ara, izin)"
+      ],
       "levelProfile": {
         "A1": 11,
         "A2": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Temel Sözcükler",
         "Aile ve İlişkiler",
@@ -212,14 +219,21 @@
       "id": 42,
       "categoryId": 1,
       "number": 14,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Hayvanlar",
+      "theme": "Ev, çiftlik ve doğadaki yaygın hayvan isimleri ile onlarla ilgili temel sözcükler. Çocukların ve yeni başlayanların ilk öğrendiği somut A1/A2 kelimeleri.",
+      "subtopics": [
+        "evcil hayvanlar (köpek, kedi, kuş, balık)",
+        "çiftlik hayvanları (inek, at, tavuk, domuz)",
+        "vahşi hayvanlar (aslan, ayı, tilki, kurt)",
+        "küçük canlılar ve böcekler (arı, sinek, fare, örümcek)",
+        "hayvan parçaları (kuyruk, kanat, pati, tüy)",
+        "hayvanlarla ilgili eylemler (havlamak, uçmak, beslemek)"
+      ],
       "levelProfile": {
         "A1": 11,
         "A2": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Temel Sözcükler",
         "Aile ve İlişkiler",
@@ -240,14 +254,21 @@
       "id": 43,
       "categoryId": 1,
       "number": 15,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Şehir ve Mekanlar",
+      "theme": "Bir şehirdeki binalar, kamusal yerler ve yön bulma sözcükleri. Sokakta gezerken bir yeri tarif etmeye ve bulmaya yarayan A1/A2 kelimeleri.",
+      "subtopics": [
+        "kamusal binalar (postane, kütüphane, müze, kilise)",
+        "şehir mekanları (park, meydan, köprü, sokak)",
+        "hizmet yerleri (eczane, fırın, kafe, sinema)",
+        "yön ve konum sözcükleri (sağ, sol, düz, köşe)",
+        "şehir altyapısı (durak, kaldırım, trafik ışığı)",
+        "yer sorma ve tarif eylemleri (sormak, dönmek, geçmek)"
+      ],
       "levelProfile": {
         "A1": 11,
         "A2": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Temel Sözcükler",
         "Aile ve İlişkiler",
@@ -268,14 +289,21 @@
       "id": 44,
       "categoryId": 1,
       "number": 16,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Boş Zaman ve Hobiler",
+      "theme": "Serbest zaman etkinlikleri, hobiler ve eğlence ile ilgili sözcükler. İnsanların keyifli vakit geçirirken yaptıkları aktiviteleri anlatan A1/A2 kelimeleri.",
+      "subtopics": [
+        "hobiler (okumak, resim yapmak, dans etmek, yüzmek)",
+        "müzik ve enstrümanlar (şarkı, gitar, piyano, koro)",
+        "eğlence yerleri (sinema, tiyatro, konser, parti)",
+        "oyunlar ve eğlence (oyun, satranç, kart, top)",
+        "açık hava etkinlikleri (yürüyüş, piknik, kamp, bisiklet)",
+        "boş zaman ifadeleri (eğlenmek, dinlenmek, gezmek)"
+      ],
       "levelProfile": {
         "A1": 11,
         "A2": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Temel Sözcükler",
         "Aile ve İlişkiler",
@@ -296,14 +324,21 @@
       "id": 45,
       "categoryId": 1,
       "number": 17,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "İletişim ve Teknoloji",
+      "theme": "Telefon, internet ve günlük dijital araçlarla ilgili temel sözcükler. Mesajlaşma, arama ve cihaz kullanımıyla ilgili A1/A2 kelimeleri.",
+      "subtopics": [
+        "cihazlar (telefon, bilgisayar, tablet, ekran)",
+        "iletişim eylemleri (aramak, yazmak, göndermek, cevaplamak)",
+        "internet ve uygulamalar (e-posta, mesaj, şifre, internet)",
+        "telefon parçaları ve aksesuarlar (tuş, kablo, şarj, kulaklık)",
+        "posta ve mektup (mektup, zarf, pul, adres)",
+        "iletişim durumları (meşgul, bağlantı, sinyal)"
+      ],
       "levelProfile": {
         "A1": 11,
         "A2": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Temel Sözcükler",
         "Aile ve İlişkiler",
@@ -324,14 +359,21 @@
       "id": 46,
       "categoryId": 1,
       "number": 18,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Duygular ve Kişilik",
+      "theme": "Temel duygular, ruh halleri ve insan karakterini anlatan sıfatlar. Birinin nasıl hissettiğini ve nasıl biri olduğunu ifade eden A1/A2 kelimeleri.",
+      "subtopics": [
+        "temel duygular (mutlu, üzgün, kızgın, korkmuş)",
+        "ruh halleri (yorgun, heyecanlı, sakin, sıkılmış)",
+        "kişilik sıfatları (nazik, çalışkan, tembel, dürüst)",
+        "olumlu özellikler (cömert, neşeli, arkadaş canlısı)",
+        "olumsuz özellikler (sinirli, bencil, utangaç)",
+        "duygu eylemleri (gülmek, ağlamak, sevmek, korkmak)"
+      ],
       "levelProfile": {
         "A1": 11,
         "A2": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Temel Sözcükler",
         "Aile ve İlişkiler",
@@ -352,14 +394,21 @@
       "id": 47,
       "categoryId": 1,
       "number": 19,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Günlük Rutin ve Ev İşleri",
+      "theme": "Sabahtan akşama günlük rutindeki eylemler ve ev içindeki temel işler. İnsanların her gün düzenli olarak yaptığı aktiviteleri anlatan A1/A2 kelimeleri.",
+      "subtopics": [
+        "sabah rutini (uyanmak, kalkmak, yıkanmak, giyinmek)",
+        "öğün ve beslenme eylemleri (kahvaltı yapmak, yemek pişirmek)",
+        "ev temizliği (süpürmek, silmek, yıkamak, toplamak)",
+        "akşam rutini (dinlenmek, yatmak, uyumak)",
+        "günlük görevler (alışveriş yapmak, ütülemek, çöp atmak)",
+        "zaman ve sıklık zarfları (her gün, önce, sonra, genellikle)"
+      ],
       "levelProfile": {
         "A1": 11,
         "A2": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Temel Sözcükler",
         "Aile ve İlişkiler",
@@ -380,14 +429,21 @@
       "id": 48,
       "categoryId": 1,
       "number": 20,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Spor ve Sağlıklı Yaşam",
+      "theme": "Spor dalları, egzersiz ve aktif yaşamla ilgili temel sözcükler. Hareket, antrenman ve fiziksel etkinlikleri anlatan A1/A2 kelimeleri.",
+      "subtopics": [
+        "spor dalları (futbol, basketbol, tenis, yüzme)",
+        "spor eylemleri (koşmak, zıplamak, atmak, kazanmak)",
+        "spor ekipmanları (top, raket, ayakkabı, ağ)",
+        "spor mekanları (stadyum, salon, saha, havuz)",
+        "spor insanları (oyuncu, takım, hakem, antrenör)",
+        "sağlıklı yaşam ve sonuçlar (egzersiz, gol, maç, zafer)"
+      ],
       "levelProfile": {
         "A1": 11,
         "A2": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Temel Sözcükler",
         "Aile ve İlişkiler",
@@ -448,9 +504,17 @@
       "id": 49,
       "categoryId": 2,
       "number": 6,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Sıfatlar ve Çekimleri",
+      "theme": "Almanca sıfatların temel anlamları ve cümlede artikele göre çekim mantığı. Günlük tasvirlerden derecelendirmeye kadar sıfat kullanımını işler.",
+      "subtopics": [
+        "Renk ve görünüm sıfatları (hell, dunkel, bunt)",
+        "Karakter ve duygu sıfatları (freundlich, neugierig, gelassen)",
+        "Sıfat çekimi: artikelli yapılar (der/die/das + sıfat)",
+        "Sıfat çekimi: artikelsiz yapılar (Nullartikel)",
+        "Sıfat çekimi: belirsiz artikel (ein/eine + sıfat)",
+        "İleri düzey nitelik sıfatları (anspruchsvoll, nachhaltig, umfassend)",
+        "Sıfattan türeyen zarflar"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -458,7 +522,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -472,9 +536,16 @@
       "id": 50,
       "categoryId": 2,
       "number": 7,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Sıfatların Karşılaştırması",
+      "theme": "Sıfatların üstünlük ve enüstünlük dereceleri (Komparativ ve Superlativ), düzenli ve düzensiz biçimler, karşılaştırma yapıları.",
+      "subtopics": [
+        "Düzenli karşılaştırma (schnell – schneller – am schnellsten)",
+        "Düzensiz biçimler (gut, viel, hoch, gern)",
+        "Umlaut alan sıfatlar (alt – älter, groß – größer)",
+        "Eşitlik ve üstünlük yapıları (so ... wie, als)",
+        "Enüstünlük kullanımı (am ...sten, der/die/das ...ste)",
+        "Karşılaştırmalı bağlam ifadeleri (je ... desto)"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -482,7 +553,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -496,9 +567,16 @@
       "id": 51,
       "categoryId": 2,
       "number": 8,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Dönüşlü Fiiller",
+      "theme": "sich ile kullanılan dönüşlü fiiller; günlük rutinler, duygular ve Akkusativ/Dativ dönüşlü zamir farkı.",
+      "subtopics": [
+        "Günlük rutin dönüşlü fiilleri (sich waschen, sich anziehen)",
+        "Duygu ve ruh hali fiilleri (sich freuen, sich ärgern)",
+        "Akkusativ dönüşlü zamirli fiiller",
+        "Dativ dönüşlü zamirli fiiller (sich etwas merken)",
+        "Edatla kalıplaşmış dönüşlü fiiller (sich freuen auf, sich interessieren für)",
+        "İleri düzey dönüşlü fiiller (sich beschweren, sich bemühen)"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -506,7 +584,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -520,9 +598,16 @@
       "id": 52,
       "categoryId": 2,
       "number": 9,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Ayrılabilen Fiiller",
+      "theme": "Önekleri cümlede ayrılan fiiller (trennbare Verben); öneklerin anlama etkisi ve cümle sonuna gelen önek yapısı.",
+      "subtopics": [
+        "an-/auf- önekli fiiller (anrufen, aufstehen)",
+        "ein-/aus- önekli fiiller (einkaufen, ausgehen)",
+        "mit-/zu- önekli fiiller (mitkommen, zumachen)",
+        "vor-/weg- önekli fiiller (vorbereiten, wegwerfen)",
+        "Önekin ana cümlede ayrılması",
+        "İleri düzey ayrılabilen fiiller (teilnehmen, durchführen)"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -530,7 +615,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -544,9 +629,16 @@
       "id": 53,
       "categoryId": 2,
       "number": 10,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Ayrılmayan Fiiller",
+      "theme": "be-, ver-, ent-, er-, ge- gibi öneklerle değişmeyen (untrennbare) fiiller; öneklerin fiilin anlamını nasıl dönüştürdüğü.",
+      "subtopics": [
+        "be- önekli fiiller (besuchen, bezahlen, beschreiben)",
+        "ver- önekli fiiller (verstehen, verkaufen, vergessen)",
+        "ent- önekli fiiller (entscheiden, entdecken)",
+        "er- önekli fiiller (erklären, erreichen, erkennen)",
+        "ge-/zer- önekli fiiller (gehören, gefallen, zerstören)",
+        "Önekin anlama etkisi (kommen → bekommen, suchen → besuchen)"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -554,7 +646,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -568,9 +660,16 @@
       "id": 54,
       "categoryId": 2,
       "number": 11,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Akkusativ ve Dativ Hâli",
+      "theme": "İsimlerin ve zamirlerin -i ve -e hâli (Akkusativ/Dativ); artikel ve zamir değişimleri, hâli belirleyen fiiller.",
+      "subtopics": [
+        "Akkusativ artikeller (den, einen) ve nesneler",
+        "Dativ artikeller (dem, einem) ve dolaylı nesneler",
+        "Akkusativ isteyen fiiller (sehen, haben, brauchen)",
+        "Dativ isteyen fiiller (helfen, danken, gefallen)",
+        "Şahıs zamirlerinin hâl değişimi (mich/mir, dich/dir)",
+        "İki nesneli fiiller (geben, schenken)"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -578,7 +677,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -592,9 +691,16 @@
       "id": 55,
       "categoryId": 2,
       "number": 12,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Edatlar ve Hâl Yönetimi",
+      "theme": "Belirli hâlleri zorunlu kılan edatlar; Akkusativ, Dativ ve değişken (Wechsel) edatların yön ve konum mantığı.",
+      "subtopics": [
+        "Akkusativ edatları (für, ohne, gegen, um, durch)",
+        "Dativ edatları (mit, nach, bei, seit, von, zu)",
+        "Değişken edatlar – konum (in, an, auf + Dativ)",
+        "Değişken edatlar – yön (in, an, auf + Akkusativ)",
+        "Genitiv edatları (während, wegen, trotz)",
+        "Fiil-edat kalıpları (warten auf, denken an)"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -602,7 +708,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -616,9 +722,16 @@
       "id": 56,
       "categoryId": 2,
       "number": 13,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "İlgi Cümleleri",
+      "theme": "İsmi niteleyen yan cümleler (Relativsätze); ilgi zamirlerinin hâl ve cinse göre çekimi, cümle içi kullanım.",
+      "subtopics": [
+        "Nominativ ilgi zamirleri (der, die, das)",
+        "Akkusativ ilgi zamirleri (den, die, das)",
+        "Dativ ilgi zamirleri (dem, der, denen)",
+        "Edatlı ilgi zamirleri (mit dem, für die)",
+        "Genitiv ilgi zamirleri (dessen, deren)",
+        "Belirsiz ilgi sözcükleri (was, wer, wo)"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -626,7 +739,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -640,9 +753,16 @@
       "id": 57,
       "categoryId": 2,
       "number": 14,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Sıfat-Fiiller (Partizipler)",
+      "theme": "Partizip I ve Partizip II'nin sıfat ve zarf olarak kullanımı; etken/edilgen niteleme yapıları ve genişletilmiş sıfat öbekleri.",
+      "subtopics": [
+        "Partizip II sıfat olarak (gekocht, geschrieben, geöffnet)",
+        "Partizip I sıfat olarak (laufend, steigend, lächelnd)",
+        "Partizipin sıfat çekimi (die kochende Suppe)",
+        "zu + Partizip I yapısı (die zu lösende Aufgabe)",
+        "Genişletilmiş partizip öbekleri",
+        "Partizipin zarf olarak kullanımı"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -650,7 +770,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -664,9 +784,16 @@
       "id": 58,
       "categoryId": 2,
       "number": 15,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Edilgen Çatı (Passiv)",
+      "theme": "Vorgangspassiv ve Zustandspassiv yapıları; werden ve sein ile edilgen cümleler, fail belirtme (von/durch) ve zaman çekimleri.",
+      "subtopics": [
+        "Şimdiki zaman edilgen (wird gemacht)",
+        "Geçmiş zaman edilgen (wurde gemacht / ist gemacht worden)",
+        "Durum edilgeni (Zustandspassiv: ist geöffnet)",
+        "Fail belirtme (von + Dativ, durch + Akkusativ)",
+        "Modal fiille edilgen (muss gemacht werden)",
+        "Edilgen anlamlı kalıplar (man, sich lassen)"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -674,7 +801,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -688,9 +815,16 @@
       "id": 59,
       "categoryId": 2,
       "number": 16,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Dilek-Şart Kipi II (Konjunktiv II)",
+      "theme": "Gerçek dışı durumlar, nazik ricalar ve varsayımlar için Konjunktiv II; würde yapısı ve hätte/wäre/könnte biçimleri.",
+      "subtopics": [
+        "würde + Infinitiv yapısı",
+        "hätte ve wäre biçimleri",
+        "Modal fiillerin Konjunktiv II hâli (könnte, müsste, sollte)",
+        "Gerçek dışı şart cümleleri (wenn ... wäre)",
+        "Nazik rica ve öneri kalıpları (Könnten Sie ..., Ich hätte gern)",
+        "Geçmişe yönelik varsayım (hätte gemacht)"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -698,7 +832,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -712,9 +846,16 @@
       "id": 60,
       "categoryId": 2,
       "number": 17,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Dolaylı Anlatım (Konjunktiv I)",
+      "theme": "Başkasının sözünü aktarmada kullanılan Konjunktiv I; haber dili, dolaylı soru ve aktarma fiilleri.",
+      "subtopics": [
+        "Konjunktiv I biçimleri (sei, habe, gehe)",
+        "Aktarma fiilleri (behaupten, erklären, betonen)",
+        "Dolaylı ifade kalıpları (Er sagt, er sei ...)",
+        "Dolaylı soru aktarımı (ob, W-soruları)",
+        "Haber ve basın dili ifadeleri (laut, angeblich)",
+        "Konjunktiv I yerine Konjunktiv II kullanımı"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -722,7 +863,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -736,9 +877,16 @@
       "id": 61,
       "categoryId": 2,
       "number": 18,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "İsim-Fiil Birleşimleri",
+      "theme": "Resmî ve akademik dilde sık geçen Nomen-Verb-Verbindungen (kalıplaşmış isim-fiil öbekleri) ve işlev fiilli yapılar.",
+      "subtopics": [
+        "Karar ve eylem kalıpları (eine Entscheidung treffen)",
+        "Dikkat ve önem kalıpları (in Betracht ziehen, Rücksicht nehmen)",
+        "Soru ve talep kalıpları (eine Frage stellen, einen Antrag stellen)",
+        "Sorumluluk ve etki kalıpları (Verantwortung übernehmen, Einfluss ausüben)",
+        "Süreç fiilleri (zur Verfügung stehen, in Kraft treten)",
+        "Akademik işlev fiilleri (Bezug nehmen, Stellung nehmen)"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -746,7 +894,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -760,9 +908,16 @@
       "id": 62,
       "categoryId": 2,
       "number": 19,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Mastar ve Amaç Yapıları",
+      "theme": "zu'lu mastar grupları ve amaç/karşıtlık ifade eden mastar yapıları; um zu, ohne zu, anstatt zu ve mastar isteyen fiiller.",
+      "subtopics": [
+        "zu + Infinitiv yapısı (Ich versuche zu lernen)",
+        "um ... zu (amaç ifadesi)",
+        "ohne ... zu (eksiklik/karşıtlık)",
+        "anstatt ... zu (yerine geçme)",
+        "Mastar isteyen fiiller (anfangen, aufhören, vergessen zu)",
+        "İsim ve sıfata bağlı mastar (die Möglichkeit zu, bereit zu)"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -770,7 +925,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -784,9 +939,16 @@
       "id": 63,
       "categoryId": 2,
       "number": 20,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Sözcük Türetme ve Bağlaç İfadeleri",
+      "theme": "Almancada ön ek/son ekle sözcük türetme ve metin bağlayıcı (Konnektoren) ifadeler; isim, sıfat ve zarf türetme ile akıcı metin kurma.",
+      "subtopics": [
+        "İsim türeten son ekler (-ung, -heit, -keit, -schaft)",
+        "Sıfat türeten son ekler (-bar, -los, -ig, -voll)",
+        "Olumsuzlaştıran ön ekler (un-, miss-)",
+        "Birleşik isimler (Komposita)",
+        "Metin bağlayıcı zarflar (folglich, dennoch, somit, hingegen)",
+        "Üst düzey bağlayıcı ifadeler (im Gegensatz dazu, infolgedessen)"
+      ],
       "levelProfile": {
         "A1": 3,
         "A2": 3,
@@ -794,7 +956,7 @@
         "B2": 3,
         "C1": 3
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Bağlaçlar ve Gramer Yapıları",
         "Temel Eylemler",
@@ -840,15 +1002,22 @@
       "id": 64,
       "categoryId": 3,
       "number": 5,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe B1 — Sağlık ve Beslenme",
+      "theme": "Doktor ziyareti, hastalıklar, beslenme ve sağlıklı yaşam temalı Goethe sınav kelimeleri. Sağlık üzerine görüş bildirme ve tavsiye verme bağlamları.",
+      "subtopics": [
+        "Krankheiten und Symptome (hastalıklar ve belirtiler)",
+        "Arztbesuch und Behandlung (doktor ziyareti ve tedavi)",
+        "gesunde Ernährung (sağlıklı beslenme)",
+        "Bewegung und Sport (hareket ve spor)",
+        "Stress und psychisches Wohlbefinden (stres ve ruhsal sağlık)",
+        "Krankenversicherung und Apotheke (sigorta ve eczane)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -861,15 +1030,22 @@
       "id": 65,
       "categoryId": 3,
       "number": 6,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe B1 — Çevre ve İklim",
+      "theme": "Çevre koruma, iklim değişikliği, geri dönüşüm ve sürdürülebilirlik temalı kelimeler. Sınavlarda sık çıkan çevre tartışmaları bağlamı.",
+      "subtopics": [
+        "Klimawandel und globale Erwärmung (iklim değişikliği)",
+        "Mülltrennung und Recycling (atık ayırma ve geri dönüşüm)",
+        "erneuerbare Energien (yenilenebilir enerji)",
+        "Umweltverschmutzung (çevre kirliliği)",
+        "Naturschutz und Artenvielfalt (doğa koruma ve biyoçeşitlilik)",
+        "nachhaltiger Konsum (sürdürülebilir tüketim)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -882,15 +1058,22 @@
       "id": 66,
       "categoryId": 3,
       "number": 7,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe B1 — Medya ve İletişim",
+      "theme": "Medya, internet, sosyal ağlar ve haberleşme temalı Goethe kelimeleri. Medya kullanımı hakkında görüş bildirme bağlamları.",
+      "subtopics": [
+        "soziale Medien und Netzwerke (sosyal medya ve ağlar)",
+        "Nachrichten und Presse (haberler ve basın)",
+        "Internet und Online-Dienste (internet ve çevrimiçi hizmetler)",
+        "Werbung und Reklame (reklam)",
+        "Datenschutz und Privatsphäre (veri koruma ve mahremiyet)",
+        "Fernsehen und Streaming (televizyon ve yayın)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -903,15 +1086,22 @@
       "id": 67,
       "categoryId": 3,
       "number": 8,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe B1 — Seyahat ve Tatil",
+      "theme": "Tatil planlama, ulaşım, konaklama ve turistik deneyimler temalı kelimeler. Seyahat anlatımı ve şikayet/rezervasyon bağlamları.",
+      "subtopics": [
+        "Reiseplanung und Buchung (seyahat planlama ve rezervasyon)",
+        "Verkehrsmittel und Anreise (ulaşım araçları ve varış)",
+        "Hotel und Unterkunft (otel ve konaklama)",
+        "Sehenswürdigkeiten und Ausflüge (gezilecek yerler ve geziler)",
+        "Urlaubsarten (tatil türleri: deniz, dağ, şehir)",
+        "Probleme und Beschwerden auf Reisen (seyahatte sorunlar ve şikayetler)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -924,15 +1114,22 @@
       "id": 68,
       "categoryId": 3,
       "number": 9,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe B1 — Eğitim ve Öğrenim",
+      "theme": "Okul, üniversite, kurslar ve öğrenme yöntemleri temalı kelimeler. Eğitim hayatı ve dil öğrenimi üzerine konuşma bağlamları.",
+      "subtopics": [
+        "Schule und Schulsystem (okul ve eğitim sistemi)",
+        "Universität und Studium (üniversite ve yükseköğrenim)",
+        "Sprachkurse und Weiterbildung (dil kursları ve sürekli eğitim)",
+        "Prüfungen und Noten (sınavlar ve notlar)",
+        "Lernmethoden und Lernstrategien (öğrenme yöntemleri)",
+        "Stipendien und Abschlüsse (burslar ve diplomalar)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -945,15 +1142,22 @@
       "id": 69,
       "categoryId": 3,
       "number": 10,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe B2 — Çalışma Dünyası",
+      "theme": "İşyeri, kariyer gelişimi, çalışma koşulları ve iş piyasası temalı B2 düzeyi kelimeler. Mesleki tartışma ve görüşme bağlamları.",
+      "subtopics": [
+        "Arbeitsmarkt und Beschäftigung (iş piyasası ve istihdam)",
+        "Arbeitsbedingungen und Vertrag (çalışma koşulları ve sözleşme)",
+        "Karriere und Beförderung (kariyer ve terfi)",
+        "Work-Life-Balance und Homeoffice (iş-yaşam dengesi ve evden çalışma)",
+        "Arbeitslosigkeit und Kündigung (işsizlik ve işten çıkarma)",
+        "Gehalt und Sozialleistungen (maaş ve sosyal haklar)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -966,15 +1170,22 @@
       "id": 70,
       "categoryId": 3,
       "number": 11,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe B2 — Toplum ve Göç",
+      "theme": "Toplumsal değişim, göç, entegrasyon ve sosyal sorunlar temalı B2 kelimeleri. Güncel toplumsal tartışmalar bağlamı.",
+      "subtopics": [
+        "Migration und Integration (göç ve entegrasyon)",
+        "demografischer Wandel (demografik değişim)",
+        "soziale Ungleichheit (sosyal eşitsizlik)",
+        "Vielfalt und Toleranz (çeşitlilik ve hoşgörü)",
+        "Ehrenamt und Engagement (gönüllülük ve katılım)",
+        "Generationen und Familie im Wandel (kuşaklar ve değişen aile)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -987,15 +1198,22 @@
       "id": 71,
       "categoryId": 3,
       "number": 12,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe B2 — Teknoloji ve Dijitalleşme",
+      "theme": "Dijital dönüşüm, yapay zeka, otomasyon ve teknolojinin etkileri temalı B2 kelimeleri. Teknolojinin avantaj/dezavantaj tartışması bağlamı.",
+      "subtopics": [
+        "Digitalisierung und Automatisierung (dijitalleşme ve otomasyon)",
+        "künstliche Intelligenz (yapay zeka)",
+        "Datensicherheit und Cyberkriminalität (veri güvenliği ve siber suç)",
+        "technologischer Fortschritt (teknolojik ilerleme)",
+        "digitale Kommunikation am Arbeitsplatz (işyerinde dijital iletişim)",
+        "Chancen und Risiken der Technik (teknolojinin fırsat ve riskleri)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -1008,15 +1226,22 @@
       "id": 72,
       "categoryId": 3,
       "number": 13,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe B2 — Ekonomi ve Tüketim",
+      "theme": "Ekonomi, finans, tüketim alışkanlıkları ve pazar temalı B2 kelimeleri. Ekonomik gelişmeler hakkında tartışma bağlamı.",
+      "subtopics": [
+        "Wirtschaft und Markt (ekonomi ve pazar)",
+        "Konsum und Kaufverhalten (tüketim ve satın alma davranışı)",
+        "Geld und Finanzen (para ve finans)",
+        "Globalisierung und Handel (küreselleşme ve ticaret)",
+        "Unternehmen und Wettbewerb (şirketler ve rekabet)",
+        "Inflation und Preise (enflasyon ve fiyatlar)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -1029,15 +1254,22 @@
       "id": 73,
       "categoryId": 3,
       "number": 14,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe B2 — Kültür ve Sanat",
+      "theme": "Edebiyat, müzik, görsel sanatlar, müze ve kültürel etkinlikler temalı B2 kelimeleri. Kültür-sanat üzerine yorum ve değerlendirme bağlamı.",
+      "subtopics": [
+        "Literatur und Lesen (edebiyat ve okuma)",
+        "Musik und Konzerte (müzik ve konserler)",
+        "bildende Kunst und Ausstellungen (görsel sanat ve sergiler)",
+        "Theater und Film (tiyatro ve sinema)",
+        "kulturelles Erbe und Tradition (kültürel miras ve gelenek)",
+        "Kunstkritik und Geschmack (sanat eleştirisi ve beğeni)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -1050,15 +1282,22 @@
       "id": 74,
       "categoryId": 3,
       "number": 15,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe B2 — Argümantasyon ve Tartışma",
+      "theme": "Görüş bildirme, gerekçelendirme, karşı çıkma ve fikir savunma için gerekli B2 düzeyi tartışma kelimeleri ve fiilleri. Sözlü/yazılı sınav argümantasyonu bağlamı.",
+      "subtopics": [
+        "Argumente und Begründung (argüman ve gerekçelendirme)",
+        "Zustimmung und Ablehnung (onay ve ret)",
+        "Vergleich und Gegenüberstellung (karşılaştırma)",
+        "Vorschläge und Empfehlungen (öneri ve tavsiye)",
+        "Vor- und Nachteile abwägen (artı-eksi tartma)",
+        "Schlussfolgerung und Fazit (sonuç çıkarma)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -1071,15 +1310,22 @@
       "id": 75,
       "categoryId": 3,
       "number": 16,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe C1 — Bilim ve Araştırma",
+      "theme": "Bilimsel araştırma, yöntem, hipotez ve akademik bilgi üretimi temalı C1 düzeyi kelimeleri. Bilimsel metin ve sunum bağlamı.",
+      "subtopics": [
+        "Forschung und Methodik (araştırma ve yöntem)",
+        "Hypothese und Erkenntnis (hipotez ve bilgi)",
+        "Studien und Statistik (çalışmalar ve istatistik)",
+        "wissenschaftlicher Fortschritt (bilimsel ilerleme)",
+        "Theorie und Empirie (kuram ve görgül veri)",
+        "Innovation und Entdeckung (inovasyon ve keşif)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -1092,15 +1338,22 @@
       "id": 76,
       "categoryId": 3,
       "number": 17,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe C1 — Politika ve Toplum Düzeni",
+      "theme": "Siyaset, demokrasi, devlet kurumları ve toplumsal düzen temalı C1 kelimeleri. Politik tartışma ve resmi metin bağlamı.",
+      "subtopics": [
+        "Demokratie und politische Systeme (demokrasi ve siyasi sistemler)",
+        "Regierung und Verwaltung (hükümet ve yönetim)",
+        "Wahlen und Parteien (seçimler ve partiler)",
+        "Recht und Gesetzgebung (hukuk ve yasama)",
+        "Bürgerrechte und Pflichten (yurttaş hakları ve yükümlülükler)",
+        "internationale Beziehungen (uluslararası ilişkiler)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -1113,15 +1366,22 @@
       "id": 77,
       "categoryId": 3,
       "number": 18,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe C1 — Soyut Kavramlar ve Düşünce",
+      "theme": "Soyut düşünme, değerler, anlam ve felsefi-zihinsel süreçleri ifade eden C1 düzeyi kelimeleri. Karmaşık görüş ve değerlendirme bağlamı.",
+      "subtopics": [
+        "abstrakte Begriffe (soyut kavramlar: özgürlük, adalet)",
+        "Werte und Überzeugungen (değerler ve inançlar)",
+        "Wahrnehmung und Bewusstsein (algı ve bilinç)",
+        "Sinn und Bedeutung (anlam ve önem)",
+        "Verantwortung und Moral (sorumluluk ve ahlak)",
+        "Reflexion und Urteil (düşünüm ve yargı)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -1134,15 +1394,22 @@
       "id": 78,
       "categoryId": 3,
       "number": 19,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe C1 — Akademik Yazım Dili",
+      "theme": "Akademik makale, rapor ve resmi metinlerde kullanılan üst düzey bağlaç, fiil ve isimleştirme yapıları. Yazılı C1 sınav metni üretme bağlamı.",
+      "subtopics": [
+        "Nominalisierung und Fachsprache (isimleştirme ve teknik dil)",
+        "Konnektoren und Textkohärenz (bağlaçlar ve metin tutarlılığı)",
+        "Zusammenfassung und Paraphrase (özetleme ve başka sözcüklerle anlatım)",
+        "Bezugnahme und Zitieren (atıf ve alıntılama)",
+        "formelle Redewendungen (resmi kalıp ifadeler)",
+        "Strukturierung schriftlicher Texte (yazılı metin yapılandırma)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -1155,15 +1422,22 @@
       "id": 79,
       "categoryId": 3,
       "number": 20,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Goethe C1 — Nüans ve Üslup",
+      "theme": "İnce anlam farkları, vurgu, deyimsel kullanım ve üslup için gerekli C1 düzeyi kelime ve ifadeleri. Sözlü akıcılık ve ileri düzey ifade bağlamı.",
+      "subtopics": [
+        "Konnotation und Wortwahl (çağrışım ve sözcük seçimi)",
+        "Nuancen und feine Unterschiede (nüanslar ve ince farklar)",
+        "idiomatische Wendungen (deyimsel ifadeler)",
+        "Betonung und Hervorhebung (vurgu ve öne çıkarma)",
+        "Ironie und Untertreibung (ironi ve azımsama)",
+        "stilistische Mittel (üslup araçları)"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Goethe B1/B2 Temel Kelimeler",
         "Goethe B1 — Sosyal Hayat",
@@ -1200,15 +1474,22 @@
       "id": 80,
       "categoryId": 4,
       "number": 4,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Resmi Yazışma ve Dilekçe",
+      "theme": "telc yazılı bölümünde resmi mektup, dilekçe ve şikayet/talep metinlerinde geçen kalıp kelimeler ve kurumsal yazışma terimleri.",
+      "subtopics": [
+        "resmi mektup açılış ve kapanış kalıpları",
+        "şikayet ve itiraz dilekçesi",
+        "başvuru ve talep ifadeleri",
+        "ekler ve referans numarası terimleri",
+        "nezaket ve rica formülleri",
+        "ödeme ve fatura yazışmaları"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1220,15 +1501,22 @@
       "id": 81,
       "categoryId": 4,
       "number": 5,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Sağlık Sistemi ve Sigorta",
+      "theme": "Almanya sağlık sistemi, hastalık sigortası ve doktor randevusu bağlamında telc sınavında çıkan kurumsal ve seviye kelimeleri.",
+      "subtopics": [
+        "sağlık sigortası ve katkı payı",
+        "doktor randevusu ve sevk",
+        "reçete ve ilaç terimleri",
+        "hastane ve tedavi süreci",
+        "muafiyet ve geri ödeme",
+        "önleyici sağlık ve check-up"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1240,15 +1528,22 @@
       "id": 82,
       "categoryId": 4,
       "number": 6,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — İş İlanları ve Başvuru",
+      "theme": "İş ilanı okuma, özgeçmiş ve motivasyon mektubu yazma bağlamında telc sınavının istihdam temalı kelimeleri.",
+      "subtopics": [
+        "iş ilanı ve nitelik talebi",
+        "özgeçmiş ve referanslar",
+        "motivasyon mektubu kalıpları",
+        "mülakat ve görüşme",
+        "çalışma koşulları ve sözleşme",
+        "deneme süresi ve işe alım"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1260,15 +1555,22 @@
       "id": 83,
       "categoryId": 4,
       "number": 7,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Konut, Kira ve Komşuluk",
+      "theme": "Konut arama, kira sözleşmesi ve ev sahibi/komşu ilişkileri bağlamında telc yazılı ve okuma kelimeleri.",
+      "subtopics": [
+        "kira sözleşmesi ve depozito",
+        "yan giderler ve aidat",
+        "tadilat ve tamir talebi",
+        "fesih ve taşınma",
+        "komşuluk kuralları ve ev yönetmeliği",
+        "ev sahibi ile yazışma"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1280,15 +1582,22 @@
       "id": 84,
       "categoryId": 4,
       "number": 8,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Eğitim, Kurs ve Meslek",
+      "theme": "Eğitim sistemi, meslek eğitimi (Ausbildung) ve kurs kayıtları bağlamında telc sınavının eğitim temalı kelimeleri.",
+      "subtopics": [
+        "meslek eğitimi ve staj",
+        "kurs kaydı ve katılım belgesi",
+        "diploma denkliği ve sertifika",
+        "yüksek öğrenim ve bölüm seçimi",
+        "ileri eğitim ve hayat boyu öğrenme",
+        "burs ve eğitim desteği"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1300,15 +1609,22 @@
       "id": 85,
       "categoryId": 4,
       "number": 9,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Çevre ve Sürdürülebilirlik",
+      "theme": "Çevre koruma, iklim ve sürdürülebilir yaşam tartışmaları bağlamında telc B2/C1 düzeyindeki güncel kelimeler.",
+      "subtopics": [
+        "iklim değişikliği ve emisyon",
+        "atık ayrıştırma ve geri dönüşüm",
+        "yenilenebilir enerji",
+        "sürdürülebilir tüketim",
+        "doğa koruma ve biyoçeşitlilik",
+        "çevre politikaları"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1320,15 +1636,22 @@
       "id": 86,
       "categoryId": 4,
       "number": 10,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Medya, Basın ve Dijitalleşme",
+      "theme": "Kitle iletişim, sosyal medya ve dijital dönüşüm tartışmalarında telc sınavının medya temalı kelimeleri.",
+      "subtopics": [
+        "basın ve haber dili",
+        "sosyal medya ve etkileşim",
+        "veri koruma ve gizlilik",
+        "dijitalleşme ve yapay zeka",
+        "sahte haber ve eleştirel okuma",
+        "reklam ve kamuoyu"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1340,15 +1663,22 @@
       "id": 87,
       "categoryId": 4,
       "number": 11,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Tartışma ve Görüş Bildirme",
+      "theme": "telc sözlü ve yazılı bölümlerinde tartışma yürütme, görüş savunma ve karşı çıkma için kullanılan işlevsel kalıp kelimeler.",
+      "subtopics": [
+        "görüş bildirme ifadeleri",
+        "kabul ve itiraz kalıpları",
+        "lehte ve aleyhte argüman",
+        "örnekleme ve gerekçelendirme",
+        "uzlaşma ve sonuca varma",
+        "söz alma ve söz verme"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1360,15 +1690,22 @@
       "id": 88,
       "categoryId": 4,
       "number": 12,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Grafik ve İstatistik Yorumu",
+      "theme": "telc yazılı bölümünde grafik, tablo ve istatistik betimleme görevinde kullanılan sayısal ve eğilim belirten kelimeler.",
+      "subtopics": [
+        "artış ve azalış ifadeleri",
+        "yüzde ve oran terimleri",
+        "grafik türleri ve eksenler",
+        "karşılaştırma ve sıralama",
+        "eğilim ve gelişme betimleme",
+        "zirve ve dip noktaları"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1380,15 +1717,22 @@
       "id": 89,
       "categoryId": 4,
       "number": 13,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Göç ve Entegrasyon",
+      "theme": "Göç, uyum ve çok kültürlülük tartışmaları bağlamında telc sınavının toplumsal temalı B2/C1 kelimeleri.",
+      "subtopics": [
+        "uyum kursu ve dil edinimi",
+        "oturma izni ve vatandaşlık",
+        "kültürel çeşitlilik",
+        "iş gücü göçü",
+        "ayrımcılık ve eşit haklar",
+        "göç politikası ve mülteciler"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1400,15 +1744,22 @@
       "id": 90,
       "categoryId": 4,
       "number": 14,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Kamu Daireleri ve Bürokrasi",
+      "theme": "Belediye, yabancılar dairesi ve resmi kurumlarla işlemler bağlamında telc sınavının bürokrasi terimleri.",
+      "subtopics": [
+        "nüfus kaydı ve ikamet bildirimi",
+        "form doldurma ve belge talebi",
+        "randevu ve başvuru süreci",
+        "onay, mühür ve tasdik",
+        "vergi ve sosyal güvenlik dairesi",
+        "itiraz ve idari süreç"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1420,15 +1771,22 @@
       "id": 91,
       "categoryId": 4,
       "number": 15,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Tüketici Hakları ve Sözleşmeler",
+      "theme": "Alışveriş, sözleşme ve tüketici koruması bağlamında telc sınavının hukuki-ekonomik orta-üst düzey kelimeleri.",
+      "subtopics": [
+        "satın alma sözleşmesi ve garanti",
+        "iade ve cayma hakkı",
+        "abonelik ve fesih süreleri",
+        "şikayet ve tazminat",
+        "fatura ve gecikme uyarısı",
+        "tüketici danışma ve koruma"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1440,15 +1798,22 @@
       "id": 92,
       "categoryId": 4,
       "number": 16,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Sağlıklı Yaşam ve Beslenme",
+      "theme": "Sağlıklı yaşam tarzı, beslenme ve stres bağlamında telc sınavının güncel tartışma temalı kelimeleri.",
+      "subtopics": [
+        "dengeli beslenme ve gıda",
+        "hareket ve spor alışkanlığı",
+        "stres ve zihinsel sağlık",
+        "uyku ve dinlenme",
+        "bağımlılık ve önleme",
+        "iş-yaşam dengesi"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1460,15 +1825,22 @@
       "id": 93,
       "categoryId": 4,
       "number": 17,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Çalışma Hayatı ve İş Yeri",
+      "theme": "İş yeri ilişkileri, kariyer gelişimi ve modern çalışma biçimleri bağlamında telc B2/C1 mesleki kelimeleri.",
+      "subtopics": [
+        "evden çalışma ve esnek mesai",
+        "ekip çalışması ve iletişim",
+        "terfi ve kariyer planı",
+        "iş yükü ve verimlilik",
+        "sendika ve çalışan hakları",
+        "iş gücü piyasası ve nitelik açığı"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1480,15 +1852,22 @@
       "id": 94,
       "categoryId": 4,
       "number": 18,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Bilim ve Teknoloji Gelişmeleri",
+      "theme": "Bilimsel ilerleme, araştırma ve teknolojik yenilikler bağlamında telc okuma metinlerinde geçen üst düzey kelimeler.",
+      "subtopics": [
+        "araştırma ve buluş terimleri",
+        "yapay zeka ve otomasyon",
+        "tıbbi ve biyolojik gelişmeler",
+        "uzay ve enerji teknolojileri",
+        "etik ve teknolojik risk",
+        "inovasyon ve geliştirme"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1500,15 +1879,22 @@
       "id": 95,
       "categoryId": 4,
       "number": 19,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Kültür, Sanat ve Toplum",
+      "theme": "Kültürel etkinlikler, sanat ve toplumsal değişim tartışmaları bağlamında telc sınavının yüksek düzey kelimeleri.",
+      "subtopics": [
+        "edebiyat ve eleştiri",
+        "tiyatro, müzik ve sergi",
+        "kültürel miras ve gelenek",
+        "toplumsal değer ve değişim",
+        "boş zaman ve katılım",
+        "sanat ve kimlik"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1520,15 +1906,22 @@
       "id": 96,
       "categoryId": 4,
       "number": 20,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "telc — Soyut Kavramlar ve Bağlaç Yapıları",
+      "theme": "telc C1 düzeyinde soyut düşünce ifade etme ve metin bağdaşıklığı için kullanılan üst düzey bağlaç, edat ve soyut isim grupları.",
+      "subtopics": [
+        "neden-sonuç bağlaçları",
+        "karşıtlık ve ödün ifadeleri",
+        "koşul ve varsayım yapıları",
+        "soyut isimleştirmeler",
+        "vurgu ve sınırlandırma zarfları",
+        "metin bağlama ve geçiş ifadeleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "telc Resmi Dil ve Kurumsal Kelimeler",
         "telc B2 — Akademik ve Toplumsal",
@@ -1580,15 +1973,22 @@
       "id": 97,
       "categoryId": 5,
       "number": 6,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Postane ve Kargo",
+      "theme": "Posta gönderme, paket alma ve kargo takibiyle ilgili günlük kelimeler. Mektup, pul, paket ve teslimat işlemlerinde geçen ifadeler.",
+      "subtopics": [
+        "mektup ve pul (Brief, Briefmarke)",
+        "paket gönderme ve alma (Paket, Päckchen)",
+        "adres ve posta kodu (Adresse, Postleitzahl)",
+        "kargo teslimat ve takip (Sendung, Zustellung)",
+        "tartı, ağırlık ve gönderi ücreti (Porto, Gewicht)",
+        "gönderici ve alıcı (Absender, Empfänger)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1602,15 +2002,22 @@
       "id": 98,
       "categoryId": 5,
       "number": 7,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Ev Kiralama ve Komşuluk",
+      "theme": "Daire arama, kira sözleşmesi, taşınma ve komşuluk ilişkileriyle ilgili günlük kelimeler. Konut ararken ve oturduğun yerde geçen ifadeler.",
+      "subtopics": [
+        "daire ve kiralama (Wohnung, Miete)",
+        "kira sözleşmesi ve depozito (Mietvertrag, Kaution)",
+        "ev sahibi ve kiracı (Vermieter, Mieter)",
+        "taşınma ve eşya (Umzug, Möbel)",
+        "komşu ve apartman (Nachbar, Hausordnung)",
+        "ek giderler ve aidat (Nebenkosten)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1624,15 +2031,22 @@
       "id": 99,
       "categoryId": 5,
       "number": 8,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Doktor Randevusu ve Hastalık",
+      "theme": "Doktora gitme, randevu alma, belirtileri anlatma ve tedaviyle ilgili günlük sağlık kelimeleri. Hastalık şikayetleri ve muayene bağlamı.",
+      "subtopics": [
+        "randevu alma (Termin, Wartezimmer)",
+        "hastalık belirtileri (Schmerzen, Fieber, Husten)",
+        "muayene ve teşhis (Untersuchung, Diagnose)",
+        "vücut bölgeleri ve şikayet (Bauch, Hals)",
+        "ilaç ve tedavi (Medikament, Salbe)",
+        "hastalık izni ve iyileşme (Krankschreibung, Erkältung)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1646,15 +2060,22 @@
       "id": 100,
       "categoryId": 5,
       "number": 9,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Resmi Daireler ve Bürokrasi",
+      "theme": "Belediye, nüfus ve yabancılar dairesi gibi resmi kurumlarda işlem yaparken geçen günlük kelimeler. Form doldurma, başvuru ve belge işlemleri.",
+      "subtopics": [
+        "nüfus dairesi ve kayıt (Einwohnermeldeamt, Anmeldung)",
+        "form ve başvuru (Formular, Antrag)",
+        "kimlik ve belgeler (Ausweis, Bescheinigung)",
+        "randevu ve sıra (Termin, Wartenummer)",
+        "ikamet ve oturum (Aufenthalt, Visum)",
+        "imza ve onay (Unterschrift, Genehmigung)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1668,15 +2089,22 @@
       "id": 101,
       "categoryId": 5,
       "number": 10,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Telefon ve İletişim",
+      "theme": "Telefon görüşmesi yapma, mesajlaşma ve iletişim kurmayla ilgili günlük kelimeler. Arama, bağlantı ve görüşme bağlamı.",
+      "subtopics": [
+        "arama ve cevaplama (anrufen, abnehmen)",
+        "telefon numarası ve hat (Nummer, Anschluss)",
+        "mesaj ve sesli mesaj (Nachricht, Mailbox)",
+        "bağlantı ve sinyal (Verbindung, Empfang)",
+        "görüşme ifadeleri (sich melden, verbinden)",
+        "telefonda nezaket (Auf Wiederhören)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1690,15 +2118,22 @@
       "id": 102,
       "categoryId": 5,
       "number": 11,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "İş Yeri ve Ofis Hayatı",
+      "theme": "Günlük iş ortamı, ofis araçları, mesai ve meslektaşlarla iletişimle ilgili kelimeler. Çalışma gününün rutin bağlamı.",
+      "subtopics": [
+        "meslektaş ve patron (Kollege, Chef)",
+        "mesai ve molalar (Arbeitszeit, Pause)",
+        "toplantı ve görev (Besprechung, Aufgabe)",
+        "ofis malzemeleri (Drucker, Unterlagen)",
+        "izin ve fazla mesai (Urlaub, Überstunden)",
+        "maaş ve bordro (Gehalt, Lohnabrechnung)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1712,15 +2147,22 @@
       "id": 103,
       "categoryId": 5,
       "number": 12,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Boş Zaman ve Hobiler",
+      "theme": "Serbest zaman etkinlikleri, hobiler ve eğlenceyle ilgili günlük kelimeler. Sinema, müzik, okuma ve buluşma bağlamı.",
+      "subtopics": [
+        "hobi ve ilgi alanları (Hobby, Freizeit)",
+        "sinema ve tiyatro (Kino, Vorstellung)",
+        "müzik ve konser (Konzert, Eintrittskarte)",
+        "okuma ve oyun (lesen, spielen)",
+        "arkadaşlarla buluşma (sich treffen, verabreden)",
+        "bilet ve etkinlik (Karte, Veranstaltung)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1734,15 +2176,22 @@
       "id": 104,
       "categoryId": 5,
       "number": 13,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Spor ve Sağlıklı Yaşam",
+      "theme": "Spor yapma, egzersiz ve sağlıklı yaşam alışkanlıklarıyla ilgili günlük kelimeler. Spor salonu, antrenman ve hareket bağlamı.",
+      "subtopics": [
+        "spor türleri (Fußball, Schwimmen)",
+        "spor salonu ve antrenman (Fitnessstudio, Training)",
+        "egzersiz ve hareket (Bewegung, sich aufwärmen)",
+        "sağlıklı beslenme (gesund, Ernährung)",
+        "üyelik ve kurslar (Mitgliedschaft, Kurs)",
+        "yorgunluk ve form (Kondition, anstrengend)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1756,15 +2205,22 @@
       "id": 105,
       "categoryId": 5,
       "number": 14,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Aile ve Ev İşleri",
+      "theme": "Ev içi günlük yaşam, temizlik, yemek hazırlığı ve aile rutinleriyle ilgili kelimeler. Günlük ev işleri ve sorumluluklar bağlamı.",
+      "subtopics": [
+        "ev temizliği (putzen, aufräumen)",
+        "çamaşır ve bulaşık (Wäsche, Geschirr)",
+        "yemek hazırlama (kochen, vorbereiten)",
+        "aile rutini ve görevler (Haushalt, Pflicht)",
+        "çocuk bakımı (Kind, betreuen)",
+        "alışveriş listesi ve düzen (Einkaufsliste, Ordnung)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1778,15 +2234,22 @@
       "id": 106,
       "categoryId": 5,
       "number": 15,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Giyim Alışverişi ve Mağaza",
+      "theme": "Kıyafet alışverişi, beden seçimi, deneme ve iade işlemleriyle ilgili günlük kelimeler. Mağazada giysi satın alma bağlamı.",
+      "subtopics": [
+        "beden ve numara (Größe, passen)",
+        "deneme kabini ve deneme (Umkleidekabine, anprobieren)",
+        "indirim ve fiyat (Rabatt, reduziert)",
+        "değişim ve iade (umtauschen, zurückgeben)",
+        "kumaş ve renk (Stoff, Farbe)",
+        "kasa ve ödeme (Kasse, mit Karte zahlen)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1800,15 +2263,22 @@
       "id": 107,
       "categoryId": 5,
       "number": 16,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Toplu Taşıma ve Bilet",
+      "theme": "Otobüs, tren ve metro kullanımı, bilet alma ve aktarmayla ilgili günlük ulaşım kelimeleri. Şehir içi seyahat ve duraklar bağlamı.",
+      "subtopics": [
+        "bilet ve abonman (Fahrkarte, Monatskarte)",
+        "aktarma ve hat (umsteigen, Linie)",
+        "metro, tramvay ve otobüs (U-Bahn, Straßenbahn)",
+        "duraklar ve peron (Bahnsteig, Gleis)",
+        "gecikme ve sefer (Verspätung, Verbindung)",
+        "kontrol ve ceza (Kontrolle, Schwarzfahren)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1822,15 +2292,22 @@
       "id": 108,
       "categoryId": 5,
       "number": 17,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Şehirde Yön ve Adres Sorma",
+      "theme": "Yol tarifi alma, adres sorma ve şehirde yön bulmayla ilgili günlük kelimeler. Kaybolma, harita ve mekan tarif etme bağlamı.",
+      "subtopics": [
+        "yön ifadeleri (links, rechts, geradeaus)",
+        "yol sorma ve tarif (Weg, sich verlaufen)",
+        "şehir mekanları (Rathaus, Kreuzung)",
+        "mesafe ve yakınlık (Entfernung, in der Nähe)",
+        "köşe ve cadde (Ecke, Straße)",
+        "harita ve yön bulma (Karte, sich orientieren)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1844,15 +2321,22 @@
       "id": 109,
       "categoryId": 5,
       "number": 18,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Bayram, Tatil ve Kutlamalar",
+      "theme": "Resmi bayramlar, özel günler ve kutlamalarla ilgili günlük kelimeler. Doğum günü, davet ve hediye bağlamı.",
+      "subtopics": [
+        "doğum günü ve kutlama (Geburtstag, feiern)",
+        "davet ve hediye (Einladung, Geschenk)",
+        "resmi bayramlar (Feiertag, Weihnachten)",
+        "tebrik ifadeleri (gratulieren, Glückwunsch)",
+        "parti ve misafir (Party, Gast)",
+        "tatil ve izin günleri (Urlaub, freier Tag)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1866,15 +2350,22 @@
       "id": 110,
       "categoryId": 5,
       "number": 19,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Acil Durumlar ve Güvenlik",
+      "theme": "Kaza, acil durum ve güvenlikle ilgili günlük kelimeler. Polis, itfaiye, kayıp eşya ve yardım çağırma bağlamı.",
+      "subtopics": [
+        "acil çağrı (Notruf, Rettungswagen)",
+        "polis ve itfaiye (Polizei, Feuerwehr)",
+        "kaza ve yaralanma (Unfall, verletzt)",
+        "kayıp ve hırsızlık (Diebstahl, verlieren)",
+        "yardım isteme (Hilfe, um Hilfe rufen)",
+        "tehlike ve uyarı (Gefahr, Vorsicht)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1888,15 +2379,22 @@
       "id": 111,
       "categoryId": 5,
       "number": 20,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Tamir, Bakım ve Servis Hizmetleri",
+      "theme": "Ev ve eşya tamiri, arıza bildirimi ve servis hizmetleriyle ilgili günlük kelimeler. Tamirci, usta ve onarım randevusu bağlamı.",
+      "subtopics": [
+        "arıza ve bozukluk (kaputt, Störung)",
+        "tamir ve onarım (reparieren, Reparatur)",
+        "usta ve servis (Handwerker, Kundendienst)",
+        "araç tamiri (Werkstatt, Panne)",
+        "randevu ve teklif (Termin, Kostenvoranschlag)",
+        "garanti ve fatura (Garantie, Rechnung)"
+      ],
       "levelProfile": {
         "A1": 5,
         "A2": 6,
         "B1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Market, Sağlık ve Ulaşım",
         "Restoran ve Yemek Siparişi",
@@ -1942,14 +2440,21 @@
       "id": 112,
       "categoryId": 6,
       "number": 5,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Tıp ve Sağlık Bilimleri",
+      "theme": "Tıp fakültesi ve sağlık bilimleri terminolojisi: anatomi, hastalık, tanı, tedavi ve klinik araştırma kavramları.",
+      "subtopics": [
+        "Anatomi ve organ sistemleri (Organe, Gewebe, Kreislauf)",
+        "Hastalık ve tanı terimleri (Diagnose, Symptom, Befund)",
+        "Tedavi ve cerrahi (Therapie, Eingriff, Behandlung)",
+        "Klinik araştırma ve ilaç bilimi (Studie, Wirkstoff, Nebenwirkung)",
+        "Bağışıklık ve enfeksiyon (Immunsystem, Erreger, Entzündung)",
+        "Tıbbi mesleki bağlam (Facharzt, Klinik, Patientenakte)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -1962,14 +2467,21 @@
       "id": 113,
       "categoryId": 6,
       "number": 6,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Biyoloji ve Yaşam Bilimleri",
+      "theme": "Hücre biyolojisi, genetik, evrim ve ekoloji alanlarında üniversite düzeyi yaşam bilimleri terminolojisi.",
+      "subtopics": [
+        "Hücre ve hücre içi yapılar (Zelle, Membran, Organell)",
+        "Genetik ve kalıtım (Erbgut, Mutation, Vererbung)",
+        "Evrim ve doğal seçilim (Evolution, Anpassung, Selektion)",
+        "Mikrobiyoloji (Bakterie, Mikroorganismus, Kultur)",
+        "Ekoloji ve canlı toplulukları (Ökosystem, Population, Stoffwechsel)",
+        "Biyokimyasal süreçler (Photosynthese, Enzym, Reaktion)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -1982,14 +2494,21 @@
       "id": 114,
       "categoryId": 6,
       "number": 7,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Kimya ve Laboratuvar",
+      "theme": "Kimya disiplini ve laboratuvar çalışmasına özgü terminoloji: maddeler, reaksiyonlar, deney düzenekleri ve ölçüm.",
+      "subtopics": [
+        "Elementler ve bileşikler (Element, Verbindung, Molekül)",
+        "Kimyasal reaksiyonlar (Reaktion, Lösung, Reagenz)",
+        "Maddenin halleri ve özellikleri (Aggregatzustand, Dichte, Löslichkeit)",
+        "Laboratuvar ekipmanı ve deney (Versuch, Probe, Messung)",
+        "Asit-baz ve çözeltiler (Säure, Base, Konzentration)",
+        "Güvenlik ve madde sınıfları (Gefahrstoff, Substanz, Schutz)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2002,14 +2521,21 @@
       "id": 115,
       "categoryId": 6,
       "number": 8,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Mühendislik ve Teknoloji",
+      "theme": "Mühendislik disiplinleri ve teknik üretim terminolojisi: malzeme, makine, üretim ve sistem tasarımı.",
+      "subtopics": [
+        "Malzeme bilimi (Werkstoff, Legierung, Belastbarkeit)",
+        "Makine ve mekanik (Getriebe, Antrieb, Bauteil)",
+        "Elektrik ve elektronik (Schaltung, Spannung, Bauelement)",
+        "Üretim ve imalat (Fertigung, Konstruktion, Verfahren)",
+        "Sistem ve tasarım (Entwicklung, Prototyp, Anlage)",
+        "Otomasyon ve kontrol (Steuerung, Regelung, Sensor)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2022,14 +2548,21 @@
       "id": 116,
       "categoryId": 6,
       "number": 9,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Bilişim ve Veri Bilimi",
+      "theme": "Bilgisayar bilimi ve veri bilimi terminolojisi: algoritmalar, yazılım, ağlar ve yapay zeka kavramları.",
+      "subtopics": [
+        "Yazılım ve programlama (Programmierung, Quellcode, Anwendung)",
+        "Algoritma ve veri yapıları (Algorithmus, Datenstruktur, Schleife)",
+        "Veri ve veritabanı (Datenbank, Datensatz, Abfrage)",
+        "Ağ ve internet (Netzwerk, Server, Schnittstelle)",
+        "Yapay zeka ve makine öğrenmesi (Modell, Training, Mustererkennung)",
+        "Bilgi güvenliği (Verschlüsselung, Sicherheitslücke, Zugriff)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2042,14 +2575,21 @@
       "id": 117,
       "categoryId": 6,
       "number": 10,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Psikoloji ve Bilişsel Bilimler",
+      "theme": "Psikoloji ve bilişsel bilim terminolojisi: zihinsel süreçler, davranış, kişilik ve psikolojik araştırma yöntemleri.",
+      "subtopics": [
+        "Bilişsel süreçler (Wahrnehmung, Gedächtnis, Kognition)",
+        "Davranış ve öğrenme (Verhalten, Reiz, Konditionierung)",
+        "Kişilik ve gelişim (Persönlichkeit, Entwicklung, Reife)",
+        "Duygu ve motivasyon (Emotion, Antrieb, Bedürfnis)",
+        "Ruh sağlığı ve bozukluklar (Störung, Belastung, Therapieansatz)",
+        "Deney ve ölçüm (Versuchsperson, Befragung, Auswertung)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2062,14 +2602,21 @@
       "id": 118,
       "categoryId": 6,
       "number": 11,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Sosyoloji ve Toplum Bilimleri",
+      "theme": "Sosyoloji terminolojisi: toplumsal yapı, kurumlar, gruplar, eşitsizlik ve toplumsal değişim kavramları.",
+      "subtopics": [
+        "Toplumsal yapı ve kurumlar (Gesellschaft, Institution, Schicht)",
+        "Grup ve etkileşim (Gruppe, Rolle, Interaktion)",
+        "Eşitsizlik ve sınıf (Ungleichheit, Klasse, Benachteiligung)",
+        "Toplumsal değişim ve normlar (Wandel, Norm, Abweichung)",
+        "Göç ve bütünleşme (Migration, Integration, Minderheit)",
+        "Kimlik ve sosyalleşme (Identität, Sozialisation, Zugehörigkeit)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2082,14 +2629,21 @@
       "id": 119,
       "categoryId": 6,
       "number": 12,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Tarih ve Arkeoloji",
+      "theme": "Tarih ve arkeoloji disiplinlerinin terminolojisi: dönemler, kaynaklar, kazı, kanıt ve tarihsel yorum.",
+      "subtopics": [
+        "Tarihsel dönemler ve çağlar (Epoche, Zeitalter, Frühgeschichte)",
+        "Kaynak ve belge (Quelle, Urkunde, Überlieferung)",
+        "Arkeolojik kazı ve buluntu (Ausgrabung, Fund, Schicht)",
+        "Tarihsel olaylar ve süreç (Ereignis, Umbruch, Verlauf)",
+        "Yorum ve tarih yazımı (Deutung, Geschichtsschreibung, Darstellung)",
+        "Eski uygarlıklar ve miras (Hochkultur, Erbe, Denkmal)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2102,14 +2656,21 @@
       "id": 120,
       "categoryId": 6,
       "number": 13,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Dilbilim ve Filoloji",
+      "theme": "Dilbilim ve filoloji terminolojisi: dilin yapısı, ses, anlam, dilbilgisi düzeyleri ve dil edinimi.",
+      "subtopics": [
+        "Ses ve fonetik (Laut, Aussprache, Betonung)",
+        "Dilbilgisi ve sözdizimi (Grammatik, Satzbau, Beugung)",
+        "Anlam ve sözlükbilim (Bedeutung, Begriff, Wortschatz)",
+        "Dil edinimi ve çok dillilik (Spracherwerb, Mehrsprachigkeit, Muttersprache)",
+        "Dil tarihi ve değişim (Sprachwandel, Herkunft, Verwandtschaft)",
+        "Metin ve söylem (Text, Aussage, Zusammenhang)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2122,14 +2683,21 @@
       "id": 121,
       "categoryId": 6,
       "number": 14,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Edebiyat ve Sanat Bilimi",
+      "theme": "Edebiyat bilimi ve sanat tarihi terminolojisi: türler, biçim, üslup, eleştiri ve estetik çözümleme.",
+      "subtopics": [
+        "Edebi türler ve biçim (Gattung, Lyrik, Erzählung)",
+        "Anlatı ve yapı (Handlung, Erzähler, Aufbau)",
+        "Üslup ve söz sanatları (Stil, Metapher, Sinnbild)",
+        "Eleştiri ve yorum (Interpretation, Kritik, Deutung)",
+        "Sanat akımları ve dönemler (Strömung, Epoche, Schule)",
+        "Estetik ve biçimsel çözümleme (Ästhetik, Form, Wirkung)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2142,14 +2710,21 @@
       "id": 122,
       "categoryId": 6,
       "number": 15,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Çevre ve Yer Bilimleri",
+      "theme": "Çevre bilimi, jeoloji ve coğrafya terminolojisi: iklim, doğal kaynaklar, ekosistemler ve sürdürülebilirlik.",
+      "subtopics": [
+        "İklim ve atmosfer (Klima, Treibhauseffekt, Atmosphäre)",
+        "Jeoloji ve yer yapısı (Gestein, Erdkruste, Sediment)",
+        "Doğal kaynaklar ve enerji (Rohstoff, Ressource, Erneuerbar)",
+        "Çevre kirliliği ve koruma (Umweltverschmutzung, Schadstoff, Naturschutz)",
+        "Su ve toprak bilimi (Grundwasser, Boden, Kreislauf)",
+        "Sürdürülebilirlik ve kalkınma (Nachhaltigkeit, Schutzgebiet, Belastung)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2162,14 +2737,21 @@
       "id": 123,
       "categoryId": 6,
       "number": 16,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "İstatistik ve Araştırma Yöntemleri",
+      "theme": "Nicel ve nitel araştırma yöntemleri ile istatistik terminolojisi: örneklem, ölçüm, analiz ve sonuç çıkarımı.",
+      "subtopics": [
+        "Örneklem ve evren (Stichprobe, Grundgesamtheit, Auswahl)",
+        "Değişken ve ölçüm (Variable, Messung, Skala)",
+        "İstatistiksel analiz (Auswertung, Korrelation, Streuung)",
+        "Hipotez ve anlamlılık (Hypothese, Signifikanz, Nachweis)",
+        "Veri toplama yöntemleri (Befragung, Erhebung, Beobachtung)",
+        "Geçerlilik ve güvenilirlik (Gültigkeit, Verlässlichkeit, Verzerrung)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2182,14 +2764,21 @@
       "id": 124,
       "categoryId": 6,
       "number": 17,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Akademik Yazım ve Bilimsel Metin",
+      "theme": "Bilimsel makale ve tez yazımına özgü terminoloji: metin yapısı, kaynak gösterme, argümantasyon ve akademik üslup.",
+      "subtopics": [
+        "Metin bölümleri ve yapı (Gliederung, Einleitung, Schlussfolgerung)",
+        "Kaynak ve alıntı (Zitat, Quellenangabe, Literaturverzeichnis)",
+        "Argümantasyon ve gerekçelendirme (These, Begründung, Beleg)",
+        "Akademik üslup ve dil (Fachsprache, Formulierung, Sachlichkeit)",
+        "Özet ve yeniden ifade (Zusammenfassung, Wiedergabe, Umschreibung)",
+        "İntihal ve bilimsel dürüstlük (Plagiat, Urheberschaft, Redlichkeit)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2202,14 +2791,21 @@
       "id": 125,
       "categoryId": 6,
       "number": 18,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Akademik Sunum ve Tartışma",
+      "theme": "Konferans, seminer ve sözlü sunumlara özgü terminoloji: sunum yapma, soru-cevap, tartışma ve görüş bildirme.",
+      "subtopics": [
+        "Sunum ve konferans (Vortrag, Tagung, Folie)",
+        "Görsel ve materyal (Schaubild, Grafik, Veranschaulichung)",
+        "Tartışma ve karşı görüş (Diskussion, Einwand, Gegenargument)",
+        "Görüş bildirme ve değerlendirme (Stellungnahme, Beurteilung, Einschätzung)",
+        "Soru-cevap ve geri bildirm (Rückfrage, Erläuterung, Anmerkung)",
+        "İkna ve gerekçelendirme (Überzeugung, Schlüssigkeit, Nachdruck)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2222,14 +2818,21 @@
       "id": 126,
       "categoryId": 6,
       "number": 19,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Bilim Felsefesi ve Yöntembilim",
+      "theme": "Bilimin doğası, kuram oluşturma ve bilimsel yöntem üzerine üst düzey kavramlar: teori, kanıt, nedensellik ve çıkarım.",
+      "subtopics": [
+        "Kuram ve model (Theorie, Modell, Annahme)",
+        "Kanıt ve doğrulama (Nachweis, Bestätigung, Widerlegung)",
+        "Nedensellik ve ilişki (Ursache, Wirkung, Zusammenhang)",
+        "Çıkarım ve akıl yürütme (Schlussfolgerung, Ableitung, Vermutung)",
+        "Nesnellik ve yöntem (Objektivität, Methode, Vorgehen)",
+        "Paradigma ve bilgi kuramı (Erkenntnis, Paradigma, Wissensanspruch)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2242,14 +2845,21 @@
       "id": 127,
       "categoryId": 6,
       "number": 20,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Yükseköğretim ve Akademik Kariyer",
+      "theme": "Üniversite hayatı ve akademik kariyere özgü kurumsal terminoloji: dereceler, unvanlar, burslar, yayın ve bölüm yapısı.",
+      "subtopics": [
+        "Dereceler ve sınavlar (Abschluss, Promotion, Prüfung)",
+        "Unvanlar ve akademik kadro (Professur, Dozent, Lehrstuhl)",
+        "Bölüm ve kurum yapısı (Fakultät, Fachbereich, Institut)",
+        "Burs ve finansman (Stipendium, Förderung, Drittmittel)",
+        "Yayın ve değerlendirme (Veröffentlichung, Gutachten, Fachzeitschrift)",
+        "Öğretim ve müfredat (Lehrveranstaltung, Studiengang, Leistungspunkt)"
+      ],
       "levelProfile": {
         "B2": 8,
         "C1": 7
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Araştırma ve Akademik Terimler",
         "Fen Bilimleri ve Matematik",
@@ -2286,14 +2896,21 @@
       "id": 128,
       "categoryId": 7,
       "number": 4,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Ontoloji ve Metafizik",
+      "theme": "Varlık, var oluş, töz ve gerçekliğin yapısıyla ilgili temel metafizik kavramları kapsar. Neyin var olduğu, varlığın doğası ve görünüş-gerçeklik ayrımı üzerine kelimeler.",
+      "subtopics": [
+        "varlık ve var oluş (Sein, Dasein, Existenz)",
+        "töz ve öz (Substanz, Wesen, Akzidenz)",
+        "görünüş ve gerçeklik (Erscheinung, Schein, Wirklichkeit)",
+        "zaman, mekân ve nedensellik (Kausalität, Zeitlichkeit)",
+        "olumsallık ve zorunluluk (Kontingenz, Notwendigkeit)",
+        "tümeller ve tikeller (das Allgemeine, das Besondere)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2305,14 +2922,21 @@
       "id": 129,
       "categoryId": 7,
       "number": 5,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Zihin Felsefesi ve Bilinç",
+      "theme": "Zihin, bilinç, ruh-beden ilişkisi ve algıyla ilgili kavramları kapsar. Düşünme, niyetlilik ve öznel deneyim üzerine felsefi kelimeler.",
+      "subtopics": [
+        "bilinç ve öz-farkındalık (Bewusstsein, Selbstbewusstsein)",
+        "ruh-beden problemi (Leib-Seele-Problem, Dualismus)",
+        "algı ve duyum (Wahrnehmung, Empfindung)",
+        "niyetlilik ve yönelmişlik (Intentionalität)",
+        "düşünme ve tasarım (Vorstellung, Gedanke)",
+        "öznel deneyim ve nitel hâl (Erlebnis, Qualität)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2324,14 +2948,21 @@
       "id": 130,
       "categoryId": 7,
       "number": 6,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Siyaset Felsefesi ve Devlet",
+      "theme": "Devlet, iktidar, egemenlik, toplum sözleşmesi ve siyasi meşruiyetle ilgili kavramları kapsar. Adil yönetim ve siyasi düzen üzerine felsefi kelimeler.",
+      "subtopics": [
+        "devlet ve egemenlik (Staat, Souveränität)",
+        "iktidar ve meşruiyet (Macht, Herrschaft, Legitimität)",
+        "toplum sözleşmesi (Gesellschaftsvertrag)",
+        "yurttaşlık ve ortak iyi (Bürger, Gemeinwohl)",
+        "hukuk ve düzen (Recht, Ordnung, Verfassung)",
+        "ideoloji ve siyasi düzen (Ideologie, Gemeinwesen)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2343,14 +2974,21 @@
       "id": 131,
       "categoryId": 7,
       "number": 7,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Özgürlük, Adalet ve Eşitlik",
+      "theme": "Özgürlük, adalet, eşitlik, haklar ve dayanışma gibi normatif siyasi-toplumsal değerleri kapsar. Hak ve ödev kavramları çevresinde dönen felsefi kelimeler.",
+      "subtopics": [
+        "özgürlük ve özerklik (Freiheit, Autonomie)",
+        "adalet ve hakkaniyet (Gerechtigkeit, Billigkeit)",
+        "eşitlik ve dayanışma (Gleichheit, Solidarität)",
+        "hak ve ödev (Recht, Pflicht, Anspruch)",
+        "baskı ve özgürleşme (Unterdrückung, Befreiung)",
+        "yeniden dağıtım ve liyakat (Verteilung, Verdienst)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2362,14 +3000,21 @@
       "id": 132,
       "categoryId": 7,
       "number": 8,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Estetik ve Sanat Felsefesi",
+      "theme": "Güzellik, yüce, beğeni, sanat eseri ve estetik deneyimle ilgili kavramları kapsar. Sanatın anlamı ve estetik yargı üzerine felsefi kelimeler.",
+      "subtopics": [
+        "güzellik ve yüce (das Schöne, das Erhabene)",
+        "beğeni ve estetik yargı (Geschmack, ästhetisches Urteil)",
+        "sanat eseri ve yaratım (Kunstwerk, Schöpfung)",
+        "taklit ve temsil (Mimesis, Darstellung)",
+        "uyum, biçim ve içerik (Harmonie, Form, Gehalt)",
+        "dehâ ve yaratıcılık (Genie, Kreativität)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2381,14 +3026,21 @@
       "id": 133,
       "categoryId": 7,
       "number": 9,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Antik Yunan Felsefesi",
+      "theme": "Sokrates, Platon ve Aristoteles ile Antik Yunan düşüncesinin temel kavramlarını kapsar. İdealar, erdem, mutluluk ve diyalektik üzerine klasik felsefi kelimeler.",
+      "subtopics": [
+        "idealar ve formlar (Idee, Form, Eidos)",
+        "erdem ve mutluluk (Tugend, Eudaimonie)",
+        "diyalektik ve Sokratik yöntem (Dialektik, Mäeutik)",
+        "ölçü ve orta yol (Maß, die Mitte)",
+        "logos ve kozmos (Logos, Kosmos)",
+        "mağara benzetmesi ve bilgi (Höhlengleichnis, Erkenntnis)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2400,14 +3052,21 @@
       "id": 134,
       "categoryId": 7,
       "number": 10,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Modern Felsefe ve Aydınlanma",
+      "theme": "Descartes'tan Kant'a uzanan modern dönemin akıl, özne, eleştiri ve aydınlanma kavramlarını kapsar. Şüphe, deneyim ve us üzerine felsefi kelimeler.",
+      "subtopics": [
+        "şüphe ve kesinlik (Zweifel, Gewissheit, Methode)",
+        "özne ve düşünen ben (Subjekt, das Ich, cogito)",
+        "akıl ve eleştiri (Vernunft, Kritik)",
+        "rasyonalizm ve empirizm (Rationalismus, Empirismus)",
+        "aydınlanma ve ergin olmama (Aufklärung, Unmündigkeit)",
+        "a priori ve deneyim (das Apriori, Erfahrung)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2419,14 +3078,21 @@
       "id": 135,
       "categoryId": 7,
       "number": 11,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Diyalektik ve Tarih Felsefesi",
+      "theme": "Hegel ve Marx geleneğinde diyalektik, tarihsel süreç, yabancılaşma ve ilerleme kavramlarını kapsar. Tin, çelişki ve toplumsal dönüşüm üzerine felsefi kelimeler.",
+      "subtopics": [
+        "diyalektik ve çelişki (Dialektik, Widerspruch, Aufhebung)",
+        "tin ve tarihsel süreç (Geist, Weltgeschichte)",
+        "yabancılaşma ve emek (Entfremdung, Arbeit)",
+        "ilerleme ve gelişim (Fortschritt, Entwicklung)",
+        "sınıf ve üretim ilişkileri (Klasse, Produktion)",
+        "altyapı ve üstyapı (Basis, Überbau, Ideologie)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2438,14 +3104,21 @@
       "id": 136,
       "categoryId": 7,
       "number": 12,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Varoluşçuluk ve Anlam",
+      "theme": "Varoluşçu düşüncede özgürlük, kaygı, saçma, otantiklik ve hiçlik kavramlarını kapsar. İnsanın var oluşu ve yaşamın anlamı üzerine felsefi kelimeler.",
+      "subtopics": [
+        "varoluş ve atılmışlık (Existenz, Geworfenheit)",
+        "kaygı ve bunaltı (Angst, Sorge)",
+        "saçma ve anlamsızlık (das Absurde, Sinnlosigkeit)",
+        "otantiklik ve seçim (Eigentlichkeit, Entscheidung)",
+        "hiçlik ve sonluluk (das Nichts, Endlichkeit)",
+        "sorumluluk ve özgürlük (Verantwortung, Freiheit)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2457,14 +3130,21 @@
       "id": 137,
       "categoryId": 7,
       "number": 13,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Fenomenoloji ve Hermenötik",
+      "theme": "Bilincin yönelimselliği, yaşam dünyası, yorum ve anlama gibi fenomenolojik ve hermenötik kavramları kapsar. Deneyimin betimlenmesi ve metnin yorumlanması üzerine kelimeler.",
+      "subtopics": [
+        "fenomen ve öze dönüş (Phänomen, Wesensschau)",
+        "yönelmişlik ve bilinç (Intentionalität, Noema)",
+        "yaşam dünyası (Lebenswelt)",
+        "yorum ve anlama (Auslegung, Verstehen)",
+        "hermenötik çember (hermeneutischer Zirkel)",
+        "ufuk ve önyargı (Horizont, Vorurteil)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2476,14 +3156,21 @@
       "id": 138,
       "categoryId": 7,
       "number": 14,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Dil Felsefesi ve Anlam",
+      "theme": "Dil, anlam, gönderim, dil oyunları ve önermelerle ilgili kavramları kapsar. Sözcüklerin ve cümlelerin anlamı üzerine analitik felsefi kelimeler.",
+      "subtopics": [
+        "anlam ve gönderim (Bedeutung, Sinn, Referenz)",
+        "önerme ve doğruluk (Aussage, Satz, Wahrheitswert)",
+        "dil oyunları ve kullanım (Sprachspiel, Gebrauch)",
+        "gösteren ve gösterilen (Zeichen, das Bezeichnete)",
+        "konuşma edimi (Sprechakt)",
+        "belirsizlik ve bağlam (Mehrdeutigkeit, Kontext)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2495,14 +3182,21 @@
       "id": 139,
       "categoryId": 7,
       "number": 15,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Bilim Felsefesi",
+      "theme": "Bilimsel yöntem, hipotez, yanlışlanabilirlik, paradigma ve açıklama gibi kavramları kapsar. Bilimsel bilginin yapısı ve gerekçelendirilmesi üzerine felsefi kelimeler.",
+      "subtopics": [
+        "hipotez ve kuram (Hypothese, Theorie)",
+        "doğrulama ve yanlışlama (Verifikation, Falsifikation)",
+        "tümevarım ve tümdengelim (Induktion, Deduktion)",
+        "paradigma ve bilimsel devrim (Paradigma, Revolution)",
+        "açıklama ve öngörü (Erklärung, Vorhersage)",
+        "yasa, model ve gözlem (Gesetz, Modell, Beobachtung)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2514,14 +3208,21 @@
       "id": 140,
       "categoryId": 7,
       "number": 16,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Din Felsefesi ve Aşkınlık",
+      "theme": "Tanrı, inanç, aşkınlık, kötülük problemi ve kutsal gibi kavramları kapsar. İnancın akılla ilişkisi ve dinî varlık üzerine felsefi kelimeler.",
+      "subtopics": [
+        "tanrı ve aşkınlık (Gott, Transzendenz)",
+        "inanç ve vahiy (Glaube, Offenbarung)",
+        "kutsal ve içkinlik (das Heilige, Immanenz)",
+        "kötülük problemi ve teodise (Theodizee, das Böse)",
+        "sonsuzluk ve mutlak (Unendlichkeit, das Absolute)",
+        "tanrıtanımazlık ve şüphecilik (Atheismus, Skepsis)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2533,14 +3234,21 @@
       "id": 141,
       "categoryId": 7,
       "number": 17,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "İnsan Felsefesi ve Antropoloji",
+      "theme": "İnsanın doğası, kimlik, ölümlülük, kültür ve toplumsal varlık olma gibi felsefi antropoloji kavramlarını kapsar. İnsanın kendini anlaması üzerine kelimeler.",
+      "subtopics": [
+        "insan doğası ve öz (Menschennatur, Wesen)",
+        "kimlik ve benlik (Identität, das Selbst)",
+        "ölümlülük ve sonluluk (Sterblichkeit, Endlichkeit)",
+        "kültür ve uygarlık (Kultur, Zivilisation)",
+        "beden, içgüdü ve akıl (Leib, Trieb, Vernunft)",
+        "toplumsallık ve aidiyet (Sozialität, Zugehörigkeit)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2552,14 +3260,21 @@
       "id": 142,
       "categoryId": 7,
       "number": 18,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Çağdaş ve Postmodern Düşünce",
+      "theme": "Yapıbozum, söylem, güç, fark ve büyük anlatıların eleştirisi gibi 20. yüzyıl sonrası kavramları kapsar. Modernliğin sorgulanması üzerine felsefi kelimeler.",
+      "subtopics": [
+        "yapıbozum ve fark (Dekonstruktion, Differenz)",
+        "söylem ve iktidar (Diskurs, Macht)",
+        "büyük anlatılar ve eleştiri (Metaerzählung, Kritik)",
+        "öznenin yok oluşu (Dezentrierung des Subjekts)",
+        "simülasyon ve gerçeklik (Simulation, Hyperrealität)",
+        "çoğulluk ve göreliik (Pluralität, Relativismus)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2571,14 +3286,21 @@
       "id": 143,
       "categoryId": 7,
       "number": 19,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Doğa, Çevre ve Teknoloji Felsefesi",
+      "theme": "Doğa, çevre etiği, teknoloji, ilerleme ve insan-doğa ilişkisiyle ilgili kavramları kapsar. Tekniğin anlamı ve ekolojik sorumluluk üzerine felsefi kelimeler.",
+      "subtopics": [
+        "doğa ve çevre (Natur, Umwelt)",
+        "teknik ve araçsallık (Technik, das Gestell)",
+        "ilerleme ve sürdürülebilirlik (Fortschritt, Nachhaltigkeit)",
+        "çevre etiği ve sorumluluk (Umweltethik, Verantwortung)",
+        "yapay zekâ ve insanlık (künstliche Intelligenz, das Menschliche)",
+        "ekolojik denge ve sınır (ökologisches Gleichgewicht, Grenze)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2590,14 +3312,21 @@
       "id": 144,
       "categoryId": 7,
       "number": 20,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Argümantasyon ve Felsefi Tartışma",
+      "theme": "Felsefi tartışmada kullanılan akıl yürütme, gerekçelendirme, çürütme ve safsata gibi metodolojik kavramları kapsar. Tez savunma ve eleştirel düşünme üzerine kelimeler.",
+      "subtopics": [
+        "tez, sav ve karşı sav (These, Behauptung, Gegenthese)",
+        "gerekçelendirme ve dayanak (Begründung, Prämisse)",
+        "çıkarım ve sonuç (Schlussfolgerung, Konklusion)",
+        "çürütme ve itiraz (Widerlegung, Einwand)",
+        "safsata ve döngüsellik (Trugschluss, Zirkelschluss)",
+        "varsayım ve örtük kabul (Annahme, Voraussetzung)"
+      ],
       "levelProfile": {
         "B2": 6,
         "C1": 9
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Felsefi Kavramlar ve Terimler",
         "Etik ve Değerler",
@@ -2641,15 +3370,23 @@
       "id": 145,
       "categoryId": 8,
       "number": 5,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Hayvanlı Deyimler",
+      "theme": "İçinde hayvan adı geçen Almanca deyimler; tilki, ayı, domuz, kuş gibi hayvanların mecazi kullanımıyla karakter, şans ve davranış anlatımı.",
+      "subtopics": [
+        "kurt, tilki ve kurnazlık deyimleri",
+        "domuz ve şansla ilgili ifadeler (Schwein haben)",
+        "kuş, baykuş ve karga benzetmeleri",
+        "köpek, kedi ve ev hayvanı deyimleri",
+        "inek, at, eşek gibi çiftlik hayvanları",
+        "böcek, arı, sinek ile ufak rahatsızlık ifadeleri",
+        "ayı, fil gibi büyük hayvanlarla güç/beceriksizlik"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2662,15 +3399,23 @@
       "id": 146,
       "categoryId": 8,
       "number": 6,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Vücut ve Beden Deyimleri",
+      "theme": "Beden organlarıyla kurulan deyimler; el, baş, kalp, göz ve burun üzerinden duygu, tutum ve davranış anlatan ifadeler.",
+      "subtopics": [
+        "el ve parmak deyimleri (Hand, Finger)",
+        "baş ve kafa ifadeleri (Kopf, Stirn)",
+        "kalp ve göğüs duyguları (Herz, Brust)",
+        "göz ve bakış deyimleri (Auge, Blick)",
+        "ağız, dil ve diş ifadeleri (Mund, Zunge)",
+        "ayak ve bacak hareketleri (Bein, Fuß)",
+        "burun, kulak ve yüz benzetmeleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2683,15 +3428,23 @@
       "id": 147,
       "categoryId": 8,
       "number": 7,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Renkli Deyimler",
+      "theme": "Renk adlarının mecazi geçtiği deyimler; siyah, beyaz, kırmızı, mavi ve yeşil renklerle ruh hali, durum ve değer yargısı anlatımı.",
+      "subtopics": [
+        "mavi ile ilgili deyimler (blau sein, blauäugig)",
+        "siyah ve karamsarlık ifadeleri (schwarzsehen)",
+        "kırmızı ve öfke/tehlike (rotsehen, roter Faden)",
+        "yeşil ile umut, izin, kıskançlık (grünes Licht)",
+        "beyaz ve masumiyet ifadeleri",
+        "gri, altın ve gümüş benzetmeleri",
+        "renk karşıtlığıyla kurulan deyimler"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2704,15 +3457,23 @@
       "id": 148,
       "categoryId": 8,
       "number": 8,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Para ve Bolluk Deyimleri",
+      "theme": "Para, zenginlik ve yoksullukla ilgili deyimler; harcama, tasarruf, borç ve değer üzerine mecazi ifadeler.",
+      "subtopics": [
+        "zenginlik ve servet deyimleri",
+        "para harcama ve israf ifadeleri",
+        "tasarruf ve cimrilik benzetmeleri",
+        "borç, kredi ve ödeme deyimleri",
+        "yoksulluk ve parasızlık ifadeleri",
+        "değer ve fiyatla ilgili mecazlar",
+        "alışveriş ve pazarlık deyimleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2725,15 +3486,23 @@
       "id": 149,
       "categoryId": 8,
       "number": 9,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Yemek ve İçecek Deyimleri",
+      "theme": "Yiyecek, içecek ve mutfakla kurulan deyimler; ekmek, çorba, tuz ve elma gibi gıdalar üzerinden yaşam durumları anlatımı.",
+      "subtopics": [
+        "ekmek, hamur ve fırın deyimleri (Brot, Brötchen)",
+        "çorba, tencere ve yemek pişirme ifadeleri (Suppe)",
+        "meyve deyimleri (elma, armut, kiraz)",
+        "sebze ve baklagil benzetmeleri (Bohne, Kohl)",
+        "tuz, biber ve baharatla ilgili ifadeler",
+        "içecek deyimleri (bira, kahve, su)",
+        "tatlı, peynir ve sosis ifadeleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2746,15 +3515,23 @@
       "id": 150,
       "categoryId": 8,
       "number": 10,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Doğa ve Hava Deyimleri",
+      "theme": "Hava olayları, mevsimler ve doğa unsurlarıyla kurulan deyimler; yağmur, fırtına, güneş ve buz üzerinden durum betimleme.",
+      "subtopics": [
+        "yağmur ve fırtına deyimleri (Regen, Sturm)",
+        "güneş, gökyüzü ve bulut ifadeleri",
+        "rüzgâr ve hava akımı benzetmeleri (Wind)",
+        "buz, kar ve soğuk deyimleri (Eis)",
+        "ateş, ısı ve sıcaklık ifadeleri",
+        "dağ, taş ve kaya benzetmeleri (Berg, Stein)",
+        "ağaç, orman ve bahçe deyimleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2767,15 +3544,23 @@
       "id": 151,
       "categoryId": 8,
       "number": 11,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Su ve Deniz Deyimleri",
+      "theme": "Su, deniz ve denizcilikle ilgili deyimler; dalga, gemi, balık ve akıntı üzerinden zorluk, akış ve fırsat anlatımı.",
+      "subtopics": [
+        "su ve akıntı deyimleri (Wasser, Strom)",
+        "deniz, dalga ve okyanus ifadeleri (Meer, Welle)",
+        "gemi, tekne ve denizcilik benzetmeleri (Schiff)",
+        "balık ve balıkçılık deyimleri (Fisch)",
+        "boğulma, batma ve kurtulma ifadeleri",
+        "köprü, kıyı ve liman mecazları",
+        "nehir, göl ve kaynak deyimleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2788,15 +3573,23 @@
       "id": 152,
       "categoryId": 8,
       "number": 12,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Sayı ve Ölçü Deyimleri",
+      "theme": "Sayılar, miktarlar ve ölçülerle kurulan deyimler; bir, iki, yedi gibi rakamların mecazi kullanımı ve büyüklük/azlık ifadeleri.",
+      "subtopics": [
+        "bir ve tek olma deyimleri (eins, ein)",
+        "iki ve çift ifadeleri (zwei, Paar)",
+        "yedi, dokuz gibi uğurlu sayılar",
+        "yüz, bin gibi büyük sayı abartmaları",
+        "yarım, çeyrek ve kesir ifadeleri",
+        "ağırlık, uzunluk ve ölçü mecazları",
+        "az/çok ve sıfır ile kurulan deyimler"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2809,15 +3602,23 @@
       "id": 153,
       "categoryId": 8,
       "number": 13,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Ev ve Eşya Deyimleri",
+      "theme": "Ev, oda ve günlük eşyalarla kurulan deyimler; kapı, masa, yatak ve mutfak aletleri üzerinden durum ve davranış anlatımı.",
+      "subtopics": [
+        "kapı, pencere ve eşik deyimleri (Tür, Fenster)",
+        "masa, sandalye ve mobilya ifadeleri (Tisch)",
+        "yatak, uyku ve oda benzetmeleri (Bett)",
+        "mutfak ve ev aletleri deyimleri",
+        "çatı, duvar ve temel mecazları (Dach, Wand)",
+        "anahtar, kilit ve çekmece ifadeleri",
+        "süpürge, çöp ve temizlik deyimleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2830,15 +3631,23 @@
       "id": 154,
       "categoryId": 8,
       "number": 14,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Zaman ve Saat Deyimleri",
+      "theme": "Zaman, saat ve takvimle ilgili deyimler; an, gün, yıl ve gecikme üzerinden zamanlama ve aciliyet anlatan ifadeler.",
+      "subtopics": [
+        "an, dakika ve saniye deyimleri (Augenblick)",
+        "saat ve zamanlama ifadeleri (Uhr, Stunde)",
+        "gün ve gece benzetmeleri (Tag, Nacht)",
+        "yıl, çağ ve dönem mecazları (Jahr)",
+        "gecikme, erkenlik ve son dakika ifadeleri",
+        "geçmiş, şimdi ve gelecek deyimleri",
+        "beklemek ve zaman geçirmek ifadeleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2851,15 +3660,23 @@
       "id": 155,
       "categoryId": 8,
       "number": 15,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Çalışma ve El Sanatları Deyimleri",
+      "theme": "Zanaat, alet ve el emeğiyle kurulan deyimler; çekiç, çivi, demir ve ahşap üzerinden çaba, beceri ve başarı anlatımı.",
+      "subtopics": [
+        "çekiç, çivi ve marangozluk deyimleri (Nagel, Hammer)",
+        "demir, çelik ve metal işleme ifadeleri (Eisen)",
+        "ip, halat ve düğüm benzetmeleri (Faden, Strick)",
+        "iğne, dikiş ve terzilik mecazları (Nadel)",
+        "tahta, testere ve ahşap deyimleri (Holz, Brett)",
+        "değirmen, fırın ve eski meslek ifadeleri",
+        "alet kullanma ve ustalık deyimleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2872,15 +3689,23 @@
       "id": 156,
       "categoryId": 8,
       "number": 16,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Karakter ve Kişilik Deyimleri",
+      "theme": "İnsan karakterini, huyunu ve davranışını betimleyen deyimler; dürüstlük, inatçılık, cesaret ve safdillik gibi özellikler.",
+      "subtopics": [
+        "dürüstlük ve açık sözlülük deyimleri",
+        "inatçılık ve dik kafalılık ifadeleri",
+        "cesaret ve korkaklık benzetmeleri",
+        "kurnazlık ve saflık mecazları",
+        "tembellik ve çalışkanlık deyimleri",
+        "kibir, alçakgönüllülük ve gurur ifadeleri",
+        "güvenilirlik ve sadakat deyimleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2893,15 +3718,23 @@
       "id": 157,
       "categoryId": 8,
       "number": 17,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Şans ve Kader Deyimleri",
+      "theme": "Talih, şans ve kaderle ilgili deyimler; iyi/kötü şans, fırsat, risk ve tesadüf üzerine mecazi ifadeler.",
+      "subtopics": [
+        "iyi şans ve talih deyimleri (Glück)",
+        "kötü şans ve aksilik ifadeleri (Pech)",
+        "fırsat ve zamanlama mecazları (Chance)",
+        "risk, kumar ve bahis deyimleri",
+        "tesadüf ve rastlantı ifadeleri (Zufall)",
+        "kader, alın yazısı ve kısmet benzetmeleri",
+        "başarı ve başarısızlık deyimleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2914,15 +3747,23 @@
       "id": 158,
       "categoryId": 8,
       "number": 18,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Savaş ve Mücadele Deyimleri",
+      "theme": "Çatışma, savaş ve mücadeleyle kurulan deyimler; silah, ordu, zafer ve teslimiyet üzerinden rekabet ve direnç anlatımı.",
+      "subtopics": [
+        "kılıç, silah ve cephane deyimleri (Schwert, Waffe)",
+        "savaş, cephe ve siper ifadeleri (Krieg, Front)",
+        "zafer, yenilgi ve teslim olma deyimleri",
+        "savunma, saldırı ve geri çekilme mecazları",
+        "barış, ateşkes ve uzlaşma ifadeleri",
+        "kahramanlık, kalkan ve zırh benzetmeleri",
+        "strateji ve taktik deyimleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2935,15 +3776,23 @@
       "id": 159,
       "categoryId": 8,
       "number": 19,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Tarih ve Kültürel Deyimler",
+      "theme": "Tarihî olay, mitoloji ve kültürel köken taşıyan deyimler; antik dönem, din ve halk anlatılarından gelen kalıp ifadeler.",
+      "subtopics": [
+        "antik Yunan-Roma kökenli deyimler",
+        "İncil ve dinî kökenli ifadeler",
+        "mitolojik figür ve efsane deyimleri",
+        "tarihî olay ve kişi kaynaklı mecazlar",
+        "şövalye, kale ve ortaçağ benzetmeleri",
+        "masal ve halk anlatısı ifadeleri",
+        "geleneksel zanaat ve eski yaşam deyimleri"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
@@ -2956,15 +3805,23 @@
       "id": 160,
       "categoryId": 8,
       "number": 20,
-      "title": null,
-      "theme": null,
-      "subtopics": [],
+      "title": "Edebi ve Yüksek Deyimler",
+      "theme": "Yazılı dilde ve resmi bağlamda kullanılan ileri düzey, edebi deyimler; soyut kavramlar ve incelikli üslupla kurulan kalıp ifadeler.",
+      "subtopics": [
+        "edebi ve şiirsel deyimler",
+        "resmi ve yazılı dilde geçen kalıplar",
+        "soyut kavram içeren ifadeler (Geist, Seele)",
+        "felsefi ve düşünsel mecazlar",
+        "ironi ve eleştiri içeren deyimler",
+        "klasik alıntı ve aforizma kökenli ifadeler",
+        "üst düzey günlük dildeki incelikli deyimler"
+      ],
       "levelProfile": {
         "B1": 5,
         "B2": 6,
         "C1": 4
       },
-      "status": "stub",
+      "status": "planned",
       "_siblingTitles": [
         "Yaygın Deyimler (Redewendungen)",
         "Duygusal Deyimler",
