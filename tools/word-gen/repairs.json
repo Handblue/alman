@@ -1,0 +1,236 @@
+[
+  {
+    "id": 145,
+    "categoryId": 1,
+    "unitId": 10,
+    "unitTitle": "Vücut ve Sağlık",
+    "level": "A1",
+    "replaces": "der Arzt",
+    "reason": "duplicate of id 63"
+  },
+  {
+    "id": 277,
+    "categoryId": 1,
+    "unitId": 19,
+    "unitTitle": "Alışveriş ve Para",
+    "level": "A1",
+    "replaces": "die Kasse",
+    "reason": "duplicate of id 62"
+  },
+  {
+    "id": 282,
+    "categoryId": 1,
+    "unitId": 19,
+    "unitTitle": "Alışveriş ve Para",
+    "level": "A1",
+    "replaces": "der Supermarkt",
+    "reason": "duplicate of id 61"
+  },
+  {
+    "id": 283,
+    "categoryId": 1,
+    "unitId": 19,
+    "unitTitle": "Alışveriş ve Para",
+    "level": "A2",
+    "replaces": "die Quittung",
+    "reason": "duplicate of id 72"
+  },
+  {
+    "id": 349,
+    "categoryId": 3,
+    "unitId": 24,
+    "unitTitle": "Goethe B1 — Sosyal Hayat",
+    "level": "B1",
+    "replaces": "die Erfahrung",
+    "reason": "duplicate of id 41"
+  },
+  {
+    "id": 350,
+    "categoryId": 3,
+    "unitId": 24,
+    "unitTitle": "Goethe B1 — Sosyal Hayat",
+    "level": "B1",
+    "replaces": "die Meinung",
+    "reason": "duplicate of id 39"
+  },
+  {
+    "id": 354,
+    "categoryId": 3,
+    "unitId": 24,
+    "unitTitle": "Goethe B1 — Sosyal Hayat",
+    "level": "B1",
+    "replaces": "vergleichen",
+    "reason": "duplicate of id 44"
+  },
+  {
+    "id": 357,
+    "categoryId": 3,
+    "unitId": 24,
+    "unitTitle": "Goethe B1 — Sosyal Hayat",
+    "level": "B1",
+    "replaces": "sich bewerben",
+    "reason": "duplicate of id 36"
+  },
+  {
+    "id": 361,
+    "categoryId": 3,
+    "unitId": 25,
+    "unitTitle": "Goethe B2 — İş ve Kariyer",
+    "level": "B2",
+    "replaces": "die Bewerbung",
+    "reason": "duplicate of id 32"
+  },
+  {
+    "id": 392,
+    "categoryId": 4,
+    "unitId": 27,
+    "unitTitle": "telc B2 — Akademik ve Toplumsal",
+    "level": "B2",
+    "replaces": "der Antrag",
+    "reason": "duplicate of id 49"
+  },
+  {
+    "id": 395,
+    "categoryId": 4,
+    "unitId": 27,
+    "unitTitle": "telc B2 — Akademik ve Toplumsal",
+    "level": "B2",
+    "replaces": "die Frist",
+    "reason": "duplicate of id 54"
+  },
+  {
+    "id": 396,
+    "categoryId": 4,
+    "unitId": 27,
+    "unitTitle": "telc B2 — Akademik ve Toplumsal",
+    "level": "B2",
+    "replaces": "die Genehmigung",
+    "reason": "duplicate of id 50"
+  },
+  {
+    "id": 399,
+    "categoryId": 4,
+    "unitId": 27,
+    "unitTitle": "telc B2 — Akademik ve Toplumsal",
+    "level": "B2",
+    "replaces": "zuständig",
+    "reason": "duplicate of id 58"
+  },
+  {
+    "id": 400,
+    "categoryId": 4,
+    "unitId": 27,
+    "unitTitle": "telc B2 — Akademik ve Toplumsal",
+    "level": "B1",
+    "replaces": "das Formular",
+    "reason": "duplicate of id 47"
+  },
+  {
+    "id": 401,
+    "categoryId": 4,
+    "unitId": 27,
+    "unitTitle": "telc B2 — Akademik ve Toplumsal",
+    "level": "B2",
+    "replaces": "die Behörde",
+    "reason": "duplicate of id 46"
+  },
+  {
+    "id": 402,
+    "categoryId": 4,
+    "unitId": 27,
+    "unitTitle": "telc B2 — Akademik ve Toplumsal",
+    "level": "B2",
+    "replaces": "beantragen",
+    "reason": "duplicate of id 55"
+  },
+  {
+    "id": 403,
+    "categoryId": 4,
+    "unitId": 27,
+    "unitTitle": "telc B2 — Akademik ve Toplumsal",
+    "level": "B2",
+    "replaces": "nachweisen",
+    "reason": "duplicate of id 60"
+  },
+  {
+    "id": 434,
+    "categoryId": 5,
+    "unitId": 30,
+    "unitTitle": "Seyahat ve Otel",
+    "level": "A2",
+    "replaces": "die Unterkunft",
+    "reason": "duplicate of id 35"
+  },
+  {
+    "id": 436,
+    "categoryId": 5,
+    "unitId": 31,
+    "unitTitle": "Banka ve Finans",
+    "level": "A2",
+    "replaces": "das Konto",
+    "reason": "duplicate of id 66"
+  },
+  {
+    "id": 438,
+    "categoryId": 5,
+    "unitId": 31,
+    "unitTitle": "Banka ve Finans",
+    "level": "A2",
+    "replaces": "abheben",
+    "reason": "duplicate of id 75"
+  },
+  {
+    "id": 470,
+    "categoryId": 6,
+    "unitId": 33,
+    "unitTitle": "Fen Bilimleri ve Matematik",
+    "level": "B2",
+    "replaces": "die Hypothese",
+    "reason": "duplicate of id 77"
+  },
+  {
+    "id": 476,
+    "categoryId": 6,
+    "unitId": 33,
+    "unitTitle": "Fen Bilimleri ve Matematik",
+    "level": "B1",
+    "replaces": "analysieren",
+    "reason": "duplicate of id 78"
+  },
+  {
+    "id": 504,
+    "categoryId": 7,
+    "unitId": 36,
+    "unitTitle": "Etik ve Değerler",
+    "level": "B2",
+    "replaces": "die Pflicht",
+    "reason": "duplicate of id 56"
+  },
+  {
+    "id": 508,
+    "categoryId": 7,
+    "unitId": 36,
+    "unitTitle": "Etik ve Değerler",
+    "level": "B1",
+    "replaces": "das Recht",
+    "reason": "duplicate of id 57"
+  },
+  {
+    "id": 569,
+    "categoryId": 4,
+    "unitId": 28,
+    "unitTitle": "telc C1 — Üst Düzey İfadeler",
+    "level": "C1",
+    "replaces": "im Hinblick auf",
+    "reason": "duplicate of id 378"
+  },
+  {
+    "id": 570,
+    "categoryId": 4,
+    "unitId": 28,
+    "unitTitle": "telc C1 — Üst Düzey İfadeler",
+    "level": "C1",
+    "replaces": "die Schlussfolgerung",
+    "reason": "duplicate of id 82"
+  }
+]

@@ -1,0 +1,217 @@
+{
+  "kind": "seed",
+  "unitId": 7,
+  "categoryId": 6,
+  "number": 1,
+  "title": "Araştırma ve Akademik Terimler",
+  "words": [
+    {
+      "id": 76,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "die Forschung",
+      "turkish": "araştırma",
+      "example": "Die Forschung in diesem Bereich macht große Fortschritte.",
+      "exampleTranslation": "Bu alandaki araştırma büyük ilerlemeler kaydediyor.",
+      "synonyms": [
+        "die Untersuchung",
+        "die Studie"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 77,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "die Hypothese",
+      "turkish": "hipotez / varsayım",
+      "example": "Der Wissenschaftler stellt eine Hypothese auf.",
+      "exampleTranslation": "Bilim insanı bir hipotez ortaya koyuyor.",
+      "synonyms": [
+        "die Annahme",
+        "die These"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 78,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "analysieren",
+      "turkish": "analiz etmek / çözümlemek",
+      "example": "Wir analysieren die Daten sorgfältig.",
+      "exampleTranslation": "Verileri dikkatli bir şekilde analiz ediyoruz.",
+      "synonyms": [
+        "untersuchen",
+        "auswerten"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 79,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "die Dissertation",
+      "turkish": "doktora tezi",
+      "example": "Sie schreibt ihre Dissertation über Linguistik.",
+      "exampleTranslation": "Dilbilim üzerine doktora tezi yazıyor.",
+      "synonyms": [
+        "die Doktorarbeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 80,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "die Methodik",
+      "turkish": "metodoloji / yöntem bilimi",
+      "example": "Die Methodik der Studie muss klar beschrieben sein.",
+      "exampleTranslation": "Çalışmanın metodolojisi açıkça tanımlanmalıdır.",
+      "synonyms": [
+        "die Methodologie",
+        "das Verfahren"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 81,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "belegen",
+      "turkish": "kanıtlamak / desteklemek",
+      "example": "Die Ergebnisse belegen die Hypothese.",
+      "exampleTranslation": "Sonuçlar hipotezi destekliyor.",
+      "synonyms": [
+        "beweisen",
+        "nachweisen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 82,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "die Schlussfolgerung",
+      "turkish": "sonuç / çıkarım",
+      "example": "Die Schlussfolgerung ergibt sich aus den Daten.",
+      "exampleTranslation": "Sonuç verilerden çıkıyor.",
+      "synonyms": [
+        "die Konklusion",
+        "das Ergebnis"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 83,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "zitieren",
+      "turkish": "alıntı yapmak",
+      "example": "In der Arbeit muss man alle Quellen zitieren.",
+      "exampleTranslation": "Çalışmada tüm kaynaklar alıntılanmalıdır.",
+      "synonyms": [
+        "anführen",
+        "verweisen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 84,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "die Erkenntnis",
+      "turkish": "bulgu / kavrayış / bilgi",
+      "example": "Diese Erkenntnis verändert unser Weltbild.",
+      "exampleTranslation": "Bu bulgu dünya görüşümüzü değiştiriyor.",
+      "synonyms": [
+        "die Einsicht",
+        "das Wissen"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 85,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "verweisen",
+      "turkish": "atıfta bulunmak / yönlendirmek",
+      "example": "Der Autor verweist auf frühere Studien.",
+      "exampleTranslation": "Yazar önceki çalışmalara atıfta bulunuyor.",
+      "synonyms": [
+        "hinweisen",
+        "referenzieren"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 86,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "die Stichprobe",
+      "turkish": "örneklem",
+      "example": "Die Stichprobe umfasst 500 Probanden.",
+      "exampleTranslation": "Örneklem 500 denek içeriyor.",
+      "synonyms": [
+        "die Auswahl",
+        "das Sample"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 87,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "das Paradigma",
+      "turkish": "paradigma",
+      "example": "Dieses Experiment verändert das wissenschaftliche Paradigma.",
+      "exampleTranslation": "Bu deney bilimsel paradigmayı değiştiriyor.",
+      "synonyms": [
+        "das Modell",
+        "das Muster"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 88,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "evaluieren",
+      "turkish": "değerlendirmek / evaluate etmek",
+      "example": "Man muss die Ergebnisse kritisch evaluieren.",
+      "exampleTranslation": "Sonuçları eleştirel bir şekilde değerlendirmek gerekir.",
+      "synonyms": [
+        "bewerten",
+        "beurteilen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 89,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "die Publikation",
+      "turkish": "yayın / makale",
+      "example": "Die Publikation erscheint in einem Fachjournal.",
+      "exampleTranslation": "Yayın bir akademik dergide çıkıyor.",
+      "synonyms": [
+        "die Veröffentlichung",
+        "der Artikel"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 90,
+      "categoryId": 6,
+      "unitId": 7,
+      "german": "interdisziplinär",
+      "turkish": "disiplinlerarası",
+      "example": "Das Forschungsprojekt ist interdisziplinär angelegt.",
+      "exampleTranslation": "Araştırma projesi disiplinlerarası bir yapıda kurulmuş.",
+      "synonyms": [
+        "fächerübergreifend"
+      ],
+      "level": "C1"
+    }
+  ]
+}

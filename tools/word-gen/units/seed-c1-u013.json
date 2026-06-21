@@ -1,0 +1,187 @@
+{
+  "kind": "seed",
+  "unitId": 13,
+  "categoryId": 1,
+  "number": 6,
+  "title": "Ev ve Mobilya",
+  "words": [
+    {
+      "id": 181,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "das Zimmer",
+      "turkish": "oda",
+      "example": "Mein Zimmer ist klein aber gemütlich.",
+      "exampleTranslation": "Odam küçük ama rahat.",
+      "synonyms": [
+        "der Raum"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 182,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "das Schlafzimmer",
+      "turkish": "yatak odası",
+      "example": "Das Schlafzimmer hat ein großes Fenster.",
+      "exampleTranslation": "Yatak odasının büyük bir penceresi var.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 183,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "die Küche",
+      "turkish": "mutfak",
+      "example": "In der Küche riecht es nach frischem Kaffee.",
+      "exampleTranslation": "Mutfakta taze kahve kokusu var.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 184,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "das Badezimmer",
+      "turkish": "banyo",
+      "example": "Das Badezimmer ist frisch renoviert.",
+      "exampleTranslation": "Banyo yeni yenilenmiş.",
+      "synonyms": [
+        "das Bad"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 185,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "der Tisch",
+      "turkish": "masa",
+      "example": "Stell die Tasse auf den Tisch.",
+      "exampleTranslation": "Fincanı masaya koy.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 186,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "der Stuhl",
+      "turkish": "sandalye",
+      "example": "Bitte nimm Platz auf dem Stuhl.",
+      "exampleTranslation": "Lütfen sandalyeye otur.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 187,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "das Bett",
+      "turkish": "yatak",
+      "example": "Ich gehe um 22 Uhr ins Bett.",
+      "exampleTranslation": "Saat 22'de yatağa gidiyorum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 188,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "das Sofa",
+      "turkish": "kanepe / divan",
+      "example": "Abends sitze ich gerne auf dem Sofa.",
+      "exampleTranslation": "Akşamları kanepede oturmayı severim.",
+      "synonyms": [
+        "das Kanapee",
+        "die Couch"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 189,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "das Fenster",
+      "turkish": "pencere",
+      "example": "Mach bitte das Fenster auf, es ist heiß.",
+      "exampleTranslation": "Pencereyi aç lütfen, hava sıcak.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 190,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "die Tür",
+      "turkish": "kapı",
+      "example": "Die Tür ist abgeschlossen.",
+      "exampleTranslation": "Kapı kilitli.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 191,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "der Schrank",
+      "turkish": "dolap",
+      "example": "Meine Kleider hängen im Schrank.",
+      "exampleTranslation": "Giysilerim dolapta asılı.",
+      "synonyms": [
+        "der Kleiderschrank"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 192,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "die Lampe",
+      "turkish": "lamba",
+      "example": "Mach bitte die Lampe an.",
+      "exampleTranslation": "Lambayı açar mısın lütfen.",
+      "synonyms": [
+        "das Licht"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 193,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "die Miete",
+      "turkish": "kira",
+      "example": "Die Miete in München ist sehr hoch.",
+      "exampleTranslation": "Münih'teki kiralar çok yüksek.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 194,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "der Balkon",
+      "turkish": "balkon",
+      "example": "Wir frühstücken auf dem Balkon.",
+      "exampleTranslation": "Balkonda kahvaltı yapıyoruz.",
+      "synonyms": [
+        "die Terrasse"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 195,
+      "categoryId": 1,
+      "unitId": 13,
+      "german": "der Garten",
+      "turkish": "bahçe",
+      "example": "Im Sommer grillen wir im Garten.",
+      "exampleTranslation": "Yazın bahçede ızgara yapıyoruz.",
+      "synonyms": [],
+      "level": "A1"
+    }
+  ]
+}

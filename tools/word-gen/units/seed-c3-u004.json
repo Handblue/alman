@@ -1,0 +1,212 @@
+{
+  "kind": "seed",
+  "unitId": 4,
+  "categoryId": 3,
+  "number": 1,
+  "title": "Goethe B1/B2 Temel Kelimeler",
+  "words": [
+    {
+      "id": 31,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "die Veranstaltung",
+      "turkish": "etkinlik / organizasyon",
+      "example": "Die Veranstaltung beginnt um 19 Uhr.",
+      "exampleTranslation": "Etkinlik saat 19.00'da başlıyor.",
+      "synonyms": [
+        "das Ereignis",
+        "das Event"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 32,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "die Bewerbung",
+      "turkish": "başvuru / iş başvurusu",
+      "example": "Ich schicke meine Bewerbung per E-Mail.",
+      "exampleTranslation": "Başvurumu e-posta ile gönderiyorum.",
+      "synonyms": [
+        "die Kandidatur"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 33,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "der Lebenslauf",
+      "turkish": "özgeçmiş",
+      "example": "Mein Lebenslauf ist auf Deutsch geschrieben.",
+      "exampleTranslation": "Özgeçmişim Almanca yazılmış.",
+      "synonyms": [
+        "der CV"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 34,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "die Ausbildung",
+      "turkish": "eğitim / mesleki eğitim",
+      "example": "Er macht eine Ausbildung zum Elektriker.",
+      "exampleTranslation": "Elektrikçi olmak için mesleki eğitim yapıyor.",
+      "synonyms": [
+        "die Berufsausbildung"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 35,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "die Unterkunft",
+      "turkish": "konaklama / barınak",
+      "example": "Die Unterkunft ist günstig und zentral gelegen.",
+      "exampleTranslation": "Konaklama ucuz ve merkezi konumda.",
+      "synonyms": [
+        "die Übernachtung",
+        "die Bleibe"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 36,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "sich bewerben",
+      "turkish": "başvurmak",
+      "example": "Sie bewirbt sich um eine Stelle als Lehrerin.",
+      "exampleTranslation": "Öğretmenlik pozisyonuna başvuruyor.",
+      "synonyms": [
+        "kandidieren"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 37,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "die Beschwerde",
+      "turkish": "şikayet",
+      "example": "Er reicht eine Beschwerde beim Hotel ein.",
+      "exampleTranslation": "Otele şikayette bulunuyor.",
+      "synonyms": [
+        "die Klage",
+        "der Einwand"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 38,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "der Termin",
+      "turkish": "randevu / tarih",
+      "example": "Ich habe morgen einen Termin beim Arzt.",
+      "exampleTranslation": "Yarın doktorda randevum var.",
+      "synonyms": [
+        "die Verabredung"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 39,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "die Meinung",
+      "turkish": "görüş / fikir",
+      "example": "Meiner Meinung nach ist das falsch.",
+      "exampleTranslation": "Bence bu yanlış.",
+      "synonyms": [
+        "die Ansicht",
+        "der Standpunkt"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 40,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "vorschlagen",
+      "turkish": "önermek / teklif etmek",
+      "example": "Ich schlage vor, ins Kino zu gehen.",
+      "exampleTranslation": "Sinemaya gitmemizi öneriyorum.",
+      "synonyms": [
+        "empfehlen",
+        "anbieten"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 41,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "die Erfahrung",
+      "turkish": "deneyim / tecrübe",
+      "example": "Sie hat viel Erfahrung in diesem Bereich.",
+      "exampleTranslation": "Bu alanda çok deneyimi var.",
+      "synonyms": [
+        "die Kenntnisse"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 42,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "der Vorteil",
+      "turkish": "avantaj / yarar",
+      "example": "Der Vorteil dieser Methode ist die Einfachheit.",
+      "exampleTranslation": "Bu yöntemin avantajı basitliğidir.",
+      "synonyms": [
+        "der Nutzen",
+        "der Gewinn"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 43,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "der Nachteil",
+      "turkish": "dezavantaj / sakınca",
+      "example": "Ein Nachteil ist die hohe Kosten.",
+      "exampleTranslation": "Bir dezavantaj yüksek maliyettir.",
+      "synonyms": [
+        "der Mangel",
+        "der Schwachpunkt"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 44,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "vergleichen",
+      "turkish": "karşılaştırmak",
+      "example": "Man kann die Preise online vergleichen.",
+      "exampleTranslation": "Fiyatları çevrimiçi karşılaştırabilirsiniz.",
+      "synonyms": [
+        "gegenüberstellen"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 45,
+      "categoryId": 3,
+      "unitId": 4,
+      "german": "begründen",
+      "turkish": "gerekçelendirmek / açıklamak",
+      "example": "Bitte begründen Sie Ihre Entscheidung.",
+      "exampleTranslation": "Lütfen kararınızı gerekçelendirin.",
+      "synonyms": [
+        "erklären",
+        "belegen"
+      ],
+      "level": "B2"
+    }
+  ]
+}

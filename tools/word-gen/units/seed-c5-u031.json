@@ -1,0 +1,203 @@
+{
+  "kind": "seed",
+  "unitId": 31,
+  "categoryId": 5,
+  "number": 4,
+  "title": "Banka ve Finans",
+  "words": [
+    {
+      "id": 436,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "das Konto",
+      "turkish": "hesap / banka hesabı",
+      "example": "Ich möchte ein Konto eröffnen.",
+      "exampleTranslation": "Bir hesap açmak istiyorum.",
+      "synonyms": [
+        "das Bankkonto"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 437,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "überweisen",
+      "turkish": "havale etmek / para transfer etmek",
+      "example": "Bitte überweisen Sie den Betrag auf mein Konto.",
+      "exampleTranslation": "Lütfen tutarı hesabıma transfer edin.",
+      "synonyms": [
+        "transferieren"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 438,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "abheben",
+      "turkish": "çekmek (para)",
+      "example": "Ich möchte 200 Euro abheben.",
+      "exampleTranslation": "200 Euro çekmek istiyorum.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 439,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "einzahlen",
+      "turkish": "yatırmak (para)",
+      "example": "Ich muss Geld auf mein Konto einzahlen.",
+      "exampleTranslation": "Hesabıma para yatırmam lazım.",
+      "synonyms": [
+        "deponieren"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 440,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "der Kontoauszug",
+      "turkish": "hesap ekstresi",
+      "example": "Ich prüfe meinen Kontoauszug online.",
+      "exampleTranslation": "Hesap ekstresini online kontrol ediyorum.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 441,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "der Zinssatz",
+      "turkish": "faiz oranı",
+      "example": "Der Zinssatz für Kredite ist gestiegen.",
+      "exampleTranslation": "Kredi faiz oranları yükseldi.",
+      "synonyms": [
+        "die Zinsen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 442,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "der Kredit",
+      "turkish": "kredi",
+      "example": "Ich habe einen Kredit für das Auto aufgenommen.",
+      "exampleTranslation": "Araba için kredi çektim.",
+      "synonyms": [
+        "das Darlehen",
+        "der Loan"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 443,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "sparen",
+      "turkish": "biriktirmek / tasarruf etmek",
+      "example": "Ich spare jeden Monat 200 Euro.",
+      "exampleTranslation": "Her ay 200 Euro biriktiriyorum.",
+      "synonyms": [
+        "zurücklegen",
+        "aufheben"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 444,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "die Schulden",
+      "turkish": "borç",
+      "example": "Er hat hohe Schulden.",
+      "exampleTranslation": "Çok borcu var.",
+      "synonyms": [
+        "die Verbindlichkeiten"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 445,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "die Steuer",
+      "turkish": "vergi",
+      "example": "In Deutschland sind die Steuern hoch.",
+      "exampleTranslation": "Almanya'da vergiler yüksek.",
+      "synonyms": [
+        "die Abgabe"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 446,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "die Investition",
+      "turkish": "yatırım",
+      "example": "Diese Investition wird sich lohnen.",
+      "exampleTranslation": "Bu yatırım karşılığını verecek.",
+      "synonyms": [
+        "die Anlage",
+        "das Investment"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 447,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "das Budget",
+      "turkish": "bütçe",
+      "example": "Unser Budget für den Urlaub ist begrenzt.",
+      "exampleTranslation": "Tatil bütçemiz sınırlı.",
+      "synonyms": [
+        "der Haushalt",
+        "der Etat"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 448,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "der Wechselkurs",
+      "turkish": "döviz kuru",
+      "example": "Der Wechselkurs zwischen Euro und Dollar schwankt.",
+      "exampleTranslation": "Euro ve Dolar arasındaki döviz kuru dalgalanıyor.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 449,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "die Inflation",
+      "turkish": "enflasyon",
+      "example": "Die Inflation hat die Kaufkraft verringert.",
+      "exampleTranslation": "Enflasyon satın alma gücünü azalttı.",
+      "synonyms": [
+        "die Geldentwertung"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 450,
+      "categoryId": 5,
+      "unitId": 31,
+      "german": "bankrott",
+      "turkish": "iflas etmiş / batmış",
+      "example": "Das Unternehmen ist bankrott gegangen.",
+      "exampleTranslation": "Şirket iflas etti.",
+      "synonyms": [
+        "pleite",
+        "insolvent"
+      ],
+      "level": "B2"
+    }
+  ]
+}

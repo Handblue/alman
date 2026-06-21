@@ -1,0 +1,190 @@
+{
+  "kind": "seed",
+  "unitId": 30,
+  "categoryId": 5,
+  "number": 3,
+  "title": "Seyahat ve Otel",
+  "words": [
+    {
+      "id": 421,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "das Hotel",
+      "turkish": "otel",
+      "example": "Das Hotel liegt direkt am Meer.",
+      "exampleTranslation": "Otel doğrudan deniz kenarında.",
+      "synonyms": [
+        "die Unterkunft"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 422,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "einchecken",
+      "turkish": "check-in yapmak",
+      "example": "Wir checken um 14 Uhr ein.",
+      "exampleTranslation": "Saat 14'te check-in yapıyoruz.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 423,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "auschecken",
+      "turkish": "check-out yapmak",
+      "example": "Check-out ist um 12 Uhr.",
+      "exampleTranslation": "Check-out saat 12'de.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 424,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "das Einzelzimmer",
+      "turkish": "tek kişilik oda",
+      "example": "Ich hätte gerne ein Einzelzimmer für zwei Nächte.",
+      "exampleTranslation": "İki gece için tek kişilik oda istiyorum.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 425,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "das Doppelzimmer",
+      "turkish": "çift kişilik oda",
+      "example": "Ist noch ein Doppelzimmer frei?",
+      "exampleTranslation": "Hâlâ boş çift kişilik oda var mı?",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 426,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "die Touristeninformation",
+      "turkish": "turizm danışma bürosu",
+      "example": "Die Touristeninformation ist im Stadtzentrum.",
+      "exampleTranslation": "Turizm danışma bürosu şehir merkezinde.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 427,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "die Sehenswürdigkeit",
+      "turkish": "turistik yer / görülecek yer",
+      "example": "Das Brandenburger Tor ist eine bekannte Sehenswürdigkeit.",
+      "exampleTranslation": "Brandenburg Kapısı tanınmış bir turistik yer.",
+      "synonyms": [
+        "die Attraktion"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 428,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "der Stadtplan",
+      "turkish": "şehir haritası",
+      "example": "Haben Sie einen Stadtplan von Berlin?",
+      "exampleTranslation": "Berlin'in şehir haritanız var mı?",
+      "synonyms": [
+        "die Karte"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 429,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "der Reiseführer",
+      "turkish": "rehber kitap / turist rehberi",
+      "example": "Der Reiseführer empfiehlt dieses Museum.",
+      "exampleTranslation": "Rehber kitap bu müzeyi öneriyor.",
+      "synonyms": [
+        "der Guide"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 430,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "die Währung",
+      "turkish": "para birimi",
+      "example": "Die Währung in Deutschland ist der Euro.",
+      "exampleTranslation": "Almanya'da para birimi Euro.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 431,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "der Reisepass",
+      "turkish": "pasaport",
+      "example": "Vergiss nicht, deinen Reisepass mitzunehmen.",
+      "exampleTranslation": "Pasaportunu almayı unutma.",
+      "synonyms": [
+        "der Pass"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 432,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "das Visum",
+      "turkish": "vize",
+      "example": "Für diese Reise brauchen Sie ein Visum.",
+      "exampleTranslation": "Bu seyahat için vizeye ihtiyacınız var.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 433,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "der Koffer",
+      "turkish": "bavul",
+      "example": "Mein Koffer ist zu schwer für das Handgepäck.",
+      "exampleTranslation": "Bavulum el bagajı için çok ağır.",
+      "synonyms": [
+        "das Gepäck",
+        "die Tasche"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 434,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "die Unterkunft",
+      "turkish": "konaklama / barınak",
+      "example": "Wir suchen noch eine günstige Unterkunft.",
+      "exampleTranslation": "Hâlâ uygun fiyatlı konaklama arıyoruz.",
+      "synonyms": [
+        "die Herberge",
+        "das Quartier"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 435,
+      "categoryId": 5,
+      "unitId": 30,
+      "german": "die Versicherung",
+      "turkish": "sigorta",
+      "example": "Eine Reiseversicherung ist empfehlenswert.",
+      "exampleTranslation": "Seyahat sigortası tavsiye edilir.",
+      "synonyms": [],
+      "level": "B1"
+    }
+  ]
+}

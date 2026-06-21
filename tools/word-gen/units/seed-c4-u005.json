@@ -1,0 +1,212 @@
+{
+  "kind": "seed",
+  "unitId": 5,
+  "categoryId": 4,
+  "number": 1,
+  "title": "telc Resmi Dil ve Kurumsal Kelimeler",
+  "words": [
+    {
+      "id": 46,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "die Behörde",
+      "turkish": "resmi kurum / idare",
+      "example": "Ich muss zur Behörde, um meinen Pass zu verlängern.",
+      "exampleTranslation": "Pasaportumu uzatmak için resmi kuruma gitmem gerekiyor.",
+      "synonyms": [
+        "die Amt",
+        "die Institution"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 47,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "das Formular",
+      "turkish": "form / belge",
+      "example": "Bitte füllen Sie das Formular aus.",
+      "exampleTranslation": "Lütfen formu doldurun.",
+      "synonyms": [
+        "das Dokument",
+        "der Antrag"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 48,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "die Krankenversicherung",
+      "turkish": "sağlık sigortası",
+      "example": "In Deutschland ist die Krankenversicherung Pflicht.",
+      "exampleTranslation": "Almanya'da sağlık sigortası zorunludur.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 49,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "der Antrag",
+      "turkish": "başvuru / talep",
+      "example": "Ich stelle einen Antrag auf Kindergeld.",
+      "exampleTranslation": "Çocuk yardımı için başvuruyorum.",
+      "synonyms": [
+        "die Anfrage",
+        "das Gesuch"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 50,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "die Genehmigung",
+      "turkish": "izin / onay",
+      "example": "Ohne Genehmigung darf man hier nicht bauen.",
+      "exampleTranslation": "İzin olmadan burada inşaat yapamazsınız.",
+      "synonyms": [
+        "die Erlaubnis",
+        "die Zulassung"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 51,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "kündigen",
+      "turkish": "feshetmek / işten çıkarmak / istifa etmek",
+      "example": "Er hat seinen Job gekündigt.",
+      "exampleTranslation": "İşinden istifa etti.",
+      "synonyms": [
+        "entlassen",
+        "auflösen"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 52,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "die Kündigung",
+      "turkish": "fesih / istifa bildirimi",
+      "example": "Die Kündigung muss schriftlich erfolgen.",
+      "exampleTranslation": "Fesih yazılı olarak yapılmalıdır.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 53,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "der Vertrag",
+      "turkish": "sözleşme / anlaşma",
+      "example": "Bitte lesen Sie den Vertrag sorgfältig durch.",
+      "exampleTranslation": "Lütfen sözleşmeyi dikkatlice okuyun.",
+      "synonyms": [
+        "die Vereinbarung",
+        "das Abkommen"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 54,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "die Frist",
+      "turkish": "süre / son tarih",
+      "example": "Die Frist für die Bewerbung endet morgen.",
+      "exampleTranslation": "Başvuru süresi yarın bitiyor.",
+      "synonyms": [
+        "die Deadline",
+        "der Termin"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 55,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "beantragen",
+      "turkish": "başvurmak / talep etmek",
+      "example": "Ich beantrage ein Visum für Deutschland.",
+      "exampleTranslation": "Almanya için vize başvurusunda bulunuyorum.",
+      "synonyms": [
+        "anfordern",
+        "stellen"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 56,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "die Pflicht",
+      "turkish": "görev / yükümlülük",
+      "example": "Es ist meine Pflicht, pünktlich zu erscheinen.",
+      "exampleTranslation": "Zamanında görünmek benim görevimdir.",
+      "synonyms": [
+        "die Verpflichtung",
+        "die Obliegenheit"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 57,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "das Recht",
+      "turkish": "hak / hukuk",
+      "example": "Jeder Mensch hat das Recht auf Bildung.",
+      "exampleTranslation": "Her insanın eğitim hakkı vardır.",
+      "synonyms": [
+        "der Anspruch",
+        "die Befugnis"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 58,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "zuständig",
+      "turkish": "yetkili / sorumlu",
+      "example": "Welche Behörde ist für diesen Fall zuständig?",
+      "exampleTranslation": "Bu dava için hangi kurum yetkilidir?",
+      "synonyms": [
+        "verantwortlich",
+        "kompetent"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 59,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "die Aufenthaltserlaubnis",
+      "turkish": "oturma izni",
+      "example": "Ich habe eine Aufenthaltserlaubnis für zwei Jahre.",
+      "exampleTranslation": "İki yıllık oturma iznim var.",
+      "synonyms": [
+        "das Visum"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 60,
+      "categoryId": 4,
+      "unitId": 5,
+      "german": "nachweisen",
+      "turkish": "kanıtlamak / belgelemek",
+      "example": "Sie müssen Ihre Sprachkenntnisse nachweisen.",
+      "exampleTranslation": "Dil bilginizi belgelemeniz gerekiyor.",
+      "synonyms": [
+        "beweisen",
+        "belegen"
+      ],
+      "level": "B2"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "kind": "seed",
+  "unitId": 28,
+  "categoryId": 4,
+  "number": 3,
+  "title": "telc C1 — Üst Düzey İfadeler",
+  "words": [
+    {
+      "id": 556,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "die Inanspruchnahme",
+      "turkish": "yararlanma / kullanım",
+      "example": "Die Inanspruchnahme öffentlicher Leistungen ist gestiegen.",
+      "exampleTranslation": "Kamu hizmetlerinden yararlanım arttı.",
+      "synonyms": [
+        "die Nutzung",
+        "die Verwendung"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 557,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "die Bewältigung",
+      "turkish": "baş etme / üstesinden gelme",
+      "example": "Die Bewältigung des Alltags fällt ihm schwer.",
+      "exampleTranslation": "Günlük hayatın üstesinden gelmek ona zor geliyor.",
+      "synonyms": [
+        "die Überwindung",
+        "die Meisterung"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 558,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "die Verflechtung",
+      "turkish": "iç içe geçme / bağlantı",
+      "example": "Die wirtschaftliche Verflechtung der Länder nimmt zu.",
+      "exampleTranslation": "Ülkelerin ekonomik entegrasyonu artıyor.",
+      "synonyms": [
+        "die Vernetzung",
+        "die Verknüpfung"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 559,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "das Gefüge",
+      "turkish": "yapı / düzen / sistem",
+      "example": "Das gesellschaftliche Gefüge ist im Wandel.",
+      "exampleTranslation": "Toplumsal yapı değişim içinde.",
+      "synonyms": [
+        "die Struktur",
+        "das System"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 560,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "die Auseinandersetzung",
+      "turkish": "tartışma / yüzleşme / çatışma",
+      "example": "Eine konstruktive Auseinandersetzung ist nötig.",
+      "exampleTranslation": "Yapıcı bir tartışma gereklidir.",
+      "synonyms": [
+        "die Debatte",
+        "der Konflikt"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 561,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "die Einschränkung",
+      "turkish": "kısıtlama / sınırlama",
+      "example": "Die neuen Regeln bedeuten eine erhebliche Einschränkung.",
+      "exampleTranslation": "Yeni kurallar önemli bir kısıtlama anlamına geliyor.",
+      "synonyms": [
+        "die Beschränkung",
+        "die Limitierung"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 562,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "maßgeblich",
+      "turkish": "belirleyici / önemli ölçüde",
+      "example": "Er hat maßgeblich zur Lösung beigetragen.",
+      "exampleTranslation": "Çözüme önemli ölçüde katkıda bulundu.",
+      "synonyms": [
+        "entscheidend",
+        "wesentlich"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 563,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "die Herangehensweise",
+      "turkish": "yaklaşım biçimi / yöntem",
+      "example": "Eine systematische Herangehensweise ist empfehlenswert.",
+      "exampleTranslation": "Sistematik bir yaklaşım önerilir.",
+      "synonyms": [
+        "der Ansatz",
+        "die Methode"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 564,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "gegebenenfalls",
+      "turkish": "gerekirse / duruma göre",
+      "example": "Gegebenenfalls müssen wir den Plan ändern.",
+      "exampleTranslation": "Gerekirse planı değiştirmemiz gerekecek.",
+      "synonyms": [
+        "falls nötig",
+        "ggf."
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 565,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "die Beeinträchtigung",
+      "turkish": "olumsuz etki / zarar",
+      "example": "Lärm führt zu einer Beeinträchtigung der Gesundheit.",
+      "exampleTranslation": "Gürültü sağlığa zarar verir.",
+      "synonyms": [
+        "die Schädigung",
+        "der Schaden"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 566,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "die Verhältnismäßigkeit",
+      "turkish": "orantılılık / ölçülülük",
+      "example": "Das Gericht prüfte die Verhältnismäßigkeit der Maßnahme.",
+      "exampleTranslation": "Mahkeme önlemin orantılılığını inceledi.",
+      "synonyms": [
+        "die Angemessenheit"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 567,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "einschlägig",
+      "turkish": "ilgili / konuyla alakalı",
+      "example": "Die einschlägigen Gesetze wurden geändert.",
+      "exampleTranslation": "İlgili yasalar değiştirildi.",
+      "synonyms": [
+        "relevant",
+        "zutreffend"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 568,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "die Abwägung",
+      "turkish": "tartma / değerlendirme / denge",
+      "example": "Nach sorgfältiger Abwägung entschied sie sich dagegen.",
+      "exampleTranslation": "Dikkatli bir değerlendirmeden sonra karşı çıktı.",
+      "synonyms": [
+        "die Überlegung",
+        "die Bewertung"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 569,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "im Hinblick auf",
+      "turkish": "-e göre / -i göz önünde bulundurarak",
+      "example": "Im Hinblick auf die Kosten ist der Plan riskant.",
+      "exampleTranslation": "Maliyetler göz önünde bulundurulduğunda plan riskli.",
+      "synonyms": [
+        "bezüglich",
+        "hinsichtlich"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 570,
+      "categoryId": 4,
+      "unitId": 28,
+      "german": "die Schlussfolgerung",
+      "turkish": "sonuç / çıkarım",
+      "example": "Die Schlussfolgerung des Berichts ist eindeutig.",
+      "exampleTranslation": "Raporun sonucu açıktır.",
+      "synonyms": [
+        "die Konklusion",
+        "das Fazit"
+      ],
+      "level": "C1"
+    }
+  ]
+}

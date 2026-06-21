@@ -1,0 +1,202 @@
+{
+  "kind": "seed",
+  "unitId": 15,
+  "categoryId": 1,
+  "number": 8,
+  "title": "Ulaşım ve Seyahat",
+  "words": [
+    {
+      "id": 211,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "das Auto",
+      "turkish": "araba / otomobil",
+      "example": "Ich fahre jeden Tag mit dem Auto zur Arbeit.",
+      "exampleTranslation": "Her gün arabayla işe gidiyorum.",
+      "synonyms": [
+        "der Wagen",
+        "das Fahrzeug"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 212,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "der Bus",
+      "turkish": "otobüs",
+      "example": "Der Bus kommt alle zehn Minuten.",
+      "exampleTranslation": "Otobüs her on dakikada bir geliyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 213,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "die U-Bahn",
+      "turkish": "metro",
+      "example": "Die U-Bahn ist schneller als der Bus.",
+      "exampleTranslation": "Metro otobüsten daha hızlı.",
+      "synonyms": [
+        "die Untergrundbahn"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 214,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "der Zug",
+      "turkish": "tren",
+      "example": "Der Zug nach Berlin fährt um 9 Uhr ab.",
+      "exampleTranslation": "Berlin treni saat 9'da kalkıyor.",
+      "synonyms": [
+        "die Bahn",
+        "der ICE"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 215,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "das Flugzeug",
+      "turkish": "uçak",
+      "example": "Das Flugzeug landet in zwei Stunden.",
+      "exampleTranslation": "Uçak iki saat sonra iniyor.",
+      "synonyms": [
+        "die Maschine",
+        "der Flieger"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 216,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "der Bahnhof",
+      "turkish": "tren istasyonu / gar",
+      "example": "Wo ist der nächste Bahnhof?",
+      "exampleTranslation": "En yakın istasyon nerede?",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 217,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "der Flughafen",
+      "turkish": "havalimanı",
+      "example": "Der Flughafen ist 30 km von der Stadt entfernt.",
+      "exampleTranslation": "Havalimanı şehirden 30 km uzakta.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 218,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "das Ticket",
+      "turkish": "bilet",
+      "example": "Ich habe mein Ticket online gekauft.",
+      "exampleTranslation": "Biletimi online aldım.",
+      "synonyms": [
+        "die Fahrkarte",
+        "der Fahrschein"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 219,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "abfahren",
+      "turkish": "hareket etmek / kalkmak",
+      "example": "Der Zug fährt in fünf Minuten ab.",
+      "exampleTranslation": "Tren beş dakika sonra kalkıyor.",
+      "synonyms": [
+        "losfahren"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 220,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "ankommen",
+      "turkish": "varmak / ulaşmak",
+      "example": "Wann kommt der Zug an?",
+      "exampleTranslation": "Tren ne zaman varıyor?",
+      "synonyms": [
+        "eintreffen"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 221,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "umsteigen",
+      "turkish": "aktarma yapmak",
+      "example": "Sie müssen in Frankfurt umsteigen.",
+      "exampleTranslation": "Frankfurt'ta aktarma yapmanız gerekiyor.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 222,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "die Verspätung",
+      "turkish": "gecikme",
+      "example": "Der Flug hat eine Stunde Verspätung.",
+      "exampleTranslation": "Uçuşun bir saat gecikmesi var.",
+      "synonyms": [
+        "die Verzögerung"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 223,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "die Reise",
+      "turkish": "yolculuk / gezi",
+      "example": "Die Reise nach Istanbul war wunderschön.",
+      "exampleTranslation": "İstanbul'a yapılan yolculuk çok güzeldi.",
+      "synonyms": [
+        "der Trip",
+        "die Tour"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 224,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "der Urlaub",
+      "turkish": "tatil",
+      "example": "Nächsten Sommer machen wir Urlaub in Italien.",
+      "exampleTranslation": "Gelecek yaz İtalya'da tatil yapacağız.",
+      "synonyms": [
+        "die Ferien",
+        "der Erholungsurlaub"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 225,
+      "categoryId": 1,
+      "unitId": 15,
+      "german": "packen",
+      "turkish": "bavul toplamak / paketlemek",
+      "example": "Ich muss noch meinen Koffer packen.",
+      "exampleTranslation": "Valizimi hâlâ toplamam gerekiyor.",
+      "synonyms": [
+        "einpacken"
+      ],
+      "level": "A2"
+    }
+  ]
+}

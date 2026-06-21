@@ -1,0 +1,204 @@
+{
+  "kind": "seed",
+  "unitId": 20,
+  "categoryId": 2,
+  "number": 2,
+  "title": "Temel Eylemler",
+  "words": [
+    {
+      "id": 286,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "machen",
+      "turkish": "yapmak",
+      "example": "Was machst du am Wochenende?",
+      "exampleTranslation": "Hafta sonu ne yapıyorsun?",
+      "synonyms": [
+        "tun",
+        "erledigen"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 287,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "sagen",
+      "turkish": "söylemek",
+      "example": "Was hast du gesagt?",
+      "exampleTranslation": "Ne dedin?",
+      "synonyms": [
+        "sprechen",
+        "äußern"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 288,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "kommen",
+      "turkish": "gelmek",
+      "example": "Wann kommst du nach Hause?",
+      "exampleTranslation": "Eve ne zaman geliyorsun?",
+      "synonyms": [
+        "ankommen"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 289,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "wissen",
+      "turkish": "bilmek",
+      "example": "Ich weiß nicht, was ich tun soll.",
+      "exampleTranslation": "Ne yapacağımı bilmiyorum.",
+      "synonyms": [
+        "kennen"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 290,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "sehen",
+      "turkish": "görmek",
+      "example": "Ich sehe ihn jeden Tag im Büro.",
+      "exampleTranslation": "Onu her gün ofiste görüyorum.",
+      "synonyms": [
+        "blicken",
+        "schauen"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 291,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "geben",
+      "turkish": "vermek",
+      "example": "Kannst du mir bitte das Salz geben?",
+      "exampleTranslation": "Bana tuzu verir misin lütfen?",
+      "synonyms": [
+        "überreichen"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 292,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "nehmen",
+      "turkish": "almak",
+      "example": "Nimm dir einen Apfel vom Tisch.",
+      "exampleTranslation": "Masadan bir elma al.",
+      "synonyms": [
+        "greifen"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 293,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "arbeiten",
+      "turkish": "çalışmak",
+      "example": "Meine Mutter arbeitet als Ärztin.",
+      "exampleTranslation": "Annem doktor olarak çalışıyor.",
+      "synonyms": [
+        "tätig sein"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 294,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "helfen",
+      "turkish": "yardım etmek",
+      "example": "Kann ich dir helfen?",
+      "exampleTranslation": "Sana yardım edebilir miyim?",
+      "synonyms": [
+        "unterstützen",
+        "assistieren"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 295,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "spielen",
+      "turkish": "oynamak",
+      "example": "Die Kinder spielen im Park.",
+      "exampleTranslation": "Çocuklar parkta oynuyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 296,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "lesen",
+      "turkish": "okumak",
+      "example": "Ich lese jeden Abend ein Buch.",
+      "exampleTranslation": "Her akşam kitap okuyorum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 297,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "schreiben",
+      "turkish": "yazmak",
+      "example": "Schreib mir eine E-Mail.",
+      "exampleTranslation": "Bana bir e-posta yaz.",
+      "synonyms": [
+        "verfassen"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 298,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "hören",
+      "turkish": "duymak / dinlemek",
+      "example": "Ich höre gerne Musik.",
+      "exampleTranslation": "Müzik dinlemeyi severim.",
+      "synonyms": [
+        "zuhören"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 299,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "essen",
+      "turkish": "yemek",
+      "example": "Was möchtest du essen?",
+      "exampleTranslation": "Ne yemek istersin?",
+      "synonyms": [
+        "speisen"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 300,
+      "categoryId": 2,
+      "unitId": 20,
+      "german": "schlafen",
+      "turkish": "uyumak",
+      "example": "Das Baby schläft die ganze Nacht.",
+      "exampleTranslation": "Bebek bütün gece uyuyor.",
+      "synonyms": [
+        "ruhen"
+      ],
+      "level": "A1"
+    }
+  ]
+}

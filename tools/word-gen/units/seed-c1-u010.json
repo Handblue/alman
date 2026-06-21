@@ -1,0 +1,192 @@
+{
+  "kind": "seed",
+  "unitId": 10,
+  "categoryId": 1,
+  "number": 3,
+  "title": "Vücut ve Sağlık",
+  "words": [
+    {
+      "id": 136,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "der Kopf",
+      "turkish": "baş / kafa",
+      "example": "Ich habe Kopfschmerzen.",
+      "exampleTranslation": "Başım ağrıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 137,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "das Auge",
+      "turkish": "göz",
+      "example": "Sie hat schöne blaue Augen.",
+      "exampleTranslation": "Onun güzel mavi gözleri var.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 138,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "die Nase",
+      "turkish": "burun",
+      "example": "Meine Nase läuft wegen der Erkältung.",
+      "exampleTranslation": "Soğuk algınlığı yüzünden burnum akıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 139,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "der Mund",
+      "turkish": "ağız",
+      "example": "Beim Essen soll man den Mund nicht öffnen.",
+      "exampleTranslation": "Yemek yerken ağzını açmamalısın.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 140,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "das Ohr",
+      "turkish": "kulak",
+      "example": "Ich kann dich kaum hören, mein Ohr tut weh.",
+      "exampleTranslation": "Seni zor duyuyorum, kulağım ağrıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 141,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "die Hand",
+      "turkish": "el",
+      "example": "Gib mir deine Hand!",
+      "exampleTranslation": "Elini bana ver!",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 142,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "der Fuß",
+      "turkish": "ayak",
+      "example": "Mein Fuß tut weh, ich kann nicht laufen.",
+      "exampleTranslation": "Ayağım ağrıyor, koşamıyorum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 143,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "der Bauch",
+      "turkish": "karın / göbek",
+      "example": "Ich habe Bauchschmerzen nach dem Essen.",
+      "exampleTranslation": "Yemekten sonra karnım ağrıyor.",
+      "synonyms": [
+        "der Magen"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 144,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "krank",
+      "turkish": "hasta",
+      "example": "Ich bin krank und muss zum Arzt.",
+      "exampleTranslation": "Hastayım ve doktora gitmem gerekiyor.",
+      "synonyms": [
+        "unwohl",
+        "leidend"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 145,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "der Arzt",
+      "turkish": "doktor",
+      "example": "Der Arzt verschreibt mir Medikamente.",
+      "exampleTranslation": "Doktor bana ilaç yazıyor.",
+      "synonyms": [
+        "der Mediziner",
+        "der Doktor"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 146,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "das Krankenhaus",
+      "turkish": "hastane",
+      "example": "Er liegt seit drei Tagen im Krankenhaus.",
+      "exampleTranslation": "Üç gündür hastanede yatıyor.",
+      "synonyms": [
+        "die Klinik"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 147,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "das Medikament",
+      "turkish": "ilaç",
+      "example": "Vergiss nicht, dein Medikament zu nehmen.",
+      "exampleTranslation": "İlacını almayı unutma.",
+      "synonyms": [
+        "das Mittel",
+        "die Tablette"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 148,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "die Erkältung",
+      "turkish": "soğuk algınlığı",
+      "example": "Im Winter bekommt man leicht eine Erkältung.",
+      "exampleTranslation": "Kışın kolayca soğuk algınlığı olur.",
+      "synonyms": [
+        "der Schnupfen"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 149,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "das Fieber",
+      "turkish": "ateş / hararet",
+      "example": "Das Kind hat hohes Fieber.",
+      "exampleTranslation": "Çocuğun yüksek ateşi var.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 150,
+      "categoryId": 1,
+      "unitId": 10,
+      "german": "gesund",
+      "turkish": "sağlıklı",
+      "example": "Sport treiben ist gesund.",
+      "exampleTranslation": "Spor yapmak sağlıklıdır.",
+      "synonyms": [
+        "fit",
+        "wohlauf"
+      ],
+      "level": "A1"
+    }
+  ]
+}

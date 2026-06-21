@@ -1,0 +1,212 @@
+{
+  "kind": "seed",
+  "unitId": 37,
+  "categoryId": 7,
+  "number": 3,
+  "title": "Epistemoloji ve Mantık",
+  "words": [
+    {
+      "id": 586,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "die Erkenntnistheorie",
+      "turkish": "bilgi teorisi / epistemoloji",
+      "example": "Die Erkenntnistheorie fragt: Was können wir wissen?",
+      "exampleTranslation": "Bilgi teorisi sorar: Neyi bilebiliriz?",
+      "synonyms": [
+        "die Epistemologie",
+        "die Gnoseologie"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 587,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "die Deduktion",
+      "turkish": "tümdengelim",
+      "example": "Durch Deduktion schließt man vom Allgemeinen auf das Besondere.",
+      "exampleTranslation": "Tümdengelimde genelden özele ulaşılır.",
+      "synonyms": [
+        "das deduktive Schließen"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 588,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "die Induktion",
+      "turkish": "tümevarım",
+      "example": "Induktion bedeutet, vom Einzelfall auf das Allgemeine zu schließen.",
+      "exampleTranslation": "Tümevarım, tekil durumdan genele ulaşmak demektir.",
+      "synonyms": [
+        "das induktive Schließen"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 589,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "der Syllogismus",
+      "turkish": "kıyas / silogizm",
+      "example": "Der klassische Syllogismus lautet: Alle Menschen sind sterblich.",
+      "exampleTranslation": "Klasik silogizm şöyledir: Tüm insanlar ölümlüdür.",
+      "synonyms": [
+        "der Schluss",
+        "die Schlussfolgerung"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 590,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "die Prämisse",
+      "turkish": "öncül / ön koşul",
+      "example": "Die Prämisse muss wahr sein, damit die Schlussfolgerung gilt.",
+      "exampleTranslation": "Sonucun geçerli olması için öncül doğru olmalıdır.",
+      "synonyms": [
+        "die Voraussetzung",
+        "der Ausgangspunkt"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 591,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "die Empirie",
+      "turkish": "deneyim / ampiri",
+      "example": "Die Empirie ist die Grundlage der Naturwissenschaften.",
+      "exampleTranslation": "Deneyim, doğa bilimlerinin temelidir.",
+      "synonyms": [
+        "die Erfahrung",
+        "die Beobachtung"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 592,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "der Rationalismus",
+      "turkish": "akılcılık / rasyonalizm",
+      "example": "Descartes gilt als Vater des Rationalismus.",
+      "exampleTranslation": "Descartes, rasyonalizmin babası olarak kabul edilir.",
+      "synonyms": [
+        "der Vernunftglaube"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 593,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "der Empirismus",
+      "turkish": "deneyimcilik / empirizm",
+      "example": "Locke und Hume vertraten den Empirismus.",
+      "exampleTranslation": "Locke ve Hume empirizmi savundu.",
+      "synonyms": [
+        "der Erfahrungsglaube"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 594,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "das Paradoxon",
+      "turkish": "paradoks / çelişki",
+      "example": "Das Lügner-Paradoxon ist ein klassisches Beispiel.",
+      "exampleTranslation": "Yalancı paradoksu klasik bir örnektir.",
+      "synonyms": [
+        "der Widerspruch",
+        "die Antinomie"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 595,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "die Tautologie",
+      "turkish": "totoloji / gereksiz tekrar",
+      "example": "Ein Kreis ist rund – das ist eine Tautologie.",
+      "exampleTranslation": "Daire yuvarlaktır – bu bir totoloji.",
+      "synonyms": [
+        "die Wiederholung",
+        "die Redundanz"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 596,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "die Kausalität",
+      "turkish": "nedensellik",
+      "example": "Die Kausalität verbindet Ursache und Wirkung.",
+      "exampleTranslation": "Nedensellik sebep ile sonucu birbirine bağlar.",
+      "synonyms": [
+        "die Ursächlichkeit",
+        "das Kausalitätsprinzip"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 597,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "die Kontingenz",
+      "turkish": "olasılık / olumsallık",
+      "example": "Kontingenz bedeutet: Es hätte auch anders sein können.",
+      "exampleTranslation": "Olumsallık demek: Farklı da olabilirdi.",
+      "synonyms": [
+        "die Zufälligkeit",
+        "die Möglichkeit"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 598,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "die Abstraktion",
+      "turkish": "soyutlama",
+      "example": "Abstraktion ist das Herausarbeiten wesentlicher Merkmale.",
+      "exampleTranslation": "Soyutlama, temel özelliklerin ortaya çıkarılmasıdır.",
+      "synonyms": [
+        "die Verallgemeinerung"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 599,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "das Apriori",
+      "turkish": "a priori / deneyim öncesi bilgi",
+      "example": "Kant unterscheidet zwischen apriorischen und empirischen Urteilen.",
+      "exampleTranslation": "Kant, a priori ve ampirik yargıları birbirinden ayırır.",
+      "synonyms": [
+        "das Vorwissen"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 600,
+      "categoryId": 7,
+      "unitId": 37,
+      "german": "das Aposteriori",
+      "turkish": "a posteriori / deneyimden gelen bilgi",
+      "example": "Aposteriori-Wissen entsteht durch Beobachtung und Erfahrung.",
+      "exampleTranslation": "A posteriori bilgi, gözlem ve deneyimle elde edilir.",
+      "synonyms": [
+        "das Erfahrungswissen"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "kind": "seed",
+  "unitId": 21,
+  "categoryId": 2,
+  "number": 3,
+  "title": "Geçmiş Zaman Fiilleri",
+  "words": [
+    {
+      "id": 301,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "haben (hatte)",
+      "turkish": "sahip olmak — geçmiş",
+      "example": "Ich hatte gestern keine Zeit.",
+      "exampleTranslation": "Dün zamanım yoktu.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 302,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "sein (war)",
+      "turkish": "olmak — geçmiş",
+      "example": "Er war gestern krank.",
+      "exampleTranslation": "Dün hastaydı.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 303,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "fahren (fuhr)",
+      "turkish": "gitmek/sürmek — geçmiş",
+      "example": "Wir fuhren letzten Sommer nach Bayern.",
+      "exampleTranslation": "Geçen yaz Bavyera'ya gittik.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 304,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "gehen (ging)",
+      "turkish": "gitmek (yürümek) — geçmiş",
+      "example": "Sie ging gestern ins Kino.",
+      "exampleTranslation": "Dün sinemaya gitti.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 305,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "sprechen (sprach)",
+      "turkish": "konuşmak — geçmiş",
+      "example": "Er sprach mit seinem Chef.",
+      "exampleTranslation": "Patronuyla konuştu.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 306,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "kommen (kam)",
+      "turkish": "gelmek — geçmiş",
+      "example": "Der Brief kam heute Morgen an.",
+      "exampleTranslation": "Mektup bu sabah geldi.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 307,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "sehen (sah)",
+      "turkish": "görmek — geçmiş",
+      "example": "Ich sah ihn an der Universität.",
+      "exampleTranslation": "Onu üniversitede gördüm.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 308,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "essen (aß)",
+      "turkish": "yemek — geçmiş",
+      "example": "Wir aßen zusammen in einem Restaurant.",
+      "exampleTranslation": "Bir restoranda birlikte yedik.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 309,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "schreiben (schrieb)",
+      "turkish": "yazmak — geçmiş",
+      "example": "Sie schrieb ihm einen langen Brief.",
+      "exampleTranslation": "Ona uzun bir mektup yazdı.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 310,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "nehmen (nahm)",
+      "turkish": "almak — geçmiş",
+      "example": "Er nahm das letzte Stück Kuchen.",
+      "exampleTranslation": "Son dilim pastayı aldı.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 311,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "geben (gab)",
+      "turkish": "vermek — geçmiş",
+      "example": "Sie gab mir ihren Schlüssel.",
+      "exampleTranslation": "Bana anahtarını verdi.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 312,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "finden (fand)",
+      "turkish": "bulmak — geçmiş",
+      "example": "Ich fand meinen Schlüssel unter dem Sofa.",
+      "exampleTranslation": "Anahtarımı kanepenin altında buldum.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 313,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "lesen (las)",
+      "turkish": "okumak — geçmiş",
+      "example": "Er las das Buch in zwei Tagen.",
+      "exampleTranslation": "Kitabı iki günde okudu.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 314,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "stehen (stand)",
+      "turkish": "durmak — geçmiş",
+      "example": "Sie stand lange an der Haltestelle.",
+      "exampleTranslation": "Uzun süre durağında bekledi.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 315,
+      "categoryId": 2,
+      "unitId": 21,
+      "german": "denken (dachte)",
+      "turkish": "düşünmek — geçmiş",
+      "example": "Ich dachte, du wärst zu Hause.",
+      "exampleTranslation": "Evde olduğunu sanmıştım.",
+      "synonyms": [],
+      "level": "A2"
+    }
+  ]
+}

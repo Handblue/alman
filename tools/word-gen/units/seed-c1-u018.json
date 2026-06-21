@@ -1,0 +1,180 @@
+{
+  "kind": "seed",
+  "unitId": 18,
+  "categoryId": 1,
+  "number": 11,
+  "title": "Renkler ve Şekiller",
+  "words": [
+    {
+      "id": 256,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "rot",
+      "turkish": "kırmızı",
+      "example": "Die Rosen sind rot.",
+      "exampleTranslation": "Güller kırmızıdır.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 257,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "blau",
+      "turkish": "mavi",
+      "example": "Der Himmel ist heute blau.",
+      "exampleTranslation": "Bugün gökyüzü mavi.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 258,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "grün",
+      "turkish": "yeşil",
+      "example": "Das Gras ist grün.",
+      "exampleTranslation": "Çimen yeşildir.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 259,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "gelb",
+      "turkish": "sarı",
+      "example": "Die Bananen sind gelb.",
+      "exampleTranslation": "Muzlar sarıdır.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 260,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "schwarz",
+      "turkish": "siyah",
+      "example": "Er trägt immer schwarze Kleidung.",
+      "exampleTranslation": "Her zaman siyah giysi giyer.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 261,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "weiß",
+      "turkish": "beyaz",
+      "example": "Schnee ist weiß.",
+      "exampleTranslation": "Kar beyazdır.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 262,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "grau",
+      "turkish": "gri",
+      "example": "Der Himmel ist heute grau und bewölkt.",
+      "exampleTranslation": "Bugün gökyüzü gri ve bulutlu.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 263,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "braun",
+      "turkish": "kahverengi",
+      "example": "Sie hat braune Haare.",
+      "exampleTranslation": "Kahverengi saçları var.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 264,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "der Kreis",
+      "turkish": "daire / çember",
+      "example": "Zeichne einen Kreis auf das Papier.",
+      "exampleTranslation": "Kağıda bir daire çiz.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 265,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "das Quadrat",
+      "turkish": "kare",
+      "example": "Ein Quadrat hat vier gleiche Seiten.",
+      "exampleTranslation": "Karenin dört eşit kenarı vardır.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 266,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "das Dreieck",
+      "turkish": "üçgen",
+      "example": "Das Dreieck hat drei Seiten.",
+      "exampleTranslation": "Üçgenin üç kenarı vardır.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 267,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "rund",
+      "turkish": "yuvarlak",
+      "example": "Der Ball ist rund.",
+      "exampleTranslation": "Top yuvarlaktır.",
+      "synonyms": [
+        "kreisförmig"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 268,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "eckig",
+      "turkish": "köşeli / açılı",
+      "example": "Der Tisch ist eckig, nicht rund.",
+      "exampleTranslation": "Masa köşeli, yuvarlak değil.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 269,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "hell",
+      "turkish": "açık (renk) / aydınlık",
+      "example": "Das Zimmer ist sehr hell.",
+      "exampleTranslation": "Oda çok aydınlık.",
+      "synonyms": [
+        "leuchtend"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 270,
+      "categoryId": 1,
+      "unitId": 18,
+      "german": "dunkel",
+      "turkish": "koyu (renk) / karanlık",
+      "example": "Es wird früh dunkel im Winter.",
+      "exampleTranslation": "Kışın erken karanlık oluyor.",
+      "synonyms": [
+        "finster"
+      ],
+      "level": "A1"
+    }
+  ]
+}

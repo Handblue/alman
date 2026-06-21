@@ -1,0 +1,202 @@
+{
+  "kind": "seed",
+  "unitId": 17,
+  "categoryId": 1,
+  "number": 10,
+  "title": "Okul ve Ders",
+  "words": [
+    {
+      "id": 241,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "der Lehrer",
+      "turkish": "öğretmen (erkek)",
+      "example": "Mein Lehrer erklärt alles sehr gut.",
+      "exampleTranslation": "Öğretmenim her şeyi çok iyi anlatıyor.",
+      "synonyms": [
+        "der Pädagoge"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 242,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "die Lehrerin",
+      "turkish": "öğretmen (kadın)",
+      "example": "Unsere Lehrerin ist sehr geduldig.",
+      "exampleTranslation": "Öğretmenimiz çok sabırlı.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 243,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "der Schüler",
+      "turkish": "öğrenci (okul)",
+      "example": "Der Schüler schreibt die Hausaufgaben.",
+      "exampleTranslation": "Öğrenci ödev yazıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 244,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "die Hausaufgabe",
+      "turkish": "ev ödevi",
+      "example": "Hast du deine Hausaufgaben gemacht?",
+      "exampleTranslation": "Ev ödevini yaptın mı?",
+      "synonyms": [
+        "die Schulaufgabe"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 245,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "die Prüfung",
+      "turkish": "sınav",
+      "example": "Morgen habe ich eine wichtige Prüfung.",
+      "exampleTranslation": "Yarın önemli bir sınavım var.",
+      "synonyms": [
+        "der Test",
+        "die Klausur"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 246,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "lernen",
+      "turkish": "öğrenmek / çalışmak",
+      "example": "Ich lerne jeden Tag neue Wörter.",
+      "exampleTranslation": "Her gün yeni kelimeler öğreniyorum.",
+      "synonyms": [
+        "studieren",
+        "üben"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 247,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "verstehen",
+      "turkish": "anlamak",
+      "example": "Ich verstehe diese Aufgabe nicht.",
+      "exampleTranslation": "Bu görevi anlamıyorum.",
+      "synonyms": [
+        "begreifen",
+        "kapieren"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 248,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "das Heft",
+      "turkish": "defter",
+      "example": "Schreib das bitte in dein Heft.",
+      "exampleTranslation": "Bunu lütfen defterine yaz.",
+      "synonyms": [
+        "das Notizbuch"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 249,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "der Stift",
+      "turkish": "kalem",
+      "example": "Hast du einen Stift für mich?",
+      "exampleTranslation": "Benim için bir kalemin var mı?",
+      "synonyms": [
+        "der Kugelschreiber",
+        "der Bleistift"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 250,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "die Note",
+      "turkish": "not / puan",
+      "example": "Er hat eine sehr gute Note bekommen.",
+      "exampleTranslation": "Çok iyi not aldı.",
+      "synonyms": [
+        "die Bewertung",
+        "die Zensur"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 251,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "die Pause",
+      "turkish": "ara / mola",
+      "example": "In der Pause spielen die Kinder draußen.",
+      "exampleTranslation": "Molada çocuklar dışarıda oynuyor.",
+      "synonyms": [
+        "die Unterbrechung"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 252,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "die Universität",
+      "turkish": "üniversite",
+      "example": "Sie studiert Medizin an der Universität.",
+      "exampleTranslation": "Üniversitede tıp okuyor.",
+      "synonyms": [
+        "die Uni",
+        "die Hochschule"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 253,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "das Studium",
+      "turkish": "öğrencilik / üniversite eğitimi",
+      "example": "Das Studium dauert fünf Jahre.",
+      "exampleTranslation": "Üniversite eğitimi beş yıl sürüyor.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 254,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "bestehen",
+      "turkish": "geçmek (sınav)",
+      "example": "Er hat die Prüfung mit Erfolg bestanden.",
+      "exampleTranslation": "Sınavı başarıyla geçti.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 255,
+      "categoryId": 1,
+      "unitId": 17,
+      "german": "durchfallen",
+      "turkish": "kalmak / başarısız olmak",
+      "example": "Sie ist bei der Prüfung durchgefallen.",
+      "exampleTranslation": "Sınavda kaldı.",
+      "synonyms": [
+        "nicht bestehen"
+      ],
+      "level": "A2"
+    }
+  ]
+}

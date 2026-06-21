@@ -1,0 +1,190 @@
+{
+  "kind": "seed",
+  "unitId": 22,
+  "categoryId": 2,
+  "number": 4,
+  "title": "Modal ve Gelecek",
+  "words": [
+    {
+      "id": 316,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "müssen",
+      "turkish": "zorunda olmak / -meli",
+      "example": "Ich muss morgen früh aufstehen.",
+      "exampleTranslation": "Yarın erken kalkmam gerekiyor.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 317,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "können",
+      "turkish": "yapabilmek / -ebilmek",
+      "example": "Kannst du mir helfen?",
+      "exampleTranslation": "Bana yardım edebilir misin?",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 318,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "wollen",
+      "turkish": "istemek",
+      "example": "Ich will Arzt werden.",
+      "exampleTranslation": "Doktor olmak istiyorum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 319,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "dürfen",
+      "turkish": "izni olmak / -ebilmek (izin)",
+      "example": "Darf ich hier rauchen?",
+      "exampleTranslation": "Burada sigara içebilir miyim?",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 320,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "sollen",
+      "turkish": "-meli (görev) / -ması lazım",
+      "example": "Du sollst pünktlich sein.",
+      "exampleTranslation": "Zamanında olman lazım.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 321,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "möchten",
+      "turkish": "istemek (nazik)",
+      "example": "Ich möchte einen Kaffee bitte.",
+      "exampleTranslation": "Bir kahve istiyorum lütfen.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 322,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "werden",
+      "turkish": "olmak / -ecek (gelecek)",
+      "example": "Morgen wird es regnen.",
+      "exampleTranslation": "Yarın yağmur yağacak.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 323,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "lassen",
+      "turkish": "bırakmak / izin vermek",
+      "example": "Lass mich in Ruhe!",
+      "exampleTranslation": "Beni rahat bırak!",
+      "synonyms": [
+        "erlauben"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 324,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "brauchen",
+      "turkish": "ihtiyacı olmak",
+      "example": "Ich brauche dringend deine Hilfe.",
+      "exampleTranslation": "Yardımına acilen ihtiyacım var.",
+      "synonyms": [
+        "benötigen"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 325,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "mögen",
+      "turkish": "sevmek / hoşlanmak",
+      "example": "Ich mag Schokolade sehr gerne.",
+      "exampleTranslation": "Çikolatayı çok seviyorum.",
+      "synonyms": [
+        "lieben",
+        "gerne haben"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 326,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "hätte gerne",
+      "turkish": "olmasını isterdim / alabilir miyim",
+      "example": "Ich hätte gerne ein Glas Wasser.",
+      "exampleTranslation": "Bir bardak su alabilir miyim.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 327,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "würde gerne",
+      "turkish": "-mek isterim (koşullu)",
+      "example": "Ich würde gerne nach Japan reisen.",
+      "exampleTranslation": "Japonya'ya seyahat etmek isterdim.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 328,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "vorhaben",
+      "turkish": "planlamak / niyetinde olmak",
+      "example": "Was hast du für das Wochenende vor?",
+      "exampleTranslation": "Hafta sonu için ne planladın?",
+      "synonyms": [
+        "planen",
+        "beabsichtigen"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 329,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "vorstellen",
+      "turkish": "hayal etmek / tanıtmak",
+      "example": "Ich kann mir das gut vorstellen.",
+      "exampleTranslation": "Bunu kolayca hayal edebiliyorum.",
+      "synonyms": [
+        "sich denken",
+        "präsentieren"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 330,
+      "categoryId": 2,
+      "unitId": 22,
+      "german": "aufhören",
+      "turkish": "bırakmak / durdurmak",
+      "example": "Hör auf zu rauchen!",
+      "exampleTranslation": "Sigara içmeyi bırak!",
+      "synonyms": [
+        "stoppen",
+        "beenden"
+      ],
+      "level": "A2"
+    }
+  ]
+}

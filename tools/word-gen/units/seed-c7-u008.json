@@ -1,0 +1,219 @@
+{
+  "kind": "seed",
+  "unitId": 8,
+  "categoryId": 7,
+  "number": 1,
+  "title": "Felsefi Kavramlar ve Terimler",
+  "words": [
+    {
+      "id": 91,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "die Wahrheit",
+      "turkish": "hakikat / doğruluk",
+      "example": "Sokrates suchte sein ganzes Leben nach der Wahrheit.",
+      "exampleTranslation": "Sokrates bütün hayatı boyunca hakikati aradı.",
+      "synonyms": [
+        "die Wirklichkeit",
+        "die Realität"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 92,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "das Sein",
+      "turkish": "varlık / var oluş",
+      "example": "Heidegger fragte nach dem Sinn des Seins.",
+      "exampleTranslation": "Heidegger varlığın anlamını sorguladı.",
+      "synonyms": [
+        "die Existenz",
+        "das Dasein"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 93,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "erkennen",
+      "turkish": "kavramak / fark etmek / bilmek",
+      "example": "Wir erkennen die Wahrheit durch die Vernunft.",
+      "exampleTranslation": "Hakikati akıl aracılığıyla kavrarız.",
+      "synonyms": [
+        "begreifen",
+        "verstehen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 94,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "die Vernunft",
+      "turkish": "akıl / us",
+      "example": "Kant stellte die Vernunft ins Zentrum seiner Philosophie.",
+      "exampleTranslation": "Kant, aklı felsefesinin merkezine koydu.",
+      "synonyms": [
+        "der Verstand",
+        "die Rationalität"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 95,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "das Bewusstsein",
+      "turkish": "bilinç / farkındalık",
+      "example": "Das Bewusstsein ist ein zentrales Thema der Philosophie des Geistes.",
+      "exampleTranslation": "Bilinç, zihin felsefesinin merkezi konusudur.",
+      "synonyms": [
+        "das Gewissen",
+        "das Selbstbewusstsein"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 96,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "die Ethik",
+      "turkish": "etik / ahlak felsefesi",
+      "example": "Die Ethik beschäftigt sich mit Gut und Böse.",
+      "exampleTranslation": "Etik, iyilik ve kötülükle ilgilenir.",
+      "synonyms": [
+        "die Moral",
+        "die Moralphilosophie"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 97,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "das Wesen",
+      "turkish": "öz / doğa / varlık",
+      "example": "Das Wesen des Menschen ist schwer zu definieren.",
+      "exampleTranslation": "İnsanın özünü tanımlamak zordur.",
+      "synonyms": [
+        "die Natur",
+        "das Ding an sich"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 98,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "hinterfragen",
+      "turkish": "sorgulamak / sorguya çekmek",
+      "example": "Philosophen hinterfragen alle Grundannahmen.",
+      "exampleTranslation": "Filozoflar tüm temel varsayımları sorgular.",
+      "synonyms": [
+        "in Frage stellen",
+        "zweifeln"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 99,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "die Freiheit",
+      "turkish": "özgürlük",
+      "example": "Die Freiheit des Willens ist ein klassisches philosophisches Problem.",
+      "exampleTranslation": "Özgür irade, klasik bir felsefi problemdir.",
+      "synonyms": [
+        "die Unabhängigkeit",
+        "die Autonomie"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 100,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "die Gerechtigkeit",
+      "turkish": "adalet / hakkaniyet",
+      "example": "Platon diskutierte die Gerechtigkeit im Staat.",
+      "exampleTranslation": "Platon, devlette adaleti tartıştı.",
+      "synonyms": [
+        "die Billigkeit",
+        "die Fairness"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 101,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "das Nichts",
+      "turkish": "hiçlik / yokluk",
+      "example": "Heidegger analysierte das Nichts als philosophisches Konzept.",
+      "exampleTranslation": "Heidegger, hiçliği felsefi bir kavram olarak analiz etti.",
+      "synonyms": [
+        "die Leere",
+        "das Vakuum"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 102,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "dialektisch",
+      "turkish": "diyalektik",
+      "example": "Hegels dialektisches Denken beeinflusste Marx stark.",
+      "exampleTranslation": "Hegel'in diyalektik düşüncesi Marx'ı çok etkiledi.",
+      "synonyms": [
+        "gegensätzlich",
+        "widersprüchlich"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 103,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "der Skeptizismus",
+      "turkish": "septisizm / şüphecilik",
+      "example": "Descartes begann seine Philosophie mit dem Skeptizismus.",
+      "exampleTranslation": "Descartes, felsefesine şüphecilikle başladı.",
+      "synonyms": [
+        "der Zweifel",
+        "die Skepsis"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 104,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "transzendent",
+      "turkish": "aşkın / transandant",
+      "example": "Kants transzendentale Ästhetik beschreibt Raum und Zeit.",
+      "exampleTranslation": "Kant'ın transandantal estetiği uzay ve zamanı açıklar.",
+      "synonyms": [
+        "übernatürlich",
+        "metaphysisch"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 105,
+      "categoryId": 7,
+      "unitId": 8,
+      "german": "die Ontologie",
+      "turkish": "ontoloji / varlıkbilim",
+      "example": "Die Ontologie fragt nach dem Wesen des Seins.",
+      "exampleTranslation": "Ontoloji, varlığın özünü sorgular.",
+      "synonyms": [
+        "die Seinslehre",
+        "die Metaphysik"
+      ],
+      "level": "C1"
+    }
+  ]
+}

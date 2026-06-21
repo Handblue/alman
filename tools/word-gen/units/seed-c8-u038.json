@@ -1,0 +1,174 @@
+{
+  "kind": "seed",
+  "unitId": 38,
+  "categoryId": 8,
+  "number": 2,
+  "title": "Duygusal Deyimler",
+  "words": [
+    {
+      "id": 511,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "aus der Haut fahren",
+      "turkish": "çıldırmak / sinirlenmek",
+      "example": "Er kann aus der Haut fahren, wenn man ihn ignoriert.",
+      "exampleTranslation": "Onu görmezden gelince çıldırıyor.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 512,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "jemandem das Herz brechen",
+      "turkish": "kalbini kırmak",
+      "example": "Sie hat ihm das Herz gebrochen, als sie ihn verließ.",
+      "exampleTranslation": "Onu terk ettiğinde kalbini kırdı.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 513,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "auf Wolke sieben sein",
+      "turkish": "mutluluktan uçmak / bulut dokuzda olmak",
+      "example": "Seit der Verlobung ist sie auf Wolke sieben.",
+      "exampleTranslation": "Nişanlandığından beri mutluluktan uçuyor.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 514,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "Schmetterlinge im Bauch haben",
+      "turkish": "kelebekler uçuşmak (aşk hissi)",
+      "example": "Wenn er sie sieht, hat er Schmetterlinge im Bauch.",
+      "exampleTranslation": "Onu gördüğünde içinde kelebekler uçuşuyor.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 515,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "in den Wolken schweben",
+      "turkish": "hayal kurmak / dalıp gitmek",
+      "example": "Er schweb immer in den Wolken und denkt kaum an die Realität.",
+      "exampleTranslation": "Sürekli hayal kuruyor ve gerçekliği pek düşünmüyor.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 516,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "einen Kloß im Hals haben",
+      "turkish": "boğazı düğümlenmek",
+      "example": "Bei der Verabschiedung hatte sie einen Kloß im Hals.",
+      "exampleTranslation": "Vedalaşırken boğazı düğümlendi.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 517,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "gut gelaunt sein",
+      "turkish": "neşeli olmak / iyi humorlu olmak",
+      "example": "Am Montag ist er nie gut gelaunt.",
+      "exampleTranslation": "Pazartesi günleri hiç neşeli olmuyor.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 518,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "auf dem Zaun sitzen",
+      "turkish": "kararsız kalmak / tarafsız olmak",
+      "example": "Er sitzt noch auf dem Zaun, ob er ausziehen soll.",
+      "exampleTranslation": "Taşınıp taşınmama konusunda hâlâ kararsız.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 519,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "ein Brett vor dem Kopf haben",
+      "turkish": "kafası çalışmamak / anlamamak",
+      "example": "Er hat ein Brett vor dem Kopf und versteht den Witz nicht.",
+      "exampleTranslation": "Kafası çalışmıyor ve şakayı anlamıyor.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 520,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "das Herz auf der Zunge tragen",
+      "turkish": "içini dışına vurmak / her şeyi açıkça söylemek",
+      "example": "Sie trägt das Herz auf der Zunge und sagt immer, was sie denkt.",
+      "exampleTranslation": "Her şeyi açıkça söylüyor, içini dışına vurmuyor.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "id": 521,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "sich in die Nesseln setzen",
+      "turkish": "belaya girmek / çam devirmek",
+      "example": "Mit seiner Aussage hat er sich in die Nesseln gesetzt.",
+      "exampleTranslation": "Açıklamasıyla belaya girdi.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 522,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "Trübsal blasen",
+      "turkish": "üzüntüye dalmak / keder içinde olmak",
+      "example": "Nach dem Misserfolg blasen sie Trübsal.",
+      "exampleTranslation": "Başarısızlıktan sonra keder içindeler.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "id": 523,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "aus allen Wolken fallen",
+      "turkish": "şaşkına dönmek / serseme dönmek",
+      "example": "Als sie die Neuigkeit hörte, fiel sie aus allen Wolken.",
+      "exampleTranslation": "Haberi duyduğunda şaşkına döndü.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 524,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "sich freuen wie ein Schneekönig",
+      "turkish": "çok sevinmek / bayram etmek",
+      "example": "Als er das Geschenk bekam, freute er sich wie ein Schneekönig.",
+      "exampleTranslation": "Hediyeyi aldığında bayram etti.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 525,
+      "categoryId": 8,
+      "unitId": 38,
+      "german": "auf dem Herzen liegen",
+      "turkish": "içini rahat bırakmamak / dert olmak",
+      "example": "Diese Frage liegt mir schon lange auf dem Herzen.",
+      "exampleTranslation": "Bu soru uzun süredir içimi rahat bırakmıyor.",
+      "synonyms": [],
+      "level": "B2"
+    }
+  ]
+}

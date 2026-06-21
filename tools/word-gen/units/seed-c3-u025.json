@@ -1,0 +1,209 @@
+{
+  "kind": "seed",
+  "unitId": 25,
+  "categoryId": 3,
+  "number": 3,
+  "title": "Goethe B2 — İş ve Kariyer",
+  "words": [
+    {
+      "id": 361,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "die Bewerbung",
+      "turkish": "başvuru / iş başvurusu",
+      "example": "Ich habe meine Bewerbung abgeschickt.",
+      "exampleTranslation": "Başvurumu gönderdim.",
+      "synonyms": [
+        "das Gesuch"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 362,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "das Vorstellungsgespräch",
+      "turkish": "iş görüşmesi / mülakat",
+      "example": "Das Vorstellungsgespräch lief sehr gut.",
+      "exampleTranslation": "İş görüşmesi çok iyi geçti.",
+      "synonyms": [
+        "das Interview"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 363,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "die Gehaltsverhandlung",
+      "turkish": "maaş müzakeresi",
+      "example": "Bei der Gehaltsverhandlung sollte man selbstbewusst sein.",
+      "exampleTranslation": "Maaş müzakeresinde özgüvenli olunmalı.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 364,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "die Qualifikation",
+      "turkish": "nitelik / yeterlilik",
+      "example": "Welche Qualifikationen bringen Sie mit?",
+      "exampleTranslation": "Hangi niteliklere sahipsiniz?",
+      "synonyms": [
+        "die Fähigkeit",
+        "die Kompetenz"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 365,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "die Weiterbildung",
+      "turkish": "mesleki gelişim / ileri eğitim",
+      "example": "Das Unternehmen bietet interne Weiterbildungen an.",
+      "exampleTranslation": "Şirket dahili mesleki gelişim imkânları sunuyor.",
+      "synonyms": [
+        "die Fortbildung",
+        "die Schulung"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 366,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "das Netzwerk",
+      "turkish": "ağ / network",
+      "example": "Ein gutes berufliches Netzwerk ist wertvoll.",
+      "exampleTranslation": "İyi bir mesleki ağ değerlidir.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 367,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "die Hierarchie",
+      "turkish": "hiyerarşi",
+      "example": "In deutschen Unternehmen gibt es flache Hierarchien.",
+      "exampleTranslation": "Alman şirketlerinde yatay hiyerarşi var.",
+      "synonyms": [
+        "die Rangordnung"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 368,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "das Projekt",
+      "turkish": "proje",
+      "example": "Das Projekt wird nächsten Monat abgeschlossen.",
+      "exampleTranslation": "Proje gelecek ay tamamlanacak.",
+      "synonyms": [
+        "das Vorhaben"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 369,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "die Deadline",
+      "turkish": "son teslim tarihi",
+      "example": "Wir müssen die Deadline unbedingt einhalten.",
+      "exampleTranslation": "Son teslim tarihine kesinlikle uymamız lazım.",
+      "synonyms": [
+        "die Frist",
+        "der Termin"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 370,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "überzeugen",
+      "turkish": "ikna etmek",
+      "example": "Sie überzeugte den Chef mit ihren Argumenten.",
+      "exampleTranslation": "Argümanlarıyla patronu ikna etti.",
+      "synonyms": [
+        "überreden",
+        "beweisen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 371,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "die Führungskraft",
+      "turkish": "yönetici / lider",
+      "example": "Gute Führungskräfte motivieren ihr Team.",
+      "exampleTranslation": "İyi yöneticiler ekiplerini motive eder.",
+      "synonyms": [
+        "der Manager",
+        "die Leitung"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 372,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "die Strategie",
+      "turkish": "strateji",
+      "example": "Das Unternehmen braucht eine neue Strategie.",
+      "exampleTranslation": "Şirketin yeni bir stratejiye ihtiyacı var.",
+      "synonyms": [
+        "der Plan",
+        "das Konzept"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 373,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "verhandeln",
+      "turkish": "müzakere etmek",
+      "example": "Die Parteien verhandeln über einen Vertrag.",
+      "exampleTranslation": "Taraflar bir sözleşme üzerinde müzakere ediyor.",
+      "synonyms": [
+        "diskutieren",
+        "aushandeln"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 374,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "die Effizienz",
+      "turkish": "verimlilik / etkinlik",
+      "example": "Die Effizienz der Produktion wurde verbessert.",
+      "exampleTranslation": "Üretimin verimliliği iyileştirildi.",
+      "synonyms": [
+        "die Wirksamkeit",
+        "die Leistungsfähigkeit"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 375,
+      "categoryId": 3,
+      "unitId": 25,
+      "german": "delegieren",
+      "turkish": "yetki devretmek / delege etmek",
+      "example": "Gute Manager können Aufgaben gut delegieren.",
+      "exampleTranslation": "İyi yöneticiler görevleri iyi devredebilir.",
+      "synonyms": [
+        "übertragen",
+        "abgeben"
+      ],
+      "level": "B2"
+    }
+  ]
+}

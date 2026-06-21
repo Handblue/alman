@@ -1,0 +1,219 @@
+{
+  "kind": "seed",
+  "unitId": 26,
+  "categoryId": 3,
+  "number": 4,
+  "title": "Goethe C1 — Yazılı Dil",
+  "words": [
+    {
+      "id": 376,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "infolgedessen",
+      "turkish": "bunun sonucu olarak / bu nedenle",
+      "example": "Die Preise stiegen, infolgedessen sank die Nachfrage.",
+      "exampleTranslation": "Fiyatlar yükseldi, bunun sonucu olarak talep düştü.",
+      "synonyms": [
+        "daher",
+        "folglich"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 377,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "hinsichtlich",
+      "turkish": "-e ilişkin / açısından",
+      "example": "Hinsichtlich der Kosten gibt es Bedenken.",
+      "exampleTranslation": "Maliyetler açısından endişeler var.",
+      "synonyms": [
+        "bezüglich",
+        "in Bezug auf"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 378,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "im Hinblick auf",
+      "turkish": "-e bakıldığında / göz önünde bulundurulduğunda",
+      "example": "Im Hinblick auf die Zukunft müssen wir handeln.",
+      "exampleTranslation": "Geleceğe bakıldığında harekete geçmemiz gerekiyor.",
+      "synonyms": [
+        "angesichts",
+        "hinsichtlich"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 379,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "gewissermaßen",
+      "turkish": "bir bakıma / bir anlamda",
+      "example": "Er ist gewissermaßen ein Vorbild für uns.",
+      "exampleTranslation": "Bir bakıma bizim için bir örnek model.",
+      "synonyms": [
+        "sozusagen",
+        "in gewissem Sinne"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 380,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "demnach",
+      "turkish": "bu durumda / buna göre",
+      "example": "Demnach wäre das Projekt nicht rentabel.",
+      "exampleTranslation": "Bu durumda proje kârlı olmaz.",
+      "synonyms": [
+        "also",
+        "folglich"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 381,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "zudem",
+      "turkish": "ayrıca / bunun yanı sıra",
+      "example": "Zudem muss die Qualität verbessert werden.",
+      "exampleTranslation": "Ayrıca kalitenin iyileştirilmesi gerekiyor.",
+      "synonyms": [
+        "darüber hinaus",
+        "außerdem"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 382,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "gleichwohl",
+      "turkish": "buna karşın / yine de",
+      "example": "Gleichwohl gibt es Grund zur Hoffnung.",
+      "exampleTranslation": "Buna karşın umut için sebep var.",
+      "synonyms": [
+        "dennoch",
+        "trotzdem"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 383,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "vorausgesetzt",
+      "turkish": "...koşuluyla / şartıyla",
+      "example": "Das Projekt ist möglich, vorausgesetzt, es gibt Finanzierung.",
+      "exampleTranslation": "Finansman varsa proje mümkündür.",
+      "synonyms": [
+        "wenn",
+        "falls"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 384,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "einräumen",
+      "turkish": "kabul etmek / teslim etmek (bir gerçeği)",
+      "example": "Ich muss einräumen, dass ich mich geirrt habe.",
+      "exampleTranslation": "Yanıldığımı kabul etmem gerekiyor.",
+      "synonyms": [
+        "zugeben",
+        "gestehen"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 385,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "abwägen",
+      "turkish": "tartmak / değerlendirmek",
+      "example": "Man muss Vor- und Nachteile sorgfältig abwägen.",
+      "exampleTranslation": "Artı ve eksileri dikkatlice değerlendirmek gerekir.",
+      "synonyms": [
+        "erwägen",
+        "überdenken"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 386,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "angemessen",
+      "turkish": "uygun / yerinde",
+      "example": "Eine angemessene Reaktion ist hier erforderlich.",
+      "exampleTranslation": "Burada uygun bir tepki gereklidir.",
+      "synonyms": [
+        "passend",
+        "geeignet"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 387,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "beeinflussen",
+      "turkish": "etkilemek",
+      "example": "Die Medien beeinflussen die öffentliche Meinung stark.",
+      "exampleTranslation": "Medya kamuoyunu güçlü şekilde etkiliyor.",
+      "synonyms": [
+        "prägen",
+        "wirken auf"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 388,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "verdeutlichen",
+      "turkish": "açıklamak / netleştirmek",
+      "example": "Kannst du das mit einem Beispiel verdeutlichen?",
+      "exampleTranslation": "Bunu bir örnekle açıklayabilir misin?",
+      "synonyms": [
+        "erläutern",
+        "veranschaulichen"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 389,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "das Fazit",
+      "turkish": "sonuç / özet",
+      "example": "Das Fazit dieser Studie ist eindeutig.",
+      "exampleTranslation": "Bu çalışmanın sonucu açık.",
+      "synonyms": [
+        "die Schlussfolgerung",
+        "das Ergebnis"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 390,
+      "categoryId": 3,
+      "unitId": 26,
+      "german": "nachhaltig",
+      "turkish": "sürdürülebilir / kalıcı",
+      "example": "Nachhaltiges Wirtschaften ist das Gebot der Stunde.",
+      "exampleTranslation": "Sürdürülebilir ekonomi zamanın gereği.",
+      "synonyms": [
+        "dauerhaft",
+        "ökologisch"
+      ],
+      "level": "C1"
+    }
+  ]
+}

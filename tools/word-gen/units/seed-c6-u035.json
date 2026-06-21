@@ -1,0 +1,204 @@
+{
+  "kind": "seed",
+  "unitId": 35,
+  "categoryId": 6,
+  "number": 4,
+  "title": "Hukuk ve Siyaset",
+  "words": [
+    {
+      "id": 571,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "das Grundgesetz",
+      "turkish": "anayasa (Almanya)",
+      "example": "Das Grundgesetz garantiert die Meinungsfreiheit.",
+      "exampleTranslation": "Anayasa ifade özgürlüğünü güvence altına alır.",
+      "synonyms": [
+        "die Verfassung"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 572,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "die Gesetzgebung",
+      "turkish": "mevzuat / yasama",
+      "example": "Die Gesetzgebung liegt beim Parlament.",
+      "exampleTranslation": "Yasama yetkisi parlamentodadır.",
+      "synonyms": [
+        "die Legislation",
+        "das Recht"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 573,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "die Rechtsprechung",
+      "turkish": "yargı / hukuk kararları",
+      "example": "Die Rechtsprechung hat sich in diesem Bereich verändert.",
+      "exampleTranslation": "Bu alandaki yargı içtihadı değişti.",
+      "synonyms": [
+        "die Judikatur",
+        "die Jurisdiktion"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 574,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "die Gewaltenteilung",
+      "turkish": "kuvvetler ayrılığı",
+      "example": "Die Gewaltenteilung ist Grundlage des Rechtsstaats.",
+      "exampleTranslation": "Kuvvetler ayrılığı hukuk devletinin temelidir.",
+      "synonyms": [
+        "die Gewaltentrennung"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 575,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "der Rechtsstaat",
+      "turkish": "hukuk devleti",
+      "example": "In einem Rechtsstaat gilt das Gesetz für alle.",
+      "exampleTranslation": "Hukuk devletinde yasa herkese uygulanır.",
+      "synonyms": [
+        "der demokratische Staat"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 576,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "die Demokratie",
+      "turkish": "demokrasi",
+      "example": "Die Demokratie basiert auf freien Wahlen.",
+      "exampleTranslation": "Demokrasi özgür seçimlere dayanır.",
+      "synonyms": [
+        "die Volksherrschaft"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 577,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "der Bundesrat",
+      "turkish": "Federal Konsey (Almanya)",
+      "example": "Der Bundesrat muss vielen Gesetzen zustimmen.",
+      "exampleTranslation": "Federal Konsey birçok yasayı onaylamak zorundadır.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "id": 578,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "die Wahlpflicht",
+      "turkish": "zorunlu oy kullanma",
+      "example": "In manchen Ländern gibt es eine Wahlpflicht.",
+      "exampleTranslation": "Bazı ülkelerde zorunlu oy kullanma vardır.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "id": 579,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "das Strafrecht",
+      "turkish": "ceza hukuku",
+      "example": "Das Strafrecht regelt Vergehen und deren Sanktionen.",
+      "exampleTranslation": "Ceza hukuku suçları ve yaptırımlarını düzenler.",
+      "synonyms": [
+        "das Kriminalrecht"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 580,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "das Zivilrecht",
+      "turkish": "medeni hukuk",
+      "example": "Das Zivilrecht regelt Beziehungen zwischen Privatpersonen.",
+      "exampleTranslation": "Medeni hukuk özel kişiler arasındaki ilişkileri düzenler.",
+      "synonyms": [
+        "das Privatrecht"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 581,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "die Klage",
+      "turkish": "dava / şikayet",
+      "example": "Er hat Klage gegen seinen Arbeitgeber eingereicht.",
+      "exampleTranslation": "İşverenine karşı dava açtı.",
+      "synonyms": [
+        "die Anklage",
+        "der Rechtsstreit"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 582,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "das Urteil",
+      "turkish": "karar / hüküm",
+      "example": "Das Gericht sprach ein gerechtes Urteil.",
+      "exampleTranslation": "Mahkeme adil bir karar verdi.",
+      "synonyms": [
+        "der Richterspruch",
+        "die Entscheidung"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 583,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "die Fraktion",
+      "turkish": "parti grubu / fraksiyon",
+      "example": "Die größte Fraktion im Bundestag stellte den Kanzler.",
+      "exampleTranslation": "Bundestag'taki en büyük fraksiyon başbakanı belirledi.",
+      "synonyms": [
+        "die Parlamentsgruppe"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 584,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "die Opposition",
+      "turkish": "muhalefet",
+      "example": "Die Opposition kritisierte den neuen Gesetzentwurf scharf.",
+      "exampleTranslation": "Muhalefet yeni yasa tasarısını sert şekilde eleştirdi.",
+      "synonyms": [
+        "die Gegenseite"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 585,
+      "categoryId": 6,
+      "unitId": 35,
+      "german": "das Völkerrecht",
+      "turkish": "uluslararası hukuk",
+      "example": "Das Völkerrecht regelt die Beziehungen zwischen Staaten.",
+      "exampleTranslation": "Uluslararası hukuk devletler arası ilişkileri düzenler.",
+      "synonyms": [
+        "das internationale Recht"
+      ],
+      "level": "C1"
+    }
+  ]
+}

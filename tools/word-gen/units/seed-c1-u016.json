@@ -1,0 +1,191 @@
+{
+  "kind": "seed",
+  "unitId": 16,
+  "categoryId": 1,
+  "number": 9,
+  "title": "Hava Durumu ve Doğa",
+  "words": [
+    {
+      "id": 226,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "die Sonne",
+      "turkish": "güneş",
+      "example": "Die Sonne scheint heute sehr hell.",
+      "exampleTranslation": "Bugün güneş çok parlak.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 227,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "der Regen",
+      "turkish": "yağmur",
+      "example": "Der Regen macht die Straßen nass.",
+      "exampleTranslation": "Yağmur sokakları ıslatıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 228,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "der Schnee",
+      "turkish": "kar",
+      "example": "Die Kinder freuen sich über den Schnee.",
+      "exampleTranslation": "Çocuklar kar yağmasına seviniyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 229,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "der Wind",
+      "turkish": "rüzgar",
+      "example": "Der Wind bläst heute sehr stark.",
+      "exampleTranslation": "Bugün rüzgar çok kuvvetli.",
+      "synonyms": [
+        "der Sturm"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 230,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "warm",
+      "turkish": "sıcak (ılık)",
+      "example": "Im Sommer ist es sehr warm.",
+      "exampleTranslation": "Yazın çok sıcak oluyor.",
+      "synonyms": [
+        "heiß"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 231,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "kalt",
+      "turkish": "soğuk",
+      "example": "Im Winter ist es draußen sehr kalt.",
+      "exampleTranslation": "Kışın dışarısı çok soğuk.",
+      "synonyms": [
+        "kühl",
+        "frostig"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 232,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "der Baum",
+      "turkish": "ağaç",
+      "example": "Der Baum vor unserem Haus ist sehr alt.",
+      "exampleTranslation": "Evimizin önündeki ağaç çok yaşlı.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 233,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "der Berg",
+      "turkish": "dağ",
+      "example": "Im Urlaub wandern wir in den Bergen.",
+      "exampleTranslation": "Tatilde dağlarda yürüyüş yapıyoruz.",
+      "synonyms": [
+        "der Hügel",
+        "der Gipfel"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 234,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "der Fluss",
+      "turkish": "nehir / ırmak",
+      "example": "Der Rhein ist der längste Fluss Deutschlands.",
+      "exampleTranslation": "Ren, Almanya'nın en uzun nehridir.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 235,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "das Meer",
+      "turkish": "deniz",
+      "example": "Im Sommer fahren wir ans Meer.",
+      "exampleTranslation": "Yazın denize gidiyoruz.",
+      "synonyms": [
+        "der Ozean",
+        "die See"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 236,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "der Wald",
+      "turkish": "orman",
+      "example": "Im Wald gibt es viele Tiere.",
+      "exampleTranslation": "Ormanda çok hayvan var.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 237,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "die Wolke",
+      "turkish": "bulut",
+      "example": "Heute ist der Himmel voller Wolken.",
+      "exampleTranslation": "Bugün gökyüzü bulutlarla dolu.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 238,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "regnen",
+      "turkish": "yağmur yağmak",
+      "example": "Es regnet seit dem Morgen.",
+      "exampleTranslation": "Sabahtan beri yağmur yağıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 239,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "die Temperatur",
+      "turkish": "sıcaklık / ısı",
+      "example": "Die Temperatur fällt heute auf minus fünf.",
+      "exampleTranslation": "Bugün sıcaklık eksi beşe düşüyor.",
+      "synonyms": [
+        "das Thermometer"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 240,
+      "categoryId": 1,
+      "unitId": 16,
+      "german": "das Gewitter",
+      "turkish": "fırtına / gök gürültüsü",
+      "example": "Das Gewitter kam plötzlich.",
+      "exampleTranslation": "Fırtına aniden geldi.",
+      "synonyms": [
+        "der Sturm"
+      ],
+      "level": "A2"
+    }
+  ]
+}

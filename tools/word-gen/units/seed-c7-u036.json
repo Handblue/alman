@@ -1,0 +1,214 @@
+{
+  "kind": "seed",
+  "unitId": 36,
+  "categoryId": 7,
+  "number": 2,
+  "title": "Etik ve Değerler",
+  "words": [
+    {
+      "id": 496,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "die Tugend",
+      "turkish": "erdem / fazilet",
+      "example": "Sokrates betrachtete die Gerechtigkeit als höchste Tugend.",
+      "exampleTranslation": "Sokrates adaleti en yüce erdem olarak görürdü.",
+      "synonyms": [
+        "die Eigenschaft",
+        "die Moralität"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 497,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "das Gewissen",
+      "turkish": "vicdan",
+      "example": "Sein Gewissen ließ ihn nicht schlafen.",
+      "exampleTranslation": "Vicdanı ona uyku uyutmadı.",
+      "synonyms": [
+        "das moralische Empfinden"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 498,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "verantwortungsbewusst",
+      "turkish": "sorumluluk sahibi",
+      "example": "Ein verantwortungsbewusster Bürger zahlt seine Steuern.",
+      "exampleTranslation": "Sorumluluk sahibi bir vatandaş vergisini öder.",
+      "synonyms": [
+        "pflichtbewusst"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 499,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "der Wert",
+      "turkish": "değer",
+      "example": "Solidarität ist ein grundlegender gesellschaftlicher Wert.",
+      "exampleTranslation": "Dayanışma temel bir toplumsal değerdir.",
+      "synonyms": [
+        "die Norm",
+        "das Prinzip"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 500,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "moralisch",
+      "turkish": "ahlaki / moral",
+      "example": "Diese Entscheidung ist moralisch fraglich.",
+      "exampleTranslation": "Bu karar ahlaki açıdan sorgulanabilir.",
+      "synonyms": [
+        "ethisch",
+        "sittlich"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 501,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "die Würde",
+      "turkish": "onur / itibar",
+      "example": "Die Würde des Menschen ist unantastbar.",
+      "exampleTranslation": "İnsan onuru dokunulmazdır.",
+      "synonyms": [
+        "die Ehre",
+        "der Respekt"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 502,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "gerecht",
+      "turkish": "adil",
+      "example": "Eine gerechte Gesellschaft behandelt alle gleich.",
+      "exampleTranslation": "Adil bir toplum herkese eşit davranır.",
+      "synonyms": [
+        "fair",
+        "billig"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 503,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "ungerecht",
+      "turkish": "adaletsiz / haksız",
+      "example": "Es ist ungerecht, dass arme Kinder schlechtere Chancen haben.",
+      "exampleTranslation": "Yoksul çocukların daha kötü şanslara sahip olması adaletsiz.",
+      "synonyms": [
+        "unfair"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 504,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "die Pflicht",
+      "turkish": "görev / yükümlülük",
+      "example": "Es ist unsere Pflicht, der Gesellschaft zu helfen.",
+      "exampleTranslation": "Topluma yardım etmek bizim görevimiz.",
+      "synonyms": [
+        "die Verpflichtung",
+        "die Aufgabe"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 505,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "die Solidarität",
+      "turkish": "dayanışma",
+      "example": "In Krisenzeiten ist Solidarität besonders wichtig.",
+      "exampleTranslation": "Kriz zamanlarında dayanışma özellikle önemli.",
+      "synonyms": [
+        "der Zusammenhalt"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 506,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "tolerant",
+      "turkish": "hoşgörülü / toleranslı",
+      "example": "Eine tolerante Gesellschaft akzeptiert Unterschiede.",
+      "exampleTranslation": "Hoşgörülü bir toplum farklılıkları kabul eder.",
+      "synonyms": [
+        "offen",
+        "verständnisvoll"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 507,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "die Empathie",
+      "turkish": "empati",
+      "example": "Empathie ist die Grundlage für gute Beziehungen.",
+      "exampleTranslation": "Empati iyi ilişkilerin temelidir.",
+      "synonyms": [
+        "das Einfühlungsvermögen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 508,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "das Recht",
+      "turkish": "hak",
+      "example": "Jeder Mensch hat das Recht auf Bildung.",
+      "exampleTranslation": "Her insanın eğitim hakkı vardır.",
+      "synonyms": [
+        "der Anspruch",
+        "die Berechtigung"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 509,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "die Norm",
+      "turkish": "norm / kural",
+      "example": "Soziale Normen regeln das Zusammenleben.",
+      "exampleTranslation": "Sosyal normlar birlikte yaşamı düzenler.",
+      "synonyms": [
+        "die Regel",
+        "der Standard"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 510,
+      "categoryId": 7,
+      "unitId": 36,
+      "german": "das Dilemma",
+      "turkish": "ikilem",
+      "example": "Er steht vor einem ethischen Dilemma.",
+      "exampleTranslation": "Etik bir ikilemin önünde duruyor.",
+      "synonyms": [
+        "die Zwickmühle",
+        "das Problem"
+      ],
+      "level": "B2"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "kind": "seed",
+  "unitId": 3,
+  "categoryId": 2,
+  "number": 1,
+  "title": "Bağlaçlar ve Gramer Yapıları",
+  "words": [
+    {
+      "id": 16,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "weil",
+      "turkish": "çünkü",
+      "example": "Ich bleibe zu Hause, weil ich krank bin.",
+      "exampleTranslation": "Hasta olduğum için evde kalıyorum.",
+      "synonyms": [
+        "da"
+      ],
+      "level": "A1",
+      "audioUrl": "https://www.forvo.com/download/audio/weil_de_1/"
+    },
+    {
+      "id": 17,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "obwohl",
+      "turkish": "her ne kadar / rağmen",
+      "example": "Er geht spazieren, obwohl es regnet.",
+      "exampleTranslation": "Yağmur yağmasına rağmen yürüyüşe çıkıyor.",
+      "synonyms": [
+        "trotzdem"
+      ],
+      "level": "B1",
+      "audioUrl": "https://www.forvo.com/download/audio/obwohl_de_1/"
+    },
+    {
+      "id": 18,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "deshalb",
+      "turkish": "bu yüzden / bu nedenle",
+      "example": "Es regnet, deshalb nehme ich einen Schirm.",
+      "exampleTranslation": "Yağmur yağıyor, bu yüzden şemsiye alıyorum.",
+      "synonyms": [
+        "daher",
+        "deswegen"
+      ],
+      "level": "A2",
+      "audioUrl": "https://www.forvo.com/download/audio/deshalb_de_1/"
+    },
+    {
+      "id": 19,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "trotzdem",
+      "turkish": "yine de / buna rağmen",
+      "example": "Er ist müde, trotzdem arbeitet er weiter.",
+      "exampleTranslation": "Yorgun olmasına rağmen çalışmaya devam ediyor.",
+      "synonyms": [
+        "dennoch",
+        "gleichwohl"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 20,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "außerdem",
+      "turkish": "ayrıca / bunun yanı sıra",
+      "example": "Ich lerne Deutsch und außerdem spiele ich Gitarre.",
+      "exampleTranslation": "Almanca öğreniyorum ve ayrıca gitar çalıyorum.",
+      "synonyms": [
+        "zusätzlich",
+        "überdies"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 21,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "jedoch",
+      "turkish": "ancak / fakat",
+      "example": "Das Essen war gut, jedoch zu teuer.",
+      "exampleTranslation": "Yemek iyiydi, ancak çok pahalıydı.",
+      "synonyms": [
+        "aber",
+        "allerdings"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 22,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "während",
+      "turkish": "iken / sırasında",
+      "example": "Ich höre Musik, während ich lerne.",
+      "exampleTranslation": "Ders çalışırken müzik dinliyorum.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 23,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "nachdem",
+      "turkish": "sonra / -dikten sonra",
+      "example": "Nachdem er gegessen hat, geht er schlafen.",
+      "exampleTranslation": "Yedikten sonra uyumaya gidiyor.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 24,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "bevor",
+      "turkish": "önce / -meden önce",
+      "example": "Bevor du gehst, ruf mich an.",
+      "exampleTranslation": "Gitmeden önce beni ara.",
+      "synonyms": [
+        "ehe"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 25,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "falls",
+      "turkish": "eğer / -dığı takdirde",
+      "example": "Falls du Hilfe brauchst, frag mich.",
+      "exampleTranslation": "Yardıma ihtiyacın olursa bana sor.",
+      "synonyms": [
+        "wenn",
+        "sofern"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 26,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "sowohl ... als auch",
+      "turkish": "hem ... hem de",
+      "example": "Ich spreche sowohl Deutsch als auch Englisch.",
+      "exampleTranslation": "Hem Almanca hem de İngilizce konuşuyorum.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 27,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "entweder ... oder",
+      "turkish": "ya ... ya da",
+      "example": "Entweder kommst du mit oder du bleibst hier.",
+      "exampleTranslation": "Ya benimle gelirsin ya da burada kalırsın.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 28,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "weder ... noch",
+      "turkish": "ne ... ne de",
+      "example": "Er spricht weder Deutsch noch Englisch.",
+      "exampleTranslation": "Ne Almanca ne de İngilizce konuşuyor.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 29,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "damit",
+      "turkish": "böylece / -sın diye",
+      "example": "Ich lerne viel, damit ich die Prüfung bestehe.",
+      "exampleTranslation": "Sınavı geçeyim diye çok çalışıyorum.",
+      "synonyms": [
+        "um ... zu"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 30,
+      "categoryId": 2,
+      "unitId": 3,
+      "german": "zwar ... aber",
+      "turkish": "gerçi ... ama",
+      "example": "Das ist zwar schwer, aber machbar.",
+      "exampleTranslation": "Gerçi zor, ama yapılabilir.",
+      "synonyms": [],
+      "level": "B1"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "kind": "seed",
+  "unitId": 11,
+  "categoryId": 1,
+  "number": 4,
+  "title": "Yemek ve İçecek",
+  "words": [
+    {
+      "id": 151,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "das Brot",
+      "turkish": "ekmek",
+      "example": "In Deutschland isst man viel Brot.",
+      "exampleTranslation": "Almanya'da çok ekmek yenir.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 152,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "die Milch",
+      "turkish": "süt",
+      "example": "Kinder sollten täglich Milch trinken.",
+      "exampleTranslation": "Çocuklar her gün süt içmeli.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 153,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "das Fleisch",
+      "turkish": "et",
+      "example": "Er isst kein Fleisch, er ist Vegetarier.",
+      "exampleTranslation": "Et yemiyor, vejetaryen.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 154,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "das Gemüse",
+      "turkish": "sebze",
+      "example": "Gemüse ist reich an Vitaminen.",
+      "exampleTranslation": "Sebze vitaminler bakımından zengindir.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 155,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "das Obst",
+      "turkish": "meyve",
+      "example": "Ich esse jeden Morgen frisches Obst.",
+      "exampleTranslation": "Her sabah taze meyve yerim.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 156,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "der Kaffee",
+      "turkish": "kahve",
+      "example": "Ohne Kaffee kann ich nicht arbeiten.",
+      "exampleTranslation": "Kahve olmadan çalışamam.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 157,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "der Tee",
+      "turkish": "çay",
+      "example": "Abends trinke ich gerne Kräutertee.",
+      "exampleTranslation": "Akşamları bitki çayı içmeyi severim.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 158,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "der Kuchen",
+      "turkish": "pasta / kek",
+      "example": "Meine Oma backt den besten Kuchen.",
+      "exampleTranslation": "Büyükannem en iyi pastayı yapar.",
+      "synonyms": [
+        "die Torte"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 159,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "das Ei",
+      "turkish": "yumurta",
+      "example": "Zum Frühstück esse ich zwei Eier.",
+      "exampleTranslation": "Kahvaltıda iki yumurta yerim.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 160,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "die Suppe",
+      "turkish": "çorba",
+      "example": "Bei Erkältung hilft eine heiße Suppe.",
+      "exampleTranslation": "Soğuk algınlığında sıcak çorba iyi gelir.",
+      "synonyms": [
+        "die Brühe"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 161,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "der Apfel",
+      "turkish": "elma",
+      "example": "Ein Apfel am Tag hält den Arzt fern.",
+      "exampleTranslation": "Günde bir elma doktoru uzak tutar.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 162,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "lecker",
+      "turkish": "lezzetli / nefis",
+      "example": "Das Essen schmeckt sehr lecker.",
+      "exampleTranslation": "Yemek çok lezzetli.",
+      "synonyms": [
+        "köstlich",
+        "schmackhaft"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 163,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "das Restaurant",
+      "turkish": "restoran",
+      "example": "Wir gehen heute Abend ins Restaurant.",
+      "exampleTranslation": "Bu akşam restorana gidiyoruz.",
+      "synonyms": [
+        "das Lokal",
+        "das Gasthaus"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 164,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "bestellen",
+      "turkish": "sipariş vermek",
+      "example": "Haben Sie schon bestellt?",
+      "exampleTranslation": "Sipariş verdiniz mi?",
+      "synonyms": [
+        "ordern"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 165,
+      "categoryId": 1,
+      "unitId": 11,
+      "german": "die Rechnung",
+      "turkish": "hesap / fatura",
+      "example": "Kannst du bitte die Rechnung bringen?",
+      "exampleTranslation": "Hesabı getirir misiniz lütfen?",
+      "synonyms": [
+        "die Quittung",
+        "der Beleg"
+      ],
+      "level": "A2"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "kind": "seed",
+  "unitId": 23,
+  "categoryId": 2,
+  "number": 5,
+  "title": "Edatlar ve Zarflar",
+  "words": [
+    {
+      "id": 331,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "mit",
+      "turkish": "ile / birlikte",
+      "example": "Ich fahre mit dem Bus.",
+      "exampleTranslation": "Otobüsle gidiyorum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 332,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "ohne",
+      "turkish": "olmadan / -sız",
+      "example": "Ich trinke Kaffee ohne Zucker.",
+      "exampleTranslation": "Kahvemi şekersiz içiyorum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 333,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "für",
+      "turkish": "için",
+      "example": "Dieses Geschenk ist für dich.",
+      "exampleTranslation": "Bu hediye senin için.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 334,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "gegen",
+      "turkish": "karşı / -e karşı",
+      "example": "Das Mittel hilft gegen Kopfschmerzen.",
+      "exampleTranslation": "Bu ilaç baş ağrısına karşı yardımcı oluyor.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 335,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "über",
+      "turkish": "üzerinde / hakkında",
+      "example": "Wir sprechen über das Wetter.",
+      "exampleTranslation": "Hava hakkında konuşuyoruz.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 336,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "unter",
+      "turkish": "altında / -in altında",
+      "example": "Die Katze sitzt unter dem Tisch.",
+      "exampleTranslation": "Kedi masanın altında oturuyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 337,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "zwischen",
+      "turkish": "arasında",
+      "example": "Das Café liegt zwischen dem Bahnhof und dem Hotel.",
+      "exampleTranslation": "Kafe, istasyon ile otel arasında.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 338,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "neben",
+      "turkish": "yanında / yanı başında",
+      "example": "Er sitzt neben mir.",
+      "exampleTranslation": "Yanımda oturuyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 339,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "sehr",
+      "turkish": "çok",
+      "example": "Es ist sehr kalt heute.",
+      "exampleTranslation": "Bugün çok soğuk.",
+      "synonyms": [
+        "besonders",
+        "äußerst"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 340,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "auch",
+      "turkish": "de / da / aynı zamanda",
+      "example": "Ich spreche auch Englisch.",
+      "exampleTranslation": "Ben de İngilizce konuşuyorum.",
+      "synonyms": [
+        "ebenfalls"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 341,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "noch",
+      "turkish": "henüz / hâlâ / bir de",
+      "example": "Ich bin noch nicht fertig.",
+      "exampleTranslation": "Henüz bitirmedim.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 342,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "schon",
+      "turkish": "zaten / artık / çoktan",
+      "example": "Ich habe schon gegessen.",
+      "exampleTranslation": "Zaten yedim.",
+      "synonyms": [
+        "bereits"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 343,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "nur",
+      "turkish": "sadece / yalnızca",
+      "example": "Ich habe nur fünf Euro.",
+      "exampleTranslation": "Sadece beş avrum var.",
+      "synonyms": [
+        "lediglich",
+        "bloß"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 344,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "fast",
+      "turkish": "neredeyse / hemen hemen",
+      "example": "Das Konzert ist fast ausverkauft.",
+      "exampleTranslation": "Konser neredeyse tükendi.",
+      "synonyms": [
+        "beinahe",
+        "nahezu"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 345,
+      "categoryId": 2,
+      "unitId": 23,
+      "german": "vielleicht",
+      "turkish": "belki / olabilir",
+      "example": "Vielleicht komme ich morgen.",
+      "exampleTranslation": "Belki yarın gelirim.",
+      "synonyms": [
+        "möglicherweise",
+        "eventuell"
+      ],
+      "level": "A1"
+    }
+  ]
+}

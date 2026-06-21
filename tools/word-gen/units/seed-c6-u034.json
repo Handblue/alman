@@ -1,0 +1,206 @@
+{
+  "kind": "seed",
+  "unitId": 34,
+  "categoryId": 6,
+  "number": 3,
+  "title": "Ekonomi ve İşletme",
+  "words": [
+    {
+      "id": 481,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "das Angebot und die Nachfrage",
+      "turkish": "arz ve talep",
+      "example": "Der Preis hängt vom Angebot und der Nachfrage ab.",
+      "exampleTranslation": "Fiyat arz ve talebe bağlıdır.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 482,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "das Wachstum",
+      "turkish": "büyüme / gelişme",
+      "example": "Das Wirtschaftswachstum ist in diesem Jahr stark.",
+      "exampleTranslation": "Bu yıl ekonomik büyüme güçlü.",
+      "synonyms": [
+        "die Entwicklung",
+        "der Fortschritt"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 483,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "der Markt",
+      "turkish": "piyasa / pazar",
+      "example": "Der Markt reagiert schnell auf Veränderungen.",
+      "exampleTranslation": "Piyasa değişimlere hızlı tepki veriyor.",
+      "synonyms": [
+        "der Absatzmarkt"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 484,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "das Unternehmen",
+      "turkish": "şirket / işletme",
+      "example": "Das Unternehmen hat 500 Mitarbeiter.",
+      "exampleTranslation": "Şirketin 500 çalışanı var.",
+      "synonyms": [
+        "die Firma",
+        "das Betrieb"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 485,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "der Gewinn",
+      "turkish": "kâr",
+      "example": "Das Unternehmen macht großen Gewinn.",
+      "exampleTranslation": "Şirket büyük kâr ediyor.",
+      "synonyms": [
+        "der Profit",
+        "der Ertrag"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 486,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "der Verlust",
+      "turkish": "zarar / kayıp",
+      "example": "Im letzten Jahr hatte das Unternehmen Verluste.",
+      "exampleTranslation": "Geçen yıl şirket zarar etti.",
+      "synonyms": [
+        "das Defizit"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 487,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "die Konkurrenz",
+      "turkish": "rekabet / rakipler",
+      "example": "Die Konkurrenz auf dem Markt ist sehr stark.",
+      "exampleTranslation": "Piyasadaki rekabet çok güçlü.",
+      "synonyms": [
+        "der Wettbewerb"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 488,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "exportieren",
+      "turkish": "ihraç etmek",
+      "example": "Deutschland exportiert viele Autos.",
+      "exampleTranslation": "Almanya çok fazla araba ihraç ediyor.",
+      "synonyms": [
+        "ausführen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 489,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "importieren",
+      "turkish": "ithal etmek",
+      "example": "Die Türkei importiert viel Technologie.",
+      "exampleTranslation": "Türkiye çok fazla teknoloji ithal ediyor.",
+      "synonyms": [
+        "einführen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 490,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "die Produktivität",
+      "turkish": "verimlilik",
+      "example": "Die Produktivität der Mitarbeiter ist gestiegen.",
+      "exampleTranslation": "Çalışanların verimliliği arttı.",
+      "synonyms": [
+        "die Effizienz"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 491,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "das Kapital",
+      "turkish": "sermaye",
+      "example": "Das Unternehmen benötigt mehr Kapital.",
+      "exampleTranslation": "Şirket daha fazla sermayeye ihtiyaç duyuyor.",
+      "synonyms": [
+        "das Vermögen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 492,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "die Krise",
+      "turkish": "kriz",
+      "example": "Die Wirtschaftskrise trifft viele Haushalte.",
+      "exampleTranslation": "Ekonomik kriz pek çok haneyi etkiliyor.",
+      "synonyms": [
+        "die Rezession",
+        "der Einbruch"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 493,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "die Aktie",
+      "turkish": "hisse senedi",
+      "example": "Ich habe Aktien an der Börse gekauft.",
+      "exampleTranslation": "Borsadan hisse senedi aldım.",
+      "synonyms": [
+        "der Anteilsschein"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 494,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "fusionieren",
+      "turkish": "birleşmek (şirket)",
+      "example": "Die beiden Firmen haben fusioniert.",
+      "exampleTranslation": "İki firma birleşti.",
+      "synonyms": [
+        "zusammenschließen"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 495,
+      "categoryId": 6,
+      "unitId": 34,
+      "german": "die Globalisierung",
+      "turkish": "küreselleşme",
+      "example": "Die Globalisierung hat die Weltwirtschaft verändert.",
+      "exampleTranslation": "Küreselleşme dünya ekonomisini değiştirdi.",
+      "synonyms": [
+        "die Internationalisierung"
+      ],
+      "level": "B2"
+    }
+  ]
+}

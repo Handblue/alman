@@ -1,0 +1,193 @@
+{
+  "kind": "seed",
+  "unitId": 6,
+  "categoryId": 5,
+  "number": 1,
+  "title": "Market, Sağlık ve Ulaşım",
+  "words": [
+    {
+      "id": 61,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "der Supermarkt",
+      "turkish": "süpermarket",
+      "example": "Ich kaufe Gemüse im Supermarkt.",
+      "exampleTranslation": "Süpermarketten sebze alıyorum.",
+      "synonyms": [
+        "der Laden",
+        "das Geschäft"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 62,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "die Kasse",
+      "turkish": "kasa / kasiyer",
+      "example": "Bitte zahlen Sie an der Kasse.",
+      "exampleTranslation": "Lütfen kasada ödeyin.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 63,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "der Arzt",
+      "turkish": "doktor / hekim",
+      "example": "Ich gehe morgen zum Arzt.",
+      "exampleTranslation": "Yarın doktora gidiyorum.",
+      "synonyms": [
+        "der Mediziner",
+        "der Doktor"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 64,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "das Rezept",
+      "turkish": "reçete",
+      "example": "Der Arzt gibt mir ein Rezept für Tabletten.",
+      "exampleTranslation": "Doktor bana tablet için reçete veriyor.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 65,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "die Apotheke",
+      "turkish": "eczane",
+      "example": "Ich hole meine Medikamente in der Apotheke.",
+      "exampleTranslation": "İlaçlarımı eczaneden alıyorum.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 66,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "das Konto",
+      "turkish": "banka hesabı",
+      "example": "Ich überweise Geld auf sein Konto.",
+      "exampleTranslation": "Hesabına para havale ediyorum.",
+      "synonyms": [
+        "das Bankkonto"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 67,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "die Überweisung",
+      "turkish": "havale / EFT",
+      "example": "Die Überweisung dauert ein bis zwei Tage.",
+      "exampleTranslation": "Havale bir ila iki gün sürer.",
+      "synonyms": [
+        "der Transfer"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 68,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "der Busbahnhof",
+      "turkish": "otobüs terminali",
+      "example": "Der Busbahnhof ist in der Stadtmitte.",
+      "exampleTranslation": "Otobüs terminali şehir merkezinde.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 69,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "die Haltestelle",
+      "turkish": "durak",
+      "example": "Die nächste Haltestelle ist 200 Meter entfernt.",
+      "exampleTranslation": "En yakın durak 200 metre uzakta.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 70,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "der Fahrplan",
+      "turkish": "tarife / zaman çizelgesi",
+      "example": "Laut Fahrplan kommt der Zug um 10 Uhr.",
+      "exampleTranslation": "Tarifeye göre tren saat 10'da geliyor.",
+      "synonyms": [
+        "der Zeitplan"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 71,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "das Pfand",
+      "turkish": "depozito / pul parası",
+      "example": "Die Flasche hat 25 Cent Pfand.",
+      "exampleTranslation": "Şişenin 25 sentlik depozitosu var.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 72,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "die Quittung",
+      "turkish": "makbuz / fiş",
+      "example": "Kann ich bitte eine Quittung haben?",
+      "exampleTranslation": "Makbuz alabilir miyim lütfen?",
+      "synonyms": [
+        "der Beleg",
+        "die Rechnung"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 73,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "der Notfall",
+      "turkish": "acil durum",
+      "example": "Im Notfall rufen Sie den Notruf 112 an.",
+      "exampleTranslation": "Acil durumda 112'yi arayın.",
+      "synonyms": [
+        "der Ernstfall"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 74,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "die Sprechstunde",
+      "turkish": "muayene saatleri / görüşme saati",
+      "example": "Die Sprechstunde beginnt um 9 Uhr morgens.",
+      "exampleTranslation": "Muayene saatleri sabah 9'da başlıyor.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 75,
+      "categoryId": 5,
+      "unitId": 6,
+      "german": "abheben",
+      "turkish": "para çekmek",
+      "example": "Ich hebe 200 Euro am Automaten ab.",
+      "exampleTranslation": "ATM'den 200 Euro çekiyorum.",
+      "synonyms": [
+        "entnehmen"
+      ],
+      "level": "A2"
+    }
+  ]
+}

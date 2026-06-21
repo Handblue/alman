@@ -1,0 +1,174 @@
+{
+  "kind": "seed",
+  "unitId": 9,
+  "categoryId": 8,
+  "number": 1,
+  "title": "Yaygın Deyimler (Redewendungen)",
+  "words": [
+    {
+      "id": 106,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "Daumen drücken",
+      "turkish": "başarılar dilemek / parmak basmak (iyimesajı)",
+      "example": "Ich drücke dir die Daumen für deine Prüfung!",
+      "exampleTranslation": "Sınav için sana başarılar diliyorum!",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 107,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "den Nagel auf den Kopf treffen",
+      "turkish": "tam yerine oturtmak / tam isabetli olmak",
+      "example": "Mit dieser Aussage hat er den Nagel auf den Kopf getroffen.",
+      "exampleTranslation": "Bu ifadesiyle tam yerine oturttu.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 108,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "ins Fettnäpfchen treten",
+      "turkish": "gaf yapmak / pot kırmak",
+      "example": "Er hat ins Fettnäpfchen getreten, als er ihren Namen vergaß.",
+      "exampleTranslation": "Adını unuttuğunda gaf yaptı.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 109,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "um den heißen Brei herumreden",
+      "turkish": "lafı dolandırmak / asıl konuya gelmemek",
+      "example": "Hör auf, um den heißen Brei herumzureden und sag die Wahrheit.",
+      "exampleTranslation": "Lafı dolandırmayı bırak ve gerçeği söyle.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 110,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "auf dem Holzweg sein",
+      "turkish": "yanılmak / yanlış yolda olmak",
+      "example": "Wenn du denkst, das ist einfach, bist du auf dem Holzweg.",
+      "exampleTranslation": "Bunun kolay olduğunu düşünüyorsan yanılıyorsun.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 111,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "die Katze aus dem Sack lassen",
+      "turkish": "sırrı ifşa etmek / gerçeği ortaya çıkarmak",
+      "example": "Er ließ endlich die Katze aus dem Sack und erzählte alles.",
+      "exampleTranslation": "Sonunda sırrı ifşa etti ve her şeyi anlattı.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 112,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "jemandem auf den Zahn fühlen",
+      "turkish": "birini sıkıştırmak / zayıf noktasını bulmak",
+      "example": "Der Journalist fühlte dem Politiker auf den Zahn.",
+      "exampleTranslation": "Gazeteci politikacıyı sıkıştırdı.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 113,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "einen Korb bekommen",
+      "turkish": "sepet yemek / reddedilmek",
+      "example": "Er hat ihr einen Antrag gemacht, aber einen Korb bekommen.",
+      "exampleTranslation": "Ona evlenme teklif etti ama reddedildi.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 114,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "sich auf den Weg machen",
+      "turkish": "yola çıkmak / harekete geçmek",
+      "example": "Wir machen uns früh auf den Weg, um pünktlich anzukommen.",
+      "exampleTranslation": "Zamanında varmak için erkenden yola çıkıyoruz.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 115,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "Schwein haben",
+      "turkish": "şanslı olmak / şans bulunmak",
+      "example": "Er hatte Schwein und hat die Prüfung bestanden.",
+      "exampleTranslation": "Şanslıydı ve sınavı geçti.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 116,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "jemandem auf die Nerven gehen",
+      "turkish": "birinin sinirlerine dokunmak / bezdirmek",
+      "example": "Dieser Lärm geht mir auf die Nerven.",
+      "exampleTranslation": "Bu gürültü sinirlerime dokunuyor.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 117,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "nicht auf den Mund gefallen sein",
+      "turkish": "lafını bilmek / hazırcevap olmak",
+      "example": "Sie ist nicht auf den Mund gefallen und antwortet schlagfertig.",
+      "exampleTranslation": "Lafını biliyor ve hazır cevap veriyor.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 118,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "in den sauren Apfel beißen",
+      "turkish": "zorlu bir şeyi kabullenmek / çıkmaza girmek",
+      "example": "Er musste in den sauren Apfel beißen und Überstunden machen.",
+      "exampleTranslation": "Fazla mesai yapmak zorunda kaldı, bunu kabullenmek zorundaydı.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 119,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "die Flinte ins Korn werfen",
+      "turkish": "pes etmek / vazgeçmek",
+      "example": "Nach dem ersten Misserfolg warf er die Flinte ins Korn.",
+      "exampleTranslation": "İlk başarısızlıktan sonra pes etti.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 120,
+      "categoryId": 8,
+      "unitId": 9,
+      "german": "Eulen nach Athen tragen",
+      "turkish": "baykuşu Atina'ya götürmek (gereksiz bir şey yapmak)",
+      "example": "Das wäre, als würdest du Eulen nach Athen tragen.",
+      "exampleTranslation": "Bu, baykuşları Atina'ya götürmek gibi olurdu (gereksiz bir şey).",
+      "synonyms": [],
+      "level": "B2"
+    }
+  ]
+}

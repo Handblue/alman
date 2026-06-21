@@ -1,0 +1,207 @@
+{
+  "kind": "seed",
+  "unitId": 19,
+  "categoryId": 1,
+  "number": 12,
+  "title": "Alışveriş ve Para",
+  "words": [
+    {
+      "id": 271,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "kaufen",
+      "turkish": "satın almak",
+      "example": "Ich kaufe ein neues Handy.",
+      "exampleTranslation": "Yeni bir telefon alıyorum.",
+      "synonyms": [
+        "erwerben"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 272,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "verkaufen",
+      "turkish": "satmak",
+      "example": "Er verkauft sein altes Auto.",
+      "exampleTranslation": "Eski arabasını satıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 273,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "der Preis",
+      "turkish": "fiyat",
+      "example": "Der Preis für das Ticket ist hoch.",
+      "exampleTranslation": "Bilet fiyatı yüksek.",
+      "synonyms": [
+        "der Betrag",
+        "der Wert"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 274,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "teuer",
+      "turkish": "pahalı",
+      "example": "Das Hotel ist sehr teuer.",
+      "exampleTranslation": "Otel çok pahalı.",
+      "synonyms": [
+        "kostspielig"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 275,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "billig",
+      "turkish": "ucuz",
+      "example": "Im Supermarkt gibt es billige Angebote.",
+      "exampleTranslation": "Süpermarkette ucuz teklifler var.",
+      "synonyms": [
+        "günstig",
+        "preiswert"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 276,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "das Geld",
+      "turkish": "para",
+      "example": "Ich habe kein Geld mehr.",
+      "exampleTranslation": "Artık param yok.",
+      "synonyms": [
+        "die Währung"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 277,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "die Kasse",
+      "turkish": "kasa / yazar kasa",
+      "example": "Bitte zahlen Sie an der Kasse.",
+      "exampleTranslation": "Lütfen kasada ödeme yapın.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 278,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "der Rabatt",
+      "turkish": "indirim",
+      "example": "Mit diesem Gutschein bekommen Sie 20% Rabatt.",
+      "exampleTranslation": "Bu kuponla %20 indirim alırsınız.",
+      "synonyms": [
+        "der Nachlass",
+        "die Ermäßigung"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 279,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "das Angebot",
+      "turkish": "teklif / indirimli ürün",
+      "example": "Das Angebot gilt nur heute.",
+      "exampleTranslation": "Teklif sadece bugün geçerli.",
+      "synonyms": [
+        "die Aktion",
+        "die Sonderaktion"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 280,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "bezahlen",
+      "turkish": "ödemek",
+      "example": "Kann ich mit Karte bezahlen?",
+      "exampleTranslation": "Kartla ödeyebilir miyim?",
+      "synonyms": [
+        "zahlen",
+        "begleichen"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 281,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "das Einkaufszentrum",
+      "turkish": "alışveriş merkezi / AVM",
+      "example": "Das Einkaufszentrum ist am Wochenende sehr voll.",
+      "exampleTranslation": "AVM hafta sonları çok kalabalık.",
+      "synonyms": [
+        "das Shoppingcenter",
+        "das Mall"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 282,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "der Supermarkt",
+      "turkish": "süpermarket",
+      "example": "Ich gehe jeden Freitag in den Supermarkt.",
+      "exampleTranslation": "Her Cuma süpermarkete gidiyorum.",
+      "synonyms": [
+        "der Laden",
+        "das Geschäft"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 283,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "die Quittung",
+      "turkish": "makbuz / fiş",
+      "example": "Bewahre die Quittung als Nachweis auf.",
+      "exampleTranslation": "Makbuzu kanıt olarak sakla.",
+      "synonyms": [
+        "der Beleg",
+        "der Kassenbon"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 284,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "umtauschen",
+      "turkish": "değiştirmek / geri vermek",
+      "example": "Kann ich diese Jacke umtauschen?",
+      "exampleTranslation": "Bu ceketi değiştirebilir miyim?",
+      "synonyms": [
+        "zurückgeben",
+        "austauschen"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 285,
+      "categoryId": 1,
+      "unitId": 19,
+      "german": "die Kreditkarte",
+      "turkish": "kredi kartı",
+      "example": "Zahlen Sie mit Kreditkarte oder bar?",
+      "exampleTranslation": "Kredi kartıyla mı yoksa nakit mi ödüyorsunuz?",
+      "synonyms": [],
+      "level": "A2"
+    }
+  ]
+}

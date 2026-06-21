@@ -1,0 +1,215 @@
+{
+  "kind": "seed",
+  "unitId": 27,
+  "categoryId": 4,
+  "number": 2,
+  "title": "telc B2 — Akademik ve Toplumsal",
+  "words": [
+    {
+      "id": 391,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "das Protokoll",
+      "turkish": "tutanak / protokol",
+      "example": "Wer schreibt das Protokoll bei der Sitzung?",
+      "exampleTranslation": "Toplantıda tutanağı kim tutuyor?",
+      "synonyms": [
+        "das Schriftstück"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 392,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "der Antrag",
+      "turkish": "başvuru / dilekçe / talep",
+      "example": "Stellen Sie bitte einen schriftlichen Antrag.",
+      "exampleTranslation": "Lütfen yazılı bir başvuru yapın.",
+      "synonyms": [
+        "das Gesuch",
+        "die Anfrage"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 393,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "genehmigen",
+      "turkish": "onaylamak / izin vermek",
+      "example": "Der Antrag wurde genehmigt.",
+      "exampleTranslation": "Başvuru onaylandı.",
+      "synonyms": [
+        "bewilligen",
+        "zulassen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 394,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "ablehnen",
+      "turkish": "reddetmek",
+      "example": "Der Antrag wurde leider abgelehnt.",
+      "exampleTranslation": "Başvuru maalesef reddedildi.",
+      "synonyms": [
+        "zurückweisen",
+        "verweigern"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 395,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "die Frist",
+      "turkish": "süre / son tarih",
+      "example": "Die Frist für die Bewerbung endet am 30. April.",
+      "exampleTranslation": "Başvuru süresi 30 Nisan'da bitiyor.",
+      "synonyms": [
+        "die Deadline",
+        "der Termin"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 396,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "die Genehmigung",
+      "turkish": "onay / izin",
+      "example": "Ohne Genehmigung darf man das nicht bauen.",
+      "exampleTranslation": "İzin olmadan bunu inşa edemezsiniz.",
+      "synonyms": [
+        "die Erlaubnis",
+        "das Einverständnis"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 397,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "in Kraft treten",
+      "turkish": "yürürlüğe girmek",
+      "example": "Das neue Gesetz tritt am ersten Januar in Kraft.",
+      "exampleTranslation": "Yeni yasa birinci Ocak'ta yürürlüğe giriyor.",
+      "synonyms": [
+        "wirksam werden"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 398,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "die Vorschrift",
+      "turkish": "yönetmelik / kural",
+      "example": "Diese Vorschrift muss unbedingt eingehalten werden.",
+      "exampleTranslation": "Bu yönetmeliğe mutlaka uyulması gerekiyor.",
+      "synonyms": [
+        "die Regel",
+        "die Regelung"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 399,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "zuständig",
+      "turkish": "sorumlu / yetkili",
+      "example": "Wer ist für diesen Bereich zuständig?",
+      "exampleTranslation": "Bu alan için kim sorumlu?",
+      "synonyms": [
+        "verantwortlich"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 400,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "das Formular",
+      "turkish": "form / başvuru formu",
+      "example": "Bitte füllen Sie das Formular vollständig aus.",
+      "exampleTranslation": "Lütfen formu eksiksiz doldurun.",
+      "synonyms": [
+        "der Vordruck"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 401,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "die Behörde",
+      "turkish": "resmi kurum / makam",
+      "example": "Sie müssen zur zuständigen Behörde gehen.",
+      "exampleTranslation": "Yetkili kuruma gitmeniz gerekiyor.",
+      "synonyms": [
+        "das Amt",
+        "die Institution"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 402,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "beantragen",
+      "turkish": "başvurmak / talep etmek",
+      "example": "Ich möchte ein Visum beantragen.",
+      "exampleTranslation": "Vize başvurusunda bulunmak istiyorum.",
+      "synonyms": [
+        "anfragen",
+        "stellen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 403,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "nachweisen",
+      "turkish": "kanıtlamak / ispatlamak",
+      "example": "Sie müssen Ihre Kenntnisse nachweisen.",
+      "exampleTranslation": "Bilgilerinizi kanıtlamanız gerekiyor.",
+      "synonyms": [
+        "belegen",
+        "beweisen"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 404,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "der Nachweis",
+      "turkish": "kanıt / belge",
+      "example": "Bitte legen Sie einen Nachweis vor.",
+      "exampleTranslation": "Lütfen bir belge sunun.",
+      "synonyms": [
+        "der Beleg",
+        "das Dokument"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 405,
+      "categoryId": 4,
+      "unitId": 27,
+      "german": "verpflichten",
+      "turkish": "yükümlü kılmak / mecbur etmek",
+      "example": "Das Gesetz verpflichtet alle Bürger zur Steuerzahlung.",
+      "exampleTranslation": "Yasa tüm vatandaşları vergi ödemeye zorunlu kılıyor.",
+      "synonyms": [
+        "binden",
+        "zwingen"
+      ],
+      "level": "B2"
+    }
+  ]
+}

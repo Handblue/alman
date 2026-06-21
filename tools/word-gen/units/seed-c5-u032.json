@@ -1,0 +1,208 @@
+{
+  "kind": "seed",
+  "unitId": 32,
+  "categoryId": 5,
+  "number": 5,
+  "title": "Teknoloji ve Dijital Hayat",
+  "words": [
+    {
+      "id": 451,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "das Handy",
+      "turkish": "cep telefonu",
+      "example": "Mein Handy-Akku ist leer.",
+      "exampleTranslation": "Cep telefonumun pili bitti.",
+      "synonyms": [
+        "das Smartphone",
+        "das Mobiltelefon"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 452,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "das Internet",
+      "turkish": "internet",
+      "example": "Ohne Internet kann ich nicht arbeiten.",
+      "exampleTranslation": "İnternetsiz çalışamıyorum.",
+      "synonyms": [
+        "das Netz",
+        "das Web"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 453,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "herunterladen",
+      "turkish": "indirmek",
+      "example": "Ich lade die App herunter.",
+      "exampleTranslation": "Uygulamayı indiriyorum.",
+      "synonyms": [
+        "downloaden"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 454,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "hochladen",
+      "turkish": "yüklemek",
+      "example": "Sie lädt Fotos auf Instagram hoch.",
+      "exampleTranslation": "Instagram'a fotoğraf yüklüyor.",
+      "synonyms": [
+        "uploaden"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 455,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "das Passwort",
+      "turkish": "parola / şifre",
+      "example": "Vergiss nicht dein Passwort zu ändern.",
+      "exampleTranslation": "Parolanı değiştirmeyi unutma.",
+      "synonyms": [
+        "das Kennwort"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 456,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "die App",
+      "turkish": "uygulama",
+      "example": "Diese App ist sehr nützlich.",
+      "exampleTranslation": "Bu uygulama çok kullanışlı.",
+      "synonyms": [
+        "die Anwendung"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 457,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "der Datenschutz",
+      "turkish": "veri gizliliği",
+      "example": "Datenschutz ist in der EU sehr wichtig.",
+      "exampleTranslation": "AB'de veri gizliliği çok önemli.",
+      "synonyms": [
+        "die Privatsphäre"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 458,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "aktualisieren",
+      "turkish": "güncellemek",
+      "example": "Bitte aktualisiere das Betriebssystem.",
+      "exampleTranslation": "Lütfen işletim sistemini güncelle.",
+      "synonyms": [
+        "updaten",
+        "erneuern"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 459,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "die Künstliche Intelligenz",
+      "turkish": "yapay zeka",
+      "example": "Künstliche Intelligenz verändert die Arbeitswelt.",
+      "exampleTranslation": "Yapay zeka çalışma dünyasını değiştiriyor.",
+      "synonyms": [
+        "die KI",
+        "der Algorithmus"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 460,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "das soziale Netzwerk",
+      "turkish": "sosyal ağ",
+      "example": "In sozialen Netzwerken teilt man Fotos und Meinungen.",
+      "exampleTranslation": "Sosyal ağlarda fotoğraf ve görüş paylaşılıyor.",
+      "synonyms": [
+        "Social Media"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 461,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "die Verschlüsselung",
+      "turkish": "şifreleme",
+      "example": "Die Ende-zu-Ende-Verschlüsselung schützt deine Daten.",
+      "exampleTranslation": "Uçtan uca şifreleme verilerini korur.",
+      "synonyms": [
+        "die Chiffrierung"
+      ],
+      "level": "C1"
+    },
+    {
+      "id": 462,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "das Update",
+      "turkish": "güncelleme",
+      "example": "Das System braucht ein dringendes Update.",
+      "exampleTranslation": "Sistem acil güncelleme gerektiriyor.",
+      "synonyms": [
+        "die Aktualisierung"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 463,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "der Virus",
+      "turkish": "virüs (bilgisayar)",
+      "example": "Mein Computer hat einen Virus.",
+      "exampleTranslation": "Bilgisayarımda virüs var.",
+      "synonyms": [
+        "die Schadsoftware",
+        "der Trojaner"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 464,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "der Algorithmus",
+      "turkish": "algoritma",
+      "example": "Algorithmen bestimmen, was wir online sehen.",
+      "exampleTranslation": "Algoritmalar online ne gördüğümüzü belirliyor.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 465,
+      "categoryId": 5,
+      "unitId": 32,
+      "german": "drahtlos",
+      "turkish": "kablosuz",
+      "example": "Das drahtlose Netzwerk ist sehr schnell.",
+      "exampleTranslation": "Kablosuz ağ çok hızlı.",
+      "synonyms": [
+        "kabellos",
+        "WLAN"
+      ],
+      "level": "A2"
+    }
+  ]
+}

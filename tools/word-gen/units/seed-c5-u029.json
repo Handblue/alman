@@ -1,0 +1,198 @@
+{
+  "kind": "seed",
+  "unitId": 29,
+  "categoryId": 5,
+  "number": 2,
+  "title": "Restoran ve Yemek Siparişi",
+  "words": [
+    {
+      "id": 406,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "die Speisekarte",
+      "turkish": "menü / yemek listesi",
+      "example": "Darf ich bitte die Speisekarte haben?",
+      "exampleTranslation": "Menüyü alabilir miyim lütfen?",
+      "synonyms": [
+        "das Menü",
+        "die Karte"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 407,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "der Kellner",
+      "turkish": "garson",
+      "example": "Der Kellner empfahl uns das Tagesgericht.",
+      "exampleTranslation": "Garson bize günün yemeğini önerdi.",
+      "synonyms": [
+        "der Ober",
+        "der Servicekraft"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 408,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "das Tagesgericht",
+      "turkish": "günün yemeği",
+      "example": "Was ist heute das Tagesgericht?",
+      "exampleTranslation": "Bugünün yemeği ne?",
+      "synonyms": [
+        "das Menü des Tages"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 409,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "vegetarisch",
+      "turkish": "vejetaryen",
+      "example": "Haben Sie vegetarische Gerichte?",
+      "exampleTranslation": "Vejetaryen yemekleriniz var mı?",
+      "synonyms": [
+        "fleischlos"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 410,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "die Vorspeise",
+      "turkish": "başlangıç / meze",
+      "example": "Als Vorspeise nehme ich die Suppe.",
+      "exampleTranslation": "Başlangıç olarak çorba alıyorum.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 411,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "das Hauptgericht",
+      "turkish": "ana yemek",
+      "example": "Das Hauptgericht war sehr lecker.",
+      "exampleTranslation": "Ana yemek çok lezzetliydi.",
+      "synonyms": [
+        "der Hauptgang"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 412,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "der Nachtisch",
+      "turkish": "tatlı",
+      "example": "Als Nachtisch hätte ich gerne Schokoladenkuchen.",
+      "exampleTranslation": "Tatlı olarak çikolatalı kek istiyorum.",
+      "synonyms": [
+        "das Dessert"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 413,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "das Trinkgeld",
+      "turkish": "bahşiş",
+      "example": "In Deutschland gibt man meistens 10% Trinkgeld.",
+      "exampleTranslation": "Almanya'da genellikle %10 bahşiş verilir.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 414,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "reservieren",
+      "turkish": "rezervasyon yapmak",
+      "example": "Ich möchte einen Tisch für vier Personen reservieren.",
+      "exampleTranslation": "Dört kişilik masa rezervasyonu yapmak istiyorum.",
+      "synonyms": [
+        "buchen"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 415,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "getrennt zahlen",
+      "turkish": "ayrı ayrı ödemek / hesabı bölmek",
+      "example": "Wir möchten getrennt zahlen.",
+      "exampleTranslation": "Ayrı ayrı ödemek istiyoruz.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 416,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "allergisch",
+      "turkish": "alerjik",
+      "example": "Ich bin allergisch gegen Nüsse.",
+      "exampleTranslation": "Kuruyemişlere alerjim var.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 417,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "scharf",
+      "turkish": "acı (yemek)",
+      "example": "Ist dieses Gericht sehr scharf?",
+      "exampleTranslation": "Bu yemek çok acı mı?",
+      "synonyms": [
+        "pikant",
+        "würzig"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 418,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "die Portion",
+      "turkish": "porsiyon",
+      "example": "Die Portion ist sehr groß hier.",
+      "exampleTranslation": "Buradaki porsiyon çok büyük.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 419,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "zum Mitnehmen",
+      "turkish": "paket servis / götürmek için",
+      "example": "Ich möchte das zum Mitnehmen bitte.",
+      "exampleTranslation": "Bunu paket yapar mısınız lütfen.",
+      "synonyms": [
+        "to go"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 420,
+      "categoryId": 5,
+      "unitId": 29,
+      "german": "empfehlen",
+      "turkish": "önermek / tavsiye etmek",
+      "example": "Was können Sie mir empfehlen?",
+      "exampleTranslation": "Bana ne önerebilirsiniz?",
+      "synonyms": [
+        "vorschlagen",
+        "raten"
+      ],
+      "level": "A2"
+    }
+  ]
+}

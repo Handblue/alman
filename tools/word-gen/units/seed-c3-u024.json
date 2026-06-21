@@ -1,0 +1,211 @@
+{
+  "kind": "seed",
+  "unitId": 24,
+  "categoryId": 3,
+  "number": 2,
+  "title": "Goethe B1 — Sosyal Hayat",
+  "words": [
+    {
+      "id": 346,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "die Umwelt",
+      "turkish": "çevre / doğal ortam",
+      "example": "Wir müssen die Umwelt schützen.",
+      "exampleTranslation": "Çevreyi korumamız gerekiyor.",
+      "synonyms": [
+        "die Natur",
+        "das Ökosystem"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 347,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "die Gesellschaft",
+      "turkish": "toplum",
+      "example": "Die moderne Gesellschaft verändert sich schnell.",
+      "exampleTranslation": "Modern toplum hızlı değişiyor.",
+      "synonyms": [
+        "die Gemeinschaft"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 348,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "der Beruf",
+      "turkish": "meslek / iş",
+      "example": "Welchen Beruf möchten Sie ergreifen?",
+      "exampleTranslation": "Hangi mesleği seçmek istiyorsunuz?",
+      "synonyms": [
+        "der Job",
+        "die Tätigkeit"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 349,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "die Erfahrung",
+      "turkish": "deneyim / tecrübe",
+      "example": "Sie hat viel Erfahrung in diesem Bereich.",
+      "exampleTranslation": "Bu alanda çok deneyimi var.",
+      "synonyms": [
+        "die Praxis",
+        "die Kenntnisse"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 350,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "die Meinung",
+      "turkish": "görüş / fikir",
+      "example": "Meiner Meinung nach ist das falsch.",
+      "exampleTranslation": "Benim görüşüme göre bu yanlış.",
+      "synonyms": [
+        "die Ansicht",
+        "der Standpunkt"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 351,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "die Verantwortung",
+      "turkish": "sorumluluk",
+      "example": "Jeder trägt Verantwortung für sein Handeln.",
+      "exampleTranslation": "Herkes eylemlerinden sorumludur.",
+      "synonyms": [
+        "die Pflicht"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 352,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "die Möglichkeit",
+      "turkish": "olasılık / imkân",
+      "example": "Es gibt keine Möglichkeit mehr, das zu ändern.",
+      "exampleTranslation": "Bunu değiştirmek için artık imkân yok.",
+      "synonyms": [
+        "die Gelegenheit",
+        "die Chance"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 353,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "sich vorstellen",
+      "turkish": "kendini tanıtmak / hayal etmek",
+      "example": "Ich stelle mich kurz vor: Mein Name ist Uygar.",
+      "exampleTranslation": "Kısaca tanıtayım: Adım Uygar.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 354,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "vergleichen",
+      "turkish": "karşılaştırmak",
+      "example": "Man kann diese zwei Methoden gut vergleichen.",
+      "exampleTranslation": "Bu iki yöntemi iyi karşılaştırabilirsiniz.",
+      "synonyms": [
+        "gegenüberstellen"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 355,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "die Lösung",
+      "turkish": "çözüm",
+      "example": "Wir suchen eine kreative Lösung für das Problem.",
+      "exampleTranslation": "Problem için yaratıcı bir çözüm arıyoruz.",
+      "synonyms": [
+        "der Ausweg",
+        "die Antwort"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 356,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "die Herausforderung",
+      "turkish": "zorluk / meydan okuma",
+      "example": "Das Lernen einer neuen Sprache ist eine große Herausforderung.",
+      "exampleTranslation": "Yeni bir dil öğrenmek büyük bir zorluk.",
+      "synonyms": [
+        "die Aufgabe",
+        "die Hürde"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 357,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "sich bewerben",
+      "turkish": "başvurmak",
+      "example": "Er bewirbt sich um eine Stelle als Programmierer.",
+      "exampleTranslation": "Programcı pozisyonuna başvuruyor.",
+      "synonyms": [
+        "kandidieren"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 358,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "kritisieren",
+      "turkish": "eleştirmek",
+      "example": "Man sollte konstruktiv kritisieren.",
+      "exampleTranslation": "Yapıcı bir şekilde eleştiri yapmalı.",
+      "synonyms": [
+        "bemängeln",
+        "beanstanden"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 359,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "die Integration",
+      "turkish": "entegrasyon / uyum",
+      "example": "Die Integration von Einwanderern ist wichtig.",
+      "exampleTranslation": "Göçmenlerin entegrasyonu önemli.",
+      "synonyms": [
+        "die Eingliederung"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 360,
+      "categoryId": 3,
+      "unitId": 24,
+      "german": "beitragen",
+      "turkish": "katkıda bulunmak",
+      "example": "Jeder kann zu einer besseren Gesellschaft beitragen.",
+      "exampleTranslation": "Herkes daha iyi bir topluma katkıda bulunabilir.",
+      "synonyms": [
+        "helfen",
+        "mitwirken"
+      ],
+      "level": "B1"
+    }
+  ]
+}

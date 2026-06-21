@@ -1,0 +1,174 @@
+{
+  "kind": "seed",
+  "unitId": 39,
+  "categoryId": 8,
+  "number": 3,
+  "title": "İş Hayatı Deyimleri",
+  "words": [
+    {
+      "id": 526,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "die Kurve kratzen",
+      "turkish": "sıvışmak / tüymek",
+      "example": "Bevor es schwierig wird, kratzt er die Kurve.",
+      "exampleTranslation": "İşler zorlaşmadan tüyüyor.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "id": 527,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "auf Touren kommen",
+      "turkish": "hız kazanmak / giderek hızlanmak",
+      "example": "Nach dem Kaffee kommt er langsam auf Touren.",
+      "exampleTranslation": "Kahveden sonra yavaş yavaş hız kazanıyor.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 528,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "den Ball flach halten",
+      "turkish": "sakin olmak / abartmamak",
+      "example": "Beim Verhandeln ist es wichtig, den Ball flach zu halten.",
+      "exampleTranslation": "Müzakere ederken sakin olmak önemli.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "id": 529,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "in die Hände spucken",
+      "turkish": "kolları sıvamak / işe girişmek",
+      "example": "Es wird Zeit, in die Hände zu spucken und anzufangen.",
+      "exampleTranslation": "Kolları sıvama ve başlama zamanı.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 530,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "Nägel mit Köpfen machen",
+      "turkish": "işi sağlam yapmak / gereğini yapmak",
+      "example": "Wenn wir das Projekt anfangen, machen wir Nägel mit Köpfen.",
+      "exampleTranslation": "Projeye başlarsak, işi sağlam yapalım.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 531,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "auf der faulen Haut liegen",
+      "turkish": "tembellik etmek / uyuz olmak",
+      "example": "Er liegt die ganze Zeit auf der faulen Haut.",
+      "exampleTranslation": "Bütün zamanını tembellik ederek geçiriyor.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 532,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "unter Druck stehen",
+      "turkish": "baskı altında olmak",
+      "example": "Vor der Deadline stehe ich immer unter Druck.",
+      "exampleTranslation": "Son teslim tarihinden önce her zaman baskı altındayım.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 533,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "den Kopf hinhalten",
+      "turkish": "hesap vermek / suçu üstlenmek",
+      "example": "Der Chef muss für die Fehler den Kopf hinhalten.",
+      "exampleTranslation": "Patron hatalar için hesap vermek zorunda.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "id": 534,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "am langen Hebel sitzen",
+      "turkish": "güçlü tarafta olmak / avantajlı konumda olmak",
+      "example": "Als Abteilungsleiter sitzt er am langen Hebel.",
+      "exampleTranslation": "Bölüm müdürü olarak avantajlı konumda.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "id": 535,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "das Ruder übernehmen",
+      "turkish": "kontrolü ele almak / yönetimi üstlenmek",
+      "example": "In der Krise muss jemand das Ruder übernehmen.",
+      "exampleTranslation": "Kriz zamanında birinin yönetimi üstlenmesi lazım.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 536,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "die Fäden in der Hand halten",
+      "turkish": "ipleri elinde tutmak",
+      "example": "Die Geschäftsführerin hält alle Fäden in der Hand.",
+      "exampleTranslation": "Genel müdür tüm ipleri elinde tutuyor.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 537,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "einen kühlen Kopf bewahren",
+      "turkish": "soğukkanlılığını korumak",
+      "example": "In kritischen Situationen muss man einen kühlen Kopf bewahren.",
+      "exampleTranslation": "Kritik durumlarda soğukkanlılığını korumak lazım.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 538,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "über seinen Schatten springen",
+      "turkish": "kendini aşmak / alışkanlıklarının dışına çıkmak",
+      "example": "Um erfolgreich zu sein, muss man manchmal über seinen Schatten springen.",
+      "exampleTranslation": "Başarılı olmak için bazen kendini aşmak lazım.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "id": 539,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "das Zepter schwingen",
+      "turkish": "hüküm sürmek / idare etmek",
+      "example": "In dieser Firma schwingt der Chef das Zepter.",
+      "exampleTranslation": "Bu firmada patron hükmediyor.",
+      "synonyms": [],
+      "level": "C1"
+    },
+    {
+      "id": 540,
+      "categoryId": 8,
+      "unitId": 39,
+      "german": "hinter den Kulissen arbeiten",
+      "turkish": "perde arkasında çalışmak",
+      "example": "Er arbeitet lieber hinter den Kulissen.",
+      "exampleTranslation": "Perde arkasında çalışmayı tercih ediyor.",
+      "synonyms": [],
+      "level": "C1"
+    }
+  ]
+}

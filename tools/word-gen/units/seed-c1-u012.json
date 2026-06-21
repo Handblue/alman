@@ -1,0 +1,200 @@
+{
+  "kind": "seed",
+  "unitId": 12,
+  "categoryId": 1,
+  "number": 5,
+  "title": "Giysi ve Moda",
+  "words": [
+    {
+      "id": 166,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "das Hemd",
+      "turkish": "gömlek",
+      "example": "Er trägt ein weißes Hemd zur Arbeit.",
+      "exampleTranslation": "İşe beyaz gömlek giyiyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 167,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "die Hose",
+      "turkish": "pantolon",
+      "example": "Diese Hose ist zu eng für mich.",
+      "exampleTranslation": "Bu pantolon bana çok dar.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 168,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "das Kleid",
+      "turkish": "elbise",
+      "example": "Sie trägt ein rotes Kleid zur Party.",
+      "exampleTranslation": "Partiye kırmızı elbise giyiyor.",
+      "synonyms": [
+        "das Gewand"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 169,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "der Schuh",
+      "turkish": "ayakkabı",
+      "example": "Diese Schuhe sind sehr bequem.",
+      "exampleTranslation": "Bu ayakkabılar çok rahat.",
+      "synonyms": [
+        "der Stiefel"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 170,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "die Jacke",
+      "turkish": "ceket / mont",
+      "example": "Vergiss deine Jacke nicht, es ist kalt.",
+      "exampleTranslation": "Ceketini unutma, hava soğuk.",
+      "synonyms": [
+        "der Mantel"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 171,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "der Pullover",
+      "turkish": "kazak",
+      "example": "Im Winter trage ich meistens einen Pullover.",
+      "exampleTranslation": "Kışın genellikle kazak giyerim.",
+      "synonyms": [
+        "der Pulli",
+        "der Sweater"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 172,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "die Mütze",
+      "turkish": "bere / şapka",
+      "example": "Bei diesem Wetter braucht man eine Mütze.",
+      "exampleTranslation": "Bu havada bere gerekir.",
+      "synonyms": [
+        "der Hut"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 173,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "der Schal",
+      "turkish": "atkı / eşarp",
+      "example": "Sie trägt einen bunten Schal.",
+      "exampleTranslation": "Renkli bir atkı takıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 174,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "die Brille",
+      "turkish": "gözlük",
+      "example": "Ohne Brille kann ich kaum sehen.",
+      "exampleTranslation": "Gözlüksüz neredeyse hiç göremiyorum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 175,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "anziehen",
+      "turkish": "giymek",
+      "example": "Zieh bitte eine warme Jacke an!",
+      "exampleTranslation": "Lütfen sıcak bir ceket giy!",
+      "synonyms": [
+        "tragen",
+        "bekleiden"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 176,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "die Größe",
+      "turkish": "beden / boyut",
+      "example": "Welche Größe haben Sie?",
+      "exampleTranslation": "Kaç bedeniniz var?",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 177,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "die Farbe",
+      "turkish": "renk",
+      "example": "Welche Farbe gefällt dir am besten?",
+      "exampleTranslation": "Hangi rengi en çok seviyorsun?",
+      "synonyms": [
+        "der Ton",
+        "der Farbton"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 178,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "modisch",
+      "turkish": "modaya uygun / şık",
+      "example": "Sie kleidet sich immer sehr modisch.",
+      "exampleTranslation": "Her zaman çok şık giyiniyor.",
+      "synonyms": [
+        "schick",
+        "elegant"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 179,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "der Stoff",
+      "turkish": "kumaş",
+      "example": "Dieser Stoff ist sehr weich.",
+      "exampleTranslation": "Bu kumaş çok yumuşak.",
+      "synonyms": [
+        "das Gewebe",
+        "das Material"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 180,
+      "categoryId": 1,
+      "unitId": 12,
+      "german": "passen",
+      "turkish": "uymak / yakışmak",
+      "example": "Diese Hose passt mir gut.",
+      "exampleTranslation": "Bu pantolon bana iyi uyuyor.",
+      "synonyms": [
+        "sitzen",
+        "stehen"
+      ],
+      "level": "A1"
+    }
+  ]
+}

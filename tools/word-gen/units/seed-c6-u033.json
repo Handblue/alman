@@ -1,0 +1,203 @@
+{
+  "kind": "seed",
+  "unitId": 33,
+  "categoryId": 6,
+  "number": 2,
+  "title": "Fen Bilimleri ve Matematik",
+  "words": [
+    {
+      "id": 466,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "die Physik",
+      "turkish": "fizik",
+      "example": "In der Physik studiert man Materie und Energie.",
+      "exampleTranslation": "Fizikte madde ve enerji incelenir.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 467,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "die Chemie",
+      "turkish": "kimya",
+      "example": "In der Chemie lernt man über Reaktionen.",
+      "exampleTranslation": "Kimyada tepkimeler öğrenilir.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 468,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "die Mathematik",
+      "turkish": "matematik",
+      "example": "Mathematik ist die Sprache der Wissenschaft.",
+      "exampleTranslation": "Matematik bilimin dilidir.",
+      "synonyms": [
+        "die Mathe"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 469,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "das Experiment",
+      "turkish": "deney",
+      "example": "Das Experiment lieferte unerwartete Ergebnisse.",
+      "exampleTranslation": "Deney beklenmedik sonuçlar verdi.",
+      "synonyms": [
+        "der Versuch",
+        "die Studie"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 470,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "die Hypothese",
+      "turkish": "hipotez / varsayım",
+      "example": "Die Hypothese muss durch Experimente bestätigt werden.",
+      "exampleTranslation": "Hipotez deneylerle doğrulanmalıdır.",
+      "synonyms": [
+        "die These",
+        "die Annahme"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 471,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "beweisen",
+      "turkish": "ispatlamak / kanıtlamak",
+      "example": "Der Forscher beweist seine These.",
+      "exampleTranslation": "Araştırmacı tezini ispatladı.",
+      "synonyms": [
+        "belegen",
+        "nachweisen"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 472,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "messen",
+      "turkish": "ölçmek",
+      "example": "Wir messen die Temperatur des Wassers.",
+      "exampleTranslation": "Suyun sıcaklığını ölçüyoruz.",
+      "synonyms": [
+        "abmessen"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 473,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "berechnen",
+      "turkish": "hesaplamak",
+      "example": "Berechne bitte die Fläche des Dreiecks.",
+      "exampleTranslation": "Lütfen üçgenin alanını hesapla.",
+      "synonyms": [
+        "ausrechnen",
+        "kalkulieren"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 474,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "die Gleichung",
+      "turkish": "denklem",
+      "example": "Löse diese Gleichung.",
+      "exampleTranslation": "Bu denklemi çöz.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 475,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "das Labor",
+      "turkish": "laboratuvar",
+      "example": "Die Forscher arbeiten im Labor.",
+      "exampleTranslation": "Araştırmacılar laboratuvarda çalışıyor.",
+      "synonyms": [
+        "das Laboratorium"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 476,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "analysieren",
+      "turkish": "analiz etmek / çözümlemek",
+      "example": "Wir analysieren die Daten.",
+      "exampleTranslation": "Verileri analiz ediyoruz.",
+      "synonyms": [
+        "untersuchen",
+        "auswerten"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 477,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "die Theorie",
+      "turkish": "teori / kuram",
+      "example": "Einsteins Relativitätstheorie veränderte die Physik.",
+      "exampleTranslation": "Einstein'ın görelilik teorisi fiziği değiştirdi.",
+      "synonyms": [
+        "das Modell",
+        "das Konzept"
+      ],
+      "level": "B2"
+    },
+    {
+      "id": 478,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "das Ergebnis",
+      "turkish": "sonuç / netice",
+      "example": "Das Ergebnis des Tests war positiv.",
+      "exampleTranslation": "Testin sonucu olumlu.",
+      "synonyms": [
+        "das Resultat",
+        "die Schlussfolgerung"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 479,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "die Variable",
+      "turkish": "değişken",
+      "example": "In dieser Gleichung gibt es zwei Variablen.",
+      "exampleTranslation": "Bu denklemde iki değişken var.",
+      "synonyms": [],
+      "level": "B2"
+    },
+    {
+      "id": 480,
+      "categoryId": 6,
+      "unitId": 33,
+      "german": "statistisch",
+      "turkish": "istatistiksel",
+      "example": "Die statistischen Daten zeigen einen klaren Trend.",
+      "exampleTranslation": "İstatistiksel veriler açık bir eğilim gösteriyor.",
+      "synonyms": [
+        "statistisch gesehen"
+      ],
+      "level": "C1"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "kind": "seed",
+  "unitId": 14,
+  "categoryId": 1,
+  "number": 7,
+  "title": "Zaman ve Sayılar",
+  "words": [
+    {
+      "id": 196,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "die Stunde",
+      "turkish": "saat (süre)",
+      "example": "Die Sitzung dauert zwei Stunden.",
+      "exampleTranslation": "Toplantı iki saat sürüyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 197,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "die Minute",
+      "turkish": "dakika",
+      "example": "Warte bitte fünf Minuten.",
+      "exampleTranslation": "Lütfen beş dakika bekle.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 198,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "der Tag",
+      "turkish": "gün",
+      "example": "Es gibt sieben Tage in der Woche.",
+      "exampleTranslation": "Haftada yedi gün var.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 199,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "die Woche",
+      "turkish": "hafta",
+      "example": "Diese Woche habe ich viel zu tun.",
+      "exampleTranslation": "Bu hafta çok işim var.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 200,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "der Monat",
+      "turkish": "ay",
+      "example": "Im nächsten Monat fahre ich in Urlaub.",
+      "exampleTranslation": "Gelecek ay tatile gidiyorum.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 201,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "das Jahr",
+      "turkish": "yıl",
+      "example": "Das neue Jahr beginnt mit viel Hoffnung.",
+      "exampleTranslation": "Yeni yıl çok umutla başlıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 202,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "morgen",
+      "turkish": "yarın",
+      "example": "Morgen habe ich einen Termin beim Arzt.",
+      "exampleTranslation": "Yarın doktorda randevum var.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 203,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "gestern",
+      "turkish": "dün",
+      "example": "Gestern war das Wetter schön.",
+      "exampleTranslation": "Dün hava güzeldi.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 204,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "heute",
+      "turkish": "bugün",
+      "example": "Heute ist Montag.",
+      "exampleTranslation": "Bugün Pazartesi.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 205,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "früh",
+      "turkish": "erken",
+      "example": "Ich stehe immer früh auf.",
+      "exampleTranslation": "Her zaman erken kalkarım.",
+      "synonyms": [
+        "zeitig"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 206,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "spät",
+      "turkish": "geç",
+      "example": "Es ist schon spät, wir müssen gehen.",
+      "exampleTranslation": "Artık geç, gitmemiz lazım.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 207,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "jetzt",
+      "turkish": "şimdi",
+      "example": "Was machst du jetzt gerade?",
+      "exampleTranslation": "Şu an ne yapıyorsun?",
+      "synonyms": [
+        "gerade",
+        "momentan"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 208,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "immer",
+      "turkish": "her zaman / daima",
+      "example": "Er kommt immer pünktlich.",
+      "exampleTranslation": "Her zaman zamanında gelir.",
+      "synonyms": [
+        "stets",
+        "ständig"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 209,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "nie",
+      "turkish": "hiçbir zaman / asla",
+      "example": "Ich habe nie geraucht.",
+      "exampleTranslation": "Hiçbir zaman sigara içmedim.",
+      "synonyms": [
+        "niemals"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 210,
+      "categoryId": 1,
+      "unitId": 14,
+      "german": "manchmal",
+      "turkish": "bazen / zaman zaman",
+      "example": "Manchmal vergesse ich meinen Schlüssel.",
+      "exampleTranslation": "Bazen anahtarımı unutuyorum.",
+      "synonyms": [
+        "gelegentlich",
+        "ab und zu"
+      ],
+      "level": "A1"
+    }
+  ]
+}

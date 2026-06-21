@@ -1,0 +1,199 @@
+{
+  "kind": "seed",
+  "unitId": 40,
+  "categoryId": 8,
+  "number": 4,
+  "title": "Günlük Konuşma İfadeleri",
+  "words": [
+    {
+      "id": 541,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "das macht nichts",
+      "turkish": "önemli değil / olsun",
+      "example": "Du hast mein Glas umgeworfen? Das macht nichts.",
+      "exampleTranslation": "Bardağımı devirdin mi? Önemli değil.",
+      "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "id": 542,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "Wie bitte?",
+      "turkish": "Efendim? / Ne dediniz?",
+      "example": "Wie bitte? Ich habe dich nicht verstanden.",
+      "exampleTranslation": "Efendim? Seni anlamadım.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 543,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "im Großen und Ganzen",
+      "turkish": "genel olarak / her şey bir yana",
+      "example": "Im Großen und Ganzen bin ich mit dem Ergebnis zufrieden.",
+      "exampleTranslation": "Genel olarak sonuçtan memnunum.",
+      "synonyms": [
+        "insgesamt",
+        "alles in allem"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 544,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "auf keinen Fall",
+      "turkish": "kesinlikle hayır / hiçbir şekilde",
+      "example": "Auf keinen Fall werde ich das akzeptieren.",
+      "exampleTranslation": "Kesinlikle bunu kabul etmeyeceğim.",
+      "synonyms": [
+        "niemals",
+        "unter keinen Umständen"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 545,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "auf jeden Fall",
+      "turkish": "kesinlikle / mutlaka",
+      "example": "Ich komme auf jeden Fall zur Party.",
+      "exampleTranslation": "Partiye kesinlikle gelirim.",
+      "synonyms": [
+        "unbedingt",
+        "sicher"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 546,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "gar nicht",
+      "turkish": "hiç / hiç de",
+      "example": "Das gefällt mir gar nicht.",
+      "exampleTranslation": "Bu hiç hoşuma gitmiyor.",
+      "synonyms": [
+        "überhaupt nicht"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 547,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "es kommt darauf an",
+      "turkish": "duruma göre değişir / bağlıdır",
+      "example": "Kommt du morgen? – Es kommt darauf an.",
+      "exampleTranslation": "Yarın gelecek misin? – Duruma göre değişir.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 548,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "soweit so gut",
+      "turkish": "şimdiye kadar iyi",
+      "example": "Soweit so gut – kein Fehler bisher.",
+      "exampleTranslation": "Şimdiye kadar iyi – henüz hata yok.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 549,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "unter anderem",
+      "turkish": "diğerlerinin yanı sıra / bir de",
+      "example": "Wir bieten unter anderem Sprachkurse an.",
+      "exampleTranslation": "Diğerlerinin yanı sıra dil kursları sunuyoruz.",
+      "synonyms": [
+        "u.a.",
+        "auch"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 550,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "in Ordnung",
+      "turkish": "tamam / düzgün",
+      "example": "Ist alles in Ordnung?",
+      "exampleTranslation": "Her şey tamam mı?",
+      "synonyms": [
+        "okay",
+        "gut"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 551,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "mit anderen Worten",
+      "turkish": "bir başka deyişle",
+      "example": "Mit anderen Worten: du weißt es nicht.",
+      "exampleTranslation": "Bir başka deyişle: bilmiyorsun.",
+      "synonyms": [
+        "das heißt",
+        "sprich"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 552,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "kein Wunder",
+      "turkish": "şaşırtıcı değil / doğal ki",
+      "example": "Er hat nicht gelernt – kein Wunder, dass er durchgefallen ist.",
+      "exampleTranslation": "Çalışmadı – kaldı, şaşırtıcı değil.",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 553,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "wozu denn",
+      "turkish": "bunun ne anlamı var / ne gerek var ki",
+      "example": "Wozu denn so früh aufstehen?",
+      "exampleTranslation": "Bu kadar erken kalkmaya ne gerek var?",
+      "synonyms": [],
+      "level": "B1"
+    },
+    {
+      "id": 554,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "auf die Schnelle",
+      "turkish": "hızlıca / çabucak",
+      "example": "Kannst du das auf die Schnelle erledigen?",
+      "exampleTranslation": "Bunu çabucak halledebilir misin?",
+      "synonyms": [
+        "schnell",
+        "rasch"
+      ],
+      "level": "B1"
+    },
+    {
+      "id": 555,
+      "categoryId": 8,
+      "unitId": 40,
+      "german": "das ist mir egal",
+      "turkish": "farketmez / umurumda değil",
+      "example": "Was du darüber denkst, ist mir egal.",
+      "exampleTranslation": "Bunu ne düşündüğün umurumda değil.",
+      "synonyms": [
+        "das ist mir gleichgültig"
+      ],
+      "level": "A2"
+    }
+  ]
+}

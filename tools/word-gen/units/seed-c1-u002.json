@@ -1,0 +1,196 @@
+{
+  "kind": "seed",
+  "unitId": 2,
+  "categoryId": 1,
+  "number": 2,
+  "title": "Aile ve İlişkiler",
+  "words": [
+    {
+      "id": 121,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "die Mutter",
+      "turkish": "anne",
+      "example": "Meine Mutter kocht sehr gut.",
+      "exampleTranslation": "Annem çok iyi yemek yapar.",
+      "synonyms": [
+        "die Mama",
+        "die Mutti"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 122,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "der Vater",
+      "turkish": "baba",
+      "example": "Mein Vater arbeitet als Ingenieur.",
+      "exampleTranslation": "Babam mühendis olarak çalışır.",
+      "synonyms": [
+        "der Papa",
+        "der Papi"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 123,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "der Bruder",
+      "turkish": "erkek kardeş",
+      "example": "Mein Bruder ist zwei Jahre jünger als ich.",
+      "exampleTranslation": "Erkek kardeşim benden iki yaş küçük.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 124,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "die Schwester",
+      "turkish": "kız kardeş",
+      "example": "Meine Schwester studiert Medizin.",
+      "exampleTranslation": "Kız kardeşim tıp okuyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 125,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "die Großmutter",
+      "turkish": "büyükanne",
+      "example": "Meine Großmutter erzählt gerne Geschichten.",
+      "exampleTranslation": "Büyükannem hikaye anlatmayı sever.",
+      "synonyms": [
+        "die Oma",
+        "die Omi"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 126,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "der Großvater",
+      "turkish": "büyükbaba",
+      "example": "Mein Großvater war früher Lehrer.",
+      "exampleTranslation": "Büyükbabam eskiden öğretmendi.",
+      "synonyms": [
+        "der Opa",
+        "der Opi"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 127,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "der Sohn",
+      "turkish": "oğul / erkek çocuk",
+      "example": "Ihr Sohn ist sehr fleißig.",
+      "exampleTranslation": "Onun oğlu çok çalışkan.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 128,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "die Tochter",
+      "turkish": "kız çocuk",
+      "example": "Ihre Tochter spielt Klavier.",
+      "exampleTranslation": "Onun kızı piyano çalıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 129,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "der Onkel",
+      "turkish": "amca / dayı",
+      "example": "Mein Onkel wohnt in Berlin.",
+      "exampleTranslation": "Amcam Berlin'de yaşıyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 130,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "die Tante",
+      "turkish": "hala / teyze",
+      "example": "Meine Tante bringt immer Geschenke mit.",
+      "exampleTranslation": "Teyzemin her zaman hediye getiriyor.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 131,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "die Freundin",
+      "turkish": "kız arkadaş / kadın dost",
+      "example": "Meine beste Freundin heißt Ayşe.",
+      "exampleTranslation": "En iyi arkadaşımın adı Ayşe.",
+      "synonyms": [
+        "die Bekannte"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 132,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "verheiratet",
+      "turkish": "evli",
+      "example": "Meine Eltern sind seit 30 Jahren verheiratet.",
+      "exampleTranslation": "Ailem 30 yıldır evli.",
+      "synonyms": [],
+      "level": "A1"
+    },
+    {
+      "id": 133,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "die Ehe",
+      "turkish": "evlilik",
+      "example": "Sie führen eine glückliche Ehe.",
+      "exampleTranslation": "Mutlu bir evlilik sürdürüyorlar.",
+      "synonyms": [
+        "die Heirat",
+        "die Hochzeit"
+      ],
+      "level": "A2"
+    },
+    {
+      "id": 134,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "das Kind",
+      "turkish": "çocuk",
+      "example": "Das Kind spielt im Garten.",
+      "exampleTranslation": "Çocuk bahçede oynuyor.",
+      "synonyms": [
+        "der Nachwuchs"
+      ],
+      "level": "A1"
+    },
+    {
+      "id": 135,
+      "categoryId": 1,
+      "unitId": 2,
+      "german": "das Baby",
+      "turkish": "bebek",
+      "example": "Das Baby schläft die ganze Nacht.",
+      "exampleTranslation": "Bebek bütün gece uyuyor.",
+      "synonyms": [
+        "der Säugling",
+        "das Kleinkind"
+      ],
+      "level": "A1"
+    }
+  ]
+}
