@@ -47,7 +47,7 @@ export const WORDS: Word[] = [
   { id: 30, categoryId: 2, unitId: 3, german: 'zwar ... aber', turkish: 'gerçi ... ama', example: 'Das ist zwar schwer, aber machbar.', exampleTranslation: 'Gerçi zor, ama yapılabilir.', synonyms: [], level: 'B1' },
 
   // Kategori 3, Ünite 1 — Goethe Sınav Hazırlık
-  { id: 31, categoryId: 3, unitId: 4, german: 'die Veranstaltung', turkish: 'etkinlik / organizasyon', example: 'Die Veranstaltung beginnt um 19 Uhr.', exampleTranslation: 'Etkinlik saat 19.00\'da başlıyor.', synonyms: ['das Ereignis', 'die Veranstaltung'], level: 'B1' },
+  { id: 31, categoryId: 3, unitId: 4, german: 'die Veranstaltung', turkish: 'etkinlik / organizasyon', example: 'Die Veranstaltung beginnt um 19 Uhr.', exampleTranslation: 'Etkinlik saat 19.00\'da başlıyor.', synonyms: ['das Ereignis', 'das Event'], level: 'B1' },
   { id: 32, categoryId: 3, unitId: 4, german: 'die Bewerbung', turkish: 'başvuru / iş başvurusu', example: 'Ich schicke meine Bewerbung per E-Mail.', exampleTranslation: 'Başvurumu e-posta ile gönderiyorum.', synonyms: ['die Kandidatur'], level: 'B1' },
   { id: 33, categoryId: 3, unitId: 4, german: 'der Lebenslauf', turkish: 'özgeçmiş', example: 'Mein Lebenslauf ist auf Deutsch geschrieben.', exampleTranslation: 'Özgeçmişim Almanca yazılmış.', synonyms: ['der CV'], level: 'B1' },
   { id: 34, categoryId: 3, unitId: 4, german: 'die Ausbildung', turkish: 'eğitim / mesleki eğitim', example: 'Er macht eine Ausbildung zum Elektriker.', exampleTranslation: 'Elektrikçi olmak için mesleki eğitim yapıyor.', synonyms: ['die Berufsausbildung'], level: 'B1' },
@@ -197,7 +197,7 @@ export const WORDS: Word[] = [
   { id: 162, categoryId: 1, unitId: 11, german: 'lecker', turkish: 'lezzetli / nefis', example: 'Das Essen schmeckt sehr lecker.', exampleTranslation: 'Yemek çok lezzetli.', synonyms: ['köstlich', 'schmackhaft'], level: 'A1' },
   { id: 163, categoryId: 1, unitId: 11, german: 'das Restaurant', turkish: 'restoran', example: 'Wir gehen heute Abend ins Restaurant.', exampleTranslation: 'Bu akşam restorana gidiyoruz.', synonyms: ['das Lokal', 'das Gasthaus'], level: 'A1' },
   { id: 164, categoryId: 1, unitId: 11, german: 'bestellen', turkish: 'sipariş vermek', example: 'Haben Sie schon bestellt?', exampleTranslation: 'Sipariş verdiniz mi?', synonyms: ['ordern'], level: 'A1' },
-  { id: 165, categoryId: 1, unitId: 11, german: 'die Rechnung', turkish: 'hesap / fatura', example: 'Kannst du bitte die Rechnung bringen?', exampleTranslation: 'Hesabı getirir misiniz lütfen?', synonyms: ['die Quittung', 'die Rechnung'], level: 'A2' },
+  { id: 165, categoryId: 1, unitId: 11, german: 'die Rechnung', turkish: 'hesap / fatura', example: 'Kannst du bitte die Rechnung bringen?', exampleTranslation: 'Hesabı getirir misiniz lütfen?', synonyms: ['die Quittung', 'der Beleg'], level: 'A2' },
 
   // ─── Kategori 1, Ünite 12 — Giysi ve Moda ──────────────────────────────
   { id: 166, categoryId: 1, unitId: 12, german: 'das Hemd', turkish: 'gömlek', example: 'Er trägt ein weißes Hemd zur Arbeit.', exampleTranslation: 'İşe beyaz gömlek giyiyor.', synonyms: [], level: 'A1' },
@@ -690,5 +690,5 @@ export const WORDS: Word[] = [
   { id: 597, categoryId: 7, unitId: 37, german: 'die Kontingenz', turkish: 'olasılık / olumsallık', example: 'Kontingenz bedeutet: Es hätte auch anders sein können.', exampleTranslation: 'Olumsallık demek: Farklı da olabilirdi.', synonyms: ['die Zufälligkeit', 'die Möglichkeit'], level: 'C1' },
   { id: 598, categoryId: 7, unitId: 37, german: 'die Abstraktion', turkish: 'soyutlama', example: 'Abstraktion ist das Herausarbeiten wesentlicher Merkmale.', exampleTranslation: 'Soyutlama, temel özelliklerin ortaya çıkarılmasıdır.', synonyms: ['die Verallgemeinerung'], level: 'C1' },
   { id: 599, categoryId: 7, unitId: 37, german: 'das Apriori', turkish: 'a priori / deneyim öncesi bilgi', example: 'Kant unterscheidet zwischen apriorischen und empirischen Urteilen.', exampleTranslation: 'Kant, a priori ve ampirik yargıları birbirinden ayırır.', synonyms: ['das Vorwissen'], level: 'C1' },
-  { id: 600, categoryId: 7, unitId: 37, german: 'das Aposterori', turkish: 'a posteriori / deneyimden gelen bilgi', example: 'Aposteriori-Wissen entsteht durch Beobachtung und Erfahrung.', exampleTranslation: 'A posteriori bilgi, gözlem ve deneyimle elde edilir.', synonyms: ['das Erfahrungswissen'], level: 'C1' },
+  { id: 600, categoryId: 7, unitId: 37, german: 'das Aposteriori', turkish: 'a posteriori / deneyimden gelen bilgi', example: 'Aposteriori-Wissen entsteht durch Beobachtung und Erfahrung.', exampleTranslation: 'A posteriori bilgi, gözlem ve deneyimle elde edilir.', synonyms: ['das Erfahrungswissen'], level: 'C1' },
 ];

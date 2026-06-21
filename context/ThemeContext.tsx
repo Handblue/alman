@@ -16,7 +16,8 @@ type Theme = {
 const ThemeContext = createContext<Theme | null>(null);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [isDark, setIsDark] = useState(false);
+  // App is dark-first (app.json userInterfaceStyle: "dark", dark splash). Default to dark.
+  const [isDark, setIsDark] = useState(true);
 
   const colors = {
     bg:            isDark ? Colors.bg.primaryDark  : Colors.bg.light,

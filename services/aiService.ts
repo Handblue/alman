@@ -130,12 +130,14 @@ export class AIService {
       const fullRec: Recommendation = { ...rec, id: recId, createdAt: new Date() };
 
       try {
-        await setDoc(doc(db, 'analytics', userId, 'recommendations', recId), {
-          ...fullRec,
-          createdAt: Timestamp.fromDate(fullRec.createdAt),
-          expiresAt: fullRec.expiresAt ? Timestamp.fromDate(fullRec.expiresAt) : null,
-          acceptedAt: fullRec.acceptedAt ? Timestamp.fromDate(fullRec.acceptedAt) : null,
-        });
+        if (db) {
+          await setDoc(doc(db, 'analytics', userId, 'recommendations', recId), {
+            ...fullRec,
+            createdAt: Timestamp.fromDate(fullRec.createdAt),
+            expiresAt: fullRec.expiresAt ? Timestamp.fromDate(fullRec.expiresAt) : null,
+            acceptedAt: fullRec.acceptedAt ? Timestamp.fromDate(fullRec.acceptedAt) : null,
+          });
+        }
         savedRecommendations.push(fullRec);
       } catch (error) {
         console.error('Error saving recommendation:', error);
@@ -320,10 +322,12 @@ export class AIService {
       const fullPred: Prediction = { ...pred, id: predId, createdAt: new Date() };
 
       try {
-        await setDoc(doc(db, 'analytics', userId, 'predictions', predId), {
-          ...fullPred,
-          createdAt: Timestamp.fromDate(fullPred.createdAt),
-        });
+        if (db) {
+          await setDoc(doc(db, 'analytics', userId, 'predictions', predId), {
+            ...fullPred,
+            createdAt: Timestamp.fromDate(fullPred.createdAt),
+          });
+        }
         savedPredictions.push(fullPred);
       } catch (error) {
         console.error('Error saving prediction:', error);
@@ -775,6 +779,7 @@ export class AIService {
     userId: string,
     limitCount: number = 10
   ): Promise<Recommendation[]> {
+    if (!db) return [];
     try {
       const recsQuery = query(
         collection(db, 'analytics', userId, 'recommendations'),
@@ -799,6 +804,7 @@ export class AIService {
     userId: string,
     limitCount: number = 10
   ): Promise<Prediction[]> {
+    if (!db) return [];
     try {
       const predsQuery = query(
         collection(db, 'analytics', userId, 'predictions'),
@@ -818,6 +824,7 @@ export class AIService {
   }
 
   async getLearningPaths(userId: string): Promise<LearningPath[]> {
+    if (!db) return [];
     try {
       const pathsQuery = query(
         collection(db, 'analytics', userId, 'learning_paths'),
@@ -872,13 +879,15 @@ export class AIService {
     };
 
     try {
-      await setDoc(doc(db, 'analytics', userId, 'learning_paths', pathId), {
-        ...learningPath,
-        createdAt: Timestamp.fromDate(learningPath.createdAt),
-        completedAt: learningPath.completedAt
-          ? Timestamp.fromDate(learningPath.completedAt)
-          : null,
-      });
+      if (db) {
+        await setDoc(doc(db, 'analytics', userId, 'learning_paths', pathId), {
+          ...learningPath,
+          createdAt: Timestamp.fromDate(learningPath.createdAt),
+          completedAt: learningPath.completedAt
+            ? Timestamp.fromDate(learningPath.completedAt)
+            : null,
+        });
+      }
     } catch (error) {
       console.error('Error saving learning path:', error);
       throw error;

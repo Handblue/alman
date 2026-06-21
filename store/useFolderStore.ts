@@ -38,11 +38,13 @@ export const useFolderStore = create<FolderState>((set, get) => ({
     const { folders } = get();
     if (folders.length >= 3) return '';
     const id = Date.now().toString();
+    const now = new Date().toISOString();
     const newFolder: Folder = {
       id,
       name,
       wordIds: [],
-      createdAt: new Date().toISOString(),
+      createdAt: now,
+      updatedAt: now,
     };
     const updated = [...folders, newFolder];
     storage.set('folders', JSON.stringify(updated));

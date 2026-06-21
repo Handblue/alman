@@ -54,6 +54,7 @@ class StudyGroupService {
   }): Promise<string> {
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
+    if (!db) throw new Error('Çalışma grupları için bulut senkronizasyonu gerekiyor');
 
     const groupId = `group_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
     const inviteCode = Math.random().toString(36).slice(2, 8).toUpperCase();
@@ -80,6 +81,7 @@ class StudyGroupService {
   async joinGroup(groupId: string): Promise<void> {
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
+    if (!db) throw new Error('Çalışma grupları için bulut senkronizasyonu gerekiyor');
 
     const groupRef = doc(db, 'studyGroups', groupId);
     const groupSnap = await getDoc(groupRef);
@@ -97,6 +99,7 @@ class StudyGroupService {
   }
 
   async joinGroupByInviteCode(inviteCode: string): Promise<string> {
+    if (!db) throw new Error('Çalışma grupları için bulut senkronizasyonu gerekiyor');
     const groupsRef = collection(db, 'studyGroups');
     const q = query(groupsRef, where('inviteCode', '==', inviteCode.toUpperCase()));
     const snap = await getDocs(q);
@@ -110,6 +113,7 @@ class StudyGroupService {
   async leaveGroup(groupId: string): Promise<void> {
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
+    if (!db) throw new Error('Çalışma grupları için bulut senkronizasyonu gerekiyor');
 
     const groupRef = doc(db, 'studyGroups', groupId);
     await updateDoc(groupRef, {
@@ -120,6 +124,7 @@ class StudyGroupService {
   async updateWeeklyXP(groupId: string, xpAmount: number): Promise<void> {
     const user = authService.getCurrentUser();
     if (!user) return;
+    if (!db) return;
 
     const groupRef = doc(db, 'studyGroups', groupId);
     const groupSnap = await getDoc(groupRef);
@@ -138,6 +143,7 @@ class StudyGroupService {
   async getUserGroups(): Promise<StudyGroup[]> {
     const user = authService.getCurrentUser();
     if (!user) return [];
+    if (!db) return [];
 
     const groupsRef = collection(db, 'studyGroups');
     const q = query(groupsRef, where('members', 'array-contains', user.id));
@@ -146,6 +152,7 @@ class StudyGroupService {
   }
 
   async getPublicGroups(): Promise<StudyGroup[]> {
+    if (!db) return [];
     const groupsRef = collection(db, 'studyGroups');
     const q = query(groupsRef, where('isPrivate', '==', false));
     const snap = await getDocs(q);
@@ -153,6 +160,7 @@ class StudyGroupService {
   }
 
   async getGroup(groupId: string): Promise<StudyGroup | null> {
+    if (!db) return null;
     const groupRef = doc(db, 'studyGroups', groupId);
     const snap = await getDoc(groupRef);
     if (!snap.exists()) return null;
@@ -160,6 +168,7 @@ class StudyGroupService {
   }
 
   subscribeToGroup(groupId: string, callback: (group: StudyGroup) => void): Unsubscribe {
+    if (!db) return () => {};
     const groupRef = doc(db, 'studyGroups', groupId);
     this.unsubscribeGroup = onSnapshot(groupRef, snap => {
       if (snap.exists()) callback(snap.data() as StudyGroup);
@@ -178,6 +187,7 @@ class StudyGroupService {
   }): Promise<string> {
     const user = authService.getCurrentUser();
     if (!user) throw new Error('User not authenticated');
+    if (!db) throw new Error('İlerleme paylaşımı için bulut senkronizasyonu gerekiyor');
 
     const shareId = `share_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
     const shareData: ProgressShare = {
@@ -198,6 +208,7 @@ class StudyGroupService {
 
   async getFriendProgressFeed(friendUids: string[]): Promise<ProgressShare[]> {
     if (friendUids.length === 0) return [];
+    if (!db) return [];
 
     // Firestore 'in' max 10 items
     const limited = friendUids.slice(0, 10);
