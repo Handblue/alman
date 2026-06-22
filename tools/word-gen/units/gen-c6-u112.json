@@ -156,12 +156,13 @@
       "level": "C1"
     },
     {
-      "german": "die Heilung",
-      "turkish": "iyileşme, şifa",
-      "example": "Eine vollständige Heilung ist bei dieser Erkrankung möglich.",
-      "exampleTranslation": "Bu hastalıkta tam bir iyileşme mümkündür.",
+      "german": "die Remission",
+      "turkish": "remisyon (hastalık belirtilerinin gerilemesi)",
+      "example": "Nach der Chemotherapie befindet sich der Patient in vollständiger Remission.",
+      "exampleTranslation": "Kemoterapinin ardından hasta tam remisyon halinde.",
       "synonyms": [
-        "die Ausheilung"
+        "der Rückgang der Krankheitszeichen",
+        "die Symptomfreiheit"
       ],
       "level": "C1"
     }

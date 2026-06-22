@@ -8,12 +8,13 @@
   "firstWordId": 1276,
   "words": [
     {
-      "german": "die Pressefreiheit",
-      "turkish": "basın özgürlüğü",
-      "example": "In einer Demokratie ist die Pressefreiheit ein hohes Gut.",
-      "exampleTranslation": "Bir demokraside basın özgürlüğü değerli bir varlıktır.",
+      "german": "die Reportage",
+      "turkish": "röportaj, haber raporu",
+      "example": "Der Journalist schrieb eine spannende Reportage über das Leben in der Großstadt.",
+      "exampleTranslation": "Gazeteci büyük şehirdeki yaşam hakkında heyecan verici bir röportaj yazdı.",
       "synonyms": [
-        "die Medienfreiheit"
+        "der Bericht",
+        "die Dokumentation"
       ],
       "level": "B1"
     },

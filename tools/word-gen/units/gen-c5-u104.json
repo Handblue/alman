@@ -75,12 +75,12 @@
       "level": "A2"
     },
     {
-      "german": "der Trainer",
-      "turkish": "antrenör, koç",
-      "example": "Unser Trainer ist heute sehr zufrieden mit uns.",
-      "exampleTranslation": "Antrenörümüz bugün bizden çok memnun.",
+      "german": "die Sportart",
+      "turkish": "spor dalı",
+      "example": "Schwimmen ist meine liebste Sportart.",
+      "exampleTranslation": "Yüzme benim en sevdiğim spor dalı.",
       "synonyms": [
-        "der Coach"
+        "die Disziplin"
       ],
       "level": "A2"
     },

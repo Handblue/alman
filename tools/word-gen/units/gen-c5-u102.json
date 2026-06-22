@@ -8,12 +8,12 @@
   "firstWordId": 1516,
   "words": [
     {
-      "german": "der Vorgesetzte",
-      "turkish": "üst, amir",
-      "example": "Mein Vorgesetzter lobt mich für die gute Arbeit.",
-      "exampleTranslation": "Amirim iyi iş için beni övüyor.",
+      "german": "der Locher",
+      "turkish": "delgeç",
+      "example": "Mit dem Locher mache ich zwei Löcher in das Blatt.",
+      "exampleTranslation": "Delgeç ile kağıda iki delik açıyorum.",
       "synonyms": [
-        "der Leiter"
+        "der Bürolocher"
       ],
       "level": "A1"
     },
@@ -28,11 +28,13 @@
       "level": "A1"
     },
     {
-      "german": "die Tastatur",
-      "turkish": "klavye",
-      "example": "Die Tastatur auf meinem Tisch ist sehr leise.",
-      "exampleTranslation": "Masamdaki klavye çok sessiz.",
-      "synonyms": [],
+      "german": "die Büroklammer",
+      "turkish": "ataş",
+      "example": "Ich halte die Seiten mit einer Büroklammer zusammen.",
+      "exampleTranslation": "Sayfaları bir ataşla bir arada tutuyorum.",
+      "synonyms": [
+        "die Klammer"
+      ],
       "level": "A1"
     },
     {
@@ -54,12 +56,13 @@
       "level": "A1"
     },
     {
-      "german": "die Personalabteilung",
-      "turkish": "insan kaynakları (departmanı)",
-      "example": "Bei Fragen zum Urlaub wende ich mich an die Personalabteilung.",
-      "exampleTranslation": "Tatille ilgili sorularda insan kaynaklarına başvururum.",
+      "german": "der Konferenzraum",
+      "turkish": "toplantı odası",
+      "example": "Das Meeting findet im großen Konferenzraum statt.",
+      "exampleTranslation": "Toplantı büyük toplantı odasında yapılıyor.",
       "synonyms": [
-        "das Personalwesen"
+        "der Sitzungssaal",
+        "der Meetingraum"
       ],
       "level": "A2"
     },

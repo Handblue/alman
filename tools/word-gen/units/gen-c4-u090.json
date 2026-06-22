@@ -120,13 +120,13 @@
       "level": "B2"
     },
     {
-      "german": "die Auflage",
-      "turkish": "(resmî) koşul, şart, yükümlülük",
-      "example": "Die Behörde hat die Genehmigung nur unter einer strengen Auflage erteilt.",
-      "exampleTranslation": "Daire izni yalnızca katı bir şart altında verdi.",
+      "german": "die Auskunft",
+      "turkish": "bilgi, malumat (resmi makamdan)",
+      "example": "Am Schalter der Behörde erhielt ich eine genaue Auskunft über die nötigen Unterlagen.",
+      "exampleTranslation": "Dairenin gişesinde gerekli belgeler hakkında kesin bir bilgi aldım.",
       "synonyms": [
-        "die Bedingung",
-        "die Vorgabe"
+        "die Information",
+        "die Mitteilung"
       ],
       "level": "B2"
     },

@@ -62,13 +62,12 @@
       "level": "B1"
     },
     {
-      "german": "die Einarbeitung",
-      "turkish": "işe alıştırma, oryantasyon",
-      "example": "Die Einarbeitung neuer Mitarbeiter dauert in unserer Firma vier Wochen.",
-      "exampleTranslation": "Yeni çalışanların işe alıştırılması firmamızda dört hafta sürer.",
+      "german": "die Kündigungsfrist",
+      "turkish": "ihbar süresi (fesih bildirim süresi)",
+      "example": "Laut Arbeitsvertrag beträgt die Kündigungsfrist drei Monate zum Quartalsende.",
+      "exampleTranslation": "İş sözleşmesine göre fesih bildirim süresi, çeyrek sonuna kadar üç aydır.",
       "synonyms": [
-        "die Einführung",
-        "das Onboarding"
+        "die Kündigungszeit"
       ],
       "level": "B2"
     },

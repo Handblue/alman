@@ -115,13 +115,13 @@
       "level": "B2"
     },
     {
-      "german": "verdeutlichen",
-      "turkish": "açıklığa kavuşturmak, belirginleştirmek",
-      "example": "Ein Beispiel kann den abstrakten Gedanken verdeutlichen.",
-      "exampleTranslation": "Bir örnek soyut düşünceyi açıklığa kavuşturabilir.",
+      "german": "skizzieren",
+      "turkish": "ana hatlarıyla anlatmak, taslak halinde sunmak",
+      "example": "Im einleitenden Teil skizziert der Autor den Forschungsstand in wenigen Sätzen.",
+      "exampleTranslation": "Giriş bölümünde yazar, araştırmanın mevcut durumunu birkaç cümleyle ana hatlarıyla sunar.",
       "synonyms": [
-        "klarmachen",
-        "veranschaulichen"
+        "umreißen",
+        "grob darstellen"
       ],
       "level": "B2"
     },

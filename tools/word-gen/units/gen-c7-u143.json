@@ -18,23 +18,22 @@
       "level": "B2"
     },
     {
-      "german": "die Dürre",
-      "turkish": "kuraklık",
-      "example": "Die lange Dürre hat die Felder völlig ausgetrocknet.",
-      "exampleTranslation": "Uzun kuraklık tarlaları tamamen kuruttu.",
+      "german": "die Versauerung",
+      "turkish": "asitleşme (toprak/su asitlenmesi)",
+      "example": "Die Versauerung der Böden bedroht ganze Waldökosysteme.",
+      "exampleTranslation": "Toprakların asitleşmesi tüm orman ekosistemlerini tehdit ediyor.",
       "synonyms": [
-        "die Trockenheit",
-        "die Trockenperiode"
+        "die Übersäuerung"
       ],
       "level": "B2"
     },
     {
-      "german": "die Modernisierung",
-      "turkish": "modernleşme, modernizasyon",
-      "example": "Die Modernisierung der Industrie veränderte das Verhältnis zur Natur grundlegend.",
-      "exampleTranslation": "Sanayinin modernleşmesi doğayla ilişkiyi temelden değiştirdi.",
+      "german": "die Renaturierung",
+      "turkish": "doğaya yeniden kazandırma, doğal duruma döndürme",
+      "example": "Die Renaturierung des Flusses gab vielen Tierarten ihren Lebensraum zurück.",
+      "exampleTranslation": "Nehrin doğal haline döndürülmesi birçok hayvan türüne yaşam alanını geri verdi.",
       "synonyms": [
-        "die Erneuerung"
+        "die Wiederherstellung"
       ],
       "level": "B2"
     },
@@ -93,13 +92,13 @@
       "level": "C1"
     },
     {
-      "german": "die Achtsamkeit",
-      "turkish": "özen, bilinçli farkındalık",
-      "example": "Ein achtsamer Umgang mit der Natur erfordert echte Achtsamkeit im Alltag.",
-      "exampleTranslation": "Doğayla özenli bir ilişki, gündelik yaşamda gerçek bir bilinçli farkındalık gerektirir.",
+      "german": "die Ehrerbietung",
+      "turkish": "saygı gösterme, hürmet",
+      "example": "Indigene Völker begegnen der Natur oft mit tiefer Ehrerbietung.",
+      "exampleTranslation": "Yerli halklar doğaya çoğu zaman derin bir hürmetle yaklaşır.",
       "synonyms": [
-        "die Aufmerksamkeit",
-        "die Behutsamkeit"
+        "die Hochachtung",
+        "der Respekt"
       ],
       "level": "C1"
     },

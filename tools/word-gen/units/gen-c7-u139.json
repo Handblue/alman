@@ -125,23 +125,22 @@
       "level": "C1"
     },
     {
-      "german": "die Mutmaßung",
-      "turkish": "tahmin, zan",
-      "example": "Solange Belege fehlen, bleibt die Theorie eine bloße Mutmaßung.",
-      "exampleTranslation": "Kanıtlar eksik olduğu sürece teori sadece bir tahmin olarak kalır.",
+      "german": "die Inkommensurabilität",
+      "turkish": "kıyaslanamazlık, ölçülemezlik (paradigmalar arası)",
+      "example": "Kuhn betont die Inkommensurabilität konkurrierender Paradigmen.",
+      "exampleTranslation": "Kuhn, rakip paradigmaların kıyaslanamazlığını vurgular.",
       "synonyms": [
-        "die Konjektur",
-        "die Spekulation"
+        "die Unvergleichbarkeit"
       ],
       "level": "C1"
     },
     {
-      "german": "die Wechselwirkung",
-      "turkish": "karşılıklı etki, etkileşim",
-      "example": "Der Forscher untersuchte die Wechselwirkung zwischen Temperatur und Druck.",
-      "exampleTranslation": "Araştırmacı sıcaklık ile basınç arasındaki etkileşimi inceledi.",
+      "german": "die Operationalisierung",
+      "turkish": "işlevselleştirme",
+      "example": "Die Operationalisierung eines abstrakten Begriffs macht ihn überhaupt erst messbar.",
+      "exampleTranslation": "Soyut bir kavramın işlevselleştirilmesi, onu ancak o zaman ölçülebilir kılar.",
       "synonyms": [
-        "die Interdependenz"
+        "die Messbarmachung"
       ],
       "level": "C1"
     },

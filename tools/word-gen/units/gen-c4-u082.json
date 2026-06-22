@@ -81,12 +81,13 @@
       "level": "B2"
     },
     {
-      "german": "die Einarbeitung",
-      "turkish": "işe alıştırma/oryantasyon dönemi",
-      "example": "Die Einarbeitung in die neuen Aufgaben dauert etwa zwei Wochen.",
-      "exampleTranslation": "Yeni görevlere alıştırma süreci yaklaşık iki hafta sürer.",
+      "german": "die Eigeninitiative",
+      "turkish": "kişisel inisiyatif, girişkenlik",
+      "example": "In meiner Bewerbung betone ich meine Eigeninitiative und meinen Willen, Verantwortung zu übernehmen.",
+      "exampleTranslation": "Başvurumda kişisel inisiyatifimi ve sorumluluk alma isteğimi vurguluyorum.",
       "synonyms": [
-        "die Einführung"
+        "der Tatendrang",
+        "die Selbstständigkeit"
       ],
       "level": "B2"
     },

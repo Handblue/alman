@@ -8,22 +8,22 @@
   "firstWordId": 766,
   "words": [
     {
-      "german": "anziehen",
-      "turkish": "giymek",
-      "example": "Ich ziehe morgens schnell meine Jacke an.",
-      "exampleTranslation": "Sabahları ceketimi çabucak giyerim.",
+      "german": "fernsehen",
+      "turkish": "televizyon izlemek",
+      "example": "Am Abend sehe ich oft fern.",
+      "exampleTranslation": "Akşamları sık sık televizyon izlerim.",
       "synonyms": [
-        "sich kleiden"
+        "Fernsehen schauen"
       ],
       "level": "A1"
     },
     {
-      "german": "abfahren",
-      "turkish": "(araçla) hareket etmek, kalkmak",
-      "example": "Der Zug fährt um acht Uhr ab.",
-      "exampleTranslation": "Tren saat sekizde kalkar.",
+      "german": "mitbringen",
+      "turkish": "yanında getirmek, beraberinde getirmek",
+      "example": "Bringst du mir bitte einen Kaffee mit?",
+      "exampleTranslation": "Bana bir kahve getirir misin lütfen?",
       "synonyms": [
-        "losfahren"
+        "mitnehmen"
       ],
       "level": "A1"
     },

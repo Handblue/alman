@@ -91,12 +91,13 @@
       "level": "A2"
     },
     {
-      "german": "das Konzert",
-      "turkish": "konser",
-      "example": "Heute Abend gehen wir zusammen ins Konzert.",
-      "exampleTranslation": "Bu akşam birlikte konsere gidiyoruz.",
+      "german": "die Vorführung",
+      "turkish": "gösterim, sunum",
+      "example": "Die Vorführung des neuen Films beginnt um acht Uhr.",
+      "exampleTranslation": "Yeni filmin gösterimi saat sekizde başlıyor.",
       "synonyms": [
-        "das Musikevent"
+        "die Filmvorführung",
+        "die Aufführung"
       ],
       "level": "A2"
     },

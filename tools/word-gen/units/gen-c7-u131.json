@@ -165,13 +165,13 @@
       "level": "B2"
     },
     {
-      "german": "die Toleranz",
-      "turkish": "hoşgörü, tolerans",
-      "example": "Eine offene Gesellschaft braucht Toleranz gegenüber anderen Meinungen.",
-      "exampleTranslation": "Açık bir toplum, farklı görüşlere karşı hoşgörüye ihtiyaç duyar.",
+      "german": "die Gewissensfreiheit",
+      "turkish": "vicdan özgürlüğü",
+      "example": "Die Gewissensfreiheit erlaubt jedem Menschen, nach seinen eigenen moralischen Überzeugungen zu handeln.",
+      "exampleTranslation": "Vicdan özgürlüğü, her insanın kendi ahlaki kanaatlerine göre davranmasına izin verir.",
       "synonyms": [
-        "die Duldsamkeit",
-        "die Aufgeschlossenheit"
+        "die Glaubensfreiheit",
+        "die Überzeugungsfreiheit"
       ],
       "level": "B2"
     }

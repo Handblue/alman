@@ -8,13 +8,13 @@
   "firstWordId": 1816,
   "words": [
     {
-      "german": "die Dürre",
-      "turkish": "kuraklık",
-      "example": "Die lange Dürre hat die Ernte in der ganzen Region zerstört.",
-      "exampleTranslation": "Uzun kuraklık tüm bölgedeki hasadı mahvetti.",
+      "german": "die Erosion",
+      "turkish": "erozyon, aşınma",
+      "example": "Durch starke Regenfälle wird die Erosion des fruchtbaren Bodens an den Hängen beschleunigt.",
+      "exampleTranslation": "Şiddetli yağmurlar yamaçlardaki verimli toprağın erozyonunu hızlandırır.",
       "synonyms": [
-        "die Trockenheit",
-        "die Trockenperiode"
+        "der Bodenabtrag",
+        "die Abtragung"
       ],
       "level": "B2"
     },

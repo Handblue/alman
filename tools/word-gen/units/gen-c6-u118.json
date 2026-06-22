@@ -160,13 +160,13 @@
       "level": "C1"
     },
     {
-      "german": "die Stigmatisierung",
-      "turkish": "damgalama",
-      "example": "Die Stigmatisierung von Erkrankten erschwert ihre Rückkehr in die Gesellschaft.",
-      "exampleTranslation": "Hastaların damgalanması onların topluma dönüşünü zorlaştırır.",
+      "german": "die Anomie",
+      "turkish": "anomi (toplumsal kuralsızlık)",
+      "example": "In Zeiten raschen gesellschaftlichen Wandels kann eine weitverbreitete Anomie entstehen, wenn die geltenden Normen ihre Verbindlichkeit verlieren.",
+      "exampleTranslation": "Hızlı toplumsal değişim dönemlerinde, geçerli normlar bağlayıcılıklarını yitirdiğinde yaygın bir anomi ortaya çıkabilir.",
       "synonyms": [
-        "die Brandmarkung",
-        "die soziale Abstempelung"
+        "die Normlosigkeit",
+        "der Werteverfall"
       ],
       "level": "C1"
     }

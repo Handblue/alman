@@ -8,13 +8,13 @@
   "firstWordId": 1936,
   "words": [
     {
-      "german": "die Gewaltenteilung",
-      "turkish": "güçler ayrılığı",
-      "example": "Die Gewaltenteilung verhindert, dass eine einzige Institution zu viel Macht erhält.",
-      "exampleTranslation": "Güçler ayrılığı, tek bir kurumun çok fazla güç elde etmesini engeller.",
+      "german": "die Rechtsstaatlichkeit",
+      "turkish": "hukuk devleti ilkesi",
+      "example": "Die Rechtsstaatlichkeit verlangt, dass auch die Regierung an die Gesetze gebunden ist.",
+      "exampleTranslation": "Hukuk devleti ilkesi, hükümetin de yasalara bağlı olmasını gerektirir.",
       "synonyms": [
-        "die Machtteilung",
-        "die Teilung der Staatsgewalten"
+        "die Gesetzesbindung",
+        "das Rechtsstaatsprinzip"
       ],
       "level": "C1"
     },

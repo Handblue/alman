@@ -148,13 +148,13 @@
       "level": "C1"
     },
     {
-      "german": "der Affekt",
-      "turkish": "duygulanım, ani duygu",
-      "example": "Im Affekt treffen wir oft Entscheidungen, die der Verstand später bereut.",
-      "exampleTranslation": "Duygulanım anında, aklın sonradan pişman olduğu kararlar veririz.",
+      "german": "die Regung",
+      "turkish": "duygulanım, içsel uyarılma",
+      "example": "Eine leise Regung von Mitleid stieg in ihr auf, bevor sie überhaupt nachdenken konnte.",
+      "exampleTranslation": "Daha düşünmeye fırsat bulamadan içinde hafif bir merhamet duygulanımı yükseldi.",
       "synonyms": [
-        "die Gemütsregung",
-        "die Gefühlsregung"
+        "der Gemütszustand",
+        "der innere Impuls"
       ],
       "level": "C1"
     },

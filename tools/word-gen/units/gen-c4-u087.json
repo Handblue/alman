@@ -118,24 +118,24 @@
       "level": "B2"
     },
     {
-      "german": "unterstreichen",
-      "turkish": "vurgulamak, altını çizmek",
-      "example": "Mit diesem Beispiel möchte ich meine Aussage unterstreichen.",
-      "exampleTranslation": "Bu örnekle ifademi vurgulamak istiyorum.",
+      "german": "beipflichten",
+      "turkish": "katılmak, hak vermek (bir görüşe)",
+      "example": "In diesem Punkt muss ich meinem Vorredner ausdrücklich beipflichten.",
+      "exampleTranslation": "Bu konuda kendinden önce konuşana açıkça hak vermem gerekiyor.",
       "synonyms": [
-        "hervorstreichen",
-        "akzentuieren"
+        "zustimmen",
+        "recht geben"
       ],
       "level": "B2"
     },
     {
-      "german": "die Behauptung",
-      "turkish": "iddia",
-      "example": "Diese Behauptung lässt sich durch keine Studie belegen.",
-      "exampleTranslation": "Bu iddia hiçbir çalışmayla kanıtlanamaz.",
+      "german": "der Vorwurf",
+      "turkish": "suçlama, sitem, eleştiri",
+      "example": "Diesen Vorwurf möchte ich entschieden zurückweisen.",
+      "exampleTranslation": "Bu suçlamayı kesin bir şekilde reddetmek istiyorum.",
       "synonyms": [
-        "die Annahme",
-        "die Unterstellung"
+        "die Anschuldigung",
+        "die Beanstandung"
       ],
       "level": "C1"
     },

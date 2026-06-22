@@ -150,13 +150,13 @@
       "level": "B1"
     },
     {
-      "german": "der Teppich",
-      "turkish": "halı",
-      "example": "Im Wohnzimmer liegt ein dicker, weicher Teppich vor dem Sofa.",
-      "exampleTranslation": "Oturma odasında kanepenin önünde kalın, yumuşak bir halı var.",
+      "german": "die Schublade",
+      "turkish": "çekmece",
+      "example": "Man sollte Menschen nicht vorschnell in eine Schublade stecken.",
+      "exampleTranslation": "İnsanları aceleyle bir kalıba sokmamak gerekir.",
       "synonyms": [
-        "der Läufer",
-        "die Matte"
+        "das Schubfach",
+        "die Lade"
       ],
       "level": "B1"
     },

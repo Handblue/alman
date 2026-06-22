@@ -49,12 +49,13 @@
       "level": "B1"
     },
     {
-      "german": "erforschen",
-      "turkish": "araştırmak, incelemek",
-      "example": "Wissenschaftler erforschen neue Methoden gegen Krankheiten.",
-      "exampleTranslation": "Bilim insanları hastalıklara karşı yeni yöntemler araştırıyor.",
+      "german": "die Erkundung",
+      "turkish": "keşif, araştırma (yerinde inceleme)",
+      "example": "Die Erkundung des Mars liefert wichtige Daten für die Wissenschaft.",
+      "exampleTranslation": "Mars'ın keşfi bilim için önemli veriler sağlıyor.",
       "synonyms": [
-        "ergründen"
+        "die Erforschung",
+        "die Sondierung"
       ],
       "level": "B1"
     },

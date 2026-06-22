@@ -92,13 +92,13 @@
       "level": "C1"
     },
     {
-      "german": "die Einbildungskraft",
-      "turkish": "hayal gücü, muhayyile",
-      "example": "Die Einbildungskraft verbindet bei Kant die Anschauung mit dem Begriff.",
-      "exampleTranslation": "Kant'ta muhayyile, sezgiyi kavramla birleştirir.",
+      "german": "der Selbstdenker",
+      "turkish": "kendi başına düşünen kişi, kendi aklıyla düşünen kimse",
+      "example": "Kant fordert in der Aufklärung jeden Menschen auf, ein mutiger Selbstdenker zu werden.",
+      "exampleTranslation": "Kant, Aydınlanma'da her insanı cesur bir özgür düşünür, yani kendi aklıyla düşünen biri olmaya çağırır.",
       "synonyms": [
-        "die Imagination",
-        "das Vorstellungsvermögen"
+        "der Freidenker",
+        "der Querdenker"
       ],
       "level": "C1"
     },

@@ -8,13 +8,13 @@
   "firstWordId": 2386,
   "words": [
     {
-      "german": "das Gemüt",
-      "turkish": "ruh hali, mizaç, gönül",
-      "example": "Die sanfte Musik beruhigte sein aufgewühltes Gemüt.",
-      "exampleTranslation": "Yumuşak müzik onun çalkalanan ruh halini sakinleştirdi.",
+      "german": "die Innigkeit",
+      "turkish": "içtenlik, derin samimiyet",
+      "example": "Mit großer Innigkeit sprach der Dichter von seiner verlorenen Heimat.",
+      "exampleTranslation": "Şair, kaybettiği vatanından büyük bir içtenlikle söz etti.",
       "synonyms": [
-        "das Innere",
-        "die Stimmung"
+        "die Herzlichkeit",
+        "die Wärme"
       ],
       "level": "B1"
     },
@@ -52,13 +52,13 @@
       "level": "B1"
     },
     {
-      "german": "die Vorsehung",
-      "turkish": "kader, takdir, ilahi takdir",
-      "example": "Manche glauben, dass die Vorsehung jeden Schritt des Lebens lenkt.",
-      "exampleTranslation": "Bazıları kaderin yaşamın her adımını yönlendirdiğine inanır.",
+      "german": "die Verklärung",
+      "turkish": "yüceltme, ululaştırma (idealize ederek)",
+      "example": "Die Verklärung der Vergangenheit verstellt oft den Blick auf die Gegenwart.",
+      "exampleTranslation": "Geçmişin yüceltilmesi çoğu zaman bugüne bakışı engeller.",
       "synonyms": [
-        "die Bestimmung",
-        "das Walten"
+        "die Idealisierung",
+        "die Glorifizierung"
       ],
       "level": "B1"
     },
@@ -96,13 +96,12 @@
       "level": "B2"
     },
     {
-      "german": "das Werden",
-      "turkish": "oluş, var oluş süreci, dönüşüm",
-      "example": "Im stillen Werden der Natur liegt eine tiefe Schönheit.",
-      "exampleTranslation": "Doğanın sessiz oluşunda derin bir güzellik yatar.",
+      "german": "das Streben nach Vollendung",
+      "turkish": "mükemmelliğe/tamamlanmışlığa erişme çabası",
+      "example": "Sein ganzes Werk ist von einem unermüdlichen Streben nach Vollendung durchdrungen.",
+      "exampleTranslation": "Bütün eseri, mükemmelliğe erişmek için yorulmak bilmez bir çabayla doludur.",
       "synonyms": [
-        "die Entfaltung",
-        "das Reifen"
+        "das Ringen um Vollkommenheit"
       ],
       "level": "B2"
     },

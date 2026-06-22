@@ -129,12 +129,13 @@
       "level": "B1"
     },
     {
-      "german": "der Antragsteller",
-      "turkish": "başvuru sahibi",
-      "example": "Der Antragsteller muss alle Unterlagen persönlich abgeben.",
-      "exampleTranslation": "Başvuru sahibi tüm belgeleri şahsen teslim etmek zorundadır.",
+      "german": "die Antragsfrist",
+      "turkish": "başvuru süresi / son başvuru tarihi",
+      "example": "Die Antragsfrist für das Wohngeld endet am Monatsende.",
+      "exampleTranslation": "Konut yardımı için son başvuru tarihi ay sonunda bitiyor.",
       "synonyms": [
-        "der Bewerber"
+        "der Einsendeschluss",
+        "der Termin"
       ],
       "level": "B1"
     },

@@ -30,12 +30,13 @@
       "level": "B2"
     },
     {
-      "german": "die Rechtfertigung",
-      "turkish": "gerekçelendirme, haklı çıkarma",
-      "example": "Für diese These fehlt eine überzeugende Rechtfertigung.",
-      "exampleTranslation": "Bu tez için ikna edici bir gerekçelendirme eksik.",
+      "german": "die Beweisführung",
+      "turkish": "kanıtlama, ispat yöntemi",
+      "example": "Seine lückenlose Beweisführung überzeugte alle Teilnehmer der Debatte.",
+      "exampleTranslation": "Onun eksiksiz kanıtlama yöntemi tartışmadaki tüm katılımcıları ikna etti.",
       "synonyms": [
-        "die Legitimierung"
+        "die Argumentationskette",
+        "der Nachweisgang"
       ],
       "level": "B2"
     },
@@ -51,24 +52,24 @@
       "level": "B2"
     },
     {
-      "german": "der Vorbehalt",
-      "turkish": "çekince, ihtiyat kaydı",
-      "example": "Er stimmte der Schlussfolgerung nur mit einem Vorbehalt zu.",
-      "exampleTranslation": "Vardığı sonuca yalnızca bir çekince ile katıldı.",
+      "german": "die Triftigkeit",
+      "turkish": "geçerlilik, isabetlilik (bir argümanın)",
+      "example": "Die Triftigkeit seines Einwands ließ sich nicht so leicht bestreiten.",
+      "exampleTranslation": "Onun itirazının geçerliliğini çürütmek o kadar kolay değildi.",
       "synonyms": [
-        "die Bedenken",
-        "die Reserve"
+        "die Gültigkeit eines Arguments",
+        "die Überzeugungskraft"
       ],
       "level": "B2"
     },
     {
-      "german": "nachvollziehbar",
-      "turkish": "anlaşılır, takip edilebilir",
-      "example": "Seine Schlussfolgerung ist für jeden Zuhörer nachvollziehbar.",
-      "exampleTranslation": "Onun vardığı sonuç her dinleyici için anlaşılırdır.",
+      "german": "stringent",
+      "turkish": "tutarlı ve sıkı (mantıksal olarak), zorlayıcı",
+      "example": "Ihre stringente Beweisführung ließ keinen Raum für Zweifel.",
+      "exampleTranslation": "Onun tutarlı ve sıkı kanıtlaması hiçbir şüpheye yer bırakmadı.",
       "synonyms": [
-        "verständlich",
-        "begreiflich"
+        "folgerichtig",
+        "zwingend"
       ],
       "level": "B2"
     },
