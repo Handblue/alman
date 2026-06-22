@@ -49,13 +49,12 @@
       "level": "B1"
     },
     {
-      "german": "das Zeugnis",
-      "turkish": "karne / diploma belgesi",
-      "example": "Mein Zeugnis war dieses Jahr sehr gut.",
-      "exampleTranslation": "Karnem bu yıl çok iyiydi.",
+      "german": "die Praktikumsstelle",
+      "turkish": "staj yeri",
+      "example": "Sie hat eine Praktikumsstelle in einem großen Unternehmen gefunden.",
+      "exampleTranslation": "Büyük bir şirkette bir staj yeri buldu.",
       "synonyms": [
-        "die Bescheinigung",
-        "das Diplom"
+        "der Praktikumsplatz"
       ],
       "level": "B1"
     },
@@ -71,24 +70,22 @@
       "level": "B2"
     },
     {
-      "german": "das Stipendium",
-      "turkish": "burs",
-      "example": "Sie hat ein Stipendium für ihr Studium bekommen.",
-      "exampleTranslation": "Öğrenimi için bir burs aldı.",
+      "german": "die Studiengebühr",
+      "turkish": "öğrenim ücreti",
+      "example": "An staatlichen Universitäten gibt es oft keine Studiengebühr.",
+      "exampleTranslation": "Devlet üniversitelerinde çoğu zaman öğrenim ücreti yoktur.",
       "synonyms": [
-        "die Studienförderung",
-        "die Förderung"
+        "das Studienentgelt"
       ],
       "level": "B2"
     },
     {
-      "german": "der Studiengang",
-      "turkish": "bölüm / öğrenim programı",
-      "example": "Welchen Studiengang möchtest du wählen?",
-      "exampleTranslation": "Hangi bölümü seçmek istiyorsun?",
+      "german": "der Pflichtbereich",
+      "turkish": "zorunlu (ders) alanı",
+      "example": "Im Pflichtbereich müssen alle Studierenden dieselben Module belegen.",
+      "exampleTranslation": "Zorunlu alanda tüm öğrenciler aynı modülleri almak zorundadır.",
       "synonyms": [
-        "die Studienrichtung",
-        "das Fach"
+        "das Pflichtfach"
       ],
       "level": "B2"
     },
@@ -126,13 +123,13 @@
       "level": "B2"
     },
     {
-      "german": "der Werdegang",
-      "turkish": "kariyer geçmişi / gelişim süreci",
-      "example": "Sein beruflicher Werdegang ist beeindruckend.",
-      "exampleTranslation": "Onun mesleki gelişim süreci etkileyicidir.",
+      "german": "die Wissbegier",
+      "turkish": "öğrenme merakı, bilgi açlığı",
+      "example": "Seine Wissbegier trieb ihn dazu, immer neue Kurse zu besuchen.",
+      "exampleTranslation": "Öğrenme merakı onu hep yeni kurslara katılmaya itti.",
       "synonyms": [
-        "die Laufbahn",
-        "die Entwicklung"
+        "die Wissbegierde",
+        "der Lerneifer"
       ],
       "level": "C1"
     },

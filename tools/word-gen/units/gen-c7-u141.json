@@ -18,43 +18,46 @@
       "level": "B2"
     },
     {
-      "german": "die Endlichkeit",
-      "turkish": "sonluluk / sınırlılık",
-      "example": "Der Mensch ist sich seiner Endlichkeit bewusst.",
-      "exampleTranslation": "İnsan kendi sonluluğunun farkındadır.",
+      "german": "die Hinfälligkeit",
+      "turkish": "fanilik, ölümlü ve kırılgan oluş",
+      "example": "Krankheit erinnert uns an die Hinfälligkeit des menschlichen Körpers.",
+      "exampleTranslation": "Hastalık bize insan bedeninin faniliğini hatırlatır.",
       "synonyms": [
-        "die Begrenztheit"
+        "die Gebrechlichkeit",
+        "die Schwäche"
       ],
       "level": "C1"
     },
     {
-      "german": "die Identität",
-      "turkish": "kimlik",
-      "example": "Jeder Mensch sucht nach seiner Identität.",
-      "exampleTranslation": "Her insan kendi kimliğini arar.",
+      "german": "das Selbstverständnis",
+      "turkish": "kendini anlama biçimi, öz algı",
+      "example": "Das Selbstverständnis eines Menschen prägt sein ganzes Handeln.",
+      "exampleTranslation": "Bir insanın kendini anlama biçimi tüm davranışlarını şekillendirir.",
       "synonyms": [
-        "die Selbstheit",
-        "das Selbstverständnis"
+        "das Selbstbild",
+        "die Selbstauffassung"
       ],
       "level": "B2"
     },
     {
-      "german": "das Selbstbewusstsein",
-      "turkish": "öz bilinç / kendinin farkında olma",
-      "example": "Das Selbstbewusstsein unterscheidet uns von Tieren.",
-      "exampleTranslation": "Öz bilinç bizi hayvanlardan ayırır.",
+      "german": "die Selbstreflexion",
+      "turkish": "öz düşünüm, kendi üzerine düşünme",
+      "example": "Durch Selbstreflexion erkennt der Mensch seine eigenen Grenzen.",
+      "exampleTranslation": "Öz düşünüm yoluyla insan kendi sınırlarını tanır.",
       "synonyms": [
-        "die Selbsterkenntnis"
+        "die Selbstbetrachtung",
+        "das Nachdenken über sich"
       ],
       "level": "C1"
     },
     {
-      "german": "die Zugehörigkeit",
-      "turkish": "aidiyet",
-      "example": "Das Gefühl der Zugehörigkeit prägt jede Gemeinschaft.",
-      "exampleTranslation": "Aidiyet duygusu her topluluğu biçimlendirir.",
+      "german": "die Geborgenheit",
+      "turkish": "güvende ve ait hissetme, sıcaklık",
+      "example": "In der Familie erfährt das Kind ein tiefes Gefühl der Geborgenheit.",
+      "exampleTranslation": "Çocuk ailede derin bir güvende hissetme duygusu yaşar.",
       "synonyms": [
-        "die Verbundenheit"
+        "die Sicherheit",
+        "die Vertrautheit"
       ],
       "level": "B2"
     },
@@ -100,64 +103,68 @@
       "level": "C1"
     },
     {
-      "german": "die Selbstverwirklichung",
-      "turkish": "kendini gerçekleştirme",
-      "example": "Viele streben nach Selbstverwirklichung im Beruf.",
-      "exampleTranslation": "Birçok kişi meslekte kendini gerçekleştirmeye çabalar.",
+      "german": "die Selbstentfaltung",
+      "turkish": "kendini geliştirme, potansiyelini açığa çıkarma",
+      "example": "Freiheit ist die Voraussetzung für die persönliche Selbstentfaltung.",
+      "exampleTranslation": "Özgürlük, kişisel kendini geliştirmenin önkoşuludur.",
       "synonyms": [
-        "die Selbstentfaltung"
+        "die persönliche Entfaltung",
+        "die Reifung"
       ],
       "level": "C1"
     },
     {
-      "german": "die Entfremdung",
-      "turkish": "yabancılaşma",
-      "example": "Die Entfremdung vom eigenen Wesen macht unglücklich.",
-      "exampleTranslation": "Kendi özünden yabancılaşma mutsuz eder.",
+      "german": "die Vereinsamung",
+      "turkish": "yalnızlaşma, toplumdan kopma",
+      "example": "Die moderne Großstadt führt bei vielen Menschen zur Vereinsamung.",
+      "exampleTranslation": "Modern büyük şehir birçok insanda yalnızlaşmaya yol açar.",
       "synonyms": [
-        "die Verfremdung"
+        "die Isolation",
+        "die Abkapselung"
       ],
       "level": "C1"
     },
     {
-      "german": "das Bedürfnis",
-      "turkish": "ihtiyaç / gereksinim",
-      "example": "Der Mensch hat das Bedürfnis nach Anerkennung.",
-      "exampleTranslation": "İnsanın takdir edilme ihtiyacı vardır.",
+      "german": "das Verlangen",
+      "turkish": "arzu, güçlü istek",
+      "example": "Der Mensch spürt ein tiefes Verlangen nach Sinn und Anerkennung.",
+      "exampleTranslation": "İnsan, anlam ve takdir için derin bir arzu hisseder.",
       "synonyms": [
-        "der Bedarf",
-        "das Verlangen"
+        "die Begierde",
+        "das Streben"
       ],
       "level": "B2"
     },
     {
-      "german": "die Vergänglichkeit",
-      "turkish": "geçicilik / fâniilik",
-      "example": "Die Vergänglichkeit des Lebens stimmt uns nachdenklich.",
-      "exampleTranslation": "Yaşamın geçiciliği bizi düşünceli kılar.",
+      "german": "die Flüchtigkeit",
+      "turkish": "geçicilik, gelip geçicilik",
+      "example": "Die Flüchtigkeit des Augenblicks macht das Leben kostbar.",
+      "exampleTranslation": "Anın geçiciliği hayatı değerli kılar.",
       "synonyms": [
-        "die Flüchtigkeit"
+        "die Kurzlebigkeit",
+        "das Vergehen"
       ],
       "level": "C1"
     },
     {
-      "german": "der Verstand",
-      "turkish": "akıl / muhakeme",
-      "example": "Der Verstand ermöglicht uns logisches Denken.",
-      "exampleTranslation": "Akıl bize mantıksal düşünmeyi sağlar.",
+      "german": "die Einbildungskraft",
+      "turkish": "muhayyile, hayal gücü",
+      "example": "Die Einbildungskraft erlaubt dem Menschen, sich eine andere Welt vorzustellen.",
+      "exampleTranslation": "Muhayyile, insanın başka bir dünya tasavvur etmesine olanak tanır.",
       "synonyms": [
-        "der Intellekt"
+        "die Vorstellungskraft",
+        "die Fantasie"
       ],
       "level": "B2"
     },
     {
-      "german": "die Selbstbestimmung",
-      "turkish": "öz belirleme / kendi kaderini tayin",
-      "example": "Selbstbestimmung gilt als Grundlage der Menschenwürde.",
-      "exampleTranslation": "Öz belirleme insan onurunun temeli sayılır.",
+      "german": "die Willensfreiheit",
+      "turkish": "irade özgürlüğü",
+      "example": "Ohne Willensfreiheit könnte man den Menschen für nichts verantwortlich machen.",
+      "exampleTranslation": "İrade özgürlüğü olmadan insan hiçbir şeyden sorumlu tutulamazdı.",
       "synonyms": [
-        "die Autonomie",
-        "die Selbstständigkeit"
+        "die Entscheidungsfreiheit",
+        "die Wahlfreiheit"
       ],
       "level": "C1"
     }

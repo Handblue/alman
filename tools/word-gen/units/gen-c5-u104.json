@@ -8,20 +8,20 @@
   "firstWordId": 1546,
   "words": [
     {
-      "german": "der Sport",
-      "turkish": "spor",
-      "example": "Ich mache jeden Tag Sport.",
-      "exampleTranslation": "Her gün spor yapıyorum.",
+      "german": "der Spaziergang",
+      "turkish": "yürüyüş, gezinti",
+      "example": "Ein langer Spaziergang am Morgen hält mich fit.",
+      "exampleTranslation": "Sabahları uzun bir yürüyüş beni formda tutar.",
       "synonyms": [
-        "die Bewegung"
+        "der Gang"
       ],
       "level": "A1"
     },
     {
-      "german": "der Fußball",
-      "turkish": "futbol / futbol topu",
-      "example": "Die Kinder spielen Fußball im Park.",
-      "exampleTranslation": "Çocuklar parkta futbol oynuyor.",
+      "german": "der Tennis",
+      "turkish": "tenis",
+      "example": "Am Wochenende spiele ich gern Tennis mit meinem Bruder.",
+      "exampleTranslation": "Hafta sonu erkek kardeşimle tenis oynamayı severim.",
       "synonyms": [],
       "level": "A1"
     },
@@ -34,30 +34,33 @@
       "level": "A1"
     },
     {
-      "german": "das Fahrrad",
-      "turkish": "bisiklet",
-      "example": "Ich fahre mit dem Fahrrad zur Arbeit.",
-      "exampleTranslation": "İşe bisikletle gidiyorum.",
+      "german": "die Turnschuhe",
+      "turkish": "spor ayakkabısı, koşu ayakkabısı",
+      "example": "Ohne meine Turnschuhe kann ich nicht joggen.",
+      "exampleTranslation": "Spor ayakkabılarım olmadan koşamam.",
       "synonyms": [
-        "das Rad"
+        "die Sportschuhe"
       ],
       "level": "A1"
     },
     {
-      "german": "der Ball",
-      "turkish": "top",
-      "example": "Wirf mir bitte den Ball zu!",
-      "exampleTranslation": "Lütfen topu bana at!",
-      "synonyms": [],
+      "german": "die Halle",
+      "turkish": "salon, kapalı spor salonu",
+      "example": "Im Winter trainieren wir in der Halle.",
+      "exampleTranslation": "Kışın salonda antrenman yaparız.",
+      "synonyms": [
+        "der Saal"
+      ],
       "level": "A1"
     },
     {
-      "german": "das Training",
-      "turkish": "antrenman / idman",
-      "example": "Das Training beginnt um sieben Uhr.",
-      "exampleTranslation": "Antrenman saat yedide başlıyor.",
+      "german": "der Wettkampf",
+      "turkish": "müsabaka, yarışma",
+      "example": "Morgen findet ein großer Wettkampf im Stadion statt.",
+      "exampleTranslation": "Yarın stadyumda büyük bir müsabaka yapılacak.",
       "synonyms": [
-        "das Workout"
+        "der Wettbewerb",
+        "das Turnier"
       ],
       "level": "A2"
     },
@@ -72,32 +75,32 @@
       "level": "A2"
     },
     {
-      "german": "die Mannschaft",
-      "turkish": "takım",
-      "example": "Unsere Mannschaft hat das Spiel gewonnen.",
-      "exampleTranslation": "Takımımız maçı kazandı.",
+      "german": "der Trainer",
+      "turkish": "antrenör, koç",
+      "example": "Unser Trainer ist heute sehr zufrieden mit uns.",
+      "exampleTranslation": "Antrenörümüz bugün bizden çok memnun.",
       "synonyms": [
-        "das Team"
+        "der Coach"
       ],
       "level": "A2"
     },
     {
-      "german": "der Verein",
-      "turkish": "kulüp / dernek",
-      "example": "Er ist Mitglied in einem Sportverein.",
-      "exampleTranslation": "O bir spor kulübünün üyesi.",
+      "german": "die Sporthalle",
+      "turkish": "spor salonu",
+      "example": "Die Sporthalle der Schule ist sehr modern.",
+      "exampleTranslation": "Okulun spor salonu çok modern.",
       "synonyms": [
-        "der Klub"
+        "die Turnhalle"
       ],
       "level": "A2"
     },
     {
-      "german": "die Gesundheit",
-      "turkish": "sağlık",
-      "example": "Sport ist wichtig für die Gesundheit.",
-      "exampleTranslation": "Spor sağlık için önemlidir.",
+      "german": "die Fitness",
+      "turkish": "fitness, fiziksel form",
+      "example": "Regelmäßiger Sport verbessert deine Fitness.",
+      "exampleTranslation": "Düzenli spor fiziksel formunu geliştirir.",
       "synonyms": [
-        "das Wohlbefinden"
+        "die Fittheit"
       ],
       "level": "A2"
     },
@@ -110,12 +113,13 @@
       "level": "A2"
     },
     {
-      "german": "die Ernährung",
-      "turkish": "beslenme",
-      "example": "Eine gesunde Ernährung ist sehr wichtig.",
-      "exampleTranslation": "Sağlıklı beslenme çok önemlidir.",
+      "german": "die Ausdauer",
+      "turkish": "dayanıklılık, sebat",
+      "example": "Mit täglichem Laufen trainierst du deine Ausdauer.",
+      "exampleTranslation": "Her gün koşarak dayanıklılığını çalıştırırsın.",
       "synonyms": [
-        "die Kost"
+        "die Belastbarkeit",
+        "das Durchhaltevermögen"
       ],
       "level": "B1"
     },

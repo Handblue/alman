@@ -38,12 +38,12 @@
       "level": "B1"
     },
     {
-      "german": "die Überweisung",
-      "turkish": "sevk (kağıdı)",
-      "example": "Ohne Überweisung nimmt mich der Facharzt nicht.",
-      "exampleTranslation": "Sevk olmadan uzman doktor beni kabul etmiyor.",
+      "german": "die Praxisgebühr",
+      "turkish": "muayene ücreti",
+      "example": "Früher musste man pro Quartal eine Praxisgebühr von zehn Euro beim Arzt bezahlen.",
+      "exampleTranslation": "Eskiden her üç ayda bir doktorda on euroluk muayene ücreti ödemek gerekiyordu.",
       "synonyms": [
-        "der Überweisungsschein"
+        "die Arztgebühr"
       ],
       "level": "B1"
     },
@@ -112,12 +112,12 @@
       "level": "B2"
     },
     {
-      "german": "die Nebenwirkung",
-      "turkish": "yan etki",
-      "example": "Dieses Medikament hat kaum Nebenwirkungen.",
-      "exampleTranslation": "Bu ilacın neredeyse hiç yan etkisi yok.",
+      "german": "der Leistungskatalog",
+      "turkish": "(sigortanın) hizmet kapsamı / ödeme kataloğu",
+      "example": "Diese Behandlung ist nicht im Leistungskatalog der gesetzlichen Krankenversicherung enthalten.",
+      "exampleTranslation": "Bu tedavi, yasal sağlık sigortasının hizmet kapsamında yer almıyor.",
       "synonyms": [
-        "die unerwünschte Wirkung"
+        "das Leistungsverzeichnis"
       ],
       "level": "B2"
     },

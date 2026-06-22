@@ -51,23 +51,24 @@
       "level": "A2"
     },
     {
-      "german": "kochen",
-      "turkish": "pişirmek / kaynatmak",
-      "example": "Das Essen wird von der Mutter gekocht.",
-      "exampleTranslation": "Yemek anne tarafından pişiriliyor.",
+      "german": "streichen",
+      "turkish": "boyamak (badana)",
+      "example": "Die Wände des Zimmers werden morgen frisch gestrichen.",
+      "exampleTranslation": "Odanın duvarları yarın yeniden boyanacak.",
       "synonyms": [
-        "zubereiten"
+        "anmalen",
+        "lackieren"
       ],
       "level": "A2"
     },
     {
-      "german": "waschen",
-      "turkish": "yıkamak",
-      "example": "Die Wäsche muss heute gewaschen werden.",
-      "exampleTranslation": "Çamaşırların bugün yıkanması gerekiyor.",
+      "german": "liefern",
+      "turkish": "teslim etmek, ulaştırmak",
+      "example": "Das bestellte Sofa wird nächste Woche geliefert.",
+      "exampleTranslation": "Sipariş edilen kanepe gelecek hafta teslim edilecek.",
       "synonyms": [
-        "reinigen",
-        "säubern"
+        "zustellen",
+        "bringen"
       ],
       "level": "A2"
     },
@@ -105,13 +106,13 @@
       "level": "B1"
     },
     {
-      "german": "durchführen",
-      "turkish": "gerçekleştirmek / yürütmek",
-      "example": "Die Prüfung wird nächste Woche durchgeführt.",
-      "exampleTranslation": "Sınav gelecek hafta gerçekleştirilecek.",
+      "german": "verabschieden",
+      "turkish": "(yasa) kabul etmek, çıkarmak",
+      "example": "Das neue Gesetz wurde vom Parlament einstimmig verabschiedet.",
+      "exampleTranslation": "Yeni yasa parlamento tarafından oybirliğiyle kabul edildi.",
       "synonyms": [
-        "ausführen",
-        "vornehmen"
+        "beschließen",
+        "erlassen"
       ],
       "level": "B2"
     },

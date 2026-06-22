@@ -8,13 +8,12 @@
   "firstWordId": 1876,
   "words": [
     {
-      "german": "die Annahme",
-      "turkish": "varsayım / kabul",
-      "example": "Diese Annahme ließ sich später nicht bestätigen.",
-      "exampleTranslation": "Bu varsayım daha sonra doğrulanamadı.",
+      "german": "die Mutmaßung",
+      "turkish": "varsayım, tahmin",
+      "example": "Diese Mutmaßung ließ sich durch keine Daten stützen.",
+      "exampleTranslation": "Bu varsayım hiçbir veriyle desteklenemedi.",
       "synonyms": [
-        "die Vermutung",
-        "die Voraussetzung"
+        "die Spekulation"
       ],
       "level": "B2"
     },
@@ -40,36 +39,32 @@
       "level": "C1"
     },
     {
-      "german": "die Ursache",
-      "turkish": "neden / sebep",
-      "example": "Die wahre Ursache des Phänomens blieb unklar.",
-      "exampleTranslation": "Olgunun gerçek nedeni belirsiz kaldı.",
+      "german": "der Auslöser",
+      "turkish": "tetikleyici, neden",
+      "example": "Die Forscher suchten nach dem eigentlichen Auslöser des Phänomens.",
+      "exampleTranslation": "Araştırmacılar fenomenin asıl tetikleyicisini aradılar.",
       "synonyms": [
-        "der Grund",
-        "der Auslöser"
+        "der Anlass"
       ],
       "level": "B2"
     },
     {
-      "german": "die Wirkung",
-      "turkish": "etki / sonuç",
-      "example": "Jede Ursache hat eine messbare Wirkung.",
-      "exampleTranslation": "Her nedenin ölçülebilir bir etkisi vardır.",
+      "german": "der Effekt",
+      "turkish": "etki, sonuç",
+      "example": "Der beobachtete Effekt war in allen Versuchen messbar.",
+      "exampleTranslation": "Gözlemlenen etki tüm deneylerde ölçülebilirdi.",
       "synonyms": [
-        "der Effekt",
-        "die Folge"
+        "die Auswirkung"
       ],
       "level": "B2"
     },
     {
-      "german": "der Zusammenhang",
-      "turkish": "bağlantı / ilişki",
-      "example": "Der Forscher untersuchte den Zusammenhang beider Variablen.",
-      "exampleTranslation": "Araştırmacı her iki değişken arasındaki ilişkiyi inceledi.",
+      "german": "die Wechselwirkung",
+      "turkish": "karşılıklı etki, etkileşim",
+      "example": "Die Theorie beschreibt die Wechselwirkung zwischen beiden Faktoren.",
+      "exampleTranslation": "Kuram, iki faktör arasındaki karşılıklı etkiyi tanımlar.",
       "synonyms": [
-        "die Beziehung",
-        "die Verbindung",
-        "die Korrelation"
+        "das Zusammenspiel"
       ],
       "level": "B2"
     },
@@ -85,13 +80,12 @@
       "level": "C1"
     },
     {
-      "german": "die Vermutung",
-      "turkish": "tahmin / sanı",
-      "example": "Seine Vermutung wurde durch Experimente gestützt.",
-      "exampleTranslation": "Onun tahmini deneylerle desteklendi.",
+      "german": "der Verdacht",
+      "turkish": "şüphe, tahmin",
+      "example": "Der Verdacht erhärtete sich erst nach weiteren Messungen.",
+      "exampleTranslation": "Şüphe ancak ek ölçümlerden sonra güçlendi.",
       "synonyms": [
-        "die Annahme",
-        "die Mutmaßung"
+        "die Ahnung"
       ],
       "level": "B2"
     },
@@ -128,12 +122,13 @@
       "level": "C1"
     },
     {
-      "german": "die Reproduzierbarkeit",
-      "turkish": "yinelenebilirlik / tekrar üretilebilirlik",
-      "example": "Die Reproduzierbarkeit der Ergebnisse ist entscheidend.",
-      "exampleTranslation": "Sonuçların yinelenebilirliği belirleyicidir.",
+      "german": "die Überprüfbarkeit",
+      "turkish": "denetlenebilirlik, sınanabilirlik",
+      "example": "Die Überprüfbarkeit einer Hypothese ist ein zentrales Kriterium der Wissenschaft.",
+      "exampleTranslation": "Bir hipotezin sınanabilirliği bilimin temel ölçütlerinden biridir.",
       "synonyms": [
-        "die Wiederholbarkeit"
+        "die Testbarkeit",
+        "die Prüfbarkeit"
       ],
       "level": "C1"
     },

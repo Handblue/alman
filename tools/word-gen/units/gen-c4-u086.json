@@ -8,35 +8,32 @@
   "firstWordId": 1276,
   "words": [
     {
-      "german": "die Schlagzeile",
-      "turkish": "manşet / başlık",
-      "example": "Die Schlagzeile stand auf der ersten Seite.",
-      "exampleTranslation": "Manşet ilk sayfada yer alıyordu.",
+      "german": "die Pressefreiheit",
+      "turkish": "basın özgürlüğü",
+      "example": "In einer Demokratie ist die Pressefreiheit ein hohes Gut.",
+      "exampleTranslation": "Bir demokraside basın özgürlüğü değerli bir varlıktır.",
       "synonyms": [
-        "die Überschrift",
-        "der Titel"
+        "die Medienfreiheit"
       ],
       "level": "B1"
     },
     {
-      "german": "die Sendung",
-      "turkish": "yayın / program",
-      "example": "Die Sendung läuft jeden Abend im Fernsehen.",
-      "exampleTranslation": "Program her akşam televizyonda yayınlanıyor.",
+      "german": "der Rundfunk",
+      "turkish": "radyo ve televizyon yayını",
+      "example": "Der öffentlich-rechtliche Rundfunk wird durch Gebühren finanziert.",
+      "exampleTranslation": "Kamu yayıncılığı, lisans ücretleriyle finanse edilir.",
       "synonyms": [
-        "das Programm",
-        "die Ausstrahlung"
+        "der Hörfunk"
       ],
       "level": "B1"
     },
     {
-      "german": "der Beitrag",
-      "turkish": "yazı / katkı / gönderi",
-      "example": "Sie hat einen Beitrag in der Zeitung gelesen.",
-      "exampleTranslation": "Gazetede bir yazı okudu.",
+      "german": "der Zuschauer",
+      "turkish": "izleyici, seyirci",
+      "example": "Millionen Zuschauer haben die Sportübertragung live verfolgt.",
+      "exampleTranslation": "Milyonlarca izleyici spor yayınını canlı izledi.",
       "synonyms": [
-        "der Artikel",
-        "der Post"
+        "der Betrachter"
       ],
       "level": "B1"
     },
@@ -52,88 +49,85 @@
       "level": "B1"
     },
     {
-      "german": "der Nutzer",
-      "turkish": "kullanıcı",
-      "example": "Viele Nutzer teilen Bilder auf der Plattform.",
-      "exampleTranslation": "Birçok kullanıcı platformda resim paylaşıyor.",
+      "german": "der Abonnent",
+      "turkish": "abone",
+      "example": "Die Zeitung hat in diesem Jahr viele neue Abonnenten gewonnen.",
+      "exampleTranslation": "Gazete bu yıl birçok yeni abone kazandı.",
       "synonyms": [
-        "der Anwender",
-        "der User"
+        "der Bezieher"
       ],
       "level": "B1"
     },
     {
-      "german": "die Quelle",
-      "turkish": "kaynak",
-      "example": "Eine seriöse Quelle ist beim Recherchieren wichtig.",
-      "exampleTranslation": "Araştırma yaparken güvenilir bir kaynak önemlidir.",
+      "german": "der Kommentator",
+      "turkish": "yorumcu, spiker",
+      "example": "Der Kommentator erklärte die Hintergründe der politischen Krise.",
+      "exampleTranslation": "Yorumcu, siyasi krizin arka planını açıkladı.",
       "synonyms": [
-        "der Ursprung",
-        "der Beleg"
+        "der Kolumnist"
       ],
       "level": "B2"
     },
     {
-      "german": "die Berichterstattung",
-      "turkish": "haber yapma / haber sunumu",
-      "example": "Die Berichterstattung über den Unfall war einseitig.",
-      "exampleTranslation": "Kazayla ilgili haber sunumu tek taraflıydı.",
+      "german": "die Sensationsgier",
+      "turkish": "sansasyon düşkünlüğü",
+      "example": "Die Sensationsgier mancher Medien schadet dem seriösen Journalismus.",
+      "exampleTranslation": "Bazı medyanın sansasyon düşkünlüğü ciddi gazeteciliğe zarar verir.",
       "synonyms": [
-        "die Reportage",
-        "die Nachrichtenlage"
+        "die Sensationslust"
       ],
       "level": "B2"
     },
     {
-      "german": "die Meinungsfreiheit",
-      "turkish": "ifade özgürlüğü / düşünce özgürlüğü",
-      "example": "Die Meinungsfreiheit ist ein Grundrecht.",
-      "exampleTranslation": "İfade özgürlüğü temel bir haktır.",
+      "german": "die Zensur",
+      "turkish": "sansür",
+      "example": "In autoritären Staaten unterliegt die Presse oft einer strengen Zensur.",
+      "exampleTranslation": "Otoriter devletlerde basın çoğunlukla sıkı bir sansüre tabidir.",
       "synonyms": [
-        "die Redefreiheit"
+        "die Unterdrückung der Information"
       ],
       "level": "B2"
     },
     {
-      "german": "die Reichweite",
-      "turkish": "erişim / menzil",
-      "example": "Influencer haben eine große Reichweite im Internet.",
-      "exampleTranslation": "Influencer'ların internette büyük bir erişimi var.",
+      "german": "die Schlagkraft",
+      "turkish": "etki gücü, vurucu güç",
+      "example": "Eine gute Überschrift erhöht die Schlagkraft eines Artikels.",
+      "exampleTranslation": "İyi bir başlık, bir makalenin etki gücünü artırır.",
       "synonyms": [
-        "die Ausdehnung",
-        "der Wirkungsbereich"
+        "die Durchschlagskraft",
+        "die Wucht"
       ],
       "level": "B2"
     },
     {
-      "german": "die Falschmeldung",
-      "turkish": "yalan haber / asılsız haber",
-      "example": "Im Netz verbreiten sich Falschmeldungen sehr schnell.",
-      "exampleTranslation": "İnternette yalan haberler çok hızlı yayılıyor.",
+      "german": "die Verleumdung",
+      "turkish": "iftira, karalama",
+      "example": "Die Zeitung wurde wegen Verleumdung eines Politikers verklagt.",
+      "exampleTranslation": "Gazete, bir politikacıya iftira attığı için dava edildi.",
       "synonyms": [
-        "die Fake News",
-        "die Ente"
+        "die Rufschädigung",
+        "die Diffamierung"
       ],
       "level": "B2"
     },
     {
-      "german": "der Datenmissbrauch",
-      "turkish": "verilerin kötüye kullanımı",
-      "example": "Datenmissbrauch ist eine ernste Gefahr im Internet.",
-      "exampleTranslation": "Verilerin kötüye kullanımı internette ciddi bir tehlikedir.",
+      "german": "die Überwachung",
+      "turkish": "gözetim, denetleme",
+      "example": "Die digitale Überwachung der Bürger wird zunehmend kritisiert.",
+      "exampleTranslation": "Vatandaşların dijital gözetimi giderek daha fazla eleştiriliyor.",
       "synonyms": [
-        "der Datenmissstand"
+        "die Kontrolle der Daten",
+        "die Observation"
       ],
       "level": "B2"
     },
     {
-      "german": "die Glaubwürdigkeit",
-      "turkish": "inandırıcılık / güvenilirlik",
-      "example": "Die Glaubwürdigkeit der Medien wird oft diskutiert.",
-      "exampleTranslation": "Medyanın güvenilirliği sık sık tartışılır.",
+      "german": "die Meinungsbildung",
+      "turkish": "kanaat oluşumu, fikir oluşturma",
+      "example": "Soziale Medien spielen bei der Meinungsbildung eine immer größere Rolle.",
+      "exampleTranslation": "Sosyal medya, kanaat oluşumunda giderek daha büyük bir rol oynuyor.",
       "synonyms": [
-        "die Vertrauenswürdigkeit",
-        "die Seriosität"
+        "die Urteilsbildung"
       ],
       "level": "C1"
     },
@@ -149,13 +143,12 @@
       "level": "C1"
     },
     {
-      "german": "die Vernetzung",
-      "turkish": "ağ kurma / bağlantı / şebekeleşme",
-      "example": "Die digitale Vernetzung verändert unsere Kommunikation.",
-      "exampleTranslation": "Dijital ağ kurma iletişimimizi değiştiriyor.",
+      "german": "die Medienkompetenz",
+      "turkish": "medya okuryazarlığı, medya yetkinliği",
+      "example": "Schüler sollten schon früh Medienkompetenz erwerben.",
+      "exampleTranslation": "Öğrenciler erken yaşta medya okuryazarlığı edinmeli.",
       "synonyms": [
-        "die Verknüpfung",
-        "die Verbindung"
+        "die Medienbildung"
       ],
       "level": "C1"
     },

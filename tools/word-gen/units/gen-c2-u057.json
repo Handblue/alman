@@ -149,13 +149,13 @@
       "level": "C1"
     },
     {
-      "german": "zunehmend",
-      "turkish": "giderek artan / artmakta olan",
-      "example": "Die zunehmende Hitze belastet die Bauern.",
-      "exampleTranslation": "Giderek artan sıcaklık çiftçileri zorluyor.",
+      "german": "aufstrebend",
+      "turkish": "yükselen, gelişmekte olan, hırslı",
+      "example": "Sie arbeitet in einem aufstrebenden Unternehmen, das ständig neue Mitarbeiter einstellt.",
+      "exampleTranslation": "Sürekli yeni çalışan alan, yükselen bir şirkette çalışıyor.",
       "synonyms": [
-        "ansteigend",
-        "anwachsend"
+        "emporstrebend",
+        "vielversprechend"
       ],
       "level": "C1"
     },

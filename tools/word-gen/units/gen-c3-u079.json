@@ -19,24 +19,24 @@
       "level": "B1"
     },
     {
-      "german": "betonen",
-      "turkish": "vurgulamak / önemle belirtmek",
-      "example": "Sie betonte die Wichtigkeit der Pünktlichkeit.",
-      "exampleTranslation": "Dakikliğin önemini vurguladı.",
+      "german": "unterstreichen",
+      "turkish": "vurgulamak, altını çizmek",
+      "example": "Mit dieser Formulierung möchte ich die Dringlichkeit meines Anliegens unterstreichen.",
+      "exampleTranslation": "Bu ifadeyle talebimin aciliyetini vurgulamak istiyorum.",
       "synonyms": [
-        "hervorheben",
-        "unterstreichen"
+        "herausstellen",
+        "akzentuieren"
       ],
       "level": "B1"
     },
     {
-      "german": "der Unterschied",
-      "turkish": "fark / ayrım",
-      "example": "Der feine Unterschied entgeht vielen Lesern.",
-      "exampleTranslation": "İnce fark birçok okuyucunun gözünden kaçar.",
+      "german": "die Abstufung",
+      "turkish": "derecelendirme, ince ayrım, nüanslama",
+      "example": "Im Deutschen gibt es feine Abstufungen zwischen Höflichkeit und Förmlichkeit.",
+      "exampleTranslation": "Almancada nezaket ile resmiyet arasında ince derecelendirmeler vardır.",
       "synonyms": [
-        "die Differenz",
-        "die Abweichung"
+        "die Schattierung",
+        "die Gradierung"
       ],
       "level": "B1"
     },

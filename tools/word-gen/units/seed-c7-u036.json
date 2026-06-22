@@ -118,13 +118,13 @@
       "id": 504,
       "categoryId": 7,
       "unitId": 36,
-      "german": "die Pflicht",
-      "turkish": "görev / yükümlülük",
-      "example": "Es ist unsere Pflicht, der Gesellschaft zu helfen.",
-      "exampleTranslation": "Topluma yardım etmek bizim görevimiz.",
+      "german": "die Unparteilichkeit",
+      "turkish": "tarafsızlık",
+      "example": "Ein guter Richter muss seine Entscheidungen mit absoluter Unparteilichkeit treffen.",
+      "exampleTranslation": "İyi bir yargıç kararlarını mutlak bir tarafsızlıkla vermelidir.",
       "synonyms": [
-        "die Verpflichtung",
-        "die Aufgabe"
+        "die Neutralität",
+        "die Objektivität"
       ],
       "level": "B2"
     },
@@ -172,13 +172,13 @@
       "id": 508,
       "categoryId": 7,
       "unitId": 36,
-      "german": "das Recht",
-      "turkish": "hak",
-      "example": "Jeder Mensch hat das Recht auf Bildung.",
-      "exampleTranslation": "Her insanın eğitim hakkı vardır.",
+      "german": "die Aufrichtigkeit",
+      "turkish": "samimiyet, dürüstlük",
+      "example": "Ihre Aufrichtigkeit im Umgang mit anderen Menschen wird sehr geschätzt.",
+      "exampleTranslation": "Diğer insanlarla ilişkisindeki samimiyeti çok takdir ediliyor.",
       "synonyms": [
-        "der Anspruch",
-        "die Berechtigung"
+        "die Offenheit",
+        "die Ehrlichkeit"
       ],
       "level": "B1"
     },

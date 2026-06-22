@@ -18,12 +18,12 @@
       "level": "B2"
     },
     {
-      "german": "die Verbindung",
-      "turkish": "bileşik / bağ",
-      "example": "Wasser ist eine Verbindung aus Wasserstoff und Sauerstoff.",
-      "exampleTranslation": "Su, hidrojen ve oksijenden oluşan bir bileşiktir.",
+      "german": "der Katalysator",
+      "turkish": "katalizör",
+      "example": "Ein Katalysator beschleunigt die chemische Reaktion, ohne selbst verbraucht zu werden.",
+      "exampleTranslation": "Bir katalizör, kendisi tükenmeden kimyasal reaksiyonu hızlandırır.",
       "synonyms": [
-        "die Substanz"
+        "der Beschleuniger"
       ],
       "level": "B2"
     },

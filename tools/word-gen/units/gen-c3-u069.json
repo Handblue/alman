@@ -29,13 +29,13 @@
       "level": "B1"
     },
     {
-      "german": "das Gehalt",
-      "turkish": "maaş",
-      "example": "Ihr Gehalt wird monatlich überwiesen.",
-      "exampleTranslation": "Maaşınız aylık olarak havale edilir.",
+      "german": "die Bezahlung",
+      "turkish": "ödeme, ücret",
+      "example": "Die Bezahlung in dieser Firma ist überdurchschnittlich gut.",
+      "exampleTranslation": "Bu firmadaki ödeme ortalamanın oldukça üzerinde.",
       "synonyms": [
-        "der Lohn",
-        "die Bezahlung"
+        "die Entlohnung",
+        "die Vergütung"
       ],
       "level": "B1"
     },

@@ -18,12 +18,12 @@
       "level": "B1"
     },
     {
-      "german": "die Anmeldung",
-      "turkish": "kayıt / başvuru bildirimi",
-      "example": "Die Anmeldung beim Bürgeramt ist kostenlos.",
-      "exampleTranslation": "Belediye dairesindeki kayıt ücretsizdir.",
+      "german": "die Verlängerung",
+      "turkish": "uzatma (süre uzatımı)",
+      "example": "Für die Verlängerung des Aufenthaltstitels muss ich einen neuen Antrag bei der Behörde stellen.",
+      "exampleTranslation": "Oturma izninin uzatılması için dairede yeni bir başvuru yapmam gerekiyor.",
       "synonyms": [
-        "die Registrierung"
+        "die Fristverlängerung"
       ],
       "level": "B1"
     },
@@ -81,13 +81,12 @@
       "level": "B2"
     },
     {
-      "german": "der Bescheid",
-      "turkish": "resmi karar / tebligat",
-      "example": "Der Bescheid des Finanzamts kam gestern.",
-      "exampleTranslation": "Vergi dairesinin tebligatı dün geldi.",
+      "german": "der Antragsteller",
+      "turkish": "başvuru sahibi, başvuran",
+      "example": "Der Antragsteller muss alle Unterlagen persönlich beim Amt vorlegen.",
+      "exampleTranslation": "Başvuru sahibi tüm belgeleri şahsen daireye sunmak zorundadır.",
       "synonyms": [
-        "die Mitteilung",
-        "der Verwaltungsakt"
+        "der Antragssteller"
       ],
       "level": "B2"
     },
@@ -121,12 +120,13 @@
       "level": "B2"
     },
     {
-      "german": "der Widerspruch",
-      "turkish": "itiraz",
-      "example": "Gegen den Bescheid kann man Widerspruch einlegen.",
-      "exampleTranslation": "Karara karşı itirazda bulunulabilir.",
+      "german": "die Auflage",
+      "turkish": "(resmî) koşul, şart, yükümlülük",
+      "example": "Die Behörde hat die Genehmigung nur unter einer strengen Auflage erteilt.",
+      "exampleTranslation": "Daire izni yalnızca katı bir şart altında verdi.",
       "synonyms": [
-        "der Einspruch"
+        "die Bedingung",
+        "die Vorgabe"
       ],
       "level": "B2"
     },

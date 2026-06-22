@@ -8,22 +8,22 @@
   "firstWordId": 901,
   "words": [
     {
-      "german": "die Frage",
-      "turkish": "soru",
-      "example": "Darf ich eine Frage stellen?",
-      "exampleTranslation": "Bir soru sorabilir miyim?",
+      "german": "der Dank",
+      "turkish": "teşekkür, şükran",
+      "example": "Zum Schluss möchte ich allen meinen Dank aussprechen.",
+      "exampleTranslation": "Son olarak herkese teşekkürlerimi sunmak istiyorum.",
       "synonyms": [
-        "die Erkundigung"
+        "die Anerkennung"
       ],
       "level": "A1"
     },
     {
-      "german": "die Antwort",
-      "turkish": "cevap / yanıt",
-      "example": "Er gibt mir keine Antwort.",
-      "exampleTranslation": "Bana bir cevap vermiyor.",
+      "german": "die Liebe",
+      "turkish": "sevgi, aşk",
+      "example": "Die Eltern schenken ihren Kindern viel Liebe.",
+      "exampleTranslation": "Anne baba çocuklarına çok sevgi verir.",
       "synonyms": [
-        "die Reaktion"
+        "die Zuneigung"
       ],
       "level": "A1"
     },

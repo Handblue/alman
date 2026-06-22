@@ -73,24 +73,24 @@
       "level": "B2"
     },
     {
-      "german": "die Benachteiligung",
-      "turkish": "dezavantaj / mağduriyet / ayrımcılığa uğrama",
-      "example": "Die Benachteiligung von Frauen besteht weiterhin.",
-      "exampleTranslation": "Kadınların mağduriyeti hâlâ sürüyor.",
+      "german": "die Marginalisierung",
+      "turkish": "marjinalleştirme, toplumsal kenara itilme",
+      "example": "Die Marginalisierung bestimmter Gruppen verstärkt soziale Spannungen in der Gesellschaft.",
+      "exampleTranslation": "Belirli grupların marjinalleştirilmesi toplumdaki sosyal gerilimleri artırır.",
       "synonyms": [
-        "die Diskriminierung",
-        "die Schlechterstellung"
+        "die Verdrängung an den Rand",
+        "die soziale Randstellung"
       ],
       "level": "C1"
     },
     {
-      "german": "der Wandel",
-      "turkish": "değişim / dönüşüm",
-      "example": "Der gesellschaftliche Wandel verläuft oft langsam.",
-      "exampleTranslation": "Toplumsal değişim çoğu zaman yavaş ilerler.",
+      "german": "die Umstrukturierung",
+      "turkish": "yeniden yapılanma",
+      "example": "Die Umstrukturierung der Arbeitswelt verändert traditionelle Familienformen.",
+      "exampleTranslation": "Çalışma dünyasının yeniden yapılanması geleneksel aile biçimlerini değiştirir.",
       "synonyms": [
-        "die Veränderung",
-        "der Umbruch"
+        "die Neuordnung",
+        "die Reorganisation"
       ],
       "level": "B2"
     },
@@ -117,12 +117,13 @@
       "level": "B2"
     },
     {
-      "german": "die Minderheit",
-      "turkish": "azınlık",
-      "example": "Ethnische Minderheiten brauchen besonderen Schutz.",
-      "exampleTranslation": "Etnik azınlıkların özel korumaya ihtiyacı vardır.",
+      "german": "die Bevölkerungsgruppe",
+      "turkish": "nüfus grubu, toplumsal kesim",
+      "example": "Jede Bevölkerungsgruppe hat eigene Werte und Lebensweisen.",
+      "exampleTranslation": "Her nüfus grubunun kendine özgü değerleri ve yaşam biçimleri vardır.",
       "synonyms": [
-        "die Randgruppe"
+        "der Bevölkerungsteil",
+        "das Bevölkerungssegment"
       ],
       "level": "B2"
     },
@@ -148,24 +149,24 @@
       "level": "C1"
     },
     {
-      "german": "die Zugehörigkeit",
-      "turkish": "aidiyet / mensubiyet",
-      "example": "Das Gefühl der Zugehörigkeit stärkt die Gemeinschaft.",
-      "exampleTranslation": "Aidiyet duygusu topluluğu güçlendirir.",
+      "german": "die Eingliederung",
+      "turkish": "topluma dahil olma, kaynaşma",
+      "example": "Die Eingliederung neuer Mitglieder gelingt nur durch gemeinsame Normen.",
+      "exampleTranslation": "Yeni üyelerin topluma dahil olması ancak ortak normlarla başarılır.",
       "synonyms": [
-        "die Verbundenheit",
-        "die Mitgliedschaft"
+        "die Einbindung",
+        "die Aufnahme in die Gemeinschaft"
       ],
       "level": "C1"
     },
     {
-      "german": "die Ausgrenzung",
-      "turkish": "dışlama / dışlanma",
-      "example": "Soziale Ausgrenzung führt oft zu Armut.",
-      "exampleTranslation": "Toplumsal dışlanma çoğu zaman yoksulluğa yol açar.",
+      "german": "die Stigmatisierung",
+      "turkish": "damgalama",
+      "example": "Die Stigmatisierung von Erkrankten erschwert ihre Rückkehr in die Gesellschaft.",
+      "exampleTranslation": "Hastaların damgalanması onların topluma dönüşünü zorlaştırır.",
       "synonyms": [
-        "die Marginalisierung",
-        "die Exklusion"
+        "die Brandmarkung",
+        "die soziale Abstempelung"
       ],
       "level": "C1"
     }

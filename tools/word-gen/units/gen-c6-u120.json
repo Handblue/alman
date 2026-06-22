@@ -40,13 +40,12 @@
       "level": "B2"
     },
     {
-      "german": "die Bedeutung",
-      "turkish": "anlam / önem",
-      "example": "Dieses Wort hat mehrere Bedeutungen.",
-      "exampleTranslation": "Bu kelimenin birden çok anlamı var.",
+      "german": "die Silbe",
+      "turkish": "hece",
+      "example": "Das Wort \"Banane\" besteht aus drei Silben.",
+      "exampleTranslation": "\"Banane\" kelimesi üç heceden oluşur.",
       "synonyms": [
-        "der Sinn",
-        "die Semantik"
+        "der Sprechtakt"
       ],
       "level": "B2"
     },
@@ -62,13 +61,11 @@
       "level": "B2"
     },
     {
-      "german": "die Muttersprache",
-      "turkish": "ana dil",
-      "example": "Türkisch ist meine Muttersprache.",
-      "exampleTranslation": "Türkçe benim ana dilimdir.",
-      "synonyms": [
-        "die Erstsprache"
-      ],
+      "german": "die Fremdsprache",
+      "turkish": "yabancı dil",
+      "example": "Im Studium lernt sie zwei neue Fremdsprachen.",
+      "exampleTranslation": "Üniversitede iki yeni yabancı dil öğreniyor.",
+      "synonyms": [],
       "level": "B2"
     },
     {
@@ -82,13 +79,13 @@
       "level": "B2"
     },
     {
-      "german": "die Herkunft",
-      "turkish": "köken / kaynak",
-      "example": "Die Herkunft dieses Wortes ist lateinisch.",
-      "exampleTranslation": "Bu kelimenin kökeni Latincedir.",
+      "german": "die Endung",
+      "turkish": "(kelime) eki",
+      "example": "Die Endung des Verbs zeigt die Person an.",
+      "exampleTranslation": "Fiilin eki kişiyi gösterir.",
       "synonyms": [
-        "der Ursprung",
-        "die Abstammung"
+        "das Suffix",
+        "die Nachsilbe"
       ],
       "level": "B2"
     },
@@ -124,13 +121,12 @@
       "level": "C1"
     },
     {
-      "german": "der Begriff",
-      "turkish": "kavram / terim",
-      "example": "Der Begriff lässt sich schwer genau definieren.",
-      "exampleTranslation": "Kavramı tam olarak tanımlamak zordur.",
+      "german": "das Lehnwort",
+      "turkish": "ödünç kelime, alıntı sözcük",
+      "example": "Das Wort \"Fenster\" ist ein Lehnwort aus dem Lateinischen.",
+      "exampleTranslation": "\"Fenster\" kelimesi Latince'den alınmış bir ödünç kelimedir.",
       "synonyms": [
-        "der Terminus",
-        "die Vorstellung"
+        "die Entlehnung"
       ],
       "level": "C1"
     },
@@ -145,24 +141,20 @@
       "level": "C1"
     },
     {
-      "german": "die Aussage",
-      "turkish": "ifade / önerme",
-      "example": "Die Aussage des Satzes bleibt mehrdeutig.",
-      "exampleTranslation": "Cümlenin ifadesi belirsiz kalıyor.",
-      "synonyms": [
-        "die Äußerung",
-        "die Feststellung"
-      ],
+      "german": "die Sprachfamilie",
+      "turkish": "dil ailesi",
+      "example": "Deutsch und Englisch gehören zur selben Sprachfamilie.",
+      "exampleTranslation": "Almanca ve İngilizce aynı dil ailesine aittir.",
+      "synonyms": [],
       "level": "C1"
     },
     {
-      "german": "der Zusammenhang",
-      "turkish": "bağlam / bağlantı",
-      "example": "Ohne Kontext bleibt der Zusammenhang unklar.",
-      "exampleTranslation": "Bağlam olmadan bağıntı belirsiz kalır.",
+      "german": "der Dialekt",
+      "turkish": "lehçe, ağız",
+      "example": "In Bayern spricht man einen besonderen Dialekt.",
+      "exampleTranslation": "Bavyera'da özel bir lehçe konuşulur.",
       "synonyms": [
-        "der Kontext",
-        "die Verbindung"
+        "die Mundart"
       ],
       "level": "C1"
     }

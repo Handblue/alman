@@ -8,13 +8,11 @@
   "firstWordId": 706,
   "words": [
     {
-      "german": "der Sport",
-      "turkish": "spor",
-      "example": "Ich mache jeden Tag Sport.",
-      "exampleTranslation": "Her gün spor yapıyorum.",
-      "synonyms": [
-        "die Bewegung"
-      ],
+      "german": "das Tennis",
+      "turkish": "tenis",
+      "example": "Am Wochenende spiele ich gern Tennis im Park.",
+      "exampleTranslation": "Hafta sonu parkta seve seve tenis oynarım.",
+      "synonyms": [],
       "level": "A1"
     },
     {
@@ -34,12 +32,12 @@
       "level": "A1"
     },
     {
-      "german": "schwimmen",
-      "turkish": "yüzmek",
-      "example": "Im Sommer gehe ich gern schwimmen.",
-      "exampleTranslation": "Yazın yüzmeye gitmeyi severim.",
+      "german": "joggen",
+      "turkish": "koşu yapmak, hafif tempolu koşmak",
+      "example": "Jeden Morgen jogge ich eine halbe Stunde.",
+      "exampleTranslation": "Her sabah yarım saat koşu yaparım.",
       "synonyms": [
-        "baden"
+        "rennen"
       ],
       "level": "A1"
     },
@@ -113,13 +111,12 @@
       "level": "A1"
     },
     {
-      "german": "das Spiel",
-      "turkish": "maç / oyun",
-      "example": "Das Spiel beginnt um drei Uhr.",
-      "exampleTranslation": "Maç saat üçte başlıyor.",
+      "german": "die Turnhalle",
+      "turkish": "spor salonu, jimnastik salonu",
+      "example": "Die Kinder machen Sport in der Turnhalle.",
+      "exampleTranslation": "Çocuklar spor salonunda spor yapıyor.",
       "synonyms": [
-        "die Partie",
-        "das Match"
+        "die Sporthalle"
       ],
       "level": "A1"
     },
@@ -145,12 +142,12 @@
       "level": "A2"
     },
     {
-      "german": "das Fahrrad",
-      "turkish": "bisiklet",
-      "example": "Ich fahre mit dem Fahrrad zur Arbeit.",
-      "exampleTranslation": "İşe bisikletle gidiyorum.",
+      "german": "der Trainer",
+      "turkish": "antrenör, çalıştırıcı",
+      "example": "Unser Trainer ist heute sehr freundlich.",
+      "exampleTranslation": "Antrenörümüz bugün çok cana yakın.",
       "synonyms": [
-        "das Rad"
+        "der Coach"
       ],
       "level": "A1"
     }

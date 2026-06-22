@@ -30,23 +30,23 @@
       "level": "B2"
     },
     {
-      "german": "der Erzähler",
-      "turkish": "anlatıcı",
-      "example": "Der Erzähler bleibt im Roman unsichtbar.",
-      "exampleTranslation": "Anlatıcı romanda görünmez kalır.",
+      "german": "die Strophe",
+      "turkish": "kıta, dörtlük",
+      "example": "Das Gedicht besteht aus vier Strophen mit jeweils vier Versen.",
+      "exampleTranslation": "Şiir, her biri dört dizeden oluşan dört kıtadan oluşur.",
       "synonyms": [
-        "die Erzählinstanz"
+        "der Gedichtabschnitt"
       ],
       "level": "B2"
     },
     {
-      "german": "die Handlung",
-      "turkish": "olay örgüsü / aksiyon",
-      "example": "Die Handlung spielt im 19. Jahrhundert.",
-      "exampleTranslation": "Olay örgüsü 19. yüzyılda geçer.",
+      "german": "der Vers",
+      "turkish": "dize, mısra",
+      "example": "Jeder Vers dieses Sonetts folgt einem strengen Versmaß.",
+      "exampleTranslation": "Bu sonenin her dizesi katı bir vezne uyar.",
       "synonyms": [
-        "die Geschehnisse",
-        "der Plot"
+        "die Zeile",
+        "die Verszeile"
       ],
       "level": "B2"
     },
@@ -117,13 +117,12 @@
       "level": "C1"
     },
     {
-      "german": "die Deutung",
-      "turkish": "yorumlama / anlamlandırma",
-      "example": "Mehrere Deutungen des Textes sind möglich.",
-      "exampleTranslation": "Metnin birden çok yorumu mümkündür.",
+      "german": "die Allegorie",
+      "turkish": "alegori",
+      "example": "Das Gemälde ist eine Allegorie der Vergänglichkeit allen irdischen Glücks.",
+      "exampleTranslation": "Bu tablo, tüm dünyevi mutluluğun geçiciliğinin bir alegorisidir.",
       "synonyms": [
-        "die Interpretation",
-        "die Auslegung"
+        "das Gleichnisbild"
       ],
       "level": "C1"
     },
@@ -139,13 +138,13 @@
       "level": "C1"
     },
     {
-      "german": "die Epoche",
-      "turkish": "dönem / çağ",
-      "example": "Die Klassik ist eine prägende Epoche.",
-      "exampleTranslation": "Klasik dönem belirleyici bir çağdır.",
+      "german": "die Avantgarde",
+      "turkish": "avangart, öncü akım",
+      "example": "Die künstlerische Avantgarde des frühen zwanzigsten Jahrhunderts brach radikal mit der Tradition.",
+      "exampleTranslation": "Yirminci yüzyılın başındaki sanatsal avangart, gelenekle köklü bir biçimde koptu.",
       "synonyms": [
-        "das Zeitalter",
-        "der Zeitabschnitt"
+        "die Vorhut",
+        "die Pionierbewegung"
       ],
       "level": "C1"
     },
@@ -161,13 +160,13 @@
       "level": "C1"
     },
     {
-      "german": "die Wirkung",
-      "turkish": "etki / tesir",
-      "example": "Die Wirkung des Gedichts ist beklemmend.",
-      "exampleTranslation": "Şiirin etkisi iç sıkıcıdır.",
+      "german": "das Pathos",
+      "turkish": "patos, coşkulu duygu yoğunluğu",
+      "example": "Das übertriebene Pathos dieser Rede wirkte auf das Publikum eher unglaubwürdig.",
+      "exampleTranslation": "Bu konuşmanın abartılı patosu, izleyicilere daha çok inandırıcılıktan uzak göründü.",
       "synonyms": [
-        "der Effekt",
-        "der Eindruck"
+        "die Ergriffenheit",
+        "die Gefühlsintensität"
       ],
       "level": "C1"
     }

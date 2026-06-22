@@ -109,12 +109,13 @@
       "level": "B2"
     },
     {
-      "german": "die Immanenz",
-      "turkish": "içkinlik",
-      "example": "Die Immanenz sieht das Göttliche in der Welt selbst.",
-      "exampleTranslation": "İçkinlik, ilahi olanı dünyanın kendisinde görür.",
+      "german": "die Vorsehung",
+      "turkish": "ilahi takdir, kader",
+      "example": "Viele Gläubige vertrauen darauf, dass eine göttliche Vorsehung ihr Schicksal lenkt.",
+      "exampleTranslation": "Birçok mümin, ilahi bir takdirin kaderlerini yönlendirdiğine güvenir.",
       "synonyms": [
-        "die Diesseitigkeit"
+        "die Fügung",
+        "der göttliche Ratschluss"
       ],
       "level": "C1"
     },
@@ -141,13 +142,13 @@
       "level": "B2"
     },
     {
-      "german": "der Zweifel",
-      "turkish": "şüphe / kuşku",
-      "example": "Der Zweifel an Gott begleitet viele Gläubige.",
-      "exampleTranslation": "Tanrı'ya dair şüphe birçok inananı izler.",
+      "german": "die Andacht",
+      "turkish": "ibadet, huşu içinde tefekkür",
+      "example": "In stiller Andacht versammelten sich die Gläubigen vor dem Altar.",
+      "exampleTranslation": "Müminler sessiz bir huşu içinde sunağın önünde toplandılar.",
       "synonyms": [
-        "die Skepsis",
-        "das Misstrauen"
+        "die Besinnung",
+        "das Gebet"
       ],
       "level": "B2"
     },

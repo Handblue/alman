@@ -22,13 +22,13 @@
       "id": 392,
       "categoryId": 4,
       "unitId": 27,
-      "german": "der Antrag",
-      "turkish": "başvuru / dilekçe / talep",
-      "example": "Stellen Sie bitte einen schriftlichen Antrag.",
-      "exampleTranslation": "Lütfen yazılı bir başvuru yapın.",
+      "german": "die Akkreditierung",
+      "turkish": "akreditasyon, resmi tanınma",
+      "example": "Die Akkreditierung des neuen Studiengangs dauerte fast zwei Jahre.",
+      "exampleTranslation": "Yeni lisans programının akreditasyonu neredeyse iki yıl sürdü.",
       "synonyms": [
-        "das Gesuch",
-        "die Anfrage"
+        "die Zulassung",
+        "die amtliche Anerkennung"
       ],
       "level": "B2"
     },
@@ -64,13 +64,13 @@
       "id": 395,
       "categoryId": 4,
       "unitId": 27,
-      "german": "die Frist",
-      "turkish": "süre / son tarih",
-      "example": "Die Frist für die Bewerbung endet am 30. April.",
-      "exampleTranslation": "Başvuru süresi 30 Nisan'da bitiyor.",
+      "german": "die Auflage",
+      "turkish": "şart, koşul (resmi yükümlülük)",
+      "example": "Die Hochschule erteilte ihm das Stipendium nur unter strengen Auflagen.",
+      "exampleTranslation": "Üniversite bursu ona ancak katı şartlar altında verdi.",
       "synonyms": [
-        "die Deadline",
-        "der Termin"
+        "die Vorgabe",
+        "die Bestimmung"
       ],
       "level": "B2"
     },
@@ -78,13 +78,13 @@
       "id": 396,
       "categoryId": 4,
       "unitId": 27,
-      "german": "die Genehmigung",
-      "turkish": "onay / izin",
-      "example": "Ohne Genehmigung darf man das nicht bauen.",
-      "exampleTranslation": "İzin olmadan bunu inşa edemezsiniz.",
+      "german": "die Ermächtigung",
+      "turkish": "yetkilendirme, izin verme",
+      "example": "Ohne ausdrückliche Ermächtigung darf die Stelle die Daten nicht weitergeben.",
+      "exampleTranslation": "Açık bir yetkilendirme olmadan ilgili birim verileri paylaşamaz.",
       "synonyms": [
-        "die Erlaubnis",
-        "das Einverständnis"
+        "die Befugnis",
+        "die Vollmacht"
       ],
       "level": "B2"
     },
@@ -119,12 +119,13 @@
       "id": 399,
       "categoryId": 4,
       "unitId": 27,
-      "german": "zuständig",
-      "turkish": "sorumlu / yetkili",
-      "example": "Wer ist für diesen Bereich zuständig?",
-      "exampleTranslation": "Bu alan için kim sorumlu?",
+      "german": "befugt",
+      "turkish": "yetkili, yetkilendirilmiş",
+      "example": "Nur befugte Mitarbeiter haben Zugang zu den vertraulichen Unterlagen.",
+      "exampleTranslation": "Yalnızca yetkili çalışanların gizli belgelere erişimi vardır.",
       "synonyms": [
-        "verantwortlich"
+        "berechtigt",
+        "ermächtigt"
       ],
       "level": "B2"
     },
@@ -132,12 +133,13 @@
       "id": 400,
       "categoryId": 4,
       "unitId": 27,
-      "german": "das Formular",
-      "turkish": "form / başvuru formu",
-      "example": "Bitte füllen Sie das Formular vollständig aus.",
-      "exampleTranslation": "Lütfen formu eksiksiz doldurun.",
+      "german": "der Vordruck",
+      "turkish": "matbu form, basılı belge",
+      "example": "Bitte füllen Sie den Vordruck in Druckbuchstaben aus.",
+      "exampleTranslation": "Lütfen matbu formu büyük harflerle doldurun.",
       "synonyms": [
-        "der Vordruck"
+        "das Antragsblatt",
+        "der Bogen"
       ],
       "level": "B1"
     },
@@ -145,13 +147,13 @@
       "id": 401,
       "categoryId": 4,
       "unitId": 27,
-      "german": "die Behörde",
-      "turkish": "resmi kurum / makam",
-      "example": "Sie müssen zur zuständigen Behörde gehen.",
-      "exampleTranslation": "Yetkili kuruma gitmeniz gerekiyor.",
+      "german": "die Dienststelle",
+      "turkish": "resmi daire, hizmet birimi",
+      "example": "Für diese Frage ist die zuständige Dienststelle im zweiten Stock.",
+      "exampleTranslation": "Bu soru için ilgili resmi daire ikinci kattadır.",
       "synonyms": [
-        "das Amt",
-        "die Institution"
+        "das Sachgebiet",
+        "die Geschäftsstelle"
       ],
       "level": "B2"
     },
@@ -159,13 +161,13 @@
       "id": 402,
       "categoryId": 4,
       "unitId": 27,
-      "german": "beantragen",
-      "turkish": "başvurmak / talep etmek",
-      "example": "Ich möchte ein Visum beantragen.",
-      "exampleTranslation": "Vize başvurusunda bulunmak istiyorum.",
+      "german": "vorlegen",
+      "turkish": "sunmak, ibraz etmek (resmi belge)",
+      "example": "Bei der Prüfung müssen Sie einen gültigen Lichtbildausweis vorlegen.",
+      "exampleTranslation": "Sınavda geçerli bir fotoğraflı kimlik ibraz etmeniz gerekir.",
       "synonyms": [
-        "anfragen",
-        "stellen"
+        "präsentieren",
+        "unterbreiten"
       ],
       "level": "B2"
     },
@@ -173,13 +175,13 @@
       "id": 403,
       "categoryId": 4,
       "unitId": 27,
-      "german": "nachweisen",
-      "turkish": "kanıtlamak / ispatlamak",
-      "example": "Sie müssen Ihre Kenntnisse nachweisen.",
-      "exampleTranslation": "Bilgilerinizi kanıtlamanız gerekiyor.",
+      "german": "bescheinigen",
+      "turkish": "belgelemek, onaylamak (resmen)",
+      "example": "Der Arzt bescheinigte ihr die Arbeitsunfähigkeit für eine Woche.",
+      "exampleTranslation": "Doktor ona bir haftalık iş göremezliğini belgeledi.",
       "synonyms": [
-        "belegen",
-        "beweisen"
+        "attestieren",
+        "beglaubigen"
       ],
       "level": "B2"
     },

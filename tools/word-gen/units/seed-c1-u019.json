@@ -87,11 +87,13 @@
       "id": 277,
       "categoryId": 1,
       "unitId": 19,
-      "german": "die Kasse",
-      "turkish": "kasa / yazar kasa",
-      "example": "Bitte zahlen Sie an der Kasse.",
-      "exampleTranslation": "Lütfen kasada ödeme yapın.",
-      "synonyms": [],
+      "german": "der Einkaufswagen",
+      "turkish": "alışveriş arabası",
+      "example": "Im Supermarkt schiebe ich den Einkaufswagen durch die Gänge.",
+      "exampleTranslation": "Markette alışveriş arabasını koridorlarda iterim.",
+      "synonyms": [
+        "der Wagen"
+      ],
       "level": "A1"
     },
     {
@@ -154,27 +156,23 @@
       "id": 282,
       "categoryId": 1,
       "unitId": 19,
-      "german": "der Supermarkt",
-      "turkish": "süpermarket",
-      "example": "Ich gehe jeden Freitag in den Supermarkt.",
-      "exampleTranslation": "Her Cuma süpermarkete gidiyorum.",
-      "synonyms": [
-        "der Laden",
-        "das Geschäft"
-      ],
+      "german": "die Bäckerei",
+      "turkish": "fırın, ekmekçi",
+      "example": "Ich kaufe jeden Morgen frische Brötchen in der Bäckerei.",
+      "exampleTranslation": "Her sabah fırından taze ekmek alırım.",
+      "synonyms": [],
       "level": "A1"
     },
     {
       "id": 283,
       "categoryId": 1,
       "unitId": 19,
-      "german": "die Quittung",
-      "turkish": "makbuz / fiş",
-      "example": "Bewahre die Quittung als Nachweis auf.",
-      "exampleTranslation": "Makbuzu kanıt olarak sakla.",
+      "german": "die Bargeldzahlung",
+      "turkish": "nakit ödeme",
+      "example": "In diesem Geschäft ist nur die Bargeldzahlung möglich.",
+      "exampleTranslation": "Bu dükkanda sadece nakit ödeme mümkün.",
       "synonyms": [
-        "der Beleg",
-        "der Kassenbon"
+        "die Barzahlung"
       ],
       "level": "A2"
     },

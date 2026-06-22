@@ -8,13 +8,13 @@
   "firstWordId": 2146,
   "words": [
     {
-      "german": "das Argument",
-      "turkish": "argüman / kanıt",
-      "example": "Sein Argument war logisch und überzeugend.",
-      "exampleTranslation": "Argümanı mantıklı ve ikna ediciydi.",
+      "german": "der Denkansatz",
+      "turkish": "düşünme yaklaşımı, akıl yürütme yaklaşımı",
+      "example": "Ihr Denkansatz war originell, aber schwer zu verteidigen.",
+      "exampleTranslation": "Onun düşünme yaklaşımı özgündü ama savunması zordu.",
       "synonyms": [
-        "der Beleg",
-        "das Vorbringen"
+        "die Herangehensweise",
+        "der Ansatz"
       ],
       "level": "B2"
     },
@@ -30,13 +30,12 @@
       "level": "B2"
     },
     {
-      "german": "die Begründung",
-      "turkish": "gerekçe / gerekçelendirme",
-      "example": "Ohne eine klare Begründung überzeugt die These nicht.",
-      "exampleTranslation": "Açık bir gerekçe olmadan tez ikna etmiyor.",
+      "german": "die Rechtfertigung",
+      "turkish": "gerekçelendirme, haklı çıkarma",
+      "example": "Für diese These fehlt eine überzeugende Rechtfertigung.",
+      "exampleTranslation": "Bu tez için ikna edici bir gerekçelendirme eksik.",
       "synonyms": [
-        "die Rechtfertigung",
-        "die Herleitung"
+        "die Legitimierung"
       ],
       "level": "B2"
     },
@@ -52,35 +51,35 @@
       "level": "B2"
     },
     {
-      "german": "der Einwand",
-      "turkish": "itiraz / çekince",
-      "example": "Gegen dieses Argument gibt es einen ernsten Einwand.",
-      "exampleTranslation": "Bu argümana karşı ciddi bir itiraz var.",
+      "german": "der Vorbehalt",
+      "turkish": "çekince, ihtiyat kaydı",
+      "example": "Er stimmte der Schlussfolgerung nur mit einem Vorbehalt zu.",
+      "exampleTranslation": "Vardığı sonuca yalnızca bir çekince ile katıldı.",
       "synonyms": [
-        "der Vorbehalt",
-        "die Entgegnung"
+        "die Bedenken",
+        "die Reserve"
       ],
       "level": "B2"
     },
     {
-      "german": "schlüssig",
-      "turkish": "tutarlı / mantıklı sonuca varan",
-      "example": "Seine Beweisführung war völlig schlüssig.",
-      "exampleTranslation": "Kanıtlaması tamamen tutarlıydı.",
+      "german": "nachvollziehbar",
+      "turkish": "anlaşılır, takip edilebilir",
+      "example": "Seine Schlussfolgerung ist für jeden Zuhörer nachvollziehbar.",
+      "exampleTranslation": "Onun vardığı sonuç her dinleyici için anlaşılırdır.",
       "synonyms": [
-        "kohärent",
-        "folgerichtig"
+        "verständlich",
+        "begreiflich"
       ],
       "level": "B2"
     },
     {
-      "german": "die Widerlegung",
-      "turkish": "çürütme",
-      "example": "Die Widerlegung seiner These gelang ihr mühelos.",
-      "exampleTranslation": "Tezini çürütmeyi zahmetsizce başardı.",
+      "german": "die Entgegnung",
+      "turkish": "karşı çıkış, mukabele",
+      "example": "Auf jede Behauptung folgte sofort eine scharfe Entgegnung.",
+      "exampleTranslation": "Her iddianın ardından hemen keskin bir karşı çıkış geldi.",
       "synonyms": [
-        "die Entkräftung",
-        "die Refutation"
+        "die Erwiderung",
+        "die Replik"
       ],
       "level": "C1"
     },
@@ -96,13 +95,12 @@
       "level": "C1"
     },
     {
-      "german": "der Trugschluss",
-      "turkish": "safsata / yanlış çıkarım",
-      "example": "Diese Argumentation beruht auf einem Trugschluss.",
-      "exampleTranslation": "Bu akıl yürütme bir safsataya dayanıyor.",
+      "german": "der Fehlschluss",
+      "turkish": "mantık hatası, yanlış çıkarım",
+      "example": "Aus diesen Prämissen einen solchen Schluss zu ziehen, ist ein klarer Fehlschluss.",
+      "exampleTranslation": "Bu öncüllerden böyle bir sonuç çıkarmak açık bir mantık hatasıdır.",
       "synonyms": [
-        "der Fehlschluss",
-        "das Sophisma"
+        "die Denkfalle"
       ],
       "level": "C1"
     },
@@ -140,13 +138,12 @@
       "level": "C1"
     },
     {
-      "german": "entkräften",
-      "turkish": "çürütmek / geçersiz kılmak",
-      "example": "Mit einem Beispiel konnte er den Einwand entkräften.",
-      "exampleTranslation": "Bir örnekle itirazı çürütebildi.",
+      "german": "aushebeln",
+      "turkish": "geçersiz kılmak, etkisiz hale getirmek",
+      "example": "Mit einem einzigen Gegenbeispiel konnte er die ganze Theorie aushebeln.",
+      "exampleTranslation": "Tek bir karşı örnekle bütün teoriyi geçersiz kılabildi.",
       "synonyms": [
-        "widerlegen",
-        "entwerten"
+        "außer Kraft setzen"
       ],
       "level": "C1"
     },

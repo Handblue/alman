@@ -74,13 +74,13 @@
       "level": "B2"
     },
     {
-      "german": "die Substanz",
-      "turkish": "töz / cevher",
-      "example": "Für Spinoza gibt es nur eine Substanz.",
-      "exampleTranslation": "Spinoza'ya göre yalnızca tek bir töz vardır.",
+      "german": "die Washeit",
+      "turkish": "mahiyet, bir şeyin ne olduğu (öz)",
+      "example": "Die Washeit eines Dinges bezeichnet das, was es seinem Wesen nach ist.",
+      "exampleTranslation": "Bir şeyin mahiyeti, onun özü itibarıyla ne olduğunu ifade eder.",
       "synonyms": [
-        "die Grundsubstanz",
-        "das Wesen"
+        "die Quiddität",
+        "das Wassein"
       ],
       "level": "C1"
     },

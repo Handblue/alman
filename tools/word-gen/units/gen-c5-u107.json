@@ -98,12 +98,13 @@
       "level": "A2"
     },
     {
-      "german": "die Verbindung",
-      "turkish": "bağlantı / aktarmalı sefer",
-      "example": "Es gibt eine direkte Verbindung nach Berlin.",
-      "exampleTranslation": "Berlin'e doğrudan bir bağlantı var.",
+      "german": "der Anschluss",
+      "turkish": "bağlantı (aktarma için)",
+      "example": "Wenn der Bus Verspätung hat, verpasse ich meinen Anschluss zum Zug.",
+      "exampleTranslation": "Otobüs gecikirse trene olan aktarma bağlantımı kaçırırım.",
       "synonyms": [
-        "der Anschluss"
+        "der Umstieg",
+        "die Anschlussverbindung"
       ],
       "level": "A2"
     },

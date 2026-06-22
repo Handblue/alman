@@ -190,13 +190,13 @@
       "id": 569,
       "categoryId": 4,
       "unitId": 28,
-      "german": "im Hinblick auf",
-      "turkish": "-e göre / -i göz önünde bulundurarak",
-      "example": "Im Hinblick auf die Kosten ist der Plan riskant.",
-      "exampleTranslation": "Maliyetler göz önünde bulundurulduğunda plan riskli.",
+      "german": "in Anbetracht",
+      "turkish": "göz önüne alındığında, dikkate alınarak",
+      "example": "In Anbetracht der aktuellen Lage müssen wir unsere Pläne überdenken.",
+      "exampleTranslation": "Mevcut durum göz önüne alındığında planlarımızı yeniden gözden geçirmeliyiz.",
       "synonyms": [
-        "bezüglich",
-        "hinsichtlich"
+        "angesichts",
+        "in Anbetracht dessen"
       ],
       "level": "C1"
     },
@@ -204,13 +204,13 @@
       "id": 570,
       "categoryId": 4,
       "unitId": 28,
-      "german": "die Schlussfolgerung",
-      "turkish": "sonuç / çıkarım",
-      "example": "Die Schlussfolgerung des Berichts ist eindeutig.",
-      "exampleTranslation": "Raporun sonucu açıktır.",
+      "german": "die Quintessenz",
+      "turkish": "öz, en önemli nokta",
+      "example": "Die Quintessenz seines Vortrags war, dass Bildung allen offenstehen sollte.",
+      "exampleTranslation": "Konuşmasının özü, eğitimin herkese açık olması gerektiğiydi.",
       "synonyms": [
-        "die Konklusion",
-        "das Fazit"
+        "der Kern",
+        "das Wesentliche"
       ],
       "level": "C1"
     }

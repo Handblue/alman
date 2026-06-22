@@ -8,57 +8,53 @@
   "firstWordId": 1396,
   "words": [
     {
-      "german": "die Entwicklung",
-      "turkish": "gelişme / geliştirme",
-      "example": "Die Entwicklung neuer Impfstoffe dauert oft Jahre.",
-      "exampleTranslation": "Yeni aşıların geliştirilmesi genellikle yıllar sürer.",
+      "german": "der Sensor",
+      "turkish": "sensör, algılayıcı",
+      "example": "Der neue Sensor misst die Temperatur in Echtzeit.",
+      "exampleTranslation": "Yeni sensör sıcaklığı gerçek zamanlı olarak ölçüyor.",
       "synonyms": [
-        "der Fortschritt",
-        "die Weiterentwicklung"
+        "der Messfühler"
       ],
       "level": "B1"
     },
     {
-      "german": "die Erfindung",
-      "turkish": "buluş / icat",
-      "example": "Die Erfindung des Computers veränderte die Welt.",
-      "exampleTranslation": "Bilgisayarın icadı dünyayı değiştirdi.",
+      "german": "das Gerät",
+      "turkish": "cihaz, aygıt",
+      "example": "Dieses Gerät kann Daten drahtlos übertragen.",
+      "exampleTranslation": "Bu cihaz verileri kablosuz olarak aktarabilir.",
       "synonyms": [
-        "die Neuerung",
-        "die Innovation"
+        "der Apparat"
       ],
       "level": "B1"
     },
     {
-      "german": "der Roboter",
-      "turkish": "robot",
-      "example": "Der Roboter übernimmt gefährliche Arbeiten in der Fabrik.",
-      "exampleTranslation": "Robot, fabrikada tehlikeli işleri üstlenir.",
+      "german": "die Drohne",
+      "turkish": "drone, insansız hava aracı",
+      "example": "Die Drohne fliegt über das Feld und macht Aufnahmen.",
+      "exampleTranslation": "Drone tarlanın üzerinde uçuyor ve görüntü çekiyor.",
       "synonyms": [
-        "der Automat",
-        "die Maschine"
+        "das Fluggerät"
       ],
       "level": "B1"
     },
     {
-      "german": "die Energie",
-      "turkish": "enerji",
-      "example": "Solaranlagen erzeugen saubere Energie aus Sonnenlicht.",
-      "exampleTranslation": "Güneş panelleri güneş ışığından temiz enerji üretir.",
+      "german": "der Treibstoff",
+      "turkish": "yakıt",
+      "example": "Die Rakete benötigt sehr viel Treibstoff für den Start.",
+      "exampleTranslation": "Roket fırlatma için çok fazla yakıta ihtiyaç duyuyor.",
       "synonyms": [
-        "die Kraft",
-        "der Strom"
+        "der Kraftstoff",
+        "der Brennstoff"
       ],
       "level": "B1"
     },
     {
-      "german": "entwickeln",
-      "turkish": "geliştirmek",
-      "example": "Wissenschaftler entwickeln ein neues Verfahren zur Heilung.",
-      "exampleTranslation": "Bilim insanları tedavi için yeni bir yöntem geliştiriyor.",
+      "german": "erforschen",
+      "turkish": "araştırmak, incelemek",
+      "example": "Wissenschaftler erforschen neue Methoden gegen Krankheiten.",
+      "exampleTranslation": "Bilim insanları hastalıklara karşı yeni yöntemler araştırıyor.",
       "synonyms": [
-        "erschaffen",
-        "konstruieren"
+        "ergründen"
       ],
       "level": "B1"
     },
@@ -73,12 +69,12 @@
       "level": "B2"
     },
     {
-      "german": "die Automatisierung",
-      "turkish": "otomasyon / otomatikleştirme",
-      "example": "Die Automatisierung verändert viele Berufe grundlegend.",
-      "exampleTranslation": "Otomasyon birçok mesleği kökten değiştiriyor.",
+      "german": "die Robotik",
+      "turkish": "robotik, robot bilimi",
+      "example": "Die Robotik verändert die moderne Industrie grundlegend.",
+      "exampleTranslation": "Robotik modern endüstriyi köklü biçimde değiştiriyor.",
       "synonyms": [
-        "die Mechanisierung"
+        "die Robotertechnik"
       ],
       "level": "B2"
     },
@@ -137,13 +133,12 @@
       "level": "C1"
     },
     {
-      "german": "die Tragweite",
-      "turkish": "kapsam / etki menzili / önem derecesi",
-      "example": "Die Tragweite dieser Entdeckung ist noch unklar.",
-      "exampleTranslation": "Bu keşfin kapsamı henüz belirsizdir.",
+      "german": "die Skalierbarkeit",
+      "turkish": "ölçeklenebilirlik",
+      "example": "Die Skalierbarkeit des Systems ist für große Datenmengen entscheidend.",
+      "exampleTranslation": "Sistemin ölçeklenebilirliği büyük veri miktarları için belirleyicidir.",
       "synonyms": [
-        "die Bedeutung",
-        "das Ausmaß"
+        "die Erweiterbarkeit"
       ],
       "level": "C1"
     },
@@ -159,13 +154,13 @@
       "level": "C1"
     },
     {
-      "german": "die Errungenschaft",
-      "turkish": "başarı / kazanım / elde edilen ilerleme",
-      "example": "Die Mondlandung war eine große technische Errungenschaft.",
-      "exampleTranslation": "Ay'a iniş büyük bir teknik kazanımdı.",
+      "german": "der Meilenstein",
+      "turkish": "kilometre taşı, dönüm noktası",
+      "example": "Die Entschlüsselung des Genoms war ein Meilenstein der Forschung.",
+      "exampleTranslation": "Genomun çözülmesi araştırmanın bir kilometre taşıydı.",
       "synonyms": [
-        "die Leistung",
-        "der Erfolg"
+        "der Wendepunkt",
+        "die Wegmarke"
       ],
       "level": "C1"
     }

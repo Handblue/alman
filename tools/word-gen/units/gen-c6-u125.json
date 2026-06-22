@@ -62,13 +62,13 @@
       "level": "B2"
     },
     {
-      "german": "das Gegenargument",
-      "turkish": "karşı argüman / karşı görüş",
-      "example": "Sein Gegenargument überzeugte das ganze Publikum.",
-      "exampleTranslation": "Karşı argümanı tüm dinleyicileri ikna etti.",
+      "german": "der Redebeitrag",
+      "turkish": "söz alma, konuşma katkısı",
+      "example": "Mit ihrem klugen Redebeitrag belebte sie die ganze Diskussionsrunde.",
+      "exampleTranslation": "Akıllıca söz almasıyla tüm tartışma turunu canlandırdı.",
       "synonyms": [
-        "der Gegeneinwand",
-        "die Entgegnung"
+        "der Wortbeitrag",
+        "die Wortmeldung"
       ],
       "level": "B2"
     },
@@ -105,24 +105,23 @@
       "level": "C1"
     },
     {
-      "german": "der Einwand",
-      "turkish": "itiraz / çekince",
-      "example": "Gegen diesen Vorschlag erhob sie einen Einwand.",
-      "exampleTranslation": "Bu öneriye karşı bir itirazda bulundu.",
+      "german": "die Zwischenfrage",
+      "turkish": "ara soru, kesintili soru",
+      "example": "Der Vortragende beantwortete jede Zwischenfrage aus dem Publikum geduldig.",
+      "exampleTranslation": "Sunucu, dinleyicilerden gelen her ara soruyu sabırla yanıtladı.",
       "synonyms": [
-        "der Vorbehalt",
-        "die Beanstandung"
+        "die Nachfrage"
       ],
       "level": "C1"
     },
     {
-      "german": "die Stellungnahme",
-      "turkish": "görüş bildirme / beyan / tutum",
-      "example": "Der Experte gab eine klare Stellungnahme ab.",
-      "exampleTranslation": "Uzman net bir görüş bildirdi.",
+      "german": "die Gesprächsführung",
+      "turkish": "konuşma yönetimi, tartışma yönetimi",
+      "example": "Eine souveräne Gesprächsführung hielt das Podium auch bei hitzigen Debatten im Gleichgewicht.",
+      "exampleTranslation": "Yetkin bir konuşma yönetimi, ateşli tartışmalarda bile paneli dengede tuttu.",
       "synonyms": [
-        "die Äußerung",
-        "das Statement"
+        "die Moderation",
+        "die Diskussionsleitung"
       ],
       "level": "C1"
     },

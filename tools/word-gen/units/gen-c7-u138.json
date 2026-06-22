@@ -8,34 +8,34 @@
   "firstWordId": 2056,
   "words": [
     {
-      "german": "die Bedeutung",
-      "turkish": "anlam / önem",
-      "example": "Die Bedeutung eines Wortes hängt vom Gebrauch ab.",
-      "exampleTranslation": "Bir kelimenin anlamı kullanımına bağlıdır.",
+      "german": "die Proposition",
+      "turkish": "önerme (önermesel içerik)",
+      "example": "Zwei verschiedene Sätze können dieselbe Proposition ausdrücken.",
+      "exampleTranslation": "İki farklı cümle aynı önermeyi ifade edebilir.",
       "synonyms": [
-        "der Sinngehalt",
-        "die Bewandtnis"
+        "der Satzinhalt",
+        "der Gedankeninhalt"
       ],
       "level": "B2"
     },
     {
-      "german": "der Sinn",
-      "turkish": "anlam / mana",
-      "example": "Der Sinn dieses Satzes bleibt mir unklar.",
-      "exampleTranslation": "Bu cümlenin anlamı bana belirsiz kalıyor.",
+      "german": "die Denotation",
+      "turkish": "düz anlam (gönderilen)",
+      "example": "Die Denotation eines Wortes ist sein nüchterner, sachlicher Grundbegriff ohne Nebenbedeutungen.",
+      "exampleTranslation": "Bir sözcüğün düz anlamı, yan anlamları olmayan yalın ve nesnel temel içeriğidir.",
       "synonyms": [
-        "der Gehalt"
+        "die Grundbedeutung",
+        "der Wortkern"
       ],
       "level": "B2"
     },
     {
-      "german": "die Aussage",
-      "turkish": "önerme / ifade",
-      "example": "Jede Aussage kann wahr oder falsch sein.",
-      "exampleTranslation": "Her önerme doğru ya da yanlış olabilir.",
+      "german": "der Geltungsanspruch",
+      "turkish": "geçerlilik iddiası",
+      "example": "Mit jeder ernsthaften Behauptung erheben wir einen Geltungsanspruch auf Wahrheit.",
+      "exampleTranslation": "Her ciddi iddiayla birlikte doğruluğa yönelik bir geçerlilik iddiası ortaya koyarız.",
       "synonyms": [
-        "die Behauptung",
-        "die Feststellung"
+        "der Wahrheitsanspruch"
       ],
       "level": "B2"
     },
@@ -150,12 +150,13 @@
       "level": "C1"
     },
     {
-      "german": "der Begriff",
-      "turkish": "kavram",
-      "example": "Der Begriff der Wahrheit ist philosophisch umstritten.",
-      "exampleTranslation": "Doğruluk kavramı felsefi olarak tartışmalıdır.",
+      "german": "die Intension",
+      "turkish": "içlem (kavramsal içerik)",
+      "example": "Die Intension eines Ausdrucks bestimmt, auf welche Gegenstände er überhaupt zutrifft.",
+      "exampleTranslation": "Bir ifadenin içlemi, onun hangi nesnelere uygulanabileceğini belirler.",
       "synonyms": [
-        "die Vorstellung"
+        "der Begriffsinhalt",
+        "der Bedeutungsgehalt"
       ],
       "level": "C1"
     }

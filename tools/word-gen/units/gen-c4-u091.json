@@ -28,13 +28,13 @@
       "level": "B1"
     },
     {
-      "german": "die Ware",
-      "turkish": "mal / ürün",
-      "example": "Die bestellte Ware kam beschädigt an.",
-      "exampleTranslation": "Sipariş edilen ürün hasarlı geldi.",
+      "german": "der Kassenzettel",
+      "turkish": "kasa fişi, satın alma fişi",
+      "example": "Bewahren Sie den Kassenzettel auf, falls Sie das Gerät umtauschen möchten.",
+      "exampleTranslation": "Cihazı değiştirmek isterseniz kasa fişini saklayın.",
       "synonyms": [
-        "das Produkt",
-        "der Artikel"
+        "der Bon",
+        "der Einkaufsbeleg"
       ],
       "level": "B1"
     },
@@ -70,13 +70,13 @@
       "level": "B2"
     },
     {
-      "german": "die Mahnung",
-      "turkish": "gecikme uyarısı / ihtar",
-      "example": "Nach der dritten Mahnung drohen Kosten.",
-      "exampleTranslation": "Üçüncü ihtardan sonra masraflar söz konusu olur.",
+      "german": "die Vertragsstrafe",
+      "turkish": "sözleşme cezası, cezai şart",
+      "example": "Bei verspäteter Lieferung muss das Unternehmen eine Vertragsstrafe zahlen.",
+      "exampleTranslation": "Geç teslimat durumunda şirket bir sözleşme cezası ödemek zorundadır.",
       "synonyms": [
-        "die Zahlungserinnerung",
-        "die Erinnerung"
+        "die Konventionalstrafe",
+        "das Pönale"
       ],
       "level": "B2"
     },
@@ -92,13 +92,13 @@
       "level": "B2"
     },
     {
-      "german": "der Verbraucher",
-      "turkish": "tüketici",
-      "example": "Der Verbraucher wird durch das Gesetz geschützt.",
-      "exampleTranslation": "Tüketici yasa ile korunur.",
+      "german": "die Verbindlichkeit",
+      "turkish": "yükümlülük, borç",
+      "example": "Mit der Unterschrift geht der Kunde eine finanzielle Verbindlichkeit ein.",
+      "exampleTranslation": "İmza ile müşteri mali bir yükümlülük altına girer.",
       "synonyms": [
-        "der Konsument",
-        "der Kunde"
+        "die Schuld",
+        "die Pflicht"
       ],
       "level": "B2"
     },
@@ -113,24 +113,24 @@
       "level": "B2"
     },
     {
-      "german": "die Reklamation",
-      "turkish": "şikayet / kusur bildirimi",
-      "example": "Die Reklamation wurde sofort bearbeitet.",
-      "exampleTranslation": "Şikayet hemen işleme alındı.",
+      "german": "der Käufer",
+      "turkish": "alıcı, satın alan kişi",
+      "example": "Der Käufer hat das Recht, fehlerhafte Produkte zurückzusenden.",
+      "exampleTranslation": "Alıcı, kusurlu ürünleri geri gönderme hakkına sahiptir.",
       "synonyms": [
-        "die Beanstandung",
-        "die Mängelrüge"
+        "der Kunde",
+        "der Abnehmer"
       ],
       "level": "B1"
     },
     {
-      "german": "der Mangel",
-      "turkish": "kusur / ayıp / eksiklik",
-      "example": "Das Produkt hatte einen versteckten Mangel.",
-      "exampleTranslation": "Ürünün gizli bir kusuru vardı.",
+      "german": "die Gewährleistung",
+      "turkish": "yasal teminat, garanti yükümlülüğü",
+      "example": "Die gesetzliche Gewährleistung beträgt in Deutschland zwei Jahre.",
+      "exampleTranslation": "Almanya'da yasal teminat süresi iki yıldır.",
       "synonyms": [
-        "der Defekt",
-        "der Fehler"
+        "die Mängelhaftung",
+        "die Sachmängelhaftung"
       ],
       "level": "B2"
     },

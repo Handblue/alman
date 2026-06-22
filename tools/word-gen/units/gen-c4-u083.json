@@ -110,13 +110,13 @@
       "level": "B2"
     },
     {
-      "german": "der Mangel",
-      "turkish": "kusur / eksiklik / arıza",
-      "example": "Ich habe dem Vermieter den Mangel sofort gemeldet.",
-      "exampleTranslation": "Kusuru ev sahibine hemen bildirdim.",
+      "german": "die Modernisierung",
+      "turkish": "modernizasyon, yenileme (konfor artırıcı iyileştirme)",
+      "example": "Nach der Modernisierung der Heizung darf der Vermieter die Miete erhöhen.",
+      "exampleTranslation": "Isıtma sisteminin modernizasyonundan sonra ev sahibi kirayı artırabilir.",
       "synonyms": [
-        "der Defekt",
-        "das Problem"
+        "die Sanierung",
+        "die Aufwertung"
       ],
       "level": "B2"
     },

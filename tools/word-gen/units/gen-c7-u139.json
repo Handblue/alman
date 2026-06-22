@@ -84,35 +84,33 @@
       "level": "B2"
     },
     {
-      "german": "das Modell",
-      "turkish": "model",
-      "example": "Ein Modell vereinfacht die komplexe Wirklichkeit.",
-      "exampleTranslation": "Bir model karmaşık gerçekliği basitleştirir.",
+      "german": "das Schema",
+      "turkish": "şema",
+      "example": "Jede wissenschaftliche Theorie folgt einem bestimmten Schema der Erklärung.",
+      "exampleTranslation": "Her bilimsel teori belirli bir açıklama şemasını izler.",
       "synonyms": [
-        "das Abbild",
-        "das Schema"
+        "der Aufbau",
+        "die Struktur"
       ],
       "level": "B2"
     },
     {
-      "german": "die Beobachtung",
-      "turkish": "gözlem",
-      "example": "Jede Beobachtung ist von Theorien geprägt.",
-      "exampleTranslation": "Her gözlem kuramlarca biçimlendirilir.",
+      "german": "die Sinneswahrnehmung",
+      "turkish": "duyusal algı",
+      "example": "Empirische Erkenntnis beruht letztlich auf der Sinneswahrnehmung.",
+      "exampleTranslation": "Deneysel bilgi nihayetinde duyusal algıya dayanır.",
       "synonyms": [
-        "die Wahrnehmung",
-        "die Betrachtung"
+        "die Sinneserfahrung"
       ],
       "level": "C1"
     },
     {
-      "german": "die Reproduzierbarkeit",
-      "turkish": "yeniden üretilebilirlik / tekrarlanabilirlik",
-      "example": "Reproduzierbarkeit gilt als Kennzeichen seriöser Forschung.",
-      "exampleTranslation": "Tekrarlanabilirlik ciddi araştırmanın bir ölçütü sayılır.",
+      "german": "die Wiederholbarkeit",
+      "turkish": "tekrarlanabilirlik",
+      "example": "Die Wiederholbarkeit eines Versuchs sichert seine wissenschaftliche Gültigkeit.",
+      "exampleTranslation": "Bir deneyin tekrarlanabilirliği onun bilimsel geçerliliğini güvence altına alır.",
       "synonyms": [
-        "die Wiederholbarkeit",
-        "die Nachvollziehbarkeit"
+        "die Replizierbarkeit"
       ],
       "level": "C1"
     },
@@ -127,36 +125,34 @@
       "level": "C1"
     },
     {
-      "german": "die Annahme",
-      "turkish": "varsayım / kabul",
-      "example": "Jedes Modell beruht auf vereinfachenden Annahmen.",
-      "exampleTranslation": "Her model basitleştirici varsayımlara dayanır.",
+      "german": "die Mutmaßung",
+      "turkish": "tahmin, zan",
+      "example": "Solange Belege fehlen, bleibt die Theorie eine bloße Mutmaßung.",
+      "exampleTranslation": "Kanıtlar eksik olduğu sürece teori sadece bir tahmin olarak kalır.",
       "synonyms": [
-        "die Vermutung",
-        "die Voraussetzung"
+        "die Konjektur",
+        "die Spekulation"
       ],
       "level": "C1"
     },
     {
-      "german": "der Zusammenhang",
-      "turkish": "bağlantı / ilişki",
-      "example": "Korrelation belegt noch keinen kausalen Zusammenhang.",
-      "exampleTranslation": "Korelasyon henüz nedensel bir bağlantıyı kanıtlamaz.",
+      "german": "die Wechselwirkung",
+      "turkish": "karşılıklı etki, etkileşim",
+      "example": "Der Forscher untersuchte die Wechselwirkung zwischen Temperatur und Druck.",
+      "exampleTranslation": "Araştırmacı sıcaklık ile basınç arasındaki etkileşimi inceledi.",
       "synonyms": [
-        "die Verbindung",
-        "die Beziehung"
+        "die Interdependenz"
       ],
       "level": "C1"
     },
     {
-      "german": "plausibel",
-      "turkish": "makul / inandırıcı",
-      "example": "Die Erklärung klingt plausibel, ist aber unbewiesen.",
-      "exampleTranslation": "Açıklama makul geliyor ama kanıtlanmamış.",
+      "german": "nachvollziehbar",
+      "turkish": "anlaşılır, takip edilebilir",
+      "example": "Die Schlussfolgerung des Autors ist klar und nachvollziehbar begründet.",
+      "exampleTranslation": "Yazarın çıkarımı açık ve anlaşılır biçimde gerekçelendirilmiştir.",
       "synonyms": [
-        "einleuchtend",
-        "nachvollziehbar",
-        "glaubwürdig"
+        "begreiflich",
+        "verständlich"
       ],
       "level": "C1"
     },

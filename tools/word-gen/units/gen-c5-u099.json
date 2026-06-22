@@ -57,13 +57,12 @@
       "level": "A1"
     },
     {
-      "german": "die Untersuchung",
-      "turkish": "muayene / inceleme",
-      "example": "Die Untersuchung dauert nur zehn Minuten.",
-      "exampleTranslation": "Muayene sadece on dakika sürüyor.",
+      "german": "der Verband",
+      "turkish": "sargı, bandaj",
+      "example": "Die Krankenschwester legte mir einen frischen Verband an.",
+      "exampleTranslation": "Hemşire bana taze bir sargı sardı.",
       "synonyms": [
-        "die Visite",
-        "der Check"
+        "der Wundverband"
       ],
       "level": "A2"
     },
@@ -119,13 +118,12 @@
       "level": "A2"
     },
     {
-      "german": "die Diagnose",
-      "turkish": "teşhis / tanı",
-      "example": "Die Diagnose des Arztes war eindeutig.",
-      "exampleTranslation": "Doktorun teşhisi açıktı.",
+      "german": "die Heilung",
+      "turkish": "iyileşme, tedavi (sonucu)",
+      "example": "Bei dieser Krankheit dauert die Heilung mehrere Wochen.",
+      "exampleTranslation": "Bu hastalıkta iyileşme birkaç hafta sürer.",
       "synonyms": [
-        "der Befund",
-        "die Feststellung"
+        "die Gesundung"
       ],
       "level": "B1"
     },
@@ -151,13 +149,12 @@
       "level": "B1"
     },
     {
-      "german": "die Beschwerden",
-      "turkish": "şikayetler / rahatsızlıklar",
-      "example": "Beschreiben Sie bitte Ihre Beschwerden genau.",
-      "exampleTranslation": "Lütfen şikayetlerinizi tam olarak anlatın.",
+      "german": "die Ansteckung",
+      "turkish": "bulaşma, enfeksiyon kapma",
+      "example": "Um eine Ansteckung zu vermeiden, sollte man sich oft die Hände waschen.",
+      "exampleTranslation": "Bulaşmayı önlemek için sık sık eller yıkanmalıdır.",
       "synonyms": [
-        "die Symptome",
-        "die Leiden"
+        "die Infektion"
       ],
       "level": "B1"
     }

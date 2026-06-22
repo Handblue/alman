@@ -19,13 +19,13 @@
       "level": "B2"
     },
     {
-      "german": "die Wahrnehmung",
-      "turkish": "algı / algılama",
-      "example": "Die Wahrnehmung der Farben ist subjektiv.",
-      "exampleTranslation": "Renklerin algılanması özneldir.",
+      "german": "die Aufmerksamkeit",
+      "turkish": "dikkat",
+      "example": "Unsere Aufmerksamkeit richtet sich immer nur auf einen kleinen Teil der Welt.",
+      "exampleTranslation": "Dikkatimiz her zaman dünyanın yalnızca küçük bir bölümüne yönelir.",
       "synonyms": [
-        "die Perzeption",
-        "das Gewahrwerden"
+        "die Konzentration",
+        "die Achtsamkeit"
       ],
       "level": "B2"
     },
@@ -41,13 +41,13 @@
       "level": "B2"
     },
     {
-      "german": "die Vorstellung",
-      "turkish": "tasarım / zihinde canlandırma",
-      "example": "Er hat eine klare Vorstellung von der Zukunft.",
-      "exampleTranslation": "Geleceğe dair açık bir tasarımı var.",
+      "german": "die Erinnerung",
+      "turkish": "anı, hatıra",
+      "example": "Eine lebhafte Erinnerung kann das Bewusstsein stärker prägen als die Gegenwart.",
+      "exampleTranslation": "Canlı bir hatıra, bilinci şimdiki andan daha güçlü biçimde şekillendirebilir.",
       "synonyms": [
-        "die Idee",
-        "das Bild"
+        "das Gedächtnisbild",
+        "die Reminiszenz"
       ],
       "level": "B2"
     },
@@ -148,13 +148,13 @@
       "level": "C1"
     },
     {
-      "german": "der Reiz",
-      "turkish": "uyaran / uyarı",
-      "example": "Ein äußerer Reiz löst eine Empfindung aus.",
-      "exampleTranslation": "Dışsal bir uyaran bir duyumu tetikler.",
+      "german": "der Affekt",
+      "turkish": "duygulanım, ani duygu",
+      "example": "Im Affekt treffen wir oft Entscheidungen, die der Verstand später bereut.",
+      "exampleTranslation": "Duygulanım anında, aklın sonradan pişman olduğu kararlar veririz.",
       "synonyms": [
-        "der Stimulus",
-        "die Anregung"
+        "die Gemütsregung",
+        "die Gefühlsregung"
       ],
       "level": "C1"
     },

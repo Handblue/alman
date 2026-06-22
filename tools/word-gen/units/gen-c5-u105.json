@@ -8,24 +8,21 @@
   "firstWordId": 1561,
   "words": [
     {
-      "german": "putzen",
-      "turkish": "temizlemek / silmek",
-      "example": "Ich putze jeden Samstag das Bad.",
-      "exampleTranslation": "Her cumartesi banyoyu temizlerim.",
+      "german": "abtrocknen",
+      "turkish": "kurulamak",
+      "example": "Nach dem Spülen muss ich noch die Teller abtrocknen.",
+      "exampleTranslation": "Bulaşıktan sonra tabakları da kurulamam gerekiyor.",
       "synonyms": [
-        "sauber machen",
-        "reinigen"
+        "trocken reiben"
       ],
       "level": "A1"
     },
     {
-      "german": "kochen",
-      "turkish": "yemek pişirmek / kaynamak",
-      "example": "Meine Mutter kocht heute Suppe.",
-      "exampleTranslation": "Annem bugün çorba pişiriyor.",
-      "synonyms": [
-        "zubereiten"
-      ],
+      "german": "backen",
+      "turkish": "fırınlamak, pişirmek (fırında)",
+      "example": "Am Wochenende backen wir zusammen einen Kuchen.",
+      "exampleTranslation": "Hafta sonu birlikte bir kek pişiriyoruz.",
+      "synonyms": [],
       "level": "A1"
     },
     {
@@ -55,12 +52,12 @@
       "level": "A1"
     },
     {
-      "german": "aufräumen",
-      "turkish": "toplamak / düzenlemek",
-      "example": "Die Kinder räumen ihre Spielsachen auf.",
-      "exampleTranslation": "Çocuklar oyuncaklarını topluyor.",
+      "german": "lüften",
+      "turkish": "havalandırmak",
+      "example": "Jeden Morgen muss ich das Schlafzimmer lüften.",
+      "exampleTranslation": "Her sabah yatak odasını havalandırmam gerekiyor.",
       "synonyms": [
-        "ordnen"
+        "frische Luft hereinlassen"
       ],
       "level": "A2"
     },
@@ -91,12 +88,12 @@
       "level": "A2"
     },
     {
-      "german": "vorbereiten",
-      "turkish": "hazırlamak",
-      "example": "Ich bereite das Abendessen vor.",
-      "exampleTranslation": "Akşam yemeğini hazırlıyorum.",
+      "german": "gießen",
+      "turkish": "sulamak (bitki)",
+      "example": "Vergiss nicht, die Blumen auf dem Balkon zu gießen.",
+      "exampleTranslation": "Balkondaki çiçekleri sulamayı unutma.",
       "synonyms": [
-        "zubereiten"
+        "bewässern"
       ],
       "level": "A2"
     },
@@ -128,12 +125,13 @@
       "level": "B1"
     },
     {
-      "german": "die Aufgabe",
-      "turkish": "görev / iş",
-      "example": "Müll rausbringen ist meine Aufgabe.",
-      "exampleTranslation": "Çöpü çıkarmak benim görevim.",
+      "german": "die Mithilfe",
+      "turkish": "yardım, katkı (birlikte yapma)",
+      "example": "Ohne die Mithilfe der Kinder dauert die Hausarbeit viel länger.",
+      "exampleTranslation": "Çocukların yardımı olmadan ev işi çok daha uzun sürüyor.",
       "synonyms": [
-        "der Auftrag"
+        "die Unterstützung",
+        "die Beteiligung"
       ],
       "level": "B1"
     },

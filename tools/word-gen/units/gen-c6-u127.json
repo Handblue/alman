@@ -8,13 +8,12 @@
   "firstWordId": 1891,
   "words": [
     {
-      "german": "der Abschluss",
-      "turkish": "diploma / mezuniyet derecesi",
-      "example": "Sie hat ihren Abschluss mit Auszeichnung gemacht.",
-      "exampleTranslation": "Diplomasını dereceyle aldı.",
+      "german": "der Bachelorgrad",
+      "turkish": "lisans derecesi",
+      "example": "Nach drei Jahren erwarb sie den Bachelorgrad in Soziologie.",
+      "exampleTranslation": "Üç yılın ardından sosyolojide lisans derecesini aldı.",
       "synonyms": [
-        "der Studienabschluss",
-        "der Hochschulabschluss"
+        "der Bachelor"
       ],
       "level": "B2"
     },
@@ -30,13 +29,12 @@
       "level": "B2"
     },
     {
-      "german": "der Studiengang",
-      "turkish": "bölüm / lisans programı",
-      "example": "Der Studiengang dauert sechs Semester.",
-      "exampleTranslation": "Bu program altı dönem sürüyor.",
+      "german": "die Studienordnung",
+      "turkish": "öğretim yönetmeliği",
+      "example": "Die neue Studienordnung schreibt zwei Praktika vor.",
+      "exampleTranslation": "Yeni öğretim yönetmeliği iki staj zorunlu kılıyor.",
       "synonyms": [
-        "das Studienfach",
-        "die Studienrichtung"
+        "die Prüfungsordnung"
       ],
       "level": "B2"
     },
@@ -49,13 +47,12 @@
       "level": "B2"
     },
     {
-      "german": "das Stipendium",
-      "turkish": "burs",
-      "example": "Er erhielt ein Stipendium für sein Auslandsstudium.",
-      "exampleTranslation": "Yurt dışı eğitimi için burs aldı.",
+      "german": "der Stipendiat",
+      "turkish": "burslu öğrenci",
+      "example": "Als Stipendiat muss er jährlich einen Bericht einreichen.",
+      "exampleTranslation": "Burslu öğrenci olarak her yıl bir rapor sunmak zorunda.",
       "synonyms": [
-        "die Studienbeihilfe",
-        "das Förderstipendium"
+        "der Geförderte"
       ],
       "level": "B2"
     },
@@ -135,13 +132,13 @@
       "level": "C1"
     },
     {
-      "german": "die Förderung",
-      "turkish": "destek / teşvik / fonlama",
-      "example": "Die Förderung läuft über drei Jahre.",
-      "exampleTranslation": "Destek üç yıl boyunca sürüyor.",
+      "german": "die Habilitation",
+      "turkish": "doçentlik (yeterlik)",
+      "example": "Nach der Habilitation darf sie eine Vorlesung eigenständig leiten.",
+      "exampleTranslation": "Doçentlik sonrası bir dersi bağımsız olarak yürütebilir.",
       "synonyms": [
-        "die Unterstützung",
-        "die Finanzierung"
+        "die Lehrbefähigung",
+        "die venia legendi"
       ],
       "level": "C1"
     },

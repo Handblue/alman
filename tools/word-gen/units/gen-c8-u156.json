@@ -8,13 +8,13 @@
   "firstWordId": 2326,
   "words": [
     {
-      "german": "ehrlich",
-      "turkish": "dürüst / namuslu",
-      "example": "Sie ist immer ehrlich zu ihren Freunden.",
-      "exampleTranslation": "O, arkadaşlarına karşı her zaman dürüsttür.",
+      "german": "aufrichtig",
+      "turkish": "samimi, içten, dürüst",
+      "example": "Sie ist immer aufrichtig zu ihren Freunden.",
+      "exampleTranslation": "O, arkadaşlarına karşı her zaman içtendir.",
       "synonyms": [
-        "aufrichtig",
-        "offen"
+        "offen",
+        "wahrhaftig"
       ],
       "level": "B1"
     },
@@ -41,24 +41,24 @@
       "level": "B1"
     },
     {
-      "german": "faul",
-      "turkish": "tembel",
-      "example": "Er ist zu faul, um sein Zimmer aufzuräumen.",
-      "exampleTranslation": "Odasını toplamak için fazla tembel.",
+      "german": "bequem",
+      "turkish": "rahatına düşkün, üşengeç",
+      "example": "Er ist zu bequem, um die Treppe zu nehmen.",
+      "exampleTranslation": "Merdiveni kullanmak için fazla üşengeçtir.",
       "synonyms": [
         "träge",
-        "bequem"
+        "behäbig"
       ],
       "level": "B1"
     },
     {
-      "german": "fleißig",
-      "turkish": "çalışkan",
-      "example": "Die fleißige Schülerin lernt jeden Tag.",
-      "exampleTranslation": "Çalışkan öğrenci her gün ders çalışır.",
+      "german": "strebsam",
+      "turkish": "gayretli, hırslı, azimli",
+      "example": "Als strebsame Studentin lernt sie jeden Tag.",
+      "exampleTranslation": "Azimli bir öğrenci olarak her gün çalışır.",
       "synonyms": [
-        "strebsam",
-        "emsig"
+        "zielstrebig",
+        "fleißig"
       ],
       "level": "B1"
     },
@@ -140,13 +140,12 @@
       "level": "C1"
     },
     {
-      "german": "Haare auf den Zähnen haben",
-      "turkish": "sert ve dik başlı olmak / pabuç bırakmamak",
-      "example": "Die neue Chefin hat Haare auf den Zähnen.",
-      "exampleTranslation": "Yeni patron sert ve dik başlı biridir.",
+      "german": "ein gebranntes Kind sein",
+      "turkish": "sütten ağzı yanmış olmak, acı tecrübeden ders almış olmak",
+      "example": "Nach dem Betrug ist sie ein gebranntes Kind und vertraut niemandem mehr.",
+      "exampleTranslation": "Dolandırıldıktan sonra sütten ağzı yandı ve artık kimseye güvenmiyor.",
       "synonyms": [
-        "resolut sein",
-        "durchsetzungsfähig sein"
+        "vorsichtig geworden sein"
       ],
       "level": "C1"
     },

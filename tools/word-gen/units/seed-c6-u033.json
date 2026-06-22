@@ -58,13 +58,13 @@
       "id": 470,
       "categoryId": 6,
       "unitId": 33,
-      "german": "die Hypothese",
-      "turkish": "hipotez / varsayım",
-      "example": "Die Hypothese muss durch Experimente bestätigt werden.",
-      "exampleTranslation": "Hipotez deneylerle doğrulanmalıdır.",
+      "german": "die Konstante",
+      "turkish": "sabit (sayı), değişmez büyüklük",
+      "example": "In dieser Gleichung bleibt die Konstante immer gleich, egal welchen Wert die Variable annimmt.",
+      "exampleTranslation": "Bu denklemde değişken hangi değeri alırsa alsın, sabit her zaman aynı kalır.",
       "synonyms": [
-        "die These",
-        "die Annahme"
+        "der Festwert",
+        "die unveränderliche Größe"
       ],
       "level": "B2"
     },
@@ -137,13 +137,13 @@
       "id": 476,
       "categoryId": 6,
       "unitId": 33,
-      "german": "analysieren",
-      "turkish": "analiz etmek / çözümlemek",
-      "example": "Wir analysieren die Daten.",
-      "exampleTranslation": "Verileri analiz ediyoruz.",
+      "german": "runden",
+      "turkish": "(sayıyı) yuvarlamak",
+      "example": "Wir runden das Ergebnis auf zwei Stellen nach dem Komma.",
+      "exampleTranslation": "Sonucu virgülden sonra iki basamağa yuvarlıyoruz.",
       "synonyms": [
-        "untersuchen",
-        "auswerten"
+        "aufrunden",
+        "abrunden"
       ],
       "level": "B1"
     },

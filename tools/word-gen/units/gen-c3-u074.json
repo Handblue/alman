@@ -19,24 +19,24 @@
       "level": "B1"
     },
     {
-      "german": "behaupten",
-      "turkish": "iddia etmek / öne sürmek",
-      "example": "Er behauptet, dass er immer recht hat.",
-      "exampleTranslation": "Her zaman haklı olduğunu iddia ediyor.",
+      "german": "vorbringen",
+      "turkish": "ileri sürmek, öne sürmek",
+      "example": "In der Diskussion konnte sie überzeugende Argumente vorbringen.",
+      "exampleTranslation": "Tartışmada ikna edici argümanlar öne sürebildi.",
       "synonyms": [
-        "festhalten",
-        "versichern"
+        "anführen",
+        "vortragen"
       ],
       "level": "B1"
     },
     {
-      "german": "widersprechen",
-      "turkish": "karşı çıkmak / itiraz etmek",
-      "example": "Ich muss dir in diesem Punkt widersprechen.",
-      "exampleTranslation": "Bu konuda sana karşı çıkmak zorundayım.",
+      "german": "anzweifeln",
+      "turkish": "şüpheyle karşılamak, kuşku duymak",
+      "example": "Der Redner zweifelte die Glaubwürdigkeit der Quelle an.",
+      "exampleTranslation": "Konuşmacı kaynağın güvenilirliğini sorguladı.",
       "synonyms": [
-        "entgegnen",
-        "anfechten"
+        "bezweifeln",
+        "infrage stellen"
       ],
       "level": "B1"
     },
@@ -52,13 +52,13 @@
       "level": "B1"
     },
     {
-      "german": "betonen",
-      "turkish": "vurgulamak / altını çizmek",
-      "example": "Ich möchte besonders diesen Aspekt betonen.",
-      "exampleTranslation": "Özellikle bu yönü vurgulamak istiyorum.",
+      "german": "klarstellen",
+      "turkish": "açıklığa kavuşturmak, netleştirmek",
+      "example": "Ich möchte zunächst meinen Standpunkt klarstellen.",
+      "exampleTranslation": "Önce kendi görüşümü netleştirmek istiyorum.",
       "synonyms": [
-        "hervorheben",
-        "unterstreichen"
+        "klären",
+        "richtigstellen"
       ],
       "level": "B1"
     },
@@ -85,13 +85,13 @@
       "level": "B2"
     },
     {
-      "german": "entgegnen",
-      "turkish": "karşılık vermek / yanıtlamak",
-      "example": "Darauf konnte sie nichts entgegnen.",
-      "exampleTranslation": "Buna karşılık verecek bir şey bulamadı.",
+      "german": "zugestehen",
+      "turkish": "kabul etmek, hak vermek, teslim etmek",
+      "example": "Man muss dem Gegner zugestehen, dass sein Argument teilweise berechtigt ist.",
+      "exampleTranslation": "Karşı tarafa argümanının kısmen haklı olduğunu teslim etmek gerekir.",
       "synonyms": [
-        "erwidern",
-        "kontern"
+        "einräumen",
+        "zubilligen"
       ],
       "level": "B2"
     },

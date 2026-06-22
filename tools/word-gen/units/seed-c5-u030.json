@@ -165,13 +165,12 @@
       "id": 434,
       "categoryId": 5,
       "unitId": 30,
-      "german": "die Unterkunft",
-      "turkish": "konaklama / barınak",
-      "example": "Wir suchen noch eine günstige Unterkunft.",
-      "exampleTranslation": "Hâlâ uygun fiyatlı konaklama arıyoruz.",
+      "german": "die Rezeption",
+      "turkish": "resepsiyon",
+      "example": "An der Rezeption bekommst du den Schlüssel für dein Zimmer.",
+      "exampleTranslation": "Resepsiyonda odanın anahtarını alırsın.",
       "synonyms": [
-        "die Herberge",
-        "das Quartier"
+        "der Empfang"
       ],
       "level": "A2"
     },

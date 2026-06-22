@@ -30,23 +30,24 @@
       "level": "B1"
     },
     {
-      "german": "der Zufall",
-      "turkish": "tesadüf / rastlantı",
-      "example": "Wir haben uns durch puren Zufall getroffen.",
-      "exampleTranslation": "Tamamen tesadüf eseri karşılaştık.",
+      "german": "der Glücksfall",
+      "turkish": "talih eseri, şans eseri olan durum",
+      "example": "Dass wir uns hier getroffen haben, war ein echter Glücksfall.",
+      "exampleTranslation": "Burada karşılaşmamız gerçek bir talih eseriydi.",
       "synonyms": [
-        "der Glücksfall"
+        "der Treffer",
+        "die Fortune"
       ],
       "level": "B1"
     },
     {
-      "german": "die Gelegenheit",
-      "turkish": "fırsat / olanak",
-      "example": "Du solltest diese Gelegenheit nicht verpassen.",
-      "exampleTranslation": "Bu fırsatı kaçırmamalısın.",
+      "german": "die Chance",
+      "turkish": "fırsat, şans",
+      "example": "Du solltest diese Chance unbedingt nutzen.",
+      "exampleTranslation": "Bu fırsatı mutlaka değerlendirmelisin.",
       "synonyms": [
-        "die Chance",
-        "der Anlass"
+        "die Aussicht",
+        "der Spielraum"
       ],
       "level": "B1"
     },

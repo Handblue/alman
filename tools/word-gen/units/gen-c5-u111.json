@@ -18,12 +18,12 @@
       "level": "A1"
     },
     {
-      "german": "reparieren",
-      "turkish": "tamir etmek / onarmak",
-      "example": "Kannst du mein Fahrrad reparieren?",
-      "exampleTranslation": "Bisikletimi tamir edebilir misin?",
+      "german": "einschalten",
+      "turkish": "açmak (çalıştırmak)",
+      "example": "Nach der Reparatur kann ich das Gerät wieder einschalten.",
+      "exampleTranslation": "Tamirden sonra cihazı tekrar açabilirim.",
       "synonyms": [
-        "instand setzen"
+        "anmachen"
       ],
       "level": "A1"
     },
@@ -98,12 +98,13 @@
       "level": "A2"
     },
     {
-      "german": "die Garantie",
-      "turkish": "garanti",
-      "example": "Das Gerät hat noch zwei Jahre Garantie.",
-      "exampleTranslation": "Cihazın hâlâ iki yıl garantisi var.",
+      "german": "der Knopf",
+      "turkish": "düğme (buton)",
+      "example": "Wenn du diesen Knopf drückst, startet die Maschine.",
+      "exampleTranslation": "Bu düğmeye basarsan makine çalışır.",
       "synonyms": [
-        "die Gewährleistung"
+        "der Schalter",
+        "die Taste"
       ],
       "level": "A2"
     },

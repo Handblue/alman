@@ -60,10 +60,16 @@ if (results.repairs && results.repairs.length) {
     let touched = false;
     for (let i = 0; i < (data.words || []).length; i++) {
       const w = data.words[i];
-      if (w.id != null && byId.has(w.id)) {
-        const r = byId.get(w.id);
-        data.words[i] = { id: w.id, categoryId: w.categoryId, unitId: w.unitId, ...pick(r) };
-        byId.delete(w.id);
+      // Seed files store explicit ids; gen files stamp id = firstWordId + index at load time.
+      const effId = w.id != null ? w.id : (data.firstWordId != null ? data.firstWordId + i : undefined);
+      if (effId != null && byId.has(effId)) {
+        const r = byId.get(effId);
+        // Preserve the file's word shape: seed words keep id/categoryId/unitId; gen words stay
+        // bare (positional id). This keeps the positional id stable.
+        data.words[i] = w.id != null
+          ? { id: w.id, categoryId: w.categoryId, unitId: w.unitId, ...pick(r) }
+          : pick(r);
+        byId.delete(effId);
         touched = true;
         repaired++;
       }

@@ -18,23 +18,23 @@
       "level": "B2"
     },
     {
-      "german": "der Klimawandel",
-      "turkish": "iklim değişikliği",
-      "example": "Der Klimawandel bedroht das Gleichgewicht der Natur.",
-      "exampleTranslation": "İklim değişikliği doğanın dengesini tehdit ediyor.",
+      "german": "die Dürre",
+      "turkish": "kuraklık",
+      "example": "Die lange Dürre hat die Felder völlig ausgetrocknet.",
+      "exampleTranslation": "Uzun kuraklık tarlaları tamamen kuruttu.",
       "synonyms": [
-        "die Klimaveränderung"
+        "die Trockenheit",
+        "die Trockenperiode"
       ],
       "level": "B2"
     },
     {
-      "german": "der Fortschritt",
-      "turkish": "ilerleme / gelişme",
-      "example": "Technischer Fortschritt bringt auch neue Risiken.",
-      "exampleTranslation": "Teknik ilerleme yeni riskler de getirir.",
+      "german": "die Modernisierung",
+      "turkish": "modernleşme, modernizasyon",
+      "example": "Die Modernisierung der Industrie veränderte das Verhältnis zur Natur grundlegend.",
+      "exampleTranslation": "Sanayinin modernleşmesi doğayla ilişkiyi temelden değiştirdi.",
       "synonyms": [
-        "die Entwicklung",
-        "der Aufschwung"
+        "die Erneuerung"
       ],
       "level": "B2"
     },
@@ -50,13 +50,12 @@
       "level": "B2"
     },
     {
-      "german": "die Ressource",
-      "turkish": "kaynak",
-      "example": "Sauberes Wasser ist eine knappe Ressource.",
-      "exampleTranslation": "Temiz su kıt bir kaynaktır.",
+      "german": "die Energiequelle",
+      "turkish": "enerji kaynağı",
+      "example": "Die Sonne ist eine saubere und nahezu unerschöpfliche Energiequelle.",
+      "exampleTranslation": "Güneş temiz ve neredeyse tükenmez bir enerji kaynağıdır.",
       "synonyms": [
-        "das Hilfsmittel",
-        "der Rohstoff"
+        "der Energieträger"
       ],
       "level": "B2"
     },
@@ -72,13 +71,13 @@
       "level": "B2"
     },
     {
-      "german": "die Endlichkeit",
-      "turkish": "sonluluk / tükenebilirlik",
-      "example": "Die Endlichkeit der Rohstoffe zwingt uns zum Umdenken.",
-      "exampleTranslation": "Hammaddelerin sonluluğu bizi yeniden düşünmeye zorluyor.",
+      "german": "die Knappheit",
+      "turkish": "kıtlık, azlık",
+      "example": "Die Knappheit natürlicher Vorräte zwingt uns zum Umdenken.",
+      "exampleTranslation": "Doğal kaynakların kıtlığı bizi yeniden düşünmeye zorluyor.",
       "synonyms": [
-        "die Begrenztheit",
-        "die Vergänglichkeit"
+        "der Mangel an etwas",
+        "die Begrenztheit"
       ],
       "level": "C1"
     },
@@ -94,13 +93,13 @@
       "level": "C1"
     },
     {
-      "german": "die Entfremdung",
-      "turkish": "yabancılaşma",
-      "example": "Die Technik vertieft die Entfremdung des Menschen von der Natur.",
-      "exampleTranslation": "Teknik, insanın doğaya yabancılaşmasını derinleştirir.",
+      "german": "die Achtsamkeit",
+      "turkish": "özen, bilinçli farkındalık",
+      "example": "Ein achtsamer Umgang mit der Natur erfordert echte Achtsamkeit im Alltag.",
+      "exampleTranslation": "Doğayla özenli bir ilişki, gündelik yaşamda gerçek bir bilinçli farkındalık gerektirir.",
       "synonyms": [
-        "die Abkehr",
-        "die Distanzierung"
+        "die Aufmerksamkeit",
+        "die Behutsamkeit"
       ],
       "level": "C1"
     },
@@ -127,13 +126,13 @@
       "level": "C1"
     },
     {
-      "german": "das Maßhalten",
-      "turkish": "ölçülülük / sınır gözetme",
-      "example": "Nachhaltigkeit verlangt ein Maßhalten im Konsum.",
-      "exampleTranslation": "Sürdürülebilirlik, tüketimde ölçülülük gerektirir.",
+      "german": "der Verzicht",
+      "turkish": "vazgeçme, feragat",
+      "example": "Der freiwillige Verzicht auf Konsum schont die Umwelt.",
+      "exampleTranslation": "Tüketimden gönüllü olarak vazgeçmek çevreyi korur.",
       "synonyms": [
-        "die Mäßigung",
-        "die Enthaltsamkeit"
+        "die Entsagung",
+        "der Verzichtsakt"
       ],
       "level": "C1"
     },
@@ -160,13 +159,13 @@
       "level": "C1"
     },
     {
-      "german": "die Ehrfurcht",
-      "turkish": "derin saygı / hürmet",
-      "example": "Albert Schweitzer forderte Ehrfurcht vor dem Leben.",
-      "exampleTranslation": "Albert Schweitzer, yaşama karşı derin saygı talep etti.",
+      "german": "die Demut",
+      "turkish": "alçakgönüllülük, tevazu",
+      "example": "Gegenüber der Größe der Natur empfand er tiefe Demut.",
+      "exampleTranslation": "Doğanın büyüklüğü karşısında derin bir alçakgönüllülük hissetti.",
       "synonyms": [
-        "die Achtung",
-        "der Respekt"
+        "die Bescheidenheit des Herzens",
+        "die Demütigkeit"
       ],
       "level": "C1"
     }

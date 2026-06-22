@@ -8,13 +8,12 @@
   "firstWordId": 976,
   "words": [
     {
-      "german": "die Nachricht",
-      "turkish": "haber / mesaj",
-      "example": "Ich habe deine Nachricht gerade gelesen.",
-      "exampleTranslation": "Mesajını az önce okudum.",
+      "german": "die Pressefreiheit",
+      "turkish": "basın özgürlüğü",
+      "example": "In einer Demokratie ist die Pressefreiheit ein wichtiges Grundrecht.",
+      "exampleTranslation": "Bir demokraside basın özgürlüğü önemli bir temel haktır.",
       "synonyms": [
-        "die Meldung",
-        "die Botschaft"
+        "die Medienfreiheit"
       ],
       "level": "B1"
     },
@@ -30,13 +29,12 @@
       "level": "B1"
     },
     {
-      "german": "die Zeitung",
-      "turkish": "gazete",
-      "example": "Mein Vater liest jeden Morgen die Zeitung.",
-      "exampleTranslation": "Babam her sabah gazete okur.",
+      "german": "die Zeitschrift",
+      "turkish": "dergi",
+      "example": "Jeden Monat lese ich eine Zeitschrift über aktuelle Technik.",
+      "exampleTranslation": "Her ay güncel teknoloji hakkında bir dergi okurum.",
       "synonyms": [
-        "das Blatt",
-        "die Tageszeitung"
+        "das Magazin"
       ],
       "level": "B1"
     },
@@ -117,13 +115,12 @@
       "level": "B2"
     },
     {
-      "german": "veröffentlichen",
-      "turkish": "yayımlamak / yayınlamak",
-      "example": "Die Zeitung wird den Bericht morgen veröffentlichen.",
-      "exampleTranslation": "Gazete raporu yarın yayımlayacak.",
+      "german": "ausstrahlen",
+      "turkish": "yayınlamak (radyo/televizyon)",
+      "example": "Der Sender wird die Dokumentation heute Abend ausstrahlen.",
+      "exampleTranslation": "Kanal belgeseli bu akşam yayınlayacak.",
       "synonyms": [
-        "publizieren",
-        "herausgeben"
+        "übertragen"
       ],
       "level": "B2"
     },

@@ -8,13 +8,13 @@
   "firstWordId": 2026,
   "words": [
     {
-      "german": "die Existenz",
-      "turkish": "varoluş / var oluş",
-      "example": "Die menschliche Existenz geht der Essenz voraus.",
-      "exampleTranslation": "İnsanın varoluşu özünden önce gelir.",
+      "german": "das Streben",
+      "turkish": "çabalama, gayret, arzulama",
+      "example": "Das menschliche Streben nach einem erfüllten Leben kennt keine Grenzen.",
+      "exampleTranslation": "İnsanın dolu dolu bir yaşam için çabalaması sınır tanımaz.",
       "synonyms": [
-        "das Dasein",
-        "das Vorhandensein"
+        "das Trachten",
+        "das Bestreben"
       ],
       "level": "B2"
     },
@@ -27,13 +27,13 @@
       "level": "C1"
     },
     {
-      "german": "die Angst",
-      "turkish": "kaygı / bunaltı",
-      "example": "Die Angst offenbart dem Menschen seine Freiheit.",
-      "exampleTranslation": "Kaygı insana özgürlüğünü açığa çıkarır.",
+      "german": "die Ohnmacht",
+      "turkish": "çaresizlik, güçsüzlük, acziyet",
+      "example": "Angesichts des Todes empfindet der Mensch oft eine tiefe Ohnmacht.",
+      "exampleTranslation": "Ölüm karşısında insan çoğu zaman derin bir çaresizlik hisseder.",
       "synonyms": [
-        "die Beklemmung",
-        "die Furcht"
+        "die Hilflosigkeit",
+        "die Machtlosigkeit"
       ],
       "level": "B2"
     },
@@ -82,35 +82,34 @@
       "level": "C1"
     },
     {
-      "german": "die Entscheidung",
-      "turkish": "karar / seçim",
-      "example": "Jede Entscheidung wirft uns auf uns selbst zurück.",
-      "exampleTranslation": "Her karar bizi kendimize geri fırlatır.",
+      "german": "die Wahlfreiheit",
+      "turkish": "seçme özgürlüğü, tercih serbestisi",
+      "example": "Die Wahlfreiheit zwingt den Menschen, ständig Verantwortung für sein Handeln zu übernehmen.",
+      "exampleTranslation": "Seçme özgürlüğü, insanı eylemlerinin sorumluluğunu sürekli üstlenmeye zorlar.",
       "synonyms": [
-        "der Entschluss",
-        "die Wahl"
+        "die Entscheidungsfreiheit"
       ],
       "level": "B2"
     },
     {
-      "german": "die Endlichkeit",
-      "turkish": "sonluluk",
-      "example": "Die Endlichkeit des Lebens verleiht ihm seinen Wert.",
-      "exampleTranslation": "Yaşamın sonluluğu ona değerini verir.",
+      "german": "die Begrenztheit",
+      "turkish": "sınırlılık, sonluluk",
+      "example": "Die Begrenztheit des eigenen Lebens macht jeden Augenblick kostbar.",
+      "exampleTranslation": "Kendi yaşamının sınırlılığı her anı değerli kılar.",
       "synonyms": [
-        "die Begrenztheit",
-        "die Vergänglichkeit"
+        "die Beschränktheit",
+        "die Grenze"
       ],
       "level": "C1"
     },
     {
-      "german": "die Entfremdung",
-      "turkish": "yabancılaşma",
-      "example": "Die Entfremdung trennt den Menschen von sich selbst.",
-      "exampleTranslation": "Yabancılaşma insanı kendinden ayırır.",
+      "german": "die Heimatlosigkeit",
+      "turkish": "yurtsuzluk, köksüzlük, ait olamama",
+      "example": "Viele existenzielle Denker beschreiben die Heimatlosigkeit des modernen Menschen.",
+      "exampleTranslation": "Birçok varoluşçu düşünür modern insanın yurtsuzluğunu betimler.",
       "synonyms": [
-        "die Selbstentfremdung",
-        "die Befremdung"
+        "die Wurzellosigkeit",
+        "die Entwurzelung"
       ],
       "level": "C1"
     },
@@ -126,24 +125,23 @@
       "level": "B2"
     },
     {
-      "german": "die Selbstbestimmung",
-      "turkish": "kendi kaderini tayin / özerklik",
-      "example": "Selbstbestimmung verlangt Mut zur eigenen Entscheidung.",
-      "exampleTranslation": "Kendi kaderini tayin, kendi kararına cesaret gerektirir.",
+      "german": "die Selbstwerdung",
+      "turkish": "kendini gerçekleştirme süreci, kendisi olma",
+      "example": "Die Selbstwerdung gelingt nur, wenn man die eigenen Möglichkeiten bewusst ergreift.",
+      "exampleTranslation": "Kendisi olma ancak kişi kendi olanaklarını bilinçle kavradığında başarılır.",
       "synonyms": [
-        "die Autonomie",
-        "die Eigenständigkeit"
+        "die Individuation"
       ],
       "level": "C1"
     },
     {
-      "german": "der Sinn",
-      "turkish": "anlam",
-      "example": "Der Mensch sucht den Sinn seines Daseins.",
-      "exampleTranslation": "İnsan var oluşunun anlamını arar.",
+      "german": "die Bestimmung",
+      "turkish": "yazgı, kader, varoluş amacı",
+      "example": "Der Mensch sucht nach einer Bestimmung, die seinem Dasein Richtung gibt.",
+      "exampleTranslation": "İnsan, varoluşuna yön verecek bir amaç arar.",
       "synonyms": [
-        "die Bedeutung",
-        "der Zweck"
+        "die Berufung",
+        "der Lebenszweck"
       ],
       "level": "B2"
     },
@@ -159,13 +157,12 @@
       "level": "C1"
     },
     {
-      "german": "die Selbstverwirklichung",
-      "turkish": "kendini gerçekleştirme",
-      "example": "Selbstverwirklichung gelingt nur durch freie Entscheidungen.",
-      "exampleTranslation": "Kendini gerçekleştirme ancak özgür kararlarla başarılır.",
+      "german": "der Selbstentwurf",
+      "turkish": "kendini tasarlama, kendini var etme projesi",
+      "example": "Nach Sartre ist der Mensch nichts anderes als sein eigener Selbstentwurf.",
+      "exampleTranslation": "Sartre'a göre insan, kendi kendini tasarlamasından başka bir şey değildir.",
       "synonyms": [
-        "die Selbstentfaltung",
-        "die Entfaltung"
+        "die Selbstgestaltung"
       ],
       "level": "C1"
     }

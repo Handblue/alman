@@ -29,13 +29,13 @@
       "level": "B1"
     },
     {
-      "german": "die Quelle",
-      "turkish": "kaynak",
-      "example": "Diese Behauptung stützt sich auf eine Quelle.",
-      "exampleTranslation": "Bu iddia bir kaynağa dayanmaktadır.",
+      "german": "der Verfasser",
+      "turkish": "yazar, müellif",
+      "example": "Der Verfasser des Aufsatzes vertritt eine klare Position.",
+      "exampleTranslation": "Makalenin yazarı net bir görüş savunuyor.",
       "synonyms": [
-        "der Beleg",
-        "die Fundstelle"
+        "der Autor",
+        "der Schreiber"
       ],
       "level": "B1"
     },
@@ -72,24 +72,23 @@
       "level": "B2"
     },
     {
-      "german": "der Bezug",
-      "turkish": "ilişki / atıf",
-      "example": "Der Autor nimmt Bezug auf frühere Studien.",
-      "exampleTranslation": "Yazar önceki çalışmalara atıfta bulunuyor.",
+      "german": "der Rückgriff",
+      "turkish": "başvurma, müracaat (geçmişe/kaynağa)",
+      "example": "Unter Rückgriff auf frühere Studien begründet sie ihre These.",
+      "exampleTranslation": "Önceki çalışmalara başvurarak tezini temellendiriyor.",
       "synonyms": [
-        "der Zusammenhang",
-        "die Beziehung"
+        "die Heranziehung"
       ],
       "level": "B2"
     },
     {
-      "german": "die Aussage",
-      "turkish": "ifade / önerme",
-      "example": "Diese Aussage lässt sich nicht verallgemeinern.",
-      "exampleTranslation": "Bu ifade genellenemez.",
+      "german": "die Behauptung",
+      "turkish": "iddia, sav",
+      "example": "Diese Behauptung muss mit Daten gestützt werden.",
+      "exampleTranslation": "Bu iddianın verilerle desteklenmesi gerekir.",
       "synonyms": [
-        "die Behauptung",
-        "die Feststellung"
+        "die Annahme",
+        "die These"
       ],
       "level": "B2"
     },
@@ -116,13 +115,13 @@
       "level": "B2"
     },
     {
-      "german": "hervorheben",
-      "turkish": "vurgulamak / öne çıkarmak",
-      "example": "Der Verfasser hebt diesen Aspekt besonders hervor.",
-      "exampleTranslation": "Yazar bu yönü özellikle vurguluyor.",
+      "german": "verdeutlichen",
+      "turkish": "açıklığa kavuşturmak, belirginleştirmek",
+      "example": "Ein Beispiel kann den abstrakten Gedanken verdeutlichen.",
+      "exampleTranslation": "Bir örnek soyut düşünceyi açıklığa kavuşturabilir.",
       "synonyms": [
-        "betonen",
-        "unterstreichen"
+        "klarmachen",
+        "veranschaulichen"
       ],
       "level": "B2"
     },
@@ -149,13 +148,13 @@
       "level": "C1"
     },
     {
-      "german": "folglich",
-      "turkish": "dolayısıyla / sonuç olarak",
-      "example": "Die Daten sind unvollständig, folglich bleibt das Ergebnis vorläufig.",
-      "exampleTranslation": "Veriler eksik, dolayısıyla sonuç geçicidir.",
+      "german": "mithin",
+      "turkish": "dolayısıyla, bu nedenle",
+      "example": "Die Daten sind unvollständig, mithin bleibt das Ergebnis vorläufig.",
+      "exampleTranslation": "Veriler eksik, dolayısıyla sonuç geçici kalıyor.",
       "synonyms": [
         "somit",
-        "mithin"
+        "demzufolge"
       ],
       "level": "C1"
     },

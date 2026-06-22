@@ -71,13 +71,13 @@
       "level": "B2"
     },
     {
-      "german": "der rote Faden",
-      "turkish": "ana fikir / bütünü bağlayan ortak çizgi",
-      "example": "In seiner Rede fehlte der rote Faden.",
-      "exampleTranslation": "Konuşmasında bir ana fikir eksikti.",
+      "german": "die Gretchenfrage",
+      "turkish": "can alıcı/kritik soru (vicdan ya da temel inançla ilgili)",
+      "example": "Bei der Diskussion stellte er ihr die Gretchenfrage nach ihren wahren Absichten.",
+      "exampleTranslation": "Tartışmada ona gerçek niyetlerine dair o can alıcı soruyu yöneltti.",
       "synonyms": [
-        "der Leitgedanke",
-        "die Leitlinie"
+        "die Kernfrage",
+        "die entscheidende Frage"
       ],
       "level": "B2"
     },

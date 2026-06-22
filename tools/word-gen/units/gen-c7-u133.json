@@ -35,8 +35,7 @@
       "example": "Die Glückseligkeit gilt als höchstes Ziel des Lebens.",
       "exampleTranslation": "Mutluluk, yaşamın en yüksek amacı sayılır.",
       "synonyms": [
-        "die Seligkeit",
-        "die Glückseligkeit"
+        "die Seligkeit"
       ],
       "level": "C1"
     },
@@ -116,13 +115,13 @@
       "level": "B2"
     },
     {
-      "german": "die Vergänglichkeit",
-      "turkish": "gelip geçicilik / fanilik",
-      "example": "Die Sinnenwelt ist von Vergänglichkeit geprägt.",
-      "exampleTranslation": "Duyular dünyası gelip geçicilikle damgalıdır.",
+      "german": "die Besonnenheit",
+      "turkish": "sağgörü, ölçülülük, basiret",
+      "example": "Für Platon war die Besonnenheit eine der vier Kardinaltugenden der menschlichen Seele.",
+      "exampleTranslation": "Platon için basiret, insan ruhunun dört temel erdeminden biriydi.",
       "synonyms": [
-        "die Endlichkeit",
-        "die Sterblichkeit"
+        "die Umsicht",
+        "die Klugheit"
       ],
       "level": "C1"
     },

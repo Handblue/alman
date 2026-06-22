@@ -34,12 +34,12 @@
       "level": "A1"
     },
     {
-      "german": "die Hilfe",
-      "turkish": "yardım",
-      "example": "Ich brauche dringend Ihre Hilfe.",
-      "exampleTranslation": "Acilen yardımınıza ihtiyacım var.",
+      "german": "der Sanitäter",
+      "turkish": "sağlık görevlisi, ilk yardım görevlisi",
+      "example": "Der Sanitäter kommt schnell zum Unfall.",
+      "exampleTranslation": "Sağlık görevlisi hızlıca kazaya geliyor.",
       "synonyms": [
-        "die Unterstützung"
+        "der Rettungssanitäter"
       ],
       "level": "A1"
     },

@@ -63,13 +63,13 @@
       "level": "B2"
     },
     {
-      "german": "die Störung",
-      "turkish": "bozukluk / rahatsızlık",
-      "example": "Eine psychische Störung braucht professionelle Hilfe.",
-      "exampleTranslation": "Bir ruhsal bozukluk profesyonel yardım gerektirir.",
+      "german": "die Einstellung",
+      "turkish": "tutum, zihniyet",
+      "example": "Seine positive Einstellung half ihm, die schwierige Therapie durchzustehen.",
+      "exampleTranslation": "Olumlu tutumu, zorlu terapiyi atlatmasına yardımcı oldu.",
       "synonyms": [
-        "die Erkrankung",
-        "die Beeinträchtigung"
+        "die Haltung",
+        "die Geisteshaltung"
       ],
       "level": "B2"
     },
@@ -85,13 +85,13 @@
       "level": "B2"
     },
     {
-      "german": "das Bedürfnis",
-      "turkish": "ihtiyaç / gereksinim",
-      "example": "Jeder Mensch hat ein Bedürfnis nach Sicherheit.",
-      "exampleTranslation": "Her insanın güvenlik ihtiyacı vardır.",
+      "german": "der Affekt",
+      "turkish": "duygulanım, ani duygu",
+      "example": "Im Affekt traf sie eine Entscheidung, die sie später bereute.",
+      "exampleTranslation": "Ani bir duygulanımla, sonradan pişman olduğu bir karar verdi.",
       "synonyms": [
-        "der Bedarf",
-        "das Verlangen"
+        "die Gemütsregung",
+        "die Erregung"
       ],
       "level": "B2"
     },
@@ -129,13 +129,13 @@
       "level": "C1"
     },
     {
-      "german": "der Antrieb",
-      "turkish": "dürtü / itki / motivasyon",
-      "example": "Ihm fehlt der innere Antrieb zum Lernen.",
-      "exampleTranslation": "Onda öğrenmek için içsel dürtü eksik.",
+      "german": "die Triebfeder",
+      "turkish": "itici güç, saik",
+      "example": "Neugier ist oft die stärkste Triebfeder menschlichen Handelns.",
+      "exampleTranslation": "Merak, çoğu zaman insan davranışının en güçlü itici gücüdür.",
       "synonyms": [
-        "die Motivation",
-        "der Ansporn"
+        "der Beweggrund",
+        "das Motiv"
       ],
       "level": "C1"
     },
@@ -162,13 +162,12 @@
       "level": "C1"
     },
     {
-      "german": "die Auswertung",
-      "turkish": "değerlendirme / analiz",
-      "example": "Die Auswertung der Daten dauerte mehrere Wochen.",
-      "exampleTranslation": "Verilerin değerlendirilmesi birkaç hafta sürdü.",
+      "german": "die Bewusstwerdung",
+      "turkish": "bilinçlenme, farkına varma",
+      "example": "Die Bewusstwerdung eigener Denkmuster ist ein zentrales Ziel der Therapie.",
+      "exampleTranslation": "Kendi düşünce kalıplarının bilincine varmak, terapinin temel bir hedefidir.",
       "synonyms": [
-        "die Analyse",
-        "die Beurteilung"
+        "die Bewusstmachung"
       ],
       "level": "C1"
     }

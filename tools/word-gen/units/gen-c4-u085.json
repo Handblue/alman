@@ -8,13 +8,13 @@
   "firstWordId": 1261,
   "words": [
     {
-      "german": "der Klimawandel",
-      "turkish": "iklim değişikliği",
-      "example": "Der Klimawandel bedroht viele Tierarten.",
-      "exampleTranslation": "İklim değişikliği birçok hayvan türünü tehdit ediyor.",
+      "german": "die Dürre",
+      "turkish": "kuraklık",
+      "example": "Die lange Dürre hat in diesem Sommer viele Felder zerstört.",
+      "exampleTranslation": "Uzun kuraklık bu yaz birçok tarlayı mahvetti.",
       "synonyms": [
-        "die Klimaveränderung",
-        "die Erderwärmung"
+        "die Trockenheit",
+        "die Trockenperiode"
       ],
       "level": "B1"
     },
@@ -39,12 +39,12 @@
       "level": "B1"
     },
     {
-      "german": "die Energie",
-      "turkish": "enerji",
-      "example": "Wir sollten weniger Energie verbrauchen.",
-      "exampleTranslation": "Daha az enerji tüketmeliyiz.",
+      "german": "der Strom",
+      "turkish": "elektrik, akım",
+      "example": "Im Winter verbrauchen wir besonders viel Strom für die Heizung.",
+      "exampleTranslation": "Kışın ısıtma için özellikle çok elektrik tüketiyoruz.",
       "synonyms": [
-        "die Kraft"
+        "die Elektrizität"
       ],
       "level": "B1"
     },
@@ -60,30 +60,35 @@
       "level": "B1"
     },
     {
-      "german": "die erneuerbare Energie",
-      "turkish": "yenilenebilir enerji",
-      "example": "Erneuerbare Energie ersetzt langsam die Kohle.",
-      "exampleTranslation": "Yenilenebilir enerji yavaşça kömürün yerini alıyor.",
+      "german": "die Solaranlage",
+      "turkish": "güneş enerjisi tesisi, güneş paneli sistemi",
+      "example": "Auf dem Dach unseres Hauses haben wir eine große Solaranlage installiert.",
+      "exampleTranslation": "Evimizin çatısına büyük bir güneş enerjisi tesisi kurduk.",
       "synonyms": [
-        "die Ökoenergie"
+        "die Photovoltaikanlage",
+        "die Solarzelle"
       ],
       "level": "B2"
     },
     {
-      "german": "der Treibhauseffekt",
-      "turkish": "sera etkisi",
-      "example": "Der Treibhauseffekt erwärmt unseren Planeten.",
-      "exampleTranslation": "Sera etkisi gezegenimizi ısıtıyor.",
-      "synonyms": [],
+      "german": "die Abholzung",
+      "turkish": "ormansızlaşma, ağaç kesimi",
+      "example": "Die Abholzung der Regenwälder bedroht das Klima weltweit.",
+      "exampleTranslation": "Yağmur ormanlarının kesilmesi dünya çapında iklimi tehdit ediyor.",
+      "synonyms": [
+        "die Entwaldung",
+        "die Rodung"
+      ],
       "level": "B2"
     },
     {
-      "german": "die Mülltrennung",
-      "turkish": "çöp ayrıştırma / atık ayrıştırma",
-      "example": "Die Mülltrennung ist in Deutschland Pflicht.",
-      "exampleTranslation": "Çöp ayrıştırma Almanya'da zorunludur.",
+      "german": "der Wertstoff",
+      "turkish": "geri dönüştürülebilir madde, değerli atık madde",
+      "example": "Glas und Papier sind wertvolle Wertstoffe, die man recyceln kann.",
+      "exampleTranslation": "Cam ve kâğıt, geri dönüştürülebilen değerli maddelerdir.",
       "synonyms": [
-        "die Abfalltrennung"
+        "das Recyclingmaterial",
+        "der Sekundärrohstoff"
       ],
       "level": "B2"
     },
@@ -99,12 +104,13 @@
       "level": "B2"
     },
     {
-      "german": "die Artenvielfalt",
-      "turkish": "biyoçeşitlilik / tür çeşitliliği",
-      "example": "Die Artenvielfalt im Regenwald ist enorm.",
-      "exampleTranslation": "Yağmur ormanındaki biyoçeşitlilik muazzamdır.",
+      "german": "der Lebensraum",
+      "turkish": "yaşam alanı, habitat",
+      "example": "Durch den Klimawandel verlieren viele Tiere ihren natürlichen Lebensraum.",
+      "exampleTranslation": "İklim değişikliği nedeniyle birçok hayvan doğal yaşam alanını kaybediyor.",
       "synonyms": [
-        "die Biodiversität"
+        "das Habitat",
+        "der Biotop"
       ],
       "level": "B2"
     },
@@ -131,11 +137,14 @@
       "level": "C1"
     },
     {
-      "german": "der ökologische Fußabdruck",
-      "turkish": "ekolojik ayak izi",
-      "example": "Sein ökologischer Fußabdruck ist sehr klein.",
-      "exampleTranslation": "Onun ekolojik ayak izi çok küçük.",
-      "synonyms": [],
+      "german": "die Entsorgung",
+      "turkish": "atık bertarafı, atıkların yok edilmesi",
+      "example": "Die fachgerechte Entsorgung von Elektrogeräten schützt die Umwelt.",
+      "exampleTranslation": "Elektronik cihazların usulüne uygun bertarafı çevreyi korur.",
+      "synonyms": [
+        "die Beseitigung",
+        "die Abfallbeseitigung"
+      ],
       "level": "C1"
     },
     {

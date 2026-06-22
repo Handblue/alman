@@ -78,11 +78,14 @@
       "level": "A1"
     },
     {
-      "german": "das Kino",
-      "turkish": "sinema",
-      "example": "Heute Abend gehen wir ins Kino.",
-      "exampleTranslation": "Bu akşam sinemaya gidiyoruz.",
-      "synonyms": [],
+      "german": "das Konzert",
+      "turkish": "konser",
+      "example": "Am Samstag gehen wir zusammen in ein Konzert.",
+      "exampleTranslation": "Cumartesi günü birlikte bir konsere gidiyoruz.",
+      "synonyms": [
+        "die Aufführung",
+        "der Auftritt"
+      ],
       "level": "A1"
     },
     {

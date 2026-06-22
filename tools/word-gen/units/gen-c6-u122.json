@@ -8,12 +8,13 @@
   "firstWordId": 1816,
   "words": [
     {
-      "german": "der Treibhauseffekt",
-      "turkish": "sera etkisi",
-      "example": "Der Treibhauseffekt erwärmt die Erdatmosphäre stetig.",
-      "exampleTranslation": "Sera etkisi yeryüzü atmosferini sürekli ısıtıyor.",
+      "german": "die Dürre",
+      "turkish": "kuraklık",
+      "example": "Die lange Dürre hat die Ernte in der ganzen Region zerstört.",
+      "exampleTranslation": "Uzun kuraklık tüm bölgedeki hasadı mahvetti.",
       "synonyms": [
-        "die Erderwärmung"
+        "die Trockenheit",
+        "die Trockenperiode"
       ],
       "level": "B2"
     },
@@ -39,13 +40,13 @@
       "level": "B2"
     },
     {
-      "german": "die Umweltverschmutzung",
-      "turkish": "çevre kirliliği",
-      "example": "Die Umweltverschmutzung bedroht viele Tierarten.",
-      "exampleTranslation": "Çevre kirliliği birçok hayvan türünü tehdit ediyor.",
+      "german": "die Überschwemmung",
+      "turkish": "sel, su baskını",
+      "example": "Nach den starken Regenfällen kam es zu einer großen Überschwemmung im Tal.",
+      "exampleTranslation": "Şiddetli yağışların ardından vadide büyük bir su baskını meydana geldi.",
       "synonyms": [
-        "die Verschmutzung",
-        "die Kontamination"
+        "die Flut",
+        "das Hochwasser"
       ],
       "level": "B2"
     },
@@ -121,13 +122,13 @@
       "level": "C1"
     },
     {
-      "german": "der Schadstoff",
-      "turkish": "zararlı madde / kirletici",
-      "example": "Fabriken stoßen viele Schadstoffe aus.",
-      "exampleTranslation": "Fabrikalar birçok zararlı madde salar.",
+      "german": "die Versiegelung",
+      "turkish": "(toprağın) geçirimsiz hale getirilmesi, betonlaşma",
+      "example": "Die zunehmende Versiegelung der Böden verhindert das Versickern von Regenwasser.",
+      "exampleTranslation": "Toprakların giderek betonlaşması yağmur suyunun yer altına sızmasını engelliyor.",
       "synonyms": [
-        "das Giftstoff",
-        "der Schmutzstoff"
+        "die Bodenversiegelung",
+        "die Abdichtung"
       ],
       "level": "C1"
     },
@@ -143,13 +144,13 @@
       "level": "C1"
     },
     {
-      "german": "die Belastung",
-      "turkish": "yük / kirlilik baskısı",
-      "example": "Die ökologische Belastung der Meere steigt.",
-      "exampleTranslation": "Denizlerin ekolojik yükü artıyor.",
+      "german": "die Verwitterung",
+      "turkish": "aşınma, ufalanma (kayaçların)",
+      "example": "Durch die ständige Verwitterung zerfällt das Gestein allmählich zu feinem Sand.",
+      "exampleTranslation": "Sürekli aşınma nedeniyle kayaç yavaş yavaş ince kuma dönüşür.",
       "synonyms": [
-        "die Beanspruchung",
-        "der Druck"
+        "die Erosion",
+        "der Zerfall"
       ],
       "level": "C1"
     },

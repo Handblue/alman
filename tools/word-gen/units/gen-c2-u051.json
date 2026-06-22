@@ -8,13 +8,12 @@
   "firstWordId": 751,
   "words": [
     {
-      "german": "sich waschen",
-      "turkish": "yıkanmak",
-      "example": "Ich wasche mich jeden Morgen.",
-      "exampleTranslation": "Her sabah yıkanırım.",
+      "german": "sich anziehen",
+      "turkish": "giyinmek",
+      "example": "Am Morgen ziehe ich mich schnell an.",
+      "exampleTranslation": "Sabah çabucak giyinirim.",
       "synonyms": [
-        "sich säubern",
-        "sich reinigen"
+        "sich bekleiden"
       ],
       "level": "A1"
     },

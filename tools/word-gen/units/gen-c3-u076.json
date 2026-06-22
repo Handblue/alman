@@ -69,12 +69,13 @@
       "level": "B2"
     },
     {
-      "german": "die Mehrheit",
-      "turkish": "çoğunluk",
-      "example": "Die Mehrheit stimmte für den Vorschlag.",
-      "exampleTranslation": "Çoğunluk teklif lehine oy kullandı.",
+      "german": "die Abstimmung",
+      "turkish": "oylama",
+      "example": "Das Parlament hat die Abstimmung über den neuen Haushalt auf nächste Woche verschoben.",
+      "exampleTranslation": "Parlamento yeni bütçe üzerine oylamayı gelecek haftaya erteledi.",
       "synonyms": [
-        "der Großteil"
+        "das Votum",
+        "die Stimmabgabe"
       ],
       "level": "B2"
     },

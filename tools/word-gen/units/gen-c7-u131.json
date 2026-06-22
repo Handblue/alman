@@ -19,14 +19,13 @@
       "level": "C1"
     },
     {
-      "german": "die Unterdrückung",
-      "turkish": "baskı / ezme",
-      "example": "Das Volk leidet unter politischer Unterdrückung.",
-      "exampleTranslation": "Halk siyasi baskı altında acı çekiyor.",
+      "german": "die Knechtschaft",
+      "turkish": "kölelik, esaret",
+      "example": "Die Sklaven kämpften lange gegen ihre Knechtschaft.",
+      "exampleTranslation": "Köleler uzun süre esaretlerine karşı savaştı.",
       "synonyms": [
-        "die Repression",
-        "die Knechtung",
-        "die Tyrannei"
+        "die Versklavung",
+        "die Unfreiheit"
       ],
       "level": "C1"
     },
@@ -54,13 +53,13 @@
       "level": "C1"
     },
     {
-      "german": "die Willkür",
-      "turkish": "keyfilik / keyfi yönetim",
-      "example": "Gegen staatliche Willkür muss man sich wehren.",
-      "exampleTranslation": "Devletin keyfiliğine karşı direnmek gerekir.",
+      "german": "die Tyrannei",
+      "turkish": "tiranlık, zorbalık",
+      "example": "Das Volk erhob sich gegen die Tyrannei des Herrschers.",
+      "exampleTranslation": "Halk, hükümdarın zorbalığına karşı ayaklandı.",
       "synonyms": [
-        "die Eigenmächtigkeit",
-        "die Beliebigkeit"
+        "die Gewaltherrschaft",
+        "die Despotie"
       ],
       "level": "C1"
     },
@@ -132,26 +131,24 @@
       "level": "B2"
     },
     {
-      "german": "die Befreiung",
-      "turkish": "özgürleşme / kurtuluş",
-      "example": "Die Befreiung von der Unterdrückung dauerte Jahre.",
-      "exampleTranslation": "Baskıdan kurtuluş yıllar sürdü.",
+      "german": "die Emanzipation",
+      "turkish": "özgürleşme, kurtuluş",
+      "example": "Die Emanzipation der Frauen war ein langer Prozess.",
+      "exampleTranslation": "Kadınların özgürleşmesi uzun bir süreçti.",
       "synonyms": [
-        "die Emanzipation",
-        "die Loslösung",
-        "die Erlösung"
+        "die Gleichstellung",
+        "die Selbstständigkeit"
       ],
       "level": "B2"
     },
     {
-      "german": "der Zusammenhalt",
-      "turkish": "dayanışma / birlik beraberlik",
-      "example": "Der gesellschaftliche Zusammenhalt ist heute gefährdet.",
-      "exampleTranslation": "Toplumsal dayanışma bugün tehlike altında.",
+      "german": "die Brüderlichkeit",
+      "turkish": "kardeşlik",
+      "example": "Freiheit, Gleichheit und Brüderlichkeit sind zentrale Werte.",
+      "exampleTranslation": "Özgürlük, eşitlik ve kardeşlik temel değerlerdir.",
       "synonyms": [
-        "die Geschlossenheit",
-        "die Verbundenheit",
-        "die Einigkeit"
+        "die Geschwisterlichkeit",
+        "die Verbrüderung"
       ],
       "level": "B2"
     },
@@ -168,14 +165,13 @@
       "level": "B2"
     },
     {
-      "german": "die Diskriminierung",
-      "turkish": "ayrımcılık",
-      "example": "Diskriminierung am Arbeitsplatz ist gesetzlich verboten.",
-      "exampleTranslation": "İş yerinde ayrımcılık yasalarla yasaktır.",
+      "german": "die Toleranz",
+      "turkish": "hoşgörü, tolerans",
+      "example": "Eine offene Gesellschaft braucht Toleranz gegenüber anderen Meinungen.",
+      "exampleTranslation": "Açık bir toplum, farklı görüşlere karşı hoşgörüye ihtiyaç duyar.",
       "synonyms": [
-        "die Benachteiligung",
-        "die Ausgrenzung",
-        "die Herabsetzung"
+        "die Duldsamkeit",
+        "die Aufgeschlossenheit"
       ],
       "level": "B2"
     }

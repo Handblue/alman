@@ -8,75 +8,73 @@
   "firstWordId": 2041,
   "words": [
     {
-      "german": "die Wahrnehmung",
-      "turkish": "algı / algılama",
-      "example": "Jede Wahrnehmung ist auf einen Gegenstand gerichtet.",
-      "exampleTranslation": "Her algı bir nesneye yöneliktir.",
+      "german": "das Phänomen",
+      "turkish": "fenomen, görüngü",
+      "example": "In der Phänomenologie wird jedes Phänomen so beschrieben, wie es sich dem Bewusstsein zeigt.",
+      "exampleTranslation": "Fenomenolojide her görüngü, bilince kendini nasıl gösteriyorsa öyle betimlenir.",
       "synonyms": [
-        "die Sinneserfahrung"
+        "die Erscheinungsweise"
       ],
       "level": "B2"
     },
     {
-      "german": "der Sinn",
-      "turkish": "anlam / mana",
-      "example": "Wir suchen nach dem Sinn des Textes.",
-      "exampleTranslation": "Metnin anlamını arıyoruz.",
+      "german": "die Sinngebung",
+      "turkish": "anlam verme, anlamlandırma",
+      "example": "Die Sinngebung der Welt geschieht durch die aktive Leistung des erlebenden Subjekts.",
+      "exampleTranslation": "Dünyaya anlam verme, deneyimleyen öznenin etkin edimi aracılığıyla gerçekleşir.",
       "synonyms": [
-        "die Bedeutung"
+        "die Bedeutungsverleihung"
       ],
       "level": "B2"
     },
     {
-      "german": "die Deutung",
-      "turkish": "yorum / yorumlama",
-      "example": "Seine Deutung des Gedichts überzeugte mich.",
-      "exampleTranslation": "Şiire dair yorumu beni ikna etti.",
+      "german": "das Gemeinte",
+      "turkish": "kastedilen, murat edilen şey",
+      "example": "Der Leser versucht, das Gemeinte hinter den Worten des Textes zu erfassen.",
+      "exampleTranslation": "Okur, metnin sözcüklerinin ardındaki kastedileni kavramaya çalışır.",
       "synonyms": [
-        "die Interpretation",
-        "die Auslegung"
+        "das Intendierte"
       ],
       "level": "B2"
     },
     {
-      "german": "das Bewusstsein",
-      "turkish": "bilinç",
-      "example": "Das Bewusstsein ist immer Bewusstsein von etwas.",
-      "exampleTranslation": "Bilinç her zaman bir şeyin bilincidir.",
+      "german": "die Befindlichkeit",
+      "turkish": "hâlruhiyet, bulunuş durumu",
+      "example": "Die Befindlichkeit der Angst erschließt uns unser eigenes Dasein auf besondere Weise.",
+      "exampleTranslation": "Kaygı hâli, kendi varoluşumuzu bize özel bir biçimde açar.",
       "synonyms": [
-        "das Gewahrsein"
+        "die Gestimmtheit",
+        "die Verfassung"
       ],
       "level": "B2"
     },
     {
-      "german": "die Erscheinung",
-      "turkish": "görünüş / fenomen",
-      "example": "Die Erscheinung zeigt sich dem Bewusstsein unmittelbar.",
-      "exampleTranslation": "Görünüş, bilince doğrudan kendini gösterir.",
+      "german": "die Gegebenheit",
+      "turkish": "verililik, verilmişlik",
+      "example": "Die leibhaftige Gegebenheit eines Dinges unterscheidet sich von seiner bloßen Vorstellung.",
+      "exampleTranslation": "Bir şeyin bedensel verililiği, onun salt tasavvurundan farklıdır.",
       "synonyms": [
-        "das Phänomen",
-        "die Manifestation"
+        "das Gegebensein"
       ],
       "level": "B2"
     },
     {
-      "german": "der Standpunkt",
-      "turkish": "bakış açısı / duruş noktası",
-      "example": "Jeder versteht den Text vom eigenen Standpunkt aus.",
-      "exampleTranslation": "Herkes metni kendi bakış açısından anlar.",
+      "german": "die Evidenz",
+      "turkish": "apaçıklık, bedahet",
+      "example": "Die Evidenz eines Erlebnisses zeigt sich darin, dass es unmittelbar einleuchtet.",
+      "exampleTranslation": "Bir yaşantının apaçıklığı, onun dolaysızca aşikâr olmasında kendini gösterir.",
       "synonyms": [
-        "die Sichtweise",
-        "die Perspektive"
+        "die Augenscheinlichkeit"
       ],
       "level": "B2"
     },
     {
-      "german": "die Intentionalität",
-      "turkish": "yönelmişlik / yönelimsellik",
-      "example": "Die Intentionalität kennzeichnet jeden Bewusstseinsakt.",
-      "exampleTranslation": "Yönelmişlik her bilinç edimini niteler.",
+      "german": "die Konstitution",
+      "turkish": "konstitüsyon, kuruluş (anlamın bilinçte kurulması)",
+      "example": "Die Konstitution des Gegenstandes erfolgt in den Akten des wahrnehmenden Bewusstseins.",
+      "exampleTranslation": "Nesnenin kuruluşu, algılayan bilincin edimlerinde gerçekleşir.",
       "synonyms": [
-        "die Gerichtetheit"
+        "die Sinnbildung"
       ],
       "level": "C1"
     },
@@ -144,12 +142,12 @@
       "level": "C1"
     },
     {
-      "german": "die Anschauung",
-      "turkish": "görü / sezgi / temaşa",
-      "example": "In der Anschauung gibt sich die Sache selbst.",
-      "exampleTranslation": "Görüde şeyin kendisi kendini verir.",
+      "german": "die Selbstgegebenheit",
+      "turkish": "kendiliğinden verililik, bizzat verilmişlik",
+      "example": "In der originären Selbstgegebenheit erscheint die Sache uns leibhaftig selbst.",
+      "exampleTranslation": "Özgün kendiliğinden verililikte, şey bize bizzat bedensel olarak görünür.",
       "synonyms": [
-        "die Intuition"
+        "die Originarität"
       ],
       "level": "C1"
     },

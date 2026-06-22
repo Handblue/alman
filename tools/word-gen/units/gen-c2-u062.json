@@ -20,12 +20,13 @@
       "level": "A1"
     },
     {
-      "german": "vergessen",
-      "turkish": "unutmak",
-      "example": "Vergiss nicht, mich anzurufen!",
-      "exampleTranslation": "Beni aramayı unutma!",
+      "german": "wagen",
+      "turkish": "cesaret etmek, göze almak",
+      "example": "Sie wagte nicht, vor allen Leuten zu sprechen.",
+      "exampleTranslation": "Herkesin önünde konuşmaya cesaret edemedi.",
       "synonyms": [
-        "verschwitzen"
+        "sich trauen",
+        "riskieren"
       ],
       "level": "A1"
     },

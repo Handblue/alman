@@ -117,13 +117,13 @@
       "level": "C1"
     },
     {
-      "german": "das Subjekt",
-      "turkish": "özne",
-      "example": "Das autonome Subjekt wird radikal hinterfragt.",
-      "exampleTranslation": "Özerk özne kökten biçimde sorgulanır.",
+      "german": "die Aneignung",
+      "turkish": "sahiplenme, mal etme",
+      "example": "Die kulturelle Aneignung fremder Symbole wird in der postmodernen Theorie kritisch hinterfragt.",
+      "exampleTranslation": "Yabancı sembollerin kültürel olarak sahiplenilmesi postmodern teoride eleştirel biçimde sorgulanır.",
       "synonyms": [
-        "das Ich",
-        "der Handelnde"
+        "die Vereinnahmung",
+        "die Übernahme"
       ],
       "level": "B2"
     },
@@ -139,13 +139,13 @@
       "level": "C1"
     },
     {
-      "german": "die Beliebigkeit",
-      "turkish": "keyfîlik / gelişigüzellik",
-      "example": "Kritiker werfen der Postmoderne reine Beliebigkeit vor.",
-      "exampleTranslation": "Eleştirmenler postmodernizmi salt keyfîlikle suçlar.",
+      "german": "die Polyphonie",
+      "turkish": "çokseslilik",
+      "example": "Die Polyphonie der Stimmen verhindert, dass eine einzige Wahrheit den Diskurs beherrscht.",
+      "exampleTranslation": "Seslerin çokçesliliği, tek bir hakikatin söyleme egemen olmasını engeller.",
       "synonyms": [
-        "die Willkür",
-        "die Wahllosigkeit"
+        "die Vielstimmigkeit",
+        "die Stimmenvielfalt"
       ],
       "level": "C1"
     },

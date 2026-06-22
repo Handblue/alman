@@ -8,46 +8,46 @@
   "firstWordId": 2011,
   "words": [
     {
-      "german": "der Widerspruch",
-      "turkish": "çelişki / karşıtlık",
-      "example": "Hegel sieht im Widerspruch die Triebkraft der Geschichte.",
-      "exampleTranslation": "Hegel, çelişkide tarihin itici gücünü görür.",
+      "german": "der Gegensatz",
+      "turkish": "karşıtlık, zıtlık",
+      "example": "In der Dialektik treibt der Gegensatz zwischen These und Antithese den Prozess voran.",
+      "exampleTranslation": "Diyalektikte tez ile antitez arasındaki karşıtlık süreci ileriye taşır.",
       "synonyms": [
-        "der Gegensatz",
-        "die Unstimmigkeit"
+        "der Widerstreit",
+        "die Antithese"
       ],
       "level": "B2"
     },
     {
-      "german": "der Fortschritt",
-      "turkish": "ilerleme",
-      "example": "Der technische Fortschritt verändert die Gesellschaft grundlegend.",
-      "exampleTranslation": "Teknik ilerleme toplumu köklü biçimde değiştirir.",
+      "german": "die Vervollkommnung",
+      "turkish": "mükemmelleşme, yetkinleşme",
+      "example": "Für viele Geschichtsphilosophen ist die Vervollkommnung der Menschheit das eigentliche Ziel der Geschichte.",
+      "exampleTranslation": "Birçok tarih filozofu için insanlığın yetkinleşmesi tarihin asıl amacıdır.",
       "synonyms": [
-        "die Weiterentwicklung",
-        "der Aufschwung"
+        "die Vollendung",
+        "die Perfektionierung"
       ],
       "level": "B2"
     },
     {
-      "german": "die Entwicklung",
-      "turkish": "gelişim / gelişme",
-      "example": "Die geschichtliche Entwicklung verläuft nicht immer geradlinig.",
-      "exampleTranslation": "Tarihsel gelişim her zaman doğrusal ilerlemez.",
+      "german": "die Reifung",
+      "turkish": "olgunlaşma, gelişip olgunlaşma",
+      "example": "Die Reifung des gesellschaftlichen Bewusstseins vollzieht sich über viele Generationen.",
+      "exampleTranslation": "Toplumsal bilincin olgunlaşması birçok kuşak boyunca gerçekleşir.",
       "synonyms": [
-        "die Evolution",
-        "der Prozess"
+        "der Reifeprozess",
+        "die Heranbildung"
       ],
       "level": "B2"
     },
     {
-      "german": "die Klasse",
-      "turkish": "sınıf (toplumsal)",
-      "example": "Marx analysiert den Kampf zwischen den Klassen.",
-      "exampleTranslation": "Marx, sınıflar arasındaki mücadeleyi inceler.",
+      "german": "die Bourgeoisie",
+      "turkish": "burjuvazi",
+      "example": "Marx zufolge steht die Bourgeoisie im Widerstreit mit den arbeitenden Massen.",
+      "exampleTranslation": "Marx'a göre burjuvazi çalışan kitlelerle çatışma içindedir.",
       "synonyms": [
-        "die Gesellschaftsschicht",
-        "der Stand"
+        "das Bürgertum",
+        "die Besitzklasse"
       ],
       "level": "B2"
     },
@@ -63,13 +63,13 @@
       "level": "B2"
     },
     {
-      "german": "der Geist",
-      "turkish": "tin / ruh / zihin",
-      "example": "Für Hegel verwirklicht sich der Geist in der Geschichte.",
-      "exampleTranslation": "Hegel'e göre tin, tarihte gerçekleşir.",
+      "german": "das Werden",
+      "turkish": "oluş, oluşum (sürekli değişim)",
+      "example": "Bei Hegel ist alles Wirkliche im ständigen Werden begriffen.",
+      "exampleTranslation": "Hegel'de gerçek olan her şey sürekli bir oluş içindedir.",
       "synonyms": [
-        "der Verstand",
-        "die Vernunft"
+        "das Sich-Entfalten",
+        "der Wandlungsprozess"
       ],
       "level": "B2"
     },
@@ -122,13 +122,13 @@
       "level": "C1"
     },
     {
-      "german": "die Ideologie",
-      "turkish": "ideoloji",
-      "example": "Die herrschende Ideologie rechtfertigt die bestehenden Verhältnisse.",
-      "exampleTranslation": "Egemen ideoloji, mevcut ilişkileri meşrulaştırır.",
+      "german": "der Klassenkampf",
+      "turkish": "sınıf mücadelesi",
+      "example": "Nach marxistischer Auffassung ist der Klassenkampf der Motor der gesellschaftlichen Veränderung.",
+      "exampleTranslation": "Marksist anlayışa göre sınıf mücadelesi toplumsal değişimin itici gücüdür.",
       "synonyms": [
-        "die Weltanschauung",
-        "das Gedankengut"
+        "der Klassenwiderstreit",
+        "die Klassenauseinandersetzung"
       ],
       "level": "C1"
     },

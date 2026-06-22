@@ -8,47 +8,37 @@
   "firstWordId": 1501,
   "words": [
     {
-      "german": "anrufen",
-      "turkish": "telefonla aramak",
-      "example": "Ich rufe dich heute Abend an.",
-      "exampleTranslation": "Seni bu akşam ararım.",
+      "german": "tippen",
+      "turkish": "yazmak (mesaj yazmak)",
+      "example": "Ich tippe dir gleich eine kurze Nachricht.",
+      "exampleTranslation": "Sana hemen kısa bir mesaj yazıyorum.",
       "synonyms": [
-        "telefonieren",
-        "kontaktieren"
+        "schreiben"
       ],
       "level": "A1"
     },
     {
-      "german": "das Telefon",
-      "turkish": "telefon",
-      "example": "Das Telefon klingelt schon wieder.",
-      "exampleTranslation": "Telefon yine çalıyor.",
-      "synonyms": [
-        "der Apparat",
-        "der Fernsprecher"
-      ],
+      "german": "der Hörer",
+      "turkish": "ahize, telefon ahizesi",
+      "example": "Sie nahm den Hörer ab und sagte Hallo.",
+      "exampleTranslation": "Ahizeyi kaldırdı ve merhaba dedi.",
+      "synonyms": [],
       "level": "A1"
     },
     {
-      "german": "die Nummer",
-      "turkish": "numara",
-      "example": "Wie ist deine neue Nummer?",
-      "exampleTranslation": "Yeni numaran nedir?",
-      "synonyms": [
-        "die Rufnummer",
-        "die Telefonnummer"
-      ],
+      "german": "der Kontakt",
+      "turkish": "kişi (rehberdeki kayıt), irtibat",
+      "example": "Ich habe deinen Kontakt in meinem Handy gespeichert.",
+      "exampleTranslation": "Senin kişini telefonuma kaydettim.",
+      "synonyms": [],
       "level": "A1"
     },
     {
-      "german": "die Nachricht",
-      "turkish": "mesaj / haber",
-      "example": "Ich schicke dir gleich eine Nachricht.",
-      "exampleTranslation": "Sana hemen bir mesaj gönderiyorum.",
-      "synonyms": [
-        "die Mitteilung",
-        "die SMS"
-      ],
+      "german": "die Vorwahl",
+      "turkish": "alan kodu, telefon kodu",
+      "example": "Die Vorwahl von Berlin ist 030.",
+      "exampleTranslation": "Berlin'in alan kodu 030'dur.",
+      "synonyms": [],
       "level": "A1"
     },
     {
@@ -62,14 +52,11 @@
       "level": "A1"
     },
     {
-      "german": "die Verbindung",
-      "turkish": "bağlantı",
-      "example": "Die Verbindung ist heute sehr schlecht.",
-      "exampleTranslation": "Bağlantı bugün çok kötü.",
-      "synonyms": [
-        "der Kontakt",
-        "der Anschluss"
-      ],
+      "german": "das Freizeichen",
+      "turkish": "hat tonu, çevir/çalma sesi",
+      "example": "Ich höre das Freizeichen, aber niemand geht ran.",
+      "exampleTranslation": "Hat tonunu duyuyorum ama kimse açmıyor.",
+      "synonyms": [],
       "level": "A2"
     },
     {
@@ -114,12 +101,12 @@
       "level": "A2"
     },
     {
-      "german": "besetzt",
-      "turkish": "meşgul (hat)",
-      "example": "Die Leitung ist gerade besetzt.",
-      "exampleTranslation": "Hat şu an meşgul.",
+      "german": "erreichbar",
+      "turkish": "ulaşılabilir, müsait",
+      "example": "Ich bin den ganzen Tag unter dieser Nummer erreichbar.",
+      "exampleTranslation": "Gün boyu bu numaradan bana ulaşılabilir.",
       "synonyms": [
-        "belegt"
+        "verfügbar"
       ],
       "level": "A2"
     },

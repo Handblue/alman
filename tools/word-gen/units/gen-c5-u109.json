@@ -18,13 +18,12 @@
       "level": "A1"
     },
     {
-      "german": "das Geschenk",
-      "turkish": "hediye",
-      "example": "Ich kaufe ein Geschenk für dich.",
-      "exampleTranslation": "Senin için bir hediye alıyorum.",
+      "german": "das Fest",
+      "turkish": "şenlik, kutlama, festival",
+      "example": "Zu Weihnachten feiern wir ein großes Fest mit der ganzen Familie.",
+      "exampleTranslation": "Noel'de tüm aileyle birlikte büyük bir kutlama yaparız.",
       "synonyms": [
-        "das Präsent",
-        "die Gabe"
+        "die Feier"
       ],
       "level": "A1"
     },
@@ -39,14 +38,11 @@
       "level": "A1"
     },
     {
-      "german": "die Party",
-      "turkish": "parti",
-      "example": "Die Party beginnt um acht Uhr.",
-      "exampleTranslation": "Parti saat sekizde başlıyor.",
-      "synonyms": [
-        "das Fest",
-        "die Feier"
-      ],
+      "german": "die Torte",
+      "turkish": "yaş pasta, turta",
+      "example": "Zum Geburtstag backe ich eine Torte mit Schokolade.",
+      "exampleTranslation": "Doğum günü için çikolatalı bir yaş pasta yaparım.",
+      "synonyms": [],
       "level": "A1"
     },
     {
@@ -80,12 +76,12 @@
       "level": "A2"
     },
     {
-      "german": "schenken",
-      "turkish": "hediye etmek / bağışlamak",
-      "example": "Er schenkt ihr rote Rosen.",
-      "exampleTranslation": "Ona kırmızı güller hediye ediyor.",
+      "german": "anstoßen",
+      "turkish": "kadeh tokuşturmak, şerefe demek",
+      "example": "Wir stoßen mit Sekt auf das neue Jahr an.",
+      "exampleTranslation": "Yeni yıl şerefine köpüklü şarapla kadeh tokuştururuz.",
       "synonyms": [
-        "überreichen"
+        "zuprosten"
       ],
       "level": "A2"
     },

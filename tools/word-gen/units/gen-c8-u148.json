@@ -129,13 +129,13 @@
       "level": "B2"
     },
     {
-      "german": "die Schulden",
-      "turkish": "borçlar",
-      "example": "Er versucht, seine Schulden langsam abzubauen.",
-      "exampleTranslation": "Borçlarını yavaş yavaş azaltmaya çalışıyor.",
+      "german": "der Sparstrumpf",
+      "turkish": "kumbara, biriktirilen para (çorap içinde saklanan para)",
+      "example": "Meine Großmutter bewahrte ihr ganzes Erspartes in einem Sparstrumpf auf.",
+      "exampleTranslation": "Büyükannem tüm birikimini bir kumbarada (çorapta) saklardı.",
       "synonyms": [
-        "die Verbindlichkeiten",
-        "die Verschuldung"
+        "die Spardose",
+        "die Rücklage"
       ],
       "level": "B1"
     },

@@ -28,13 +28,12 @@
       "level": "C1"
     },
     {
-      "german": "die Belastbarkeit",
-      "turkish": "dayanıklılık / yük taşıma kapasitesi",
-      "example": "Die Belastbarkeit des Bauteils wurde getestet.",
-      "exampleTranslation": "Parçanın dayanıklılığı test edildi.",
+      "german": "die Verschleißfestigkeit",
+      "turkish": "aşınma direnci, aşınmaya dayanıklılık",
+      "example": "Die hohe Verschleißfestigkeit dieser Beschichtung verlängert die Lebensdauer des Werkzeugs erheblich.",
+      "exampleTranslation": "Bu kaplamanın yüksek aşınma direnci, takımın ömrünü önemli ölçüde uzatır.",
       "synonyms": [
-        "die Widerstandsfähigkeit",
-        "die Tragfähigkeit"
+        "die Abriebfestigkeit"
       ],
       "level": "C1"
     },
@@ -123,13 +122,12 @@
       "level": "B2"
     },
     {
-      "german": "das Verfahren",
-      "turkish": "yöntem / işlem / prosedür",
-      "example": "Dieses Verfahren spart Material und Energie.",
-      "exampleTranslation": "Bu yöntem malzeme ve enerji tasarrufu sağlar.",
+      "german": "die Zerspanung",
+      "turkish": "talaşlı imalat, kesme işlemi",
+      "example": "Bei der Zerspanung von Stahl entstehen hohe Temperaturen an der Schneide.",
+      "exampleTranslation": "Çeliğin talaşlı imalatında kesici uçta yüksek sıcaklıklar oluşur.",
       "synonyms": [
-        "die Methode",
-        "der Prozess"
+        "die Spanabnahme"
       ],
       "level": "B2"
     },

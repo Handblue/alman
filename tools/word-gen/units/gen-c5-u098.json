@@ -18,12 +18,13 @@
       "level": "A1"
     },
     {
-      "german": "der Nachbar",
-      "turkish": "komşu",
-      "example": "Mein Nachbar ist sehr freundlich.",
-      "exampleTranslation": "Komşum çok cana yakın.",
+      "german": "der Hausflur",
+      "turkish": "bina koridoru, antre",
+      "example": "Im Hausflur stehen die Briefkästen aller Bewohner.",
+      "exampleTranslation": "Bina koridorunda tüm sakinlerin posta kutuları duruyor.",
       "synonyms": [
-        "der Anwohner"
+        "der Flur",
+        "der Eingangsbereich"
       ],
       "level": "A1"
     },
@@ -58,33 +59,32 @@
       "level": "A1"
     },
     {
-      "german": "der Vermieter",
-      "turkish": "ev sahibi (kiraya veren)",
-      "example": "Der Vermieter wohnt im Erdgeschoss.",
-      "exampleTranslation": "Ev sahibi zemin katta oturuyor.",
+      "german": "der Hausmeister",
+      "turkish": "bina görevlisi, kapıcı",
+      "example": "Wenn die Heizung kaputt ist, rufe ich den Hausmeister an.",
+      "exampleTranslation": "Kalorifer bozulursa bina görevlisini ararım.",
       "synonyms": [
-        "der Hauseigentümer",
-        "der Hausherr"
+        "der Hauswart"
       ],
       "level": "A2"
     },
     {
-      "german": "der Mieter",
-      "turkish": "kiracı",
-      "example": "Die neuen Mieter ziehen morgen ein.",
-      "exampleTranslation": "Yeni kiracılar yarın taşınıyor.",
+      "german": "der Einzug",
+      "turkish": "(eve) taşınma, giriş",
+      "example": "Nach dem Einzug haben wir gleich die Nachbarn begrüßt.",
+      "exampleTranslation": "Taşındıktan sonra hemen komşuları selamladık.",
       "synonyms": [
-        "der Wohnungsnehmer"
+        "das Einziehen"
       ],
       "level": "A2"
     },
     {
-      "german": "der Umzug",
-      "turkish": "taşınma / nakliye",
-      "example": "Der Umzug war sehr anstrengend.",
-      "exampleTranslation": "Taşınma çok yorucuydu.",
+      "german": "das Klingelschild",
+      "turkish": "kapı zili isimliği",
+      "example": "Auf dem Klingelschild steht unser Familienname.",
+      "exampleTranslation": "Kapı zili isimliğinde soyadımız yazıyor.",
       "synonyms": [
-        "der Wohnungswechsel"
+        "das Namensschild"
       ],
       "level": "A2"
     },
@@ -110,43 +110,43 @@
       "level": "A2"
     },
     {
-      "german": "die Hausordnung",
-      "turkish": "apartman kuralları / yönetmeliği",
-      "example": "Die Hausordnung verbietet laute Musik.",
-      "exampleTranslation": "Apartman kuralları yüksek sesli müziği yasaklıyor.",
+      "german": "die Hausverwaltung",
+      "turkish": "bina yönetimi",
+      "example": "Die Hausverwaltung kümmert sich um Reparaturen im Gebäude.",
+      "exampleTranslation": "Bina yönetimi binadaki tamir işleriyle ilgilenir.",
       "synonyms": [
-        "die Hausregeln"
+        "die Verwaltung"
       ],
       "level": "A2"
     },
     {
-      "german": "der Mietvertrag",
-      "turkish": "kira sözleşmesi",
-      "example": "Wir unterschreiben morgen den Mietvertrag.",
-      "exampleTranslation": "Yarın kira sözleşmesini imzalıyoruz.",
+      "german": "die Warmmiete",
+      "turkish": "ısıtma ve giderler dahil kira",
+      "example": "Die Warmmiete für die Wohnung beträgt 900 Euro im Monat.",
+      "exampleTranslation": "Dairenin giderler dahil kirası ayda 900 euro.",
       "synonyms": [
-        "der Mietvertragsabschluss"
+        "die Bruttomiete"
       ],
       "level": "B1"
     },
     {
-      "german": "die Kaution",
-      "turkish": "depozito / teminat",
-      "example": "Die Kaution beträgt drei Monatsmieten.",
-      "exampleTranslation": "Depozito üç aylık kira tutarındadır.",
+      "german": "der Untermieter",
+      "turkish": "kiracının kiracısı, ortak kiracı",
+      "example": "Wir suchen einen Untermieter für das freie Zimmer.",
+      "exampleTranslation": "Boş oda için bir alt kiracı arıyoruz.",
       "synonyms": [
-        "die Sicherheitsleistung",
-        "das Sicherheitspfand"
+        "der Mitbewohner"
       ],
       "level": "B1"
     },
     {
-      "german": "die Nebenkosten",
-      "turkish": "ek giderler / yan masraflar / aidat",
-      "example": "Die Nebenkosten sind in der Miete enthalten.",
-      "exampleTranslation": "Ek giderler kiraya dahildir.",
+      "german": "die Kaltmiete",
+      "turkish": "giderler hariç kira (çıplak kira)",
+      "example": "Die Kaltmiete ist günstig, aber die Heizkosten kommen noch dazu.",
+      "exampleTranslation": "Çıplak kira ucuz, ama ısıtma masrafları da ekleniyor.",
       "synonyms": [
-        "die Betriebskosten"
+        "die Nettomiete",
+        "die Grundmiete"
       ],
       "level": "B1"
     },

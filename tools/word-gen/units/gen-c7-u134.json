@@ -8,13 +8,13 @@
   "firstWordId": 1996,
   "words": [
     {
-      "german": "der Zweifel",
-      "turkish": "şüphe / kuşku",
-      "example": "Descartes begann seine Philosophie mit dem Zweifel.",
-      "exampleTranslation": "Descartes felsefesine şüpheyle başladı.",
+      "german": "die Skepsis",
+      "turkish": "kuşku, şüphecilik",
+      "example": "Descartes begann seine Philosophie mit einer radikalen Skepsis gegenüber allem Wissen.",
+      "exampleTranslation": "Descartes felsefesine, tüm bilgiye karşı köktenci bir kuşkuyla başladı.",
       "synonyms": [
-        "die Skepsis",
-        "das Misstrauen"
+        "der Argwohn",
+        "die Bedenken"
       ],
       "level": "B2"
     },
@@ -40,21 +40,23 @@
       "level": "B2"
     },
     {
-      "german": "die Aufklärung",
-      "turkish": "aydınlanma",
-      "example": "Die Aufklärung betonte den Mut zum eigenen Verstand.",
-      "exampleTranslation": "Aydınlanma kendi aklını kullanma cesaretini vurguladı.",
-      "synonyms": [],
+      "german": "der Vernunftgebrauch",
+      "turkish": "aklın kullanımı",
+      "example": "Kant forderte den öffentlichen Vernunftgebrauch als Kern der Aufklärung.",
+      "exampleTranslation": "Kant, aklın kamusal kullanımını aydınlanmanın özü olarak talep etti.",
+      "synonyms": [
+        "die Vernunftanwendung"
+      ],
       "level": "B2"
     },
     {
-      "german": "die Kritik",
-      "turkish": "eleştiri",
-      "example": "Kants Kritik untersucht die Grenzen der Vernunft.",
-      "exampleTranslation": "Kant'ın eleştirisi aklın sınırlarını inceler.",
+      "german": "die Urteilskraft",
+      "turkish": "yargı gücü, muhakeme yetisi",
+      "example": "Ohne geschulte Urteilskraft kann man Wahres nicht von Falschem trennen.",
+      "exampleTranslation": "Eğitilmiş bir yargı gücü olmadan doğruyu yanlıştan ayırmak mümkün değildir.",
       "synonyms": [
-        "die Beanstandung",
-        "die Prüfung"
+        "das Urteilsvermögen",
+        "die Beurteilungsfähigkeit"
       ],
       "level": "B2"
     },
@@ -80,35 +82,34 @@
       "level": "C1"
     },
     {
-      "german": "die Mündigkeit",
-      "turkish": "erginlik / kendi aklını kullanabilme",
-      "example": "Bildung soll zur geistigen Mündigkeit führen.",
-      "exampleTranslation": "Eğitim, zihinsel erginliğe götürmelidir.",
+      "german": "die Selbstgesetzgebung",
+      "turkish": "kendi yasasını koyma, özerklik",
+      "example": "Für Kant beruht die sittliche Freiheit auf der Selbstgesetzgebung der Vernunft.",
+      "exampleTranslation": "Kant'a göre ahlaki özgürlük, aklın kendi yasasını koymasına dayanır.",
       "synonyms": [
-        "die Selbstständigkeit",
-        "die Reife"
+        "die Selbstbestimmung des Willens"
       ],
       "level": "C1"
     },
     {
-      "german": "die Vorstellung",
-      "turkish": "tasavvur / temsil / fikir",
-      "example": "Jede Vorstellung verbindet sich mit dem Ich.",
-      "exampleTranslation": "Her tasavvur ben ile birleşir.",
+      "german": "die Einbildungskraft",
+      "turkish": "hayal gücü, muhayyile",
+      "example": "Die Einbildungskraft verbindet bei Kant die Anschauung mit dem Begriff.",
+      "exampleTranslation": "Kant'ta muhayyile, sezgiyi kavramla birleştirir.",
       "synonyms": [
-        "die Idee",
-        "das Bild"
+        "die Imagination",
+        "das Vorstellungsvermögen"
       ],
       "level": "C1"
     },
     {
-      "german": "der Geist",
-      "turkish": "tin / zihin / ruh",
-      "example": "Der Geist erkennt sich in der Reflexion selbst.",
-      "exampleTranslation": "Tin, düşünümde kendini tanır.",
+      "german": "das Gemüt",
+      "turkish": "zihin, gönül, iç dünya",
+      "example": "Hegel betrachtet das Gemüt als Ort, an dem sich Denken und Fühlen begegnen.",
+      "exampleTranslation": "Hegel zihni, düşünce ile duygunun buluştuğu yer olarak görür.",
       "synonyms": [
-        "der Verstand",
-        "die Seele"
+        "das Innere",
+        "die Seelenkraft"
       ],
       "level": "C1"
     },
@@ -155,13 +156,13 @@
       "level": "C1"
     },
     {
-      "german": "die Einsicht",
-      "turkish": "kavrayış / iç görü / anlama",
-      "example": "Philosophie strebt nach tiefer Einsicht.",
-      "exampleTranslation": "Felsefe derin bir kavrayışa çabalar.",
+      "german": "die Vernünftigkeit",
+      "turkish": "akılsallık, akla uygunluk",
+      "example": "Die Aufklärung vertraute auf die Vernünftigkeit des menschlichen Handelns.",
+      "exampleTranslation": "Aydınlanma, insan eyleminin akılsallığına güvendi.",
       "synonyms": [
-        "die Erkenntnis",
-        "das Verständnis"
+        "die Rationalität",
+        "die Besonnenheit"
       ],
       "level": "C1"
     }

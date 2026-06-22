@@ -8,24 +8,24 @@
   "firstWordId": 2386,
   "words": [
     {
-      "german": "die Seele",
-      "turkish": "ruh / can",
-      "example": "Musik berührt die Seele auf besondere Weise.",
-      "exampleTranslation": "Müzik ruha özel bir şekilde dokunur.",
+      "german": "das Gemüt",
+      "turkish": "ruh hali, mizaç, gönül",
+      "example": "Die sanfte Musik beruhigte sein aufgewühltes Gemüt.",
+      "exampleTranslation": "Yumuşak müzik onun çalkalanan ruh halini sakinleştirdi.",
       "synonyms": [
-        "das Gemüt",
-        "der Geist"
+        "das Innere",
+        "die Stimmung"
       ],
       "level": "B1"
     },
     {
-      "german": "der Geist",
-      "turkish": "ruh / zihin / akıl",
-      "example": "Sein scharfer Geist beeindruckte alle Gäste.",
-      "exampleTranslation": "Keskin zekası tüm misafirleri etkiledi.",
+      "german": "die Ahnung",
+      "turkish": "sezgi, önsezi",
+      "example": "Eine düstere Ahnung beschlich sie, als der Brief eintraf.",
+      "exampleTranslation": "Mektup geldiğinde içini karanlık bir önsezi kapladı.",
       "synonyms": [
-        "der Verstand",
-        "der Intellekt"
+        "das Vorgefühl",
+        "die Vorahnung"
       ],
       "level": "B1"
     },
@@ -41,24 +41,24 @@
       "level": "B1"
     },
     {
-      "german": "das Schicksal",
-      "turkish": "kader / yazgı / alın yazısı",
-      "example": "Das Schicksal führte die beiden wieder zusammen.",
-      "exampleTranslation": "Kader ikisini yeniden bir araya getirdi.",
+      "german": "das Verhängnis",
+      "turkish": "kader (acı/yıkıcı son), felaket",
+      "example": "Sein Hochmut wurde ihm schließlich zum Verhängnis.",
+      "exampleTranslation": "Kibri sonunda onun felaketi oldu.",
       "synonyms": [
-        "das Verhängnis",
-        "die Bestimmung"
+        "das Unheil",
+        "der Untergang"
       ],
       "level": "B1"
     },
     {
-      "german": "die Vergänglichkeit",
-      "turkish": "geçicilik / faniluk / ölümlülük",
-      "example": "Der Herbst erinnert uns an die Vergänglichkeit.",
-      "exampleTranslation": "Sonbahar bize geçiciliği hatırlatır.",
+      "german": "die Vorsehung",
+      "turkish": "kader, takdir, ilahi takdir",
+      "example": "Manche glauben, dass die Vorsehung jeden Schritt des Lebens lenkt.",
+      "exampleTranslation": "Bazıları kaderin yaşamın her adımını yönlendirdiğine inanır.",
       "synonyms": [
-        "die Sterblichkeit",
-        "die Endlichkeit"
+        "die Bestimmung",
+        "das Walten"
       ],
       "level": "B1"
     },
@@ -96,13 +96,13 @@
       "level": "B2"
     },
     {
-      "german": "der Wandel",
-      "turkish": "değişim / dönüşüm",
-      "example": "Die Gesellschaft befindet sich im stetigen Wandel.",
-      "exampleTranslation": "Toplum sürekli bir değişim içindedir.",
+      "german": "das Werden",
+      "turkish": "oluş, var oluş süreci, dönüşüm",
+      "example": "Im stillen Werden der Natur liegt eine tiefe Schönheit.",
+      "exampleTranslation": "Doğanın sessiz oluşunda derin bir güzellik yatar.",
       "synonyms": [
-        "die Veränderung",
-        "die Umwälzung"
+        "die Entfaltung",
+        "das Reifen"
       ],
       "level": "B2"
     },

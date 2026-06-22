@@ -8,12 +8,12 @@
   "firstWordId": 1486,
   "words": [
     {
-      "german": "die Unterschrift",
-      "turkish": "imza",
-      "example": "Bitte setzen Sie hier Ihre Unterschrift.",
-      "exampleTranslation": "Lütfen imzanızı buraya atın.",
+      "german": "das Passbild",
+      "turkish": "vesikalık fotoğraf",
+      "example": "Für den Antrag brauchen Sie ein aktuelles Passbild.",
+      "exampleTranslation": "Başvuru için güncel bir vesikalık fotoğrafa ihtiyacınız var.",
       "synonyms": [
-        "das Signum"
+        "das Foto"
       ],
       "level": "A1"
     },
@@ -69,23 +69,22 @@
       "level": "A2"
     },
     {
-      "german": "die Anmeldung",
-      "turkish": "kayıt / giriş bildirimi",
-      "example": "Die Anmeldung beim Amt ist Pflicht.",
-      "exampleTranslation": "Dairede kayıt zorunludur.",
+      "german": "die Ummeldung",
+      "turkish": "adres değişikliği bildirimi",
+      "example": "Nach dem Umzug muss ich die Ummeldung beim Amt machen.",
+      "exampleTranslation": "Taşındıktan sonra dairede adres değişikliği bildirimini yapmam gerekiyor.",
       "synonyms": [
-        "die Registrierung"
+        "die Adressänderung"
       ],
       "level": "A2"
     },
     {
-      "german": "das Einwohnermeldeamt",
-      "turkish": "nüfus dairesi",
-      "example": "Ich gehe zum Einwohnermeldeamt.",
-      "exampleTranslation": "Nüfus dairesine gidiyorum.",
+      "german": "das Bürgeramt",
+      "turkish": "vatandaşlık hizmetleri dairesi",
+      "example": "Ich habe einen Termin im Bürgeramt vereinbart.",
+      "exampleTranslation": "Vatandaşlık hizmetleri dairesinde bir randevu aldım.",
       "synonyms": [
-        "das Meldeamt",
-        "das Bürgeramt"
+        "das Bürgerbüro"
       ],
       "level": "A2"
     },
@@ -110,33 +109,32 @@
       "level": "A2"
     },
     {
-      "german": "der Aufenthalt",
-      "turkish": "ikamet / kalış",
-      "example": "Mein Aufenthalt in Deutschland ist legal.",
-      "exampleTranslation": "Almanya'daki ikametim yasaldır.",
+      "german": "der Wohnsitz",
+      "turkish": "ikametgah",
+      "example": "Mein erster Wohnsitz ist seit zwei Jahren in Berlin.",
+      "exampleTranslation": "Birincil ikametgahım iki yıldır Berlin'de.",
       "synonyms": [
-        "der Verbleib"
+        "die Wohnadresse"
       ],
       "level": "A2"
     },
     {
-      "german": "die Bescheinigung",
-      "turkish": "belge / onay yazısı",
-      "example": "Ich brauche eine Bescheinigung vom Amt.",
-      "exampleTranslation": "Daireden bir belgeye ihtiyacım var.",
+      "german": "das Führungszeugnis",
+      "turkish": "sabıka kaydı belgesi",
+      "example": "Für die neue Stelle muss ich ein Führungszeugnis vorlegen.",
+      "exampleTranslation": "Yeni iş için bir sabıka kaydı belgesi sunmam gerekiyor.",
       "synonyms": [
-        "das Attest",
-        "die Urkunde"
+        "der Strafregisterauszug"
       ],
       "level": "B1"
     },
     {
-      "german": "der Beamte",
-      "turkish": "memur / devlet memuru",
-      "example": "Der Beamte prüft meine Unterlagen.",
-      "exampleTranslation": "Memur belgelerimi kontrol ediyor.",
+      "german": "der Antragsteller",
+      "turkish": "başvuru sahibi",
+      "example": "Der Antragsteller muss alle Unterlagen persönlich abgeben.",
+      "exampleTranslation": "Başvuru sahibi tüm belgeleri şahsen teslim etmek zorundadır.",
       "synonyms": [
-        "der Sachbearbeiter"
+        "der Bewerber"
       ],
       "level": "B1"
     },

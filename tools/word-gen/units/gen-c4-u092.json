@@ -19,12 +19,12 @@
       "level": "B1"
     },
     {
-      "german": "die Bewegung",
-      "turkish": "hareket / egzersiz",
-      "example": "Regelmäßige Bewegung hält den Körper fit.",
-      "exampleTranslation": "Düzenli hareket vücudu formda tutar.",
+      "german": "der Schlafmangel",
+      "turkish": "uyku eksikliği",
+      "example": "Ständiger Schlafmangel kann die Konzentration im Alltag erheblich beeinträchtigen.",
+      "exampleTranslation": "Sürekli uyku eksikliği günlük yaşamda konsantrasyonu ciddi şekilde olumsuz etkileyebilir.",
       "synonyms": [
-        "die Aktivität"
+        "der Schlafentzug"
       ],
       "level": "B1"
     },
@@ -59,34 +59,32 @@
       "level": "B1"
     },
     {
-      "german": "sich entspannen",
-      "turkish": "rahatlamak / gevşemek",
-      "example": "Am Wochenende entspanne ich mich beim Lesen.",
-      "exampleTranslation": "Hafta sonu okuyarak rahatlıyorum.",
+      "german": "die Achtsamkeit",
+      "turkish": "farkındalık (bilinçli farkındalık)",
+      "example": "Durch regelmäßige Achtsamkeit lernen viele Menschen, besser mit Stress umzugehen.",
+      "exampleTranslation": "Düzenli farkındalık sayesinde birçok insan stresle daha iyi başa çıkmayı öğrenir.",
       "synonyms": [
-        "sich erholen",
-        "abschalten"
+        "die Bewusstheit"
       ],
       "level": "B2"
     },
     {
-      "german": "die Sucht",
-      "turkish": "bağımlılık",
-      "example": "Die Sucht nach Zucker ist weit verbreitet.",
-      "exampleTranslation": "Şeker bağımlılığı çok yaygındır.",
+      "german": "das Suchtverhalten",
+      "turkish": "bağımlılık davranışı",
+      "example": "Ärzte beobachten, dass digitales Suchtverhalten bei Jugendlichen immer häufiger auftritt.",
+      "exampleTranslation": "Doktorlar, gençlerde dijital bağımlılık davranışının giderek daha sık görüldüğünü gözlemliyor.",
       "synonyms": [
         "die Abhängigkeit"
       ],
       "level": "B2"
     },
     {
-      "german": "vorbeugen",
-      "turkish": "önlemek / önlem almak",
-      "example": "Mit Sport kann man vielen Krankheiten vorbeugen.",
-      "exampleTranslation": "Sporla birçok hastalığı önleyebiliriz.",
+      "german": "die Selbstfürsorge",
+      "turkish": "öz bakım (kendine iyi bakma)",
+      "example": "Gute Selbstfürsorge bedeutet, sich bewusst Zeit für Ruhe und Erholung zu nehmen.",
+      "exampleTranslation": "İyi bir öz bakım, dinlenme ve toparlanma için bilinçli olarak zaman ayırmak demektir.",
       "synonyms": [
-        "verhindern",
-        "vermeiden"
+        "die Selbstpflege"
       ],
       "level": "B2"
     },
@@ -135,13 +133,13 @@
       "level": "C1"
     },
     {
-      "german": "ausgewogen",
-      "turkish": "dengeli",
-      "example": "Eine ausgewogene Ernährung versorgt den Körper optimal.",
-      "exampleTranslation": "Dengeli bir beslenme vücudu en iyi şekilde besler.",
+      "german": "die Widerstandskraft",
+      "turkish": "dayanıklılık (psikolojik direnç)",
+      "example": "Eine gesunde Lebensweise stärkt langfristig die seelische Widerstandskraft des Menschen.",
+      "exampleTranslation": "Sağlıklı bir yaşam tarzı, uzun vadede insanın ruhsal dayanıklılığını güçlendirir.",
       "synonyms": [
-        "ausgeglichen",
-        "harmonisch"
+        "die Resilienz",
+        "die Widerstandsfähigkeit"
       ],
       "level": "C1"
     },
@@ -157,13 +155,13 @@
       "level": "C1"
     },
     {
-      "german": "die Belastbarkeit",
-      "turkish": "dayanıklılık / yük kaldırma gücü",
-      "example": "Ausreichend Schlaf erhöht die psychische Belastbarkeit.",
-      "exampleTranslation": "Yeterli uyku psikolojik dayanıklılığı artırır.",
+      "german": "das Durchhaltevermögen",
+      "turkish": "azim (sebat etme gücü)",
+      "example": "Ohne ausreichendes Durchhaltevermögen fällt es schwer, neue Ernährungsgewohnheiten beizubehalten.",
+      "exampleTranslation": "Yeterli azim olmadan yeni beslenme alışkanlıklarını sürdürmek zordur.",
       "synonyms": [
-        "die Widerstandskraft",
-        "die Resilienz"
+        "die Ausdauer",
+        "die Beharrlichkeit"
       ],
       "level": "C1"
     }

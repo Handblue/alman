@@ -29,13 +29,12 @@
       "level": "A1"
     },
     {
-      "german": "der Spaß",
-      "turkish": "eğlence / keyif",
-      "example": "Tennis macht mir großen Spaß.",
-      "exampleTranslation": "Tenis bana büyük keyif veriyor.",
+      "german": "der Ausflug",
+      "turkish": "gezi, kısa seyahat",
+      "example": "Am Wochenende machen wir einen Ausflug ans Meer.",
+      "exampleTranslation": "Hafta sonu denize bir gezi yapıyoruz.",
       "synonyms": [
-        "das Vergnügen",
-        "die Freude"
+        "der Trip"
       ],
       "level": "A1"
     },
@@ -50,22 +49,22 @@
       "level": "A1"
     },
     {
-      "german": "tanzen",
-      "turkish": "dans etmek",
-      "example": "Am Wochenende gehen wir tanzen.",
-      "exampleTranslation": "Hafta sonu dans etmeye gideriz.",
+      "german": "wandern",
+      "turkish": "yürüyüş yapmak, doğa yürüyüşü yapmak",
+      "example": "Im Sommer wandern wir gern in den Bergen.",
+      "exampleTranslation": "Yazın dağlarda yürüyüş yapmayı severiz.",
       "synonyms": [
-        "das Tanzbein schwingen"
+        "spazieren gehen"
       ],
       "level": "A1"
     },
     {
-      "german": "malen",
-      "turkish": "resim yapmak / boyamak",
-      "example": "Sie malt gern bunte Bilder.",
-      "exampleTranslation": "Renkli resimler yapmayı sever.",
+      "german": "zeichnen",
+      "turkish": "çizmek, resim çizmek",
+      "example": "Meine Schwester kann sehr gut Tiere zeichnen.",
+      "exampleTranslation": "Kız kardeşim hayvanları çok iyi çizebiliyor.",
       "synonyms": [
-        "zeichnen"
+        "skizzieren"
       ],
       "level": "A2"
     },
@@ -92,13 +91,12 @@
       "level": "A2"
     },
     {
-      "german": "das Spiel",
-      "turkish": "oyun / maç",
-      "example": "Das Spiel beginnt um acht Uhr.",
-      "exampleTranslation": "Oyun saat sekizde başlıyor.",
+      "german": "das Konzert",
+      "turkish": "konser",
+      "example": "Heute Abend gehen wir zusammen ins Konzert.",
+      "exampleTranslation": "Bu akşam birlikte konsere gidiyoruz.",
       "synonyms": [
-        "die Partie",
-        "der Wettkampf"
+        "das Musikevent"
       ],
       "level": "A2"
     },
@@ -147,13 +145,13 @@
       "level": "B1"
     },
     {
-      "german": "die Vorstellung",
-      "turkish": "gösteri / temsil",
-      "example": "Die Vorstellung im Theater war ausverkauft.",
-      "exampleTranslation": "Tiyatrodaki gösteri tamamen doluydu.",
+      "german": "die Unterhaltung",
+      "turkish": "eğlence, hoşça vakit geçirme",
+      "example": "Für die Unterhaltung der Gäste gab es eine Live-Band.",
+      "exampleTranslation": "Misafirlerin eğlencesi için canlı bir grup vardı.",
       "synonyms": [
-        "die Aufführung",
-        "die Show"
+        "das Vergnügen",
+        "die Zerstreuung"
       ],
       "level": "B1"
     },

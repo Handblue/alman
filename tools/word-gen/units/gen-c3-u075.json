@@ -19,12 +19,13 @@
       "level": "B1"
     },
     {
-      "german": "entdecken",
-      "turkish": "keşfetmek / bulmak",
-      "example": "Forscher entdeckten ein neues Virus.",
-      "exampleTranslation": "Araştırmacılar yeni bir virüs keşfetti.",
+      "german": "erforschen",
+      "turkish": "araştırmak, incelemek",
+      "example": "Die Wissenschaftler erforschen die Ursachen des Klimawandels seit Jahren.",
+      "exampleTranslation": "Bilim insanları iklim değişikliğinin nedenlerini yıllardır araştırıyor.",
       "synonyms": [
-        "aufdecken"
+        "ergründen",
+        "studieren"
       ],
       "level": "B1"
     },
@@ -92,13 +93,13 @@
       "level": "B2"
     },
     {
-      "german": "die Annahme",
-      "turkish": "varsayım / kabul",
-      "example": "Unsere Annahme erwies sich als richtig.",
-      "exampleTranslation": "Varsayımımız doğru çıktı.",
+      "german": "die Fragestellung",
+      "turkish": "araştırma sorusu, problem konusu",
+      "example": "Die zentrale Fragestellung der Studie betrifft die Wirkung des Medikaments.",
+      "exampleTranslation": "Çalışmanın temel araştırma sorusu, ilacın etkisiyle ilgilidir.",
       "synonyms": [
-        "die Vermutung",
-        "die Voraussetzung"
+        "die Problemstellung",
+        "die Forschungsfrage"
       ],
       "level": "B2"
     },

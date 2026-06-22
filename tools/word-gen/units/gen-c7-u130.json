@@ -8,13 +8,13 @@
   "firstWordId": 1936,
   "words": [
     {
-      "german": "die Souveränität",
-      "turkish": "egemenlik / hükümranlık",
-      "example": "Die Souveränität liegt beim Volk.",
-      "exampleTranslation": "Egemenlik halka aittir.",
+      "german": "die Gewaltenteilung",
+      "turkish": "güçler ayrılığı",
+      "example": "Die Gewaltenteilung verhindert, dass eine einzige Institution zu viel Macht erhält.",
+      "exampleTranslation": "Güçler ayrılığı, tek bir kurumun çok fazla güç elde etmesini engeller.",
       "synonyms": [
-        "die Hoheit",
-        "die Oberhoheit"
+        "die Machtteilung",
+        "die Teilung der Staatsgewalten"
       ],
       "level": "C1"
     },
@@ -62,24 +62,24 @@
       "level": "B2"
     },
     {
-      "german": "der Bürger",
-      "turkish": "yurttaş / vatandaş",
-      "example": "Jeder Bürger hat Rechte und Pflichten.",
-      "exampleTranslation": "Her yurttaşın hakları ve görevleri vardır.",
+      "german": "der Machthaber",
+      "turkish": "iktidar sahibi, hükümdar",
+      "example": "Ein gerechter Machthaber dient dem Wohl aller und nicht nur seinen eigenen Interessen.",
+      "exampleTranslation": "Adil bir iktidar sahibi, yalnızca kendi çıkarlarına değil, herkesin iyiliğine hizmet eder.",
       "synonyms": [
-        "der Staatsbürger",
-        "der Einwohner"
+        "der Herrscher",
+        "der Gewalthaber"
       ],
       "level": "B2"
     },
     {
-      "german": "die Verfassung",
-      "turkish": "anayasa",
-      "example": "Die Verfassung schützt die Grundrechte.",
-      "exampleTranslation": "Anayasa temel hakları korur.",
+      "german": "der Rechtsgrundsatz",
+      "turkish": "hukuk ilkesi",
+      "example": "Jeder demokratische Staat beruht auf einem klaren Rechtsgrundsatz, der für alle gilt.",
+      "exampleTranslation": "Her demokratik devlet, herkes için geçerli olan açık bir hukuk ilkesine dayanır.",
       "synonyms": [
-        "die Konstitution",
-        "das Staatsgrundgesetz"
+        "das Rechtsprinzip",
+        "der Rechtssatz"
       ],
       "level": "B2"
     },

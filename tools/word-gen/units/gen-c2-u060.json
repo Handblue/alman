@@ -29,12 +29,12 @@
       "level": "A1"
     },
     {
-      "german": "die Nachricht",
-      "turkish": "haber / mesaj",
-      "example": "Die Nachricht kam heute Morgen.",
-      "exampleTranslation": "Haber bu sabah geldi.",
+      "german": "die Meldung",
+      "turkish": "haber, bildirim",
+      "example": "Laut einer Meldung im Radio sei der Minister zurückgetreten.",
+      "exampleTranslation": "Radyodaki bir habere göre bakan istifa etmiş.",
       "synonyms": [
-        "die Meldung",
+        "die Mitteilung",
         "die Information"
       ],
       "level": "A1"

@@ -29,12 +29,13 @@
       "level": "B2"
     },
     {
-      "german": "die Quelle",
-      "turkish": "kaynak",
-      "example": "Historiker prüfen jede Quelle sehr genau.",
-      "exampleTranslation": "Tarihçiler her kaynağı çok dikkatli inceler.",
+      "german": "das Artefakt",
+      "turkish": "eser, yapay nesne (arkeolojik)",
+      "example": "Bei der Grabung entdeckten die Forscher ein gut erhaltenes Artefakt aus der Bronzezeit.",
+      "exampleTranslation": "Kazıda araştırmacılar Tunç Çağı'ndan iyi korunmuş bir eser keşfetti.",
       "synonyms": [
-        "die Schriftquelle"
+        "der Gegenstand",
+        "das Objekt"
       ],
       "level": "B2"
     },
@@ -115,13 +116,13 @@
       "level": "C1"
     },
     {
-      "german": "die Schicht",
-      "turkish": "katman / tabaka",
-      "example": "Jede Schicht erzählt von einer anderen Zeit.",
-      "exampleTranslation": "Her katman başka bir zamandan söz eder.",
+      "german": "die Datierung",
+      "turkish": "tarihlendirme",
+      "example": "Die radioaktive Datierung der Knochen ergab ein Alter von rund 5000 Jahren.",
+      "exampleTranslation": "Kemiklerin radyoaktif tarihlendirmesi yaklaşık 5000 yıllık bir yaş gösterdi.",
       "synonyms": [
-        "die Lage",
-        "das Stratum"
+        "die Zeitbestimmung",
+        "die Altersbestimmung"
       ],
       "level": "C1"
     },

@@ -8,13 +8,13 @@
   "firstWordId": 1426,
   "words": [
     {
-      "german": "dennoch",
-      "turkish": "yine de / buna rağmen",
-      "example": "Es regnete stark; dennoch gingen wir spazieren.",
-      "exampleTranslation": "Çok yağmur yağıyordu; yine de yürüyüşe çıktık.",
+      "german": "allerdings",
+      "turkish": "ne var ki, ancak, gerçi",
+      "example": "Der Plan klingt überzeugend, allerdings fehlen ihm konkrete Belege.",
+      "exampleTranslation": "Plan ikna edici geliyor, ne var ki somut kanıtlardan yoksun.",
       "synonyms": [
-        "trotzdem",
-        "gleichwohl"
+        "freilich",
+        "indes"
       ],
       "level": "B1"
     },
@@ -123,24 +123,24 @@
       "level": "B2"
     },
     {
-      "german": "folglich",
-      "turkish": "dolayısıyla / sonuç olarak",
-      "example": "Er war unvorbereitet, folglich scheiterte er.",
-      "exampleTranslation": "Hazırlıksızdı, dolayısıyla başarısız oldu.",
+      "german": "demzufolge",
+      "turkish": "buna göre, bunun sonucunda, dolayısıyla",
+      "example": "Die Nachfrage ist gestiegen; demzufolge müssen die Kapazitäten erweitert werden.",
+      "exampleTranslation": "Talep arttı; buna göre kapasitelerin genişletilmesi gerekir.",
       "synonyms": [
         "somit",
-        "demzufolge"
+        "mithin"
       ],
       "level": "C1"
     },
     {
-      "german": "hingegen",
-      "turkish": "buna karşılık / oysa",
-      "example": "Sie schweigt, er hingegen redet ständig.",
-      "exampleTranslation": "O susuyor, buna karşılık o sürekli konuşuyor.",
+      "german": "wohingegen",
+      "turkish": "buna karşın, oysa, halbuki",
+      "example": "Die einen befürworten die Reform, wohingegen die anderen sie strikt ablehnen.",
+      "exampleTranslation": "Bazıları reformu destekliyor, buna karşın diğerleri onu kesinlikle reddediyor.",
       "synonyms": [
-        "dagegen",
-        "wohingegen"
+        "wogegen",
+        "während"
       ],
       "level": "C1"
     },

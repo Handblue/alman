@@ -8,13 +8,13 @@
   "firstWordId": 1666,
   "words": [
     {
-      "german": "die Diagnose",
-      "turkish": "tanı / teşhis",
-      "example": "Der Arzt stellte die Diagnose nach mehreren Tests.",
-      "exampleTranslation": "Doktor birkaç testten sonra tanıyı koydu.",
+      "german": "die Verlaufskontrolle",
+      "turkish": "seyir kontrolü, takip muayenesi",
+      "example": "Nach der Operation ist eine regelmäßige Verlaufskontrolle beim Arzt notwendig.",
+      "exampleTranslation": "Ameliyattan sonra doktorda düzenli bir seyir kontrolü gereklidir.",
       "synonyms": [
-        "die Befundung",
-        "die Krankheitsbestimmung"
+        "die Nachkontrolle",
+        "die Kontrolluntersuchung"
       ],
       "level": "B2"
     },
@@ -30,12 +30,12 @@
       "level": "B2"
     },
     {
-      "german": "der Befund",
-      "turkish": "bulgu / tıbbi sonuç",
-      "example": "Der Befund der Untersuchung war unauffällig.",
-      "exampleTranslation": "Muayenenin bulgusu normaldi.",
+      "german": "der Krankheitsverlauf",
+      "turkish": "hastalığın seyri",
+      "example": "Der Krankheitsverlauf war milder als zunächst befürchtet.",
+      "exampleTranslation": "Hastalığın seyri başta korkulduğundan daha hafif geçti.",
       "synonyms": [
-        "das Untersuchungsergebnis"
+        "der Verlauf"
       ],
       "level": "B2"
     },
@@ -81,12 +81,12 @@
       "level": "B2"
     },
     {
-      "german": "die Nebenwirkung",
-      "turkish": "yan etki",
-      "example": "Dieses Medikament hat kaum Nebenwirkungen.",
-      "exampleTranslation": "Bu ilacın neredeyse hiç yan etkisi yok.",
+      "german": "die Verträglichkeit",
+      "turkish": "(ilaç) tolere edilebilirlik, uyumluluk",
+      "example": "Die gute Verträglichkeit des neuen Medikaments wurde in der Studie bestätigt.",
+      "exampleTranslation": "Yeni ilacın iyi tolere edilebilirliği çalışmada doğrulandı.",
       "synonyms": [
-        "die Begleiterscheinung"
+        "die Bekömmlichkeit"
       ],
       "level": "B2"
     },
@@ -135,13 +135,12 @@
       "level": "C1"
     },
     {
-      "german": "der Facharzt",
-      "turkish": "uzman hekim",
-      "example": "Sie wurde an einen Facharzt überwiesen.",
-      "exampleTranslation": "O, bir uzman hekime sevk edildi.",
+      "german": "der Oberarzt",
+      "turkish": "başasistan, kıdemli hekim",
+      "example": "Der Oberarzt leitet die Visite auf der Intensivstation.",
+      "exampleTranslation": "Başasistan yoğun bakımdaki viziti yönetiyor.",
       "synonyms": [
-        "der Spezialist",
-        "der Fachmediziner"
+        "der Stationsarzt"
       ],
       "level": "C1"
     },
@@ -157,13 +156,12 @@
       "level": "C1"
     },
     {
-      "german": "die Genesung",
-      "turkish": "iyileşme / nekahat",
-      "example": "Wir wünschen ihm eine baldige Genesung.",
-      "exampleTranslation": "Ona acil şifalar diliyoruz.",
+      "german": "die Heilung",
+      "turkish": "iyileşme, şifa",
+      "example": "Eine vollständige Heilung ist bei dieser Erkrankung möglich.",
+      "exampleTranslation": "Bu hastalıkta tam bir iyileşme mümkündür.",
       "synonyms": [
-        "die Heilung",
-        "die Erholung"
+        "die Ausheilung"
       ],
       "level": "C1"
     }

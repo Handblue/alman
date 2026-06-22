@@ -8,52 +8,54 @@
   "firstWordId": 1411,
   "words": [
     {
-      "german": "die Aufführung",
-      "turkish": "gösteri / temsil / sahneleme",
-      "example": "Die Aufführung des Stücks war ausverkauft.",
-      "exampleTranslation": "Oyunun gösterimi tamamen doluydu.",
+      "german": "die Bühne",
+      "turkish": "sahne",
+      "example": "Die Schauspielerin betrat langsam die Bühne.",
+      "exampleTranslation": "Oyuncu yavaşça sahneye çıktı.",
       "synonyms": [
-        "die Vorstellung",
-        "die Darbietung"
+        "das Podium"
       ],
       "level": "B1"
     },
     {
-      "german": "das Gemälde",
-      "turkish": "tablo / resim",
-      "example": "Im Museum hängt ein berühmtes Gemälde.",
-      "exampleTranslation": "Müzede ünlü bir tablo asılı.",
+      "german": "die Skulptur",
+      "turkish": "heykel",
+      "example": "Im Park steht eine moderne Skulptur aus Bronze.",
+      "exampleTranslation": "Parkta bronzdan modern bir heykel duruyor.",
       "synonyms": [
-        "das Bild"
+        "die Statue",
+        "die Plastik"
       ],
       "level": "B1"
     },
     {
-      "german": "die Ausstellung",
-      "turkish": "sergi",
-      "example": "Die Ausstellung moderner Kunst beginnt morgen.",
-      "exampleTranslation": "Modern sanat sergisi yarın başlıyor.",
+      "german": "die Galerie",
+      "turkish": "galeri",
+      "example": "Am Wochenende besuchen wir eine kleine Galerie in der Altstadt.",
+      "exampleTranslation": "Hafta sonu eski şehirde küçük bir galeriyi ziyaret ediyoruz.",
       "synonyms": [
-        "die Schau"
+        "der Kunstraum"
       ],
       "level": "B1"
     },
     {
-      "german": "der Roman",
-      "turkish": "roman",
-      "example": "Sie hat einen spannenden Roman geschrieben.",
-      "exampleTranslation": "O, heyecanlı bir roman yazdı.",
-      "synonyms": [],
+      "german": "das Theaterstück",
+      "turkish": "tiyatro oyunu",
+      "example": "Das Theaterstück handelt von einer Familie in der Nachkriegszeit.",
+      "exampleTranslation": "Tiyatro oyunu savaş sonrası dönemde bir aileyi konu alıyor.",
+      "synonyms": [
+        "das Drama",
+        "das Schauspiel"
+      ],
       "level": "B1"
     },
     {
-      "german": "der Schauspieler",
-      "turkish": "oyuncu / aktör",
-      "example": "Der Schauspieler spielte seine Rolle hervorragend.",
-      "exampleTranslation": "Oyuncu rolünü mükemmel oynadı.",
+      "german": "der Künstler",
+      "turkish": "sanatçı",
+      "example": "Der Künstler erklärte den Besuchern seine neuesten Werke.",
+      "exampleTranslation": "Sanatçı ziyaretçilere en yeni eserlerini anlattı.",
       "synonyms": [
-        "der Darsteller",
-        "der Mime"
+        "der Kunstschaffende"
       ],
       "level": "B1"
     },
@@ -69,13 +71,13 @@
       "level": "B2"
     },
     {
-      "german": "die Vielfalt",
-      "turkish": "çeşitlilik / zenginlik",
-      "example": "Die kulturelle Vielfalt der Stadt beeindruckt mich.",
-      "exampleTranslation": "Şehrin kültürel çeşitliliği beni etkiliyor.",
+      "german": "die Weltoffenheit",
+      "turkish": "dünyaya açıklık, kozmopolitlik",
+      "example": "Die Weltoffenheit einer Gesellschaft zeigt sich im Umgang mit anderen Kulturen.",
+      "exampleTranslation": "Bir toplumun dünyaya açıklığı, başka kültürlerle ilişkisinde görülür.",
       "synonyms": [
-        "die Mannigfaltigkeit",
-        "die Diversität"
+        "die Aufgeschlossenheit",
+        "die Toleranz"
       ],
       "level": "B2"
     },

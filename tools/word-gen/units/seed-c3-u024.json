@@ -50,13 +50,12 @@
       "id": 349,
       "categoryId": 3,
       "unitId": 24,
-      "german": "die Erfahrung",
-      "turkish": "deneyim / tecrübe",
-      "example": "Sie hat viel Erfahrung in diesem Bereich.",
-      "exampleTranslation": "Bu alanda çok deneyimi var.",
+      "german": "das Ehrenamt",
+      "turkish": "gönüllü (fahri) görev",
+      "example": "Viele Menschen üben in ihrer Freizeit ein Ehrenamt aus.",
+      "exampleTranslation": "Birçok insan boş zamanında gönüllü bir görev üstlenir.",
       "synonyms": [
-        "die Praxis",
-        "die Kenntnisse"
+        "die Freiwilligenarbeit"
       ],
       "level": "B1"
     },
@@ -64,13 +63,13 @@
       "id": 350,
       "categoryId": 3,
       "unitId": 24,
-      "german": "die Meinung",
-      "turkish": "görüş / fikir",
-      "example": "Meiner Meinung nach ist das falsch.",
-      "exampleTranslation": "Benim görüşüme göre bu yanlış.",
+      "german": "die Toleranz",
+      "turkish": "hoşgörü",
+      "example": "Toleranz gegenüber anderen Kulturen ist in unserer Gesellschaft wichtig.",
+      "exampleTranslation": "Diğer kültürlere karşı hoşgörü, toplumumuzda önemlidir.",
       "synonyms": [
-        "die Ansicht",
-        "der Standpunkt"
+        "die Duldsamkeit",
+        "die Nachsicht"
       ],
       "level": "B1"
     },
@@ -116,12 +115,12 @@
       "id": 354,
       "categoryId": 3,
       "unitId": 24,
-      "german": "vergleichen",
-      "turkish": "karşılaştırmak",
-      "example": "Man kann diese zwei Methoden gut vergleichen.",
-      "exampleTranslation": "Bu iki yöntemi iyi karşılaştırabilirsiniz.",
+      "german": "sich engagieren",
+      "turkish": "(bir konuya) angaje olmak, kendini adamak",
+      "example": "Sie engagiert sich seit Jahren für benachteiligte Kinder.",
+      "exampleTranslation": "Yıllardır dezavantajlı çocuklar için kendini adıyor.",
       "synonyms": [
-        "gegenüberstellen"
+        "sich einsetzen"
       ],
       "level": "B1"
     },
@@ -157,12 +156,12 @@
       "id": 357,
       "categoryId": 3,
       "unitId": 24,
-      "german": "sich bewerben",
-      "turkish": "başvurmak",
-      "example": "Er bewirbt sich um eine Stelle als Programmierer.",
-      "exampleTranslation": "Programcı pozisyonuna başvuruyor.",
+      "german": "die Spende",
+      "turkish": "bağış",
+      "example": "Mit einer kleinen Spende kann man vielen Menschen helfen.",
+      "exampleTranslation": "Küçük bir bağışla birçok insana yardım edilebilir.",
       "synonyms": [
-        "kandidieren"
+        "die Zuwendung"
       ],
       "level": "B1"
     },

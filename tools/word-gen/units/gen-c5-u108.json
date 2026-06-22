@@ -8,27 +8,33 @@
   "firstWordId": 1606,
   "words": [
     {
-      "german": "links",
-      "turkish": "sol / solda / sola",
-      "example": "Gehen Sie an der Ampel nach links.",
-      "exampleTranslation": "Işıklarda sola dönün.",
-      "synonyms": [],
+      "german": "der Fußgänger",
+      "turkish": "yaya",
+      "example": "Der Fußgänger überquert vorsichtig die breite Straße.",
+      "exampleTranslation": "Yaya geniş caddeyi dikkatlice geçiyor.",
+      "synonyms": [
+        "der Passant"
+      ],
       "level": "A1"
     },
     {
-      "german": "rechts",
-      "turkish": "sağ / sağda / sağa",
-      "example": "Die Bank ist gleich rechts.",
-      "exampleTranslation": "Banka hemen sağda.",
-      "synonyms": [],
+      "german": "das Schild",
+      "turkish": "tabela, levha",
+      "example": "Das Schild zeigt den Weg zum Bahnhof.",
+      "exampleTranslation": "Tabela tren istasyonuna giden yolu gösteriyor.",
+      "synonyms": [
+        "das Verkehrszeichen"
+      ],
       "level": "A1"
     },
     {
-      "german": "geradeaus",
-      "turkish": "dosdoğru / düz ileri",
-      "example": "Fahren Sie immer geradeaus.",
-      "exampleTranslation": "Hep dümdüz devam edin.",
-      "synonyms": [],
+      "german": "der Stadtteil",
+      "turkish": "semt, şehir bölgesi",
+      "example": "In welchem Stadtteil wohnst du?",
+      "exampleTranslation": "Hangi semtte oturuyorsun?",
+      "synonyms": [
+        "der Bezirk"
+      ],
       "level": "A1"
     },
     {
@@ -42,22 +48,22 @@
       "level": "A1"
     },
     {
-      "german": "die Karte",
-      "turkish": "harita / kart",
-      "example": "Ich schaue schnell auf die Karte.",
-      "exampleTranslation": "Hızlıca haritaya bakıyorum.",
+      "german": "der Springbrunnen",
+      "turkish": "fıskiye, süs çeşmesi",
+      "example": "Wir treffen uns am Springbrunnen vor dem Museum.",
+      "exampleTranslation": "Müzenin önündeki fıskiyenin yanında buluşuyoruz.",
       "synonyms": [
-        "der Plan"
+        "der Brunnen"
       ],
       "level": "A1"
     },
     {
-      "german": "die Ecke",
-      "turkish": "köşe",
-      "example": "Das Café ist um die Ecke.",
-      "exampleTranslation": "Kafe köşeyi dönünce.",
+      "german": "die Gasse",
+      "turkish": "dar sokak, ara sokak",
+      "example": "Hinter dem Markt führt eine enge Gasse zur Kirche.",
+      "exampleTranslation": "Pazarın arkasındaki dar bir sokak kiliseye gidiyor.",
       "synonyms": [
-        "der Winkel"
+        "die Seitenstraße"
       ],
       "level": "A2"
     },
@@ -72,41 +78,41 @@
       "level": "A2"
     },
     {
-      "german": "die Ampel",
-      "turkish": "trafik ışığı",
-      "example": "Warten Sie an der roten Ampel.",
-      "exampleTranslation": "Kırmızı ışıkta bekleyin.",
-      "synonyms": [
-        "das Verkehrslicht"
-      ],
-      "level": "A2"
-    },
-    {
-      "german": "abbiegen",
-      "turkish": "dönmek (yol)",
-      "example": "Sie müssen hier nach rechts abbiegen.",
-      "exampleTranslation": "Burada sağa dönmeniz gerekiyor.",
-      "synonyms": [
-        "einbiegen"
-      ],
-      "level": "A2"
-    },
-    {
-      "german": "der Platz",
-      "turkish": "meydan / yer",
-      "example": "Der Brunnen steht auf dem Platz.",
-      "exampleTranslation": "Çeşme meydanda duruyor.",
-      "synonyms": [
-        "der Marktplatz"
-      ],
-      "level": "A2"
-    },
-    {
-      "german": "gegenüber",
-      "turkish": "karşısında / karşı",
-      "example": "Die Post ist gegenüber der Kirche.",
-      "exampleTranslation": "Postane kilisenin karşısında.",
+      "german": "die Sackgasse",
+      "turkish": "çıkmaz sokak",
+      "example": "Bieg hier nicht ab, das ist eine Sackgasse.",
+      "exampleTranslation": "Buradan sapma, burası çıkmaz sokak.",
       "synonyms": [],
+      "level": "A2"
+    },
+    {
+      "german": "die Unterführung",
+      "turkish": "alt geçit",
+      "example": "Geh durch die Unterführung, dann bist du schneller drüben.",
+      "exampleTranslation": "Alt geçitten geç, böylece karşıya daha çabuk geçersin.",
+      "synonyms": [
+        "der Tunnel"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Wegweiser",
+      "turkish": "yön levhası, işaret levhası",
+      "example": "Der Wegweiser an der Kreuzung zeigt nach links zur Altstadt.",
+      "exampleTranslation": "Kavşaktaki yön levhası sola, eski şehre işaret ediyor.",
+      "synonyms": [
+        "das Hinweisschild"
+      ],
+      "level": "A2"
+    },
+    {
+      "german": "der Zebrastreifen",
+      "turkish": "yaya geçidi",
+      "example": "Bitte überquere die Straße nur am Zebrastreifen.",
+      "exampleTranslation": "Lütfen caddeyi sadece yaya geçidinden geç.",
+      "synonyms": [
+        "der Fußgängerüberweg"
+      ],
       "level": "A2"
     },
     {

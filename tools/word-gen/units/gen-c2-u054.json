@@ -8,23 +8,21 @@
   "firstWordId": 796,
   "words": [
     {
-      "german": "der Ball",
-      "turkish": "top",
-      "example": "Ich werfe dir den Ball zu.",
-      "exampleTranslation": "Topu sana atıyorum.",
+      "german": "der Teppich",
+      "turkish": "halı",
+      "example": "Ich lege den Teppich auf den Boden.",
+      "exampleTranslation": "Halıyı yere seriyorum.",
       "synonyms": [
-        "der Spielball"
+        "der Läufer"
       ],
       "level": "A1"
     },
     {
-      "german": "der Brief",
-      "turkish": "mektup",
-      "example": "Ich schreibe meiner Oma einen Brief.",
-      "exampleTranslation": "Babaanneme bir mektup yazıyorum.",
-      "synonyms": [
-        "das Schreiben"
-      ],
+      "german": "der Spiegel",
+      "turkish": "ayna",
+      "example": "Sie hängt den Spiegel an die Wand.",
+      "exampleTranslation": "Aynayı duvara asıyor.",
+      "synonyms": [],
       "level": "A1"
     },
     {
@@ -60,13 +58,12 @@
       "level": "A2"
     },
     {
-      "german": "gefallen",
-      "turkish": "hoşuna gitmek / beğenilmek",
-      "example": "Das Bild gefällt mir sehr.",
-      "exampleTranslation": "Bu resim çok hoşuma gidiyor.",
+      "german": "schmecken",
+      "turkish": "tadı hoş gelmek, lezzetli gelmek",
+      "example": "Der Kuchen schmeckt mir sehr gut.",
+      "exampleTranslation": "Pasta bana çok lezzetli geliyor.",
       "synonyms": [
-        "zusagen",
-        "behagen"
+        "munden"
       ],
       "level": "A2"
     },
@@ -82,23 +79,23 @@
       "level": "B1"
     },
     {
-      "german": "gehören",
-      "turkish": "ait olmak",
-      "example": "Dieses Auto gehört meinem Vater.",
-      "exampleTranslation": "Bu araba babama ait.",
+      "german": "ähneln",
+      "turkish": "benzemek",
+      "example": "Der Sohn ähnelt seinem Vater sehr.",
+      "exampleTranslation": "Oğul babasına çok benziyor.",
       "synonyms": [
-        "zugehören"
+        "gleichen"
       ],
       "level": "B1"
     },
     {
-      "german": "antworten",
-      "turkish": "cevap vermek",
-      "example": "Sie antwortet dem Lehrer höflich.",
-      "exampleTranslation": "Öğretmene kibarca cevap veriyor.",
+      "german": "gehorchen",
+      "turkish": "itaat etmek, söz dinlemek",
+      "example": "Der Hund gehorcht seinem Herrchen sofort.",
+      "exampleTranslation": "Köpek sahibine hemen itaat ediyor.",
       "synonyms": [
-        "erwidern",
-        "entgegnen"
+        "folgen",
+        "sich fügen"
       ],
       "level": "B1"
     },

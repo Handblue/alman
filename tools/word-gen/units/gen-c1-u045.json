@@ -18,13 +18,12 @@
       "level": "A1"
     },
     {
-      "german": "der Computer",
-      "turkish": "bilgisayar",
-      "example": "Ich arbeite jeden Tag am Computer.",
-      "exampleTranslation": "Her gün bilgisayarda çalışıyorum.",
+      "german": "die Tastatur",
+      "turkish": "klavye",
+      "example": "Ich schreibe die Nachricht mit der Tastatur.",
+      "exampleTranslation": "Mesajı klavye ile yazıyorum.",
       "synonyms": [
-        "der Rechner",
-        "der PC"
+        "die Keyboard"
       ],
       "level": "A1"
     },

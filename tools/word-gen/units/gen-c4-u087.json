@@ -19,24 +19,24 @@
       "level": "B1"
     },
     {
-      "german": "zustimmen",
-      "turkish": "katılmak / onaylamak",
-      "example": "Ich kann dir da nur zustimmen.",
-      "exampleTranslation": "Sana bu konuda ancak katılabilirim.",
+      "german": "einverstanden",
+      "turkish": "hemfikir, mutabık",
+      "example": "Mit deinem Vorschlag bin ich völlig einverstanden.",
+      "exampleTranslation": "Senin önerinle tamamen hemfikirim.",
       "synonyms": [
-        "beipflichten",
-        "zusagen"
+        "einig",
+        "zufrieden"
       ],
       "level": "B1"
     },
     {
-      "german": "widersprechen",
-      "turkish": "karşı çıkmak / itiraz etmek",
-      "example": "Da muss ich Ihnen leider widersprechen.",
-      "exampleTranslation": "Bu konuda maalesef size karşı çıkmalıyım.",
+      "german": "bezweifeln",
+      "turkish": "kuşku duymak, şüphe etmek",
+      "example": "Ich bezweifle, dass diese Lösung wirklich funktioniert.",
+      "exampleTranslation": "Bu çözümün gerçekten işe yarayacağından şüphe ediyorum.",
       "synonyms": [
-        "entgegnen",
-        "kontern"
+        "anzweifeln",
+        "infrage stellen"
       ],
       "level": "B1"
     },
@@ -63,24 +63,24 @@
       "level": "B1"
     },
     {
-      "german": "behaupten",
-      "turkish": "iddia etmek / öne sürmek",
-      "example": "Er behauptet, alles selbst gemacht zu haben.",
-      "exampleTranslation": "Her şeyi kendisi yaptığını iddia ediyor.",
+      "german": "vermuten",
+      "turkish": "tahmin etmek, sanmak",
+      "example": "Ich vermute, dass die Mehrheit anderer Meinung ist.",
+      "exampleTranslation": "Çoğunluğun farklı düşündüğünü tahmin ediyorum.",
       "synonyms": [
-        "versichern",
-        "beteuern"
+        "annehmen",
+        "mutmaßen"
       ],
       "level": "B2"
     },
     {
-      "german": "der Standpunkt",
-      "turkish": "bakış açısı / tutum",
-      "example": "Ich verstehe deinen Standpunkt durchaus.",
-      "exampleTranslation": "Senin bakış açını gayet anlıyorum.",
+      "german": "die Sichtweise",
+      "turkish": "bakış açısı",
+      "example": "Aus meiner Sichtweise überwiegen die Vorteile deutlich.",
+      "exampleTranslation": "Benim bakış açıma göre avantajlar açıkça ağır basıyor.",
       "synonyms": [
-        "die Sichtweise",
-        "die Position"
+        "die Perspektive",
+        "der Blickwinkel"
       ],
       "level": "B2"
     },
@@ -96,13 +96,13 @@
       "level": "B2"
     },
     {
-      "german": "die Begründung",
-      "turkish": "gerekçe / temellendirme",
-      "example": "Seine Begründung war überzeugend.",
-      "exampleTranslation": "Gerekçesi inandırıcıydı.",
+      "german": "die Rechtfertigung",
+      "turkish": "gerekçelendirme, haklı çıkarma",
+      "example": "Für diese Entscheidung fehlt jede überzeugende Rechtfertigung.",
+      "exampleTranslation": "Bu karar için ikna edici hiçbir gerekçe yok.",
       "synonyms": [
-        "die Rechtfertigung",
-        "der Grund"
+        "die Legitimation",
+        "die Verteidigung"
       ],
       "level": "B2"
     },
@@ -118,45 +118,45 @@
       "level": "B2"
     },
     {
-      "german": "betonen",
-      "turkish": "vurgulamak / altını çizmek",
-      "example": "Ich möchte besonders diesen Punkt betonen.",
-      "exampleTranslation": "Özellikle bu noktayı vurgulamak istiyorum.",
+      "german": "unterstreichen",
+      "turkish": "vurgulamak, altını çizmek",
+      "example": "Mit diesem Beispiel möchte ich meine Aussage unterstreichen.",
+      "exampleTranslation": "Bu örnekle ifademi vurgulamak istiyorum.",
       "synonyms": [
-        "hervorheben",
-        "unterstreichen"
+        "hervorstreichen",
+        "akzentuieren"
       ],
       "level": "B2"
     },
     {
-      "german": "die These",
-      "turkish": "tez / sav",
-      "example": "Ihre These ist gewagt, aber interessant.",
-      "exampleTranslation": "Teziniz cesur ama ilginç.",
+      "german": "die Behauptung",
+      "turkish": "iddia",
+      "example": "Diese Behauptung lässt sich durch keine Studie belegen.",
+      "exampleTranslation": "Bu iddia hiçbir çalışmayla kanıtlanamaz.",
       "synonyms": [
-        "die Behauptung",
-        "die Annahme"
+        "die Annahme",
+        "die Unterstellung"
       ],
       "level": "C1"
     },
     {
-      "german": "entgegnen",
-      "turkish": "karşılık vermek / yanıtlamak",
-      "example": "Darauf wusste sie nichts zu entgegnen.",
-      "exampleTranslation": "Buna karşılık verecek bir şey bilmiyordu.",
+      "german": "erwidern",
+      "turkish": "karşılık vermek, yanıtlamak",
+      "example": "Auf seine Kritik erwiderte sie ruhig und sachlich.",
+      "exampleTranslation": "Onun eleştirisine sakin ve nesnel bir şekilde karşılık verdi.",
       "synonyms": [
-        "erwidern",
-        "kontern"
+        "kontern",
+        "antworten"
       ],
       "level": "C1"
     },
     {
-      "german": "der Einwand",
-      "turkish": "itiraz / çekince",
-      "example": "Gegen diesen Vorschlag habe ich einen Einwand.",
-      "exampleTranslation": "Bu öneriye karşı bir itirazım var.",
+      "german": "der Vorbehalt",
+      "turkish": "çekince",
+      "example": "Gegen diesen Plan habe ich erhebliche Vorbehalte.",
+      "exampleTranslation": "Bu plana karşı ciddi çekincelerim var.",
       "synonyms": [
-        "der Vorbehalt",
+        "der Vorbehaltspunkt",
         "die Bedenken"
       ],
       "level": "C1"

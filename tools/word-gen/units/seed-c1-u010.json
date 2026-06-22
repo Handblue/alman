@@ -113,14 +113,11 @@
       "id": 145,
       "categoryId": 1,
       "unitId": 10,
-      "german": "der Arzt",
-      "turkish": "doktor",
-      "example": "Der Arzt verschreibt mir Medikamente.",
-      "exampleTranslation": "Doktor bana ilaç yazıyor.",
-      "synonyms": [
-        "der Mediziner",
-        "der Doktor"
-      ],
+      "german": "der Rücken",
+      "turkish": "sırt",
+      "example": "Mein Rücken tut nach der langen Reise weh.",
+      "exampleTranslation": "Uzun yolculuktan sonra sırtım ağrıyor.",
+      "synonyms": [],
       "level": "A1"
     },
     {

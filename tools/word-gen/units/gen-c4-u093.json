@@ -19,13 +19,13 @@
       "level": "B1"
     },
     {
-      "german": "der Kollege",
-      "turkish": "iş arkadaşı (erkek) / meslektaş",
-      "example": "Mein Kollege hilft mir bei diesem Projekt.",
-      "exampleTranslation": "İş arkadaşım bu projede bana yardım ediyor.",
+      "german": "der Vorgesetzte",
+      "turkish": "üst, amir",
+      "example": "Mein Vorgesetzter hat mein Projekt im Meeting ausdrücklich gelobt.",
+      "exampleTranslation": "Üstüm projemi toplantıda açıkça övdü.",
       "synonyms": [
-        "der Mitarbeiter",
-        "der Arbeitskollege"
+        "der Chef",
+        "der Boss"
       ],
       "level": "B1"
     },
@@ -41,35 +41,34 @@
       "level": "B1"
     },
     {
-      "german": "die Stelle",
-      "turkish": "iş / pozisyon / kadro",
-      "example": "Er hat sich um eine neue Stelle beworben.",
-      "exampleTranslation": "Yeni bir iş için başvurdu.",
+      "german": "der Arbeitsplatz",
+      "turkish": "iş yeri, çalışma yeri",
+      "example": "Ein moderner Arbeitsplatz sollte ergonomisch eingerichtet sein.",
+      "exampleTranslation": "Modern bir iş yeri ergonomik olarak düzenlenmiş olmalıdır.",
       "synonyms": [
-        "der Arbeitsplatz",
-        "die Position"
+        "der Job"
       ],
       "level": "B1"
     },
     {
-      "german": "das Gehalt",
-      "turkish": "maaş / aylık ücret",
-      "example": "Mein Gehalt wird am Monatsende überwiesen.",
-      "exampleTranslation": "Maaşım ay sonunda havale ediliyor.",
+      "german": "der Lohn",
+      "turkish": "ücret, maaş",
+      "example": "Am Ende des Monats wird der Lohn auf mein Konto überwiesen.",
+      "exampleTranslation": "Ayın sonunda ücret hesabıma havale edilir.",
       "synonyms": [
-        "der Lohn",
-        "die Vergütung"
+        "der Verdienst",
+        "die Bezahlung"
       ],
       "level": "B1"
     },
     {
-      "german": "die Beförderung",
-      "turkish": "terfi / yükseltilme",
-      "example": "Nach drei Jahren bekam sie eine Beförderung.",
-      "exampleTranslation": "Üç yıl sonra bir terfi aldı.",
+      "german": "die Einarbeitung",
+      "turkish": "işe alıştırma, oryantasyon",
+      "example": "Die Einarbeitung neuer Mitarbeiter dauert in unserer Firma vier Wochen.",
+      "exampleTranslation": "Yeni çalışanların işe alıştırılması firmamızda dört hafta sürer.",
       "synonyms": [
-        "der Aufstieg",
-        "das Vorrücken"
+        "die Einführung",
+        "das Onboarding"
       ],
       "level": "B2"
     },
@@ -115,12 +114,12 @@
       "level": "B2"
     },
     {
-      "german": "die Überstunde",
-      "turkish": "fazla mesai / ek çalışma saati",
-      "example": "Letzte Woche habe ich viele Überstunden gemacht.",
-      "exampleTranslation": "Geçen hafta çok fazla mesai yaptım.",
+      "german": "die Versetzung",
+      "turkish": "tayin, başka bir göreve atama",
+      "example": "Nach seiner Versetzung arbeitet er jetzt in der Filiale in München.",
+      "exampleTranslation": "Tayininden sonra artık Münih şubesinde çalışıyor.",
       "synonyms": [
-        "die Mehrarbeit"
+        "die Umsetzung"
       ],
       "level": "B2"
     },
@@ -136,24 +135,22 @@
       "level": "C1"
     },
     {
-      "german": "die Belegschaft",
-      "turkish": "çalışanlar / personel kadrosu",
-      "example": "Die gesamte Belegschaft wurde informiert.",
-      "exampleTranslation": "Tüm personel bilgilendirildi.",
+      "german": "die Mitbestimmung",
+      "turkish": "ortak karar hakkı, katılım hakkı",
+      "example": "Durch die Mitbestimmung können Beschäftigte wichtige Entscheidungen mitprägen.",
+      "exampleTranslation": "Ortak karar hakkı sayesinde çalışanlar önemli kararları birlikte şekillendirebilir.",
       "synonyms": [
-        "das Personal",
-        "die Mitarbeiterschaft"
+        "die Teilhabe an Entscheidungen"
       ],
       "level": "C1"
     },
     {
-      "german": "die Vereinbarkeit",
-      "turkish": "bağdaştırılabilirlik / uyumluluk (iş-yaşam)",
-      "example": "Die Vereinbarkeit von Beruf und Familie ist wichtig.",
-      "exampleTranslation": "İş ve ailenin bağdaştırılabilirliği önemlidir.",
+      "german": "die Selbstständigkeit",
+      "turkish": "kendi işini kurma, bağımsız çalışma",
+      "example": "Viele Berufstätige wagen heute den Schritt in die Selbstständigkeit.",
+      "exampleTranslation": "Birçok çalışan bugün kendi işini kurma adımını atmaya cesaret ediyor.",
       "synonyms": [
-        "die Vereinbarung",
-        "die Abstimmung"
+        "die Freiberuflichkeit"
       ],
       "level": "C1"
     },

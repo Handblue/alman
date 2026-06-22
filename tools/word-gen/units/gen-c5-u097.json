@@ -8,22 +8,22 @@
   "firstWordId": 1441,
   "words": [
     {
-      "german": "die Post",
-      "turkish": "posta / postane",
-      "example": "Ich gehe zur Post.",
-      "exampleTranslation": "Postaneye gidiyorum.",
+      "german": "die Briefwaage",
+      "turkish": "mektup terazisi",
+      "example": "Ich lege den Brief auf die Briefwaage, um das richtige Porto zu bestimmen.",
+      "exampleTranslation": "Doğru posta ücretini belirlemek için mektubu mektup terazisine koyuyorum.",
       "synonyms": [
-        "das Postamt"
+        "die Postwaage"
       ],
       "level": "A1"
     },
     {
-      "german": "der Brief",
-      "turkish": "mektup",
-      "example": "Ich schreibe einen Brief an meine Oma.",
-      "exampleTranslation": "Anneanneme bir mektup yazıyorum.",
+      "german": "der Briefträger",
+      "turkish": "postacı",
+      "example": "Der Briefträger bringt jeden Morgen die Post.",
+      "exampleTranslation": "Postacı her sabah postayı getirir.",
       "synonyms": [
-        "das Schreiben"
+        "der Postbote"
       ],
       "level": "A1"
     },
@@ -38,22 +38,22 @@
       "level": "A1"
     },
     {
-      "german": "die Adresse",
-      "turkish": "adres",
-      "example": "Schreib bitte die Adresse hier.",
-      "exampleTranslation": "Lütfen adresi buraya yaz.",
+      "german": "die Postkarte",
+      "turkish": "kartpostal",
+      "example": "Aus dem Urlaub schreibe ich dir eine Postkarte.",
+      "exampleTranslation": "Tatilden sana bir kartpostal yazacağım.",
       "synonyms": [
-        "die Anschrift"
+        "die Ansichtskarte"
       ],
       "level": "A1"
     },
     {
-      "german": "die Briefmarke",
-      "turkish": "pul",
-      "example": "Ich klebe eine Briefmarke auf den Brief.",
-      "exampleTranslation": "Mektubun üzerine bir pul yapıştırıyorum.",
+      "german": "das Porto",
+      "turkish": "posta ücreti",
+      "example": "Für dieses schwere Paket ist das Porto sehr hoch.",
+      "exampleTranslation": "Bu ağır paket için posta ücreti çok yüksek.",
       "synonyms": [
-        "das Porto"
+        "das Briefporto"
       ],
       "level": "A1"
     },
@@ -92,40 +92,43 @@
       "level": "A2"
     },
     {
-      "german": "der Empfänger",
-      "turkish": "alıcı",
-      "example": "Der Empfänger wohnt in Berlin.",
-      "exampleTranslation": "Alıcı Berlin'de oturuyor.",
+      "german": "die Lieferung",
+      "turkish": "teslimat",
+      "example": "Die Lieferung kommt voraussichtlich morgen bei mir an.",
+      "exampleTranslation": "Teslimat tahminen yarın bana ulaşacak.",
       "synonyms": [
-        "der Adressat"
+        "die Anlieferung"
       ],
       "level": "A2"
     },
     {
-      "german": "abholen",
-      "turkish": "almak / teslim almak",
-      "example": "Ich muss das Paket morgen abholen.",
-      "exampleTranslation": "Paketi yarın almam gerekiyor.",
+      "german": "verschicken",
+      "turkish": "göndermek",
+      "example": "Ich möchte dieses Paket noch heute verschicken.",
+      "exampleTranslation": "Bu paketi bugün göndermek istiyorum.",
       "synonyms": [
-        "entgegennehmen"
+        "versenden",
+        "abschicken"
       ],
       "level": "A2"
     },
     {
-      "german": "der Absender",
-      "turkish": "gönderici",
-      "example": "Der Absender steht oben links.",
-      "exampleTranslation": "Gönderici sol üstte yazıyor.",
-      "synonyms": [],
+      "german": "die Nachsendung",
+      "turkish": "posta yönlendirme",
+      "example": "Nach dem Umzug habe ich einen Antrag auf Nachsendung gestellt.",
+      "exampleTranslation": "Taşındıktan sonra posta yönlendirme başvurusunda bulundum.",
+      "synonyms": [
+        "der Nachsendeauftrag"
+      ],
       "level": "B1"
     },
     {
-      "german": "die Sendung",
-      "turkish": "gönderi",
-      "example": "Ich verfolge meine Sendung online.",
-      "exampleTranslation": "Gönderimi internetten takip ediyorum.",
+      "german": "der Einschreibebrief",
+      "turkish": "taahhütlü mektup",
+      "example": "Wichtige Dokumente schicke ich immer als Einschreibebrief.",
+      "exampleTranslation": "Önemli belgeleri her zaman taahhütlü mektup olarak gönderiyorum.",
       "synonyms": [
-        "die Lieferung"
+        "das Einschreiben"
       ],
       "level": "B1"
     },

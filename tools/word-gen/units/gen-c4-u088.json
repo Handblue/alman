@@ -98,13 +98,13 @@
       "level": "B2"
     },
     {
-      "german": "die Entwicklung",
-      "turkish": "gelişme / seyir",
-      "example": "Die Entwicklung der Preise war positiv.",
-      "exampleTranslation": "Fiyatların seyri olumluydu.",
+      "german": "der Verlauf",
+      "turkish": "seyir, gidişat",
+      "example": "Der Verlauf der Kurve zeigt einen deutlichen Anstieg im Sommer.",
+      "exampleTranslation": "Eğrinin seyri yaz aylarında belirgin bir artış gösteriyor.",
       "synonyms": [
-        "der Verlauf",
-        "der Trend"
+        "der Ablauf",
+        "die Tendenz"
       ],
       "level": "B2"
     },

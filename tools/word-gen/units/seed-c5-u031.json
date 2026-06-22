@@ -9,12 +9,12 @@
       "id": 436,
       "categoryId": 5,
       "unitId": 31,
-      "german": "das Konto",
-      "turkish": "hesap / banka hesabı",
-      "example": "Ich möchte ein Konto eröffnen.",
-      "exampleTranslation": "Bir hesap açmak istiyorum.",
+      "german": "der Geldautomat",
+      "turkish": "bankamatik, ATM",
+      "example": "Ich hole am Geldautomaten frisches Bargeld.",
+      "exampleTranslation": "Bankamatikten taze nakit çekiyorum.",
       "synonyms": [
-        "das Bankkonto"
+        "der Bankautomat"
       ],
       "level": "A2"
     },
@@ -35,11 +35,13 @@
       "id": 438,
       "categoryId": 5,
       "unitId": 31,
-      "german": "abheben",
-      "turkish": "çekmek (para)",
-      "example": "Ich möchte 200 Euro abheben.",
-      "exampleTranslation": "200 Euro çekmek istiyorum.",
-      "synonyms": [],
+      "german": "leihen",
+      "turkish": "ödünç almak, borç vermek",
+      "example": "Kannst du mir bis morgen zwanzig Euro leihen?",
+      "exampleTranslation": "Bana yarına kadar yirmi euro ödünç verebilir misin?",
+      "synonyms": [
+        "borgen"
+      ],
       "level": "A2"
     },
     {

@@ -30,24 +30,22 @@
       "level": "B1"
     },
     {
-      "german": "die Stelle",
-      "turkish": "pozisyon / iş yeri",
-      "example": "Ich bewerbe mich um eine Stelle als Verkäuferin.",
-      "exampleTranslation": "Satış elemanı pozisyonu için başvuruyorum.",
+      "german": "die Bewerbungsfrist",
+      "turkish": "başvuru son tarihi",
+      "example": "Die Bewerbungsfrist für diese Position endet am 30. Juni.",
+      "exampleTranslation": "Bu pozisyon için başvuru son tarihi 30 Haziran'da sona eriyor.",
       "synonyms": [
-        "der Arbeitsplatz",
-        "die Position"
+        "der Bewerbungsschluss"
       ],
       "level": "B1"
     },
     {
-      "german": "das Zeugnis",
-      "turkish": "diploma / belge / iş referansı",
-      "example": "Bitte legen Sie Ihre Zeugnisse der Bewerbung bei.",
-      "exampleTranslation": "Lütfen belgelerinizi başvuruya ekleyin.",
+      "german": "die Berufserfahrung",
+      "turkish": "iş tecrübesi, mesleki deneyim",
+      "example": "Für diese Stelle brauchen Sie mehrjährige Berufserfahrung.",
+      "exampleTranslation": "Bu pozisyon için birkaç yıllık iş tecrübesine ihtiyacınız var.",
       "synonyms": [
-        "das Arbeitszeugnis",
-        "die Bescheinigung"
+        "die Praxiserfahrung"
       ],
       "level": "B1"
     },
@@ -73,21 +71,23 @@
       "level": "B2"
     },
     {
-      "german": "die Teilzeit",
-      "turkish": "yarı zamanlı çalışma",
-      "example": "Nach der Geburt arbeitet sie in Teilzeit.",
-      "exampleTranslation": "Doğumdan sonra yarı zamanlı çalışıyor.",
+      "german": "die Festanstellung",
+      "turkish": "kadrolu/daimi iş, sürekli istihdam",
+      "example": "Nach dem Praktikum bot mir die Firma eine Festanstellung an.",
+      "exampleTranslation": "Stajdan sonra şirket bana kadrolu bir iş teklif etti.",
       "synonyms": [
-        "die Teilzeitarbeit"
+        "das Festarbeitsverhältnis"
       ],
       "level": "B2"
     },
     {
-      "german": "die Probezeit",
-      "turkish": "deneme süresi",
-      "example": "Die Probezeit dauert in der Regel sechs Monate.",
-      "exampleTranslation": "Deneme süresi genellikle altı ay sürer.",
-      "synonyms": [],
+      "german": "die Einarbeitung",
+      "turkish": "işe alıştırma/oryantasyon dönemi",
+      "example": "Die Einarbeitung in die neuen Aufgaben dauert etwa zwei Wochen.",
+      "exampleTranslation": "Yeni görevlere alıştırma süreci yaklaşık iki hafta sürer.",
+      "synonyms": [
+        "die Einführung"
+      ],
       "level": "B2"
     },
     {
@@ -102,21 +102,23 @@
       "level": "B2"
     },
     {
-      "german": "der Arbeitgeber",
-      "turkish": "işveren",
-      "example": "Mein früherer Arbeitgeber hat mir ein gutes Zeugnis ausgestellt.",
-      "exampleTranslation": "Eski işverenim bana iyi bir referans verdi.",
-      "synonyms": [],
+      "german": "die Personalabteilung",
+      "turkish": "insan kaynakları departmanı",
+      "example": "Schicken Sie Ihre Unterlagen bitte an die Personalabteilung.",
+      "exampleTranslation": "Lütfen belgelerinizi insan kaynakları departmanına gönderin.",
+      "synonyms": [
+        "die Personalstelle",
+        "das Personalwesen"
+      ],
       "level": "B2"
     },
     {
-      "german": "der Arbeitnehmer",
-      "turkish": "çalışan / işçi",
-      "example": "Jeder Arbeitnehmer hat Anspruch auf bezahlten Urlaub.",
-      "exampleTranslation": "Her çalışanın ücretli izin hakkı vardır.",
+      "german": "der Stellenwechsel",
+      "turkish": "iş değiştirme",
+      "example": "Ein Stellenwechsel bringt oft bessere Verdienstmöglichkeiten mit sich.",
+      "exampleTranslation": "İş değiştirmek genellikle daha iyi kazanç olanakları getirir.",
       "synonyms": [
-        "der Angestellte",
-        "die Arbeitskraft"
+        "der Jobwechsel"
       ],
       "level": "B2"
     },

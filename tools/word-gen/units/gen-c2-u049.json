@@ -63,13 +63,13 @@
       "level": "A2"
     },
     {
-      "german": "schüchtern",
-      "turkish": "utangaç / çekingen",
-      "example": "Das schüchterne Kind sagt nichts.",
-      "exampleTranslation": "Utangaç çocuk hiçbir şey söylemiyor.",
+      "german": "neugierig",
+      "turkish": "meraklı",
+      "example": "Das neugierige Kind stellt viele Fragen.",
+      "exampleTranslation": "Meraklı çocuk birçok soru soruyor.",
       "synonyms": [
-        "zurückhaltend",
-        "scheu"
+        "wissbegierig",
+        "interessiert"
       ],
       "level": "A2"
     },

@@ -106,13 +106,14 @@
       "level": "B2"
     },
     {
-      "german": "jemandem reinen Wein einschenken",
-      "turkish": "birine acı gerçeği açıkça söylemek",
-      "example": "Der Arzt schenkte dem Patienten reinen Wein ein.",
-      "exampleTranslation": "Doktor hastaya gerçeği olduğu gibi söyledi.",
+      "german": "jemanden über den Tisch ziehen",
+      "turkish": "birini kazıklamak, birini dolandırmak",
+      "example": "Der Händler hat ihn beim Autokauf gnadenlos über den Tisch gezogen.",
+      "exampleTranslation": "Satıcı, araba alımında onu acımasızca kazıkladı.",
       "synonyms": [
-        "die Wahrheit sagen",
-        "offen reden"
+        "betrügen",
+        "übervorteilen",
+        "hereinlegen"
       ],
       "level": "C1"
     },
@@ -149,12 +150,13 @@
       "level": "B1"
     },
     {
-      "german": "der Besen",
-      "turkish": "süpürge",
-      "example": "Neue Besen kehren gut, sagt man oft.",
-      "exampleTranslation": "Yeni süpürgeler iyi süpürür, derler sık sık.",
+      "german": "der Teppich",
+      "turkish": "halı",
+      "example": "Im Wohnzimmer liegt ein dicker, weicher Teppich vor dem Sofa.",
+      "exampleTranslation": "Oturma odasında kanepenin önünde kalın, yumuşak bir halı var.",
       "synonyms": [
-        "der Reisigbesen"
+        "der Läufer",
+        "die Matte"
       ],
       "level": "B1"
     },

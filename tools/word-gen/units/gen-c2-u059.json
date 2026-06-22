@@ -8,13 +8,12 @@
   "firstWordId": 871,
   "words": [
     {
-      "german": "möchten",
-      "turkish": "istemek (nazik)",
-      "example": "Ich möchte einen Kaffee, bitte.",
-      "exampleTranslation": "Bir kahve istiyorum, lütfen.",
+      "german": "beinahe",
+      "turkish": "neredeyse, az kalsın",
+      "example": "Beinahe wäre ich zu spät gekommen.",
+      "exampleTranslation": "Az kalsın geç kalıyordum.",
       "synonyms": [
-        "wünschen",
-        "begehren"
+        "fast schon"
       ],
       "level": "A1"
     },
@@ -91,13 +90,13 @@
       "level": "B1"
     },
     {
-      "german": "höflich",
-      "turkish": "nazik / kibar",
-      "example": "Sie hat sehr höflich gefragt.",
-      "exampleTranslation": "Çok nazik bir şekilde sordu.",
+      "german": "zuvorkommend",
+      "turkish": "nazik, kibar, yardımsever",
+      "example": "Wenn du etwas erbittest, solltest du zuvorkommend formulieren.",
+      "exampleTranslation": "Bir şey rica ederken nazik bir biçimde ifade etmelisin.",
       "synonyms": [
-        "freundlich",
-        "zuvorkommend"
+        "entgegenkommend",
+        "rücksichtsvoll"
       ],
       "level": "B1"
     },

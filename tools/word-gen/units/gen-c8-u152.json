@@ -81,12 +81,13 @@
       "level": "B2"
     },
     {
-      "german": "das schwarze Schaf",
-      "turkish": "yüz karası / ailenin uğursuzu",
-      "example": "Er ist das schwarze Schaf der Familie.",
-      "exampleTranslation": "O, ailenin yüz karası.",
+      "german": "auf Nummer sicher gehen",
+      "turkish": "garantiye almak, riske girmemek",
+      "example": "Bevor er die Reise buchte, wollte er auf Nummer sicher gehen und las viele Bewertungen.",
+      "exampleTranslation": "Seyahati rezerve etmeden önce garantiye almak istedi ve birçok yorum okudu.",
       "synonyms": [
-        "der Außenseiter"
+        "kein Risiko eingehen",
+        "sich absichern"
       ],
       "level": "B2"
     },

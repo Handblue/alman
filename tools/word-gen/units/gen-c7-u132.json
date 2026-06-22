@@ -63,13 +63,12 @@
       "level": "B2"
     },
     {
-      "german": "der Inhalt",
-      "turkish": "içerik / muhteva",
-      "example": "Form und Inhalt müssen zusammenpassen.",
-      "exampleTranslation": "Biçim ve içerik birbiriyle uyuşmalı.",
+      "german": "die Stimmung",
+      "turkish": "atmosfer, ruh hali",
+      "example": "Die melancholische Stimmung des Gemäldes berührt jeden Betrachter.",
+      "exampleTranslation": "Tablonun melankolik atmosferi her izleyiciye dokunur.",
       "synonyms": [
-        "der Gehalt",
-        "die Substanz"
+        "die Atmosphäre"
       ],
       "level": "B2"
     },
@@ -118,35 +117,34 @@
       "level": "C1"
     },
     {
-      "german": "die Wahrnehmung",
-      "turkish": "algı / idrak",
-      "example": "Die ästhetische Wahrnehmung ist subjektiv geprägt.",
-      "exampleTranslation": "Estetik algı öznel olarak biçimlenir.",
+      "german": "die Sinnlichkeit",
+      "turkish": "duyusallık",
+      "example": "Die Sinnlichkeit der Farben verleiht dem Werk seine besondere Wirkung.",
+      "exampleTranslation": "Renklerin duyusallığı esere kendine özgü etkisini verir.",
       "synonyms": [
-        "die Empfindung",
-        "die Sinneserfahrung"
+        "die Sinnesfreude"
       ],
       "level": "C1"
     },
     {
-      "german": "die Ästhetik",
-      "turkish": "estetik / sanat felsefesi",
-      "example": "Die Ästhetik untersucht das Wesen des Schönen.",
-      "exampleTranslation": "Estetik, güzelin özünü inceler.",
+      "german": "die Einbildungskraft",
+      "turkish": "hayal gücü, muhayyile",
+      "example": "Nach Kant verbindet die Einbildungskraft im ästhetischen Urteil Anschauung und Verstand.",
+      "exampleTranslation": "Kant'a göre hayal gücü, estetik yargıda sezgi ile anlağı birleştirir.",
       "synonyms": [
-        "die Schönheitslehre",
-        "die Kunstphilosophie"
+        "die Imagination",
+        "die Phantasie"
       ],
       "level": "C1"
     },
     {
-      "german": "der Reiz",
-      "turkish": "cazibe / çekicilik / uyaran",
-      "example": "Der besondere Reiz dieses Werkes liegt in den Farben.",
-      "exampleTranslation": "Bu eserin özel çekiciliği renklerinde yatıyor.",
+      "german": "die Anmut",
+      "turkish": "zarafet, letafet",
+      "example": "Die Anmut der Bewegung macht den Tanz zu einem ästhetischen Erlebnis.",
+      "exampleTranslation": "Hareketin zarafeti, dansı estetik bir deneyime dönüştürür.",
       "synonyms": [
-        "der Charme",
-        "die Anziehungskraft"
+        "die Grazie",
+        "die Eleganz"
       ],
       "level": "C1"
     },

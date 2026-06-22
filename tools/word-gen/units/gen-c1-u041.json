@@ -8,12 +8,12 @@
   "firstWordId": 601,
   "words": [
     {
-      "german": "der Lehrer",
-      "turkish": "öğretmen (erkek)",
-      "example": "Der Lehrer erklärt die neue Grammatik.",
-      "exampleTranslation": "Öğretmen yeni dilbilgisini açıklıyor.",
+      "german": "die Krankenschwester",
+      "turkish": "hemşire",
+      "example": "Die Krankenschwester arbeitet im Krankenhaus.",
+      "exampleTranslation": "Hemşire hastanede çalışıyor.",
       "synonyms": [
-        "der Pädagoge"
+        "die Pflegerin"
       ],
       "level": "A1"
     },

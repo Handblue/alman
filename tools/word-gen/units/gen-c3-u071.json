@@ -41,24 +41,23 @@
       "level": "B1"
     },
     {
-      "german": "der Nutzer",
+      "german": "der Anwender",
       "turkish": "kullanıcı",
-      "example": "Jeder Nutzer muss die Regeln akzeptieren.",
-      "exampleTranslation": "Her kullanıcı kuralları kabul etmek zorundadır.",
+      "example": "Der Anwender muss die neue Software erst installieren, bevor er sie nutzen kann.",
+      "exampleTranslation": "Kullanıcı, yeni yazılımı kullanabilmek için önce yüklemek zorundadır.",
       "synonyms": [
-        "der Anwender",
-        "der Benutzer"
+        "der Verwender"
       ],
       "level": "B1"
     },
     {
-      "german": "der Bildschirm",
-      "turkish": "ekran",
-      "example": "Ich starre den ganzen Tag auf den Bildschirm.",
-      "exampleTranslation": "Bütün gün ekrana bakıyorum.",
+      "german": "die Benutzeroberfläche",
+      "turkish": "kullanıcı arayüzü",
+      "example": "Die neue Benutzeroberfläche der App ist übersichtlich und leicht zu bedienen.",
+      "exampleTranslation": "Uygulamanın yeni kullanıcı arayüzü düzenli ve kullanımı kolaydır.",
       "synonyms": [
-        "der Monitor",
-        "die Anzeige"
+        "die Bedienoberfläche",
+        "das Interface"
       ],
       "level": "B1"
     },

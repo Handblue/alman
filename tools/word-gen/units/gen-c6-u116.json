@@ -29,13 +29,13 @@
       "level": "B2"
     },
     {
-      "german": "die Anwendung",
-      "turkish": "uygulama",
-      "example": "Diese Anwendung läuft auf jedem Betriebssystem.",
-      "exampleTranslation": "Bu uygulama her işletim sisteminde çalışır.",
+      "german": "die Rechenleistung",
+      "turkish": "işlem gücü",
+      "example": "Das Training neuronaler Netze erfordert eine enorme Rechenleistung.",
+      "exampleTranslation": "Yapay sinir ağlarının eğitimi muazzam bir işlem gücü gerektirir.",
       "synonyms": [
-        "das Programm",
-        "die Software"
+        "die Rechenkapazität",
+        "die Prozessorleistung"
       ],
       "level": "B2"
     },
@@ -114,11 +114,13 @@
       "level": "B2"
     },
     {
-      "german": "das Training",
-      "turkish": "eğitim (model eğitimi)",
-      "example": "Das Training des Modells benötigt riesige Datenmengen.",
-      "exampleTranslation": "Modelin eğitimi devasa veri miktarları gerektirir.",
-      "synonyms": [],
+      "german": "das Rechenzentrum",
+      "turkish": "veri merkezi",
+      "example": "Die riesige Datenmenge wird in einem hochmodernen Rechenzentrum gespeichert.",
+      "exampleTranslation": "Bu devasa veri miktarı son derece modern bir veri merkezinde depolanır.",
+      "synonyms": [
+        "das Datenzentrum"
+      ],
       "level": "B2"
     },
     {

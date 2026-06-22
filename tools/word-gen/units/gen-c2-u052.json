@@ -8,33 +8,33 @@
   "firstWordId": 766,
   "words": [
     {
-      "german": "anrufen",
-      "turkish": "telefonla aramak",
-      "example": "Ich rufe dich heute Abend an.",
-      "exampleTranslation": "Seni bu akşam arayacağım.",
+      "german": "anziehen",
+      "turkish": "giymek",
+      "example": "Ich ziehe morgens schnell meine Jacke an.",
+      "exampleTranslation": "Sabahları ceketimi çabucak giyerim.",
       "synonyms": [
-        "telefonieren",
-        "kontaktieren"
+        "sich kleiden"
       ],
       "level": "A1"
     },
     {
-      "german": "aufstehen",
-      "turkish": "kalkmak / ayağa kalkmak",
-      "example": "Ich stehe jeden Morgen um sieben auf.",
-      "exampleTranslation": "Her sabah yedide kalkıyorum.",
+      "german": "abfahren",
+      "turkish": "(araçla) hareket etmek, kalkmak",
+      "example": "Der Zug fährt um acht Uhr ab.",
+      "exampleTranslation": "Tren saat sekizde kalkar.",
       "synonyms": [
-        "sich erheben"
+        "losfahren"
       ],
       "level": "A1"
     },
     {
-      "german": "einkaufen",
-      "turkish": "alışveriş yapmak",
-      "example": "Wir kaufen am Samstag im Supermarkt ein.",
-      "exampleTranslation": "Cumartesi süpermarkette alışveriş yapıyoruz.",
+      "german": "zurückkommen",
+      "turkish": "geri gelmek, dönmek",
+      "example": "Ich komme am Abend wieder zurück.",
+      "exampleTranslation": "Akşam tekrar geri gelirim.",
       "synonyms": [
-        "besorgen"
+        "zurückkehren",
+        "wiederkommen"
       ],
       "level": "A1"
     },

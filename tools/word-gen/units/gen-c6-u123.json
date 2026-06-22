@@ -40,13 +40,13 @@
       "level": "B2"
     },
     {
-      "german": "die Auswertung",
-      "turkish": "değerlendirme / analiz",
-      "example": "Die Auswertung der Ergebnisse erfolgt am Computer.",
-      "exampleTranslation": "Sonuçların değerlendirilmesi bilgisayarda yapılır.",
+      "german": "die Häufigkeit",
+      "turkish": "sıklık, frekans",
+      "example": "Die Häufigkeit eines Merkmals zeigt, wie oft es in der Stichprobe vorkommt.",
+      "exampleTranslation": "Bir özelliğin sıklığı, örneklemde ne kadar sık ortaya çıktığını gösterir.",
       "synonyms": [
-        "die Analyse",
-        "die Bewertung"
+        "die Frequenz",
+        "die Anzahl"
       ],
       "level": "B2"
     },
@@ -116,13 +116,13 @@
       "level": "C1"
     },
     {
-      "german": "die Beobachtung",
-      "turkish": "gözlem",
-      "example": "Die teilnehmende Beobachtung liefert qualitative Daten.",
-      "exampleTranslation": "Katılımcı gözlem nitel veriler sağlar.",
+      "german": "die Kennzahl",
+      "turkish": "gösterge, anahtar değer",
+      "example": "Eine statistische Kennzahl fasst viele Daten in einer einzigen Zahl zusammen.",
+      "exampleTranslation": "İstatistiksel bir gösterge, çok sayıda veriyi tek bir sayıda özetler.",
       "synonyms": [
-        "die Observation",
-        "die Betrachtung"
+        "der Indikator",
+        "die Maßzahl"
       ],
       "level": "B2"
     },

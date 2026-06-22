@@ -29,13 +29,12 @@
       "level": "B1"
     },
     {
-      "german": "der Flüchtling",
-      "turkish": "mülteci / sığınmacı",
-      "example": "Die Stadt nimmt viele Flüchtlinge auf.",
-      "exampleTranslation": "Şehir birçok mülteciyi kabul ediyor.",
+      "german": "der Asylbewerber",
+      "turkish": "sığınmacı, iltica başvurusunda bulunan kişi",
+      "example": "Der Asylbewerber wartet seit Monaten auf die Entscheidung über seinen Antrag.",
+      "exampleTranslation": "Sığınmacı, başvurusu hakkındaki karar için aylardır bekliyor.",
       "synonyms": [
-        "der Geflüchtete",
-        "der Asylsuchende"
+        "der Schutzsuchende"
       ],
       "level": "B1"
     },
@@ -50,24 +49,22 @@
       "level": "B1"
     },
     {
-      "german": "die Heimat",
-      "turkish": "memleket / yurt / anavatan",
-      "example": "Er vermisst seine alte Heimat sehr.",
-      "exampleTranslation": "Eski memleketini çok özlüyor.",
+      "german": "die Aufnahmegesellschaft",
+      "turkish": "kabul eden toplum, göçmenleri kabul eden toplum",
+      "example": "Die Aufnahmegesellschaft muss offen für neue Mitbürger sein.",
+      "exampleTranslation": "Kabul eden toplum, yeni yurttaşlara karşı açık olmalıdır.",
       "synonyms": [
-        "das Heimatland",
-        "die Herkunft"
+        "die Mehrheitsgesellschaft"
       ],
       "level": "B1"
     },
     {
-      "german": "die Vielfalt",
-      "turkish": "çeşitlilik",
-      "example": "Kulturelle Vielfalt bereichert unsere Gesellschaft.",
-      "exampleTranslation": "Kültürel çeşitlilik toplumumuzu zenginleştirir.",
+      "german": "das Miteinander",
+      "turkish": "birlikte var olma, dayanışma içinde yaşama",
+      "example": "Ein respektvolles Miteinander ist die Grundlage jeder Gesellschaft.",
+      "exampleTranslation": "Saygılı bir birliktelik, her toplumun temelidir.",
       "synonyms": [
-        "die Diversität",
-        "die Mannigfaltigkeit"
+        "das Beisammensein"
       ],
       "level": "B2"
     },
@@ -83,12 +80,12 @@
       "level": "B2"
     },
     {
-      "german": "die Chancengleichheit",
-      "turkish": "fırsat eşitliği",
-      "example": "Bildung soll Chancengleichheit für alle schaffen.",
-      "exampleTranslation": "Eğitim herkes için fırsat eşitliği sağlamalı.",
+      "german": "die Bildungsgerechtigkeit",
+      "turkish": "eğitimde fırsat eşitliği, eğitim adaleti",
+      "example": "Ohne Bildungsgerechtigkeit haben Kinder aus armen Familien schlechtere Chancen.",
+      "exampleTranslation": "Eğitim adaleti olmadan, yoksul ailelerin çocuklarının şansı daha düşüktür.",
       "synonyms": [
-        "die Gleichberechtigung"
+        "der Bildungszugang"
       ],
       "level": "B2"
     },
@@ -104,13 +101,12 @@
       "level": "B2"
     },
     {
-      "german": "die Herkunft",
-      "turkish": "köken / menşe",
-      "example": "Niemand darf wegen seiner Herkunft benachteiligt werden.",
-      "exampleTranslation": "Hiç kimse kökeni nedeniyle dezavantajlı duruma düşürülemez.",
+      "german": "der Migrationshintergrund",
+      "turkish": "göç geçmişi, göçmen kökeni",
+      "example": "Viele Menschen mit Migrationshintergrund leben seit Generationen in Deutschland.",
+      "exampleTranslation": "Göç geçmişi olan birçok insan, nesillerdir Almanya'da yaşıyor.",
       "synonyms": [
-        "die Abstammung",
-        "die Wurzeln"
+        "die Zuwanderungsgeschichte"
       ],
       "level": "B2"
     },
@@ -137,24 +133,23 @@
       "level": "C1"
     },
     {
-      "german": "die Teilhabe",
-      "turkish": "katılım / pay sahibi olma",
-      "example": "Sprachkenntnisse ermöglichen die gesellschaftliche Teilhabe.",
-      "exampleTranslation": "Dil bilgisi toplumsal katılımı mümkün kılar.",
+      "german": "die Chancengerechtigkeit",
+      "turkish": "fırsat adaleti, hakkaniyetli fırsat dağılımı",
+      "example": "Die Politik soll für mehr Chancengerechtigkeit am Arbeitsmarkt sorgen.",
+      "exampleTranslation": "Siyaset, iş piyasasında daha fazla fırsat adaleti sağlamalıdır.",
       "synonyms": [
-        "die Beteiligung",
-        "die Mitwirkung"
+        "die Verteilungsgerechtigkeit"
       ],
       "level": "C1"
     },
     {
-      "german": "die Ausgrenzung",
-      "turkish": "dışlama / dışlanma",
-      "example": "Armut führt oft zur sozialen Ausgrenzung.",
-      "exampleTranslation": "Yoksulluk çoğu zaman toplumsal dışlanmaya yol açar.",
+      "german": "die Stigmatisierung",
+      "turkish": "damgalama, dışlayıcı etiketleme",
+      "example": "Die Stigmatisierung von Zuwanderern erschwert ihre Integration erheblich.",
+      "exampleTranslation": "Göçmenlerin damgalanması, uyumlarını önemli ölçüde zorlaştırır.",
       "synonyms": [
-        "die Marginalisierung",
-        "der Ausschluss"
+        "die Brandmarkung",
+        "die Abstempelung"
       ],
       "level": "C1"
     },

@@ -9,12 +9,13 @@
       "id": 361,
       "categoryId": 3,
       "unitId": 25,
-      "german": "die Bewerbung",
-      "turkish": "başvuru / iş başvurusu",
-      "example": "Ich habe meine Bewerbung abgeschickt.",
-      "exampleTranslation": "Başvurumu gönderdim.",
+      "german": "die Einarbeitung",
+      "turkish": "işe alıştırma, oryantasyon süreci",
+      "example": "Die Einarbeitung neuer Mitarbeiter dauert in unserem Unternehmen meistens drei Monate.",
+      "exampleTranslation": "Yeni çalışanların işe alıştırılması şirketimizde genellikle üç ay sürer.",
       "synonyms": [
-        "das Gesuch"
+        "die Einführung",
+        "die Anlernphase"
       ],
       "level": "B2"
     },
