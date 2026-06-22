@@ -11,7 +11,7 @@
       "german": "der Augenblick",
       "turkish": "an / lahza",
       "example": "Einen Augenblick bitte, ich komme sofort.",
-      "exampleTranslation": "Bir saniye lütfen, hemen geliyorum.",
+      "exampleTranslation": "Bir an lütfen, hemen geliyorum.",
       "synonyms": [
         "der Moment",
         "die Sekunde"
@@ -22,7 +22,7 @@
       "german": "rund um die Uhr",
       "turkish": "günün her saati / aralıksız 24 saat",
       "example": "Die Apotheke hat rund um die Uhr geöffnet.",
-      "exampleTranslation": "Eczane günün her saati açık.",
+      "exampleTranslation": "Eczane günün her saati açıktır.",
       "synonyms": [
         "pausenlos",
         "Tag und Nacht"
@@ -99,7 +99,7 @@
       "german": "im Handumdrehen",
       "turkish": "göz açıp kapayıncaya kadar / çabucak",
       "example": "Sie löste die Aufgabe im Handumdrehen.",
-      "exampleTranslation": "Ödevi göz açıp kapayıncaya kadar çözdü.",
+      "exampleTranslation": "Görevi göz açıp kapayıncaya kadar çözdü.",
       "synonyms": [
         "blitzschnell",
         "ruckzuck"

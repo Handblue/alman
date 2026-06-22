@@ -67,7 +67,9 @@
       "turkish": "Pandora'nın kutusu",
       "example": "Mit der Frage öffnete er die Büchse der Pandora.",
       "exampleTranslation": "Bu soruyla Pandora'nın kutusunu açtı.",
-      "synonyms": [],
+      "synonyms": [
+        "die Pandorabüchse"
+      ],
       "level": "B2"
     },
     {
@@ -82,7 +84,7 @@
       "level": "B2"
     },
     {
-      "german": "das Auge um Auge",
+      "german": "Auge um Auge",
       "turkish": "göze göz (kısas)",
       "example": "Das Prinzip Auge um Auge führt zu Gewalt.",
       "exampleTranslation": "Göze göz ilkesi şiddete yol açar.",

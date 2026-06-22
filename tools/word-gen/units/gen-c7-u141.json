@@ -19,7 +19,7 @@
     },
     {
       "german": "die Hinfälligkeit",
-      "turkish": "fanilik, ölümlü ve kırılgan oluş",
+      "turkish": "fanilik, kırılgan ve geçici oluş",
       "example": "Krankheit erinnert uns an die Hinfälligkeit des menschlichen Körpers.",
       "exampleTranslation": "Hastalık bize insan bedeninin faniliğini hatırlatır.",
       "synonyms": [
@@ -46,7 +46,7 @@
       "exampleTranslation": "Öz düşünüm yoluyla insan kendi sınırlarını tanır.",
       "synonyms": [
         "die Selbstbetrachtung",
-        "das Nachdenken über sich"
+        "die Selbsterkenntnis"
       ],
       "level": "C1"
     },
@@ -73,9 +73,9 @@
     },
     {
       "german": "die Zivilisation",
-      "turkish": "uygarlık / medeniyet",
-      "example": "Die moderne Zivilisation beruht auf Technik.",
-      "exampleTranslation": "Modern uygarlık tekniğe dayanır.",
+      "turkish": "uygarlık, medeniyet",
+      "example": "Die moderne Zivilisation beruht auf Technik und Wissenschaft.",
+      "exampleTranslation": "Modern uygarlık tekniğe ve bilime dayanır.",
       "synonyms": [
         "die Kultur"
       ],
@@ -83,7 +83,7 @@
     },
     {
       "german": "der Trieb",
-      "turkish": "içgüdü / dürtü",
+      "turkish": "içgüdü, dürtü",
       "example": "Der Trieb nach Selbsterhaltung ist angeboren.",
       "exampleTranslation": "Kendini koruma içgüdüsü doğuştandır.",
       "synonyms": [
@@ -94,7 +94,7 @@
     },
     {
       "german": "der Leib",
-      "turkish": "beden / vücut",
+      "turkish": "beden, vücut",
       "example": "Leib und Seele bilden eine Einheit.",
       "exampleTranslation": "Beden ve ruh bir bütün oluşturur.",
       "synonyms": [
@@ -106,10 +106,10 @@
       "german": "die Selbstentfaltung",
       "turkish": "kendini geliştirme, potansiyelini açığa çıkarma",
       "example": "Freiheit ist die Voraussetzung für die persönliche Selbstentfaltung.",
-      "exampleTranslation": "Özgürlük, kişisel kendini geliştirmenin önkoşuludur.",
+      "exampleTranslation": "Özgürlük, kişisel olarak kendini geliştirmenin önkoşuludur.",
       "synonyms": [
         "die persönliche Entfaltung",
-        "die Reifung"
+        "die Selbstverwirklichung"
       ],
       "level": "C1"
     },
@@ -142,7 +142,7 @@
       "exampleTranslation": "Anın geçiciliği hayatı değerli kılar.",
       "synonyms": [
         "die Kurzlebigkeit",
-        "das Vergehen"
+        "die Vergänglichkeit"
       ],
       "level": "C1"
     },

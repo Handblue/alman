@@ -63,7 +63,7 @@
     },
     {
       "german": "der Redebeitrag",
-      "turkish": "söz alma, konuşma katkısı",
+      "turkish": "söz alma / konuşma katkısı",
       "example": "Mit ihrem klugen Redebeitrag belebte sie die ganze Diskussionsrunde.",
       "exampleTranslation": "Akıllıca söz almasıyla tüm tartışma turunu canlandırdı.",
       "synonyms": [
@@ -85,7 +85,7 @@
     },
     {
       "german": "die Rückfrage",
-      "turkish": "soru / yeniden sorma / ek soru",
+      "turkish": "ek soru / açıklayıcı soru",
       "example": "Bei Rückfragen wenden Sie sich bitte an mich.",
       "exampleTranslation": "Sorularınız olursa lütfen bana başvurun.",
       "synonyms": [
@@ -106,17 +106,18 @@
     },
     {
       "german": "die Zwischenfrage",
-      "turkish": "ara soru, kesintili soru",
+      "turkish": "ara soru / araya giren soru",
       "example": "Der Vortragende beantwortete jede Zwischenfrage aus dem Publikum geduldig.",
       "exampleTranslation": "Sunucu, dinleyicilerden gelen her ara soruyu sabırla yanıtladı.",
       "synonyms": [
-        "die Nachfrage"
+        "der Einwurf",
+        "der Zwischenruf"
       ],
       "level": "C1"
     },
     {
       "german": "die Gesprächsführung",
-      "turkish": "konuşma yönetimi, tartışma yönetimi",
+      "turkish": "konuşma yönetimi / tartışma yönetimi",
       "example": "Eine souveräne Gesprächsführung hielt das Podium auch bei hitzigen Debatten im Gleichgewicht.",
       "exampleTranslation": "Yetkin bir konuşma yönetimi, ateşli tartışmalarda bile paneli dengede tuttu.",
       "synonyms": [

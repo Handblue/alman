@@ -13,8 +13,8 @@
       "example": "In der Dialektik treibt der Gegensatz zwischen These und Antithese den Prozess voran.",
       "exampleTranslation": "Diyalektikte tez ile antitez arasındaki karşıtlık süreci ileriye taşır.",
       "synonyms": [
-        "der Widerstreit",
-        "die Antithese"
+        "der Widerspruch",
+        "der Widerstreit"
       ],
       "level": "B2"
     },
@@ -109,6 +109,7 @@
       "example": "Marx beschreibt die Entfremdung des Arbeiters von seiner Arbeit.",
       "exampleTranslation": "Marx, işçinin emeğine yabancılaşmasını betimler.",
       "synonyms": [
+        "die Selbstentfremdung",
         "die Distanzierung"
       ],
       "level": "C1"
@@ -127,7 +128,7 @@
       "example": "Nach marxistischer Auffassung ist der Klassenkampf der Motor der gesellschaftlichen Veränderung.",
       "exampleTranslation": "Marksist anlayışa göre sınıf mücadelesi toplumsal değişimin itici gücüdür.",
       "synonyms": [
-        "der Klassenwiderstreit",
+        "der Klassengegensatz",
         "die Klassenauseinandersetzung"
       ],
       "level": "C1"

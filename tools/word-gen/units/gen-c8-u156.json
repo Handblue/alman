@@ -20,7 +20,7 @@
     },
     {
       "german": "mutig",
-      "turkish": "cesur / yürekli",
+      "turkish": "cesur, yürekli",
       "example": "Der mutige Junge sprang ins kalte Wasser.",
       "exampleTranslation": "Cesur çocuk soğuk suya atladı.",
       "synonyms": [
@@ -31,7 +31,7 @@
     },
     {
       "german": "stur",
-      "turkish": "inatçı / dik kafalı",
+      "turkish": "inatçı, dik kafalı",
       "example": "Mein Bruder ist manchmal sehr stur.",
       "exampleTranslation": "Kardeşim bazen çok inatçıdır.",
       "synonyms": [
@@ -55,7 +55,7 @@
       "german": "strebsam",
       "turkish": "gayretli, hırslı, azimli",
       "example": "Als strebsame Studentin lernt sie jeden Tag.",
-      "exampleTranslation": "Azimli bir öğrenci olarak her gün çalışır.",
+      "exampleTranslation": "Azimli bir öğrenci olarak her gün ders çalışır.",
       "synonyms": [
         "zielstrebig",
         "fleißig"
@@ -64,7 +64,7 @@
     },
     {
       "german": "bescheiden",
-      "turkish": "alçakgönüllü / mütevazı",
+      "turkish": "alçakgönüllü, mütevazı",
       "example": "Trotz seines Erfolgs blieb er bescheiden.",
       "exampleTranslation": "Başarısına rağmen alçakgönüllü kaldı.",
       "synonyms": [
@@ -75,7 +75,7 @@
     },
     {
       "german": "feige",
-      "turkish": "korkak / ödlek",
+      "turkish": "korkak, ödlek",
       "example": "Es war feige, einfach wegzulaufen.",
       "exampleTranslation": "Öylece kaçıp gitmek korkakçaydı.",
       "synonyms": [
@@ -86,9 +86,9 @@
     },
     {
       "german": "naiv",
-      "turkish": "saf / safdil",
+      "turkish": "saf, safdil",
       "example": "Sie war naiv genug, ihm alles zu glauben.",
-      "exampleTranslation": "Ona her şeye inanacak kadar saftı.",
+      "exampleTranslation": "Ona her söylediğine inanacak kadar saftı.",
       "synonyms": [
         "arglos",
         "gutgläubig"
@@ -97,7 +97,7 @@
     },
     {
       "german": "die Bescheidenheit",
-      "turkish": "alçakgönüllülük / tevazu",
+      "turkish": "alçakgönüllülük, tevazu",
       "example": "Seine Bescheidenheit beeindruckt alle Kollegen.",
       "exampleTranslation": "Alçakgönüllülüğü tüm meslektaşlarını etkiliyor.",
       "synonyms": [
@@ -108,7 +108,7 @@
     },
     {
       "german": "die Treue",
-      "turkish": "sadakat / vefa",
+      "turkish": "sadakat, vefa",
       "example": "Ihre Treue zur Familie ist bewundernswert.",
       "exampleTranslation": "Ailesine olan sadakati hayranlık verici.",
       "synonyms": [
@@ -120,7 +120,7 @@
     {
       "german": "schlau wie ein Fuchs sein",
       "turkish": "tilki gibi kurnaz olmak",
-      "example": "Er ist schlau wie ein Fuchs bei Verhandlungen.",
+      "example": "Er ist bei Verhandlungen schlau wie ein Fuchs.",
       "exampleTranslation": "Müzakerelerde tilki gibi kurnazdır.",
       "synonyms": [
         "gerissen sein",
@@ -130,7 +130,7 @@
     },
     {
       "german": "das Herz auf dem rechten Fleck haben",
-      "turkish": "yüreği doğru yerde olmak / iyi kalpli olmak",
+      "turkish": "yüreği doğru yerde olmak, iyi kalpli olmak",
       "example": "Sie hat das Herz auf dem rechten Fleck.",
       "exampleTranslation": "O, iyi kalpli biridir.",
       "synonyms": [
@@ -151,7 +151,7 @@
     },
     {
       "german": "kein Blatt vor den Mund nehmen",
-      "turkish": "sözünü sakınmamak / açık sözlü olmak",
+      "turkish": "sözünü sakınmamak, açık sözlü olmak",
       "example": "Mein Onkel nimmt kein Blatt vor den Mund.",
       "exampleTranslation": "Amcam sözünü sakınmaz.",
       "synonyms": [
@@ -162,9 +162,9 @@
     },
     {
       "german": "jemandem ist eine Laus über die Leber gelaufen",
-      "turkish": "keyfi kaçmış / aksi olmak",
+      "turkish": "keyfi kaçmış, aksi olmak",
       "example": "Dir ist wohl eine Laus über die Leber gelaufen.",
-      "exampleTranslation": "Galiba senin bir şeyine canın sıkıldı.",
+      "exampleTranslation": "Galiba bir şeye canın sıkıldı.",
       "synonyms": [
         "schlecht gelaunt sein",
         "verärgert sein"

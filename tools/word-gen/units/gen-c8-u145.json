@@ -11,7 +11,7 @@
       "german": "einen Bären aufbinden",
       "turkish": "birine kazık atmak / yutturmak / kandırmak",
       "example": "Du willst mir wohl einen Bären aufbinden!",
-      "exampleTranslation": "Beni kandırmaya mı çalışıyorsun!",
+      "exampleTranslation": "Beni kandırmaya çalışıyorsun herhalde!",
       "synonyms": [
         "belügen",
         "täuschen"
@@ -93,7 +93,7 @@
     },
     {
       "german": "jemandem einen Floh ins Ohr setzen",
-      "turkish": "birine olmadık bir fikir/hayal kaptırmak",
+      "turkish": "birinin kafasına olmadık bir fikir sokmak",
       "example": "Wer hat dir diesen Floh ins Ohr gesetzt?",
       "exampleTranslation": "Bu fikri kafana kim soktu?",
       "synonyms": [
@@ -104,9 +104,9 @@
     },
     {
       "german": "einen Maulwurf haben",
-      "turkish": "içeride bir köştebek/casus bulunmak",
+      "turkish": "içeride bir köstebek/casus bulunmak",
       "example": "Die Firma hat offenbar einen Maulwurf.",
-      "exampleTranslation": "Firmada belli ki bir köştebek var.",
+      "exampleTranslation": "Firmada belli ki bir köstebek var.",
       "synonyms": [
         "der Spitzel",
         "der Spion"
@@ -146,9 +146,9 @@
     },
     {
       "german": "weiße Mäuse sehen",
-      "turkish": "sayıklamak / sarhoşluktan halüsinasyon görmek",
+      "turkish": "sarhoşluktan halüsinasyon görmek / aşırı sarhoş olmak",
       "example": "Nach so viel Wein sieht er weiße Mäuse.",
-      "exampleTranslation": "O kadar şaraptan sonra sayıklıyor.",
+      "exampleTranslation": "Bu kadar şaraptan sonra halüsinasyon görüyor.",
       "synonyms": [
         "halluzinieren"
       ],

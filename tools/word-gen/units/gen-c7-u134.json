@@ -13,14 +13,14 @@
       "example": "Descartes begann seine Philosophie mit einer radikalen Skepsis gegenüber allem Wissen.",
       "exampleTranslation": "Descartes felsefesine, tüm bilgiye karşı köktenci bir kuşkuyla başladı.",
       "synonyms": [
-        "der Argwohn",
-        "die Bedenken"
+        "das Misstrauen",
+        "der Zweifel"
       ],
       "level": "B2"
     },
     {
       "german": "die Gewissheit",
-      "turkish": "kesinlik / yakine",
+      "turkish": "kesinlik, yakin",
       "example": "Er suchte nach einer unerschütterlichen Gewissheit.",
       "exampleTranslation": "Sarsılmaz bir kesinlik arıyordu.",
       "synonyms": [
@@ -62,7 +62,7 @@
     },
     {
       "german": "der Verstand",
-      "turkish": "akıl / anlık / idrak",
+      "turkish": "akıl, anlık, idrak",
       "example": "Der menschliche Verstand ordnet die Erfahrung.",
       "exampleTranslation": "İnsan anlığı deneyimi düzenler.",
       "synonyms": [
@@ -73,9 +73,9 @@
     },
     {
       "german": "die Unmündigkeit",
-      "turkish": "ergin olmama / erginsizlik",
+      "turkish": "ergin olmama, erginsizlik",
       "example": "Aufklärung ist der Ausgang aus der Unmündigkeit.",
-      "exampleTranslation": "Aydınlanma, ergin olmamadan çıkıştır.",
+      "exampleTranslation": "Aydınlanma, erginsizlikten çıkıştır.",
       "synonyms": [
         "die Unselbstständigkeit"
       ],
@@ -87,18 +87,19 @@
       "example": "Für Kant beruht die sittliche Freiheit auf der Selbstgesetzgebung der Vernunft.",
       "exampleTranslation": "Kant'a göre ahlaki özgürlük, aklın kendi yasasını koymasına dayanır.",
       "synonyms": [
-        "die Selbstbestimmung des Willens"
+        "die Selbstbestimmung des Willens",
+        "die Autonomie"
       ],
       "level": "C1"
     },
     {
       "german": "der Selbstdenker",
-      "turkish": "kendi başına düşünen kişi, kendi aklıyla düşünen kimse",
+      "turkish": "kendi aklıyla düşünen kişi",
       "example": "Kant fordert in der Aufklärung jeden Menschen auf, ein mutiger Selbstdenker zu werden.",
-      "exampleTranslation": "Kant, Aydınlanma'da her insanı cesur bir özgür düşünür, yani kendi aklıyla düşünen biri olmaya çağırır.",
+      "exampleTranslation": "Kant, Aydınlanma'da her insanı cesur, kendi aklıyla düşünen biri olmaya çağırır.",
       "synonyms": [
-        "der Freidenker",
-        "der Querdenker"
+        "der Selberdenker",
+        "der Freidenker"
       ],
       "level": "C1"
     },
@@ -109,13 +110,13 @@
       "exampleTranslation": "Hegel zihni, düşünce ile duygunun buluştuğu yer olarak görür.",
       "synonyms": [
         "das Innere",
-        "die Seelenkraft"
+        "die Seele"
       ],
       "level": "C1"
     },
     {
       "german": "die Anschauung",
-      "turkish": "görü / sezgi / bakış",
+      "turkish": "görü, sezgi",
       "example": "Raum und Zeit sind Formen der Anschauung.",
       "exampleTranslation": "Uzam ve zaman, görünün formlarıdır.",
       "synonyms": [
@@ -126,7 +127,7 @@
     },
     {
       "german": "der Grundsatz",
-      "turkish": "ilke / temel önerme",
+      "turkish": "ilke, temel önerme",
       "example": "Dieser Grundsatz gilt unabhängig von der Erfahrung.",
       "exampleTranslation": "Bu ilke deneyimden bağımsız olarak geçerlidir.",
       "synonyms": [
@@ -137,17 +138,17 @@
     },
     {
       "german": "die Wesensschau",
-      "turkish": "öz görüsü / öze bakış",
+      "turkish": "öz görüsü, öze bakış",
       "example": "Die Wesensschau will das Allgemeine erfassen.",
       "exampleTranslation": "Öz görüsü, tümel olanı kavramak ister.",
       "synonyms": [
-        "die Intuition"
+        "die Wesenserfassung"
       ],
       "level": "C1"
     },
     {
       "german": "der Zweifelsfall",
-      "turkish": "şüpheli durum / kuşkulu hal",
+      "turkish": "şüpheli durum, kuşkulu hal",
       "example": "Im Zweifelsfall entscheidet die klare Einsicht.",
       "exampleTranslation": "Şüpheli durumda açık kavrayış karar verir.",
       "synonyms": [

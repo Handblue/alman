@@ -82,7 +82,7 @@
       "german": "die Veröffentlichung",
       "turkish": "yayın / yayımlama",
       "example": "Ihre Veröffentlichung erschien in einer Fachzeitschrift.",
-      "exampleTranslation": "Yayını bir uzmanlık dergisinde çıktı.",
+      "exampleTranslation": "Yayını bir uzmanlık dergisinde yayımlandı.",
       "synonyms": [
         "die Publikation",
         "der Aufsatz"
@@ -138,7 +138,7 @@
       "exampleTranslation": "Doçentlik sonrası bir dersi bağımsız olarak yürütebilir.",
       "synonyms": [
         "die Lehrbefähigung",
-        "die venia legendi"
+        "die Venia Legendi"
       ],
       "level": "C1"
     },
@@ -159,7 +159,7 @@
       "example": "Jedes Modul bringt fünf Leistungspunkte.",
       "exampleTranslation": "Her modül beş kredi kazandırıyor.",
       "synonyms": [
-        "das Kreditpunkt",
+        "der Kreditpunkt",
         "der Credit Point"
       ],
       "level": "C1"

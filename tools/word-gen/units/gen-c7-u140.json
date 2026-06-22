@@ -81,7 +81,7 @@
       "german": "die Unendlichkeit",
       "turkish": "sonsuzluk",
       "example": "Die Unendlichkeit Gottes lässt sich kaum begreifen.",
-      "exampleTranslation": "Tanrı'nın sonsuzluğu zorlukla kavranabilir.",
+      "exampleTranslation": "Tanrı'nın sonsuzluğunu kavramak neredeyse imkânsızdır.",
       "synonyms": [
         "die Ewigkeit",
         "die Grenzenlosigkeit"
@@ -110,7 +110,7 @@
     },
     {
       "german": "die Vorsehung",
-      "turkish": "ilahi takdir, kader",
+      "turkish": "ilahi takdir / kader",
       "example": "Viele Gläubige vertrauen darauf, dass eine göttliche Vorsehung ihr Schicksal lenkt.",
       "exampleTranslation": "Birçok mümin, ilahi bir takdirin kaderlerini yönlendirdiğine güvenir.",
       "synonyms": [
@@ -143,7 +143,7 @@
     },
     {
       "german": "die Andacht",
-      "turkish": "ibadet, huşu içinde tefekkür",
+      "turkish": "ibadet / huşu içinde tefekkür",
       "example": "In stiller Andacht versammelten sich die Gläubigen vor dem Altar.",
       "exampleTranslation": "Müminler sessiz bir huşu içinde sunağın önünde toplandılar.",
       "synonyms": [

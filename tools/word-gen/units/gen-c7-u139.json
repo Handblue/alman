@@ -87,7 +87,7 @@
       "german": "das Schema",
       "turkish": "şema",
       "example": "Jede wissenschaftliche Theorie folgt einem bestimmten Schema der Erklärung.",
-      "exampleTranslation": "Her bilimsel teori belirli bir açıklama şemasını izler.",
+      "exampleTranslation": "Her bilimsel kuram belirli bir açıklama şemasını izler.",
       "synonyms": [
         "der Aufbau",
         "die Struktur"
@@ -136,9 +136,9 @@
     },
     {
       "german": "die Operationalisierung",
-      "turkish": "işlevselleştirme",
+      "turkish": "işlevselleştirme / işlemselleştirme",
       "example": "Die Operationalisierung eines abstrakten Begriffs macht ihn überhaupt erst messbar.",
-      "exampleTranslation": "Soyut bir kavramın işlevselleştirilmesi, onu ancak o zaman ölçülebilir kılar.",
+      "exampleTranslation": "Soyut bir kavramın işlemselleştirilmesi, onu ancak o zaman ölçülebilir kılar.",
       "synonyms": [
         "die Messbarmachung"
       ],

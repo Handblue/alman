@@ -13,7 +13,8 @@
       "example": "Nach der Feier war er total blau.",
       "exampleTranslation": "Partiden sonra tamamen sarhoştu.",
       "synonyms": [
-        "betrunken sein"
+        "betrunken sein",
+        "angetrunken sein"
       ],
       "level": "B1"
     },
@@ -76,8 +77,8 @@
       "example": "Als sie das Auto sah, war sie grün vor Neid.",
       "exampleTranslation": "Arabayı görünce kıskançlıktan kıvrandı.",
       "synonyms": [
-        "eifersüchtig sein",
-        "neidisch sein"
+        "neidisch sein",
+        "missgünstig sein"
       ],
       "level": "B2"
     },
@@ -115,11 +116,11 @@
     },
     {
       "german": "etwas schwarz auf weiß haben",
-      "turkish": "bir şeyi yazılı olarak / belgeli olarak elinde bulundurmak",
+      "turkish": "bir şeyi yazılı / belgeli olarak elinde bulundurmak",
       "example": "Ich will die Zusage schwarz auf weiß haben.",
       "exampleTranslation": "Onayı yazılı olarak elimde istiyorum.",
       "synonyms": [
-        "schriftlich haben"
+        "etwas schriftlich haben"
       ],
       "level": "B1"
     },
@@ -155,9 +156,9 @@
       "level": "C1"
     },
     {
-      "german": "alles in rosa sehen",
+      "german": "alles rosarot sehen",
       "turkish": "her şeyi toz pembe görmek / fazla iyimser bakmak",
-      "example": "Frisch verliebt sieht er alles in rosa.",
+      "example": "Frisch verliebt sieht er alles rosarot.",
       "exampleTranslation": "Yeni aşık olunca her şeyi toz pembe görüyor.",
       "synonyms": [
         "alles durch die rosarote Brille sehen",

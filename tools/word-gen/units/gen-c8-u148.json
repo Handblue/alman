@@ -41,7 +41,7 @@
       "level": "B1"
     },
     {
-      "german": "der Schnäppchen",
+      "german": "das Schnäppchen",
       "turkish": "kelepir / ucuza kapatılan mal",
       "example": "Im Schlussverkauf habe ich ein Schnäppchen gemacht.",
       "exampleTranslation": "İndirimde bir kelepir buldum.",
@@ -130,9 +130,9 @@
     },
     {
       "german": "der Sparstrumpf",
-      "turkish": "kumbara, biriktirilen para (çorap içinde saklanan para)",
+      "turkish": "kumbara / çorap içinde saklanan birikim",
       "example": "Meine Großmutter bewahrte ihr ganzes Erspartes in einem Sparstrumpf auf.",
-      "exampleTranslation": "Büyükannem tüm birikimini bir kumbarada (çorapta) saklardı.",
+      "exampleTranslation": "Büyükannem tüm birikimini bir çorap kumbarasında saklardı.",
       "synonyms": [
         "die Spardose",
         "die Rücklage"

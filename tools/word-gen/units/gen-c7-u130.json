@@ -63,7 +63,7 @@
     },
     {
       "german": "der Machthaber",
-      "turkish": "iktidar sahibi, hükümdar",
+      "turkish": "iktidar sahibi / hükümdar",
       "example": "Ein gerechter Machthaber dient dem Wohl aller und nicht nur seinen eigenen Interessen.",
       "exampleTranslation": "Adil bir iktidar sahibi, yalnızca kendi çıkarlarına değil, herkesin iyiliğine hizmet eder.",
       "synonyms": [
@@ -85,7 +85,7 @@
     },
     {
       "german": "die Gewalt",
-      "turkish": "iktidar erki / kuvvet / şiddet",
+      "turkish": "erk / kuvvet / şiddet",
       "example": "Die staatliche Gewalt ist geteilt.",
       "exampleTranslation": "Devlet erki bölünmüştür.",
       "synonyms": [
@@ -118,7 +118,7 @@
     },
     {
       "german": "das Gemeinwesen",
-      "turkish": "siyasi topluluk / kamusal varlık / cemiyet",
+      "turkish": "siyasi topluluk / kamusal varlık",
       "example": "Ein stabiles Gemeinwesen braucht Vertrauen.",
       "exampleTranslation": "İstikrarlı bir siyasi topluluk güvene ihtiyaç duyar.",
       "synonyms": [

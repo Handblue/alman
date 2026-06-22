@@ -8,8 +8,8 @@
   "firstWordId": 2281,
   "words": [
     {
-      "german": "die Tür einrennen",
-      "turkish": "ısrarla aynı şeyi talep etmek / açık kapıyı zorlamak",
+      "german": "offene Türen einrennen",
+      "turkish": "zaten kabul edilen bir şeyi savunmak / açık kapıyı zorlamak",
       "example": "Mit diesem Vorschlag rennst du bei mir offene Türen ein.",
       "exampleTranslation": "Bu öneriyle bende zaten açık olan kapıyı zorluyorsun.",
       "synonyms": [
@@ -79,7 +79,7 @@
       "example": "Er hat nichts geleistet und legt sich ins gemachte Bett.",
       "exampleTranslation": "Hiçbir şey yapmadı ve hazıra konuyor.",
       "synonyms": [
-        "profitieren ohne Mühe"
+        "mühelos profitieren"
       ],
       "level": "C1"
     },
@@ -107,7 +107,7 @@
     },
     {
       "german": "jemanden über den Tisch ziehen",
-      "turkish": "birini kazıklamak, birini dolandırmak",
+      "turkish": "birini kazıklamak / dolandırmak",
       "example": "Der Händler hat ihn beim Autokauf gnadenlos über den Tisch gezogen.",
       "exampleTranslation": "Satıcı, araba alımında onu acımasızca kazıkladı.",
       "synonyms": [

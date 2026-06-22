@@ -14,7 +14,7 @@
       "exampleTranslation": "Öz-bilinç insanı hayvandan ayırır.",
       "synonyms": [
         "die Selbstwahrnehmung",
-        "die Ichbewusstheit"
+        "das Ichbewusstsein"
       ],
       "level": "B2"
     },
@@ -36,17 +36,17 @@
       "exampleTranslation": "Acı çok dolaysız bir duyumdur.",
       "synonyms": [
         "das Gefühl",
-        "die Sensation"
+        "die Wahrnehmung"
       ],
       "level": "B2"
     },
     {
       "german": "die Erinnerung",
-      "turkish": "anı, hatıra",
+      "turkish": "anı / hatıra",
       "example": "Eine lebhafte Erinnerung kann das Bewusstsein stärker prägen als die Gegenwart.",
       "exampleTranslation": "Canlı bir hatıra, bilinci şimdiki andan daha güçlü biçimde şekillendirebilir.",
       "synonyms": [
-        "das Gedächtnisbild",
+        "das Gedächtnis",
         "die Reminiszenz"
       ],
       "level": "B2"
@@ -68,7 +68,7 @@
       "example": "Jedes bewusste Erlebnis hat eine eigene Qualität.",
       "exampleTranslation": "Her bilinçli yaşantının kendine özgü bir niteliği vardır.",
       "synonyms": [
-        "die Erlebnisweise",
+        "die Erfahrung",
         "das Widerfahrnis"
       ],
       "level": "B2"
@@ -130,7 +130,7 @@
       "german": "die Subjektivität",
       "turkish": "öznellik",
       "example": "Die Subjektivität des Erlebens lässt sich kaum messen.",
-      "exampleTranslation": "Yaşamanın öznelliği neredeyse ölçülemez.",
+      "exampleTranslation": "Yaşantının öznelliği neredeyse ölçülemez.",
       "synonyms": [
         "die Innenperspektive",
         "die Ichbezogenheit"
@@ -149,7 +149,7 @@
     },
     {
       "german": "die Regung",
-      "turkish": "duygulanım, içsel uyarılma",
+      "turkish": "duygulanım / içsel uyarılma",
       "example": "Eine leise Regung von Mitleid stieg in ihr auf, bevor sie überhaupt nachdenken konnte.",
       "exampleTranslation": "Daha düşünmeye fırsat bulamadan içinde hafif bir merhamet duygulanımı yükseldi.",
       "synonyms": [

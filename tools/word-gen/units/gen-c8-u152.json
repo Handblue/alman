@@ -10,7 +10,7 @@
     {
       "german": "das Dutzend",
       "turkish": "düzine (on iki)",
-      "example": "Im Korb lagen ein Dutzend frische Eier.",
+      "example": "Im Korb lag ein Dutzend frische Eier.",
       "exampleTranslation": "Sepette bir düzine taze yumurta vardı.",
       "synonyms": [
         "zwölf Stück"
@@ -30,7 +30,7 @@
     {
       "german": "das Viertel",
       "turkish": "çeyrek",
-      "example": "Es ist ein Viertel nach acht.",
+      "example": "Es ist Viertel nach acht.",
       "exampleTranslation": "Saat sekizi çeyrek geçiyor.",
       "synonyms": [
         "der vierte Teil"

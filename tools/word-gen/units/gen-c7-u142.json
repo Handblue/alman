@@ -25,7 +25,7 @@
       "exampleTranslation": "Kamusal söylem düşüncemizi biçimlendirir.",
       "synonyms": [
         "die Rede",
-        "der Redefluss"
+        "die Diskussion"
       ],
       "level": "B2"
     },
@@ -55,8 +55,8 @@
     {
       "german": "die Metaerzählung",
       "turkish": "büyük anlatı / üst anlatı",
-      "example": "Lyotard kritisierte jede große Metaerzählung.",
-      "exampleTranslation": "Lyotard her büyük üst anlatıyı eleştirdi.",
+      "example": "Lyotard kritisierte jede Metaerzählung.",
+      "exampleTranslation": "Lyotard her üst anlatıyı eleştirdi.",
       "synonyms": [
         "das Großnarrativ",
         "die Großerzählung"
@@ -91,7 +91,6 @@
       "exampleTranslation": "Postmodernizm seslerin çoğulluğunu kutlar.",
       "synonyms": [
         "die Vielfalt",
-        "die Mehrheit",
         "die Vielheit"
       ],
       "level": "C1"
@@ -112,7 +111,7 @@
       "example": "Die Dezentrierung des Subjekts prägt diese Theorie.",
       "exampleTranslation": "Öznenin merkezsizleştirilmesi bu kuramı belirler.",
       "synonyms": [
-        "die Entzentrierung"
+        "die Entmittelung"
       ],
       "level": "C1"
     },
@@ -142,7 +141,7 @@
       "german": "die Polyphonie",
       "turkish": "çokseslilik",
       "example": "Die Polyphonie der Stimmen verhindert, dass eine einzige Wahrheit den Diskurs beherrscht.",
-      "exampleTranslation": "Seslerin çokçesliliği, tek bir hakikatin söyleme egemen olmasını engeller.",
+      "exampleTranslation": "Seslerin çoksesliliği, tek bir hakikatin söyleme egemen olmasını engeller.",
       "synonyms": [
         "die Vielstimmigkeit",
         "die Stimmenvielfalt"

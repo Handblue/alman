@@ -21,8 +21,8 @@
     {
       "german": "die Denotation",
       "turkish": "düz anlam (gönderilen)",
-      "example": "Die Denotation eines Wortes ist sein nüchterner, sachlicher Grundbegriff ohne Nebenbedeutungen.",
-      "exampleTranslation": "Bir sözcüğün düz anlamı, yan anlamları olmayan yalın ve nesnel temel içeriğidir.",
+      "example": "Die Denotation eines Wortes ist seine nüchterne, sachliche Grundbedeutung ohne Nebenbedeutungen.",
+      "exampleTranslation": "Bir sözcüğün düz anlamı, yan anlamları olmayan yalın ve nesnel temel anlamıdır.",
       "synonyms": [
         "die Grundbedeutung",
         "der Wortkern"
@@ -152,8 +152,8 @@
     {
       "german": "die Intension",
       "turkish": "içlem (kavramsal içerik)",
-      "example": "Die Intension eines Ausdrucks bestimmt, auf welche Gegenstände er überhaupt zutrifft.",
-      "exampleTranslation": "Bir ifadenin içlemi, onun hangi nesnelere uygulanabileceğini belirler.",
+      "example": "Die Intension eines Ausdrucks ist sein begrifflicher Gehalt und bestimmt, auf welche Gegenstände er zutrifft.",
+      "exampleTranslation": "Bir ifadenin içlemi, onun kavramsal içeriğidir ve hangi nesnelere uygulanacağını belirler.",
       "synonyms": [
         "der Begriffsinhalt",
         "der Bedeutungsgehalt"

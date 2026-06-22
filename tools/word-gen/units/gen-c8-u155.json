@@ -82,7 +82,7 @@
     },
     {
       "german": "der Strick",
-      "turkish": "halat / ip (kalın)",
+      "turkish": "ip / urgan (kalın)",
       "example": "Er bindet die Kiste mit einem Strick fest.",
       "exampleTranslation": "Sandığı kalın bir iple sıkıca bağlıyor.",
       "synonyms": [
@@ -103,7 +103,7 @@
     },
     {
       "german": "die Schmiede",
-      "turkish": "demirci atölyesi / nalbur",
+      "turkish": "demirci atölyesi / demirhane",
       "example": "Der Hufschmied arbeitet in der alten Schmiede.",
       "exampleTranslation": "Nalbant eski demirci atölyesinde çalışıyor.",
       "synonyms": [
@@ -139,7 +139,7 @@
     },
     {
       "german": "das Gerüst",
-      "turkish": "iskele / çatı (yapısal)",
+      "turkish": "iskele / iç yapı (taşıyıcı çatı)",
       "example": "Die Maurer stehen auf dem hohen Gerüst.",
       "exampleTranslation": "Duvarcılar yüksek iskelenin üzerinde duruyor.",
       "synonyms": [

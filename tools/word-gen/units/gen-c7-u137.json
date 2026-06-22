@@ -13,6 +13,7 @@
       "example": "In der Phänomenologie wird jedes Phänomen so beschrieben, wie es sich dem Bewusstsein zeigt.",
       "exampleTranslation": "Fenomenolojide her görüngü, bilince kendini nasıl gösteriyorsa öyle betimlenir.",
       "synonyms": [
+        "die Erscheinung",
         "die Erscheinungsweise"
       ],
       "level": "B2"
@@ -90,7 +91,7 @@
     },
     {
       "german": "der Horizont",
-      "turkish": "ufuk / anlam ufku",
+      "turkish": "ufuk, anlam ufku",
       "example": "Im Gespräch verschmelzen die Horizonte der Beteiligten.",
       "exampleTranslation": "Konuşmada katılanların ufukları kaynaşır.",
       "synonyms": [
@@ -100,7 +101,7 @@
     },
     {
       "german": "das Vorurteil",
-      "turkish": "önyargı / önanlama",
+      "turkish": "önyargı, önanlama",
       "example": "Ohne Vorurteile ist kein Verstehen möglich.",
       "exampleTranslation": "Önyargılar olmadan hiçbir anlama mümkün değildir.",
       "synonyms": [
@@ -111,7 +112,7 @@
     },
     {
       "german": "die Auslegung",
-      "turkish": "yorum / açımlama / tefsir",
+      "turkish": "yorum, açımlama, tefsir",
       "example": "Die Auslegung des Werkes bleibt immer vorläufig.",
       "exampleTranslation": "Eserin yorumlanması her zaman geçici kalır.",
       "synonyms": [
@@ -122,7 +123,7 @@
     },
     {
       "german": "das Verstehen",
-      "turkish": "anlama / kavrama",
+      "turkish": "anlama, kavrama",
       "example": "Das Verstehen bewegt sich in einem Zirkel.",
       "exampleTranslation": "Anlama bir döngü içinde hareket eder.",
       "synonyms": [
@@ -133,7 +134,7 @@
     },
     {
       "german": "die Leiblichkeit",
-      "turkish": "bedensellik / tensellik",
+      "turkish": "bedensellik, tensellik",
       "example": "Die Leiblichkeit prägt unsere Erfahrung der Welt.",
       "exampleTranslation": "Bedensellik, dünya deneyimimizi biçimlendirir.",
       "synonyms": [
@@ -153,7 +154,7 @@
     },
     {
       "german": "die Vergegenständlichung",
-      "turkish": "nesneleştirme / şeyleştirme",
+      "turkish": "nesneleştirme, şeyleştirme",
       "example": "Die Vergegenständlichung verwandelt das Erlebnis in ein Objekt.",
       "exampleTranslation": "Nesneleştirme, yaşantıyı bir nesneye dönüştürür.",
       "synonyms": [

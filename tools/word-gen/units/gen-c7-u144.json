@@ -36,7 +36,7 @@
       "exampleTranslation": "Onun eksiksiz kanıtlama yöntemi tartışmadaki tüm katılımcıları ikna etti.",
       "synonyms": [
         "die Argumentationskette",
-        "der Nachweisgang"
+        "der Nachweis"
       ],
       "level": "B2"
     },
@@ -47,7 +47,7 @@
       "exampleTranslation": "Teze karşı güçlü bir antitez koydu.",
       "synonyms": [
         "die Antithese",
-        "die Behauptung"
+        "der Gegenentwurf"
       ],
       "level": "B2"
     },
@@ -57,7 +57,7 @@
       "example": "Die Triftigkeit seines Einwands ließ sich nicht so leicht bestreiten.",
       "exampleTranslation": "Onun itirazının geçerliliğini çürütmek o kadar kolay değildi.",
       "synonyms": [
-        "die Gültigkeit eines Arguments",
+        "die Stichhaltigkeit",
         "die Überzeugungskraft"
       ],
       "level": "B2"
@@ -75,7 +75,7 @@
     },
     {
       "german": "die Entgegnung",
-      "turkish": "karşı çıkış, mukabele",
+      "turkish": "karşı çıkış, mukabele, yanıt",
       "example": "Auf jede Behauptung folgte sofort eine scharfe Entgegnung.",
       "exampleTranslation": "Her iddianın ardından hemen keskin bir karşı çıkış geldi.",
       "synonyms": [
@@ -101,7 +101,8 @@
       "example": "Aus diesen Prämissen einen solchen Schluss zu ziehen, ist ein klarer Fehlschluss.",
       "exampleTranslation": "Bu öncüllerden böyle bir sonuç çıkarmak açık bir mantık hatasıdır.",
       "synonyms": [
-        "die Denkfalle"
+        "der Trugschluss",
+        "der Denkfehler"
       ],
       "level": "C1"
     },
@@ -112,7 +113,7 @@
       "exampleTranslation": "Kanıtı klasik bir kısırdöngü.",
       "synonyms": [
         "die Zirkularität",
-        "der Ringschluss"
+        "das Zirkelargument"
       ],
       "level": "C1"
     },
@@ -130,8 +131,8 @@
     {
       "german": "die Beweislast",
       "turkish": "ispat yükü / kanıtlama yükümlülüğü",
-      "example": "Die Beweislast liegt bei dem, der behauptet.",
-      "exampleTranslation": "İspat yükü, iddiada bulunana aittir.",
+      "example": "Die Beweislast liegt bei dem, der etwas behauptet.",
+      "exampleTranslation": "İspat yükü, bir şey iddia edene aittir.",
       "synonyms": [
         "die Beweispflicht",
         "die Nachweispflicht"
@@ -144,13 +145,14 @@
       "example": "Mit einem einzigen Gegenbeispiel konnte er die ganze Theorie aushebeln.",
       "exampleTranslation": "Tek bir karşı örnekle bütün teoriyi geçersiz kılabildi.",
       "synonyms": [
-        "außer Kraft setzen"
+        "außer Kraft setzen",
+        "entkräften"
       ],
       "level": "C1"
     },
     {
       "german": "unterstellen",
-      "turkish": "örtük varsaymak / atfetmek",
+      "turkish": "örtük varsaymak / atfetmek (genellikle olumsuz)",
       "example": "Du unterstellst mir eine Absicht, die ich nicht habe.",
       "exampleTranslation": "Bana sahip olmadığım bir niyet atfediyorsun.",
       "synonyms": [

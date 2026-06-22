@@ -13,13 +13,14 @@
       "example": "Diese Mutmaßung ließ sich durch keine Daten stützen.",
       "exampleTranslation": "Bu varsayım hiçbir veriyle desteklenemedi.",
       "synonyms": [
-        "die Spekulation"
+        "die Spekulation",
+        "die Vermutung"
       ],
       "level": "B2"
     },
     {
       "german": "die Bestätigung",
-      "turkish": "doğrulama / teyit",
+      "turkish": "doğrulama, teyit",
       "example": "Die Daten lieferten eine klare Bestätigung der Vorhersage.",
       "exampleTranslation": "Veriler, tahminin açık bir doğrulamasını sundu.",
       "synonyms": [
@@ -30,7 +31,7 @@
     },
     {
       "german": "die Widerlegung",
-      "turkish": "çürütme / yanlışlama",
+      "turkish": "çürütme, yanlışlama",
       "example": "Ein einziges Gegenbeispiel genügt zur Widerlegung.",
       "exampleTranslation": "Çürütme için tek bir karşı örnek yeterlidir.",
       "synonyms": [
@@ -70,7 +71,7 @@
     },
     {
       "german": "die Ableitung",
-      "turkish": "türetme / çıkarım",
+      "turkish": "türetme, çıkarım",
       "example": "Die Ableitung aus den Prämissen war logisch zwingend.",
       "exampleTranslation": "Öncüllerden yapılan çıkarım mantıksal olarak zorunluydu.",
       "synonyms": [
@@ -81,17 +82,18 @@
     },
     {
       "german": "der Verdacht",
-      "turkish": "şüphe, tahmin",
+      "turkish": "şüphe, kuşku",
       "example": "Der Verdacht erhärtete sich erst nach weiteren Messungen.",
       "exampleTranslation": "Şüphe ancak ek ölçümlerden sonra güçlendi.",
       "synonyms": [
+        "die Vermutung",
         "die Ahnung"
       ],
       "level": "B2"
     },
     {
       "german": "die Objektivität",
-      "turkish": "nesnellik / tarafsızlık",
+      "turkish": "nesnellik, tarafsızlık",
       "example": "Wissenschaftliche Objektivität verlangt nachvollziehbare Methoden.",
       "exampleTranslation": "Bilimsel nesnellik, izlenebilir yöntemler gerektirir.",
       "synonyms": [
@@ -102,7 +104,7 @@
     },
     {
       "german": "das Vorgehen",
-      "turkish": "yöntem / izlenen yol",
+      "turkish": "yöntem, izlenen yol",
       "example": "Das methodische Vorgehen wurde genau dokumentiert.",
       "exampleTranslation": "Yöntemsel izlenen yol ayrıntılı olarak belgelendi.",
       "synonyms": [
@@ -134,7 +136,7 @@
     },
     {
       "german": "die Aussagekraft",
-      "turkish": "anlamlılık / kanıt değeri",
+      "turkish": "anlamlılık, kanıt değeri",
       "example": "Die Aussagekraft der Studie ist begrenzt.",
       "exampleTranslation": "Çalışmanın kanıt değeri sınırlıdır.",
       "synonyms": [
@@ -145,7 +147,7 @@
     },
     {
       "german": "plausibel",
-      "turkish": "makul / inandırıcı",
+      "turkish": "makul, inandırıcı",
       "example": "Seine Erklärung klingt durchaus plausibel.",
       "exampleTranslation": "Onun açıklaması gerçekten makul geliyor.",
       "synonyms": [
@@ -157,7 +159,7 @@
     },
     {
       "german": "schlüssig",
-      "turkish": "tutarlı / mantıklı",
+      "turkish": "tutarlı, mantıklı",
       "example": "Die Argumentation war logisch und schlüssig.",
       "exampleTranslation": "Argümantasyon mantıklı ve tutarlıydı.",
       "synonyms": [

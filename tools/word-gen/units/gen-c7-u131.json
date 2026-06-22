@@ -32,7 +32,7 @@
     {
       "german": "das Verdienst",
       "turkish": "liyakat / hak edilmiş başarı",
-      "example": "Belohnung sollte sich nach dem Verdienst richten.",
+      "example": "Die Belohnung sollte sich nach dem Verdienst richten.",
       "exampleTranslation": "Ödül, liyakate göre belirlenmelidir.",
       "synonyms": [
         "die Leistung",
@@ -46,9 +46,8 @@
       "example": "Steuern ermöglichen eine gerechte Umverteilung des Reichtums.",
       "exampleTranslation": "Vergiler, servetin adil yeniden dağıtımını sağlar.",
       "synonyms": [
-        "die Verteilung",
-        "der Ausgleich",
-        "die Neuverteilung"
+        "die Neuverteilung",
+        "der Ausgleich"
       ],
       "level": "C1"
     },
@@ -65,7 +64,7 @@
     },
     {
       "german": "die Billigkeit",
-      "turkish": "hakkaniyet / nesafet",
+      "turkish": "hakkaniyet / nasafet",
       "example": "Das Gericht entschied nach Recht und Billigkeit.",
       "exampleTranslation": "Mahkeme, hukuka ve hakkaniyete göre karar verdi.",
       "synonyms": [
@@ -76,7 +75,7 @@
     },
     {
       "german": "die Mündigkeit",
-      "turkish": "reşitlik / kendi kararını verme yetisi / olgunluk",
+      "turkish": "reşitlik / kendi kararını verebilme yetisi / olgunluk",
       "example": "Bildung fördert die Mündigkeit der Bürger.",
       "exampleTranslation": "Eğitim, vatandaşların reşitliğini destekler.",
       "synonyms": [
@@ -137,7 +136,7 @@
       "exampleTranslation": "Kadınların özgürleşmesi uzun bir süreçti.",
       "synonyms": [
         "die Gleichstellung",
-        "die Selbstständigkeit"
+        "die Befreiung"
       ],
       "level": "B2"
     },
@@ -148,7 +147,7 @@
       "exampleTranslation": "Özgürlük, eşitlik ve kardeşlik temel değerlerdir.",
       "synonyms": [
         "die Geschwisterlichkeit",
-        "die Verbrüderung"
+        "die Solidarität"
       ],
       "level": "B2"
     },

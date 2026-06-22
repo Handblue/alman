@@ -13,7 +13,8 @@
       "example": "Eine klare Kapiteleinteilung hilft dem Leser, dem Aufbau der Arbeit zu folgen.",
       "exampleTranslation": "Net bir bölüm düzeni, okuyucunun çalışmanın yapısını takip etmesine yardımcı olur.",
       "synonyms": [
-        "die Kapitelstruktur"
+        "die Kapitelstruktur",
+        "die Gliederung"
       ],
       "level": "B2"
     },
@@ -23,7 +24,8 @@
       "example": "In der Einleitung stellt man die Forschungsfrage vor.",
       "exampleTranslation": "Giriş bölümünde araştırma sorusu tanıtılır.",
       "synonyms": [
-        "die Hinführung"
+        "die Hinführung",
+        "das Vorwort"
       ],
       "level": "B2"
     },
@@ -66,7 +68,8 @@
       "example": "Die Herleitung der Formel wird im dritten Kapitel ausführlich erklärt.",
       "exampleTranslation": "Formülün türetilmesi üçüncü bölümde ayrıntılı olarak açıklanır.",
       "synonyms": [
-        "die Ableitung des Arguments"
+        "die Ableitung",
+        "die Deduktion"
       ],
       "level": "B2"
     },
@@ -99,7 +102,7 @@
       "exampleTranslation": "Doğru kaynak gösterimi olmadan metin intihal sayılır.",
       "synonyms": [
         "der Quellennachweis",
-        "die Quellenverweis"
+        "der Quellenverweis"
       ],
       "level": "C1"
     },
