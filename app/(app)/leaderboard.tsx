@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
 import { useState, useEffect } from 'react';
 import { WKText, WKCard } from '@/components/ui';
+import { ThemeProvider } from '@/context/ThemeContext';
 import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
 import { Radius } from '@/constants/radius';
@@ -58,6 +59,14 @@ function ChangeIndicator({ change }: { change: string }) {
 }
 
 export default function LeaderboardScreen() {
+  return (
+    <ThemeProvider initialDark>
+      <LeaderboardScreenInner />
+    </ThemeProvider>
+  );
+}
+
+function LeaderboardScreenInner() {
   const userXP = useUserStore((s) => s.xp);
   const [activeTab, setActiveTab] = useState<Tab>('weekly');
   const [leaderboardData, setLeaderboardData] = useState<LeaderboardEntry[]>([]);

@@ -10,6 +10,7 @@ import { router } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as Haptics from 'expo-haptics';
 import { WKText } from '@/components/ui';
+import { ThemeProvider } from '@/context/ThemeContext';
 import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
 import { authService } from '@/services/authService';
@@ -67,6 +68,14 @@ const PLANS = [
 // ─── Screen ────────────────────────────────────────────────────────────────────
 
 export default function PremiumScreen() {
+  return (
+    <ThemeProvider initialDark>
+      <PremiumScreenInner />
+    </ThemeProvider>
+  );
+}
+
+function PremiumScreenInner() {
   const [selectedPlan, setSelectedPlan] = useState<string>('yearly');
   const [purchasing, setPurchasing] = useState(false);
   const isPremium = authService.isPremium();
