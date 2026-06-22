@@ -1,0 +1,54 @@
+<!doctype html><meta charset=utf8><style>html,body{margin:0;background:#222}#fg{width:1024px;height:500px}</style><div id=fg><svg width="1024" height="500" viewBox="0 0 1024 500" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1B2A"/>
+      <stop offset="0.55" stop-color="#162534"/>
+      <stop offset="1" stop-color="#1A2A3A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C6CFF"/>
+      <stop offset="1" stop-color="#00BCD4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7C6CFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7C6CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="500" fill="url(#bg)"/>
+  <circle cx="820" cy="250" r="260" fill="url(#glow)"/>
+
+  <!-- subtle word-tile motif on the right -->
+  <g opacity="0.10" fill="#FFFFFF">
+    <rect x="700" y="120" width="120" height="60" rx="12"/>
+    <rect x="835" y="120" width="150" height="60" rx="12"/>
+    <rect x="700" y="195" width="170" height="60" rx="12"/>
+    <rect x="885" y="195" width="100" height="60" rx="12"/>
+    <rect x="700" y="270" width="110" height="60" rx="12"/>
+    <rect x="825" y="270" width="160" height="60" rx="12"/>
+  </g>
+
+  <!-- crossed swords emblem -->
+  <g transform="translate(120 250)" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" fill="none">
+    <line x1="-46" y1="46" x2="46" y2="-46"/>
+    <line x1="46" y1="46" x2="-46" y2="-46"/>
+    <circle cx="0" cy="0" r="64" stroke="#7C6CFF" stroke-width="4" opacity="0.5"/>
+  </g>
+
+  <!-- wordmark + tagline -->
+  <text x="240" y="222" font-size="92" font-weight="800" fill="#F8FAFC" letter-spacing="-1">WortKrieg</text>
+  <text x="244" y="278" font-size="34" font-weight="600" fill="#9FB3C8">Almancayı savaşarak öğren</text>
+
+  <!-- level + count pills -->
+  <g font-size="26" font-weight="700">
+    <rect x="244" y="318" width="150" height="52" rx="26" fill="#7C6CFF"/>
+    <text x="319" y="352" fill="#FFFFFF" text-anchor="middle">A1 – C1</text>
+    <rect x="408" y="318" width="220" height="52" rx="26" fill="#1A2A3A" stroke="#2F4256" stroke-width="2"/>
+    <text x="518" y="352" fill="#E7F28B" text-anchor="middle">2400+ kelime</text>
+    <rect x="642" y="318" width="180" height="52" rx="26" fill="#1A2A3A" stroke="#2F4256" stroke-width="2"/>
+    <text x="732" y="352" fill="#00BCD4" text-anchor="middle">160 ünite</text>
+  </g>
+
+  <text x="244" y="424" font-size="22" font-weight="500" fill="#7A93A8">SRS · Telaffuz · Canlı 1v1 WortKampf · Çevrimdışı</text>
+</svg>
+</div>
