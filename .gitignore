@@ -49,3 +49,4 @@ GoogleService-Info.plist
 tools/word-gen/phase3-generate.run.js
 tools/word-gen/regen-dedup.run.js
 tools/word-gen/verify.run.js
+wortkrieg-release.apk
