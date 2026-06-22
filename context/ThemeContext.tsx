@@ -15,9 +15,12 @@ type Theme = {
 
 const ThemeContext = createContext<Theme | null>(null);
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  // App is dark-first (app.json userInterfaceStyle: "dark", dark splash). Default to dark.
-  const [isDark, setIsDark] = useState(true);
+export function ThemeProvider({ children, initialDark = false }: { children: React.ReactNode; initialDark?: boolean }) {
+  // Hybrid design (see almaapp_ui_guide.md §6): light browse surfaces by default, with
+  // dark-immersive screens (battle, pronunciation, dashboard) styling themselves explicitly.
+  // So the global default is the LIGHT scheme; a dark-immersive screen can nest its own
+  // <ThemeProvider initialDark> so its WKText/WKCard pick up the dark scheme.
+  const [isDark, setIsDark] = useState(initialDark);
 
   const colors = {
     bg:            isDark ? Colors.bg.primaryDark  : Colors.bg.light,

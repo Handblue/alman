@@ -3,6 +3,7 @@ import { ScrollView, View, StyleSheet, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
 import { WKText, WKButton, WKCard } from '@/components/ui';
+import { ThemeProvider } from '@/context/ThemeContext';
 import { Colors } from '@/constants/colors';
 import { Spacing } from '@/constants/spacing';
 import { Radius } from '@/constants/radius';
@@ -49,6 +50,7 @@ export default function DashboardScreen() {
   }, [check, checkAndUpdateStreak, initToday, loadAIData, loadAnalyticsData]);
 
   return (
+    <ThemeProvider initialDark>
     <SafeAreaView style={styles.container}>
       <AchievementToast toast={currentToast} onDismiss={dismiss} />
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -250,6 +252,7 @@ export default function DashboardScreen() {
         />
       </ScrollView>
     </SafeAreaView>
+    </ThemeProvider>
   );
 }
 
