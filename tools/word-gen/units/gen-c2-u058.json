@@ -11,7 +11,7 @@
       "german": "öffnen",
       "turkish": "açmak",
       "example": "Das Fenster wird jeden Morgen geöffnet.",
-      "exampleTranslation": "Pencere her sabah açılır.",
+      "exampleTranslation": "Pencere her sabah açılıyor.",
       "synonyms": [
         "aufmachen"
       ],
@@ -52,18 +52,18 @@
     },
     {
       "german": "streichen",
-      "turkish": "boyamak (badana)",
+      "turkish": "boyamak (badana yapmak)",
       "example": "Die Wände des Zimmers werden morgen frisch gestrichen.",
       "exampleTranslation": "Odanın duvarları yarın yeniden boyanacak.",
       "synonyms": [
-        "anmalen",
+        "anstreichen",
         "lackieren"
       ],
       "level": "A2"
     },
     {
       "german": "liefern",
-      "turkish": "teslim etmek, ulaştırmak",
+      "turkish": "teslim etmek / ulaştırmak",
       "example": "Das bestellte Sofa wird nächste Woche geliefert.",
       "exampleTranslation": "Sipariş edilen kanepe gelecek hafta teslim edilecek.",
       "synonyms": [
@@ -107,7 +107,7 @@
     },
     {
       "german": "verabschieden",
-      "turkish": "(yasa) kabul etmek, çıkarmak",
+      "turkish": "(yasa) kabul etmek / çıkarmak",
       "example": "Das neue Gesetz wurde vom Parlament einstimmig verabschiedet.",
       "exampleTranslation": "Yeni yasa parlamento tarafından oybirliğiyle kabul edildi.",
       "synonyms": [
@@ -162,7 +162,7 @@
     },
     {
       "german": "der Urheber",
-      "turkish": "yaratıcı / müsebbip / hak sahibi",
+      "turkish": "yaratıcı / fail / hak sahibi",
       "example": "Der Urheber des Schadens bleibt unbekannt.",
       "exampleTranslation": "Zararın müsebbibi bilinmiyor.",
       "synonyms": [

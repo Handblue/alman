@@ -11,7 +11,7 @@
       "german": "die Zelle",
       "turkish": "hücre",
       "example": "Jede Zelle besitzt einen Zellkern.",
-      "exampleTranslation": "Her hücrenin bir çekirdeği vardır.",
+      "exampleTranslation": "Her hücre bir çekirdeğe sahiptir.",
       "synonyms": [
         "die Grundeinheit"
       ],
@@ -60,12 +60,12 @@
       "level": "B2"
     },
     {
-      "german": "die Bakterie",
+      "german": "das Bakterium",
       "turkish": "bakteri",
-      "example": "Diese Bakterie vermehrt sich sehr schnell.",
+      "example": "Dieses Bakterium vermehrt sich sehr schnell.",
       "exampleTranslation": "Bu bakteri çok hızlı çoğalır.",
       "synonyms": [
-        "das Bakterium",
+        "die Bakterie",
         "der Keim"
       ],
       "level": "B2"

@@ -9,9 +9,9 @@
   "words": [
     {
       "german": "die Reportage",
-      "turkish": "röportaj, haber raporu",
+      "turkish": "reportaj, haber raporu",
       "example": "Der Journalist schrieb eine spannende Reportage über das Leben in der Großstadt.",
-      "exampleTranslation": "Gazeteci büyük şehirdeki yaşam hakkında heyecan verici bir röportaj yazdı.",
+      "exampleTranslation": "Gazeteci büyük şehirdeki yaşam hakkında ilgi çekici bir reportaj yazdı.",
       "synonyms": [
         "der Bericht",
         "die Dokumentation"
@@ -20,7 +20,7 @@
     },
     {
       "german": "der Rundfunk",
-      "turkish": "radyo ve televizyon yayını",
+      "turkish": "radyo ve televizyon yayını, yayıncılık",
       "example": "Der öffentlich-rechtliche Rundfunk wird durch Gebühren finanziert.",
       "exampleTranslation": "Kamu yayıncılığı, lisans ücretleriyle finanse edilir.",
       "synonyms": [
@@ -34,7 +34,8 @@
       "example": "Millionen Zuschauer haben die Sportübertragung live verfolgt.",
       "exampleTranslation": "Milyonlarca izleyici spor yayınını canlı izledi.",
       "synonyms": [
-        "der Betrachter"
+        "der Betrachter",
+        "der Beobachter"
       ],
       "level": "B1"
     },
@@ -65,15 +66,16 @@
       "example": "Der Kommentator erklärte die Hintergründe der politischen Krise.",
       "exampleTranslation": "Yorumcu, siyasi krizin arka planını açıkladı.",
       "synonyms": [
-        "der Kolumnist"
+        "der Kolumnist",
+        "der Analyst"
       ],
       "level": "B2"
     },
     {
       "german": "die Sensationsgier",
-      "turkish": "sansasyon düşkünlüğü",
+      "turkish": "sansasyon düşkünlüğü, sansasyon merakı",
       "example": "Die Sensationsgier mancher Medien schadet dem seriösen Journalismus.",
-      "exampleTranslation": "Bazı medyanın sansasyon düşkünlüğü ciddi gazeteciliğe zarar verir.",
+      "exampleTranslation": "Bazı medya organlarının sansasyon düşkünlüğü ciddi gazeteciliğe zarar verir.",
       "synonyms": [
         "die Sensationslust"
       ],
@@ -85,7 +87,8 @@
       "example": "In autoritären Staaten unterliegt die Presse oft einer strengen Zensur.",
       "exampleTranslation": "Otoriter devletlerde basın çoğunlukla sıkı bir sansüre tabidir.",
       "synonyms": [
-        "die Unterdrückung der Information"
+        "die Unterdrückung",
+        "die Kontrolle"
       ],
       "level": "B2"
     },
@@ -117,7 +120,7 @@
       "example": "Die digitale Überwachung der Bürger wird zunehmend kritisiert.",
       "exampleTranslation": "Vatandaşların dijital gözetimi giderek daha fazla eleştiriliyor.",
       "synonyms": [
-        "die Kontrolle der Daten",
+        "die Kontrolle",
         "die Observation"
       ],
       "level": "B2"
@@ -134,7 +137,7 @@
     },
     {
       "german": "die Meinungsmache",
-      "turkish": "kanaat oluşturma / manipülasyon",
+      "turkish": "manipülasyon, kanaat yönlendirme",
       "example": "Hinter der Schlagzeile steckte gezielte Meinungsmache.",
       "exampleTranslation": "Manşetin arkasında planlı bir manipülasyon vardı.",
       "synonyms": [

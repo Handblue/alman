@@ -30,20 +30,20 @@
     },
     {
       "german": "die Meldung",
-      "turkish": "haber, bildirim",
+      "turkish": "haber / bildirim",
       "example": "Laut einer Meldung im Radio sei der Minister zurückgetreten.",
       "exampleTranslation": "Radyodaki bir habere göre bakan istifa etmiş.",
       "synonyms": [
         "die Mitteilung",
-        "die Information"
+        "die Nachricht"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "die Zeitung",
       "turkish": "gazete",
-      "example": "Laut der Zeitung steigt der Preis.",
-      "exampleTranslation": "Gazeteye göre fiyat yükseliyor.",
+      "example": "Laut der Zeitung steige der Preis.",
+      "exampleTranslation": "Gazeteye göre fiyat yükseliyormuş.",
       "synonyms": [
         "das Blatt",
         "die Presse"
@@ -130,8 +130,8 @@
     {
       "german": "die Wiedergabe",
       "turkish": "aktarım / nakil",
-      "example": "Die indirekte Wiedergabe verlangt Konjunktiv.",
-      "exampleTranslation": "Dolaylı aktarım dilek kipi gerektirir.",
+      "example": "Die indirekte Wiedergabe verlangt den Konjunktiv.",
+      "exampleTranslation": "Dolaylı aktarım dilek kipini gerektirir.",
       "synonyms": [
         "die Darstellung",
         "die Reproduktion"
@@ -144,7 +144,7 @@
       "example": "Aus dem Ministerium verlautet, alles sei geregelt.",
       "exampleTranslation": "Bakanlıktan her şeyin halledildiği bildiriliyor.",
       "synonyms": [
-        "bekanntgeben",
+        "bekannt geben",
         "verkünden"
       ],
       "level": "C1"
@@ -162,9 +162,9 @@
     },
     {
       "german": "mutmaßlich",
-      "turkish": "tahminen / zanlı (olarak)",
+      "turkish": "tahmini / sözde / zanlı (olarak)",
       "example": "Der mutmaßliche Täter sei geflohen, heißt es.",
-      "exampleTranslation": "Zanlının kaçtığı söyleniyor.",
+      "exampleTranslation": "Söylenene göre zanlı kaçmış.",
       "synonyms": [
         "vermutlich",
         "wahrscheinlich"

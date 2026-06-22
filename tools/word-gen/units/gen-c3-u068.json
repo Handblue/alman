@@ -46,8 +46,8 @@
       "example": "Unser Stundenplan ändert sich jede Woche.",
       "exampleTranslation": "Ders programımız her hafta değişiyor.",
       "synonyms": [
-        "der Lehrplan",
-        "der Wochenplan"
+        "der Wochenplan",
+        "der Belegungsplan"
       ],
       "level": "B1"
     },
@@ -102,7 +102,7 @@
       "exampleTranslation": "Liseden sonra bir yüksekokulda okumak istiyor.",
       "synonyms": [
         "die Fachhochschule",
-        "die Akademie"
+        "die Universität"
       ],
       "level": "B2"
     },

@@ -89,11 +89,11 @@
     },
     {
       "german": "das Gleis",
-      "turkish": "ray / peron numarası",
+      "turkish": "ray / hat (tren yolu)",
       "example": "Bitte warten Sie an Gleis sieben.",
-      "exampleTranslation": "Lütfen yedi numaralı peronda bekleyin.",
+      "exampleTranslation": "Lütfen yedi numaralı rayda bekleyin.",
       "synonyms": [
-        "das Schienengleis"
+        "das Bahngleis"
       ],
       "level": "A2"
     },

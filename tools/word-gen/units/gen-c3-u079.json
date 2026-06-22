@@ -16,7 +16,7 @@
         "anspielen",
         "durchblicken lassen"
       ],
-      "level": "B1"
+      "level": "B2"
     },
     {
       "german": "unterstreichen",
@@ -25,7 +25,7 @@
       "exampleTranslation": "Bu ifadeyle talebimin aciliyetini vurgulamak istiyorum.",
       "synonyms": [
         "herausstellen",
-        "akzentuieren"
+        "betonen"
       ],
       "level": "B1"
     },
@@ -36,9 +36,9 @@
       "exampleTranslation": "Almancada nezaket ile resmiyet arasında ince derecelendirmeler vardır.",
       "synonyms": [
         "die Schattierung",
-        "die Gradierung"
+        "die Nuancierung"
       ],
-      "level": "B1"
+      "level": "B2"
     },
     {
       "german": "die Wirkung",
@@ -69,7 +69,7 @@
       "exampleTranslation": "Siyasete yaptığı gönderme açıktı.",
       "synonyms": [
         "die Andeutung",
-        "die Anführung"
+        "der Wink"
       ],
       "level": "B2"
     },
@@ -141,9 +141,9 @@
     },
     {
       "german": "die Untertreibung",
-      "turkish": "azımsama / küçümseme (söyleyişte)",
+      "turkish": "azımsama / küçük gösterme (söyleyişte)",
       "example": "Das war eine elegante Untertreibung seinerseits.",
-      "exampleTranslation": "Bu onun adına zarif bir azımsamaydı.",
+      "exampleTranslation": "Bu onun açısından zarif bir azımsamaydı.",
       "synonyms": [
         "das Understatement",
         "die Litotes"

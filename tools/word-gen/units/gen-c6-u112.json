@@ -11,7 +11,7 @@
       "german": "die Verlaufskontrolle",
       "turkish": "seyir kontrolü, takip muayenesi",
       "example": "Nach der Operation ist eine regelmäßige Verlaufskontrolle beim Arzt notwendig.",
-      "exampleTranslation": "Ameliyattan sonra doktorda düzenli bir seyir kontrolü gereklidir.",
+      "exampleTranslation": "Ameliyattan sonra doktorda düzenli bir takip muayenesi gereklidir.",
       "synonyms": [
         "die Nachkontrolle",
         "die Kontrolluntersuchung"
@@ -20,7 +20,7 @@
     },
     {
       "german": "das Symptom",
-      "turkish": "belirti / semptom",
+      "turkish": "belirti, semptom",
       "example": "Fieber ist ein typisches Symptom einer Infektion.",
       "exampleTranslation": "Ateş, bir enfeksiyonun tipik belirtisidir.",
       "synonyms": [
@@ -62,7 +62,7 @@
     },
     {
       "german": "der Kreislauf",
-      "turkish": "dolaşım / kan dolaşımı",
+      "turkish": "dolaşım, kan dolaşımı",
       "example": "Bewegung hält den Kreislauf in Schwung.",
       "exampleTranslation": "Hareket dolaşımı canlı tutar.",
       "synonyms": [
@@ -72,7 +72,7 @@
     },
     {
       "german": "die Entzündung",
-      "turkish": "iltihap / enflamasyon",
+      "turkish": "iltihap, enflamasyon",
       "example": "Die Entzündung im Knie verursachte starke Schmerzen.",
       "exampleTranslation": "Dizdeki iltihap şiddetli ağrıya yol açtı.",
       "synonyms": [
@@ -92,12 +92,12 @@
     },
     {
       "german": "der Eingriff",
-      "turkish": "müdahale / ameliyat",
+      "turkish": "müdahale, ameliyat",
       "example": "Der chirurgische Eingriff verlief ohne Komplikationen.",
       "exampleTranslation": "Cerrahi müdahale komplikasyonsuz geçti.",
       "synonyms": [
         "die Operation",
-        "der Eingriff am Herzen"
+        "der medizinische Eingriff"
       ],
       "level": "C1"
     },
@@ -107,8 +107,8 @@
       "example": "Der Wirkstoff lindert die Schmerzen schnell.",
       "exampleTranslation": "Etken madde ağrıyı hızlıca dindirir.",
       "synonyms": [
-        "die Substanz",
-        "der Aktivstoff"
+        "der Arzneistoff",
+        "die Substanz"
       ],
       "level": "C1"
     },
@@ -125,9 +125,9 @@
     },
     {
       "german": "der Erreger",
-      "turkish": "patojen / hastalık etkeni",
+      "turkish": "patojen, hastalık etkeni",
       "example": "Der Erreger wird durch Tröpfchen übertragen.",
-      "exampleTranslation": "Etken damlacık yoluyla bulaşır.",
+      "exampleTranslation": "Hastalık etkeni damlacık yoluyla bulaşır.",
       "synonyms": [
         "der Krankheitserreger",
         "der Keim"
@@ -140,7 +140,8 @@
       "example": "Der Oberarzt leitet die Visite auf der Intensivstation.",
       "exampleTranslation": "Başasistan yoğun bakımdaki viziti yönetiyor.",
       "synonyms": [
-        "der Stationsarzt"
+        "der Facharzt",
+        "der leitende Arzt"
       ],
       "level": "C1"
     },

@@ -32,7 +32,7 @@
       "german": "die Bezahlung",
       "turkish": "ödeme, ücret",
       "example": "Die Bezahlung in dieser Firma ist überdurchschnittlich gut.",
-      "exampleTranslation": "Bu firmadaki ödeme ortalamanın oldukça üzerinde.",
+      "exampleTranslation": "Bu firmadaki ücret ortalamanın oldukça üzerinde.",
       "synonyms": [
         "die Entlohnung",
         "die Vergütung"
@@ -134,7 +134,7 @@
       "example": "Die Vereinbarkeit von Familie und Beruf bleibt schwierig.",
       "exampleTranslation": "Aile ve mesleğin bağdaştırılması zor olmaya devam ediyor.",
       "synonyms": [
-        "die Vereinbarung"
+        "die Kompatibilität"
       ],
       "level": "C1"
     },

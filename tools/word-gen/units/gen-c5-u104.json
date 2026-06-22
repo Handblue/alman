@@ -13,16 +13,18 @@
       "example": "Ein langer Spaziergang am Morgen hält mich fit.",
       "exampleTranslation": "Sabahları uzun bir yürüyüş beni formda tutar.",
       "synonyms": [
-        "der Gang"
+        "der Bummel"
       ],
       "level": "A1"
     },
     {
-      "german": "der Tennis",
-      "turkish": "tenis",
-      "example": "Am Wochenende spiele ich gern Tennis mit meinem Bruder.",
-      "exampleTranslation": "Hafta sonu erkek kardeşimle tenis oynamayı severim.",
-      "synonyms": [],
+      "german": "das Radfahren",
+      "turkish": "bisiklete binme",
+      "example": "Das Radfahren am Wochenende macht mir großen Spaß.",
+      "exampleTranslation": "Hafta sonu bisiklete binmek bana çok keyif veriyor.",
+      "synonyms": [
+        "der Radsport"
+      ],
       "level": "A1"
     },
     {
@@ -49,7 +51,7 @@
       "example": "Im Winter trainieren wir in der Halle.",
       "exampleTranslation": "Kışın salonda antrenman yaparız.",
       "synonyms": [
-        "der Saal"
+        "die Sporthalle"
       ],
       "level": "A1"
     },
@@ -66,7 +68,7 @@
     },
     {
       "german": "das Fitnessstudio",
-      "turkish": "spor salonu / fitness merkezi",
+      "turkish": "spor salonu, fitness merkezi",
       "example": "Ich gehe dreimal pro Woche ins Fitnessstudio.",
       "exampleTranslation": "Haftada üç kez spor salonuna gidiyorum.",
       "synonyms": [
@@ -78,7 +80,7 @@
       "german": "die Sportart",
       "turkish": "spor dalı",
       "example": "Schwimmen ist meine liebste Sportart.",
-      "exampleTranslation": "Yüzme benim en sevdiğim spor dalı.",
+      "exampleTranslation": "Yüzme en sevdiğim spor dalı.",
       "synonyms": [
         "die Disziplin"
       ],
@@ -125,7 +127,7 @@
     },
     {
       "german": "die Kondition",
-      "turkish": "kondisyon / form",
+      "turkish": "kondisyon, form",
       "example": "Durch Joggen verbessere ich meine Kondition.",
       "exampleTranslation": "Koşarak kondisyonumu geliştiriyorum.",
       "synonyms": [
@@ -137,8 +139,8 @@
     {
       "german": "die Mitgliedschaft",
       "turkish": "üyelik",
-      "example": "Meine Mitgliedschaft im Fitnessstudio kostet monatlich.",
-      "exampleTranslation": "Spor salonundaki üyeliğim aylık ücretli.",
+      "example": "Meine Mitgliedschaft im Fitnessstudio kostet monatlich 30 Euro.",
+      "exampleTranslation": "Spor salonundaki üyeliğim aylık 30 euro tutuyor.",
       "synonyms": [],
       "level": "B1"
     },
@@ -148,7 +150,7 @@
       "example": "Vor dem Sport solltest du dich aufwärmen.",
       "exampleTranslation": "Spordan önce ısınmalısın.",
       "synonyms": [
-        "sich dehnen"
+        "sich erwärmen"
       ],
       "level": "B1"
     }

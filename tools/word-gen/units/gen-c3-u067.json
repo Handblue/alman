@@ -39,8 +39,8 @@
     {
       "german": "die Ankunft",
       "turkish": "varış / geliş",
-      "example": "Unsere Ankunft im Hotel war erst spät.",
-      "exampleTranslation": "Otele varışımız ancak geç oldu.",
+      "example": "Unsere Ankunft im Hotel war erst spät am Abend.",
+      "exampleTranslation": "Otele varışımız ancak akşam geç oldu.",
       "synonyms": [
         "das Eintreffen"
       ],

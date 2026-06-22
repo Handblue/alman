@@ -79,7 +79,7 @@
       "german": "die Abfrage",
       "turkish": "sorgu",
       "example": "Die Abfrage liefert alle aktiven Nutzer zurück.",
-      "exampleTranslation": "Sorgu, tüm aktif kullanıcıları geri döndürür.",
+      "exampleTranslation": "Sorgu, tüm aktif kullanıcıları döndürür.",
       "synonyms": [
         "die Anfrage"
       ],
@@ -89,7 +89,7 @@
       "german": "der Server",
       "turkish": "sunucu",
       "example": "Der Server ist wegen Wartungsarbeiten kurz offline.",
-      "exampleTranslation": "Sunucu, bakım çalışmaları nedeniyle kısa süre kapalı.",
+      "exampleTranslation": "Sunucu, bakım çalışmaları nedeniyle kısa süre çevrimdışı.",
       "synonyms": [
         "der Rechner"
       ],
@@ -127,7 +127,7 @@
       "german": "die Mustererkennung",
       "turkish": "örüntü tanıma",
       "example": "Mustererkennung hilft, Betrug frühzeitig zu entdecken.",
-      "exampleTranslation": "Örüntü tanıma, dolandırıcılığı erkenden bulmaya yardımcı olur.",
+      "exampleTranslation": "Örüntü tanıma, dolandırıcılığı erkenden tespit etmeye yardımcı olur.",
       "synonyms": [],
       "level": "C1"
     },

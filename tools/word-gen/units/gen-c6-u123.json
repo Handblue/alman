@@ -24,7 +24,7 @@
       "exampleTranslation": "Verilerin toplanması üç ay sürdü.",
       "synonyms": [
         "die Datenerhebung",
-        "die Sammlung"
+        "die Umfrage"
       ],
       "level": "B2"
     },
@@ -46,7 +46,7 @@
       "exampleTranslation": "Bir özelliğin sıklığı, örneklemde ne kadar sık ortaya çıktığını gösterir.",
       "synonyms": [
         "die Frequenz",
-        "die Anzahl"
+        "die Häufigkeitsrate"
       ],
       "level": "B2"
     },
@@ -109,7 +109,7 @@
       "german": "die Stichprobengröße",
       "turkish": "örneklem büyüklüğü",
       "example": "Die Stichprobengröße war für eine Aussage zu klein.",
-      "exampleTranslation": "Örneklem büyüklüğü bir çıkarım için fazla küçüktü.",
+      "exampleTranslation": "Örneklem büyüklüğü bir çıkarım için çok küçüktü.",
       "synonyms": [
         "der Stichprobenumfang"
       ],
@@ -132,8 +132,7 @@
       "example": "Die Gültigkeit des Tests wurde sorgfältig geprüft.",
       "exampleTranslation": "Testin geçerliliği dikkatlice incelendi.",
       "synonyms": [
-        "die Validität",
-        "die Wirksamkeit"
+        "die Validität"
       ],
       "level": "C1"
     },
@@ -157,7 +156,7 @@
         "der Bias",
         "die Verfälschung"
       ],
-      "level": "B2"
+      "level": "C1"
     },
     {
       "german": "die Messgenauigkeit",

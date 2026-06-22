@@ -94,9 +94,9 @@
     },
     {
       "german": "die Berichterstattung",
-      "turkish": "haber yapma / haberleşme",
+      "turkish": "haber yapma / haber sunumu",
       "example": "Die Berichterstattung über den Vorfall war einseitig.",
-      "exampleTranslation": "Olayla ilgili haber yapma tek taraflıydı.",
+      "exampleTranslation": "Olayla ilgili haber sunumu tek taraflıydı.",
       "synonyms": [
         "die Reportage",
         "die Nachrichtengebung"
@@ -120,7 +120,8 @@
       "example": "Der Sender wird die Dokumentation heute Abend ausstrahlen.",
       "exampleTranslation": "Kanal belgeseli bu akşam yayınlayacak.",
       "synonyms": [
-        "übertragen"
+        "übertragen",
+        "senden"
       ],
       "level": "B2"
     },

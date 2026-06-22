@@ -108,7 +108,7 @@
       "example": "Wasser kann drei Aggregatzustände annehmen.",
       "exampleTranslation": "Su üç farklı hâl alabilir.",
       "synonyms": [
-        "der Materiezustand"
+        "der Zustand"
       ],
       "level": "C1"
     },
@@ -132,7 +132,7 @@
     },
     {
       "german": "der Niederschlag",
-      "turkish": "çökelti / çökme",
+      "turkish": "çökelti",
       "example": "Beim Mischen bildet sich ein weißer Niederschlag.",
       "exampleTranslation": "Karıştırırken beyaz bir çökelti oluşur.",
       "synonyms": [

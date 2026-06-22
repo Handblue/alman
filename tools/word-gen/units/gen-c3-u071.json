@@ -46,7 +46,8 @@
       "example": "Der Anwender muss die neue Software erst installieren, bevor er sie nutzen kann.",
       "exampleTranslation": "Kullanıcı, yeni yazılımı kullanabilmek için önce yüklemek zorundadır.",
       "synonyms": [
-        "der Verwender"
+        "der Verwender",
+        "der Nutzer"
       ],
       "level": "B1"
     },
@@ -67,7 +68,8 @@
       "example": "Die Digitalisierung verändert viele Berufe grundlegend.",
       "exampleTranslation": "Dijitalleşme birçok mesleği kökten değiştiriyor.",
       "synonyms": [
-        "die Digitalumstellung"
+        "die digitale Transformation",
+        "der digitale Wandel"
       ],
       "level": "B2"
     },
@@ -87,6 +89,7 @@
       "example": "Viele Firmen investieren stark in die Datensicherheit.",
       "exampleTranslation": "Birçok şirket veri güvenliğine çok yatırım yapıyor.",
       "synonyms": [
+        "der Datenschutz",
         "der Informationsschutz"
       ],
       "level": "B2"
@@ -126,7 +129,7 @@
     },
     {
       "german": "die Cyberkriminalität",
-      "turkish": "siber suç",
+      "turkish": "siber suç / siber suçluluk",
       "example": "Die Cyberkriminalität nimmt jedes Jahr deutlich zu.",
       "exampleTranslation": "Siber suç her yıl belirgin şekilde artıyor.",
       "synonyms": [
@@ -141,7 +144,8 @@
       "example": "Der Datenmissbrauch durch Konzerne beunruhigt viele Verbraucher.",
       "exampleTranslation": "Şirketlerin verileri kötüye kullanması birçok tüketiciyi endişelendiriyor.",
       "synonyms": [
-        "der Datenmissstand"
+        "der Datenmissbrauch durch Dritte",
+        "die missbräuchliche Datennutzung"
       ],
       "level": "C1"
     },

@@ -33,7 +33,7 @@
       "example": "Der Mann holt sein Werkzeug.",
       "exampleTranslation": "Adam aletlerini getiriyor.",
       "synonyms": [
-        "das Gerät"
+        "das Arbeitsgerät"
       ],
       "level": "A1"
     },
@@ -123,7 +123,7 @@
       "german": "die Panne",
       "turkish": "arıza / yolda kalma",
       "example": "Wir hatten eine Panne auf der Autobahn.",
-      "exampleTranslation": "Otoyolda bir arıza yaşadık.",
+      "exampleTranslation": "Otoyolda arıza yaptık (yolda kaldık).",
       "synonyms": [
         "der Defekt"
       ],
@@ -150,9 +150,9 @@
       "level": "B1"
     },
     {
-      "german": "der Ersatzteil",
+      "german": "das Ersatzteil",
       "turkish": "yedek parça",
-      "example": "Wir warten noch auf den Ersatzteil.",
+      "example": "Wir warten noch auf das Ersatzteil.",
       "exampleTranslation": "Hâlâ yedek parçayı bekliyoruz.",
       "synonyms": [
         "das Bauteil"

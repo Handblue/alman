@@ -39,7 +39,7 @@
     },
     {
       "german": "der Weg",
-      "turkish": "yol / patika",
+      "turkish": "yol, patika",
       "example": "Kennen Sie den Weg zum Bahnhof?",
       "exampleTranslation": "Tren istasyonuna giden yolu biliyor musunuz?",
       "synonyms": [
@@ -55,13 +55,13 @@
       "synonyms": [
         "der Brunnen"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "die Gasse",
       "turkish": "dar sokak, ara sokak",
       "example": "Hinter dem Markt führt eine enge Gasse zur Kirche.",
-      "exampleTranslation": "Pazarın arkasındaki dar bir sokak kiliseye gidiyor.",
+      "exampleTranslation": "Pazarın arkasında dar bir sokak kiliseye gidiyor.",
       "synonyms": [
         "die Seitenstraße"
       ],
@@ -82,7 +82,9 @@
       "turkish": "çıkmaz sokak",
       "example": "Bieg hier nicht ab, das ist eine Sackgasse.",
       "exampleTranslation": "Buradan sapma, burası çıkmaz sokak.",
-      "synonyms": [],
+      "synonyms": [
+        "die Sackstraße"
+      ],
       "level": "A2"
     },
     {
@@ -127,7 +129,7 @@
     },
     {
       "german": "die Entfernung",
-      "turkish": "mesafe / uzaklık",
+      "turkish": "mesafe, uzaklık",
       "example": "Die Entfernung zum Museum ist gering.",
       "exampleTranslation": "Müzeye olan mesafe kısa.",
       "synonyms": [
@@ -138,7 +140,7 @@
     },
     {
       "german": "sich verlaufen",
-      "turkish": "yolunu kaybetmek / kaybolmak",
+      "turkish": "yolunu kaybetmek, kaybolmak",
       "example": "Ich habe mich in der Altstadt verlaufen.",
       "exampleTranslation": "Eski şehirde kayboldum.",
       "synonyms": [
@@ -148,7 +150,7 @@
     },
     {
       "german": "sich orientieren",
-      "turkish": "yön bulmak / yönünü belirlemek",
+      "turkish": "yön bulmak, yönünü belirlemek",
       "example": "Mit der App kann ich mich gut orientieren.",
       "exampleTranslation": "Uygulamayla yönümü iyi bulabiliyorum.",
       "synonyms": [

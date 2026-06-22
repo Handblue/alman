@@ -16,7 +16,7 @@
         "die Äußerung",
         "das Statement"
       ],
-      "level": "B1"
+      "level": "B2"
     },
     {
       "german": "vorbringen",
@@ -27,7 +27,7 @@
         "anführen",
         "vortragen"
       ],
-      "level": "B1"
+      "level": "B2"
     },
     {
       "german": "anzweifeln",
@@ -38,7 +38,7 @@
         "bezweifeln",
         "infrage stellen"
       ],
-      "level": "B1"
+      "level": "B2"
     },
     {
       "german": "der Standpunkt",
@@ -60,7 +60,7 @@
         "klären",
         "richtigstellen"
       ],
-      "level": "B1"
+      "level": "B2"
     },
     {
       "german": "die These",
@@ -69,7 +69,7 @@
       "exampleTranslation": "Tezi beni tam olarak ikna etmiyor.",
       "synonyms": [
         "die Behauptung",
-        "der Leitsatz"
+        "die Annahme"
       ],
       "level": "B2"
     },
@@ -80,7 +80,7 @@
       "exampleTranslation": "Bu öneriye karşı bir itirazım var.",
       "synonyms": [
         "der Vorbehalt",
-        "die Bedenken"
+        "das Bedenken"
       ],
       "level": "B2"
     },
@@ -135,7 +135,7 @@
       "exampleTranslation": "Gerçeklerle suçlamayı çürütebildi.",
       "synonyms": [
         "widerlegen",
-        "entwerten"
+        "abschwächen"
       ],
       "level": "C1"
     },

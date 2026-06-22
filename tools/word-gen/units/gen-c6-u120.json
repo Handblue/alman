@@ -45,7 +45,7 @@
       "example": "Das Wort \"Banane\" besteht aus drei Silben.",
       "exampleTranslation": "\"Banane\" kelimesi üç heceden oluşur.",
       "synonyms": [
-        "der Sprechtakt"
+        "die Sprecheinheit"
       ],
       "level": "B2"
     },
@@ -124,7 +124,7 @@
       "german": "das Lehnwort",
       "turkish": "ödünç kelime, alıntı sözcük",
       "example": "Das Wort \"Fenster\" ist ein Lehnwort aus dem Lateinischen.",
-      "exampleTranslation": "\"Fenster\" kelimesi Latince'den alınmış bir ödünç kelimedir.",
+      "exampleTranslation": "\"Fenster\" kelimesi Latinceden alınmış bir ödünç kelimedir.",
       "synonyms": [
         "die Entlehnung"
       ],

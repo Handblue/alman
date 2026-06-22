@@ -13,7 +13,8 @@
       "example": "Am Abend sehe ich oft fern.",
       "exampleTranslation": "Akşamları sık sık televizyon izlerim.",
       "synonyms": [
-        "Fernsehen schauen"
+        "Fernsehen schauen",
+        "Fernsehen gucken"
       ],
       "level": "A1"
     },
@@ -23,7 +24,7 @@
       "example": "Bringst du mir bitte einen Kaffee mit?",
       "exampleTranslation": "Bana bir kahve getirir misin lütfen?",
       "synonyms": [
-        "mitnehmen"
+        "herbringen"
       ],
       "level": "A1"
     },
@@ -40,7 +41,7 @@
     },
     {
       "german": "ausgehen",
-      "turkish": "dışarı çıkmak / sona ermek",
+      "turkish": "dışarı çıkmak (eğlenmeye); sona ermek, bitmek",
       "example": "Am Wochenende gehen wir gern aus.",
       "exampleTranslation": "Hafta sonu severek dışarı çıkarız.",
       "synonyms": [
@@ -51,7 +52,7 @@
     },
     {
       "german": "mitkommen",
-      "turkish": "birlikte gelmek / eşlik etmek",
+      "turkish": "birlikte gelmek, eşlik etmek",
       "example": "Kommst du heute Abend mit?",
       "exampleTranslation": "Bu akşam birlikte geliyor musun?",
       "synonyms": [
@@ -66,7 +67,8 @@
       "example": "Bitte mach das Fenster zu.",
       "exampleTranslation": "Lütfen pencereyi kapat.",
       "synonyms": [
-        "schließen"
+        "schließen",
+        "verschließen"
       ],
       "level": "A2"
     },
@@ -83,7 +85,7 @@
     },
     {
       "german": "wegwerfen",
-      "turkish": "atmak / çöpe atmak",
+      "turkish": "atmak, çöpe atmak",
       "example": "Wirf die alte Zeitung endlich weg.",
       "exampleTranslation": "Şu eski gazeteyi artık at.",
       "synonyms": [
@@ -94,7 +96,7 @@
     },
     {
       "german": "abholen",
-      "turkish": "almaya gitmek / teslim almak",
+      "turkish": "almaya gitmek, teslim almak",
       "example": "Ich hole dich am Bahnhof ab.",
       "exampleTranslation": "Seni istasyondan alırım.",
       "synonyms": [
@@ -115,7 +117,7 @@
     },
     {
       "german": "durchführen",
-      "turkish": "gerçekleştirmek / uygulamak",
+      "turkish": "gerçekleştirmek, uygulamak",
       "example": "Das Institut führt eine Studie durch.",
       "exampleTranslation": "Enstitü bir araştırma gerçekleştiriyor.",
       "synonyms": [
@@ -126,18 +128,18 @@
     },
     {
       "german": "festlegen",
-      "turkish": "belirlemek / saptamak",
+      "turkish": "belirlemek, saptamak",
       "example": "Wir legen den Termin für Montag fest.",
       "exampleTranslation": "Randevuyu pazartesi olarak belirliyoruz.",
       "synonyms": [
         "bestimmen",
-        "definieren"
+        "festsetzen"
       ],
       "level": "B2"
     },
     {
       "german": "voraussetzen",
-      "turkish": "ön koşul saymak / varsaymak",
+      "turkish": "ön koşul saymak, varsaymak",
       "example": "Die Stelle setzt gute Sprachkenntnisse voraus.",
       "exampleTranslation": "Bu pozisyon iyi dil bilgisini ön koşul sayar.",
       "synonyms": [
@@ -148,7 +150,7 @@
     },
     {
       "german": "hervorheben",
-      "turkish": "vurgulamak / öne çıkarmak",
+      "turkish": "vurgulamak, öne çıkarmak",
       "example": "Der Autor hebt diesen Aspekt besonders hervor.",
       "exampleTranslation": "Yazar bu yönü özellikle vurguluyor.",
       "synonyms": [
@@ -160,7 +162,7 @@
     },
     {
       "german": "zurückführen",
-      "turkish": "(bir şeye) bağlamak / dayandırmak",
+      "turkish": "(bir şeye) bağlamak, dayandırmak",
       "example": "Man führt das Problem auf den Klimawandel zurück.",
       "exampleTranslation": "Sorun iklim değişikliğine bağlanıyor.",
       "synonyms": [

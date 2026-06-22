@@ -20,9 +20,9 @@
     },
     {
       "german": "der Rohstoff",
-      "turkish": "ham madde / doğal kaynak",
+      "turkish": "ham madde, hammadde",
       "example": "Erdöl ist ein wichtiger fossiler Rohstoff.",
-      "exampleTranslation": "Petrol önemli bir fosil ham maddedir.",
+      "exampleTranslation": "Petrol önemli bir fosil hammaddedir.",
       "synonyms": [
         "der Grundstoff",
         "das Ausgangsmaterial"
@@ -62,7 +62,7 @@
     },
     {
       "german": "das Grundwasser",
-      "turkish": "yer altı suyu / taban suyu",
+      "turkish": "yer altı suyu, taban suyu",
       "example": "Pestizide gelangen oft ins Grundwasser.",
       "exampleTranslation": "Pestisitler sıklıkla yer altı suyuna karışır.",
       "synonyms": [],
@@ -70,7 +70,7 @@
     },
     {
       "german": "der Boden",
-      "turkish": "toprak / zemin",
+      "turkish": "toprak, zemin",
       "example": "Der Boden ist hier sehr fruchtbar.",
       "exampleTranslation": "Buradaki toprak çok verimli.",
       "synonyms": [
@@ -101,7 +101,7 @@
     },
     {
       "german": "das Sediment",
-      "turkish": "tortu / çökelti",
+      "turkish": "tortu, çökelti",
       "example": "Am Flussgrund lagert sich feines Sediment ab.",
       "exampleTranslation": "Nehir tabanında ince tortu birikir.",
       "synonyms": [
@@ -112,7 +112,7 @@
     },
     {
       "german": "das Gestein",
-      "turkish": "kayaç / taş kütlesi",
+      "turkish": "kayaç, taş kütlesi",
       "example": "Vulkanisches Gestein kühlt langsam ab.",
       "exampleTranslation": "Volkanik kayaç yavaşça soğur.",
       "synonyms": [
@@ -149,8 +149,8 @@
       "example": "Durch die ständige Verwitterung zerfällt das Gestein allmählich zu feinem Sand.",
       "exampleTranslation": "Sürekli aşınma nedeniyle kayaç yavaş yavaş ince kuma dönüşür.",
       "synonyms": [
-        "die Erosion",
-        "der Zerfall"
+        "der Zerfall",
+        "die Auflösung"
       ],
       "level": "C1"
     },

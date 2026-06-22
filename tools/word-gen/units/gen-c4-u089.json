@@ -56,7 +56,7 @@
       "synonyms": [
         "die Mehrheitsgesellschaft"
       ],
-      "level": "B1"
+      "level": "B2"
     },
     {
       "german": "das Miteinander",
@@ -113,8 +113,8 @@
     {
       "german": "sich anpassen",
       "turkish": "uyum sağlamak / adapte olmak",
-      "example": "Neuankömmlinge müssen sich an das Leben anpassen.",
-      "exampleTranslation": "Yeni gelenler yaşama uyum sağlamak zorundadır.",
+      "example": "Neuankömmlinge müssen sich an das Leben in Deutschland anpassen.",
+      "exampleTranslation": "Yeni gelenler Almanya'daki yaşama uyum sağlamak zorundadır.",
       "synonyms": [
         "sich eingliedern",
         "sich einleben"
@@ -138,7 +138,7 @@
       "example": "Die Politik soll für mehr Chancengerechtigkeit am Arbeitsmarkt sorgen.",
       "exampleTranslation": "Siyaset, iş piyasasında daha fazla fırsat adaleti sağlamalıdır.",
       "synonyms": [
-        "die Verteilungsgerechtigkeit"
+        "die Chancengleichheit"
       ],
       "level": "C1"
     },

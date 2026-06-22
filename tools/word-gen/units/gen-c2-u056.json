@@ -9,7 +9,7 @@
   "words": [
     {
       "german": "der",
-      "turkish": "(eril nesneyi niteleyen ilgi zamiri) ki o / -en",
+      "turkish": "(eril özneyi niteleyen ilgi zamiri) ki o / -en",
       "example": "Der Mann, der dort steht, ist mein Vater.",
       "exampleTranslation": "Orada duran adam babamdır.",
       "synonyms": [
@@ -19,9 +19,9 @@
     },
     {
       "german": "die",
-      "turkish": "(dişil/çoğul nesneyi niteleyen ilgi zamiri) ki o / -en",
+      "turkish": "(dişil/çoğul ilgi zamiri) ki o / -en",
       "example": "Die Frau, die hier wohnt, ist nett.",
-      "exampleTranslation": "Burada oturan kadın çok kibar.",
+      "exampleTranslation": "Burada oturan kadın kibar.",
       "synonyms": [
         "welche"
       ],
@@ -29,7 +29,7 @@
     },
     {
       "german": "das",
-      "turkish": "(nötr nesneyi niteleyen ilgi zamiri) ki o / -en",
+      "turkish": "(nötr ilgi zamiri) ki o / -en",
       "example": "Das Auto, das rot ist, gehört mir.",
       "exampleTranslation": "Kırmızı olan araba bana ait.",
       "synonyms": [
@@ -67,8 +67,8 @@
     },
     {
       "german": "den",
-      "turkish": "(eril akkusativ nesneyi niteleyen ilgi zamiri) ki onu / -dığı",
-      "example": "Der Film, den ich sah, war spannend.",
+      "turkish": "(eril akkusativ ilgi zamiri) ki onu / -dığı",
+      "example": "Der Film, den ich gesehen habe, war spannend.",
       "exampleTranslation": "İzlediğim film heyecanlıydı.",
       "synonyms": [
         "welchen"
@@ -77,7 +77,7 @@
     },
     {
       "german": "dem",
-      "turkish": "(eril/nötr dativ nesneyi niteleyen ilgi zamiri) ki ona / -dığı",
+      "turkish": "(eril/nötr dativ ilgi zamiri) ki ona / -dığı",
       "example": "Der Freund, dem ich helfe, ist krank.",
       "exampleTranslation": "Yardım ettiğim arkadaş hasta.",
       "synonyms": [
@@ -87,7 +87,7 @@
     },
     {
       "german": "denen",
-      "turkish": "(çoğul dativ nesneyi niteleyen ilgi zamiri) ki onlara / -dıkları",
+      "turkish": "(çoğul dativ ilgi zamiri) ki onlara / -dıkları",
       "example": "Die Kinder, denen wir helfen, sind glücklich.",
       "exampleTranslation": "Yardım ettiğimiz çocuklar mutlu.",
       "synonyms": [
@@ -117,7 +117,7 @@
       "german": "deren",
       "turkish": "(dişil/çoğul genitiv ilgi zamiri) ki onun / -nın",
       "example": "Die Frau, deren Sohn studiert, ist stolz.",
-      "exampleTranslation": "Oğlu okuyan kadın gururlu.",
+      "exampleTranslation": "Oğlu üniversitede okuyan kadın gururlu.",
       "synonyms": [],
       "level": "B2"
     },

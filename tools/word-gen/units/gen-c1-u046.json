@@ -24,7 +24,8 @@
       "example": "Warum bist du so traurig?",
       "exampleTranslation": "Neden bu kadar üzgünsün?",
       "synonyms": [
-        "unglücklich"
+        "unglücklich",
+        "betrübt"
       ],
       "level": "A1"
     },
@@ -45,7 +46,8 @@
       "example": "Am Abend bin ich immer müde.",
       "exampleTranslation": "Akşamları hep yorgun olurum.",
       "synonyms": [
-        "erschöpft"
+        "erschöpft",
+        "schläfrig"
       ],
       "level": "A1"
     },
@@ -55,8 +57,8 @@
       "example": "Meine Nachbarin ist sehr nett.",
       "exampleTranslation": "Komşum çok nazik.",
       "synonyms": [
-        "freundlich",
-        "lieb"
+        "lieb",
+        "sympathisch"
       ],
       "level": "A1"
     },
@@ -66,8 +68,8 @@
       "example": "Der Verkäufer war sehr freundlich.",
       "exampleTranslation": "Satıcı çok cana yakındı.",
       "synonyms": [
-        "nett",
-        "höflich"
+        "höflich",
+        "liebenswürdig"
       ],
       "level": "A1"
     },
@@ -77,7 +79,8 @@
       "example": "Sie ist eine fleißige Schülerin.",
       "exampleTranslation": "O çalışkan bir öğrenci.",
       "synonyms": [
-        "strebsam"
+        "strebsam",
+        "eifrig"
       ],
       "level": "A1"
     },

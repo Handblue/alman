@@ -42,7 +42,7 @@
       "german": "reduziert",
       "turkish": "indirimli / fiyatı düşürülmüş",
       "example": "Diese Jacke ist stark reduziert.",
-      "exampleTranslation": "Bu ceket bayağı indirimli.",
+      "exampleTranslation": "Bu ceket epeyce indirimli.",
       "synonyms": [
         "herabgesetzt",
         "vergünstigt"
@@ -101,7 +101,7 @@
       "german": "die Mode",
       "turkish": "moda",
       "example": "Diese Schuhe sind gerade große Mode.",
-      "exampleTranslation": "Bu ayakkabılar şu an büyük moda.",
+      "exampleTranslation": "Bu ayakkabılar şu an çok moda.",
       "synonyms": [
         "der Trend"
       ],

@@ -19,14 +19,14 @@
     },
     {
       "german": "der Hausflur",
-      "turkish": "bina koridoru, antre",
+      "turkish": "bina koridoru / antre",
       "example": "Im Hausflur stehen die Briefkästen aller Bewohner.",
       "exampleTranslation": "Bina koridorunda tüm sakinlerin posta kutuları duruyor.",
       "synonyms": [
         "der Flur",
         "der Eingangsbereich"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "das Zuhause",
@@ -56,11 +56,11 @@
       "synonyms": [
         "das Stiegenhaus"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "der Hausmeister",
-      "turkish": "bina görevlisi, kapıcı",
+      "turkish": "bina görevlisi / kapıcı",
       "example": "Wenn die Heizung kaputt ist, rufe ich den Hausmeister an.",
       "exampleTranslation": "Kalorifer bozulursa bina görevlisini ararım.",
       "synonyms": [
@@ -70,7 +70,7 @@
     },
     {
       "german": "der Einzug",
-      "turkish": "(eve) taşınma, giriş",
+      "turkish": "(eve) taşınma / giriş",
       "example": "Nach dem Einzug haben wir gleich die Nachbarn begrüßt.",
       "exampleTranslation": "Taşındıktan sonra hemen komşuları selamladık.",
       "synonyms": [
@@ -101,7 +101,7 @@
     },
     {
       "german": "die Wohngemeinschaft",
-      "turkish": "ev arkadaşlığı / paylaşımlı ev (WG)",
+      "turkish": "paylaşımlı ev / ev arkadaşlığı (WG)",
       "example": "Ich wohne in einer Wohngemeinschaft.",
       "exampleTranslation": "Bir paylaşımlı evde yaşıyorum.",
       "synonyms": [
@@ -121,7 +121,7 @@
     },
     {
       "german": "die Warmmiete",
-      "turkish": "ısıtma ve giderler dahil kira",
+      "turkish": "giderler dahil kira (ısıtma vb. dahil)",
       "example": "Die Warmmiete für die Wohnung beträgt 900 Euro im Monat.",
       "exampleTranslation": "Dairenin giderler dahil kirası ayda 900 euro.",
       "synonyms": [
@@ -131,11 +131,11 @@
     },
     {
       "german": "der Untermieter",
-      "turkish": "kiracının kiracısı, ortak kiracı",
+      "turkish": "alt kiracı (kiracının kiracısı)",
       "example": "Wir suchen einen Untermieter für das freie Zimmer.",
       "exampleTranslation": "Boş oda için bir alt kiracı arıyoruz.",
       "synonyms": [
-        "der Mitbewohner"
+        "der Mieter eines Untermietverhältnisses"
       ],
       "level": "B1"
     },

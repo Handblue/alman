@@ -9,7 +9,7 @@
   "words": [
     {
       "german": "der Zuwanderer",
-      "turkish": "göçmen / ülkeye gelen göçmen",
+      "turkish": "göçmen / ülkeye gelen kişi",
       "example": "Viele Zuwanderer suchen hier eine bessere Zukunft.",
       "exampleTranslation": "Birçok göçmen burada daha iyi bir gelecek arıyor.",
       "synonyms": [
@@ -95,7 +95,7 @@
     },
     {
       "german": "die Überalterung",
-      "turkish": "yaşlanma / nüfusun yaşlanması",
+      "turkish": "nüfusun yaşlanması / yaşlı nüfus oranının artması",
       "example": "Die Überalterung belastet das Rentensystem stark.",
       "exampleTranslation": "Nüfusun yaşlanması emeklilik sistemini ciddi şekilde zorluyor.",
       "synonyms": [
@@ -127,7 +127,7 @@
     },
     {
       "german": "die Benachteiligung",
-      "turkish": "dezavantaj / mağduriyet / haksızlığa uğrama",
+      "turkish": "dezavantajlı konum / haksızlığa uğrama / ayrımcılık",
       "example": "Sie kämpft gegen die Benachteiligung von Frauen.",
       "exampleTranslation": "O, kadınların dezavantajlı konumuna karşı mücadele ediyor.",
       "synonyms": [
@@ -148,9 +148,9 @@
     },
     {
       "german": "die Leitkultur",
-      "turkish": "öncü kültür / belirleyici kültür",
+      "turkish": "belirleyici/baskın kültür (egemen referans kültür)",
       "example": "Über eine deutsche Leitkultur wird heftig gestritten.",
-      "exampleTranslation": "Bir Alman öncü kültürü üzerine şiddetli tartışmalar yürütülüyor.",
+      "exampleTranslation": "Bir Alman belirleyici kültürü üzerine şiddetli tartışmalar yürütülüyor.",
       "synonyms": [
         "die Mehrheitskultur"
       ],
@@ -160,10 +160,10 @@
       "german": "die Bürgerschaft",
       "turkish": "yurttaşlık / vatandaşlar topluluğu",
       "example": "Eine aktive Bürgerschaft trägt die Demokratie mit.",
-      "exampleTranslation": "Aktif bir yurttaşlık demokrasiyi birlikte taşır.",
+      "exampleTranslation": "Aktif bir yurttaşlar topluluğu demokrasiyi birlikte ayakta tutar.",
       "synonyms": [
-        "die Bürgerlichkeit",
-        "die Bürgergesellschaft"
+        "die Bürgergesellschaft",
+        "die Einwohnerschaft"
       ],
       "level": "C1"
     }

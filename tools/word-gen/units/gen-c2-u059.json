@@ -11,23 +11,23 @@
       "german": "beinahe",
       "turkish": "neredeyse, az kalsın",
       "example": "Beinahe wäre ich zu spät gekommen.",
-      "exampleTranslation": "Az kalsın geç kalıyordum.",
+      "exampleTranslation": "Az kalsın geç kalacaktım.",
       "synonyms": [
-        "fast schon"
+        "fast"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "hätte",
-      "turkish": "sahip olurdu / -sa olurdu",
+      "turkish": "olurdu / -sa olurdu (haben'in Konjunktiv II'si)",
       "example": "Ich hätte gern ein Glas Wasser.",
-      "exampleTranslation": "Bir bardak su rica ediyorum.",
+      "exampleTranslation": "Bir bardak su isterdim.",
       "synonyms": [],
       "level": "A1"
     },
     {
       "german": "wäre",
-      "turkish": "olurdu / olsa",
+      "turkish": "olurdu / olsa (sein'in Konjunktiv II'si)",
       "example": "Das wäre wunderbar.",
       "exampleTranslation": "Bu harika olurdu.",
       "synonyms": [],
@@ -65,7 +65,7 @@
       "example": "Ich habe einen großen Wunsch.",
       "exampleTranslation": "Büyük bir dileğim var.",
       "synonyms": [
-        "der Traum",
+        "das Anliegen",
         "das Verlangen"
       ],
       "level": "A2"
@@ -76,8 +76,7 @@
       "example": "Ich hätte eine Bitte an dich.",
       "exampleTranslation": "Senden bir ricam olacaktı.",
       "synonyms": [
-        "das Anliegen",
-        "der Wunsch"
+        "das Anliegen"
       ],
       "level": "A2"
     },
@@ -92,8 +91,8 @@
     {
       "german": "zuvorkommend",
       "turkish": "nazik, kibar, yardımsever",
-      "example": "Wenn du etwas erbittest, solltest du zuvorkommend formulieren.",
-      "exampleTranslation": "Bir şey rica ederken nazik bir biçimde ifade etmelisin.",
+      "example": "Der Kellner war sehr zuvorkommend.",
+      "exampleTranslation": "Garson çok nazikti.",
       "synonyms": [
         "entgegenkommend",
         "rücksichtsvoll"
@@ -150,8 +149,7 @@
       "exampleTranslation": "Bu tamamen varsayımsal bir soru.",
       "synonyms": [
         "fiktiv",
-        "theoretisch",
-        "angenommen"
+        "theoretisch"
       ],
       "level": "C1"
     }

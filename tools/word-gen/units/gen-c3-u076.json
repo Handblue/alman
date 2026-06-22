@@ -52,8 +52,7 @@
       "example": "Jeder Bürger hat das Recht zu wählen.",
       "exampleTranslation": "Her vatandaşın oy verme hakkı vardır.",
       "synonyms": [
-        "der Staatsbürger",
-        "der Einwohner"
+        "der Staatsbürger"
       ],
       "level": "B1"
     },
@@ -85,7 +84,8 @@
       "example": "Die Verfassung garantiert die Meinungsfreiheit.",
       "exampleTranslation": "Anayasa ifade özgürlüğünü güvence altına alır.",
       "synonyms": [
-        "die Staatsordnung"
+        "die Staatsordnung",
+        "das Grundgesetz"
       ],
       "level": "B2"
     },
@@ -126,7 +126,7 @@
       "example": "Er beantragte die deutsche Staatsbürgerschaft.",
       "exampleTranslation": "Alman vatandaşlığına başvurdu.",
       "synonyms": [
-        "die Nationalität"
+        "die Staatsangehörigkeit"
       ],
       "level": "B2"
     },

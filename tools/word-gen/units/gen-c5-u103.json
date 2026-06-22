@@ -22,7 +22,7 @@
       "german": "der Film",
       "turkish": "film",
       "example": "Der Film war wirklich spannend.",
-      "exampleTranslation": "Film gerçekten heyecanlıydı.",
+      "exampleTranslation": "Film gerçekten heyecan vericiydi.",
       "synonyms": [
         "der Streifen"
       ],
@@ -32,7 +32,7 @@
       "german": "der Ausflug",
       "turkish": "gezi, kısa seyahat",
       "example": "Am Wochenende machen wir einen Ausflug ans Meer.",
-      "exampleTranslation": "Hafta sonu denize bir gezi yapıyoruz.",
+      "exampleTranslation": "Hafta sonu deniz kenarına bir gezi yapacağız.",
       "synonyms": [
         "der Trip"
       ],
@@ -44,7 +44,7 @@
       "example": "In meiner Freizeit spiele ich Gitarre.",
       "exampleTranslation": "Boş zamanımda gitar çalarım.",
       "synonyms": [
-        "die Mußestunden"
+        "die Muße"
       ],
       "level": "A1"
     },
@@ -105,7 +105,7 @@
       "german": "sammeln",
       "turkish": "biriktirmek / toplamak",
       "example": "Mein Bruder sammelt alte Briefmarken.",
-      "exampleTranslation": "Kardeşim eski pulları biriktiriyor.",
+      "exampleTranslation": "Erkek kardeşim eski pulları biriktiriyor.",
       "synonyms": [
         "zusammentragen",
         "anhäufen"

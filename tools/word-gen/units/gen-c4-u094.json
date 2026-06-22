@@ -62,7 +62,7 @@
     {
       "german": "die Technologie",
       "turkish": "teknoloji",
-      "example": "Diese Technologie ermöglicht schnellere Datenübertragung.",
+      "example": "Diese Technologie ermöglicht eine schnellere Datenübertragung.",
       "exampleTranslation": "Bu teknoloji daha hızlı veri aktarımını mümkün kılar.",
       "synonyms": [
         "die Technik"
@@ -81,7 +81,7 @@
     },
     {
       "german": "die Innovation",
-      "turkish": "yenilik / inovasyon",
+      "turkish": "yenilik, inovasyon",
       "example": "Ohne Innovation bleibt ein Unternehmen nicht konkurrenzfähig.",
       "exampleTranslation": "Yenilik olmadan bir şirket rekabetçi kalamaz.",
       "synonyms": [
@@ -92,7 +92,7 @@
     },
     {
       "german": "das Verfahren",
-      "turkish": "yöntem / işlem / süreç",
+      "turkish": "yöntem, işlem, süreç",
       "example": "Das neue Verfahren spart Zeit und Material.",
       "exampleTranslation": "Yeni yöntem zaman ve malzeme tasarrufu sağlar.",
       "synonyms": [
@@ -103,7 +103,7 @@
     },
     {
       "german": "die Anwendung",
-      "turkish": "uygulama / kullanım",
+      "turkish": "uygulama, kullanım",
       "example": "Die Anwendung künstlicher Intelligenz wächst rasant.",
       "exampleTranslation": "Yapay zekanın uygulanması hızla artıyor.",
       "synonyms": [
@@ -114,7 +114,7 @@
     },
     {
       "german": "die Genforschung",
-      "turkish": "gen araştırması / genetik araştırma",
+      "turkish": "gen araştırması, genetik araştırma",
       "example": "Die Genforschung eröffnet neue Wege in der Medizin.",
       "exampleTranslation": "Gen araştırması tıpta yeni yollar açıyor.",
       "synonyms": [
@@ -124,7 +124,7 @@
     },
     {
       "german": "der Durchbruch",
-      "turkish": "atılım / çığır açan gelişme",
+      "turkish": "atılım, çığır açan gelişme",
       "example": "Den Forschern gelang ein wichtiger medizinischer Durchbruch.",
       "exampleTranslation": "Araştırmacılar önemli bir tıbbi atılım gerçekleştirdi.",
       "synonyms": [
@@ -145,7 +145,7 @@
     },
     {
       "german": "bahnbrechend",
-      "turkish": "çığır açan / öncü",
+      "turkish": "çığır açan, öncü",
       "example": "Seine bahnbrechende Forschung wurde weltweit anerkannt.",
       "exampleTranslation": "Onun çığır açan araştırması dünya çapında tanındı.",
       "synonyms": [

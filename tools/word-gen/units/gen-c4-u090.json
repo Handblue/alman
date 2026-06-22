@@ -13,7 +13,8 @@
       "example": "Für die Anmeldung brauche ich eine Meldebescheinigung.",
       "exampleTranslation": "Kayıt için bir ikametgah belgesine ihtiyacım var.",
       "synonyms": [
-        "der Wohnsitznachweis"
+        "der Wohnsitznachweis",
+        "die Meldebestätigung"
       ],
       "level": "B1"
     },
@@ -54,7 +55,6 @@
       "example": "Der Sachbearbeiter prüft meine Unterlagen.",
       "exampleTranslation": "Görevli memur belgelerimi inceliyor.",
       "synonyms": [
-        "der Beamte",
         "der Bearbeiter"
       ],
       "level": "B1"
@@ -65,7 +65,7 @@
       "example": "Mein Aufenthaltstitel läuft nächsten Monat ab.",
       "exampleTranslation": "Oturma izni belgem gelecek ay sona eriyor.",
       "synonyms": [
-        "die Aufenthaltsberechtigung"
+        "die Aufenthaltserlaubnis"
       ],
       "level": "B2"
     },
@@ -76,7 +76,7 @@
       "exampleTranslation": "Lütfen bir doktor raporu ibraz edin.",
       "synonyms": [
         "das Attest",
-        "der Beleg"
+        "der Nachweis"
       ],
       "level": "B2"
     },
@@ -86,7 +86,7 @@
       "example": "Der Antragsteller muss alle Unterlagen persönlich beim Amt vorlegen.",
       "exampleTranslation": "Başvuru sahibi tüm belgeleri şahsen daireye sunmak zorundadır.",
       "synonyms": [
-        "der Antragssteller"
+        "der Bewerber"
       ],
       "level": "B2"
     },

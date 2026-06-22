@@ -44,7 +44,8 @@
       "example": "Das Frühstück ist die wichtigste Mahlzeit.",
       "exampleTranslation": "Kahvaltı en önemli öğündür.",
       "synonyms": [
-        "das Essen"
+        "das Essen",
+        "der Imbiss"
       ],
       "level": "B1"
     },
@@ -105,8 +106,8 @@
       "example": "Schlechte Gewohnheiten kann man ändern.",
       "exampleTranslation": "Kötü alışkanlıklar değiştirilebilir.",
       "synonyms": [
-        "die Routine",
-        "der Brauch"
+        "die Angewohnheit",
+        "die Routine"
       ],
       "level": "B2"
     },

@@ -91,11 +91,11 @@
     {
       "german": "die Mahnung",
       "turkish": "ihtar / hatırlatma yazısı",
-      "example": "Nach der dritten Mahnung drohte das Unternehmen.",
-      "exampleTranslation": "Üçüncü ihtardan sonra şirket tehditte bulundu.",
+      "example": "Nach der dritten Mahnung drohte das Unternehmen mit einer Klage.",
+      "exampleTranslation": "Üçüncü ihtardan sonra şirket dava açmakla tehdit etti.",
       "synonyms": [
-        "die Erinnerung",
-        "die Zahlungserinnerung"
+        "die Zahlungserinnerung",
+        "die Erinnerung"
       ],
       "level": "B2"
     },
@@ -125,7 +125,7 @@
       "german": "das Aktenzeichen",
       "turkish": "dosya numarası / referans numarası",
       "example": "Geben Sie bei Rückfragen bitte das Aktenzeichen an.",
-      "exampleTranslation": "Geri dönüşlerde lütfen dosya numarasını belirtin.",
+      "exampleTranslation": "Sorularınız olduğunda lütfen dosya numarasını belirtin.",
       "synonyms": [
         "die Vorgangsnummer",
         "das Geschäftszeichen"

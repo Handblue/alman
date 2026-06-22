@@ -43,8 +43,8 @@
     {
       "german": "der Reiz",
       "turkish": "uyaran / uyarıcı",
-      "example": "Ein lauter Reiz löste eine Reaktion aus.",
-      "exampleTranslation": "Yüksek sesli bir uyaran tepki başlattı.",
+      "example": "Ein starker Reiz löste eine sofortige Reaktion aus.",
+      "exampleTranslation": "Güçlü bir uyaran anında bir tepki başlattı.",
       "synonyms": [
         "der Stimulus",
         "der Auslöser"

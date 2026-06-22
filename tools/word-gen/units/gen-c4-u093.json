@@ -22,7 +22,7 @@
       "german": "der Vorgesetzte",
       "turkish": "üst, amir",
       "example": "Mein Vorgesetzter hat mein Projekt im Meeting ausdrücklich gelobt.",
-      "exampleTranslation": "Üstüm projemi toplantıda açıkça övdü.",
+      "exampleTranslation": "Amirim projemi toplantıda açıkça övdü.",
       "synonyms": [
         "der Chef",
         "der Boss"
@@ -46,7 +46,7 @@
       "example": "Ein moderner Arbeitsplatz sollte ergonomisch eingerichtet sein.",
       "exampleTranslation": "Modern bir iş yeri ergonomik olarak düzenlenmiş olmalıdır.",
       "synonyms": [
-        "der Job"
+        "die Arbeitsstelle"
       ],
       "level": "B1"
     },
@@ -145,7 +145,7 @@
     },
     {
       "german": "die Selbstständigkeit",
-      "turkish": "kendi işini kurma, bağımsız çalışma",
+      "turkish": "serbest meslek / kendi işini yapma, bağımsız çalışma",
       "example": "Viele Berufstätige wagen heute den Schritt in die Selbstständigkeit.",
       "exampleTranslation": "Birçok çalışan bugün kendi işini kurma adımını atmaya cesaret ediyor.",
       "synonyms": [

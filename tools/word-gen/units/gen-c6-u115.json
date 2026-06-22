@@ -71,7 +71,7 @@
     },
     {
       "german": "die Schaltung",
-      "turkish": "devre / şema",
+      "turkish": "devre / elektrik şeması",
       "example": "Die Schaltung steuert den gesamten Stromfluss.",
       "exampleTranslation": "Devre, tüm akım akışını kontrol eder.",
       "synonyms": [
@@ -129,7 +129,7 @@
       "synonyms": [
         "die Spanabnahme"
       ],
-      "level": "B2"
+      "level": "C1"
     },
     {
       "german": "der Prototyp",

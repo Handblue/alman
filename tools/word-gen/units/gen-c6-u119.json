@@ -24,7 +24,7 @@
       "exampleTranslation": "Buluntu Tunç Çağı'ndan kalmadır.",
       "synonyms": [
         "das Fundstück",
-        "der Befund"
+        "die Entdeckung"
       ],
       "level": "B2"
     },
@@ -118,8 +118,8 @@
     {
       "german": "die Datierung",
       "turkish": "tarihlendirme",
-      "example": "Die radioaktive Datierung der Knochen ergab ein Alter von rund 5000 Jahren.",
-      "exampleTranslation": "Kemiklerin radyoaktif tarihlendirmesi yaklaşık 5000 yıllık bir yaş gösterdi.",
+      "example": "Die radiometrische Datierung der Knochen ergab ein Alter von rund 5000 Jahren.",
+      "exampleTranslation": "Kemiklerin radyometrik tarihlendirmesi yaklaşık 5000 yıllık bir yaş gösterdi.",
       "synonyms": [
         "die Zeitbestimmung",
         "die Altersbestimmung"

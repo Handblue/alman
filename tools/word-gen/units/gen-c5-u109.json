@@ -47,7 +47,7 @@
     },
     {
       "german": "der Gast",
-      "turkish": "misafir / konuk",
+      "turkish": "misafir, konuk",
       "example": "Der Gast bringt einen Kuchen mit.",
       "exampleTranslation": "Misafir yanında bir kek getiriyor.",
       "synonyms": [
@@ -57,7 +57,7 @@
     },
     {
       "german": "die Einladung",
-      "turkish": "davet / davetiye",
+      "turkish": "davet, davetiye",
       "example": "Danke für die Einladung zum Essen.",
       "exampleTranslation": "Yemeğe davet için teşekkürler.",
       "synonyms": [
@@ -87,7 +87,7 @@
     },
     {
       "german": "der Feiertag",
-      "turkish": "resmi bayram / tatil günü",
+      "turkish": "resmi bayram, tatil günü",
       "example": "Am Feiertag haben die Geschäfte zu.",
       "exampleTranslation": "Bayramda dükkânlar kapalı.",
       "synonyms": [
@@ -117,7 +117,7 @@
     },
     {
       "german": "gratulieren",
-      "turkish": "tebrik etmek / kutlamak",
+      "turkish": "tebrik etmek, kutlamak",
       "example": "Ich gratuliere dir zum Geburtstag.",
       "exampleTranslation": "Doğum gününü kutlarım.",
       "synonyms": [
@@ -127,9 +127,9 @@
     },
     {
       "german": "der Glückwunsch",
-      "turkish": "tebrik / iyi dilek",
+      "turkish": "tebrik, iyi dilek",
       "example": "Herzlichen Glückwunsch zur Hochzeit!",
-      "exampleTranslation": "Düğününüz hayırlı olsun!",
+      "exampleTranslation": "Düğününüz için en içten tebriklerimi sunarım!",
       "synonyms": [
         "die Gratulation"
       ],
@@ -137,7 +137,7 @@
     },
     {
       "german": "der Gastgeber",
-      "turkish": "ev sahibi / davet eden",
+      "turkish": "ev sahibi, davet eden",
       "example": "Der Gastgeber begrüßt alle Gäste herzlich.",
       "exampleTranslation": "Ev sahibi tüm misafirleri içtenlikle karşılıyor.",
       "synonyms": [
@@ -147,7 +147,7 @@
     },
     {
       "german": "die Überraschung",
-      "turkish": "sürpriz / şaşkınlık",
+      "turkish": "sürpriz, şaşkınlık",
       "example": "Die Party war eine große Überraschung.",
       "exampleTranslation": "Parti büyük bir sürprizdi.",
       "synonyms": [

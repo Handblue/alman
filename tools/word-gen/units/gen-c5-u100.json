@@ -94,7 +94,7 @@
       "example": "Bitte warten Sie am Schalter drei.",
       "exampleTranslation": "Lütfen üç numaralı gişede bekleyin.",
       "synonyms": [
-        "der Schreibtisch"
+        "der Tresen"
       ],
       "level": "A2"
     },
@@ -102,7 +102,7 @@
       "german": "der Stempel",
       "turkish": "mühür / damga",
       "example": "Das Dokument braucht einen Stempel.",
-      "exampleTranslation": "Belge bir mühre ihtiyaç duyuyor.",
+      "exampleTranslation": "Belgenin bir mühre ihtiyacı var.",
       "synonyms": [
         "der Abdruck"
       ],
@@ -135,7 +135,7 @@
       "exampleTranslation": "Konut yardımı için son başvuru tarihi ay sonunda bitiyor.",
       "synonyms": [
         "der Einsendeschluss",
-        "der Termin"
+        "die Frist"
       ],
       "level": "B1"
     },

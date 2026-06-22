@@ -23,7 +23,7 @@
       "example": "Auf das Gerät gibt es zwei Jahre Garantie.",
       "exampleTranslation": "Cihaz için iki yıl garanti var.",
       "synonyms": [
-        "die Gewährleistung"
+        "die Herstellergarantie"
       ],
       "level": "B1"
     },
@@ -65,7 +65,7 @@
       "exampleTranslation": "Aboneliğim otomatik olarak uzuyor.",
       "synonyms": [
         "das Abo",
-        "der Bezug"
+        "der Vertrag"
       ],
       "level": "B2"
     },
@@ -75,8 +75,7 @@
       "example": "Bei verspäteter Lieferung muss das Unternehmen eine Vertragsstrafe zahlen.",
       "exampleTranslation": "Geç teslimat durumunda şirket bir sözleşme cezası ödemek zorundadır.",
       "synonyms": [
-        "die Konventionalstrafe",
-        "das Pönale"
+        "die Konventionalstrafe"
       ],
       "level": "B2"
     },
@@ -105,8 +104,8 @@
     {
       "german": "der Verbraucherschutz",
       "turkish": "tüketici koruması",
-      "example": "Der Verbraucherschutz berät bei unfairen Verträgen.",
-      "exampleTranslation": "Tüketici koruma, haksız sözleşmelerde danışmanlık verir.",
+      "example": "Der Verbraucherschutz berät Kunden bei unfairen Verträgen.",
+      "exampleTranslation": "Tüketici koruma kurumu, haksız sözleşmelerde müşterilere danışmanlık verir.",
       "synonyms": [
         "der Konsumentenschutz"
       ],
@@ -125,7 +124,7 @@
     },
     {
       "german": "die Gewährleistung",
-      "turkish": "yasal teminat, garanti yükümlülüğü",
+      "turkish": "yasal teminat, ayıba karşı sorumluluk",
       "example": "Die gesetzliche Gewährleistung beträgt in Deutschland zwei Jahre.",
       "exampleTranslation": "Almanya'da yasal teminat süresi iki yıldır.",
       "synonyms": [
@@ -136,31 +135,31 @@
     },
     {
       "german": "die Erstattung",
-      "turkish": "geri ödeme / iade",
+      "turkish": "geri ödeme, iade",
       "example": "Sie erhalten eine volle Erstattung des Kaufpreises.",
       "exampleTranslation": "Satın alma bedelinin tamamı geri ödenir.",
       "synonyms": [
         "die Rückerstattung",
         "die Rückzahlung"
       ],
-      "level": "C1"
+      "level": "B2"
     },
     {
       "german": "verbindlich",
-      "turkish": "bağlayıcı / kesin",
+      "turkish": "bağlayıcı, kesin",
       "example": "Die Bestellung ist nun rechtlich verbindlich.",
       "exampleTranslation": "Sipariş artık yasal olarak bağlayıcıdır.",
       "synonyms": [
         "bindend",
         "obligatorisch"
       ],
-      "level": "C1"
+      "level": "B2"
     },
     {
       "german": "die Kulanz",
-      "turkish": "iyi niyet / hoşgörü (jest olarak çözüm)",
+      "turkish": "iyi niyet, hoşgörü (jest olarak çözüm)",
       "example": "Aus Kulanz tauschte der Händler das Gerät um.",
-      "exampleTranslation": "Satıcı iyi niyetle cihazı değiştirdi.",
+      "exampleTranslation": "Satıcı iyi niyet göstererek cihazı değiştirdi.",
       "synonyms": [
         "das Entgegenkommen",
         "die Großzügigkeit"

@@ -21,9 +21,10 @@
       "german": "die Ärztin",
       "turkish": "doktor (kadın)",
       "example": "Die Ärztin arbeitet im Krankenhaus.",
-      "exampleTranslation": "Doktor (kadın) hastanede çalışıyor.",
+      "exampleTranslation": "Kadın doktor hastanede çalışıyor.",
       "synonyms": [
-        "die Doktorin"
+        "die Doktorin",
+        "die Medizinerin"
       ],
       "level": "A1"
     },
@@ -142,7 +143,7 @@
       "german": "die Polizistin",
       "turkish": "polis (kadın)",
       "example": "Die Polizistin steht an der Straße.",
-      "exampleTranslation": "Polis (kadın) yolun kenarında duruyor.",
+      "exampleTranslation": "Kadın polis yolun kenarında duruyor.",
       "synonyms": [],
       "level": "A1"
     },

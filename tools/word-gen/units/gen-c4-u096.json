@@ -16,11 +16,11 @@
         "freilich",
         "indes"
       ],
-      "level": "B1"
+      "level": "B2"
     },
     {
       "german": "deswegen",
-      "turkish": "bu yüzden / bu nedenle",
+      "turkish": "bu yüzden, bu nedenle",
       "example": "Er war krank, deswegen blieb er zu Hause.",
       "exampleTranslation": "Hastaydı, bu yüzden evde kaldı.",
       "synonyms": [
@@ -31,7 +31,7 @@
     },
     {
       "german": "sobald",
-      "turkish": "-ir -mez / hemen … -ince",
+      "turkish": "-ir -mez, hemen … -ince",
       "example": "Ich rufe dich an, sobald ich ankomme.",
       "exampleTranslation": "Varır varmaz seni ararım.",
       "synonyms": [
@@ -41,11 +41,11 @@
     },
     {
       "german": "sondern",
-      "turkish": "aksine / bilakis",
+      "turkish": "aksine, bilakis (-mayıp …)",
       "example": "Er ist nicht müde, sondern nur faul.",
       "exampleTranslation": "Yorgun değil, sadece tembel.",
       "synonyms": [],
-      "level": "B1"
+      "level": "A2"
     },
     {
       "german": "einerseits",
@@ -69,18 +69,18 @@
     },
     {
       "german": "wegen",
-      "turkish": "-den dolayı / yüzünden",
+      "turkish": "-den dolayı, yüzünden",
       "example": "Wegen des Staus kam ich zu spät.",
       "exampleTranslation": "Trafik yüzünden geç kaldım.",
       "synonyms": [
         "aufgrund",
         "infolge"
       ],
-      "level": "B2"
+      "level": "B1"
     },
     {
       "german": "die Voraussetzung",
-      "turkish": "ön koşul / şart",
+      "turkish": "ön koşul, şart",
       "example": "Gute Vorbereitung ist die Voraussetzung für Erfolg.",
       "exampleTranslation": "İyi hazırlık, başarının ön koşuludur.",
       "synonyms": [
@@ -91,7 +91,7 @@
     },
     {
       "german": "die Ursache",
-      "turkish": "sebep / neden",
+      "turkish": "sebep, neden",
       "example": "Die Ursache des Unfalls ist noch unklar.",
       "exampleTranslation": "Kazanın nedeni hâlâ belirsiz.",
       "synonyms": [
@@ -102,7 +102,7 @@
     },
     {
       "german": "die Folge",
-      "turkish": "sonuç / netice",
+      "turkish": "sonuç, netice",
       "example": "Die Folgen der Krise waren verheerend.",
       "exampleTranslation": "Krizin sonuçları yıkıcıydı.",
       "synonyms": [
@@ -113,7 +113,7 @@
     },
     {
       "german": "der Zusammenhang",
-      "turkish": "bağlantı / ilişki / bağlam",
+      "turkish": "bağlantı, ilişki, bağlam",
       "example": "Es gibt einen klaren Zusammenhang zwischen beiden.",
       "exampleTranslation": "İkisi arasında açık bir bağlantı var.",
       "synonyms": [
@@ -126,7 +126,7 @@
       "german": "demzufolge",
       "turkish": "buna göre, bunun sonucunda, dolayısıyla",
       "example": "Die Nachfrage ist gestiegen; demzufolge müssen die Kapazitäten erweitert werden.",
-      "exampleTranslation": "Talep arttı; buna göre kapasitelerin genişletilmesi gerekir.",
+      "exampleTranslation": "Talep arttı; dolayısıyla kapasitelerin genişletilmesi gerekir.",
       "synonyms": [
         "somit",
         "mithin"
@@ -137,7 +137,7 @@
       "german": "wohingegen",
       "turkish": "buna karşın, oysa, halbuki",
       "example": "Die einen befürworten die Reform, wohingegen die anderen sie strikt ablehnen.",
-      "exampleTranslation": "Bazıları reformu destekliyor, buna karşın diğerleri onu kesinlikle reddediyor.",
+      "exampleTranslation": "Bazıları reformu destekliyor, oysa diğerleri onu kesinlikle reddediyor.",
       "synonyms": [
         "wogegen",
         "während"
@@ -146,25 +146,25 @@
     },
     {
       "german": "sofern",
-      "turkish": "… olduğu sürece / şu şartla ki",
+      "turkish": "… olduğu sürece, şu şartla ki, -dığı takdirde",
       "example": "Ich helfe dir, sofern du es wirklich willst.",
       "exampleTranslation": "Gerçekten istiyorsan sana yardım ederim.",
       "synonyms": [
         "wenn",
-        "insofern als"
+        "falls"
       ],
       "level": "C1"
     },
     {
-      "german": "die Beziehungsweise",
-      "turkish": "ya da / daha doğrusu (bzw.)",
+      "german": "beziehungsweise",
+      "turkish": "ya da, veya, daha doğrusu (bzw.)",
       "example": "Er kommt am Montag beziehungsweise Dienstag.",
-      "exampleTranslation": "Pazartesi ya da daha doğrusu salı gelir.",
+      "exampleTranslation": "Pazartesi ya da salı gelir.",
       "synonyms": [
         "oder",
         "genauer gesagt"
       ],
-      "level": "C1"
+      "level": "B2"
     }
   ]
 }

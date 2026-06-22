@@ -31,7 +31,7 @@
       "example": "Der Schmerz im Rücken wird stärker.",
       "exampleTranslation": "Sırttaki ağrı gittikçe artıyor.",
       "synonyms": [
-        "das Weh"
+        "die Pein"
       ],
       "level": "A1"
     },
@@ -41,8 +41,8 @@
       "example": "Der Doktor untersucht mich gleich.",
       "exampleTranslation": "Doktor beni birazdan muayene edecek.",
       "synonyms": [
-        "der Mediziner",
-        "die Ärztin"
+        "der Arzt",
+        "der Mediziner"
       ],
       "level": "A1"
     },
@@ -92,8 +92,7 @@
       "example": "Der Arzt gibt mir eine Spritze.",
       "exampleTranslation": "Doktor bana bir iğne yapıyor.",
       "synonyms": [
-        "die Injektion",
-        "die Impfung"
+        "die Injektion"
       ],
       "level": "A2"
     },

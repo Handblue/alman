@@ -9,28 +9,33 @@
   "words": [
     {
       "german": "tippen",
-      "turkish": "yazmak (mesaj yazmak)",
+      "turkish": "yazmak (tuşlamak, mesaj yazmak)",
       "example": "Ich tippe dir gleich eine kurze Nachricht.",
-      "exampleTranslation": "Sana hemen kısa bir mesaj yazıyorum.",
+      "exampleTranslation": "Sana hemen kısa bir mesaj yazacağım.",
       "synonyms": [
-        "schreiben"
+        "schreiben",
+        "eingeben"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "der Hörer",
       "turkish": "ahize, telefon ahizesi",
       "example": "Sie nahm den Hörer ab und sagte Hallo.",
       "exampleTranslation": "Ahizeyi kaldırdı ve merhaba dedi.",
-      "synonyms": [],
-      "level": "A1"
+      "synonyms": [
+        "der Telefonhörer"
+      ],
+      "level": "A2"
     },
     {
       "german": "der Kontakt",
-      "turkish": "kişi (rehberdeki kayıt), irtibat",
+      "turkish": "kişi (rehber kaydı), irtibat, temas",
       "example": "Ich habe deinen Kontakt in meinem Handy gespeichert.",
       "exampleTranslation": "Senin kişini telefonuma kaydettim.",
-      "synonyms": [],
+      "synonyms": [
+        "die Verbindung"
+      ],
       "level": "A1"
     },
     {
@@ -38,8 +43,10 @@
       "turkish": "alan kodu, telefon kodu",
       "example": "Die Vorwahl von Berlin ist 030.",
       "exampleTranslation": "Berlin'in alan kodu 030'dur.",
-      "synonyms": [],
-      "level": "A1"
+      "synonyms": [
+        "die Vorwahlnummer"
+      ],
+      "level": "A2"
     },
     {
       "german": "der Anruf",
@@ -47,17 +54,18 @@
       "example": "Ich erwarte einen wichtigen Anruf.",
       "exampleTranslation": "Önemli bir arama bekliyorum.",
       "synonyms": [
+        "das Telefonat",
         "das Gespräch"
       ],
       "level": "A1"
     },
     {
       "german": "das Freizeichen",
-      "turkish": "hat tonu, çevir/çalma sesi",
+      "turkish": "hat (çevir) tonu, çalma sesi",
       "example": "Ich höre das Freizeichen, aber niemand geht ran.",
-      "exampleTranslation": "Hat tonunu duyuyorum ama kimse açmıyor.",
+      "exampleTranslation": "Çevir sesini duyuyorum ama kimse açmıyor.",
       "synonyms": [],
-      "level": "A2"
+      "level": "B1"
     },
     {
       "german": "klingeln",
@@ -72,8 +80,8 @@
     {
       "german": "die Mailbox",
       "turkish": "sesli mesaj kutusu",
-      "example": "Sprich bitte auf die Mailbox.",
-      "exampleTranslation": "Lütfen sesli mesaj bırak.",
+      "example": "Sprich mir bitte auf die Mailbox.",
+      "exampleTranslation": "Lütfen sesli mesaj kutuma mesaj bırak.",
       "synonyms": [
         "der Anrufbeantworter"
       ],
@@ -81,7 +89,7 @@
     },
     {
       "german": "der Empfang",
-      "turkish": "sinyal / çekim / kabul",
+      "turkish": "sinyal, çekim; karşılama, kabul",
       "example": "Hier habe ich keinen Empfang.",
       "exampleTranslation": "Burada hiç çekmiyor.",
       "synonyms": [
@@ -96,7 +104,7 @@
       "example": "Ich rufe dich später zurück.",
       "exampleTranslation": "Seni sonra geri ararım.",
       "synonyms": [
-        "wiederanrufen"
+        "wieder anrufen"
       ],
       "level": "A2"
     },
@@ -108,22 +116,22 @@
       "synonyms": [
         "verfügbar"
       ],
-      "level": "A2"
+      "level": "B1"
     },
     {
       "german": "sich melden",
-      "turkish": "haber vermek / kendini bildirmek",
+      "turkish": "haber vermek, kendini bildirmek; (telefonda) açmak",
       "example": "Melde dich, wenn du angekommen bist.",
       "exampleTranslation": "Vardığında haber ver.",
       "synonyms": [
-        "sich abmelden",
-        "Bescheid geben"
+        "Bescheid geben",
+        "sich rühren"
       ],
       "level": "B1"
     },
     {
       "german": "verbinden",
-      "turkish": "bağlamak (hatta)",
+      "turkish": "bağlamak (hatta), birleştirmek",
       "example": "Ich verbinde Sie mit dem Chef.",
       "exampleTranslation": "Sizi müdüre bağlıyorum.",
       "synonyms": [
@@ -149,9 +157,9 @@
       "example": "Bitte leg jetzt nicht auf.",
       "exampleTranslation": "Lütfen şimdi telefonu kapatma.",
       "synonyms": [
-        "beenden"
+        "das Gespräch beenden"
       ],
-      "level": "B1"
+      "level": "A2"
     }
   ]
 }

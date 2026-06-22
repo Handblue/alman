@@ -11,7 +11,7 @@
       "german": "der Ausbildungsplatz",
       "turkish": "meslek eğitimi yeri / çıraklık yeri",
       "example": "Er hat einen Ausbildungsplatz als Mechaniker gefunden.",
-      "exampleTranslation": "Mekanikerlik için bir meslek eğitimi yeri buldu.",
+      "exampleTranslation": "Mekaniker olarak bir meslek eğitimi yeri buldu.",
       "synonyms": [
         "die Lehrstelle"
       ],
@@ -23,7 +23,8 @@
       "example": "Der Praktikant arbeitet drei Monate in der Firma.",
       "exampleTranslation": "Stajyer firmada üç ay çalışıyor.",
       "synonyms": [
-        "der Praktikumsteilnehmer"
+        "der Auszubildende",
+        "der Werkstudent"
       ],
       "level": "B1"
     },
@@ -44,7 +45,8 @@
       "example": "Nach dem Kurs erhältst du eine Teilnahmebescheinigung.",
       "exampleTranslation": "Kurstan sonra bir katılım belgesi alırsın.",
       "synonyms": [
-        "das Teilnahmezertifikat"
+        "das Teilnahmezertifikat",
+        "die Bescheinigung"
       ],
       "level": "B1"
     },
@@ -65,14 +67,14 @@
       "exampleTranslation": "Diplomanın denkliği birkaç ay sürüyor.",
       "synonyms": [
         "die Akzeptanz",
-        "die Würdigung"
+        "die Wertschätzung"
       ],
       "level": "B2"
     },
     {
       "german": "die Studiengebühr",
-      "turkish": "öğrenim ücreti",
-      "example": "An staatlichen Universitäten gibt es oft keine Studiengebühr.",
+      "turkish": "öğrenim ücreti / harç",
+      "example": "An staatlichen Universitäten gibt es oft keine Studiengebühren.",
       "exampleTranslation": "Devlet üniversitelerinde çoğu zaman öğrenim ücreti yoktur.",
       "synonyms": [
         "das Studienentgelt"
@@ -96,7 +98,7 @@
       "exampleTranslation": "İşverenim hafta sonu eğitimini ödüyor.",
       "synonyms": [
         "die Schulung",
-        "die Qualifizierung"
+        "die Weiterbildung"
       ],
       "level": "B2"
     },
@@ -107,7 +109,7 @@
       "exampleTranslation": "Kurs toplamda altı hafta sürüyor.",
       "synonyms": [
         "der Kurs",
-        "die Lehrveranstaltung"
+        "die Schulung"
       ],
       "level": "B2"
     },
@@ -115,10 +117,10 @@
       "german": "der Abschluss",
       "turkish": "mezuniyet / diploma derecesi",
       "example": "Ohne Abschluss findet man schwer eine Stelle.",
-      "exampleTranslation": "Diploma olmadan iş bulmak zordur.",
+      "exampleTranslation": "Diploma olmadan zor iş bulunur.",
       "synonyms": [
         "das Examen",
-        "die Graduierung"
+        "das Diplom"
       ],
       "level": "B2"
     },
@@ -139,7 +141,8 @@
       "example": "Die Durchlässigkeit des Bildungssystems ermöglicht spätere Aufstiege.",
       "exampleTranslation": "Eğitim sisteminin geçişliliği sonradan yükselmeyi mümkün kılar.",
       "synonyms": [
-        "die Übergangsfähigkeit"
+        "die Durchlässigung",
+        "die Mobilität"
       ],
       "level": "C1"
     },

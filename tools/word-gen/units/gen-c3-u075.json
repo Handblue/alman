@@ -25,17 +25,18 @@
       "exampleTranslation": "Bilim insanları iklim değişikliğinin nedenlerini yıllardır araştırıyor.",
       "synonyms": [
         "ergründen",
-        "studieren"
+        "untersuchen"
       ],
       "level": "B1"
     },
     {
       "german": "die Entwicklung",
       "turkish": "gelişme / geliştirme",
-      "example": "Die Entwicklung neuer Methoden ist wichtig.",
-      "exampleTranslation": "Yeni yöntemlerin geliştirilmesi önemlidir.",
+      "example": "Die Entwicklung neuer Methoden ist für die Forschung wichtig.",
+      "exampleTranslation": "Yeni yöntemlerin geliştirilmesi araştırma için önemlidir.",
       "synonyms": [
-        "die Evolution"
+        "der Fortschritt",
+        "die Weiterentwicklung"
       ],
       "level": "B1"
     },
@@ -45,8 +46,8 @@
       "example": "Der Versuch lieferte überraschende Ergebnisse.",
       "exampleTranslation": "Deney şaşırtıcı sonuçlar verdi.",
       "synonyms": [
-        "der Test",
-        "die Probe"
+        "das Experiment",
+        "der Test"
       ],
       "level": "B1"
     },
@@ -66,7 +67,8 @@
       "example": "Diese Erfindung veränderte die ganze Branche.",
       "exampleTranslation": "Bu icat tüm sektörü değiştirdi.",
       "synonyms": [
-        "die Neuerung"
+        "die Neuerung",
+        "die Innovation"
       ],
       "level": "B2"
     },
@@ -76,8 +78,8 @@
       "example": "Wir werten die gesammelten Daten aus.",
       "exampleTranslation": "Topladığımız verileri değerlendiriyoruz.",
       "synonyms": [
-        "interpretieren",
-        "beurteilen"
+        "analysieren",
+        "interpretieren"
       ],
       "level": "B2"
     },

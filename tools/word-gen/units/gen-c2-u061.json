@@ -60,7 +60,7 @@
     },
     {
       "german": "der Spaß",
-      "turkish": "eğlence / zevk",
+      "turkish": "eğlence, zevk",
       "example": "Das Spiel macht mir großen Spaß.",
       "exampleTranslation": "Bu oyun bana çok zevk veriyor.",
       "synonyms": [
@@ -71,7 +71,7 @@
     },
     {
       "german": "die Rede",
-      "turkish": "konuşma / nutuk",
+      "turkish": "konuşma, nutuk",
       "example": "Der Präsident hält eine wichtige Rede.",
       "exampleTranslation": "Cumhurbaşkanı önemli bir konuşma yapıyor.",
       "synonyms": [
@@ -82,7 +82,7 @@
     },
     {
       "german": "die Rücksicht",
-      "turkish": "saygı gösterme / dikkat etme",
+      "turkish": "saygı gösterme, dikkat etme",
       "example": "Bitte nimm Rücksicht auf die Nachbarn.",
       "exampleTranslation": "Lütfen komşulara karşı dikkatli ol.",
       "synonyms": [
@@ -92,7 +92,7 @@
     },
     {
       "german": "die Maßnahme",
-      "turkish": "önlem / tedbir",
+      "turkish": "önlem, tedbir",
       "example": "Die Regierung ergreift strenge Maßnahmen.",
       "exampleTranslation": "Hükümet sıkı önlemler alıyor.",
       "synonyms": [
@@ -102,7 +102,7 @@
     },
     {
       "german": "der Einfluss",
-      "turkish": "etki / nüfuz",
+      "turkish": "etki, nüfuz",
       "example": "Die Medien üben großen Einfluss aus.",
       "exampleTranslation": "Medya büyük bir etki uyguluyor.",
       "synonyms": [
@@ -113,7 +113,7 @@
     },
     {
       "german": "die Verfügung",
-      "turkish": "emir / tasarruf / kullanıma sunulma",
+      "turkish": "emir, tasarruf, kullanıma sunulma",
       "example": "Die Unterlagen stehen Ihnen zur Verfügung.",
       "exampleTranslation": "Belgeler kullanımınıza hazırdır.",
       "synonyms": [
@@ -135,7 +135,7 @@
     },
     {
       "german": "die Stellung",
-      "turkish": "tutum / pozisyon / mevki",
+      "turkish": "tutum, pozisyon, mevki",
       "example": "Der Minister nimmt zu den Vorwürfen Stellung.",
       "exampleTranslation": "Bakan suçlamalara ilişkin tavır takınıyor.",
       "synonyms": [
@@ -146,7 +146,7 @@
     },
     {
       "german": "der Bezug",
-      "turkish": "atıf / ilişki / referans",
+      "turkish": "atıf, ilişki, referans",
       "example": "Sie nimmt Bezug auf den vorherigen Artikel.",
       "exampleTranslation": "Önceki makaleye atıfta bulunuyor.",
       "synonyms": [
@@ -156,7 +156,7 @@
     },
     {
       "german": "der Betracht",
-      "turkish": "göz önünde bulundurma / dikkate alma",
+      "turkish": "göz önünde bulundurma, dikkate alma",
       "example": "Diese Option ziehen wir ernsthaft in Betracht.",
       "exampleTranslation": "Bu seçeneği ciddi şekilde göz önünde bulunduruyoruz.",
       "synonyms": [

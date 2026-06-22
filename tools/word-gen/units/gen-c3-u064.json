@@ -13,7 +13,7 @@
       "example": "Der Arzt stellte eine klare Diagnose.",
       "exampleTranslation": "Doktor net bir teşhis koydu.",
       "synonyms": [
-        "die Befundstellung"
+        "der Befund"
       ],
       "level": "B1"
     },
@@ -76,7 +76,7 @@
       "example": "Gemüse enthält viele wichtige Nährstoffe.",
       "exampleTranslation": "Sebze birçok önemli besin maddesi içerir.",
       "synonyms": [
-        "der Nährwert"
+        "der Vitalstoff"
       ],
       "level": "B2"
     },
@@ -130,7 +130,7 @@
       "exampleTranslation": "Vitamin eksikliği yorgunluğa yol açar.",
       "synonyms": [
         "das Defizit",
-        "der Fehlbestand"
+        "der Engpass"
       ],
       "level": "C1"
     },

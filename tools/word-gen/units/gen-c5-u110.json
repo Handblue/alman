@@ -41,7 +41,7 @@
       "synonyms": [
         "der Rettungssanitäter"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "die Gefahr",
@@ -51,11 +51,11 @@
       "synonyms": [
         "das Risiko"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "der Notruf",
-      "turkish": "acil çağrı / acil arama",
+      "turkish": "acil çağrı, acil arama",
       "example": "Wähle bei einem Notfall den Notruf.",
       "exampleTranslation": "Bir acil durumda acil çağrı numarasını ara.",
       "synonyms": [
@@ -67,7 +67,7 @@
       "german": "der Krankenwagen",
       "turkish": "ambulans",
       "example": "Der Krankenwagen kommt in fünf Minuten.",
-      "exampleTranslation": "Ambulans beş dakikada geliyor.",
+      "exampleTranslation": "Ambulans beş dakika içinde geliyor.",
       "synonyms": [
         "der Rettungswagen",
         "die Ambulanz"
@@ -76,7 +76,7 @@
     },
     {
       "german": "verletzt",
-      "turkish": "yaralı / yaralanmış",
+      "turkish": "yaralı, yaralanmış",
       "example": "Zum Glück ist niemand schwer verletzt.",
       "exampleTranslation": "Neyse ki kimse ağır yaralanmadı.",
       "synonyms": [
@@ -96,7 +96,7 @@
     },
     {
       "german": "die Vorsicht",
-      "turkish": "dikkat / ihtiyat",
+      "turkish": "dikkat, ihtiyat",
       "example": "Vorsicht, der Boden ist nass!",
       "exampleTranslation": "Dikkat, zemin ıslak!",
       "synonyms": [
@@ -147,7 +147,7 @@
     },
     {
       "german": "die Verletzung",
-      "turkish": "yaralanma / yara",
+      "turkish": "yaralanma, yara",
       "example": "Die Verletzung am Bein war nicht schlimm.",
       "exampleTranslation": "Bacaktaki yaralanma kötü değildi.",
       "synonyms": [

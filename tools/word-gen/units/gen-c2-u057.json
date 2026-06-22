@@ -16,7 +16,7 @@
         "fesselnd",
         "aufregend"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "kochend",
@@ -26,23 +26,23 @@
       "synonyms": [
         "siedend"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "lachend",
       "turkish": "gülen / gülerek",
       "example": "Das lachende Kind rennt durch den Park.",
-      "exampleTranslation": "Gülen çocuk parkta koşuyor.",
+      "exampleTranslation": "Gülen çocuk parkın içinden koşuyor.",
       "synonyms": [
         "fröhlich"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "geöffnet",
       "turkish": "açık / açılmış",
       "example": "Die geöffnete Tür ließ frische Luft herein.",
-      "exampleTranslation": "Açık kapı içeriye taze hava aldı.",
+      "exampleTranslation": "Açılan kapı içeriye taze hava aldı.",
       "synonyms": [
         "offen",
         "aufgemacht"
@@ -150,9 +150,9 @@
     },
     {
       "german": "aufstrebend",
-      "turkish": "yükselen, gelişmekte olan, hırslı",
+      "turkish": "yükselen / gelişmekte olan",
       "example": "Sie arbeitet in einem aufstrebenden Unternehmen, das ständig neue Mitarbeiter einstellt.",
-      "exampleTranslation": "Sürekli yeni çalışan alan, yükselen bir şirkette çalışıyor.",
+      "exampleTranslation": "Sürekli yeni çalışan alan, gelişmekte olan bir şirkette çalışıyor.",
       "synonyms": [
         "emporstrebend",
         "vielversprechend"

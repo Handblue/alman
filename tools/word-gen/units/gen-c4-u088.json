@@ -99,7 +99,7 @@
     },
     {
       "german": "der Verlauf",
-      "turkish": "seyir, gidişat",
+      "turkish": "seyir / gidişat",
       "example": "Der Verlauf der Kurve zeigt einen deutlichen Anstieg im Sommer.",
       "exampleTranslation": "Eğrinin seyri yaz aylarında belirgin bir artış gösteriyor.",
       "synonyms": [
@@ -160,7 +160,7 @@
       "exampleTranslation": "Satış rakamları yazdan beri durağan.",
       "synonyms": [
         "stillstehen",
-        "gleich bleiben"
+        "gleichbleiben"
       ],
       "level": "C1"
     },

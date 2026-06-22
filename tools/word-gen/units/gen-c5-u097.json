@@ -15,7 +15,7 @@
       "synonyms": [
         "die Postwaage"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "der Briefträger",
@@ -41,7 +41,7 @@
       "german": "die Postkarte",
       "turkish": "kartpostal",
       "example": "Aus dem Urlaub schreibe ich dir eine Postkarte.",
-      "exampleTranslation": "Tatilden sana bir kartpostal yazacağım.",
+      "exampleTranslation": "Tatilden sana bir kartpostal yazıyorum.",
       "synonyms": [
         "die Ansichtskarte"
       ],
@@ -55,7 +55,7 @@
       "synonyms": [
         "das Briefporto"
       ],
-      "level": "A1"
+      "level": "A2"
     },
     {
       "german": "die Postleitzahl",
@@ -71,7 +71,7 @@
       "example": "Ich werfe den Brief in den Briefkasten.",
       "exampleTranslation": "Mektubu posta kutusuna atıyorum.",
       "synonyms": [],
-      "level": "A2"
+      "level": "A1"
     },
     {
       "german": "das Päckchen",
@@ -134,12 +134,12 @@
     },
     {
       "german": "die Zustellung",
-      "turkish": "teslimat",
+      "turkish": "teslimat / dağıtım",
       "example": "Die Zustellung erfolgt am Montag.",
       "exampleTranslation": "Teslimat pazartesi günü yapılacak.",
       "synonyms": [
-        "die Lieferung",
-        "die Auslieferung"
+        "die Auslieferung",
+        "die Lieferung"
       ],
       "level": "B1"
     },
@@ -151,7 +151,7 @@
       "synonyms": [
         "die Schwere"
       ],
-      "level": "B1"
+      "level": "A2"
     }
   ]
 }
